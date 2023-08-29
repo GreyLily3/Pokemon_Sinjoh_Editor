@@ -24,14 +24,14 @@ namespace DS_Pokemon_Stat_Editor
         private const uint FILE_NAME_TABLE_SIGNATURE_LENGTH = 0x4;
 
         private long narcFileOffset;
-        public List<MemoryStream> Elements { get; private set; } = new List<MemoryStream>();
+        public List<MemoryStream> Elements { get; set; } = new List<MemoryStream>();
 
         public NarcFile(long narcFileOffset)
         {
             this.narcFileOffset = narcFileOffset;
         }
 
-        public bool Read(BinaryReader reader)
+        public void Read(BinaryReader reader)
         {
             uint numElements, FimgOffset, FNTBOffset;
             uint[] startOffset, endOffset;
@@ -40,8 +40,7 @@ namespace DS_Pokemon_Stat_Editor
             reader.BaseStream.Position = narcFileOffset;
             if (reader.ReadUInt32() != NARC_FILE_MAGIC_NUM)
             {
-                Console.WriteLine();
-                return false;
+                throw new Exception("Error! Narc sub-file expected at offset:" + narcFileOffset + "\nThe rom file's allocation table may be corrupted.\n");
             }
 
             reader.BaseStream.Position = narcFileOffset + FILE_ALLOCATION_TABLE_NUM_ELEMENTS_OFFSET;
@@ -71,7 +70,6 @@ namespace DS_Pokemon_Stat_Editor
                 Elements.Add(new MemoryStream(buffer));
             }
 
-            return true;
         }
 
         public void Write(BinaryWriter bw)
