@@ -13,30 +13,30 @@ namespace DS_Pokemon_Stat_Editor
 {
     public class PokemonSpecies
     {
-        public byte HP { get; set; }
-        public byte Attack { get; set; }
-        public byte Defense { get; set; }
-        public byte Speed { get; set; }
-        public byte SpecialAttack { get; set; }
-        public byte SpecialDefense { get; set; }
-        public byte Type1 { get; set; }
-        public byte Type2 { get; set; }
-        public byte CatchRate { get; set; }
-        public byte BaseXP { get; set; }
-        public byte EffortYield1 { get; set; }
-        public byte EffortYield2 { get; set; }
-        public ushort Item1 { get; set; }
-        public ushort Item2 { get; set; }
-        public byte GenderRatio { get; set; }
-        public byte HatchStepsMultiplier { get; set; }
-        public byte BaseHappiness { get; set; }
-        public byte XPGroup { get; set; }
-        public EggGroups EggGroup1 { get; set; }
-        public EggGroups EggGroup2 { get; set; }
-        public byte Ability1 { get; set; }
-        public byte Ability2 { get; set; }
-        public byte SafariRunChance { get; set; }
-        public byte PokedexColor { get; set; }
+        public byte HP;
+        public byte Attack;
+        public byte Defense;
+        public byte Speed;
+        public byte SpecialAttack;
+        public byte SpecialDefense;
+        public byte Type1;
+        public byte Type2;
+        public byte CatchRate;
+        public byte BaseXP;
+        public byte EffortYield1;
+        public byte EffortYield2;
+        public ushort Item1;
+        public ushort Item2;
+        public byte GenderRatio;
+        public byte HatchStepsMultiplier;
+        public byte BaseHappiness;
+        public byte XPGroup;
+        public EggGroups EggGroup1;
+        public EggGroups EggGroup2;
+        public byte Ability1;
+        public byte Ability2;
+        public byte SafariRunChance;
+        public byte PokedexColor;
         private BitArray learnableTMsAndHMs; //whether a pokemon can learn each TM and HM, ordered from TM01 to HM08
 
         private const int TOTAL_TM_HM_BYTES = 13;
@@ -64,101 +64,101 @@ namespace DS_Pokemon_Stat_Editor
         }
 
 
-        public PokemonSpecies(MemoryStream pokeData)
+        public PokemonSpecies(MemoryStream pokemonSpecies)
         {
-            var pokeDataReader = new BinaryReader(pokeData);
+            var pokemonSpeciesReader = new BinaryReader(pokemonSpecies);
 
-            HP = pokeDataReader.ReadByte();
-            Attack = pokeDataReader.ReadByte();
-            Defense = pokeDataReader.ReadByte();
-            Speed = pokeDataReader.ReadByte();
-            SpecialAttack = pokeDataReader.ReadByte();
-            SpecialDefense = pokeDataReader.ReadByte();
+            HP = pokemonSpeciesReader.ReadByte();
+            Attack = pokemonSpeciesReader.ReadByte();
+            Defense = pokemonSpeciesReader.ReadByte();
+            Speed = pokemonSpeciesReader.ReadByte();
+            SpecialAttack = pokemonSpeciesReader.ReadByte();
+            SpecialDefense = pokemonSpeciesReader.ReadByte();
 
-            Type1 = pokeDataReader.ReadByte();
-            Type2 = pokeDataReader.ReadByte();
+            Type1 = pokemonSpeciesReader.ReadByte();
+            Type2 = pokemonSpeciesReader.ReadByte();
 
-            CatchRate = pokeDataReader.ReadByte();
-            BaseXP = pokeDataReader.ReadByte();
+            CatchRate = pokemonSpeciesReader.ReadByte();
+            BaseXP = pokemonSpeciesReader.ReadByte();
 
-            EffortYield1 = pokeDataReader.ReadByte();
-            EffortYield2 = pokeDataReader.ReadByte();
+            EffortYield1 = pokemonSpeciesReader.ReadByte();
+            EffortYield2 = pokemonSpeciesReader.ReadByte();
 
-            Item1 = pokeDataReader.ReadUInt16();
-            Item2 = pokeDataReader.ReadUInt16();
+            Item1 = pokemonSpeciesReader.ReadUInt16();
+            Item2 = pokemonSpeciesReader.ReadUInt16();
 
-            GenderRatio = pokeDataReader.ReadByte();
-            HatchStepsMultiplier = pokeDataReader.ReadByte();
-            BaseHappiness = pokeDataReader.ReadByte();
-            XPGroup = pokeDataReader.ReadByte();
+            GenderRatio = pokemonSpeciesReader.ReadByte();
+            HatchStepsMultiplier = pokemonSpeciesReader.ReadByte();
+            BaseHappiness = pokemonSpeciesReader.ReadByte();
+            XPGroup = pokemonSpeciesReader.ReadByte();
 
-            EggGroup1 = (EggGroups)pokeDataReader.ReadByte();
-            EggGroup2 = (EggGroups)pokeDataReader.ReadByte();
+            EggGroup1 = (EggGroups)pokemonSpeciesReader.ReadByte();
+            EggGroup2 = (EggGroups)pokemonSpeciesReader.ReadByte();
 
-            Ability1 = pokeDataReader.ReadByte();
-            Ability2 = pokeDataReader.ReadByte();
+            Ability1 = pokemonSpeciesReader.ReadByte();
+            Ability2 = pokemonSpeciesReader.ReadByte();
 
-            SafariRunChance = pokeDataReader.ReadByte();
-            PokedexColor = pokeDataReader.ReadByte();
+            SafariRunChance = pokemonSpeciesReader.ReadByte();
+            PokedexColor = pokemonSpeciesReader.ReadByte();
 
-            pokeDataReader.BaseStream.Position += 2; //skip over 2 bytes of padding
+            pokemonSpeciesReader.BaseStream.Position += 2; //skip over 2 bytes of padding
 
-            learnableTMsAndHMs = new BitArray(pokeDataReader.ReadBytes(TOTAL_TM_HM_BYTES));
+            learnableTMsAndHMs = new BitArray(pokemonSpeciesReader.ReadBytes(TOTAL_TM_HM_BYTES));
 
-            pokeDataReader.Dispose();
+            pokemonSpeciesReader.Dispose();
         }
 
-        public MemoryStream GetBinaryData()
+        public MemoryStream GetBinary()
         {
-            var binaryPokeData = new MemoryStream();
-            var pokeDataWriter = new BinaryWriter(binaryPokeData);
+            var pokemonSpeciesBinary = new MemoryStream();
+            var pokemonSpeciesWriter = new BinaryWriter(pokemonSpeciesBinary);
 
             byte[] learnableTMsHMsBuffer = new byte[TOTAL_TM_HM_BYTES];
             learnableTMsAndHMs.CopyTo(learnableTMsHMsBuffer, 0);
 
-            pokeDataWriter.Write(HP);
-            pokeDataWriter.Write(Attack);
-            pokeDataWriter.Write(Defense);
-            pokeDataWriter.Write(Speed);
-            pokeDataWriter.Write(SpecialAttack);
-            pokeDataWriter.Write(SpecialDefense);
+            pokemonSpeciesWriter.Write(HP);
+            pokemonSpeciesWriter.Write(Attack);
+            pokemonSpeciesWriter.Write(Defense);
+            pokemonSpeciesWriter.Write(Speed);
+            pokemonSpeciesWriter.Write(SpecialAttack);
+            pokemonSpeciesWriter.Write(SpecialDefense);
 
-            pokeDataWriter.Write(Type1);
-            pokeDataWriter.Write(Type2);
+            pokemonSpeciesWriter.Write(Type1);
+            pokemonSpeciesWriter.Write(Type2);
 
-            pokeDataWriter.Write(CatchRate);
-            pokeDataWriter.Write(BaseXP);
+            pokemonSpeciesWriter.Write(CatchRate);
+            pokemonSpeciesWriter.Write(BaseXP);
 
-            pokeDataWriter.Write(EffortYield1);
-            pokeDataWriter.Write(EffortYield2);
+            pokemonSpeciesWriter.Write(EffortYield1);
+            pokemonSpeciesWriter.Write(EffortYield2);
 
-            pokeDataWriter.Write(Item1);
-            pokeDataWriter.Write(Item2);
+            pokemonSpeciesWriter.Write(Item1);
+            pokemonSpeciesWriter.Write(Item2);
 
-            pokeDataWriter.Write(GenderRatio);
-            pokeDataWriter.Write(HatchStepsMultiplier);
-            pokeDataWriter.Write(BaseHappiness);
-            pokeDataWriter.Write(XPGroup);
+            pokemonSpeciesWriter.Write(GenderRatio);
+            pokemonSpeciesWriter.Write(HatchStepsMultiplier);
+            pokemonSpeciesWriter.Write(BaseHappiness);
+            pokemonSpeciesWriter.Write(XPGroup);
 
-            pokeDataWriter.Write((byte)EggGroup1);
-            pokeDataWriter.Write((byte)EggGroup2);
+            pokemonSpeciesWriter.Write((byte)EggGroup1);
+            pokemonSpeciesWriter.Write((byte)EggGroup2);
 
-            pokeDataWriter.Write(Ability1);
-            pokeDataWriter.Write(Ability2);
+            pokemonSpeciesWriter.Write(Ability1);
+            pokemonSpeciesWriter.Write(Ability2);
 
-            pokeDataWriter.Write(SafariRunChance);
-            pokeDataWriter.Write(PokedexColor);
+            pokemonSpeciesWriter.Write(SafariRunChance);
+            pokemonSpeciesWriter.Write(PokedexColor);
 
-            pokeDataWriter.Write((ushort)0b_0000);
+            pokemonSpeciesWriter.Write((ushort)0b_0000);
 
-            pokeDataWriter.Write(learnableTMsHMsBuffer);
+            pokemonSpeciesWriter.Write(learnableTMsHMsBuffer);
 
             //write 3 bytes of padding
-            pokeDataWriter.Write((ushort)0b_0000);
-            pokeDataWriter.Write((byte)0b_00);
+            pokemonSpeciesWriter.Write((ushort)0b_0000);
+            pokemonSpeciesWriter.Write((byte)0b_00);
 
-            pokeDataWriter.Dispose();
-            return binaryPokeData;
+            pokemonSpeciesWriter.Dispose();
+            return pokemonSpeciesBinary;
         }
 
         public List<int> getLearnableTMsAndHMs()

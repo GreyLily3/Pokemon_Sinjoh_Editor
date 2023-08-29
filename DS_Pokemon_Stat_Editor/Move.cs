@@ -7,20 +7,18 @@ namespace DS_Pokemon_Stat_Editor
 {
     public class Move
     {
-        public ushort Effect { get; set; }
-        private byte EffectChance { get; set; }
-        private byte Power { get; set; }
-        private byte PowerPoints { get; set; }
-        private byte Type { get; set; }
-        private byte Accuracy { get; set; }
-        private sbyte Priority { get; set; }
-        private byte ContestEffect { get; set; }
-        private Categories Category { get; set; }
-        private ContestConditions ContestCondition { get; set; }
-        private Targets Target{ get; set; }
-        private Flags flags; 
-
-        private const int MAX_CONTEST_EFFECT = 22;
+        public ushort Effect;
+        public byte EffectChance;
+        public byte Power;
+        public byte PowerPoints;
+        public byte Type;
+        public byte Accuracy;
+        public sbyte Priority;
+        public byte ContestEffect;
+        public Categories Category;
+        public ContestConditions ContestCondition;
+        public Targets Target;
+        private Flags flags;
 
         public string[] EffectDescriptions { get; private set; } = new string[]
         {
@@ -79,12 +77,12 @@ namespace DS_Pokemon_Stat_Editor
         #region enums
         public enum Categories
         {
-            PHYSICAL, SPECIAL, STATUS, INVALID = -1
+            PHYSICAL, SPECIAL, STATUS
         }
 
         public enum ContestConditions
         {
-            COOL, BEAUTIFUL, CUTE, SMART, TOUGH, INVALID = -1
+            COOL, BEAUTIFUL, CUTE, SMART, TOUGH
         }
 
         public enum Targets
@@ -101,7 +99,6 @@ namespace DS_Pokemon_Stat_Editor
             ALLY = 256,
             SELF_OR_ALLY = 512,
             ANY_FOE = 1024,
-            INVALID = -1
         }
 
         public enum Flags
@@ -223,10 +220,10 @@ namespace DS_Pokemon_Stat_Editor
             set
             {
                 if (value)
-                    flags |= Flags.KEEP_HP_BAR_VISIBLE;
+                    flags |= Flags.HIDE_POKEMON_SHADOWS;
                 else
                 {
-                    flags &= ~Flags.KEEP_HP_BAR_VISIBLE;
+                    flags &= ~Flags.HIDE_POKEMON_SHADOWS;
                 }
             }
         }
@@ -247,29 +244,27 @@ namespace DS_Pokemon_Stat_Editor
             flags = 0;
         }
 
-        public Move(MemoryStream moveData)
+        public Move(MemoryStream move)
         {
-            using (var moveBinaryReader = new BinaryReader(moveData))
-            {
-                Effect = moveBinaryReader.ReadUInt16();
-                Category = (Categories)moveBinaryReader.ReadByte();
-                Power = moveBinaryReader.ReadByte();
-                Type = moveBinaryReader.ReadByte();
-                Accuracy = moveBinaryReader.ReadByte();
-                PowerPoints = moveBinaryReader.ReadByte();
-                EffectChance = moveBinaryReader.ReadByte();
-                Target = (Targets)moveBinaryReader.ReadUInt16();
-                Priority = moveBinaryReader.ReadSByte();
-                flags = (Flags)moveBinaryReader.ReadByte();
-                ContestEffect = moveBinaryReader.ReadByte();
-                ContestCondition = (ContestConditions)moveBinaryReader.ReadByte();
-            }
+            using var moveBinaryReader = new BinaryReader(move);
+            Effect = moveBinaryReader.ReadUInt16();
+            Category = (Categories)moveBinaryReader.ReadByte();
+            Power = moveBinaryReader.ReadByte();
+            Type = moveBinaryReader.ReadByte();
+            Accuracy = moveBinaryReader.ReadByte();
+            PowerPoints = moveBinaryReader.ReadByte();
+            EffectChance = moveBinaryReader.ReadByte();
+            Target = (Targets)moveBinaryReader.ReadUInt16();
+            Priority = moveBinaryReader.ReadSByte();
+            flags = (Flags)moveBinaryReader.ReadByte();
+            ContestEffect = moveBinaryReader.ReadByte();
+            ContestCondition = (ContestConditions)moveBinaryReader.ReadByte();
         }
 
-        public MemoryStream GetBinaryData()
+        public MemoryStream GetBinary()
         {
-            var binaryMoveData = new MemoryStream();
-            using (var moveBinaryWriter = new BinaryWriter(binaryMoveData))
+            var moveBinary = new MemoryStream();
+            using (var moveBinaryWriter = new BinaryWriter(moveBinary))
             {
                 moveBinaryWriter.Write(Effect);
                 moveBinaryWriter.Write((byte)Category);
@@ -285,7 +280,7 @@ namespace DS_Pokemon_Stat_Editor
                 moveBinaryWriter.Write((byte)ContestCondition);
                 moveBinaryWriter.Write((ushort)0x0000);
             }
-            return binaryMoveData;
+            return moveBinary;
         }
 
 
