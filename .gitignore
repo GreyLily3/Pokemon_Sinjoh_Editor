@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/DS_pokemon_Stat_editor_Test/DS_pokemon_Stat_editor_Test.csproj
+/DS_pokemon_Stat_editor_Test
