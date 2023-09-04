@@ -28,7 +28,7 @@ namespace DS_Pokemon_Stat_Editor
 		private FAT fat;
 
 		private uint FATOffset;
-		private uint FATLength;
+        private uint FATLength;
 
 		#region Constants
 
@@ -44,7 +44,7 @@ namespace DS_Pokemon_Stat_Editor
 		const int POKEMON_NAMES_TEXT_BANK_HGSS = 237;
 
 		const int TYPES_TEXT_BANK_DP = 565;
-		const int TYPES_TEXT_BANK_PL = 642;
+		const int TYPES_TEXT_BANK_PL = 624;
 		const int TYPES_TEXT_BANK_HGSS = 735;
 
 		const int ABILITY_NAMES_TEXT_BANK_DP = 553;
@@ -59,7 +59,8 @@ namespace DS_Pokemon_Stat_Editor
 		private const int MOVES_NARC_ID_PL = 0x1BE;
 		private const int MOVES_NARC_ID_HGSS = 0x8C;
 
-		private const int POKEMON_SPECIES_NARC_ID_DP = 0x146;
+		private const int POKEMON_SPECIES_NARC_ID_DIAMOND = 0x146;
+		private const int POKEMON_SPECIES_NARC_ID_PEARL = 0x148;
 		private const int POKEMON_SPECIES_NARC_ID_PL = 0x1A5;
 		private const int POKEMON_SPECIES_NARC_ID_HGSS = 0x83;
 
@@ -221,12 +222,14 @@ namespace DS_Pokemon_Stat_Editor
 
 		private uint getSpeciesNarcOffset()
 		{
-			return gameFamily switch
+			return gameVersion switch
 			{
-				GameFamilies.DP => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_DP),
-				GameFamilies.PL => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_PL),
-				GameFamilies.HGSS => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_HGSS),
-				_ => 0
+				GameVersions.DIAMOND => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_DIAMOND),
+				GameVersions.PEARL => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_PEARL),
+				GameVersions.PLATINUM => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_PL),
+				GameVersions.HEARTGOLD => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_HGSS),
+                GameVersions.SOULSILVER => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_HGSS),
+                _ => 0
 			};
 		}
 
