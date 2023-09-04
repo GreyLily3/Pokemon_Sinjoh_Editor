@@ -46,6 +46,7 @@ namespace DS_Pokemon_Stat_Editor
 
         public enum EggGroups
         {
+            NULL,
             MONSTER,
             WATER1,
             BUG,
