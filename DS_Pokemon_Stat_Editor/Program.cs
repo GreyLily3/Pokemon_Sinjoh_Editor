@@ -16,7 +16,8 @@ namespace DS_Pokemon_Stat_Editor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Controller.InitializeView();
+            Application.Run(Controller.View);
         }
     }
 }
