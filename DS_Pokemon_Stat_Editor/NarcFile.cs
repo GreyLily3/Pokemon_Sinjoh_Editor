@@ -11,19 +11,24 @@ namespace DS_Pokemon_Stat_Editor
     {
         private const uint NARC_FILE_MAGIC_NUM = 0x4352414E; //"NARC" in ascii/unicode
         private const uint NARC_FILE_SIGNATURE_END = 0x0100FFFE;
-        private const uint FILE_ALLOCATION_TABLE_SIGNATURE = 0x46415442;
+        private const uint FAT_SIGNATURE = 0x46415442;
         private const uint FILE_NAME_TABLE_SIGNATURE = 0x464E5442;
         private const uint FILE_IMAGE_SIGNATURE = 0x46494D47;
         private const ushort NARC_FILE_HEADER_SIZE_BYTES = 16;
         private const ushort NARC_FILE_HEADER_NUM_SECTIONS = 3;
-        private const uint FILE_ALLOCATION_TABLE_OFFSET = 0x10;
-        private const uint FILE_ALLOCATION_TABLE_NUM_ELEMENTS_OFFSET = 0x18;
-        private const uint FILE_ALLOCATION_TABLE_HEADER_LENGTH = 0xc;
-        private const uint FILE_ALLOCATION_TABLE_ELEMENT_LENGTH = 0x8;
+        private const uint FAT_OFFSET = 0x10;
+        private const uint FAT_NUM_ELEMENTS_OFFSET = 0x18;
+        private const uint FAT_HEADER_LENGTH = 0xc;
+        private const uint FAT_ELEMENT_LENGTH = 0x8;
         private const uint FILE_IMAGE_HEADER_LENGTH = 0x8;   
         private const uint FILE_NAME_TABLE_SIGNATURE_LENGTH = 0x4;
 
+        private FAT fat;
         private long narcFileOffset;
+        uint numElements;
+        uint FimgOffset;
+
+
         public List<MemoryStream> Elements { get; set; } = new List<MemoryStream>();
 
         public NarcFile(long narcFileOffset)
@@ -33,9 +38,7 @@ namespace DS_Pokemon_Stat_Editor
 
         public void Read(BinaryReader reader)
         {
-            uint numElements, FimgOffset, FNTBOffset;
-            uint[] startOffset, endOffset;
-            byte[] buffer;
+            uint FNTBOffset;
 
             reader.BaseStream.Position = narcFileOffset;
             if (reader.ReadUInt32() != NARC_FILE_MAGIC_NUM)
@@ -43,33 +46,31 @@ namespace DS_Pokemon_Stat_Editor
                 throw new Exception("Error! Narc sub-file expected at offset:" + narcFileOffset + "\nThe rom file's allocation table may be corrupted.\n");
             }
 
-            reader.BaseStream.Position = narcFileOffset + FILE_ALLOCATION_TABLE_NUM_ELEMENTS_OFFSET;
+            reader.BaseStream.Position = narcFileOffset + FAT_NUM_ELEMENTS_OFFSET;
             numElements = reader.ReadUInt32();
 
-            startOffset = new uint[numElements];
-            endOffset = new uint[numElements];
-
-            FNTBOffset = numElements * FILE_ALLOCATION_TABLE_ELEMENT_LENGTH + FILE_ALLOCATION_TABLE_OFFSET + FILE_ALLOCATION_TABLE_HEADER_LENGTH;
+            FNTBOffset = numElements * FAT_ELEMENT_LENGTH + FAT_OFFSET + FAT_HEADER_LENGTH;
             reader.BaseStream.Position = narcFileOffset + FNTBOffset + FILE_NAME_TABLE_SIGNATURE_LENGTH;
             FimgOffset = reader.ReadUInt32() + FNTBOffset;
 
-            //reads element offsets in the NARC file
-            reader.BaseStream.Position = narcFileOffset + FILE_ALLOCATION_TABLE_OFFSET + FILE_ALLOCATION_TABLE_HEADER_LENGTH;
-            for (int i = 0; i < numElements; i++)
-            {
-                startOffset[i] = reader.ReadUInt32();
-                endOffset[i] = reader.ReadUInt32();
-            }
+            fat = new FAT(narcFileOffset + FAT_OFFSET + FAT_HEADER_LENGTH);
+            fat.SetNumFilesForNarc(numElements);
+            fat.Read(reader);
 
-            // Read elements in NARC
+            readElements(reader);
+
+        }
+
+        private void readElements(BinaryReader reader)
+        {
+            byte[] buffer;
             for (int i = 0; i < numElements; i++)
             {
-                reader.BaseStream.Position = FimgOffset + startOffset[i] + FILE_IMAGE_HEADER_LENGTH + narcFileOffset;
-                buffer = new byte[endOffset[i] - startOffset[i]];
-                reader.Read(buffer, 0, (int)(endOffset[i] - startOffset[i]));
+                reader.BaseStream.Position = FimgOffset + fat.GetStartOffset(i) + FILE_IMAGE_HEADER_LENGTH + narcFileOffset;
+                buffer = new byte[fat.GetEndOffset(i) - fat.GetStartOffset(i)];
+                reader.Read(buffer, 0, (int)(fat.GetEndOffset(i) - fat.GetStartOffset(i)));
                 Elements.Add(new MemoryStream(buffer));
             }
-
         }
 
         public void Write(BinaryWriter bw)
@@ -86,8 +87,8 @@ namespace DS_Pokemon_Stat_Editor
             bw.Write(NARC_FILE_HEADER_SIZE_BYTES);
             bw.Write(NARC_FILE_HEADER_NUM_SECTIONS);
             // Write FATB Section
-            bw.Write(FILE_ALLOCATION_TABLE_SIGNATURE);
-            bw.Write((UInt32)(FILE_ALLOCATION_TABLE_HEADER_LENGTH + Elements.Count * FILE_ALLOCATION_TABLE_ELEMENT_LENGTH));
+            bw.Write(FAT_SIGNATURE);
+            bw.Write((UInt32)(FAT_HEADER_LENGTH + Elements.Count * FAT_ELEMENT_LENGTH));
             bw.Write((UInt32)Elements.Count);
             curOffset = 0;
             for (int i = 0; i < Elements.Count; i++)

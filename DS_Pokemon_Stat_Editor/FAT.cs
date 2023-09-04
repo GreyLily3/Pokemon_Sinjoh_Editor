@@ -7,12 +7,12 @@ namespace DS_Pokemon_Stat_Editor
     {
         private uint[] startOffsets;
         private uint[] endOffsets;
-        private uint offsetInContainingFile;
+        private long offsetInContainingFile;
         private uint numFiles;
 
         private const int ENTRY_LENGTH = 8;
 
-        public FAT(uint offsetInContainingFile)
+        public FAT(long offsetInContainingFile)
         {
             this.offsetInContainingFile = offsetInContainingFile;
         }
