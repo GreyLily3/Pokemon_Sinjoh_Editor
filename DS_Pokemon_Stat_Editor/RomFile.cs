@@ -279,9 +279,9 @@ namespace DS_Pokemon_Stat_Editor
 			return gameFamily switch
 			{
 				GameFamilies.DP => ITEM_NAMES_TEXT_BANK_DP,
-				GameFamilies.PL => ITEM_NAMES_TEXT_BANK_HGSS,
-				GameFamilies.HGSS => ITEM_NAMES_TEXT_BANK_PL,
-				_ => -1
+				GameFamilies.PL => ITEM_NAMES_TEXT_BANK_PL,
+                GameFamilies.HGSS => ITEM_NAMES_TEXT_BANK_HGSS,
+                _ => -1
 			};
 		}
 
