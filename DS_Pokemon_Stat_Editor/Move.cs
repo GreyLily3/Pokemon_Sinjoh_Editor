@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 namespace DS_Pokemon_Stat_Editor
@@ -20,35 +21,14 @@ namespace DS_Pokemon_Stat_Editor
         public Targets Target;
         private Flags flags;
 
-        public string[] EffectDescriptions { get; private set; } = new string[]
-        {
-            "Only damage",
-            "SLP (status)",
-            "PSN (attack)",
-            "Drain",
-            "BRN (attack)",
-            "FRZ (attack)",
-            "PAR (attack)",
-            "Self Destruct",
-            "Dream Eater",
-            "Mirror Move",
-            "Raise Atk. (self) (status)",
-            "Raise Def. (self (status)",
-            "",
-            "Raise Sp. Atk. (self) (status)",
-            "",
-            "",
-            "Raise Eva. (self) (status)",
-            "Never miss",
-            "Lower Atk. (foe) (status)",
-            "Lower Def. (foe) (status)",
-            "Lower Spd. (foe) (status)",
-            "",
-            "",
-            "Lower Acc. (foe) (status)"
-        };
+        //these are parallel arrays
+        private static string[] EffectDescriptions;
+        private static bool[] DoEffectsCalcDamage;
 
-        public string[] ContestEffectDescriptions { get; private set; } = new string[] 
+        private const int NUM_EFFECTS = 276;
+      
+
+        public static string[] ContestEffectDescriptions { get; private set; } = new string[] 
         {
             "2 appeal, perform first next turn",
             "2 appeal, perform last next turn",
@@ -73,6 +53,8 @@ namespace DS_Pokemon_Stat_Editor
             "2 appeal, +3 if voltage maxed",
             "1 appeal, +3 if lowest score"
         };
+
+        public static bool[] DoesEffectCalcDamage { get; private set; } = new bool[277];
 
         #region enums
         public enum Categories
@@ -244,22 +226,85 @@ namespace DS_Pokemon_Stat_Editor
             flags = 0;
         }
 
-        public Move(MemoryStream move)
+        public static string[] GetEffectDescriptions()
         {
-            using var moveBinaryReader = new BinaryReader(move);
-            Effect = moveBinaryReader.ReadUInt16();
-            Category = (Categories)moveBinaryReader.ReadByte();
-            Power = moveBinaryReader.ReadByte();
-            Type = moveBinaryReader.ReadByte();
-            Accuracy = moveBinaryReader.ReadByte();
-            PowerPoints = moveBinaryReader.ReadByte();
-            EffectChance = moveBinaryReader.ReadByte();
-            Target = (Targets)moveBinaryReader.ReadUInt16();
-            Priority = moveBinaryReader.ReadSByte();
-            flags = (Flags)moveBinaryReader.ReadByte();
-            ContestEffect = moveBinaryReader.ReadByte();
-            ContestCondition = (ContestConditions)moveBinaryReader.ReadByte();
+            if (EffectDescriptions.Count() == 0)
+            {
+                EffectDescriptions = new string[NUM_EFFECTS];
+
+                EffectDescriptions[0] = "Only Damage";
+                EffectDescriptions[1] = "Apply sleep to foe";
+                EffectDescriptions[2] = "Apply poison to foe";
+                EffectDescriptions[3] = "Heal user 50% of damage";
+                EffectDescriptions[4] = "Apply burn to foe";
+                EffectDescriptions[5] = "Apply freeze to foe";
+                EffectDescriptions[6] = "Apply paralysis to foe";
+                EffectDescriptions[7] = "Faint user, half foe's defense for this move's damage";
+                EffectDescriptions[8] = "Heal user 50% of damage if foe is asleep, fail otherwise";
+                EffectDescriptions[9] = "Use the foe's last used move";
+                EffectDescriptions[10] = "Raise user's attack by 1 stage";
+                EffectDescriptions[11] = "Raise user's defense by 1 stage";
+                EffectDescriptions[12] = "";
+                EffectDescriptions[13] = "Raise user's special attack by 1 stage";
+                EffectDescriptions[14] = "";
+                EffectDescriptions[15] = "";
+                EffectDescriptions[16] = "Raise user's evasion by 1 stage";
+                EffectDescriptions[17] = "Never misses";
+                EffectDescriptions[18] = "Lower foe's attack by 1 stage";
+                EffectDescriptions[19] = "Lower foe's defense by 1 stage";
+                EffectDescriptions[20] = "Lower foe's speed by 1 stage";
+                EffectDescriptions[21] = "";
+                EffectDescriptions[22] = "";
+                EffectDescriptions[23] = "Lower foe's accuracy by 1 stage";
+                EffectDescriptions[24] = "Lower foe's evasion by 1 stage";
+
+
+                return EffectDescriptions;
+            }
+            else
+                return EffectDescriptions;
         }
+
+        public static bool[] GetDoEffectCalcDamage()
+        {
+            if (DoEffectsCalcDamage.Count() == 0)
+            {
+                DoEffectsCalcDamage = new bool[NUM_EFFECTS];
+
+                DoEffectsCalcDamage[0] = true;
+                DoEffectsCalcDamage[1] = false;
+                DoEffectsCalcDamage[2] = true;
+                DoEffectsCalcDamage[3] = true;
+                DoEffectsCalcDamage[4] = true;
+                DoEffectsCalcDamage[5] = true;
+                DoEffectsCalcDamage[6] = true;
+                DoEffectsCalcDamage[7] = true;
+                DoEffectsCalcDamage[8] = true;
+                DoEffectsCalcDamage[9] = false;
+                DoEffectsCalcDamage[10] = false;
+
+                return DoEffectsCalcDamage;
+            }
+            else
+                return DoEffectsCalcDamage;
+        }
+
+                public Move(MemoryStream move)
+                {
+                    using var moveBinaryReader = new BinaryReader(move);
+                    Effect = moveBinaryReader.ReadUInt16();
+                    Category = (Categories)moveBinaryReader.ReadByte();
+                    Power = moveBinaryReader.ReadByte();
+                    Type = moveBinaryReader.ReadByte();
+                    Accuracy = moveBinaryReader.ReadByte();
+                    PowerPoints = moveBinaryReader.ReadByte();
+                    EffectChance = moveBinaryReader.ReadByte();
+                    Target = (Targets)moveBinaryReader.ReadUInt16();
+                    Priority = moveBinaryReader.ReadSByte();
+                    flags = (Flags)moveBinaryReader.ReadByte();
+                    ContestEffect = moveBinaryReader.ReadByte();
+                    ContestCondition = (ContestConditions)moveBinaryReader.ReadByte();
+                }
 
         public MemoryStream GetBinary()
         {
