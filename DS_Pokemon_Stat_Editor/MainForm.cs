@@ -21,7 +21,7 @@ namespace DS_Pokemon_Stat_Editor
 
         public void DisplayMoveValues(int moveIndex)
         {
-            Move currentMove = Controller.GetMove(moveIndex);
+            Move currentMove = RomFile.GetMove(moveIndex);
 
             movePowerNumericNoArrows.Value = currentMove.Power;
             moveAccuracyNumericNoArrows.Value = currentMove.Accuracy;
@@ -71,12 +71,12 @@ namespace DS_Pokemon_Stat_Editor
                 HidePokemonShadowsFlag = moveShadowCheckBox.Checked
             };
 
-            Controller.UpdateMove(moveIndex, updatedMove);
+            RomFile.UpdateMove(moveIndex, updatedMove);
         }
 
         public void LoadMoveNames()
         {
-            movesComboBox.Items.AddRange(Controller.GetMoveNames());
+            movesComboBox.Items.AddRange(RomFile.GetMoveNames());
         }
 
         public void IncludeGameVersionInText(string romName)
@@ -95,15 +95,6 @@ namespace DS_Pokemon_Stat_Editor
 
         }
 
-        private void moveTargetComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void openRomFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -114,8 +105,15 @@ namespace DS_Pokemon_Stat_Editor
 
                 if (filePicker.ShowDialog() == DialogResult.OK)
                 {
-                    Controller.LoadRom(filePicker.FileName);
+                    RomFile.LoadNewRom(filePicker.FileName);
                 }
+
+                if (!RomFile.IsValidGameVersion())
+                    MessageBox.Show("File selected is not a valid DS pokemon rom. It will not be loaded.");
+                else if (!RomFile.IsSupportedGameVersion())
+                    MessageBox.Show("Pokemon Black/White and Black2/White2 roms are not supported due to significant differences in data structures from Gen 4.");
+                else
+                    IncludeGameVersionInText(RomFile.GetGameVersion());
             }
         }
     }

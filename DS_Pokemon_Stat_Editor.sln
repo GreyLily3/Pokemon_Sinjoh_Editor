@@ -5,8 +5,6 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS_Pokemon_Stat_Editor", "DS_Pokemon_Stat_Editor\DS_Pokemon_Stat_Editor.csproj", "{8DD4618F-39BA-4207-918C-91030751A3E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS_pokemon_Stat_editor_Test", "DS_pokemon_Stat_editor_Test\DS_pokemon_Stat_editor_Test.csproj", "{5EEB8098-C534-4E2F-A34E-3ECBB49139E6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{8DD4618F-39BA-4207-918C-91030751A3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DD4618F-39BA-4207-918C-91030751A3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DD4618F-39BA-4207-918C-91030751A3E6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5EEB8098-C534-4E2F-A34E-3ECBB49139E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5EEB8098-C534-4E2F-A34E-3ECBB49139E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5EEB8098-C534-4E2F-A34E-3ECBB49139E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5EEB8098-C534-4E2F-A34E-3ECBB49139E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

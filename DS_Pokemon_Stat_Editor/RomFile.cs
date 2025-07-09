@@ -7,28 +7,28 @@ using System.Windows.Forms;
 
 namespace DS_Pokemon_Stat_Editor
 {
-	public class RomFile
+	public static class RomFile
 	{
-		private NarcFile movesNarc;
-		private NarcFile pokemonSpeciesNarc;
-		private NarcFile gameTextNarc;
-		private TextArchive gameText;
-		private GameVersions gameVersion;
-		private readonly GameFamilies gameFamily;
+		private static NarcFile movesNarc;
+		private static NarcFile pokemonSpeciesNarc;
+		private static NarcFile gameTextNarc;
+		private static TextArchive gameText;
+		private static GameVersions gameVersion;
+        private static GameFamilies gameFamily;
 
-		private List<Move> MoveList = new List<Move>();
-        private List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
+		private static List<Move> MoveList = new List<Move>();
+        private static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
 
-		public List<string> MoveNames { get; private set; }
-		public List<string> PokemonNames { get; private set; }
-		public List<string> TypeNames { get; private set; }
-		public List<string> AbilityNames { get; private set; }
-		public List<string> ItemNames { get; private set; }
+		public static List<string> MoveNames { get; private set; }
+		public static List<string> PokemonNames { get; private set; }
+		public static List<string> TypeNames { get; private set; }
+		public static List<string> AbilityNames { get; private set; }
+		public static List<string> ItemNames { get; private set; }
 
-		private FAT fat;
+		private static FAT fat;
 
-		private uint FATOffset;
-        private uint FATLength;
+		private static uint FATOffset;
+        private static uint FATLength;
 
 		#region Constants
 
@@ -70,7 +70,15 @@ namespace DS_Pokemon_Stat_Editor
 
 		#endregion
 
+		public static void LoadNewRom(string romFilePath)
+		{
+			BinaryReader romReader = new BinaryReader(new FileStream(romFilePath, FileMode.Open));
 
+            tryReadGameVersion(romReader);
+            gameFamily = getGameFamily(gameVersion);
+
+			read(romReader);
+        }
 
 		private enum GameVersions
 		{
@@ -96,13 +104,22 @@ namespace DS_Pokemon_Stat_Editor
 			NULL
 		}
 
-		public RomFile(BinaryReader romFileReader)
-		{
-			tryReadGameVersion(romFileReader);
-            gameFamily = getGameFamily(gameVersion);
-        }
 
-        private GameFamilies getGameFamily(GameVersions gameVersion)
+        
+
+        private static void tryReadGameVersion(BinaryReader romFileReader)
+		{
+			try
+			{
+                gameVersion = getGameVersionFromRomName(new string(romFileReader.ReadChars(ROM_NAME_LENGTH)).Replace("\0", ""));
+            }
+			catch (Exception)
+			{
+				gameVersion = GameVersions.NULL;
+			}
+		}
+
+        private static GameFamilies getGameFamily(GameVersions gameVersion)
         {
             switch (gameVersion)
             {
@@ -125,19 +142,7 @@ namespace DS_Pokemon_Stat_Editor
             }
         }
 
-        private void tryReadGameVersion(BinaryReader romFileReader)
-		{
-			try
-			{
-                gameVersion = getGameVersionFromRomName(new string(romFileReader.ReadChars(ROM_NAME_LENGTH)).Replace("\0", ""));
-            }
-			catch (Exception)
-			{
-				gameVersion = GameVersions.NULL;
-			}
-		}
-
-        private GameVersions getGameVersionFromRomName(string romName)
+        private static GameVersions getGameVersionFromRomName(string romName)
         {
             return romName switch
             {
@@ -154,7 +159,7 @@ namespace DS_Pokemon_Stat_Editor
             };
         }
 
-        public void Read(BinaryReader romFileReader)
+        private static void read(BinaryReader romFileReader)
 		{
 			readHeader(romFileReader);
 
@@ -186,7 +191,7 @@ namespace DS_Pokemon_Stat_Editor
 					
 		}
 
-		private void readHeader(BinaryReader romFileReader)
+		private static void readHeader(BinaryReader romFileReader)
 		{
             try
 			{
@@ -209,7 +214,7 @@ namespace DS_Pokemon_Stat_Editor
 			
 		}
 
-		private uint getMovesNarcOffset()
+		private static uint getMovesNarcOffset()
 		{
 			return gameFamily switch
 			{
@@ -220,7 +225,7 @@ namespace DS_Pokemon_Stat_Editor
 			};
 		}
 
-		private uint getSpeciesNarcOffset()
+		private static uint getSpeciesNarcOffset()
 		{
 			return gameVersion switch
 			{
@@ -233,7 +238,7 @@ namespace DS_Pokemon_Stat_Editor
 			};
 		}
 
-		private uint getTextNarcOffset()
+		private static uint getTextNarcOffset()
 		{
 			return gameFamily switch
 			{
@@ -244,7 +249,7 @@ namespace DS_Pokemon_Stat_Editor
 			};
 		}
 
-		private int getMoveNameTextBankID()
+		private static int getMoveNameTextBankID()
 		{
 			return gameFamily switch
 			{
@@ -255,7 +260,7 @@ namespace DS_Pokemon_Stat_Editor
 			};
 		}
 
-		private int getTypeNamesTextBankID()
+		private static int getTypeNamesTextBankID()
 		{
 			return gameFamily switch
 			{
@@ -266,7 +271,7 @@ namespace DS_Pokemon_Stat_Editor
 			};
 		}
 
-		private int getPokemonNamesTextBankID()
+		private static int getPokemonNamesTextBankID()
 		{
 			return gameFamily switch
 			{
@@ -277,7 +282,7 @@ namespace DS_Pokemon_Stat_Editor
 			};
 		}
 
-		private int getItemNamesTextBankID()
+		private static int getItemNamesTextBankID()
 		{
 			return gameFamily switch
 			{
@@ -288,7 +293,7 @@ namespace DS_Pokemon_Stat_Editor
 			};
 		}
 
-		private int getAbilityNamesTextBankID()
+		private static int getAbilityNamesTextBankID()
 		{
 			return gameFamily switch
 			{
@@ -299,7 +304,7 @@ namespace DS_Pokemon_Stat_Editor
 			};
 		}
 		
-		public void Save(BinaryWriter writer)
+		public static void Save(BinaryWriter writer)
 		{
 			for (int i = 0; i < MoveList.Count; i++)
 				movesNarc.Elements[i] = MoveList[i].GetBinary();
@@ -311,7 +316,7 @@ namespace DS_Pokemon_Stat_Editor
 			pokemonSpeciesNarc.Write(writer);
 		}
 
-        public bool IsValidGameVersion()
+        public static bool IsValidGameVersion()
         {
             if (gameFamily == GameFamilies.NULL)
                 return false;
@@ -319,7 +324,7 @@ namespace DS_Pokemon_Stat_Editor
                 return true;
         }
 
-        public bool IsSupportedGameVersion()
+        public static bool IsSupportedGameVersion()
         {
             if (gameFamily == GameFamilies.BW || gameFamily == GameFamilies.B2W2)
                 return false;
@@ -327,13 +332,20 @@ namespace DS_Pokemon_Stat_Editor
                 return true;
         }
 
-        public Move GetMove(int moveIndex) => MoveList[moveIndex];
+        public static Move GetMove(int moveIndex) => MoveList[moveIndex];
 
-        public void UpdateMove(int moveIndex, Move updatedMove)
+        public static void UpdateMove(int moveIndex, Move updatedMove)
         {
             MoveList[moveIndex] = updatedMove;
         }
 
-        public string getGameVersion() => gameVersion.ToString();
+        public static string GetGameVersion() => gameVersion.ToString();
+		public static string[] GetMoveNames() => MoveNames.ToArray();
+		public static string[] GetPokemonSpeciesNames() => PokemonNames.ToArray();
+		public static string[] GetItemNames() => ItemNames.ToArray();
+		public static string[] GetAbilityNames() => AbilityNames.ToArray();
+        public static string[] GetMoveCategories() => Enum.GetNames(typeof(Move.Categories));
+        public static string[] GetMoveContestConditions() => Enum.GetNames(typeof(Move.ContestConditions));
+        public static string[] GetMoveTargets() => Enum.GetNames(typeof(Move.Targets));
     }
 }

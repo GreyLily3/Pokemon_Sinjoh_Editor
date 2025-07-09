@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainTabControl = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.movesTabPage = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
             this.movesComboBox = new System.Windows.Forms.ComboBox();
             this.moveTargetComboBox = new System.Windows.Forms.ComboBox();
@@ -64,7 +64,7 @@
             this.moveMagicCoatCheckBox = new System.Windows.Forms.CheckBox();
             this.moveProtectCheckBox = new System.Windows.Forms.CheckBox();
             this.moveContactCheckBox = new System.Windows.Forms.CheckBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pokemonTabPage = new System.Windows.Forms.TabPage();
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -121,14 +121,14 @@
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainTabControl.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.movesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.pokemonTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesRunChanceNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHappinessNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).BeginInit();
@@ -145,48 +145,48 @@
             // 
             // mainTabControl
             // 
-            this.mainTabControl.Controls.Add(this.tabPage1);
-            this.mainTabControl.Controls.Add(this.tabPage2);
+            this.mainTabControl.Controls.Add(this.movesTabPage);
+            this.mainTabControl.Controls.Add(this.pokemonTabPage);
             this.mainTabControl.Location = new System.Drawing.Point(0, 27);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(825, 501);
             this.mainTabControl.TabIndex = 0;
             // 
-            // tabPage1
+            // movesTabPage
             // 
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.movesComboBox);
-            this.tabPage1.Controls.Add(this.moveTargetComboBox);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.movePriorityNumericNoArrows);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.moveCategoryComboBox);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.moveEffectChanceNumericNoArrows);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.moveEffectComboBox);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.moveTypeComboBox);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.movePPNumericNoArrows);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.moveAccuracyNumericNoArrows);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.movePowerNumericNoArrows);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.moveContestConditionComboBox);
-            this.tabPage1.Controls.Add(this.moveContestEffectComboBox);
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(817, 475);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Moves";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.movesTabPage.Controls.Add(this.label12);
+            this.movesTabPage.Controls.Add(this.movesComboBox);
+            this.movesTabPage.Controls.Add(this.moveTargetComboBox);
+            this.movesTabPage.Controls.Add(this.label11);
+            this.movesTabPage.Controls.Add(this.label10);
+            this.movesTabPage.Controls.Add(this.movePriorityNumericNoArrows);
+            this.movesTabPage.Controls.Add(this.label9);
+            this.movesTabPage.Controls.Add(this.moveCategoryComboBox);
+            this.movesTabPage.Controls.Add(this.label8);
+            this.movesTabPage.Controls.Add(this.moveEffectChanceNumericNoArrows);
+            this.movesTabPage.Controls.Add(this.label7);
+            this.movesTabPage.Controls.Add(this.moveEffectComboBox);
+            this.movesTabPage.Controls.Add(this.label6);
+            this.movesTabPage.Controls.Add(this.moveTypeComboBox);
+            this.movesTabPage.Controls.Add(this.label5);
+            this.movesTabPage.Controls.Add(this.movePPNumericNoArrows);
+            this.movesTabPage.Controls.Add(this.label4);
+            this.movesTabPage.Controls.Add(this.moveAccuracyNumericNoArrows);
+            this.movesTabPage.Controls.Add(this.label3);
+            this.movesTabPage.Controls.Add(this.movePowerNumericNoArrows);
+            this.movesTabPage.Controls.Add(this.label2);
+            this.movesTabPage.Controls.Add(this.label1);
+            this.movesTabPage.Controls.Add(this.moveContestConditionComboBox);
+            this.movesTabPage.Controls.Add(this.moveContestEffectComboBox);
+            this.movesTabPage.Controls.Add(this.groupBox1);
+            this.movesTabPage.Location = new System.Drawing.Point(4, 22);
+            this.movesTabPage.Name = "movesTabPage";
+            this.movesTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.movesTabPage.Size = new System.Drawing.Size(817, 475);
+            this.movesTabPage.TabIndex = 0;
+            this.movesTabPage.Text = "Moves";
+            this.movesTabPage.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
@@ -214,7 +214,6 @@
             this.moveTargetComboBox.Name = "moveTargetComboBox";
             this.moveTargetComboBox.Size = new System.Drawing.Size(121, 21);
             this.moveTargetComboBox.TabIndex = 22;
-            this.moveTargetComboBox.SelectedIndexChanged += new System.EventHandler(this.moveTargetComboBox_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -224,7 +223,6 @@
             this.label11.Size = new System.Drawing.Size(41, 13);
             this.label11.TabIndex = 21;
             this.label11.Text = "Target:";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -548,64 +546,64 @@
             this.moveContactCheckBox.Text = "Makes Contact";
             this.moveContactCheckBox.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // pokemonTabPage
             // 
-            this.tabPage2.Controls.Add(this.label35);
-            this.tabPage2.Controls.Add(this.label34);
-            this.tabPage2.Controls.Add(this.label33);
-            this.tabPage2.Controls.Add(this.speciesHMListView);
-            this.tabPage2.Controls.Add(this.speciesTMListView);
-            this.tabPage2.Controls.Add(this.label32);
-            this.tabPage2.Controls.Add(this.label30);
-            this.tabPage2.Controls.Add(this.speciesAbility2ComboBox);
-            this.tabPage2.Controls.Add(this.label31);
-            this.tabPage2.Controls.Add(this.speciesAbility1ComboBox);
-            this.tabPage2.Controls.Add(this.label29);
-            this.tabPage2.Controls.Add(this.speciesEggGroup2ComboBox);
-            this.tabPage2.Controls.Add(this.label28);
-            this.tabPage2.Controls.Add(this.speciesEggGroup1ComboBox);
-            this.tabPage2.Controls.Add(this.label27);
-            this.tabPage2.Controls.Add(this.speciesXPGroupComboBox);
-            this.tabPage2.Controls.Add(this.label26);
-            this.tabPage2.Controls.Add(this.label25);
-            this.tabPage2.Controls.Add(this.speciesMaleAndFemaleRadioButton);
-            this.tabPage2.Controls.Add(this.speciesGenderlessRadioButton);
-            this.tabPage2.Controls.Add(this.speciesFemaleOnlyRadioButton);
-            this.tabPage2.Controls.Add(this.speciesMaleOnlyRadioButton);
-            this.tabPage2.Controls.Add(this.label24);
-            this.tabPage2.Controls.Add(this.speciesHeldItem2ComboBox);
-            this.tabPage2.Controls.Add(this.label23);
-            this.tabPage2.Controls.Add(this.speciesHeldItem1ComboBox);
-            this.tabPage2.Controls.Add(this.label22);
-            this.tabPage2.Controls.Add(this.label21);
-            this.tabPage2.Controls.Add(this.label20);
-            this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.label19);
-            this.tabPage2.Controls.Add(this.speciesType1ComboBox);
-            this.tabPage2.Controls.Add(this.label18);
-            this.tabPage2.Controls.Add(this.label17);
-            this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Controls.Add(this.label15);
-            this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.speciesRunChanceNumericNoArrows);
-            this.tabPage2.Controls.Add(this.speciesHappinessNumericNoArrows);
-            this.tabPage2.Controls.Add(this.speciesGenderRatioNumericNoArrows);
-            this.tabPage2.Controls.Add(this.speciesBaseXPYieldNumericNoArrows);
-            this.tabPage2.Controls.Add(this.speciesCatchRateNumericNoArrows);
-            this.tabPage2.Controls.Add(this.speciesSpecialDefenseNumericNoArrows);
-            this.tabPage2.Controls.Add(this.speciesSpecialAttackNumericNoArrows);
-            this.tabPage2.Controls.Add(this.speciesSpeedNumericNoArrows);
-            this.tabPage2.Controls.Add(this.speciesDefenseNumericNoArrows);
-            this.tabPage2.Controls.Add(this.speciesAttackNumericNoArrows);
-            this.tabPage2.Controls.Add(this.speciesHPNumericNoArrows);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(817, 475);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Pokemon";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.pokemonTabPage.Controls.Add(this.label35);
+            this.pokemonTabPage.Controls.Add(this.label34);
+            this.pokemonTabPage.Controls.Add(this.label33);
+            this.pokemonTabPage.Controls.Add(this.speciesHMListView);
+            this.pokemonTabPage.Controls.Add(this.speciesTMListView);
+            this.pokemonTabPage.Controls.Add(this.label32);
+            this.pokemonTabPage.Controls.Add(this.label30);
+            this.pokemonTabPage.Controls.Add(this.speciesAbility2ComboBox);
+            this.pokemonTabPage.Controls.Add(this.label31);
+            this.pokemonTabPage.Controls.Add(this.speciesAbility1ComboBox);
+            this.pokemonTabPage.Controls.Add(this.label29);
+            this.pokemonTabPage.Controls.Add(this.speciesEggGroup2ComboBox);
+            this.pokemonTabPage.Controls.Add(this.label28);
+            this.pokemonTabPage.Controls.Add(this.speciesEggGroup1ComboBox);
+            this.pokemonTabPage.Controls.Add(this.label27);
+            this.pokemonTabPage.Controls.Add(this.speciesXPGroupComboBox);
+            this.pokemonTabPage.Controls.Add(this.label26);
+            this.pokemonTabPage.Controls.Add(this.label25);
+            this.pokemonTabPage.Controls.Add(this.speciesMaleAndFemaleRadioButton);
+            this.pokemonTabPage.Controls.Add(this.speciesGenderlessRadioButton);
+            this.pokemonTabPage.Controls.Add(this.speciesFemaleOnlyRadioButton);
+            this.pokemonTabPage.Controls.Add(this.speciesMaleOnlyRadioButton);
+            this.pokemonTabPage.Controls.Add(this.label24);
+            this.pokemonTabPage.Controls.Add(this.speciesHeldItem2ComboBox);
+            this.pokemonTabPage.Controls.Add(this.label23);
+            this.pokemonTabPage.Controls.Add(this.speciesHeldItem1ComboBox);
+            this.pokemonTabPage.Controls.Add(this.label22);
+            this.pokemonTabPage.Controls.Add(this.label21);
+            this.pokemonTabPage.Controls.Add(this.label20);
+            this.pokemonTabPage.Controls.Add(this.comboBox1);
+            this.pokemonTabPage.Controls.Add(this.label19);
+            this.pokemonTabPage.Controls.Add(this.speciesType1ComboBox);
+            this.pokemonTabPage.Controls.Add(this.label18);
+            this.pokemonTabPage.Controls.Add(this.label17);
+            this.pokemonTabPage.Controls.Add(this.label16);
+            this.pokemonTabPage.Controls.Add(this.label15);
+            this.pokemonTabPage.Controls.Add(this.label14);
+            this.pokemonTabPage.Controls.Add(this.label13);
+            this.pokemonTabPage.Controls.Add(this.speciesRunChanceNumericNoArrows);
+            this.pokemonTabPage.Controls.Add(this.speciesHappinessNumericNoArrows);
+            this.pokemonTabPage.Controls.Add(this.speciesGenderRatioNumericNoArrows);
+            this.pokemonTabPage.Controls.Add(this.speciesBaseXPYieldNumericNoArrows);
+            this.pokemonTabPage.Controls.Add(this.speciesCatchRateNumericNoArrows);
+            this.pokemonTabPage.Controls.Add(this.speciesSpecialDefenseNumericNoArrows);
+            this.pokemonTabPage.Controls.Add(this.speciesSpecialAttackNumericNoArrows);
+            this.pokemonTabPage.Controls.Add(this.speciesSpeedNumericNoArrows);
+            this.pokemonTabPage.Controls.Add(this.speciesDefenseNumericNoArrows);
+            this.pokemonTabPage.Controls.Add(this.speciesAttackNumericNoArrows);
+            this.pokemonTabPage.Controls.Add(this.speciesHPNumericNoArrows);
+            this.pokemonTabPage.Location = new System.Drawing.Point(4, 22);
+            this.pokemonTabPage.Name = "pokemonTabPage";
+            this.pokemonTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.pokemonTabPage.Size = new System.Drawing.Size(817, 475);
+            this.pokemonTabPage.TabIndex = 1;
+            this.pokemonTabPage.Text = "Pokemon";
+            this.pokemonTabPage.UseVisualStyleBackColor = true;
             // 
             // label35
             // 
@@ -1217,8 +1215,8 @@
             this.Name = "MainForm";
             this.Text = "Pokemon Sinjoh Editor";
             this.mainTabControl.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.movesTabPage.ResumeLayout(false);
+            this.movesTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).EndInit();
@@ -1226,8 +1224,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.pokemonTabPage.ResumeLayout(false);
+            this.pokemonTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesRunChanceNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHappinessNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).EndInit();
@@ -1249,8 +1247,8 @@
         #endregion
 
         private System.Windows.Forms.TabControl mainTabControl;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage movesTabPage;
+        private System.Windows.Forms.TabPage pokemonTabPage;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
