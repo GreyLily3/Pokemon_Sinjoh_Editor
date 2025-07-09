@@ -1,4 +1,4 @@
-# DS_Pokemon_Stat_Editor
+# Pokemon Sinjoh Editor
 
 Planned features:
 
