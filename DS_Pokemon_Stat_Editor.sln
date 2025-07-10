@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS_Pokemon_Stat_Editor", "DS_Pokemon_Stat_Editor\DS_Pokemon_Stat_Editor.csproj", "{8DD4618F-39BA-4207-918C-91030751A3E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon_Sinjoh_Editor", "DS_Pokemon_Stat_Editor\Pokemon_Sinjoh_Editor.csproj", "{8DD4618F-39BA-4207-918C-91030751A3E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
