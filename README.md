@@ -1,8 +1,12 @@
 # Pokemon Sinjoh Editor
 
-Planned features:
+**Currently Implemented:**
 
 -Move editor (change pp, power, type, etc.)
+
+
+
+**Planned features:**
 
 -Pokemon editor (types, held wild items, base stats, etc.)
 
