@@ -15,7 +15,7 @@ namespace DS_Pokemon_Stat_Editor
         public byte Type;
         public byte Accuracy;
         public sbyte Priority;
-        private byte contestEffect;
+        public byte ContestEffect;
         public Categories Category;
         public ContestConditions ContestCondition;
         public Targets Target;
@@ -97,13 +97,6 @@ namespace DS_Pokemon_Stat_Editor
         }
 
         #endregion
-
-        public byte ContestEffect
-        {
-            get => (byte)(contestEffect - 1);
-
-            set => contestEffect = (byte)(value + 1);
-        }
 
         public bool ContactFlag
         {
@@ -226,7 +219,7 @@ namespace DS_Pokemon_Stat_Editor
             Accuracy = 0;
             Type = 0;
             Priority = 0;
-            contestEffect = 0;
+            ContestEffect = 0;
             Category = 0;
             ContestCondition = 0;
             Target = 0;
@@ -309,7 +302,7 @@ namespace DS_Pokemon_Stat_Editor
                     Target = (Targets)moveBinaryReader.ReadUInt16();
                     Priority = moveBinaryReader.ReadSByte();
                     flags = (Flags)moveBinaryReader.ReadByte();
-                    contestEffect = moveBinaryReader.ReadByte();
+                    ContestEffect = moveBinaryReader.ReadByte();
                     ContestCondition = (ContestConditions)moveBinaryReader.ReadByte();
                 }
 
@@ -328,7 +321,7 @@ namespace DS_Pokemon_Stat_Editor
                 moveBinaryWriter.Write((ushort)Target);
                 moveBinaryWriter.Write(Priority);
                 moveBinaryWriter.Write((byte)flags);
-                moveBinaryWriter.Write(contestEffect);
+                moveBinaryWriter.Write(ContestEffect);
                 moveBinaryWriter.Write((byte)ContestCondition);
                 moveBinaryWriter.Write((ushort)0x0000);
             }
@@ -365,7 +358,7 @@ namespace DS_Pokemon_Stat_Editor
             if (!string.Equals(comparingMove.ContestCondition, ContestCondition.ToString()))
                 return false;
 
-            if (comparingMove.contestEffect != contestEffect)
+            if (comparingMove.ContestEffect != ContestEffect)
                 return false;
 
             if (comparingMove.ContactFlag != ContactFlag)
@@ -408,7 +401,7 @@ namespace DS_Pokemon_Stat_Editor
                 + "Priority=" + Priority + Environment.NewLine
                 + "Target=" + Target + Environment.NewLine
                 + "Contest condition=" + ContestCondition + Environment.NewLine
-                + "Contest Effect=" + contestEffect + Environment.NewLine
+                + "Contest Effect=" + ContestEffect + Environment.NewLine
                 + "Makes contact=" + ContactFlag + Environment.NewLine
                 + "Affected by protect=" + ProtectFlag + Environment.NewLine
                 + "Affected by magic coat=" + MagicCoatFlag + Environment.NewLine
