@@ -58,6 +58,36 @@ namespace DS_Pokemon_Stat_Editor
 
         public static bool[] DoesEffectCalcDamage { get; private set; } = new bool[277];
 
+        public static int TargetEnumToIndexValue(Targets targetVal)
+        {
+            //just restorting to using a switch expression because I've spent 3 hours trying to figure out an equation
+            return targetVal switch
+            {
+                Targets.FOE_OR_ALLY => 0,
+                Targets.OTHER => 1,
+                Targets.RANDOM => 2,
+                Targets.ALL_FOES => 3,
+                Targets.ALL_OTHERS => 4,
+                Targets.SELF => 5,
+                Targets.SELF_AND_ALLY => 6,
+                Targets.ALL => 7,
+                Targets.FOE_SIDE => 8,
+                Targets.ALLY => 9,
+                Targets.SELF_OR_ALLY => 10,
+                Targets.ANY_FOE => 11,
+                _ => -1
+            };
+        }
+
+        public static Targets IndexValueToTargetEnum(int index)
+        {
+            //have to check for 0 because Math.pow doesn't support negative exponents
+            if (index == 0)
+                return 0;
+            else
+                return (Targets)((int)Math.Pow(2, index - 1));
+        }
+
         #region enums
         public enum Categories
         {
