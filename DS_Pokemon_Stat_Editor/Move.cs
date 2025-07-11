@@ -25,7 +25,7 @@ namespace DS_Pokemon_Stat_Editor
         private static string[] EffectDescriptions;
         private static bool[] DoEffectsCalcDamage;
 
-        private const int NUM_EFFECTS = 276;
+        public const int NUM_EFFECTS = 276;
       
 
         public static string[] ContestEffectDescriptions { get; private set; } = new string[] 

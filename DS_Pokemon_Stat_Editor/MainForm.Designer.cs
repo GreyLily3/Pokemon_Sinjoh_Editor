@@ -36,21 +36,15 @@
             this.moveTargetComboBox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.movePriorityNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
             this.label9 = new System.Windows.Forms.Label();
             this.moveCategoryComboBox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.moveEffectChanceNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
             this.label7 = new System.Windows.Forms.Label();
-            this.moveEffectComboBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.moveTypeComboBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.movePPNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
             this.label4 = new System.Windows.Forms.Label();
-            this.moveAccuracyNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
             this.label3 = new System.Windows.Forms.Label();
-            this.movePowerNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.moveContestConditionComboBox = new System.Windows.Forms.ComboBox();
@@ -103,6 +97,18 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openRomFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moveEffectNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.movePriorityNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.moveEffectChanceNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.movePPNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.moveAccuracyNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.movePowerNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
             this.speciesRunChanceNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
             this.speciesHappinessNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
             this.speciesGenderRatioNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
@@ -114,21 +120,17 @@
             this.speciesDefenseNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
             this.speciesAttackNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
             this.speciesHPNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openRomFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.pokemonTabPage.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.pokemonTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesRunChanceNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHappinessNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).BeginInit();
@@ -140,7 +142,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesAttackNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHPNumericNoArrows)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -155,6 +156,7 @@
             // 
             // movesTabPage
             // 
+            this.movesTabPage.Controls.Add(this.moveEffectNumericNoArrows);
             this.movesTabPage.Controls.Add(this.label12);
             this.movesTabPage.Controls.Add(this.movesComboBox);
             this.movesTabPage.Controls.Add(this.moveTargetComboBox);
@@ -166,7 +168,6 @@
             this.movesTabPage.Controls.Add(this.label8);
             this.movesTabPage.Controls.Add(this.moveEffectChanceNumericNoArrows);
             this.movesTabPage.Controls.Add(this.label7);
-            this.movesTabPage.Controls.Add(this.moveEffectComboBox);
             this.movesTabPage.Controls.Add(this.label6);
             this.movesTabPage.Controls.Add(this.moveTypeComboBox);
             this.movesTabPage.Controls.Add(this.label5);
@@ -205,6 +206,7 @@
             this.movesComboBox.Name = "movesComboBox";
             this.movesComboBox.Size = new System.Drawing.Size(121, 21);
             this.movesComboBox.TabIndex = 23;
+            this.movesComboBox.SelectedIndexChanged += new System.EventHandler(this.movesComboBox_SelectedIndexChanged);
             // 
             // moveTargetComboBox
             // 
@@ -214,6 +216,7 @@
             this.moveTargetComboBox.Name = "moveTargetComboBox";
             this.moveTargetComboBox.Size = new System.Drawing.Size(121, 21);
             this.moveTargetComboBox.TabIndex = 22;
+            this.moveTargetComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveTargetComboBox_SelectionChangeCommitted);
             // 
             // label11
             // 
@@ -233,24 +236,6 @@
             this.label10.TabIndex = 20;
             this.label10.Text = "Priority:";
             // 
-            // movePriorityNumericNoArrows
-            // 
-            this.movePriorityNumericNoArrows.InterceptArrowKeys = false;
-            this.movePriorityNumericNoArrows.Location = new System.Drawing.Point(208, 241);
-            this.movePriorityNumericNoArrows.Maximum = new decimal(new int[] {
-            127,
-            0,
-            0,
-            0});
-            this.movePriorityNumericNoArrows.Minimum = new decimal(new int[] {
-            128,
-            0,
-            0,
-            -2147483648});
-            this.movePriorityNumericNoArrows.Name = "movePriorityNumericNoArrows";
-            this.movePriorityNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePriorityNumericNoArrows.TabIndex = 19;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -268,6 +253,7 @@
             this.moveCategoryComboBox.Name = "moveCategoryComboBox";
             this.moveCategoryComboBox.Size = new System.Drawing.Size(91, 21);
             this.moveCategoryComboBox.TabIndex = 17;
+            this.moveCategoryComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveCategoryComboBox_SelectionChangeCommitted);
             // 
             // label8
             // 
@@ -278,19 +264,6 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Effect Chance:";
             // 
-            // moveEffectChanceNumericNoArrows
-            // 
-            this.moveEffectChanceNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.moveEffectChanceNumericNoArrows.InterceptArrowKeys = false;
-            this.moveEffectChanceNumericNoArrows.Location = new System.Drawing.Point(208, 187);
-            this.moveEffectChanceNumericNoArrows.Name = "moveEffectChanceNumericNoArrows";
-            this.moveEffectChanceNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveEffectChanceNumericNoArrows.TabIndex = 15;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -299,15 +272,6 @@
             this.label7.Size = new System.Drawing.Size(38, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "Effect:";
-            // 
-            // moveEffectComboBox
-            // 
-            this.moveEffectComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.moveEffectComboBox.FormattingEnabled = true;
-            this.moveEffectComboBox.Location = new System.Drawing.Point(208, 128);
-            this.moveEffectComboBox.Name = "moveEffectComboBox";
-            this.moveEffectComboBox.Size = new System.Drawing.Size(121, 21);
-            this.moveEffectComboBox.TabIndex = 13;
             // 
             // label6
             // 
@@ -326,6 +290,7 @@
             this.moveTypeComboBox.Name = "moveTypeComboBox";
             this.moveTypeComboBox.Size = new System.Drawing.Size(91, 21);
             this.moveTypeComboBox.TabIndex = 11;
+            this.moveTypeComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveTypeComboBox_SelectionChangeCommitted);
             // 
             // label5
             // 
@@ -336,34 +301,6 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "PP:";
             // 
-            // movePPNumericNoArrows
-            // 
-            this.movePPNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.InterceptArrowKeys = false;
-            this.movePPNumericNoArrows.Location = new System.Drawing.Point(52, 241);
-            this.movePPNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
-            this.movePPNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePPNumericNoArrows.TabIndex = 9;
-            this.movePPNumericNoArrows.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -373,19 +310,6 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Accuracy:";
             // 
-            // moveAccuracyNumericNoArrows
-            // 
-            this.moveAccuracyNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.moveAccuracyNumericNoArrows.InterceptArrowKeys = false;
-            this.moveAccuracyNumericNoArrows.Location = new System.Drawing.Point(52, 185);
-            this.moveAccuracyNumericNoArrows.Name = "moveAccuracyNumericNoArrows";
-            this.moveAccuracyNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveAccuracyNumericNoArrows.TabIndex = 7;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -394,24 +318,6 @@
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Power:";
-            // 
-            // movePowerNumericNoArrows
-            // 
-            this.movePowerNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePowerNumericNoArrows.InterceptArrowKeys = false;
-            this.movePowerNumericNoArrows.Location = new System.Drawing.Point(52, 128);
-            this.movePowerNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.movePowerNumericNoArrows.Name = "movePowerNumericNoArrows";
-            this.movePowerNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePowerNumericNoArrows.TabIndex = 5;
             // 
             // label2
             // 
@@ -439,6 +345,7 @@
             this.moveContestConditionComboBox.Name = "moveContestConditionComboBox";
             this.moveContestConditionComboBox.Size = new System.Drawing.Size(121, 21);
             this.moveContestConditionComboBox.TabIndex = 2;
+            this.moveContestConditionComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveContestConditionComboBox_SelectionChangeCommitted);
             // 
             // moveContestEffectComboBox
             // 
@@ -446,8 +353,9 @@
             this.moveContestEffectComboBox.FormattingEnabled = true;
             this.moveContestEffectComboBox.Location = new System.Drawing.Point(373, 128);
             this.moveContestEffectComboBox.Name = "moveContestEffectComboBox";
-            this.moveContestEffectComboBox.Size = new System.Drawing.Size(121, 21);
+            this.moveContestEffectComboBox.Size = new System.Drawing.Size(223, 21);
             this.moveContestEffectComboBox.TabIndex = 1;
+            this.moveContestEffectComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveContestEffectComboBox_SelectionChangeCommitted);
             // 
             // groupBox1
             // 
@@ -964,6 +872,146 @@
             this.label13.TabIndex = 1;
             this.label13.Text = "HP:";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(932, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openRomFileToolStripMenuItem,
+            this.saveToolStripMenuItem,
+            this.quitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // openRomFileToolStripMenuItem
+            // 
+            this.openRomFileToolStripMenuItem.Name = "openRomFileToolStripMenuItem";
+            this.openRomFileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openRomFileToolStripMenuItem.Text = "Open Rom File";
+            this.openRomFileToolStripMenuItem.Click += new System.EventHandler(this.openRomFileToolStripMenuItem_Click);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Text = "&Save";
+            // 
+            // quitToolStripMenuItem
+            // 
+            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.quitToolStripMenuItem.Text = "Quit";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // moveEffectNumericNoArrows
+            // 
+            this.moveEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.moveEffectNumericNoArrows.Location = new System.Drawing.Point(208, 129);
+            this.moveEffectNumericNoArrows.Name = "moveEffectNumericNoArrows";
+            this.moveEffectNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.moveEffectNumericNoArrows.TabIndex = 25;
+            // 
+            // movePriorityNumericNoArrows
+            // 
+            this.movePriorityNumericNoArrows.InterceptArrowKeys = false;
+            this.movePriorityNumericNoArrows.Location = new System.Drawing.Point(208, 241);
+            this.movePriorityNumericNoArrows.Maximum = new decimal(new int[] {
+            127,
+            0,
+            0,
+            0});
+            this.movePriorityNumericNoArrows.Minimum = new decimal(new int[] {
+            128,
+            0,
+            0,
+            -2147483648});
+            this.movePriorityNumericNoArrows.Name = "movePriorityNumericNoArrows";
+            this.movePriorityNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.movePriorityNumericNoArrows.TabIndex = 19;
+            // 
+            // moveEffectChanceNumericNoArrows
+            // 
+            this.moveEffectChanceNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.moveEffectChanceNumericNoArrows.InterceptArrowKeys = false;
+            this.moveEffectChanceNumericNoArrows.Location = new System.Drawing.Point(208, 187);
+            this.moveEffectChanceNumericNoArrows.Name = "moveEffectChanceNumericNoArrows";
+            this.moveEffectChanceNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.moveEffectChanceNumericNoArrows.TabIndex = 15;
+            // 
+            // movePPNumericNoArrows
+            // 
+            this.movePPNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.InterceptArrowKeys = false;
+            this.movePPNumericNoArrows.Location = new System.Drawing.Point(52, 241);
+            this.movePPNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
+            this.movePPNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.movePPNumericNoArrows.TabIndex = 9;
+            this.movePPNumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // moveAccuracyNumericNoArrows
+            // 
+            this.moveAccuracyNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.moveAccuracyNumericNoArrows.InterceptArrowKeys = false;
+            this.moveAccuracyNumericNoArrows.Location = new System.Drawing.Point(52, 185);
+            this.moveAccuracyNumericNoArrows.Name = "moveAccuracyNumericNoArrows";
+            this.moveAccuracyNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.moveAccuracyNumericNoArrows.TabIndex = 7;
+            // 
+            // movePowerNumericNoArrows
+            // 
+            this.movePowerNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePowerNumericNoArrows.InterceptArrowKeys = false;
+            this.movePowerNumericNoArrows.Location = new System.Drawing.Point(52, 128);
+            this.movePowerNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.movePowerNumericNoArrows.Name = "movePowerNumericNoArrows";
+            this.movePowerNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.movePowerNumericNoArrows.TabIndex = 5;
+            this.movePowerNumericNoArrows.Validated += new System.EventHandler(this.movePowerNumericNoArrows_Validated);
+            // 
             // speciesRunChanceNumericNoArrows
             // 
             this.speciesRunChanceNumericNoArrows.InterceptArrowKeys = false;
@@ -1157,52 +1205,6 @@
             this.speciesHPNumericNoArrows.Size = new System.Drawing.Size(65, 20);
             this.speciesHPNumericNoArrows.TabIndex = 0;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(932, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openRomFileToolStripMenuItem,
-            this.saveToolStripMenuItem,
-            this.quitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // openRomFileToolStripMenuItem
-            // 
-            this.openRomFileToolStripMenuItem.Name = "openRomFileToolStripMenuItem";
-            this.openRomFileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.openRomFileToolStripMenuItem.Text = "Open Rom File";
-            this.openRomFileToolStripMenuItem.Click += new System.EventHandler(this.openRomFileToolStripMenuItem_Click);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
-            // 
-            // quitToolStripMenuItem
-            // 
-            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.quitToolStripMenuItem.Text = "Quit";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1217,15 +1219,18 @@
             this.mainTabControl.ResumeLayout(false);
             this.movesTabPage.ResumeLayout(false);
             this.movesTabPage.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.pokemonTabPage.ResumeLayout(false);
+            this.pokemonTabPage.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.pokemonTabPage.ResumeLayout(false);
-            this.pokemonTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesRunChanceNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHappinessNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).EndInit();
@@ -1237,8 +1242,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesAttackNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHPNumericNoArrows)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1282,7 +1285,6 @@
         private System.Windows.Forms.Label label8;
         private NumericNoArrows moveEffectChanceNumericNoArrows;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox moveEffectComboBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox movesComboBox;
@@ -1337,6 +1339,7 @@
         private System.Windows.Forms.ListView speciesHMListView;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.ToolStripMenuItem openRomFileToolStripMenuItem;
+        private NumericNoArrows moveEffectNumericNoArrows;
     }
 }
 

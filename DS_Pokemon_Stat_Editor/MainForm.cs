@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,40 +13,60 @@ namespace DS_Pokemon_Stat_Editor
 {
     public partial class MainForm : Form
     {
+
         public MainForm()
         {
             InitializeComponent();
 
             mainTabControl.Enabled = false;
+
+            moveEffectNumericNoArrows.Maximum = DS_Pokemon_Stat_Editor.Move.NUM_EFFECTS;
         }
 
-        public void DisplayMoveValues(int moveIndex)
+        private void LoadMoveData()
         {
-            Move currentMove = RomFile.GetMove(moveIndex);
+            mainTabControl.Enabled = true;
 
-            movePowerNumericNoArrows.Value = currentMove.Power;
-            moveAccuracyNumericNoArrows.Value = currentMove.Accuracy;
-            movePPNumericNoArrows.Value = currentMove.PowerPoints;
-            moveTypeComboBox.SelectedIndex = currentMove.Type;
-            moveCategoryComboBox.SelectedIndex = (int)currentMove.Category;
-            moveEffectComboBox.SelectedIndex = currentMove.Effect;
-            moveEffectChanceNumericNoArrows.Value = currentMove.EffectChance;
-            movePriorityNumericNoArrows.Value = currentMove.Priority;
-            moveTargetComboBox.SelectedIndex = (int)currentMove.Target;
-            moveContestEffectComboBox.SelectedIndex = currentMove.ContestEffect;
-            moveContestConditionComboBox.SelectedIndex = (int)currentMove.ContestCondition;
+            movesComboBox.Items.AddRange(RomFile.GetMoveNames());
+            moveTypeComboBox.Items.AddRange(RomFile.GetTypeNames());
+            moveTargetComboBox.Items.AddRange(RomFile.GetMoveTargets());
+            moveContestConditionComboBox.Items.AddRange(RomFile.GetMoveContestConditions());
+            moveContestEffectComboBox.Items.AddRange(RomFile.GetMoveContestEffect());
 
-            moveContactCheckBox.Checked = currentMove.ContactFlag;
-            moveProtectCheckBox.Checked = currentMove.ProtectFlag;
-            moveMagicCoatCheckBox.Checked = currentMove.MagicCoatFlag;
-            moveSnatchCheckBox.Checked = currentMove.SnatchFlag;
-            moveMirrorMoveCheckBox.Checked = currentMove.MirrorMoveFlag;
-            moveKingsRockCheckBox.Checked = currentMove.KingsRockFlag;
-            moveHPBarCheckBox.Checked = currentMove.KeepHPBarVisibleFlag;
-            moveShadowCheckBox.Checked = currentMove.HidePokemonShadowsFlag;
+            moveCategoryComboBox.Items.Add("PHYSICAL");
+            moveCategoryComboBox.Items.Add("SPECIAL");
+            moveCategoryComboBox.Items.Add("STATUS");
+
+            DisplayMoveValues(0);
+            movesComboBox.SelectedIndex = 1; //makes pound the initially selected move
         }
 
-        public void SaveChangesToCurrentMove(int moveIndex)
+        private void DisplayMoveValues(int moveIndex)
+        {
+            
+            movePowerNumericNoArrows.Value = RomFile.MoveList[moveIndex].Power;
+            moveAccuracyNumericNoArrows.Value = RomFile.MoveList[moveIndex].Accuracy;
+            movePPNumericNoArrows.Value = RomFile.MoveList[moveIndex].PowerPoints;
+            moveTypeComboBox.SelectedIndex = RomFile.MoveList[moveIndex].Type;
+            moveCategoryComboBox.SelectedIndex = (int)RomFile.MoveList[moveIndex].Category;
+            moveEffectNumericNoArrows.Value = RomFile.MoveList[moveIndex].Effect;
+            moveEffectChanceNumericNoArrows.Value = RomFile.MoveList[moveIndex].EffectChance;
+            movePriorityNumericNoArrows.Value = RomFile.MoveList[moveIndex].Priority;
+            moveTargetComboBox.SelectedIndex = DS_Pokemon_Stat_Editor.Move.TargetEnumToIndexValue(RomFile.MoveList[moveIndex].Target);
+            moveContestEffectComboBox.SelectedIndex = RomFile.MoveList[moveIndex].ContestEffect;
+            moveContestConditionComboBox.SelectedIndex = (int)RomFile.MoveList[moveIndex].ContestCondition;
+
+            moveContactCheckBox.Checked = RomFile.MoveList[moveIndex].ContactFlag;
+            moveProtectCheckBox.Checked = RomFile.MoveList[moveIndex].ProtectFlag;
+            moveMagicCoatCheckBox.Checked = RomFile.MoveList[moveIndex].MagicCoatFlag;
+            moveSnatchCheckBox.Checked = RomFile.MoveList[moveIndex].SnatchFlag;
+            moveMirrorMoveCheckBox.Checked = RomFile.MoveList[moveIndex].MirrorMoveFlag;
+            moveKingsRockCheckBox.Checked = RomFile.MoveList[moveIndex].KingsRockFlag;
+            moveHPBarCheckBox.Checked = RomFile.MoveList[moveIndex].KeepHPBarVisibleFlag;
+            moveShadowCheckBox.Checked = RomFile.MoveList[moveIndex].HidePokemonShadowsFlag;
+        }
+
+        private void SaveChangesToCurrentMove(int moveIndex)
         {
             Move updatedMove = new Move
             {
@@ -54,7 +75,7 @@ namespace DS_Pokemon_Stat_Editor
                 PowerPoints = (byte)movePPNumericNoArrows.Value,
                 Type = (byte)moveTypeComboBox.SelectedIndex,
                 Category = (Move.Categories)moveCategoryComboBox.SelectedIndex,
-                Effect = (ushort)moveEffectComboBox.SelectedIndex,
+                Effect = (ushort)moveEffectNumericNoArrows.Value,
                 EffectChance = (byte)moveEffectChanceNumericNoArrows.Value,
                 Priority = (sbyte)movePriorityNumericNoArrows.Value,
                 Target = (Move.Targets)moveTargetComboBox.SelectedIndex,
@@ -74,17 +95,12 @@ namespace DS_Pokemon_Stat_Editor
             RomFile.UpdateMove(moveIndex, updatedMove);
         }
 
-        public void LoadMoveNames()
-        {
-            movesComboBox.Items.AddRange(RomFile.GetMoveNames());
-        }
-
-        public void IncludeGameVersionInText(string romName)
+        private void IncludeGameVersionInText(string romName)
         {
             Text = "Pokemon Stat Editor - " + romName;
         }
 
-        public void MarkUnsavedChanges()
+        private void MarkUnsavedChanges()
         {
             if (!Text.Contains("*"))
                 Text += '*';
@@ -113,8 +129,47 @@ namespace DS_Pokemon_Stat_Editor
                 else if (!RomFile.IsSupportedGameVersion())
                     MessageBox.Show("Pokemon Black/White and Black2/White2 roms are not supported due to significant differences in data structures from Gen 4.");
                 else
+                {
                     IncludeGameVersionInText(RomFile.GetGameVersion());
+                    LoadMoveData();
+                }
+                    
             }
+        }
+
+        private void moveTypeComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moveCategoryComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moveTargetComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moveContestEffectComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moveContestConditionComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
+
+        private void movePowerNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            RomFile.MoveList[movesComboBox.SelectedIndex].Power = (byte)movePowerNumericNoArrows.Value;
+        }
+
+        private void movesComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplayMoveValues(movesComboBox.SelectedIndex);
         }
     }
 }

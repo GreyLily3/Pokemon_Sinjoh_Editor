@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace DS_Pokemon_Stat_Editor
 {
@@ -16,7 +17,7 @@ namespace DS_Pokemon_Stat_Editor
 		private static GameVersions gameVersion;
         private static GameFamilies gameFamily;
 
-		private static List<Move> MoveList = new List<Move>();
+		public static List<Move> MoveList = new List<Move>();
         private static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
 
 		public static List<string> MoveNames { get; private set; }
@@ -343,9 +344,12 @@ namespace DS_Pokemon_Stat_Editor
 		public static string[] GetMoveNames() => MoveNames.ToArray();
 		public static string[] GetPokemonSpeciesNames() => PokemonNames.ToArray();
 		public static string[] GetItemNames() => ItemNames.ToArray();
+		public static string[] GetTypeNames() => TypeNames.ToArray();
 		public static string[] GetAbilityNames() => AbilityNames.ToArray();
         public static string[] GetMoveCategories() => Enum.GetNames(typeof(Move.Categories));
         public static string[] GetMoveContestConditions() => Enum.GetNames(typeof(Move.ContestConditions));
+		public static string[] GetMoveContestEffect() => Move.ContestEffectDescriptions;
         public static string[] GetMoveTargets() => Enum.GetNames(typeof(Move.Targets));
+
     }
 }
