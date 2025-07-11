@@ -38,6 +38,7 @@ namespace DS_Pokemon_Stat_Editor
             moveCategoryComboBox.Items.Add("STATUS");
 
             DisplayMoveValues(0);
+
             movesComboBox.SelectedIndex = 1; //makes pound the initially selected move
         }
 
@@ -64,35 +65,6 @@ namespace DS_Pokemon_Stat_Editor
             moveKingsRockCheckBox.Checked = RomFile.MoveList[moveIndex].KingsRockFlag;
             moveHPBarCheckBox.Checked = RomFile.MoveList[moveIndex].KeepHPBarVisibleFlag;
             moveShadowCheckBox.Checked = RomFile.MoveList[moveIndex].HidePokemonShadowsFlag;
-        }
-
-        private void SaveChangesToCurrentMove(int moveIndex)
-        {
-            Move updatedMove = new Move
-            {
-                Power = (byte)movePowerNumericNoArrows.Value,
-                Accuracy = (byte)moveAccuracyNumericNoArrows.Value,
-                PowerPoints = (byte)movePPNumericNoArrows.Value,
-                Type = (byte)moveTypeComboBox.SelectedIndex,
-                Category = (Move.Categories)moveCategoryComboBox.SelectedIndex,
-                Effect = (ushort)moveEffectNumericNoArrows.Value,
-                EffectChance = (byte)moveEffectChanceNumericNoArrows.Value,
-                Priority = (sbyte)movePriorityNumericNoArrows.Value,
-                Target = (Move.Targets)moveTargetComboBox.SelectedIndex,
-                ContestEffect = (byte)moveContestEffectComboBox.SelectedIndex,
-                ContestCondition = (Move.ContestConditions)moveContestConditionComboBox.SelectedIndex,
-
-                ContactFlag = moveContactCheckBox.Checked,
-                ProtectFlag = moveProtectCheckBox.Checked,
-                MagicCoatFlag = moveMagicCoatCheckBox.Checked,
-                SnatchFlag = moveSnatchCheckBox.Checked,
-                MirrorMoveFlag = moveMirrorMoveCheckBox.Checked,
-                KingsRockFlag = moveKingsRockCheckBox.Checked,
-                KeepHPBarVisibleFlag = moveHPBarCheckBox.Checked,
-                HidePokemonShadowsFlag = moveShadowCheckBox.Checked
-            };
-
-            RomFile.UpdateMove(moveIndex, updatedMove);
         }
 
         private void IncludeGameVersionInText(string romName)
@@ -137,39 +109,146 @@ namespace DS_Pokemon_Stat_Editor
             }
         }
 
+        private void movesComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplayMoveValues(movesComboBox.SelectedIndex);
+        }
+
+
+
+
         private void moveTypeComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
+            RomFile.MoveList[movesComboBox.SelectedIndex].Type = (byte)moveTypeComboBox.SelectedIndex;
+            MarkUnsavedChanges();
         }
 
         private void moveCategoryComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
+            RomFile.MoveList[movesComboBox.SelectedIndex].Category = (Move.Categories)moveCategoryComboBox.SelectedIndex;
+            MarkUnsavedChanges();
         }
 
         private void moveTargetComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
+            RomFile.MoveList[movesComboBox.SelectedIndex].Target = DS_Pokemon_Stat_Editor.Move.IndexValueToTargetEnum(moveTargetComboBox.SelectedIndex);
+            MarkUnsavedChanges();
         }
 
         private void moveContestEffectComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
+            RomFile.MoveList[movesComboBox.SelectedIndex].ContestEffect = (byte)moveContestEffectComboBox.SelectedIndex;
+            MarkUnsavedChanges();
         }
 
         private void moveContestConditionComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
+            RomFile.MoveList[movesComboBox.SelectedIndex].ContestCondition = (Move.ContestConditions)moveContestConditionComboBox.SelectedIndex;
+            MarkUnsavedChanges();
         }
 
         private void movePowerNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            RomFile.MoveList[movesComboBox.SelectedIndex].Power = (byte)movePowerNumericNoArrows.Value;
+            if (RomFile.MoveList[movesComboBox.SelectedIndex].Power != (byte)movePowerNumericNoArrows.Value)
+            {
+                RomFile.MoveList[movesComboBox.SelectedIndex].Power = (byte)movePowerNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+                
         }
 
-        private void movesComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void moveAccuracyNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            DisplayMoveValues(movesComboBox.SelectedIndex);
+            if (RomFile.MoveList[movesComboBox.SelectedIndex].Accuracy != (byte)moveAccuracyNumericNoArrows.Value)
+            {
+                RomFile.MoveList[movesComboBox.SelectedIndex].Accuracy = (byte)moveAccuracyNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void movePPNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.MoveList[movesComboBox.SelectedIndex].PowerPoints != (byte)movePPNumericNoArrows.Value)
+            {
+                RomFile.MoveList[movesComboBox.SelectedIndex].PowerPoints = (byte)movePPNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void moveEffectNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.MoveList[movesComboBox.SelectedIndex].Effect != (byte)moveEffectNumericNoArrows.Value)
+            {
+                RomFile.MoveList[movesComboBox.SelectedIndex].Effect = (byte)moveEffectNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+                
+        }
+
+        private void moveEffectChanceNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.MoveList[movesComboBox.SelectedIndex].EffectChance != (byte)moveEffectChanceNumericNoArrows.Value)
+            {
+                RomFile.MoveList[movesComboBox.SelectedIndex].EffectChance = (byte)moveEffectChanceNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void movePriorityNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.MoveList[movesComboBox.SelectedIndex].Priority != (sbyte)movePriorityNumericNoArrows.Value)
+            {
+                RomFile.MoveList[movesComboBox.SelectedIndex].Priority = (sbyte)movePriorityNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void moveContactCheckBox_Click(object sender, EventArgs e)
+        {
+            RomFile.MoveList[movesComboBox.SelectedIndex].ContactFlag = moveContactCheckBox.Checked;
+            MarkUnsavedChanges();
+        }
+
+        private void moveProtectCheckBox_Click(object sender, EventArgs e)
+        {
+            RomFile.MoveList[movesComboBox.SelectedIndex].ProtectFlag = moveProtectCheckBox.Checked;
+            MarkUnsavedChanges();
+        }
+
+        private void moveMagicCoatCheckBox_Click(object sender, EventArgs e)
+        {
+            RomFile.MoveList[movesComboBox.SelectedIndex].MagicCoatFlag = moveMagicCoatCheckBox.Checked;
+            MarkUnsavedChanges();
+        }
+
+        private void moveSnatchCheckBox_Click(object sender, EventArgs e)
+        {
+            RomFile.MoveList[movesComboBox.SelectedIndex].SnatchFlag = moveSnatchCheckBox.Checked;
+            MarkUnsavedChanges();
+        }
+
+        private void moveMirrorMoveCheckBox_Click(object sender, EventArgs e)
+        {
+            RomFile.MoveList[movesComboBox.SelectedIndex].MirrorMoveFlag = moveMirrorMoveCheckBox.Checked;
+            MarkUnsavedChanges();
+        }
+
+        private void moveKingsRockCheckBox_Click(object sender, EventArgs e)
+        {
+            RomFile.MoveList[movesComboBox.SelectedIndex].KingsRockFlag = moveKingsRockCheckBox.Checked;
+            MarkUnsavedChanges();
+        }
+
+        private void moveHPBarCheckBox_Click(object sender, EventArgs e)
+        {
+            RomFile.MoveList[movesComboBox.SelectedIndex].KeepHPBarVisibleFlag = moveHPBarCheckBox.Checked;
+            MarkUnsavedChanges();
+        }
+
+        private void moveShadowCheckBox_Click(object sender, EventArgs e)
+        {
+            RomFile.MoveList[movesComboBox.SelectedIndex].HidePokemonShadowsFlag = moveShadowCheckBox.Checked;
+            MarkUnsavedChanges();
         }
     }
 }

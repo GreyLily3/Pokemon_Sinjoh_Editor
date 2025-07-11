@@ -152,7 +152,7 @@
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(825, 501);
-            this.mainTabControl.TabIndex = 0;
+            this.mainTabControl.TabIndex = 100;
             // 
             // movesTabPage
             // 
@@ -205,7 +205,7 @@
             this.movesComboBox.Location = new System.Drawing.Point(52, 31);
             this.movesComboBox.Name = "movesComboBox";
             this.movesComboBox.Size = new System.Drawing.Size(121, 21);
-            this.movesComboBox.TabIndex = 23;
+            this.movesComboBox.TabIndex = 0;
             this.movesComboBox.SelectedIndexChanged += new System.EventHandler(this.movesComboBox_SelectedIndexChanged);
             // 
             // moveTargetComboBox
@@ -215,7 +215,7 @@
             this.moveTargetComboBox.Location = new System.Drawing.Point(208, 294);
             this.moveTargetComboBox.Name = "moveTargetComboBox";
             this.moveTargetComboBox.Size = new System.Drawing.Size(121, 21);
-            this.moveTargetComboBox.TabIndex = 22;
+            this.moveTargetComboBox.TabIndex = 9;
             this.moveTargetComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveTargetComboBox_SelectionChangeCommitted);
             // 
             // label11
@@ -252,7 +252,7 @@
             this.moveCategoryComboBox.Location = new System.Drawing.Point(52, 344);
             this.moveCategoryComboBox.Name = "moveCategoryComboBox";
             this.moveCategoryComboBox.Size = new System.Drawing.Size(91, 21);
-            this.moveCategoryComboBox.TabIndex = 17;
+            this.moveCategoryComboBox.TabIndex = 5;
             this.moveCategoryComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveCategoryComboBox_SelectionChangeCommitted);
             // 
             // label8
@@ -289,7 +289,7 @@
             this.moveTypeComboBox.Location = new System.Drawing.Point(52, 294);
             this.moveTypeComboBox.Name = "moveTypeComboBox";
             this.moveTypeComboBox.Size = new System.Drawing.Size(91, 21);
-            this.moveTypeComboBox.TabIndex = 11;
+            this.moveTypeComboBox.TabIndex = 4;
             this.moveTypeComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveTypeComboBox_SelectionChangeCommitted);
             // 
             // label5
@@ -344,7 +344,7 @@
             this.moveContestConditionComboBox.Location = new System.Drawing.Point(373, 184);
             this.moveContestConditionComboBox.Name = "moveContestConditionComboBox";
             this.moveContestConditionComboBox.Size = new System.Drawing.Size(121, 21);
-            this.moveContestConditionComboBox.TabIndex = 2;
+            this.moveContestConditionComboBox.TabIndex = 11;
             this.moveContestConditionComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveContestConditionComboBox_SelectionChangeCommitted);
             // 
             // moveContestEffectComboBox
@@ -354,7 +354,7 @@
             this.moveContestEffectComboBox.Location = new System.Drawing.Point(373, 128);
             this.moveContestEffectComboBox.Name = "moveContestEffectComboBox";
             this.moveContestEffectComboBox.Size = new System.Drawing.Size(223, 21);
-            this.moveContestEffectComboBox.TabIndex = 1;
+            this.moveContestEffectComboBox.TabIndex = 10;
             this.moveContestEffectComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveContestEffectComboBox_SelectionChangeCommitted);
             // 
             // groupBox1
@@ -380,9 +380,10 @@
             this.moveShadowCheckBox.Location = new System.Drawing.Point(6, 181);
             this.moveShadowCheckBox.Name = "moveShadowCheckBox";
             this.moveShadowCheckBox.Size = new System.Drawing.Size(90, 17);
-            this.moveShadowCheckBox.TabIndex = 7;
+            this.moveShadowCheckBox.TabIndex = 19;
             this.moveShadowCheckBox.Text = "Hide Shadow";
             this.moveShadowCheckBox.UseVisualStyleBackColor = true;
+            this.moveShadowCheckBox.Click += new System.EventHandler(this.moveShadowCheckBox_Click);
             // 
             // moveHPBarCheckBox
             // 
@@ -390,9 +391,10 @@
             this.moveHPBarCheckBox.Location = new System.Drawing.Point(6, 158);
             this.moveHPBarCheckBox.Name = "moveHPBarCheckBox";
             this.moveHPBarCheckBox.Size = new System.Drawing.Size(88, 17);
-            this.moveHPBarCheckBox.TabIndex = 6;
+            this.moveHPBarCheckBox.TabIndex = 18;
             this.moveHPBarCheckBox.Text = "Keep HP Bar";
             this.moveHPBarCheckBox.UseVisualStyleBackColor = true;
+            this.moveHPBarCheckBox.Click += new System.EventHandler(this.moveHPBarCheckBox_Click);
             // 
             // moveKingsRockCheckBox
             // 
@@ -400,9 +402,10 @@
             this.moveKingsRockCheckBox.Location = new System.Drawing.Point(6, 135);
             this.moveKingsRockCheckBox.Name = "moveKingsRockCheckBox";
             this.moveKingsRockCheckBox.Size = new System.Drawing.Size(140, 17);
-            this.moveKingsRockCheckBox.TabIndex = 5;
+            this.moveKingsRockCheckBox.TabIndex = 17;
             this.moveKingsRockCheckBox.Text = "Affected by King\'s Rock";
             this.moveKingsRockCheckBox.UseVisualStyleBackColor = true;
+            this.moveKingsRockCheckBox.Click += new System.EventHandler(this.moveKingsRockCheckBox_Click);
             // 
             // moveMirrorMoveCheckBox
             // 
@@ -410,9 +413,10 @@
             this.moveMirrorMoveCheckBox.Location = new System.Drawing.Point(7, 112);
             this.moveMirrorMoveCheckBox.Name = "moveMirrorMoveCheckBox";
             this.moveMirrorMoveCheckBox.Size = new System.Drawing.Size(139, 17);
-            this.moveMirrorMoveCheckBox.TabIndex = 4;
+            this.moveMirrorMoveCheckBox.TabIndex = 16;
             this.moveMirrorMoveCheckBox.Text = "Affected by Mirror Move";
             this.moveMirrorMoveCheckBox.UseVisualStyleBackColor = true;
+            this.moveMirrorMoveCheckBox.Click += new System.EventHandler(this.moveMirrorMoveCheckBox_Click);
             // 
             // moveSnatchCheckBox
             // 
@@ -420,9 +424,10 @@
             this.moveSnatchCheckBox.Location = new System.Drawing.Point(7, 89);
             this.moveSnatchCheckBox.Name = "moveSnatchCheckBox";
             this.moveSnatchCheckBox.Size = new System.Drawing.Size(117, 17);
-            this.moveSnatchCheckBox.TabIndex = 3;
+            this.moveSnatchCheckBox.TabIndex = 15;
             this.moveSnatchCheckBox.Text = "Affected by Snatch";
             this.moveSnatchCheckBox.UseVisualStyleBackColor = true;
+            this.moveSnatchCheckBox.Click += new System.EventHandler(this.moveSnatchCheckBox_Click);
             // 
             // moveMagicCoatCheckBox
             // 
@@ -430,9 +435,10 @@
             this.moveMagicCoatCheckBox.Location = new System.Drawing.Point(7, 66);
             this.moveMagicCoatCheckBox.Name = "moveMagicCoatCheckBox";
             this.moveMagicCoatCheckBox.Size = new System.Drawing.Size(137, 17);
-            this.moveMagicCoatCheckBox.TabIndex = 2;
+            this.moveMagicCoatCheckBox.TabIndex = 14;
             this.moveMagicCoatCheckBox.Text = "Affected by Magic Coat";
             this.moveMagicCoatCheckBox.UseVisualStyleBackColor = true;
+            this.moveMagicCoatCheckBox.Click += new System.EventHandler(this.moveMagicCoatCheckBox_Click);
             // 
             // moveProtectCheckBox
             // 
@@ -440,9 +446,10 @@
             this.moveProtectCheckBox.Location = new System.Drawing.Point(7, 43);
             this.moveProtectCheckBox.Name = "moveProtectCheckBox";
             this.moveProtectCheckBox.Size = new System.Drawing.Size(116, 17);
-            this.moveProtectCheckBox.TabIndex = 1;
+            this.moveProtectCheckBox.TabIndex = 13;
             this.moveProtectCheckBox.Text = "Affected by protect";
             this.moveProtectCheckBox.UseVisualStyleBackColor = true;
+            this.moveProtectCheckBox.Click += new System.EventHandler(this.moveProtectCheckBox_Click);
             // 
             // moveContactCheckBox
             // 
@@ -450,9 +457,10 @@
             this.moveContactCheckBox.Location = new System.Drawing.Point(7, 20);
             this.moveContactCheckBox.Name = "moveContactCheckBox";
             this.moveContactCheckBox.Size = new System.Drawing.Size(98, 17);
-            this.moveContactCheckBox.TabIndex = 0;
+            this.moveContactCheckBox.TabIndex = 12;
             this.moveContactCheckBox.Text = "Makes Contact";
             this.moveContactCheckBox.UseVisualStyleBackColor = true;
+            this.moveContactCheckBox.Click += new System.EventHandler(this.moveContactCheckBox_Click);
             // 
             // pokemonTabPage
             // 
@@ -927,7 +935,8 @@
             this.moveEffectNumericNoArrows.Location = new System.Drawing.Point(208, 129);
             this.moveEffectNumericNoArrows.Name = "moveEffectNumericNoArrows";
             this.moveEffectNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveEffectNumericNoArrows.TabIndex = 25;
+            this.moveEffectNumericNoArrows.TabIndex = 6;
+            this.moveEffectNumericNoArrows.Validated += new System.EventHandler(this.moveEffectNumericNoArrows_Validated);
             // 
             // movePriorityNumericNoArrows
             // 
@@ -945,7 +954,8 @@
             -2147483648});
             this.movePriorityNumericNoArrows.Name = "movePriorityNumericNoArrows";
             this.movePriorityNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePriorityNumericNoArrows.TabIndex = 19;
+            this.movePriorityNumericNoArrows.TabIndex = 8;
+            this.movePriorityNumericNoArrows.Validated += new System.EventHandler(this.movePriorityNumericNoArrows_Validated);
             // 
             // moveEffectChanceNumericNoArrows
             // 
@@ -958,7 +968,8 @@
             this.moveEffectChanceNumericNoArrows.Location = new System.Drawing.Point(208, 187);
             this.moveEffectChanceNumericNoArrows.Name = "moveEffectChanceNumericNoArrows";
             this.moveEffectChanceNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveEffectChanceNumericNoArrows.TabIndex = 15;
+            this.moveEffectChanceNumericNoArrows.TabIndex = 7;
+            this.moveEffectChanceNumericNoArrows.Validated += new System.EventHandler(this.moveEffectChanceNumericNoArrows_Validated);
             // 
             // movePPNumericNoArrows
             // 
@@ -976,12 +987,13 @@
             0});
             this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
             this.movePPNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePPNumericNoArrows.TabIndex = 9;
+            this.movePPNumericNoArrows.TabIndex = 3;
             this.movePPNumericNoArrows.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
+            this.movePPNumericNoArrows.Validated += new System.EventHandler(this.movePPNumericNoArrows_Validated);
             // 
             // moveAccuracyNumericNoArrows
             // 
@@ -994,7 +1006,8 @@
             this.moveAccuracyNumericNoArrows.Location = new System.Drawing.Point(52, 185);
             this.moveAccuracyNumericNoArrows.Name = "moveAccuracyNumericNoArrows";
             this.moveAccuracyNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveAccuracyNumericNoArrows.TabIndex = 7;
+            this.moveAccuracyNumericNoArrows.TabIndex = 2;
+            this.moveAccuracyNumericNoArrows.Validated += new System.EventHandler(this.moveAccuracyNumericNoArrows_Validated);
             // 
             // movePowerNumericNoArrows
             // 
@@ -1012,7 +1025,7 @@
             0});
             this.movePowerNumericNoArrows.Name = "movePowerNumericNoArrows";
             this.movePowerNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePowerNumericNoArrows.TabIndex = 5;
+            this.movePowerNumericNoArrows.TabIndex = 1;
             this.movePowerNumericNoArrows.Validated += new System.EventHandler(this.movePowerNumericNoArrows_Validated);
             // 
             // speciesRunChanceNumericNoArrows
