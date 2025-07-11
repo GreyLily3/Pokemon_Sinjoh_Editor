@@ -30,8 +30,10 @@ namespace DS_Pokemon_Stat_Editor
 
         public static string[] ContestEffectDescriptions { get; private set; } = new string[] 
         {
+            "N/A",
             "2 appeal, perform first next turn",
             "2 appeal, perform last next turn",
+            "Unused",
             "2 appeal, +2 if voltage went up",
             "3 appeal",
             "1 appeal, +3 for unique judge",
@@ -41,13 +43,13 @@ namespace DS_Pokemon_Stat_Editor
             "2 appeal, lower all judge voltages",
             "Double score next turn",
             "Steal voltage of previous pokemon",
-            "2 appeal, no voltage + this turn",
+            "2 appeal, no voltage gain this turn",
             "2 appeal, random order next turn",
             "2 appeal, 2x score final performance",
             "Raise score if voltage low",
             "2 appeal, +2 if first",
             "2 appeal, +2 if last",
-            "2 appeal, no voltage - this turn",
+            "2 appeal, no voltage loss this turn",
             "1 appeal, +3 if voltage raise 2x in a row",
             "Higher score the later in turn",
             "2 appeal, +3 if voltage maxed",
