@@ -1,4 +1,8 @@
-﻿using System;
+﻿//type of file used to store data within .nds format. NARC stands for Nitro ARChive
+//
+// code adapted from https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor/blob/main/DS_Map/Narc.cs
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -71,6 +75,11 @@ namespace DS_Pokemon_Stat_Editor
                 reader.Read(buffer, 0, (int)(fat.GetEndOffset(i) - fat.GetStartOffset(i)));
                 Elements.Add(new MemoryStream(buffer));
             }
+        }
+
+        public void UpdateElement(MemoryStream newElement, int index)
+        {
+            Elements[index] = newElement;
         }
 
         public void Write(BinaryWriter bw)
