@@ -323,7 +323,7 @@ namespace DS_Pokemon_Stat_Editor
 
                 public Move(MemoryStream move)
                 {
-                    using var moveBinaryReader = new BinaryReader(move);
+                    var moveBinaryReader = new BinaryReader(move, Encoding.UTF8, true);
                     Effect = moveBinaryReader.ReadUInt16();
                     Category = (Categories)moveBinaryReader.ReadByte();
                     Power = moveBinaryReader.ReadByte();
@@ -341,7 +341,7 @@ namespace DS_Pokemon_Stat_Editor
         public MemoryStream GetBinary()
         {
             var moveBinary = new MemoryStream();
-            using (var moveBinaryWriter = new BinaryWriter(moveBinary))
+            using (var moveBinaryWriter = new BinaryWriter(moveBinary, Encoding.UTF8, true))
             {
                 moveBinaryWriter.Write(Effect);
                 moveBinaryWriter.Write((byte)Category);
