@@ -15,7 +15,9 @@ namespace DS_Pokemon_Stat_Editor
 		private static NarcFile gameTextNarc;
 		private static TextArchive gameText;
 		private static GameVersions gameVersion;
-        private static GameFamilies gameFamily;
+        private static GameFamilies gameFamily = GameFamilies.NULL;
+		private static string romPath;
+		public static bool AreUnsavedChanges;
 
 		public static List<Move> MoveList = new List<Move>();
         private static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
@@ -73,12 +75,16 @@ namespace DS_Pokemon_Stat_Editor
 
 		public static void LoadNewRom(string romFilePath)
 		{
-			BinaryReader romReader = new BinaryReader(new FileStream(romFilePath, FileMode.Open));
+			romPath = romFilePath;
+			FileStream romFileStream = new FileStream(romPath, FileMode.Open); //we need to store the filestream seperately to dispose of it later
+            BinaryReader romReader = new BinaryReader(romFileStream, Encoding.UTF8, true); //leave streams open so that it doesn't close the narcfile memorystreams
 
             tryReadGameVersion(romReader);
             gameFamily = getGameFamily(gameVersion);
 
 			read(romReader);
+			romFileStream.Dispose();
+			romReader.Dispose();
         }
 
 		private enum GameVersions
@@ -178,7 +184,7 @@ namespace DS_Pokemon_Stat_Editor
 			gameTextNarc.Read(romFileReader);
 			gameText = new TextArchive(gameTextNarc);
 
-			MoveNames = gameText.TextBanks[getMoveNameTextBankID()];
+            MoveNames = gameText.TextBanks[getMoveNameTextBankID()];
 			PokemonNames = gameText.TextBanks[getPokemonNamesTextBankID()];
 			TypeNames = gameText.TextBanks[getTypeNamesTextBankID()];
 			ItemNames = gameText.TextBanks[getItemNamesTextBankID()];
@@ -189,7 +195,7 @@ namespace DS_Pokemon_Stat_Editor
 
 			foreach (MemoryStream pokemonSpecies in pokemonSpeciesNarc.Elements)
 				PokemonSpeciesList.Add(new PokemonSpecies(pokemonSpecies));
-					
+			
 		}
 
 		private static void readHeader(BinaryReader romFileReader)
@@ -338,6 +344,38 @@ namespace DS_Pokemon_Stat_Editor
         public static void UpdateMove(int moveIndex, Move updatedMove)
         {
             MoveList[moveIndex] = updatedMove;
+        }
+
+		public static void Write()
+		{
+			FileStream romFileStream = new FileStream(romPath, FileMode.Open);
+            BinaryWriter romWriter = new BinaryWriter(romFileStream, Encoding.UTF8, true);
+
+			for (int i = 0; i < MoveList.Count; i++)
+				movesNarc.Elements[i] = MoveList[i].GetBinary();
+
+            try
+			{
+				movesNarc.Write(romWriter);
+				AreUnsavedChanges = false;
+            }
+            catch (EndOfStreamException e)
+            {
+                throw new EndOfStreamException("End of file reached while attempting to save data. The file may be corrupted.\n" + e.Message);
+            }
+            catch (IOException e)
+            {
+                throw new IOException("An I/O error occured while attempting to save data. Make sure another program does not have this file loaded for editing.\n" + e.Message);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("An exception occured while attempting to save data.\n" + e.Message);
+            }
+			finally
+			{
+				romFileStream.Dispose();
+				//romWriter.Dispose();
+            }
         }
 
         public static string GetGameVersion() => gameVersion.ToString();

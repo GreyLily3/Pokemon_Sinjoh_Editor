@@ -76,6 +76,7 @@ namespace DS_Pokemon_Stat_Editor
         {
             if (!Text.Contains("*"))
                 Text += '*';
+            RomFile.AreUnsavedChanges = true;
         }
 
         private void speciesGenderlessRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -94,18 +95,17 @@ namespace DS_Pokemon_Stat_Editor
                 if (filePicker.ShowDialog() == DialogResult.OK)
                 {
                     RomFile.LoadNewRom(filePicker.FileName);
-                }
 
-                if (!RomFile.IsValidGameVersion())
-                    MessageBox.Show("File selected is not a valid DS pokemon rom. It will not be loaded.");
-                else if (!RomFile.IsSupportedGameVersion())
-                    MessageBox.Show("Pokemon Black/White and Black2/White2 roms are not supported due to significant differences in data structures from Gen 4.");
-                else
-                {
-                    IncludeGameVersionInText(RomFile.GetGameVersion());
-                    LoadMoveData();
-                }
-                    
+                    if (!RomFile.IsValidGameVersion())
+                        MessageBox.Show("File selected is not a valid DS pokemon rom. It will not be loaded.");
+                    else if (!RomFile.IsSupportedGameVersion())
+                        MessageBox.Show("Pokemon Black/White and Black2/White2 roms are not supported due to significant differences in data structures from Gen 4.");
+                    else
+                    {
+                        IncludeGameVersionInText(RomFile.GetGameVersion());
+                        LoadMoveData();
+                    }
+                }                
             }
         }
 
@@ -249,6 +249,23 @@ namespace DS_Pokemon_Stat_Editor
         {
             RomFile.MoveList[movesComboBox.SelectedIndex].HidePokemonShadowsFlag = moveShadowCheckBox.Checked;
             MarkUnsavedChanges();
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (RomFile.IsValidGameVersion() && RomFile.AreUnsavedChanges)
+            {
+                try
+                {
+                    RomFile.Write();
+                    Text = Text.Remove(Text.Length - 1);
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.ToString());
+                }
+                
+            }
         }
     }
 }
