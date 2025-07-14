@@ -267,5 +267,23 @@ namespace DS_Pokemon_Stat_Editor
                 
             }
         }
+
+        private void moveCategoryComboBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if ((Move.Categories)moveCategoryComboBox.SelectedIndex == DS_Pokemon_Stat_Editor.Move.Categories.STATUS)
+            {
+                movePowerNumericNoArrows.Enabled = false;
+                moveKingsRockCheckBox.Enabled = false;
+                moveSnatchCheckBox.Enabled = true;
+                moveMagicCoatCheckBox.Enabled = true;
+            }
+            else
+            {
+                movePowerNumericNoArrows.Enabled = true;
+                moveKingsRockCheckBox.Enabled = true;
+                moveSnatchCheckBox.Enabled = false;
+                moveMagicCoatCheckBox.Enabled = false;
+            }
+        }
     }
 }

@@ -151,7 +151,7 @@
             this.mainTabControl.Location = new System.Drawing.Point(0, 27);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(825, 501);
+            this.mainTabControl.Size = new System.Drawing.Size(932, 501);
             this.mainTabControl.TabIndex = 100;
             // 
             // movesTabPage
@@ -184,7 +184,7 @@
             this.movesTabPage.Location = new System.Drawing.Point(4, 22);
             this.movesTabPage.Name = "movesTabPage";
             this.movesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.movesTabPage.Size = new System.Drawing.Size(817, 475);
+            this.movesTabPage.Size = new System.Drawing.Size(924, 475);
             this.movesTabPage.TabIndex = 0;
             this.movesTabPage.Text = "Moves";
             this.movesTabPage.UseVisualStyleBackColor = true;
@@ -192,7 +192,7 @@
             // moveEffectNumericNoArrows
             // 
             this.moveEffectNumericNoArrows.InterceptArrowKeys = false;
-            this.moveEffectNumericNoArrows.Location = new System.Drawing.Point(208, 129);
+            this.moveEffectNumericNoArrows.Location = new System.Drawing.Point(326, 125);
             this.moveEffectNumericNoArrows.Name = "moveEffectNumericNoArrows";
             this.moveEffectNumericNoArrows.Size = new System.Drawing.Size(74, 20);
             this.moveEffectNumericNoArrows.TabIndex = 6;
@@ -201,7 +201,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(49, 15);
+            this.label12.Location = new System.Drawing.Point(323, 25);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(37, 13);
             this.label12.TabIndex = 24;
@@ -211,7 +211,7 @@
             // 
             this.movesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.movesComboBox.FormattingEnabled = true;
-            this.movesComboBox.Location = new System.Drawing.Point(52, 31);
+            this.movesComboBox.Location = new System.Drawing.Point(326, 41);
             this.movesComboBox.Name = "movesComboBox";
             this.movesComboBox.Size = new System.Drawing.Size(121, 21);
             this.movesComboBox.TabIndex = 0;
@@ -221,7 +221,7 @@
             // 
             this.moveTargetComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.moveTargetComboBox.FormattingEnabled = true;
-            this.moveTargetComboBox.Location = new System.Drawing.Point(208, 294);
+            this.moveTargetComboBox.Location = new System.Drawing.Point(326, 290);
             this.moveTargetComboBox.Name = "moveTargetComboBox";
             this.moveTargetComboBox.Size = new System.Drawing.Size(121, 21);
             this.moveTargetComboBox.TabIndex = 9;
@@ -230,7 +230,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(205, 278);
+            this.label11.Location = new System.Drawing.Point(323, 274);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 13);
             this.label11.TabIndex = 21;
@@ -239,7 +239,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(205, 225);
+            this.label10.Location = new System.Drawing.Point(323, 221);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(41, 13);
             this.label10.TabIndex = 20;
@@ -248,7 +248,7 @@
             // movePriorityNumericNoArrows
             // 
             this.movePriorityNumericNoArrows.InterceptArrowKeys = false;
-            this.movePriorityNumericNoArrows.Location = new System.Drawing.Point(208, 241);
+            this.movePriorityNumericNoArrows.Location = new System.Drawing.Point(326, 237);
             this.movePriorityNumericNoArrows.Maximum = new decimal(new int[] {
             127,
             0,
@@ -267,7 +267,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(49, 326);
+            this.label9.Location = new System.Drawing.Point(170, 324);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 13);
             this.label9.TabIndex = 18;
@@ -277,16 +277,17 @@
             // 
             this.moveCategoryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.moveCategoryComboBox.FormattingEnabled = true;
-            this.moveCategoryComboBox.Location = new System.Drawing.Point(52, 344);
+            this.moveCategoryComboBox.Location = new System.Drawing.Point(173, 342);
             this.moveCategoryComboBox.Name = "moveCategoryComboBox";
             this.moveCategoryComboBox.Size = new System.Drawing.Size(91, 21);
             this.moveCategoryComboBox.TabIndex = 5;
             this.moveCategoryComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveCategoryComboBox_SelectionChangeCommitted);
+            this.moveCategoryComboBox.SelectedValueChanged += new System.EventHandler(this.moveCategoryComboBox_SelectedValueChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(205, 168);
+            this.label8.Location = new System.Drawing.Point(323, 164);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 13);
             this.label8.TabIndex = 16;
@@ -300,7 +301,7 @@
             0,
             0});
             this.moveEffectChanceNumericNoArrows.InterceptArrowKeys = false;
-            this.moveEffectChanceNumericNoArrows.Location = new System.Drawing.Point(208, 187);
+            this.moveEffectChanceNumericNoArrows.Location = new System.Drawing.Point(326, 183);
             this.moveEffectChanceNumericNoArrows.Name = "moveEffectChanceNumericNoArrows";
             this.moveEffectChanceNumericNoArrows.Size = new System.Drawing.Size(74, 20);
             this.moveEffectChanceNumericNoArrows.TabIndex = 7;
@@ -309,7 +310,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(205, 110);
+            this.label7.Location = new System.Drawing.Point(323, 106);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 13);
             this.label7.TabIndex = 14;
@@ -318,7 +319,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(49, 278);
+            this.label6.Location = new System.Drawing.Point(170, 276);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 12;
@@ -328,7 +329,7 @@
             // 
             this.moveTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.moveTypeComboBox.FormattingEnabled = true;
-            this.moveTypeComboBox.Location = new System.Drawing.Point(52, 294);
+            this.moveTypeComboBox.Location = new System.Drawing.Point(173, 292);
             this.moveTypeComboBox.Name = "moveTypeComboBox";
             this.moveTypeComboBox.Size = new System.Drawing.Size(91, 21);
             this.moveTypeComboBox.TabIndex = 4;
@@ -337,7 +338,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(49, 225);
+            this.label5.Location = new System.Drawing.Point(170, 223);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 13);
             this.label5.TabIndex = 10;
@@ -351,7 +352,7 @@
             0,
             0});
             this.movePPNumericNoArrows.InterceptArrowKeys = false;
-            this.movePPNumericNoArrows.Location = new System.Drawing.Point(52, 241);
+            this.movePPNumericNoArrows.Location = new System.Drawing.Point(173, 239);
             this.movePPNumericNoArrows.Maximum = new decimal(new int[] {
             255,
             0,
@@ -360,17 +361,12 @@
             this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
             this.movePPNumericNoArrows.Size = new System.Drawing.Size(74, 20);
             this.movePPNumericNoArrows.TabIndex = 3;
-            this.movePPNumericNoArrows.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             this.movePPNumericNoArrows.Validated += new System.EventHandler(this.movePPNumericNoArrows_Validated);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 167);
+            this.label4.Location = new System.Drawing.Point(170, 165);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 8;
@@ -384,7 +380,7 @@
             0,
             0});
             this.moveAccuracyNumericNoArrows.InterceptArrowKeys = false;
-            this.moveAccuracyNumericNoArrows.Location = new System.Drawing.Point(52, 185);
+            this.moveAccuracyNumericNoArrows.Location = new System.Drawing.Point(173, 183);
             this.moveAccuracyNumericNoArrows.Name = "moveAccuracyNumericNoArrows";
             this.moveAccuracyNumericNoArrows.Size = new System.Drawing.Size(74, 20);
             this.moveAccuracyNumericNoArrows.TabIndex = 2;
@@ -393,7 +389,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 109);
+            this.label3.Location = new System.Drawing.Point(170, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 6;
@@ -407,7 +403,7 @@
             0,
             0});
             this.movePowerNumericNoArrows.InterceptArrowKeys = false;
-            this.movePowerNumericNoArrows.Location = new System.Drawing.Point(52, 128);
+            this.movePowerNumericNoArrows.Location = new System.Drawing.Point(173, 126);
             this.movePowerNumericNoArrows.Maximum = new decimal(new int[] {
             255,
             0,
@@ -421,7 +417,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(370, 168);
+            this.label2.Location = new System.Drawing.Point(491, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 13);
             this.label2.TabIndex = 4;
@@ -430,7 +426,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(370, 112);
+            this.label1.Location = new System.Drawing.Point(491, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 3;
@@ -440,7 +436,7 @@
             // 
             this.moveContestConditionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.moveContestConditionComboBox.FormattingEnabled = true;
-            this.moveContestConditionComboBox.Location = new System.Drawing.Point(373, 184);
+            this.moveContestConditionComboBox.Location = new System.Drawing.Point(494, 182);
             this.moveContestConditionComboBox.Name = "moveContestConditionComboBox";
             this.moveContestConditionComboBox.Size = new System.Drawing.Size(121, 21);
             this.moveContestConditionComboBox.TabIndex = 11;
@@ -450,7 +446,7 @@
             // 
             this.moveContestEffectComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.moveContestEffectComboBox.FormattingEnabled = true;
-            this.moveContestEffectComboBox.Location = new System.Drawing.Point(373, 128);
+            this.moveContestEffectComboBox.Location = new System.Drawing.Point(494, 126);
             this.moveContestEffectComboBox.Name = "moveContestEffectComboBox";
             this.moveContestEffectComboBox.Size = new System.Drawing.Size(223, 21);
             this.moveContestEffectComboBox.TabIndex = 10;
@@ -466,7 +462,7 @@
             this.groupBox1.Controls.Add(this.moveMagicCoatCheckBox);
             this.groupBox1.Controls.Add(this.moveProtectCheckBox);
             this.groupBox1.Controls.Add(this.moveContactCheckBox);
-            this.groupBox1.Location = new System.Drawing.Point(376, 244);
+            this.groupBox1.Location = new System.Drawing.Point(497, 242);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(153, 217);
             this.groupBox1.TabIndex = 0;
@@ -615,7 +611,7 @@
             this.pokemonTabPage.Location = new System.Drawing.Point(4, 22);
             this.pokemonTabPage.Name = "pokemonTabPage";
             this.pokemonTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.pokemonTabPage.Size = new System.Drawing.Size(817, 475);
+            this.pokemonTabPage.Size = new System.Drawing.Size(924, 475);
             this.pokemonTabPage.TabIndex = 1;
             this.pokemonTabPage.Text = "Pokemon";
             this.pokemonTabPage.UseVisualStyleBackColor = true;
