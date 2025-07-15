@@ -310,18 +310,6 @@ namespace DS_Pokemon_Stat_Editor
 				_ => -1
 			};
 		}
-		
-		public static void Save(BinaryWriter writer)
-		{
-			for (int i = 0; i < MoveList.Count; i++)
-				movesNarc.Elements[i] = MoveList[i].GetBinary();
-
-			for (int i = 0; i < PokemonSpeciesList.Count; i++)
-				pokemonSpeciesNarc.Elements[i] = PokemonSpeciesList[i].GetBinary();
-
-			movesNarc.Write(writer);
-			pokemonSpeciesNarc.Write(writer);
-		}
 
         public static bool IsValidGameVersion()
         {
@@ -337,13 +325,6 @@ namespace DS_Pokemon_Stat_Editor
                 return false;
             else
                 return true;
-        }
-
-        public static Move GetMove(int moveIndex) => MoveList[moveIndex];
-
-        public static void UpdateMove(int moveIndex, Move updatedMove)
-        {
-            MoveList[moveIndex] = updatedMove;
         }
 
 		public static void Write()
@@ -374,7 +355,6 @@ namespace DS_Pokemon_Stat_Editor
 			finally
 			{
 				romFileStream.Dispose();
-				//romWriter.Dispose();
             }
         }
 
