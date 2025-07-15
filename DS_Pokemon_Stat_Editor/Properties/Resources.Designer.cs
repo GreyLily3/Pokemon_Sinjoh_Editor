@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DS_Pokemon_Stat_Editor.Properties {
+namespace Pokemon_Sinjoh_Editor.Properties {
     using System;
     
     

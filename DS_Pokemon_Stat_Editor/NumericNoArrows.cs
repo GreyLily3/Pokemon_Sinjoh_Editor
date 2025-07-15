@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace DS_Pokemon_Stat_Editor
+namespace Pokemon_Sinjoh_Editor
 {
     public partial class NumericNoArrows : NumericUpDown
     {

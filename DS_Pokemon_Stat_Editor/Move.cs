@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace DS_Pokemon_Stat_Editor
+namespace Pokemon_Sinjoh_Editor
 {
     public class Move
     {

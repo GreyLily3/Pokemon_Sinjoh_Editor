@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DS_Pokemon_Stat_Editor
+namespace Pokemon_Sinjoh_Editor
 {
     internal class TextArchive
     {

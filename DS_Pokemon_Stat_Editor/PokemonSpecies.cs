@@ -6,10 +6,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static DS_Pokemon_Stat_Editor.PokemonSpecies;
+using static Pokemon_Sinjoh_Editor.PokemonSpecies;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
-namespace DS_Pokemon_Stat_Editor
+namespace Pokemon_Sinjoh_Editor
 {
     public class PokemonSpecies
     {

@@ -1,4 +1,4 @@
-﻿namespace DS_Pokemon_Stat_Editor
+﻿namespace Pokemon_Sinjoh_Editor
 {
     partial class NumericNoArrows
     {

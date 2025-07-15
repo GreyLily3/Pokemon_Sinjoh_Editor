@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace DS_Pokemon_Stat_Editor
+namespace Pokemon_Sinjoh_Editor
 {
     public partial class MainForm : Form
     {
@@ -12,7 +12,7 @@ namespace DS_Pokemon_Stat_Editor
 
             mainTabControl.Enabled = false;
 
-            moveEffectNumericNoArrows.Maximum = DS_Pokemon_Stat_Editor.Move.NUM_EFFECTS;
+            moveEffectNumericNoArrows.Maximum = Pokemon_Sinjoh_Editor.Move.NUM_EFFECTS;
 
             movePowerTooltip.SetToolTip(movePowerNumericNoArrows, "The base damage of the move. Whether or not this field is used for an attack is determined by the move effect");            
             moveAccuracyTooltip.SetToolTip(moveAccuracyNumericNoArrows, "The chance of a move working on an enemy/enemies. Moves that target the User or User and Allies ignore this field");
@@ -64,7 +64,7 @@ namespace DS_Pokemon_Stat_Editor
             moveEffectNumericNoArrows.Value = RomFile.MoveList[moveIndex].Effect;
             moveEffectChanceNumericNoArrows.Value = RomFile.MoveList[moveIndex].EffectChance;
             movePriorityNumericNoArrows.Value = RomFile.MoveList[moveIndex].Priority;
-            moveTargetComboBox.SelectedIndex = DS_Pokemon_Stat_Editor.Move.TargetEnumToIndexValue(RomFile.MoveList[moveIndex].Target);
+            moveTargetComboBox.SelectedIndex = Pokemon_Sinjoh_Editor.Move.TargetEnumToIndexValue(RomFile.MoveList[moveIndex].Target);
             moveContestEffectComboBox.SelectedIndex = RomFile.MoveList[moveIndex].ContestEffect;
             moveContestConditionComboBox.SelectedIndex = (int)RomFile.MoveList[moveIndex].ContestCondition;
 
@@ -157,7 +157,7 @@ namespace DS_Pokemon_Stat_Editor
 
         private void moveTargetComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            RomFile.MoveList[movesComboBox.SelectedIndex].Target = DS_Pokemon_Stat_Editor.Move.IndexValueToTargetEnum(moveTargetComboBox.SelectedIndex);
+            RomFile.MoveList[movesComboBox.SelectedIndex].Target = Pokemon_Sinjoh_Editor.Move.IndexValueToTargetEnum(moveTargetComboBox.SelectedIndex);
             MarkUnsavedChanges();
         }
 
@@ -296,7 +296,7 @@ namespace DS_Pokemon_Stat_Editor
 
         private void moveCategoryComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
-            if ((Move.Categories)moveCategoryComboBox.SelectedIndex == DS_Pokemon_Stat_Editor.Move.Categories.STATUS)
+            if ((Move.Categories)moveCategoryComboBox.SelectedIndex == Pokemon_Sinjoh_Editor.Move.Categories.STATUS)
             {
                 movePowerNumericNoArrows.Enabled = false;
                 moveKingsRockCheckBox.Enabled = false;

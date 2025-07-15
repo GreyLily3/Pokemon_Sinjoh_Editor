@@ -1,7 +1,7 @@
 ﻿using System.IO;
 
 
-namespace DS_Pokemon_Stat_Editor
+namespace Pokemon_Sinjoh_Editor
 {
     internal class FAT //File Allocation Table
     {

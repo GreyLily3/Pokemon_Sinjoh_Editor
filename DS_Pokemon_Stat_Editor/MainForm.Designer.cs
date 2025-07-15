@@ -1,4 +1,4 @@
-﻿namespace DS_Pokemon_Stat_Editor
+﻿namespace Pokemon_Sinjoh_Editor
 {
     partial class MainForm
     {
@@ -32,26 +32,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.movesTabPage = new System.Windows.Forms.TabPage();
-            this.moveEffectNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.moveEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveSelectedLabel = new System.Windows.Forms.Label();
             this.movesComboBox = new System.Windows.Forms.ComboBox();
             this.moveTargetComboBox = new System.Windows.Forms.ComboBox();
             this.moveTargetLabel = new System.Windows.Forms.Label();
             this.movePriorityLabel = new System.Windows.Forms.Label();
-            this.movePriorityNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.movePriorityNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveCategoryLabel = new System.Windows.Forms.Label();
             this.moveCategoryComboBox = new System.Windows.Forms.ComboBox();
             this.moveEffectChanceLabel = new System.Windows.Forms.Label();
-            this.moveEffectChanceNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.moveEffectChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveEffectLabel = new System.Windows.Forms.Label();
             this.moveTypeLabel = new System.Windows.Forms.Label();
             this.moveTypeComboBox = new System.Windows.Forms.ComboBox();
             this.movePPLabel = new System.Windows.Forms.Label();
-            this.movePPNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.movePPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveAccuracyLabel = new System.Windows.Forms.Label();
-            this.moveAccuracyNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.moveAccuracyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.movePowerLabel = new System.Windows.Forms.Label();
-            this.movePowerNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.movePowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveContestConditionLabel = new System.Windows.Forms.Label();
             this.moveContestEffectLabel = new System.Windows.Forms.Label();
             this.moveContestConditionComboBox = new System.Windows.Forms.ComboBox();
@@ -104,17 +104,17 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.speciesRunChanceNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.speciesHappinessNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.speciesGenderRatioNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.speciesBaseXPYieldNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.speciesCatchRateNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.speciesSpecialDefenseNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.speciesSpecialAttackNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.speciesSpeedNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.speciesDefenseNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.speciesAttackNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.speciesHPNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
+            this.speciesRunChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesHappinessNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesGenderRatioNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesBaseXPYieldNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesCatchRateNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpeedNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesHPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openRomFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
