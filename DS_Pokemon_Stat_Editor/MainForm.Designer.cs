@@ -32,30 +32,30 @@
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.movesTabPage = new System.Windows.Forms.TabPage();
             this.moveEffectNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.label12 = new System.Windows.Forms.Label();
+            this.moveSelectedLabel = new System.Windows.Forms.Label();
             this.movesComboBox = new System.Windows.Forms.ComboBox();
             this.moveTargetComboBox = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.moveTargetLabel = new System.Windows.Forms.Label();
+            this.movePriorityLabel = new System.Windows.Forms.Label();
             this.movePriorityNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.label9 = new System.Windows.Forms.Label();
+            this.moveCategoryLabel = new System.Windows.Forms.Label();
             this.moveCategoryComboBox = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.moveEffectChanceLabel = new System.Windows.Forms.Label();
             this.moveEffectChanceNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.moveEffectLabel = new System.Windows.Forms.Label();
+            this.moveTypeLabel = new System.Windows.Forms.Label();
             this.moveTypeComboBox = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.movePPLabel = new System.Windows.Forms.Label();
             this.movePPNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.label4 = new System.Windows.Forms.Label();
+            this.moveAccuracyLabel = new System.Windows.Forms.Label();
             this.moveAccuracyNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.label3 = new System.Windows.Forms.Label();
+            this.movePowerLabel = new System.Windows.Forms.Label();
             this.movePowerNumericNoArrows = new DS_Pokemon_Stat_Editor.NumericNoArrows();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.moveContestConditionLabel = new System.Windows.Forms.Label();
+            this.moveContestEffectLabel = new System.Windows.Forms.Label();
             this.moveContestConditionComboBox = new System.Windows.Forms.ComboBox();
             this.moveContestEffectComboBox = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.moveFlagsGroupBox = new System.Windows.Forms.GroupBox();
             this.moveShadowCheckBox = new System.Windows.Forms.CheckBox();
             this.moveHPBarCheckBox = new System.Windows.Forms.CheckBox();
             this.moveKingsRockCheckBox = new System.Windows.Forms.CheckBox();
@@ -128,7 +128,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.moveFlagsGroupBox.SuspendLayout();
             this.pokemonTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesRunChanceNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHappinessNumericNoArrows)).BeginInit();
@@ -157,30 +157,30 @@
             // movesTabPage
             // 
             this.movesTabPage.Controls.Add(this.moveEffectNumericNoArrows);
-            this.movesTabPage.Controls.Add(this.label12);
+            this.movesTabPage.Controls.Add(this.moveSelectedLabel);
             this.movesTabPage.Controls.Add(this.movesComboBox);
             this.movesTabPage.Controls.Add(this.moveTargetComboBox);
-            this.movesTabPage.Controls.Add(this.label11);
-            this.movesTabPage.Controls.Add(this.label10);
+            this.movesTabPage.Controls.Add(this.moveTargetLabel);
+            this.movesTabPage.Controls.Add(this.movePriorityLabel);
             this.movesTabPage.Controls.Add(this.movePriorityNumericNoArrows);
-            this.movesTabPage.Controls.Add(this.label9);
+            this.movesTabPage.Controls.Add(this.moveCategoryLabel);
             this.movesTabPage.Controls.Add(this.moveCategoryComboBox);
-            this.movesTabPage.Controls.Add(this.label8);
+            this.movesTabPage.Controls.Add(this.moveEffectChanceLabel);
             this.movesTabPage.Controls.Add(this.moveEffectChanceNumericNoArrows);
-            this.movesTabPage.Controls.Add(this.label7);
-            this.movesTabPage.Controls.Add(this.label6);
+            this.movesTabPage.Controls.Add(this.moveEffectLabel);
+            this.movesTabPage.Controls.Add(this.moveTypeLabel);
             this.movesTabPage.Controls.Add(this.moveTypeComboBox);
-            this.movesTabPage.Controls.Add(this.label5);
+            this.movesTabPage.Controls.Add(this.movePPLabel);
             this.movesTabPage.Controls.Add(this.movePPNumericNoArrows);
-            this.movesTabPage.Controls.Add(this.label4);
+            this.movesTabPage.Controls.Add(this.moveAccuracyLabel);
             this.movesTabPage.Controls.Add(this.moveAccuracyNumericNoArrows);
-            this.movesTabPage.Controls.Add(this.label3);
+            this.movesTabPage.Controls.Add(this.movePowerLabel);
             this.movesTabPage.Controls.Add(this.movePowerNumericNoArrows);
-            this.movesTabPage.Controls.Add(this.label2);
-            this.movesTabPage.Controls.Add(this.label1);
+            this.movesTabPage.Controls.Add(this.moveContestConditionLabel);
+            this.movesTabPage.Controls.Add(this.moveContestEffectLabel);
             this.movesTabPage.Controls.Add(this.moveContestConditionComboBox);
             this.movesTabPage.Controls.Add(this.moveContestEffectComboBox);
-            this.movesTabPage.Controls.Add(this.groupBox1);
+            this.movesTabPage.Controls.Add(this.moveFlagsGroupBox);
             this.movesTabPage.Location = new System.Drawing.Point(4, 22);
             this.movesTabPage.Name = "movesTabPage";
             this.movesTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -198,14 +198,14 @@
             this.moveEffectNumericNoArrows.TabIndex = 6;
             this.moveEffectNumericNoArrows.Validated += new System.EventHandler(this.moveEffectNumericNoArrows_Validated);
             // 
-            // label12
+            // moveSelectedLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(323, 25);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(37, 13);
-            this.label12.TabIndex = 24;
-            this.label12.Text = "Move:";
+            this.moveSelectedLabel.AutoSize = true;
+            this.moveSelectedLabel.Location = new System.Drawing.Point(323, 25);
+            this.moveSelectedLabel.Name = "moveSelectedLabel";
+            this.moveSelectedLabel.Size = new System.Drawing.Size(37, 13);
+            this.moveSelectedLabel.TabIndex = 24;
+            this.moveSelectedLabel.Text = "Move:";
             // 
             // movesComboBox
             // 
@@ -227,23 +227,23 @@
             this.moveTargetComboBox.TabIndex = 9;
             this.moveTargetComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveTargetComboBox_SelectionChangeCommitted);
             // 
-            // label11
+            // moveTargetLabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(323, 274);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 13);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Target:";
+            this.moveTargetLabel.AutoSize = true;
+            this.moveTargetLabel.Location = new System.Drawing.Point(323, 274);
+            this.moveTargetLabel.Name = "moveTargetLabel";
+            this.moveTargetLabel.Size = new System.Drawing.Size(41, 13);
+            this.moveTargetLabel.TabIndex = 21;
+            this.moveTargetLabel.Text = "Target:";
             // 
-            // label10
+            // movePriorityLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(323, 221);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Priority:";
+            this.movePriorityLabel.AutoSize = true;
+            this.movePriorityLabel.Location = new System.Drawing.Point(323, 221);
+            this.movePriorityLabel.Name = "movePriorityLabel";
+            this.movePriorityLabel.Size = new System.Drawing.Size(41, 13);
+            this.movePriorityLabel.TabIndex = 20;
+            this.movePriorityLabel.Text = "Priority:";
             // 
             // movePriorityNumericNoArrows
             // 
@@ -264,14 +264,14 @@
             this.movePriorityNumericNoArrows.TabIndex = 8;
             this.movePriorityNumericNoArrows.Validated += new System.EventHandler(this.movePriorityNumericNoArrows_Validated);
             // 
-            // label9
+            // moveCategoryLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(170, 324);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Category:";
+            this.moveCategoryLabel.AutoSize = true;
+            this.moveCategoryLabel.Location = new System.Drawing.Point(170, 324);
+            this.moveCategoryLabel.Name = "moveCategoryLabel";
+            this.moveCategoryLabel.Size = new System.Drawing.Size(52, 13);
+            this.moveCategoryLabel.TabIndex = 18;
+            this.moveCategoryLabel.Text = "Category:";
             // 
             // moveCategoryComboBox
             // 
@@ -284,14 +284,14 @@
             this.moveCategoryComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveCategoryComboBox_SelectionChangeCommitted);
             this.moveCategoryComboBox.SelectedValueChanged += new System.EventHandler(this.moveCategoryComboBox_SelectedValueChanged);
             // 
-            // label8
+            // moveEffectChanceLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(323, 164);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 13);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Effect Chance:";
+            this.moveEffectChanceLabel.AutoSize = true;
+            this.moveEffectChanceLabel.Location = new System.Drawing.Point(323, 164);
+            this.moveEffectChanceLabel.Name = "moveEffectChanceLabel";
+            this.moveEffectChanceLabel.Size = new System.Drawing.Size(78, 13);
+            this.moveEffectChanceLabel.TabIndex = 16;
+            this.moveEffectChanceLabel.Text = "Effect Chance:";
             // 
             // moveEffectChanceNumericNoArrows
             // 
@@ -307,23 +307,23 @@
             this.moveEffectChanceNumericNoArrows.TabIndex = 7;
             this.moveEffectChanceNumericNoArrows.Validated += new System.EventHandler(this.moveEffectChanceNumericNoArrows_Validated);
             // 
-            // label7
+            // moveEffectLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(323, 106);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Effect:";
+            this.moveEffectLabel.AutoSize = true;
+            this.moveEffectLabel.Location = new System.Drawing.Point(323, 106);
+            this.moveEffectLabel.Name = "moveEffectLabel";
+            this.moveEffectLabel.Size = new System.Drawing.Size(38, 13);
+            this.moveEffectLabel.TabIndex = 14;
+            this.moveEffectLabel.Text = "Effect:";
             // 
-            // label6
+            // moveTypeLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(170, 276);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Type:";
+            this.moveTypeLabel.AutoSize = true;
+            this.moveTypeLabel.Location = new System.Drawing.Point(170, 276);
+            this.moveTypeLabel.Name = "moveTypeLabel";
+            this.moveTypeLabel.Size = new System.Drawing.Size(34, 13);
+            this.moveTypeLabel.TabIndex = 12;
+            this.moveTypeLabel.Text = "Type:";
             // 
             // moveTypeComboBox
             // 
@@ -335,14 +335,14 @@
             this.moveTypeComboBox.TabIndex = 4;
             this.moveTypeComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveTypeComboBox_SelectionChangeCommitted);
             // 
-            // label5
+            // movePPLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(170, 223);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "PP:";
+            this.movePPLabel.AutoSize = true;
+            this.movePPLabel.Location = new System.Drawing.Point(170, 223);
+            this.movePPLabel.Name = "movePPLabel";
+            this.movePPLabel.Size = new System.Drawing.Size(24, 13);
+            this.movePPLabel.TabIndex = 10;
+            this.movePPLabel.Text = "PP:";
             // 
             // movePPNumericNoArrows
             // 
@@ -363,14 +363,14 @@
             this.movePPNumericNoArrows.TabIndex = 3;
             this.movePPNumericNoArrows.Validated += new System.EventHandler(this.movePPNumericNoArrows_Validated);
             // 
-            // label4
+            // moveAccuracyLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(170, 165);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Accuracy:";
+            this.moveAccuracyLabel.AutoSize = true;
+            this.moveAccuracyLabel.Location = new System.Drawing.Point(170, 165);
+            this.moveAccuracyLabel.Name = "moveAccuracyLabel";
+            this.moveAccuracyLabel.Size = new System.Drawing.Size(55, 13);
+            this.moveAccuracyLabel.TabIndex = 8;
+            this.moveAccuracyLabel.Text = "Accuracy:";
             // 
             // moveAccuracyNumericNoArrows
             // 
@@ -386,14 +386,14 @@
             this.moveAccuracyNumericNoArrows.TabIndex = 2;
             this.moveAccuracyNumericNoArrows.Validated += new System.EventHandler(this.moveAccuracyNumericNoArrows_Validated);
             // 
-            // label3
+            // movePowerLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(170, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Power:";
+            this.movePowerLabel.AutoSize = true;
+            this.movePowerLabel.Location = new System.Drawing.Point(170, 107);
+            this.movePowerLabel.Name = "movePowerLabel";
+            this.movePowerLabel.Size = new System.Drawing.Size(40, 13);
+            this.movePowerLabel.TabIndex = 6;
+            this.movePowerLabel.Text = "Power:";
             // 
             // movePowerNumericNoArrows
             // 
@@ -414,23 +414,23 @@
             this.movePowerNumericNoArrows.TabIndex = 1;
             this.movePowerNumericNoArrows.Validated += new System.EventHandler(this.movePowerNumericNoArrows_Validated);
             // 
-            // label2
+            // moveContestConditionLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(491, 166);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Contest Condition:";
+            this.moveContestConditionLabel.AutoSize = true;
+            this.moveContestConditionLabel.Location = new System.Drawing.Point(491, 166);
+            this.moveContestConditionLabel.Name = "moveContestConditionLabel";
+            this.moveContestConditionLabel.Size = new System.Drawing.Size(93, 13);
+            this.moveContestConditionLabel.TabIndex = 4;
+            this.moveContestConditionLabel.Text = "Contest Condition:";
             // 
-            // label1
+            // moveContestEffectLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(491, 110);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Contest Effect:";
+            this.moveContestEffectLabel.AutoSize = true;
+            this.moveContestEffectLabel.Location = new System.Drawing.Point(491, 110);
+            this.moveContestEffectLabel.Name = "moveContestEffectLabel";
+            this.moveContestEffectLabel.Size = new System.Drawing.Size(77, 13);
+            this.moveContestEffectLabel.TabIndex = 3;
+            this.moveContestEffectLabel.Text = "Contest Effect:";
             // 
             // moveContestConditionComboBox
             // 
@@ -452,22 +452,22 @@
             this.moveContestEffectComboBox.TabIndex = 10;
             this.moveContestEffectComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveContestEffectComboBox_SelectionChangeCommitted);
             // 
-            // groupBox1
+            // moveFlagsGroupBox
             // 
-            this.groupBox1.Controls.Add(this.moveShadowCheckBox);
-            this.groupBox1.Controls.Add(this.moveHPBarCheckBox);
-            this.groupBox1.Controls.Add(this.moveKingsRockCheckBox);
-            this.groupBox1.Controls.Add(this.moveMirrorMoveCheckBox);
-            this.groupBox1.Controls.Add(this.moveSnatchCheckBox);
-            this.groupBox1.Controls.Add(this.moveMagicCoatCheckBox);
-            this.groupBox1.Controls.Add(this.moveProtectCheckBox);
-            this.groupBox1.Controls.Add(this.moveContactCheckBox);
-            this.groupBox1.Location = new System.Drawing.Point(497, 242);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(153, 217);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Move Flags";
+            this.moveFlagsGroupBox.Controls.Add(this.moveShadowCheckBox);
+            this.moveFlagsGroupBox.Controls.Add(this.moveHPBarCheckBox);
+            this.moveFlagsGroupBox.Controls.Add(this.moveKingsRockCheckBox);
+            this.moveFlagsGroupBox.Controls.Add(this.moveMirrorMoveCheckBox);
+            this.moveFlagsGroupBox.Controls.Add(this.moveSnatchCheckBox);
+            this.moveFlagsGroupBox.Controls.Add(this.moveMagicCoatCheckBox);
+            this.moveFlagsGroupBox.Controls.Add(this.moveProtectCheckBox);
+            this.moveFlagsGroupBox.Controls.Add(this.moveContactCheckBox);
+            this.moveFlagsGroupBox.Location = new System.Drawing.Point(497, 242);
+            this.moveFlagsGroupBox.Name = "moveFlagsGroupBox";
+            this.moveFlagsGroupBox.Size = new System.Drawing.Size(153, 217);
+            this.moveFlagsGroupBox.TabIndex = 0;
+            this.moveFlagsGroupBox.TabStop = false;
+            this.moveFlagsGroupBox.Text = "Move Flags";
             // 
             // moveShadowCheckBox
             // 
@@ -1238,8 +1238,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.moveFlagsGroupBox.ResumeLayout(false);
+            this.moveFlagsGroupBox.PerformLayout();
             this.pokemonTabPage.ResumeLayout(false);
             this.pokemonTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesRunChanceNumericNoArrows)).EndInit();
@@ -1270,7 +1270,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox moveFlagsGroupBox;
         private System.Windows.Forms.CheckBox moveShadowCheckBox;
         private System.Windows.Forms.CheckBox moveHPBarCheckBox;
         private System.Windows.Forms.CheckBox moveKingsRockCheckBox;
@@ -1279,27 +1279,27 @@
         private System.Windows.Forms.CheckBox moveMagicCoatCheckBox;
         private System.Windows.Forms.CheckBox moveProtectCheckBox;
         private System.Windows.Forms.CheckBox moveContactCheckBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label moveContestConditionLabel;
+        private System.Windows.Forms.Label moveContestEffectLabel;
         private System.Windows.Forms.ComboBox moveContestConditionComboBox;
         private System.Windows.Forms.ComboBox moveContestEffectComboBox;
         private System.Windows.Forms.ComboBox moveTypeComboBox;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label movePPLabel;
         private NumericNoArrows movePPNumericNoArrows;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label moveAccuracyLabel;
         private NumericNoArrows moveAccuracyNumericNoArrows;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label movePowerLabel;
         private NumericNoArrows movePowerNumericNoArrows;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label moveTargetLabel;
+        private System.Windows.Forms.Label movePriorityLabel;
         private NumericNoArrows movePriorityNumericNoArrows;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label moveCategoryLabel;
         private System.Windows.Forms.ComboBox moveCategoryComboBox;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label moveEffectChanceLabel;
         private NumericNoArrows moveEffectChanceNumericNoArrows;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label moveEffectLabel;
+        private System.Windows.Forms.Label moveTypeLabel;
+        private System.Windows.Forms.Label moveSelectedLabel;
         private System.Windows.Forms.ComboBox movesComboBox;
         private System.Windows.Forms.ComboBox moveTargetComboBox;
         private System.Windows.Forms.Label label18;
