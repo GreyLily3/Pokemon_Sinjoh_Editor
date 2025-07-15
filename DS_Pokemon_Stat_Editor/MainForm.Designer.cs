@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.movesTabPage = new System.Windows.Forms.TabPage();
@@ -120,6 +121,25 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movePowerTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveAccuracyTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.movePowerPointsTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveTypeTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveCategoryTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveEffectTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveEffectChanceTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.movePriorityTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveTargetTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveContestEffectTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveContestConditionTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveContactTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveProtectTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveMagicCoatTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveSnatchTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveMirrorMoveTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveKingsRockTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveHPBarTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveShadowTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
@@ -1353,6 +1373,25 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.ToolStripMenuItem openRomFileToolStripMenuItem;
         private NumericNoArrows moveEffectNumericNoArrows;
+        private System.Windows.Forms.ToolTip movePowerTooltip;
+        private System.Windows.Forms.ToolTip moveAccuracyTooltip;
+        private System.Windows.Forms.ToolTip movePowerPointsTooltip;
+        private System.Windows.Forms.ToolTip moveTypeTooltip;
+        private System.Windows.Forms.ToolTip moveCategoryTooltip;
+        private System.Windows.Forms.ToolTip moveEffectTooltip;
+        private System.Windows.Forms.ToolTip moveEffectChanceTooltip;
+        private System.Windows.Forms.ToolTip movePriorityTooltip;
+        private System.Windows.Forms.ToolTip moveTargetTooltip;
+        private System.Windows.Forms.ToolTip moveContestEffectTooltip;
+        private System.Windows.Forms.ToolTip moveContestConditionTooltip;
+        private System.Windows.Forms.ToolTip moveContactTooltip;
+        private System.Windows.Forms.ToolTip moveProtectTooltip;
+        private System.Windows.Forms.ToolTip moveMagicCoatTooltip;
+        private System.Windows.Forms.ToolTip moveSnatchTooltip;
+        private System.Windows.Forms.ToolTip moveMirrorMoveTooltip;
+        private System.Windows.Forms.ToolTip moveKingsRockTooltip;
+        private System.Windows.Forms.ToolTip moveHPBarTooltip;
+        private System.Windows.Forms.ToolTip moveShadowTooltip;
     }
 }
 

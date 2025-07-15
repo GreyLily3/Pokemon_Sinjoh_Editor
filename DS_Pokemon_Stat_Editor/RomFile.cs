@@ -14,8 +14,8 @@ namespace DS_Pokemon_Stat_Editor
 		private static NarcFile pokemonSpeciesNarc;
 		private static NarcFile gameTextNarc;
 		private static TextArchive gameText;
-		private static GameVersions gameVersion;
-        private static GameFamilies gameFamily = GameFamilies.NULL;
+		private static GameVersions GameVersion;
+        public static GameFamilies gameFamily = GameFamilies.NULL;
 		private static string romPath;
 		public static bool AreUnsavedChanges;
 
@@ -80,14 +80,14 @@ namespace DS_Pokemon_Stat_Editor
             BinaryReader romReader = new BinaryReader(romFileStream, Encoding.UTF8, true); //leave streams open so that it doesn't close the narcfile memorystreams
 
             tryReadGameVersion(romReader);
-            gameFamily = getGameFamily(gameVersion);
+            gameFamily = getGameFamily(GameVersion);
 
 			read(romReader);
 			romFileStream.Dispose();
 			romReader.Dispose();
         }
 
-		private enum GameVersions
+		public enum GameVersions
 		{
 			DIAMOND,
 			PEARL,
@@ -101,7 +101,7 @@ namespace DS_Pokemon_Stat_Editor
 			NULL
 		}
 
-		private enum GameFamilies
+		public enum GameFamilies
 		{
 			DP,
 			PL,
@@ -118,11 +118,11 @@ namespace DS_Pokemon_Stat_Editor
 		{
 			try
 			{
-                gameVersion = getGameVersionFromRomName(new string(romFileReader.ReadChars(ROM_NAME_LENGTH)).Replace("\0", ""));
+                GameVersion = getGameVersionFromRomName(new string(romFileReader.ReadChars(ROM_NAME_LENGTH)).Replace("\0", ""));
             }
 			catch (Exception)
 			{
-				gameVersion = GameVersions.NULL;
+				GameVersion = GameVersions.NULL;
 			}
 		}
 
@@ -234,7 +234,7 @@ namespace DS_Pokemon_Stat_Editor
 
 		private static uint getSpeciesNarcOffset()
 		{
-			return gameVersion switch
+			return GameVersion switch
 			{
 				GameVersions.DIAMOND => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_DIAMOND),
 				GameVersions.PEARL => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_PEARL),
@@ -358,7 +358,7 @@ namespace DS_Pokemon_Stat_Editor
             }
         }
 
-        public static string GetGameVersion() => gameVersion.ToString();
+        public static string GetGameVersion() => GameVersion.ToString();
 		public static string[] GetMoveNames() => MoveNames.ToArray();
 		public static string[] GetPokemonSpeciesNames() => PokemonNames.ToArray();
 		public static string[] GetItemNames() => ItemNames.ToArray();
