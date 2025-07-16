@@ -47,7 +47,8 @@ namespace Pokemon_Sinjoh_Editor
             moveCategoryComboBox.Items.Add("SPECIAL");
             moveCategoryComboBox.Items.Add("STATUS");
 
-            DisplayMoveValues(0);
+            //we need the event handler to only be set after all text is loaded into the controls
+            this.moveCategoryComboBox.SelectedValueChanged += new System.EventHandler(this.moveCategoryComboBox_SelectedValueChanged);
 
             movesComboBox.SelectedIndex = 0; //makes pound the initially selected move
         }
@@ -164,6 +165,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             RomFile.MoveList[movesComboBox.SelectedIndex].Category = (Move.Categories)moveCategoryComboBox.SelectedIndex;
             MarkUnsavedChanges();
+
+            
         }
 
         private void moveTargetComboBox_SelectionChangeCommitted(object sender, EventArgs e)
@@ -320,7 +323,13 @@ namespace Pokemon_Sinjoh_Editor
             if ((Move.Categories)moveCategoryComboBox.SelectedIndex == Pokemon_Sinjoh_Editor.Move.Categories.STATUS)
             {
                 movePowerNumericNoArrows.Enabled = false;
+                movePowerNumericNoArrows.Value = 0;
+                RomFile.MoveList[movesComboBox.SelectedIndex].Power = 0;
+
                 moveKingsRockCheckBox.Enabled = false;
+                moveKingsRockCheckBox.Checked = false;
+                RomFile.MoveList[movesComboBox.SelectedIndex].KingsRockFlag = false;
+
                 moveSnatchCheckBox.Enabled = true;
                 moveMagicCoatCheckBox.Enabled = true;
             }
@@ -328,8 +337,14 @@ namespace Pokemon_Sinjoh_Editor
             {
                 movePowerNumericNoArrows.Enabled = true;
                 moveKingsRockCheckBox.Enabled = true;
+
                 moveSnatchCheckBox.Enabled = false;
+                moveSnatchCheckBox.Checked = false;
+                RomFile.MoveList[movesComboBox.SelectedIndex].SnatchFlag = false;
+
                 moveMagicCoatCheckBox.Enabled = false;
+                moveMagicCoatCheckBox.Checked = false;
+                RomFile.MoveList[movesComboBox.SelectedIndex].MagicCoatFlag = false;
             }
         }
 

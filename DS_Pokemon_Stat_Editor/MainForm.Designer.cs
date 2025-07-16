@@ -276,7 +276,6 @@
             this.moveCategoryComboBox.Size = new System.Drawing.Size(91, 21);
             this.moveCategoryComboBox.TabIndex = 5;
             this.moveCategoryComboBox.SelectionChangeCommitted += new System.EventHandler(this.moveCategoryComboBox_SelectionChangeCommitted);
-            this.moveCategoryComboBox.SelectedValueChanged += new System.EventHandler(this.moveCategoryComboBox_SelectedValueChanged);
             // 
             // moveEffectChanceLabel
             // 
