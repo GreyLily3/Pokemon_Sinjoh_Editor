@@ -220,6 +220,8 @@
             // 
             // movesComboBox
             // 
+            this.movesComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.movesComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.movesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.movesComboBox.FormattingEnabled = true;
             this.movesComboBox.Location = new System.Drawing.Point(326, 41);
