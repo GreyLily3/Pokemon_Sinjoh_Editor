@@ -95,6 +95,20 @@ namespace Pokemon_Sinjoh_Editor
 
         private void openRomFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            DialogResult saveChanges;
+            if (RomFile.IsValidGameVersion() && RomFile.AreUnsavedChanges)
+            {
+                if (RomFile.AreUnsavedChanges)
+                {
+                    saveChanges = MessageBox.Show("There are unsaved changes to the selected ROM, do you want to save them before opening a new ROM?", "Save Changes before opening new ROM?", MessageBoxButtons.YesNoCancel);
+
+                    if (saveChanges == DialogResult.Yes)
+                        save();
+                    else if (saveChanges == DialogResult.Cancel)
+                        return;
+                }
+            }
+
             using (OpenFileDialog filePicker = new OpenFileDialog())
             {
                 filePicker.Filter = "NDS files (*.nds)|*.nds";
@@ -284,16 +298,20 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (RomFile.IsValidGameVersion() && RomFile.AreUnsavedChanges)
             {
-                try
-                {
-                    RomFile.Write();
-                    Text = Text.Remove(Text.Length - 1); //remove the * indicating unsaved changes
-                }
-                catch (Exception exception)
-                {
-                    MessageBox.Show(exception.ToString());
-                }
-                
+                save();
+            }
+        }
+
+        private void save()
+        {
+            try
+            {
+                RomFile.Write();
+                Text = Text.Remove(Text.Length - 1); //remove the * indicating unsaved changes
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.ToString());
             }
         }
 
@@ -313,6 +331,25 @@ namespace Pokemon_Sinjoh_Editor
                 moveSnatchCheckBox.Enabled = false;
                 moveMagicCoatCheckBox.Enabled = false;
             }
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult saveChanges;
+            if (RomFile.AreUnsavedChanges)
+            {
+                saveChanges = MessageBox.Show("There are unsaved changes to the selected ROM, do you want to save them before closing?", "Save Changes before Closing?", MessageBoxButtons.YesNoCancel);
+
+                if (saveChanges == DialogResult.Yes)
+                    save();
+                else if (saveChanges == DialogResult.Cancel)
+                    e.Cancel = true;
+            }
+        }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
