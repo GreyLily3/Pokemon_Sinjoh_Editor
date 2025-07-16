@@ -182,13 +182,16 @@ namespace Pokemon_Sinjoh_Editor
 			gameText = new TextArchive(gameTextNarc);
 
             MoveNames = gameText.TextBanks[getMoveNameTextBankID()];
+			MoveNames.RemoveAt(0); //remove the first entry because it's not a real move
+
 			PokemonNames = gameText.TextBanks[getPokemonNamesTextBankID()];
 			TypeNames = gameText.TextBanks[getTypeNamesTextBankID()];
 			ItemNames = gameText.TextBanks[getItemNamesTextBankID()];
 			AbilityNames = gameText.TextBanks[getAbilityNamesTextBankID()];
 
-			foreach (MemoryStream move in movesNarc.Elements)
-				MoveList.Add(new Move(move));
+			//skip the first move because it's not a real move
+			for (int i = 1; i < movesNarc.Elements.Count; i++)
+				MoveList.Add(new Move(movesNarc.Elements[i]));
 
 			foreach (MemoryStream pokemonSpecies in pokemonSpeciesNarc.Elements)
 				PokemonSpeciesList.Add(new PokemonSpecies(pokemonSpecies));
@@ -330,7 +333,7 @@ namespace Pokemon_Sinjoh_Editor
             BinaryWriter romWriter = new BinaryWriter(romFileStream, Encoding.UTF8, true);
 
 			for (int i = 0; i < MoveList.Count; i++)
-				movesNarc.Elements[i] = MoveList[i].GetBinary();
+				movesNarc.Elements[i + 1] = MoveList[i].GetBinary(); //skip the first move in movesNarc because it's not a real move
 
             try
 			{

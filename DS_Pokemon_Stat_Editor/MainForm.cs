@@ -49,7 +49,7 @@ namespace Pokemon_Sinjoh_Editor
 
             DisplayMoveValues(0);
 
-            movesComboBox.SelectedIndex = 1; //makes pound the initially selected move
+            movesComboBox.SelectedIndex = 0; //makes pound the initially selected move
         }
 
         private void DisplayMoveValues(int moveIndex)
