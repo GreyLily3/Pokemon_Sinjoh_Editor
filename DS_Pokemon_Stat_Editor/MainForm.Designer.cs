@@ -1009,9 +1009,19 @@
             0,
             0,
             0});
+            this.movePPNumericNoArrows.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
             this.movePPNumericNoArrows.Size = new System.Drawing.Size(74, 20);
             this.movePPNumericNoArrows.TabIndex = 3;
+            this.movePPNumericNoArrows.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.movePPNumericNoArrows.Validated += new System.EventHandler(this.movePPNumericNoArrows_Validated);
             // 
             // moveAccuracyNumericNoArrows
