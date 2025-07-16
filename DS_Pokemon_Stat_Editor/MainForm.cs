@@ -51,7 +51,9 @@ namespace Pokemon_Sinjoh_Editor
 			this.moveCategoryComboBox.SelectedValueChanged += new System.EventHandler(this.moveCategoryComboBox_SelectedValueChanged);
 
 			movesComboBox.SelectedIndex = 0; //makes pound the initially selected move
-		}
+			DisplayMoveValues(0); //needed to make sure the values displayed are updated when changing to a new rom without closing if Pound is selected as the move
+
+        }
 
 		private void DisplayMoveValues(int moveIndex)
 		{
