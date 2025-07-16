@@ -192,6 +192,9 @@ namespace Pokemon_Sinjoh_Editor
 			ItemNames = gameText.TextBanks[getItemNamesTextBankID()];
 			AbilityNames = gameText.TextBanks[getAbilityNamesTextBankID()];
 
+			if (MoveList.Count > 0)
+				MoveList.RemoveRange(0, MoveList.Count);
+
 			//skip the first move because it's not a real move
 			for (int i = 1; i < movesNarc.Elements.Count; i++)
 				MoveList.Add(new Move(movesNarc.Elements[i]));
