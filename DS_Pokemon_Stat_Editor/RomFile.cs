@@ -79,6 +79,9 @@ namespace Pokemon_Sinjoh_Editor
             tryReadGameVersion(romReader);
             gameFamily = getGameFamily(GameVersion);
 
+			if (!IsValidGameVersion() || !IsSupportedGameVersion())
+				return;
+
 			read(romReader);
 			romFileStream.Dispose();
 			romReader.Dispose();
