@@ -5,6 +5,7 @@ namespace Pokemon_Sinjoh_Editor
 {
     public partial class MainForm : Form
     {
+        private const int MOVE_PP_MULTIPLE = 5;
 
         public MainForm()
         {
@@ -22,16 +23,14 @@ namespace Pokemon_Sinjoh_Editor
             movePriorityTooltip.SetToolTip(movePriorityNumericNoArrows, "The order the move will be used in compared to the opponent's move. NOTE: This field is only checked if certain effects are assigned");
             moveTargetTooltip.SetToolTip(moveTargetComboBox, "What pokemon in battle the move is used on. NOTE: Moves may cause effects to pokemon other than the target, ex. Swagger confusing the user while targetting another pokemon");
             
-
             moveContactTooltip.SetToolTip(moveContactCheckBox, "If the move counts as making contact for certain abilities and held items, ex. static, rough skin, the poison barb");
             moveProtectTooltip.SetToolTip(moveProtectCheckBox, "If the move is negated when its target is using protect");
             moveMagicCoatTooltip.SetToolTip(moveMagicCoatCheckBox, "If the move can be reflected back onto the user by a target using magic coat");
             moveSnatchTooltip.SetToolTip(moveSnatchCheckBox, "If the move can be stolen by another pokemon using snatch");
             moveMirrorMoveTooltip.SetToolTip(moveMirrorMoveCheckBox, "If the move can be copied by another pokemon using mirror move on the user");
+            moveMirrorMoveTooltip.SetToolTip(moveKingsRockCheckBox, "If the flinch chance from holding the king's rock will applied when this move is used");
             moveHPBarTooltip.SetToolTip(moveHPBarCheckBox, "If both pokemons' HP bars are shown when the move's animation is playing");
             moveShadowTooltip.SetToolTip(moveShadowCheckBox, "If both pokemons' shadows are hidden when the move's animation is playing");
-
-
         }
 
         private void LoadMoveData()
@@ -55,7 +54,6 @@ namespace Pokemon_Sinjoh_Editor
 
         private void DisplayMoveValues(int moveIndex)
         {
-            
             movePowerNumericNoArrows.Value = RomFile.MoveList[moveIndex].Power;
             moveAccuracyNumericNoArrows.Value = RomFile.MoveList[moveIndex].Accuracy;
             movePPNumericNoArrows.Value = RomFile.MoveList[moveIndex].PowerPoints;
@@ -94,7 +92,6 @@ namespace Pokemon_Sinjoh_Editor
         {
 
         }
-
 
         private void openRomFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -194,6 +191,12 @@ namespace Pokemon_Sinjoh_Editor
 
         private void movePPNumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (movePPNumericNoArrows.Value % MOVE_PP_MULTIPLE != 0)
+            {
+                //if PP is not a multiple of 5 then make it the next lowest multiple of 5
+                movePPNumericNoArrows.Value -= movePPNumericNoArrows.Value % MOVE_PP_MULTIPLE;
+            }
+
             if (RomFile.MoveList[movesComboBox.SelectedIndex].PowerPoints != (byte)movePPNumericNoArrows.Value)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].PowerPoints = (byte)movePPNumericNoArrows.Value;
