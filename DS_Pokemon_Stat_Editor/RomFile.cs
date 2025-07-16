@@ -14,7 +14,7 @@ namespace Pokemon_Sinjoh_Editor
 		private static GameVersions GameVersion;
         public static GameFamilies gameFamily = GameFamilies.NULL;
 		private static string romPath;
-		public static bool AreUnsavedChanges;
+		public static bool AreUnsavedChanges = false;
 
 		public static List<Move> MoveList = new List<Move>();
         private static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
