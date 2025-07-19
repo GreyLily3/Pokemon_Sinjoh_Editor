@@ -28,9 +28,9 @@ namespace Pokemon_Sinjoh_Editor
         public ushort Item1;
         public ushort Item2;
         public byte GenderRatio;
-        public byte HatchStepsMultiplier;
+        public byte NumEggCyles;
         public byte BaseHappiness;
-        public byte XPGroup;
+        public XPGroups XPGroup;
         public EggGroups EggGroup1;
         public EggGroups EggGroup2;
         public byte Ability1;
@@ -43,6 +43,9 @@ namespace Pokemon_Sinjoh_Editor
         private const int TM_HM_TOTAL = 100;
         public const int TM_TOTAL = 92;
         public const int HM_TOTAL = 8;
+        public const byte GENDER_RATIO_MALE_ONLY = 0;
+        public const byte GENDER_RATIO_FEMALE_ONLY = 254;
+        public const byte GENDER_RATIO_GENDERLESS = 255;
 
         public enum EggGroups
         {
@@ -62,6 +65,18 @@ namespace Pokemon_Sinjoh_Editor
             DITTO,
             DRAGON,
             NO_EGG_GROUP
+        }
+
+        public enum XPGroups
+        {
+            MEDIUM_FAST,
+            ERRATIC,
+            FLUCTUATING,
+            MEDIUM_SLOW,
+            FAST,
+            SLOW,
+            UNUSED1,
+            UNUSED2
         }
 
 
@@ -89,9 +104,9 @@ namespace Pokemon_Sinjoh_Editor
             Item2 = pokemonSpeciesReader.ReadUInt16();
 
             GenderRatio = pokemonSpeciesReader.ReadByte();
-            HatchStepsMultiplier = pokemonSpeciesReader.ReadByte();
+            NumEggCyles = pokemonSpeciesReader.ReadByte();
             BaseHappiness = pokemonSpeciesReader.ReadByte();
-            XPGroup = pokemonSpeciesReader.ReadByte();
+            XPGroup = (XPGroups)pokemonSpeciesReader.ReadByte();
 
             EggGroup1 = (EggGroups)pokemonSpeciesReader.ReadByte();
             EggGroup2 = (EggGroups)pokemonSpeciesReader.ReadByte();
@@ -137,9 +152,9 @@ namespace Pokemon_Sinjoh_Editor
             pokemonSpeciesWriter.Write(Item2);
 
             pokemonSpeciesWriter.Write(GenderRatio);
-            pokemonSpeciesWriter.Write(HatchStepsMultiplier);
+            pokemonSpeciesWriter.Write(NumEggCyles);
             pokemonSpeciesWriter.Write(BaseHappiness);
-            pokemonSpeciesWriter.Write(XPGroup);
+            pokemonSpeciesWriter.Write((byte)XPGroup);
 
             pokemonSpeciesWriter.Write((byte)EggGroup1);
             pokemonSpeciesWriter.Write((byte)EggGroup2);
@@ -162,9 +177,10 @@ namespace Pokemon_Sinjoh_Editor
             return pokemonSpeciesBinary;
         }
 
-        public List<int> getLearnableTMsAndHMs()
+        /*
+        public int[] GetLearnableTMsAndHMs()
         {
-            List<int> LearnableTMAndHMIndexes = new List<int>();
+            int[] LearnableTMAndHMIndexes = new int[TM_HM_TOTAL];
 
             for (int i = 0; i < TM_HM_TOTAL; i++)
             {
@@ -176,8 +192,35 @@ namespace Pokemon_Sinjoh_Editor
 
             return LearnableTMAndHMIndexes;
         }
+        */
 
-        public void setLearnableTMsAndHMs(int[] TMAndHMIndexes)
+        public List<int> GetLearnableHMs()
+        {
+            List<int> learnableHMs = new List<int>(HM_TOTAL);
+
+            for (int i = 0; i < HM_TOTAL; i++)
+            {
+                if (learnableTMsAndHMs[TM_TOTAL + i])
+                    learnableHMs.Add(i);
+            }
+
+            return learnableHMs;
+        }
+
+        public List<int> GetLearnableTMs()
+        {
+            List<int> learnableTMs = new List<int>(TM_TOTAL);
+
+            for (int i = 0; i < TM_TOTAL; i++)
+            {
+                if (learnableTMsAndHMs[i])
+                    learnableTMs.Add(i);
+            }
+
+            return learnableTMs;
+        }
+
+        public void SetLearnableTMsAndHMs(int[] TMAndHMIndexes)
         {
             learnableTMsAndHMs.SetAll(false);
 
