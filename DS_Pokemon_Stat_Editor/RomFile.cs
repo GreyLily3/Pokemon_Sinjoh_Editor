@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Pokemon_Sinjoh_Editor
@@ -17,7 +19,7 @@ namespace Pokemon_Sinjoh_Editor
 		public static bool AreUnsavedChanges = false;
 
 		public static List<Move> MoveList = new List<Move>();
-        private static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
+        public static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
 
 		public static List<string> MoveNames { get; private set; }
 		public static List<string> PokemonNames { get; private set; }
@@ -185,9 +187,11 @@ namespace Pokemon_Sinjoh_Editor
 			gameText = new TextArchive(gameTextNarc);
 
             MoveNames = gameText.TextBanks[getMoveNameTextBankID()];
-			MoveNames.RemoveAt(0); //remove the first entry because it's not a real move
+			MoveNames.RemoveAt(0); //remove the first entry because it's a placeholder
 
 			PokemonNames = gameText.TextBanks[getPokemonNamesTextBankID()];
+			PokemonNames.RemoveAt(0); //remove the first entry because it's a placeholder
+
 			TypeNames = gameText.TextBanks[getTypeNamesTextBankID()];
 			ItemNames = gameText.TextBanks[getItemNamesTextBankID()];
 			AbilityNames = gameText.TextBanks[getAbilityNamesTextBankID()];
@@ -195,12 +199,17 @@ namespace Pokemon_Sinjoh_Editor
 			if (MoveList.Count > 0)
 				MoveList.RemoveRange(0, MoveList.Count);
 
-			//skip the first move because it's not a real move
+			//skip the first move because it's a placeholder
 			for (int i = 1; i < movesNarc.Elements.Count; i++)
 				MoveList.Add(new Move(movesNarc.Elements[i]));
 
-			foreach (MemoryStream pokemonSpecies in pokemonSpeciesNarc.Elements)
-				PokemonSpeciesList.Add(new PokemonSpecies(pokemonSpecies));
+            if (PokemonSpeciesList.Count > 0)
+                PokemonSpeciesList.RemoveRange(0, PokemonSpeciesList.Count);
+
+			//skip the first pokemon because it's a placeholder
+            for (int i = 1; i < pokemonSpeciesNarc.Elements.Count; i++)
+                PokemonSpeciesList.Add(new PokemonSpecies(pokemonSpeciesNarc.Elements[i]));
+				
 			
 		}
 
@@ -364,6 +373,111 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
+        //will replace this static list later if there's a good way to get/set what moves are set as TMs (this is stored in ARM9 binary)
+        public static string[] GetTMNames()
+		{
+			return new string[] { 
+				"TM01 Focus Punch",
+				"TM02 Dragon Claw",
+				"TM03 Water Pulse",
+				"TM04 Calm Mind",
+				"TM05 Roar",
+				"TM06 Toxic",
+				"TM07 Hail",
+				"TM08 Bulk Up",
+				"TM09 Bullet Seed",
+				"TM10 Hidden Power",
+				"TM11 Sunny Day",
+				"TM12 Taunt",
+				"TM13 Ice Beam",
+				"TM14 Blizzard",
+				"TM15 Hyper Beam",
+				"TM16 Light Screen",
+				"TM17 Protect",
+				"TM18 Rain Dance",
+				"TM19 Giga Drain",
+				"TM20 Safeguard",
+				"TM21 Frustration",
+				"TM22 SolarBeam",
+				"TM23 Iron Tail",
+				"TM24 Thunderbolt",
+				"TM25 Thunder",
+				"TM26 Earthquake",
+				"TM27 Return",
+				"TM28 Dig",
+				"TM29 Psychic",
+				"TM30 Shadow Ball",
+				"TM31 Brick Break",
+				"TM32 Double Team",
+				"TM33 Reflect",
+				"TM34 Shock Wave",
+				"TM35 Flamethrower",
+				"TM36 Sludge Bomb",
+				"TM37 Sandstorm",
+				"TM38 Fire Blast",
+				"TM39 Rock Tomb",
+				"TM40 Aerial Ace",
+				"TM41 Torment",
+				"TM42 Facade",
+				"TM43 Secret Power",
+				"TM44 Rest",
+				"TM45 Attract",
+				"TM46 Thief",
+				"TM47 Steel Wing",
+				"TM48 Skill Swap",
+				"TM49 Snatch",
+				"TM50 Overheat",
+				"TM51 Roost",
+				"TM52 Focus Blast",
+				"TM53 Energy Ball",
+				"TM54 False Swipe",
+				"TM55 Brine",
+				"TM56 Fling",
+				"TM57 Charge Beam",
+				"TM58 Endure",
+				"TM59 Dragon Pulse",
+				"TM60 Drain Punch",
+				"TM61 Will-O-Wisp",
+				"TM62 Silver Wind",
+				"TM63 Embargo",
+				"TM64 Explosion",
+				"TM65 Shadow Claw",
+				"TM66 Payback",
+				"TM67 Recycle",
+				"TM68 Giga Impact",
+				"TM69 Rock Polish",
+				"TM70 Flash",
+				"TM71 Stone Edge",
+				"TM72 Avalanche",
+				"TM73 Thunder Wave",
+				"TM74 Gyro Ball",
+				"TM75 Swords Dance",
+				"TM76 Stealth Rock",
+				"TM77 Psych Up",
+				"TM78 Captivate",
+				"TM79 Dark Pulse",
+				"TM80 Rock Slide",
+				"TM81 X-Scissor",
+				"TM82 Sleep Talk",
+				"TM83 Natural Gift",
+				"TM84 Poison Jab",
+				"TM85 Dream Eater",
+				"TM86 Grass Knot",
+				"TM87 Swagger",
+				"TM88 Pluck",
+				"TM89 U-turn",
+				"TM90 Substitute",
+				"TM91 Flash Cannon",
+				"TM92 Trick Room"
+			};
+		}
+
+		//will replace this static list later if there's a good way to get/set what moves are set as HMs (this is stored in ARM9 binary)
+        public static string[] GetHMNames()
+        {
+			return new string[] { "HM01 CUT", "HM02 FLY", "HM03 SURF", "HM04 STRENGTH", "HM05 WHIRLPOOL", "HM06 ROCK SMASH", "HM07 WATERFALL", "HM08 ROCK CLIMB" };
+        }
+
         public static string GetGameVersion() => GameVersion.ToString();
 		public static string[] GetMoveNames() => MoveNames.ToArray();
 		public static string[] GetPokemonSpeciesNames() => PokemonNames.ToArray();
@@ -374,6 +488,7 @@ namespace Pokemon_Sinjoh_Editor
         public static string[] GetMoveContestConditions() => Enum.GetNames(typeof(Move.ContestConditions));
 		public static string[] GetMoveContestEffect() => Move.ContestEffectDescriptions;
         public static string[] GetMoveTargets() => Enum.GetNames(typeof(Move.Targets));
-
+		public static string[] GetEggGroupNames() => Enum.GetNames(typeof(PokemonSpecies.EggGroups));
+		public static string[] GetXPGroupNames() => Enum.GetNames(typeof(PokemonSpecies.XPGroups));
     }
 }
