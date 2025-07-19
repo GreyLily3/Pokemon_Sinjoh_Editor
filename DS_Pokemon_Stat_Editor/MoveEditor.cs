@@ -10,8 +10,6 @@ namespace Pokemon_Sinjoh_Editor
     {
         private void LoadMoveData()
         {
-            mainTabControl.Enabled = true;
-
             movesComboBox.Items.AddRange(RomFile.GetMoveNames());
             moveTypeComboBox.Items.AddRange(RomFile.GetTypeNames());
             moveTargetComboBox.Items.AddRange(RomFile.GetMoveTargets());
