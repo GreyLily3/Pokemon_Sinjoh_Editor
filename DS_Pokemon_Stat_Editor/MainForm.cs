@@ -31,10 +31,8 @@ namespace Pokemon_Sinjoh_Editor
 			moveMirrorMoveTooltip.SetToolTip(moveKingsRockCheckBox, "If the flinch chance from holding the king's rock will applied when this move is used");
 			moveHPBarTooltip.SetToolTip(moveHPBarCheckBox, "If both pokemons' HP bars are shown when the move's animation is playing");
 			moveShadowTooltip.SetToolTip(moveShadowCheckBox, "If both pokemons' shadows are hidden when the move's animation is playing");
-		}
-
+        }
 		
-
 		private void IncludeGameVersionInText(string romName)
 		{
 			Text = "Pokemon Stat Editor - " + romName;
@@ -92,8 +90,11 @@ namespace Pokemon_Sinjoh_Editor
 					else
 					{
 						IncludeGameVersionInText(RomFile.GetGameVersion());
-						LoadMoveData();
-					}
+                        mainTabControl.Enabled = true;
+                        LoadMoveData();
+						loadSpeciesData();
+
+                    }
 				}                
 			}
 
@@ -113,10 +114,6 @@ namespace Pokemon_Sinjoh_Editor
 			}
 		}
 
-		
-
-		
-
 		private void save()
 		{
 			try
@@ -129,8 +126,6 @@ namespace Pokemon_Sinjoh_Editor
 				MessageBox.Show(exception.ToString());
 			}
 		}
-
-		
 
 		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
@@ -146,6 +141,6 @@ namespace Pokemon_Sinjoh_Editor
 			}
 		}
 
-		
-	}
+        
+    }
 }

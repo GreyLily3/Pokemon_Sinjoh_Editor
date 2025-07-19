@@ -66,6 +66,9 @@
             this.moveProtectCheckBox = new System.Windows.Forms.CheckBox();
             this.moveContactCheckBox = new System.Windows.Forms.CheckBox();
             this.speciesTabPage = new System.Windows.Forms.TabPage();
+            this.speciesHMCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.speciesTMCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.speciesComboBox = new System.Windows.Forms.ComboBox();
             this.speciesHeldItemsGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesHeldItem1Label = new System.Windows.Forms.Label();
             this.speciesHeldItem1ComboBox = new System.Windows.Forms.ComboBox();
@@ -77,6 +80,8 @@
             this.speciesAbility2ComboBox = new System.Windows.Forms.ComboBox();
             this.speciesAbility2Label = new System.Windows.Forms.Label();
             this.speciesEggGroupsGroupBox = new System.Windows.Forms.GroupBox();
+            this.speciesEggCyclesLabel = new System.Windows.Forms.Label();
+            this.speciesEggCyclesNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesEggGroup1ComboBox = new System.Windows.Forms.ComboBox();
             this.speciesEggGroup1Label = new System.Windows.Forms.Label();
             this.speciesEggGroup2ComboBox = new System.Windows.Forms.ComboBox();
@@ -84,7 +89,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.speciesType1ComboBox = new System.Windows.Forms.ComboBox();
             this.speciesType1Label = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.speciesType2ComboBox = new System.Windows.Forms.ComboBox();
             this.speciesType2Label = new System.Windows.Forms.Label();
             this.speciesGenderGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesGenderlessRadioButton = new System.Windows.Forms.RadioButton();
@@ -109,8 +114,6 @@
             this.speciesSpecialDefenseLabel = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.speciesHMListView = new System.Windows.Forms.ListView();
-            this.speciesTMListView = new System.Windows.Forms.ListView();
             this.speciesSafariRunChanceLabel = new System.Windows.Forms.Label();
             this.speciesXPGroupLabel = new System.Windows.Forms.Label();
             this.speciesXPGroupComboBox = new System.Windows.Forms.ComboBox();
@@ -159,6 +162,7 @@
             this.speciesHeldItemsGroupBox.SuspendLayout();
             this.speciesAbilitiesGroupBox.SuspendLayout();
             this.speciesEggGroupsGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.speciesGenderGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).BeginInit();
@@ -602,6 +606,9 @@
             // 
             // speciesTabPage
             // 
+            this.speciesTabPage.Controls.Add(this.speciesHMCheckedListBox);
+            this.speciesTabPage.Controls.Add(this.speciesTMCheckedListBox);
+            this.speciesTabPage.Controls.Add(this.speciesComboBox);
             this.speciesTabPage.Controls.Add(this.speciesHeldItemsGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesAbilitiesGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesEggGroupsGroupBox);
@@ -610,8 +617,6 @@
             this.speciesTabPage.Controls.Add(this.speciesBaseStatsGroupBox);
             this.speciesTabPage.Controls.Add(this.label34);
             this.speciesTabPage.Controls.Add(this.label33);
-            this.speciesTabPage.Controls.Add(this.speciesHMListView);
-            this.speciesTabPage.Controls.Add(this.speciesTMListView);
             this.speciesTabPage.Controls.Add(this.speciesSafariRunChanceLabel);
             this.speciesTabPage.Controls.Add(this.speciesXPGroupLabel);
             this.speciesTabPage.Controls.Add(this.speciesXPGroupComboBox);
@@ -629,6 +634,33 @@
             this.speciesTabPage.TabIndex = 1;
             this.speciesTabPage.Text = "Pokemon";
             this.speciesTabPage.UseVisualStyleBackColor = true;
+            // 
+            // speciesHMCheckedListBox
+            // 
+            this.speciesHMCheckedListBox.FormattingEnabled = true;
+            this.speciesHMCheckedListBox.Location = new System.Drawing.Point(662, 286);
+            this.speciesHMCheckedListBox.Name = "speciesHMCheckedListBox";
+            this.speciesHMCheckedListBox.Size = new System.Drawing.Size(160, 94);
+            this.speciesHMCheckedListBox.TabIndex = 57;
+            // 
+            // speciesTMCheckedListBox
+            // 
+            this.speciesTMCheckedListBox.FormattingEnabled = true;
+            this.speciesTMCheckedListBox.Location = new System.Drawing.Point(662, 134);
+            this.speciesTMCheckedListBox.Name = "speciesTMCheckedListBox";
+            this.speciesTMCheckedListBox.Size = new System.Drawing.Size(160, 94);
+            this.speciesTMCheckedListBox.TabIndex = 56;
+            // 
+            // speciesComboBox
+            // 
+            this.speciesComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.speciesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.speciesComboBox.FormattingEnabled = true;
+            this.speciesComboBox.Location = new System.Drawing.Point(628, 41);
+            this.speciesComboBox.Name = "speciesComboBox";
+            this.speciesComboBox.Size = new System.Drawing.Size(121, 21);
+            this.speciesComboBox.TabIndex = 55;
+            this.speciesComboBox.SelectedIndexChanged += new System.EventHandler(this.speciesComboBox_SelectedIndexChanged);
             // 
             // speciesHeldItemsGroupBox
             // 
@@ -730,16 +762,40 @@
             // 
             // speciesEggGroupsGroupBox
             // 
+            this.speciesEggGroupsGroupBox.Controls.Add(this.speciesEggCyclesLabel);
+            this.speciesEggGroupsGroupBox.Controls.Add(this.speciesEggCyclesNumericNoArrows);
             this.speciesEggGroupsGroupBox.Controls.Add(this.speciesEggGroup1ComboBox);
             this.speciesEggGroupsGroupBox.Controls.Add(this.speciesEggGroup1Label);
             this.speciesEggGroupsGroupBox.Controls.Add(this.speciesEggGroup2ComboBox);
             this.speciesEggGroupsGroupBox.Controls.Add(this.speciesEggGroup2Label);
             this.speciesEggGroupsGroupBox.Location = new System.Drawing.Point(294, 273);
             this.speciesEggGroupsGroupBox.Name = "speciesEggGroupsGroupBox";
-            this.speciesEggGroupsGroupBox.Size = new System.Drawing.Size(143, 121);
+            this.speciesEggGroupsGroupBox.Size = new System.Drawing.Size(143, 193);
             this.speciesEggGroupsGroupBox.TabIndex = 52;
             this.speciesEggGroupsGroupBox.TabStop = false;
             this.speciesEggGroupsGroupBox.Text = "Egg";
+            // 
+            // speciesEggCyclesLabel
+            // 
+            this.speciesEggCyclesLabel.AutoSize = true;
+            this.speciesEggCyclesLabel.Location = new System.Drawing.Point(6, 130);
+            this.speciesEggCyclesLabel.Name = "speciesEggCyclesLabel";
+            this.speciesEggCyclesLabel.Size = new System.Drawing.Size(60, 13);
+            this.speciesEggCyclesLabel.TabIndex = 39;
+            this.speciesEggCyclesLabel.Text = "Egg Cycles";
+            // 
+            // speciesEggCyclesNumericNoArrows
+            // 
+            this.speciesEggCyclesNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesEggCyclesNumericNoArrows.Location = new System.Drawing.Point(7, 146);
+            this.speciesEggCyclesNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesEggCyclesNumericNoArrows.Name = "speciesEggCyclesNumericNoArrows";
+            this.speciesEggCyclesNumericNoArrows.Size = new System.Drawing.Size(66, 20);
+            this.speciesEggCyclesNumericNoArrows.TabIndex = 38;
             // 
             // speciesEggGroup1ComboBox
             // 
@@ -781,7 +837,7 @@
             // 
             this.groupBox1.Controls.Add(this.speciesType1ComboBox);
             this.groupBox1.Controls.Add(this.speciesType1Label);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.speciesType2ComboBox);
             this.groupBox1.Controls.Add(this.speciesType2Label);
             this.groupBox1.Location = new System.Drawing.Point(158, 31);
             this.groupBox1.Name = "groupBox1";
@@ -807,14 +863,14 @@
             this.speciesType1Label.TabIndex = 13;
             this.speciesType1Label.Text = "Type 1:";
             // 
-            // comboBox1
+            // speciesType2ComboBox
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 82);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 14;
+            this.speciesType2ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.speciesType2ComboBox.FormattingEnabled = true;
+            this.speciesType2ComboBox.Location = new System.Drawing.Point(6, 82);
+            this.speciesType2ComboBox.Name = "speciesType2ComboBox";
+            this.speciesType2ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.speciesType2ComboBox.TabIndex = 14;
             // 
             // speciesType2Label
             // 
@@ -900,6 +956,7 @@
             this.speciesMaleOnlyRadioButton.TabStop = true;
             this.speciesMaleOnlyRadioButton.Text = "Male Only";
             this.speciesMaleOnlyRadioButton.UseVisualStyleBackColor = true;
+            this.speciesMaleOnlyRadioButton.CheckedChanged += new System.EventHandler(this.speciesMaleOnlyRadioButton_CheckedChanged);
             // 
             // speciesFemaleOnlyRadioButton
             // 
@@ -911,6 +968,7 @@
             this.speciesFemaleOnlyRadioButton.TabStop = true;
             this.speciesFemaleOnlyRadioButton.Text = "Female only";
             this.speciesFemaleOnlyRadioButton.UseVisualStyleBackColor = true;
+            this.speciesFemaleOnlyRadioButton.CheckedChanged += new System.EventHandler(this.speciesFemaleOnlyRadioButton_CheckedChanged);
             // 
             // speciesMaleAndFemaleRadioButton
             // 
@@ -922,6 +980,7 @@
             this.speciesMaleAndFemaleRadioButton.TabStop = true;
             this.speciesMaleAndFemaleRadioButton.Text = "Male && Female";
             this.speciesMaleAndFemaleRadioButton.UseVisualStyleBackColor = true;
+            this.speciesMaleAndFemaleRadioButton.CheckedChanged += new System.EventHandler(this.speciesMaleAndFemaleRadioButton_CheckedChanged);
             // 
             // label25
             // 
@@ -1135,30 +1194,6 @@
             this.label33.TabIndex = 46;
             this.label33.Text = "Learnable TMs";
             // 
-            // speciesHMListView
-            // 
-            this.speciesHMListView.CheckBoxes = true;
-            this.speciesHMListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            this.speciesHMListView.HideSelection = false;
-            this.speciesHMListView.Location = new System.Drawing.Point(662, 290);
-            this.speciesHMListView.Name = "speciesHMListView";
-            this.speciesHMListView.Size = new System.Drawing.Size(121, 97);
-            this.speciesHMListView.TabIndex = 45;
-            this.speciesHMListView.UseCompatibleStateImageBehavior = false;
-            this.speciesHMListView.View = System.Windows.Forms.View.List;
-            // 
-            // speciesTMListView
-            // 
-            this.speciesTMListView.CheckBoxes = true;
-            this.speciesTMListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            this.speciesTMListView.HideSelection = false;
-            this.speciesTMListView.Location = new System.Drawing.Point(662, 134);
-            this.speciesTMListView.Name = "speciesTMListView";
-            this.speciesTMListView.Size = new System.Drawing.Size(121, 97);
-            this.speciesTMListView.TabIndex = 44;
-            this.speciesTMListView.UseCompatibleStateImageBehavior = false;
-            this.speciesTMListView.View = System.Windows.Forms.View.List;
-            // 
             // speciesSafariRunChanceLabel
             // 
             this.speciesSafariRunChanceLabel.AutoSize = true;
@@ -1217,6 +1252,11 @@
             // 
             this.speciesSafariRunChanceNumericNoArrows.InterceptArrowKeys = false;
             this.speciesSafariRunChanceNumericNoArrows.Location = new System.Drawing.Point(457, 178);
+            this.speciesSafariRunChanceNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.speciesSafariRunChanceNumericNoArrows.Name = "speciesSafariRunChanceNumericNoArrows";
             this.speciesSafariRunChanceNumericNoArrows.Size = new System.Drawing.Size(65, 20);
             this.speciesSafariRunChanceNumericNoArrows.TabIndex = 42;
@@ -1352,6 +1392,7 @@
             this.speciesAbilitiesGroupBox.PerformLayout();
             this.speciesEggGroupsGroupBox.ResumeLayout(false);
             this.speciesEggGroupsGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.speciesGenderGroupBox.ResumeLayout(false);
@@ -1431,7 +1472,7 @@
         private System.Windows.Forms.Label speciesHPLabel;
         private NumericNoArrows speciesHPNumericNoArrows;
         private System.Windows.Forms.Label speciesType2Label;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox speciesType2ComboBox;
         private System.Windows.Forms.Label speciesType1Label;
         private System.Windows.Forms.ComboBox speciesType1ComboBox;
         private System.Windows.Forms.Label speciesHeldItem1Label;
@@ -1462,10 +1503,8 @@
         private System.Windows.Forms.ComboBox speciesAbility2ComboBox;
         private System.Windows.Forms.Label speciesAbility1Label;
         private System.Windows.Forms.ComboBox speciesAbility1ComboBox;
-        private System.Windows.Forms.ListView speciesTMListView;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ListView speciesHMListView;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.ToolStripMenuItem openRomFileToolStripMenuItem;
         private NumericNoArrows moveEffectNumericNoArrows;
@@ -1494,6 +1533,11 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox speciesHeldItemsGroupBox;
         private System.Windows.Forms.GroupBox speciesAbilitiesGroupBox;
+        private System.Windows.Forms.ComboBox speciesComboBox;
+        private System.Windows.Forms.Label speciesEggCyclesLabel;
+        private NumericNoArrows speciesEggCyclesNumericNoArrows;
+        private System.Windows.Forms.CheckedListBox speciesHMCheckedListBox;
+        private System.Windows.Forms.CheckedListBox speciesTMCheckedListBox;
     }
 }
 
