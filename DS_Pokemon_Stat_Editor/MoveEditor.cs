@@ -10,6 +10,24 @@ namespace Pokemon_Sinjoh_Editor
     {
         private void LoadMoveData()
         {
+            if (movesComboBox.Items.Count > 0)
+                movesComboBox.Items.Clear();
+
+            if (moveTypeComboBox.Items.Count > 0)
+                moveTypeComboBox.Items.Clear();
+
+            if (moveTargetComboBox.Items.Count > 0)
+                moveTargetComboBox.Items.Clear();
+
+            if (moveContestConditionComboBox.Items.Count > 0)
+                moveContestConditionComboBox.Items.Clear();
+
+            if (moveContestEffectComboBox.Items.Count > 0)
+                moveContestEffectComboBox.Items.Clear();
+
+            if (moveCategoryComboBox.Items.Count > 0)
+                moveCategoryComboBox.Items.Clear();
+
             movesComboBox.Items.AddRange(RomFile.GetMoveNames());
             moveTypeComboBox.Items.AddRange(RomFile.GetTypeNames());
             moveTargetComboBox.Items.AddRange(RomFile.GetMoveTargets());

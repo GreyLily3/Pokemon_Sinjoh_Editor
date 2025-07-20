@@ -10,6 +10,42 @@ namespace Pokemon_Sinjoh_Editor
 
         private void loadSpeciesData()
         {
+            if (speciesComboBox.Items.Count > 0)
+                speciesComboBox.Items.Clear();
+
+            if (speciesType1ComboBox.Items.Count > 0)
+                speciesType1ComboBox.Items.Clear();
+
+            if (speciesType2ComboBox.Items.Count > 0)
+                speciesType2ComboBox.Items.Clear();
+
+            if (speciesAbility1ComboBox.Items.Count > 0)
+                speciesAbility1ComboBox.Items.Clear();
+
+            if (speciesAbility2ComboBox.Items.Count > 0)
+                speciesAbility2ComboBox.Items.Clear();
+
+            if (speciesHeldItem1ComboBox.Items.Count > 0)
+                speciesHeldItem1ComboBox.Items.Clear();
+
+            if (speciesHeldItem2ComboBox.Items.Count > 0)
+                speciesHeldItem2ComboBox.Items.Clear();
+
+            if (speciesEggGroup1ComboBox.Items.Count > 0)
+                speciesEggGroup1ComboBox.Items.Clear();
+
+            if (speciesEggGroup2ComboBox.Items.Count > 0)
+                speciesEggGroup2ComboBox.Items.Clear();
+
+            if (speciesXPGroupComboBox.Items.Count > 0)
+                speciesXPGroupComboBox.Items.Clear();
+
+            if (speciesTMCheckedListBox.Items.Count == 0)
+                speciesTMCheckedListBox.Items.AddRange(RomFile.GetTMNames());
+
+            if (speciesHMCheckedListBox.Items.Count == 0)
+                speciesHMCheckedListBox.Items.AddRange(RomFile.GetHMNames());
+
             speciesComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNames());
             speciesType1ComboBox.Items.AddRange(RomFile.GetTypeNames());
             speciesType2ComboBox.Items.AddRange(RomFile.GetTypeNames());
@@ -20,8 +56,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesEggGroup1ComboBox.Items.AddRange(RomFile.GetEggGroupNames());
             speciesEggGroup2ComboBox.Items.AddRange(RomFile.GetEggGroupNames());
             speciesXPGroupComboBox.Items.AddRange(RomFile.GetXPGroupNames());
-            speciesTMCheckedListBox.Items.AddRange(RomFile.GetTMNames());
-            speciesHMCheckedListBox.Items.AddRange(RomFile.GetHMNames());
+            
+            
 
             speciesComboBox.SelectedIndex = 0;
             displaySpeciesValues(0);
