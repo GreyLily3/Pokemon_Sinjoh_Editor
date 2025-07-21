@@ -6,8 +6,6 @@ namespace Pokemon_Sinjoh_Editor
 {
     partial class MainForm
     {
-        
-
         private void loadSpeciesData()
         {
             if (speciesComboBox.Items.Count > 0)
@@ -57,8 +55,6 @@ namespace Pokemon_Sinjoh_Editor
             speciesEggGroup2ComboBox.Items.AddRange(RomFile.GetEggGroupNames());
             speciesXPGroupComboBox.Items.AddRange(RomFile.GetXPGroupNames());
             
-            
-
             speciesComboBox.SelectedIndex = 0;
             displaySpeciesValues(0);
         }
@@ -87,6 +83,14 @@ namespace Pokemon_Sinjoh_Editor
             speciesBaseXPYieldNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].BaseXP;
             speciesSafariRunChanceNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].SafariRunChance;
             speciesEggCyclesNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].NumEggCyles;
+
+            speciesHPEVNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].HPEVYield;
+            speciesAttackEVNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].AttackEVYield;
+            speciesDefenseEVNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].DefenseEVYield;
+            speciesSpecialAttackEVNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].SpecialAttackEVYield;
+            speciesSpecialDefenseEVNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].SpecialDefenseEVYield;
+            speciesSpeedEVNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].SpeedEVYield;
+
 
             if (RomFile.PokemonSpeciesList[pokemonIndex].GenderRatio == PokemonSpecies.GENDER_RATIO_MALE_ONLY)
             {
