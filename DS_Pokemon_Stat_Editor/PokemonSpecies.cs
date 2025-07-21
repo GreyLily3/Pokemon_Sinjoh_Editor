@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using static Pokemon_Sinjoh_Editor.PokemonSpecies;
@@ -23,8 +24,7 @@ namespace Pokemon_Sinjoh_Editor
         public byte Type2;
         public byte CatchRate;
         public byte BaseXP;
-        public byte EffortYield1;
-        public byte EffortYield2;
+        private ushort effortYield;
         public ushort Item1;
         public ushort Item2;
         public byte GenderRatio;
@@ -46,6 +46,19 @@ namespace Pokemon_Sinjoh_Editor
         public const byte GENDER_RATIO_MALE_ONLY = 0;
         public const byte GENDER_RATIO_FEMALE_ONLY = 254;
         public const byte GENDER_RATIO_GENDERLESS = 255;
+
+        private const ushort HP_EV_MASK = 0b_0000_0000_0000_0011;
+        private const ushort ATTACK_EV_MASK = 0b_0000_0000_0000_1100;
+        private const ushort DEFENSE_EV_MASK = 0b_0000_0000_0011_0000;
+        private const ushort SPEED_EV_MASK = 0b_0000_0000_1100_0000;
+        private const ushort SPECIAL_ATTACK_EV_MASK = 0b_0000_0011_0000_0000;
+        private const ushort SPECIAL_DEFENSE_EV_MASK = 0b_0000_1100_0000_0000;
+
+        private const int ATTACK_EV_BIT_SHIFT = 2;
+        private const int DEFENSE_EV_BIT_SHIFT = 4;
+        private const int SPEED_EV_BIT_SHIFT = 6;
+        private const int SPECIAL_ATTACK_EV_BIT_SHIFT = 8;
+        private const int SPECIAL_DEFENSE_EV_BIT_SHIFT = 10;
 
         public enum EggGroups
         {
@@ -97,8 +110,7 @@ namespace Pokemon_Sinjoh_Editor
             CatchRate = pokemonSpeciesReader.ReadByte();
             BaseXP = pokemonSpeciesReader.ReadByte();
 
-            EffortYield1 = pokemonSpeciesReader.ReadByte();
-            EffortYield2 = pokemonSpeciesReader.ReadByte();
+            effortYield = pokemonSpeciesReader.ReadUInt16();
 
             Item1 = pokemonSpeciesReader.ReadUInt16();
             Item2 = pokemonSpeciesReader.ReadUInt16();
@@ -145,8 +157,7 @@ namespace Pokemon_Sinjoh_Editor
             pokemonSpeciesWriter.Write(CatchRate);
             pokemonSpeciesWriter.Write(BaseXP);
 
-            pokemonSpeciesWriter.Write(EffortYield1);
-            pokemonSpeciesWriter.Write(EffortYield2);
+            pokemonSpeciesWriter.Write(effortYield);
 
             pokemonSpeciesWriter.Write(Item1);
             pokemonSpeciesWriter.Write(Item2);
@@ -175,6 +186,42 @@ namespace Pokemon_Sinjoh_Editor
 
             pokemonSpeciesWriter.Dispose();
             return pokemonSpeciesBinary;
+        }
+
+        public int HPEVYield
+        {
+            get { return effortYield & HP_EV_MASK; }
+            set { effortYield = (ushort)((value & HP_EV_MASK) & (effortYield | HP_EV_MASK)); }
+        }
+
+        public int AttackEVYield
+        {
+            get { return (effortYield & ATTACK_EV_MASK) >> ATTACK_EV_BIT_SHIFT; }
+            set { effortYield = (ushort)((value & ATTACK_EV_MASK) & (effortYield | ATTACK_EV_MASK)); }
+        }
+
+        public int DefenseEVYield
+        {
+            get { return (effortYield & DEFENSE_EV_MASK) >> DEFENSE_EV_BIT_SHIFT; }
+            set { effortYield = (ushort)((value & DEFENSE_EV_MASK) & (effortYield | DEFENSE_EV_MASK)); }
+        }
+
+        public int SpecialAttackEVYield
+        {
+            get { return (effortYield & SPECIAL_ATTACK_EV_MASK) >> SPECIAL_ATTACK_EV_BIT_SHIFT; }
+            set { effortYield = (ushort)((value & SPECIAL_ATTACK_EV_MASK) & (effortYield | SPECIAL_ATTACK_EV_MASK)); }
+        }
+
+        public int SpecialDefenseEVYield
+        {
+            get { return (effortYield & SPECIAL_DEFENSE_EV_MASK) >> SPECIAL_DEFENSE_EV_BIT_SHIFT; }
+            set { effortYield = (ushort)((value & SPECIAL_DEFENSE_EV_MASK) & (effortYield | SPECIAL_DEFENSE_EV_MASK)); }
+        }
+
+        public int SpeedEVYield
+        {
+            get { return (effortYield & SPEED_EV_MASK) >> SPEED_EV_BIT_SHIFT; }
+            set { effortYield = (ushort)((value & SPEED_EV_MASK) & (effortYield | SPEED_EV_MASK)); }
         }
 
         /*
