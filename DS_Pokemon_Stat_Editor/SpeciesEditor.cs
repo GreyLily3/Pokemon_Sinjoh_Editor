@@ -181,5 +181,228 @@ namespace Pokemon_Sinjoh_Editor
         }
 
 
+        private void speciesHPNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].HP != speciesHPNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].HP = (byte)speciesHPNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesAttackNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Attack != speciesAttackNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Attack = (byte)speciesAttackNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesDefenseNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Defense != speciesDefenseNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Defense = (byte)speciesDefenseNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesSpecialAttackNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialAttack != speciesSpecialAttackNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialAttack = (byte)speciesSpecialAttackNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesSpecialDefenseNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialDefense != speciesSpecialDefenseNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialDefense = (byte)speciesSpecialDefenseNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesSpeedNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Speed != speciesSpeedNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Speed = (byte)speciesSpeedNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesHPEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesAttackEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesDefenseEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesSpecialAttackEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesSpecialDefenseEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesSpeedEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesBaseXPYieldNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseXP != speciesBaseXPYieldNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseXP = (byte)speciesBaseXPYieldNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesEggCyclesNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].NumEggCyles != speciesEggCyclesNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].NumEggCyles = (byte)speciesEggCyclesNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesCatchRateNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].CatchRate != speciesCatchRateNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].CatchRate = (byte)speciesCatchRateNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesHappinessNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseHappiness != speciesHappinessNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseHappiness = (byte)speciesHappinessNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesSafariRunChanceNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SafariRunChance != speciesSafariRunChanceNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SafariRunChance = (byte)speciesSafariRunChanceNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesGenderRatioNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].GenderRatio != speciesGenderRatioNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].GenderRatio = (byte)speciesGenderRatioNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesType1ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Type1 != speciesType1ComboBox.SelectedIndex)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Type1 = (byte)speciesType1ComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesType2ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Type2 != speciesType2ComboBox.SelectedIndex)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Type2 = (byte)speciesType2ComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesAbility1ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Ability1 != speciesAbility1ComboBox.SelectedIndex)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Ability1 = (byte)speciesAbility1ComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesAbility2ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Ability2 != speciesAbility2ComboBox.SelectedIndex)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Ability2 = (byte)speciesAbility2ComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesXPGroupComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].XPGroup != (PokemonSpecies.XPGroups)speciesAbility2ComboBox.SelectedIndex)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].XPGroup = (PokemonSpecies.XPGroups)speciesAbility2ComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesHeldItem1ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Item1 != speciesHeldItem1ComboBox.SelectedIndex)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Item1 = (ushort)speciesHeldItem1ComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesHeldItem2ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Item2 != speciesHeldItem2ComboBox.SelectedIndex)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Item2 = (ushort)speciesHeldItem2ComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesEggGroup1ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].EggGroup1 != (PokemonSpecies.EggGroups)speciesEggGroup1ComboBox.SelectedIndex)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].EggGroup1 = (PokemonSpecies.EggGroups)speciesEggGroup1ComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesEggGroup2ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].EggGroup2 != (PokemonSpecies.EggGroups)speciesEggGroup2ComboBox.SelectedIndex)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].EggGroup2 = (PokemonSpecies.EggGroups)speciesEggGroup2ComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void speciesTMCheckedListBox_Validated(object sender, EventArgs e)
+        {
+
+        }
     }
 }
