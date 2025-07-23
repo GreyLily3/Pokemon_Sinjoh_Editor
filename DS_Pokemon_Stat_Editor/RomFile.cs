@@ -348,12 +348,16 @@ namespace Pokemon_Sinjoh_Editor
             BinaryWriter romWriter = new BinaryWriter(romFileStream, Encoding.UTF8, true);
 
 			for (int i = 0; i < MoveList.Count; i++)
-				movesNarc.Elements[i + 1] = MoveList[i].GetBinary(); //skip the first move in movesNarc because it's not a real move
+				movesNarc.Elements[i + 1] = MoveList[i].GetBinary(); //skip the first move in movesNarc because it's a placeholder
+
+			for (int i = 0; i < PokemonSpeciesList.Count; i++)
+				pokemonSpeciesNarc.Elements[i + 1] = PokemonSpeciesList[i].GetBinary(); //skip the first pokemon in pokemonSpeciesNarc because it's a placeholder
 
             try
 			{
 				movesNarc.Write(romWriter);
-				AreUnsavedChanges = false;
+				pokemonSpeciesNarc.Write(romWriter);
+                AreUnsavedChanges = false;
             }
             catch (EndOfStreamException e)
             {
