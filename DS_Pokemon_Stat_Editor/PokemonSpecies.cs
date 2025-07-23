@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using static Pokemon_Sinjoh_Editor.PokemonSpecies;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
+using System.Runtime.Remoting.Messaging;
+
 
 namespace Pokemon_Sinjoh_Editor
 {
@@ -24,10 +18,15 @@ namespace Pokemon_Sinjoh_Editor
         public byte Type2;
         public byte CatchRate;
         public byte BaseXP;
-        private ushort effortYield;
+        private byte hpEVYield;
+        private byte attackEVYield;
+        private byte defenseEVYield;
+        private byte specialAttackEVYield;
+        private byte specialDefenseEVYield;
+        private byte speedEVYield;
         public ushort Item1;
         public ushort Item2;
-        public byte GenderRatio;
+        private byte genderRatio;
         public byte NumEggCyles;
         public byte BaseHappiness;
         public XPGroups XPGroup;
@@ -40,12 +39,13 @@ namespace Pokemon_Sinjoh_Editor
         private BitArray learnableTMsAndHMs; //whether a pokemon can learn each TM and HM, ordered from TM01 to HM08
 
         private const int TOTAL_TM_HM_BYTES = 13;
-        private const int TM_HM_TOTAL = 100;
         public const int TM_TOTAL = 92;
         public const int HM_TOTAL = 8;
         public const byte GENDER_RATIO_MALE_ONLY = 0;
         public const byte GENDER_RATIO_FEMALE_ONLY = 254;
         public const byte GENDER_RATIO_GENDERLESS = 255;
+        public const byte GENDER_RATIO_50_PERCENT = 127;
+        public const byte MAX_EV_YIELD = 3;
 
         private const ushort HP_EV_MASK = 0b_0000_0000_0000_0011;
         private const ushort ATTACK_EV_MASK = 0b_0000_0000_0000_1100;
@@ -110,12 +110,19 @@ namespace Pokemon_Sinjoh_Editor
             CatchRate = pokemonSpeciesReader.ReadByte();
             BaseXP = pokemonSpeciesReader.ReadByte();
 
-            effortYield = pokemonSpeciesReader.ReadUInt16();
+            ushort evYields = pokemonSpeciesReader.ReadUInt16();
+
+            hpEVYield = (byte)(evYields & HP_EV_MASK);
+            attackEVYield = (byte)((evYields & ATTACK_EV_MASK) >> ATTACK_EV_BIT_SHIFT);
+            defenseEVYield = (byte)((evYields & DEFENSE_EV_MASK) >> DEFENSE_EV_BIT_SHIFT);
+            speedEVYield = (byte)((evYields & SPEED_EV_MASK) >> SPEED_EV_BIT_SHIFT);
+            specialAttackEVYield = (byte)((evYields & SPECIAL_ATTACK_EV_MASK) >> SPECIAL_ATTACK_EV_BIT_SHIFT);
+            specialDefenseEVYield = (byte)((evYields & SPECIAL_DEFENSE_EV_MASK) >> SPECIAL_DEFENSE_EV_BIT_SHIFT);
 
             Item1 = pokemonSpeciesReader.ReadUInt16();
             Item2 = pokemonSpeciesReader.ReadUInt16();
 
-            GenderRatio = pokemonSpeciesReader.ReadByte();
+            genderRatio = pokemonSpeciesReader.ReadByte();
             NumEggCyles = pokemonSpeciesReader.ReadByte();
             BaseHappiness = pokemonSpeciesReader.ReadByte();
             XPGroup = (XPGroups)pokemonSpeciesReader.ReadByte();
@@ -157,12 +164,20 @@ namespace Pokemon_Sinjoh_Editor
             pokemonSpeciesWriter.Write(CatchRate);
             pokemonSpeciesWriter.Write(BaseXP);
 
-            pokemonSpeciesWriter.Write(effortYield);
+            ushort evYields;
+            evYields = hpEVYield;
+            evYields |= (ushort)(attackEVYield << ATTACK_EV_BIT_SHIFT);
+            evYields |= (ushort)(defenseEVYield << DEFENSE_EV_BIT_SHIFT);
+            evYields |= (ushort)(speedEVYield << SPEED_EV_BIT_SHIFT);
+            evYields |= (ushort)(specialAttackEVYield << SPECIAL_ATTACK_EV_BIT_SHIFT);
+            evYields |= (ushort)(specialDefenseEVYield << SPECIAL_DEFENSE_EV_BIT_SHIFT);
+
+            pokemonSpeciesWriter.Write(evYields);
 
             pokemonSpeciesWriter.Write(Item1);
             pokemonSpeciesWriter.Write(Item2);
 
-            pokemonSpeciesWriter.Write(GenderRatio);
+            pokemonSpeciesWriter.Write(genderRatio);
             pokemonSpeciesWriter.Write(NumEggCyles);
             pokemonSpeciesWriter.Write(BaseHappiness);
             pokemonSpeciesWriter.Write((byte)XPGroup);
@@ -188,58 +203,50 @@ namespace Pokemon_Sinjoh_Editor
             return pokemonSpeciesBinary;
         }
 
-        public int HPEVYield
+        public void SetGenderlessGenderRatio() => genderRatio = GENDER_RATIO_GENDERLESS;
+        public void SetFemaleOnlyGenderRatio() => genderRatio = GENDER_RATIO_FEMALE_ONLY;
+        public void SetMaleOnlyGenderRatio() => genderRatio = GENDER_RATIO_MALE_ONLY;
+        public bool GetIsGenderless() => genderRatio == GENDER_RATIO_GENDERLESS;
+        public bool GetIsFemaleOnly() => genderRatio == GENDER_RATIO_FEMALE_ONLY;
+        public bool GetIsMaleOnly() => genderRatio == GENDER_RATIO_MALE_ONLY;
+        public static byte Get50PercentGenderRatio() => GENDER_RATIO_50_PERCENT;
+
+        public int GenderRatio { get => genderRatio; set { genderRatio = (byte)(value < GENDER_RATIO_FEMALE_ONLY ? value : GENDER_RATIO_FEMALE_ONLY - 1); } }
+
+        public byte HPEVYield
         {
-            get { return effortYield & HP_EV_MASK; }
-            set { effortYield = (ushort)((value & HP_EV_MASK) & (effortYield | HP_EV_MASK)); }
+            get { return hpEVYield; }
+            set { hpEVYield = value <= MAX_EV_YIELD ? value : MAX_EV_YIELD; }
         }
 
-        public int AttackEVYield
+        public byte AttackEVYield
         {
-            get { return (effortYield & ATTACK_EV_MASK) >> ATTACK_EV_BIT_SHIFT; }
-            set { effortYield = (ushort)((value & ATTACK_EV_MASK) & (effortYield | ATTACK_EV_MASK)); }
+            get { return attackEVYield; }
+            set { attackEVYield = value <= MAX_EV_YIELD ? value : MAX_EV_YIELD; }
         }
 
-        public int DefenseEVYield
+        public byte DefenseEVYield
         {
-            get { return (effortYield & DEFENSE_EV_MASK) >> DEFENSE_EV_BIT_SHIFT; }
-            set { effortYield = (ushort)((value & DEFENSE_EV_MASK) & (effortYield | DEFENSE_EV_MASK)); }
+            get { return defenseEVYield; }
+            set { defenseEVYield = value <= MAX_EV_YIELD ? value : MAX_EV_YIELD; }
+        }
+        public byte SpecialAttackEVYield
+        {
+            get { return specialAttackEVYield; }
+            set { specialAttackEVYield = value <= MAX_EV_YIELD ? value : MAX_EV_YIELD; }
         }
 
-        public int SpecialAttackEVYield
+        public byte SpecialDefenseEVYield
         {
-            get { return (effortYield & SPECIAL_ATTACK_EV_MASK) >> SPECIAL_ATTACK_EV_BIT_SHIFT; }
-            set { effortYield = (ushort)((value & SPECIAL_ATTACK_EV_MASK) & (effortYield | SPECIAL_ATTACK_EV_MASK)); }
+            get { return specialDefenseEVYield; }
+            set { specialDefenseEVYield = value <= MAX_EV_YIELD ? value : MAX_EV_YIELD; }
         }
 
-        public int SpecialDefenseEVYield
+        public byte SpeedEVYield
         {
-            get { return (effortYield & SPECIAL_DEFENSE_EV_MASK) >> SPECIAL_DEFENSE_EV_BIT_SHIFT; }
-            set { effortYield = (ushort)((value & SPECIAL_DEFENSE_EV_MASK) & (effortYield | SPECIAL_DEFENSE_EV_MASK)); }
+            get { return speedEVYield; }
+            set { speedEVYield = value <= MAX_EV_YIELD ? value : MAX_EV_YIELD; }
         }
-
-        public int SpeedEVYield
-        {
-            get { return (effortYield & SPEED_EV_MASK) >> SPEED_EV_BIT_SHIFT; }
-            set { effortYield = (ushort)((value & SPEED_EV_MASK) & (effortYield | SPEED_EV_MASK)); }
-        }
-
-        /*
-        public int[] GetLearnableTMsAndHMs()
-        {
-            int[] LearnableTMAndHMIndexes = new int[TM_HM_TOTAL];
-
-            for (int i = 0; i < TM_HM_TOTAL; i++)
-            {
-                if (learnableTMsAndHMs[i])
-                {
-                    LearnableTMAndHMIndexes.Add(i);
-                }
-            }
-
-            return LearnableTMAndHMIndexes;
-        }
-        */
 
         public List<int> GetLearnableHMs()
         {
@@ -267,12 +274,14 @@ namespace Pokemon_Sinjoh_Editor
             return learnableTMs;
         }
 
-        public void SetLearnableTMsAndHMs(int[] TMAndHMIndexes)
+        public void SetLearnableTM(int tmIndex, bool isLearnable)
         {
-            learnableTMsAndHMs.SetAll(false);
+            learnableTMsAndHMs[tmIndex] = isLearnable;
+        }
 
-            foreach (int TMOrHMIndex in TMAndHMIndexes)
-                learnableTMsAndHMs.Set(TMOrHMIndex, true);
+        public void SetLearnableHM(int hmIndex, bool isLearnable)
+        {
+            learnableTMsAndHMs[hmIndex + TM_TOTAL] = isLearnable;
         }
 
         public void setAllTMsAndHMs(bool TMsAndHMsLearnable) => learnableTMsAndHMs.SetAll(TMsAndHMsLearnable);
