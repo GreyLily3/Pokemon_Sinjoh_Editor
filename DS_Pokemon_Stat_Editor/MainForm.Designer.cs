@@ -977,7 +977,7 @@
             this.speciesTMCheckedListBox.Name = "speciesTMCheckedListBox";
             this.speciesTMCheckedListBox.Size = new System.Drawing.Size(160, 184);
             this.speciesTMCheckedListBox.TabIndex = 56;
-            this.speciesTMCheckedListBox.Validated += new System.EventHandler(this.speciesTMCheckedListBox_Validated);
+            
             // 
             // speciesComboBox
             // 

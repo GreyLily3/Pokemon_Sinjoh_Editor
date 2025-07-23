@@ -55,8 +55,15 @@ namespace Pokemon_Sinjoh_Editor
             speciesEggGroup2ComboBox.Items.AddRange(RomFile.GetEggGroupNames());
             speciesXPGroupComboBox.Items.AddRange(RomFile.GetXPGroupNames());
             
+
             speciesComboBox.SelectedIndex = 0;
+
+            //event handlers have to removed when checkedlistboxes are updated, otherwise they'll fire when the user isn't interacting with the checkedlistboxes
+            this.speciesTMCheckedListBox.ItemCheck -= this.speciesTMCheckedListBox_ItemCheck;
+            this.speciesHMCheckedListBox.ItemCheck -= this.speciesHMCheckedListBox_ItemCheck;
             displaySpeciesValues(0);
+            this.speciesTMCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.speciesTMCheckedListBox_ItemCheck);
+            this.speciesHMCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.speciesHMCheckedListBox_ItemCheck);
         }
 
         private void displaySpeciesValues(int pokemonIndex)
@@ -92,15 +99,15 @@ namespace Pokemon_Sinjoh_Editor
             speciesSpeedEVNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].SpeedEVYield;
 
 
-            if (RomFile.PokemonSpeciesList[pokemonIndex].GenderRatio == PokemonSpecies.GENDER_RATIO_MALE_ONLY)
+            if (RomFile.PokemonSpeciesList[pokemonIndex].GetIsMaleOnly())
             {
                 speciesMaleOnlyRadioButton.Checked = true;
             }
-            else if (RomFile.PokemonSpeciesList[pokemonIndex].GenderRatio == PokemonSpecies.GENDER_RATIO_FEMALE_ONLY)
+            else if (RomFile.PokemonSpeciesList[pokemonIndex].GetIsFemaleOnly())
             {
                 speciesFemaleOnlyRadioButton.Checked = true;
             }
-            else if (RomFile.PokemonSpeciesList[pokemonIndex].GenderRatio == PokemonSpecies.GENDER_RATIO_GENDERLESS)
+            else if (RomFile.PokemonSpeciesList[pokemonIndex].GetIsGenderless())
             {
                 speciesGenderlessRadioButton.Checked = true;
             }
@@ -133,17 +140,24 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //event handlers have to removed when checkedlistboxes are updated, otherwise they'll fire when the user isn't interacting with the checkedlistboxes
+            this.speciesTMCheckedListBox.ItemCheck -= this.speciesTMCheckedListBox_ItemCheck;
+            this.speciesHMCheckedListBox.ItemCheck -= this.speciesHMCheckedListBox_ItemCheck;
             displaySpeciesValues(speciesComboBox.SelectedIndex);
+            this.speciesTMCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.speciesTMCheckedListBox_ItemCheck);
+            this.speciesHMCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.speciesHMCheckedListBox_ItemCheck);
         }
 
         private void speciesMaleOnlyRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if (speciesMaleOnlyRadioButton.Checked)
             {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetMaleOnlyGenderRatio();
                 speciesFemaleOnlyRadioButton.Checked = false;
                 speciesGenderlessRadioButton.Checked = false;
                 speciesMaleAndFemaleRadioButton.Checked = false;
                 speciesGenderRatioNumericNoArrows.Enabled = false;
+                MarkUnsavedChanges();
             }
         }
 
@@ -151,10 +165,12 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (speciesFemaleOnlyRadioButton.Checked)
             {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetFemaleOnlyGenderRatio();
                 speciesMaleOnlyRadioButton.Checked = false;
                 speciesGenderlessRadioButton.Checked = false;
                 speciesMaleAndFemaleRadioButton.Checked = false;
                 speciesGenderRatioNumericNoArrows.Enabled = false;
+                MarkUnsavedChanges();
             }
         }
 
@@ -166,6 +182,9 @@ namespace Pokemon_Sinjoh_Editor
                 speciesGenderlessRadioButton.Checked = false;
                 speciesFemaleOnlyRadioButton.Checked = false;
                 speciesGenderRatioNumericNoArrows.Enabled = true;
+                speciesGenderRatioNumericNoArrows.Value = PokemonSpecies.Get50PercentGenderRatio();
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].GenderRatio = (int)speciesGenderRatioNumericNoArrows.Value;
+                MarkUnsavedChanges();
             }
         }
 
@@ -173,10 +192,12 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (speciesGenderlessRadioButton.Checked)
             {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetGenderlessGenderRatio();
                 speciesMaleOnlyRadioButton.Checked = false;
                 speciesFemaleOnlyRadioButton.Checked = false;
                 speciesMaleAndFemaleRadioButton.Checked = false;
                 speciesGenderRatioNumericNoArrows.Enabled = false;
+                MarkUnsavedChanges();
             }
         }
 
@@ -237,32 +258,56 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesHPEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].HPEVYield != speciesHPEVNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].HPEVYield = (byte)speciesHPEVNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
         }
 
         private void speciesAttackEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].AttackEVYield != speciesAttackEVNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].AttackEVYield = (byte)speciesAttackEVNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
         }
 
         private void speciesDefenseEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].DefenseEVYield != speciesDefenseEVNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].DefenseEVYield = (byte)speciesDefenseEVNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
         }
 
         private void speciesSpecialAttackEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialAttackEVYield != speciesSpecialAttackEVNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialAttackEVYield = (byte)speciesSpecialAttackEVNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
         }
 
         private void speciesSpecialDefenseEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialDefenseEVYield != speciesSpecialDefenseEVNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialDefenseEVYield = (byte)speciesSpecialDefenseEVNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
         }
 
         private void speciesSpeedEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpeedEVYield != speciesSpeedEVNumericNoArrows.Value)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpeedEVYield = (byte)speciesSpeedEVNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
         }
 
         private void speciesBaseXPYieldNumericNoArrows_Validated(object sender, EventArgs e)
@@ -400,9 +445,16 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
-        private void speciesTMCheckedListBox_Validated(object sender, EventArgs e)
+        private void speciesTMCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
+            RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetLearnableTM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
+            MarkUnsavedChanges();
+        }
 
+        private void speciesHMCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetLearnableHM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
+            MarkUnsavedChanges();
         }
     }
 }
