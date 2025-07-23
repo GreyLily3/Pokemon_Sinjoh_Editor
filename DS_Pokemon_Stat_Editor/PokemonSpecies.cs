@@ -199,7 +199,6 @@ namespace Pokemon_Sinjoh_Editor
             pokemonSpeciesWriter.Write((ushort)0b_0000);
             pokemonSpeciesWriter.Write((byte)0b_00);
 
-            pokemonSpeciesWriter.Dispose();
             return pokemonSpeciesBinary;
         }
 
