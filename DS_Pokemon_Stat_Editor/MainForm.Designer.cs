@@ -32,26 +32,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.movesTabPage = new System.Windows.Forms.TabPage();
-            this.moveEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveSelectedLabel = new System.Windows.Forms.Label();
             this.movesComboBox = new System.Windows.Forms.ComboBox();
             this.moveTargetComboBox = new System.Windows.Forms.ComboBox();
             this.moveTargetLabel = new System.Windows.Forms.Label();
             this.movePriorityLabel = new System.Windows.Forms.Label();
-            this.movePriorityNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveCategoryLabel = new System.Windows.Forms.Label();
             this.moveCategoryComboBox = new System.Windows.Forms.ComboBox();
             this.moveEffectChanceLabel = new System.Windows.Forms.Label();
-            this.moveEffectChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveEffectLabel = new System.Windows.Forms.Label();
             this.moveTypeLabel = new System.Windows.Forms.Label();
             this.moveTypeComboBox = new System.Windows.Forms.ComboBox();
             this.movePPLabel = new System.Windows.Forms.Label();
-            this.movePPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveAccuracyLabel = new System.Windows.Forms.Label();
-            this.moveAccuracyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.movePowerLabel = new System.Windows.Forms.Label();
-            this.movePowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveContestConditionLabel = new System.Windows.Forms.Label();
             this.moveContestEffectLabel = new System.Windows.Forms.Label();
             this.moveContestConditionComboBox = new System.Windows.Forms.ComboBox();
@@ -67,24 +61,14 @@
             this.moveContactCheckBox = new System.Windows.Forms.CheckBox();
             this.speciesTabPage = new System.Windows.Forms.TabPage();
             this.speciesMiscGroupBox = new System.Windows.Forms.GroupBox();
-            this.speciesCatchRateNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesHappinessNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSafariRunChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesCatchRateLabel = new System.Windows.Forms.Label();
             this.speciesBaseHappinessLabel = new System.Windows.Forms.Label();
             this.speciesSafariRunChanceLabel = new System.Windows.Forms.Label();
             this.speciesXPGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesXPGroupLabel = new System.Windows.Forms.Label();
-            this.speciesBaseXPYieldNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesBaseXPLabel = new System.Windows.Forms.Label();
             this.speciesXPGroupComboBox = new System.Windows.Forms.ComboBox();
             this.speciesEVOnDefeatGroupBox = new System.Windows.Forms.GroupBox();
-            this.speciesSpeedEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesHPEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesSpeedEVlabel = new System.Windows.Forms.Label();
             this.speciesSpecialDefenseEVLabel = new System.Windows.Forms.Label();
             this.speciesSpecialAttackEVLabel = new System.Windows.Forms.Label();
@@ -106,7 +90,6 @@
             this.speciesAbility2Label = new System.Windows.Forms.Label();
             this.speciesEggGroupsGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesEggCyclesLabel = new System.Windows.Forms.Label();
-            this.speciesEggCyclesNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesEggGroup1ComboBox = new System.Windows.Forms.ComboBox();
             this.speciesEggGroup1Label = new System.Windows.Forms.Label();
             this.speciesEggGroup2ComboBox = new System.Windows.Forms.ComboBox();
@@ -118,19 +101,12 @@
             this.speciesType2Label = new System.Windows.Forms.Label();
             this.speciesGenderGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesGenderlessRadioButton = new System.Windows.Forms.RadioButton();
-            this.speciesGenderRatioNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.label35 = new System.Windows.Forms.Label();
             this.speciesMaleOnlyRadioButton = new System.Windows.Forms.RadioButton();
             this.speciesFemaleOnlyRadioButton = new System.Windows.Forms.RadioButton();
             this.speciesMaleAndFemaleRadioButton = new System.Windows.Forms.RadioButton();
             this.label25 = new System.Windows.Forms.Label();
             this.speciesBaseStatsGroupBox = new System.Windows.Forms.GroupBox();
-            this.speciesHPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpeedNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesHPLabel = new System.Windows.Forms.Label();
             this.speciesAttackLabel = new System.Windows.Forms.Label();
             this.speciesDefenseLabel = new System.Windows.Forms.Label();
@@ -139,7 +115,7 @@
             this.speciesSpecialDefenseLabel = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mainFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openRomFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -164,44 +140,79 @@
             this.moveKingsRockTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.moveHPBarTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.moveShadowTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesTypeTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesAbilityTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesXPGroupTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesBaseXPTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesWildHeldItemTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesEggGroupTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesEggCyclesTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesBaseFriendshipTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesSafariRunChanceTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesCatchRateTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.speciesEVYieldTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.movePriorityNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.moveEffectChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.movePPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.moveAccuracyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.movePowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesCatchRateNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesBaseFriendshipNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSafariRunChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesBaseXPYieldNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpeedEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesHPEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesEggCyclesNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesGenderRatioNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesHPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpeedNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
+            this.moveFlagsGroupBox.SuspendLayout();
+            this.speciesTabPage.SuspendLayout();
+            this.speciesMiscGroupBox.SuspendLayout();
+            this.speciesXPGroupBox.SuspendLayout();
+            this.speciesEVOnDefeatGroupBox.SuspendLayout();
+            this.speciesHeldItemsGroupBox.SuspendLayout();
+            this.speciesAbilitiesGroupBox.SuspendLayout();
+            this.speciesEggGroupsGroupBox.SuspendLayout();
+            this.speciesTypesComboBox.SuspendLayout();
+            this.speciesGenderGroupBox.SuspendLayout();
+            this.speciesBaseStatsGroupBox.SuspendLayout();
+            this.mainFormMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).BeginInit();
-            this.moveFlagsGroupBox.SuspendLayout();
-            this.speciesTabPage.SuspendLayout();
-            this.speciesMiscGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesCatchRateNumericNoArrows)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesHappinessNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseFriendshipNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSafariRunChanceNumericNoArrows)).BeginInit();
-            this.speciesXPGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesBaseXPYieldNumericNoArrows)).BeginInit();
-            this.speciesEVOnDefeatGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesAttackEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHPEVNumericNoArrows)).BeginInit();
-            this.speciesHeldItemsGroupBox.SuspendLayout();
-            this.speciesAbilitiesGroupBox.SuspendLayout();
-            this.speciesEggGroupsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).BeginInit();
-            this.speciesTypesComboBox.SuspendLayout();
-            this.speciesGenderGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).BeginInit();
-            this.speciesBaseStatsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHPNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesAttackNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -248,15 +259,6 @@
             this.movesTabPage.TabIndex = 0;
             this.movesTabPage.Text = "Moves";
             this.movesTabPage.UseVisualStyleBackColor = true;
-            // 
-            // moveEffectNumericNoArrows
-            // 
-            this.moveEffectNumericNoArrows.InterceptArrowKeys = false;
-            this.moveEffectNumericNoArrows.Location = new System.Drawing.Point(326, 125);
-            this.moveEffectNumericNoArrows.Name = "moveEffectNumericNoArrows";
-            this.moveEffectNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveEffectNumericNoArrows.TabIndex = 6;
-            this.moveEffectNumericNoArrows.Validated += new System.EventHandler(this.moveEffectNumericNoArrows_Validated);
             // 
             // moveSelectedLabel
             // 
@@ -307,25 +309,6 @@
             this.movePriorityLabel.TabIndex = 20;
             this.movePriorityLabel.Text = "Priority:";
             // 
-            // movePriorityNumericNoArrows
-            // 
-            this.movePriorityNumericNoArrows.InterceptArrowKeys = false;
-            this.movePriorityNumericNoArrows.Location = new System.Drawing.Point(326, 237);
-            this.movePriorityNumericNoArrows.Maximum = new decimal(new int[] {
-            127,
-            0,
-            0,
-            0});
-            this.movePriorityNumericNoArrows.Minimum = new decimal(new int[] {
-            128,
-            0,
-            0,
-            -2147483648});
-            this.movePriorityNumericNoArrows.Name = "movePriorityNumericNoArrows";
-            this.movePriorityNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePriorityNumericNoArrows.TabIndex = 8;
-            this.movePriorityNumericNoArrows.Validated += new System.EventHandler(this.movePriorityNumericNoArrows_Validated);
-            // 
             // moveCategoryLabel
             // 
             this.moveCategoryLabel.AutoSize = true;
@@ -353,20 +336,6 @@
             this.moveEffectChanceLabel.Size = new System.Drawing.Size(78, 13);
             this.moveEffectChanceLabel.TabIndex = 16;
             this.moveEffectChanceLabel.Text = "Effect Chance:";
-            // 
-            // moveEffectChanceNumericNoArrows
-            // 
-            this.moveEffectChanceNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.moveEffectChanceNumericNoArrows.InterceptArrowKeys = false;
-            this.moveEffectChanceNumericNoArrows.Location = new System.Drawing.Point(326, 183);
-            this.moveEffectChanceNumericNoArrows.Name = "moveEffectChanceNumericNoArrows";
-            this.moveEffectChanceNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveEffectChanceNumericNoArrows.TabIndex = 7;
-            this.moveEffectChanceNumericNoArrows.Validated += new System.EventHandler(this.moveEffectChanceNumericNoArrows_Validated);
             // 
             // moveEffectLabel
             // 
@@ -405,35 +374,6 @@
             this.movePPLabel.TabIndex = 10;
             this.movePPLabel.Text = "PP:";
             // 
-            // movePPNumericNoArrows
-            // 
-            this.movePPNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.InterceptArrowKeys = false;
-            this.movePPNumericNoArrows.Location = new System.Drawing.Point(173, 239);
-            this.movePPNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
-            this.movePPNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePPNumericNoArrows.TabIndex = 3;
-            this.movePPNumericNoArrows.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Validated += new System.EventHandler(this.movePPNumericNoArrows_Validated);
-            // 
             // moveAccuracyLabel
             // 
             this.moveAccuracyLabel.AutoSize = true;
@@ -443,20 +383,6 @@
             this.moveAccuracyLabel.TabIndex = 8;
             this.moveAccuracyLabel.Text = "Accuracy:";
             // 
-            // moveAccuracyNumericNoArrows
-            // 
-            this.moveAccuracyNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.moveAccuracyNumericNoArrows.InterceptArrowKeys = false;
-            this.moveAccuracyNumericNoArrows.Location = new System.Drawing.Point(173, 183);
-            this.moveAccuracyNumericNoArrows.Name = "moveAccuracyNumericNoArrows";
-            this.moveAccuracyNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveAccuracyNumericNoArrows.TabIndex = 2;
-            this.moveAccuracyNumericNoArrows.Validated += new System.EventHandler(this.moveAccuracyNumericNoArrows_Validated);
-            // 
             // movePowerLabel
             // 
             this.movePowerLabel.AutoSize = true;
@@ -465,25 +391,6 @@
             this.movePowerLabel.Size = new System.Drawing.Size(40, 13);
             this.movePowerLabel.TabIndex = 6;
             this.movePowerLabel.Text = "Power:";
-            // 
-            // movePowerNumericNoArrows
-            // 
-            this.movePowerNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePowerNumericNoArrows.InterceptArrowKeys = false;
-            this.movePowerNumericNoArrows.Location = new System.Drawing.Point(173, 126);
-            this.movePowerNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.movePowerNumericNoArrows.Name = "movePowerNumericNoArrows";
-            this.movePowerNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePowerNumericNoArrows.TabIndex = 1;
-            this.movePowerNumericNoArrows.Validated += new System.EventHandler(this.movePowerNumericNoArrows_Validated);
             // 
             // moveContestConditionLabel
             // 
@@ -536,7 +443,7 @@
             this.moveFlagsGroupBox.Location = new System.Drawing.Point(497, 242);
             this.moveFlagsGroupBox.Name = "moveFlagsGroupBox";
             this.moveFlagsGroupBox.Size = new System.Drawing.Size(153, 217);
-            this.moveFlagsGroupBox.TabIndex = 0;
+            this.moveFlagsGroupBox.TabIndex = 12;
             this.moveFlagsGroupBox.TabStop = false;
             this.moveFlagsGroupBox.Text = "Move Flags";
             // 
@@ -655,7 +562,7 @@
             // speciesMiscGroupBox
             // 
             this.speciesMiscGroupBox.Controls.Add(this.speciesCatchRateNumericNoArrows);
-            this.speciesMiscGroupBox.Controls.Add(this.speciesHappinessNumericNoArrows);
+            this.speciesMiscGroupBox.Controls.Add(this.speciesBaseFriendshipNumericNoArrows);
             this.speciesMiscGroupBox.Controls.Add(this.speciesSafariRunChanceNumericNoArrows);
             this.speciesMiscGroupBox.Controls.Add(this.speciesCatchRateLabel);
             this.speciesMiscGroupBox.Controls.Add(this.speciesBaseHappinessLabel);
@@ -663,56 +570,9 @@
             this.speciesMiscGroupBox.Location = new System.Drawing.Point(599, 292);
             this.speciesMiscGroupBox.Name = "speciesMiscGroupBox";
             this.speciesMiscGroupBox.Size = new System.Drawing.Size(103, 174);
-            this.speciesMiscGroupBox.TabIndex = 60;
+            this.speciesMiscGroupBox.TabIndex = 9;
             this.speciesMiscGroupBox.TabStop = false;
             this.speciesMiscGroupBox.Text = "Misc";
-            // 
-            // speciesCatchRateNumericNoArrows
-            // 
-            this.speciesCatchRateNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesCatchRateNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesCatchRateNumericNoArrows.Location = new System.Drawing.Point(6, 35);
-            this.speciesCatchRateNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesCatchRateNumericNoArrows.Name = "speciesCatchRateNumericNoArrows";
-            this.speciesCatchRateNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesCatchRateNumericNoArrows.TabIndex = 16;
-            this.speciesCatchRateNumericNoArrows.Validated += new System.EventHandler(this.speciesCatchRateNumericNoArrows_Validated);
-            // 
-            // speciesHappinessNumericNoArrows
-            // 
-            this.speciesHappinessNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesHappinessNumericNoArrows.Location = new System.Drawing.Point(6, 82);
-            this.speciesHappinessNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesHappinessNumericNoArrows.Name = "speciesHappinessNumericNoArrows";
-            this.speciesHappinessNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesHappinessNumericNoArrows.TabIndex = 30;
-            this.speciesHappinessNumericNoArrows.Validated += new System.EventHandler(this.speciesHappinessNumericNoArrows_Validated);
-            // 
-            // speciesSafariRunChanceNumericNoArrows
-            // 
-            this.speciesSafariRunChanceNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSafariRunChanceNumericNoArrows.Location = new System.Drawing.Point(6, 145);
-            this.speciesSafariRunChanceNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSafariRunChanceNumericNoArrows.Name = "speciesSafariRunChanceNumericNoArrows";
-            this.speciesSafariRunChanceNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSafariRunChanceNumericNoArrows.TabIndex = 42;
-            this.speciesSafariRunChanceNumericNoArrows.Validated += new System.EventHandler(this.speciesSafariRunChanceNumericNoArrows_Validated);
             // 
             // speciesCatchRateLabel
             // 
@@ -728,9 +588,9 @@
             this.speciesBaseHappinessLabel.AutoSize = true;
             this.speciesBaseHappinessLabel.Location = new System.Drawing.Point(3, 66);
             this.speciesBaseHappinessLabel.Name = "speciesBaseHappinessLabel";
-            this.speciesBaseHappinessLabel.Size = new System.Drawing.Size(87, 13);
+            this.speciesBaseHappinessLabel.Size = new System.Drawing.Size(85, 13);
             this.speciesBaseHappinessLabel.TabIndex = 31;
-            this.speciesBaseHappinessLabel.Text = "Base Happiness:";
+            this.speciesBaseHappinessLabel.Text = "Base Friendship:";
             // 
             // speciesSafariRunChanceLabel
             // 
@@ -750,7 +610,7 @@
             this.speciesXPGroupBox.Location = new System.Drawing.Point(280, 366);
             this.speciesXPGroupBox.Name = "speciesXPGroupBox";
             this.speciesXPGroupBox.Size = new System.Drawing.Size(141, 100);
-            this.speciesXPGroupBox.TabIndex = 59;
+            this.speciesXPGroupBox.TabIndex = 5;
             this.speciesXPGroupBox.TabStop = false;
             this.speciesXPGroupBox.Text = "EXP";
             // 
@@ -762,25 +622,6 @@
             this.speciesXPGroupLabel.Size = new System.Drawing.Size(95, 13);
             this.speciesXPGroupLabel.TabIndex = 33;
             this.speciesXPGroupLabel.Text = "Experience Group:";
-            // 
-            // speciesBaseXPYieldNumericNoArrows
-            // 
-            this.speciesBaseXPYieldNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesBaseXPYieldNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesBaseXPYieldNumericNoArrows.Location = new System.Drawing.Point(9, 72);
-            this.speciesBaseXPYieldNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesBaseXPYieldNumericNoArrows.Name = "speciesBaseXPYieldNumericNoArrows";
-            this.speciesBaseXPYieldNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesBaseXPYieldNumericNoArrows.TabIndex = 18;
-            this.speciesBaseXPYieldNumericNoArrows.Validated += new System.EventHandler(this.speciesBaseXPYieldNumericNoArrows_Validated);
             // 
             // speciesBaseXPLabel
             // 
@@ -798,7 +639,7 @@
             this.speciesXPGroupComboBox.Location = new System.Drawing.Point(9, 31);
             this.speciesXPGroupComboBox.Name = "speciesXPGroupComboBox";
             this.speciesXPGroupComboBox.Size = new System.Drawing.Size(104, 21);
-            this.speciesXPGroupComboBox.TabIndex = 32;
+            this.speciesXPGroupComboBox.TabIndex = 17;
             this.speciesXPGroupComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesXPGroupComboBox_SelectionChangeCommitted);
             // 
             // speciesEVOnDefeatGroupBox
@@ -818,93 +659,9 @@
             this.speciesEVOnDefeatGroupBox.Location = new System.Drawing.Point(154, 109);
             this.speciesEVOnDefeatGroupBox.Name = "speciesEVOnDefeatGroupBox";
             this.speciesEVOnDefeatGroupBox.Size = new System.Drawing.Size(111, 357);
-            this.speciesEVOnDefeatGroupBox.TabIndex = 58;
+            this.speciesEVOnDefeatGroupBox.TabIndex = 2;
             this.speciesEVOnDefeatGroupBox.TabStop = false;
             this.speciesEVOnDefeatGroupBox.Text = "Effort Values Awarded";
-            // 
-            // speciesSpeedEVNumericNoArrows
-            // 
-            this.speciesSpeedEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpeedEVNumericNoArrows.Location = new System.Drawing.Point(9, 320);
-            this.speciesSpeedEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesSpeedEVNumericNoArrows.Name = "speciesSpeedEVNumericNoArrows";
-            this.speciesSpeedEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpeedEVNumericNoArrows.TabIndex = 19;
-            this.speciesSpeedEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedEVNumericNoArrows_Validated);
-            // 
-            // speciesSpecialDefenseEVNumericNoArrows
-            // 
-            this.speciesSpecialDefenseEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialDefenseEVNumericNoArrows.Location = new System.Drawing.Point(9, 270);
-            this.speciesSpecialDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesSpecialDefenseEVNumericNoArrows.Name = "speciesSpecialDefenseEVNumericNoArrows";
-            this.speciesSpecialDefenseEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpecialDefenseEVNumericNoArrows.TabIndex = 18;
-            this.speciesSpecialDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseEVNumericNoArrows_Validated);
-            // 
-            // speciesSpecialAttackEVNumericNoArrows
-            // 
-            this.speciesSpecialAttackEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialAttackEVNumericNoArrows.Location = new System.Drawing.Point(9, 214);
-            this.speciesSpecialAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesSpecialAttackEVNumericNoArrows.Name = "speciesSpecialAttackEVNumericNoArrows";
-            this.speciesSpecialAttackEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpecialAttackEVNumericNoArrows.TabIndex = 17;
-            this.speciesSpecialAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackEVNumericNoArrows_Validated);
-            // 
-            // speciesDefenseEVNumericNoArrows
-            // 
-            this.speciesDefenseEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesDefenseEVNumericNoArrows.Location = new System.Drawing.Point(9, 159);
-            this.speciesDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesDefenseEVNumericNoArrows.Name = "speciesDefenseEVNumericNoArrows";
-            this.speciesDefenseEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesDefenseEVNumericNoArrows.TabIndex = 16;
-            this.speciesDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseEVNumericNoArrows_Validated);
-            // 
-            // speciesAttackEVNumericNoArrows
-            // 
-            this.speciesAttackEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesAttackEVNumericNoArrows.Location = new System.Drawing.Point(9, 100);
-            this.speciesAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesAttackEVNumericNoArrows.Name = "speciesAttackEVNumericNoArrows";
-            this.speciesAttackEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesAttackEVNumericNoArrows.TabIndex = 15;
-            this.speciesAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackEVNumericNoArrows_Validated);
-            // 
-            // speciesHPEVNumericNoArrows
-            // 
-            this.speciesHPEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesHPEVNumericNoArrows.Location = new System.Drawing.Point(9, 46);
-            this.speciesHPEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesHPEVNumericNoArrows.Name = "speciesHPEVNumericNoArrows";
-            this.speciesHPEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesHPEVNumericNoArrows.TabIndex = 14;
-            this.speciesHPEVNumericNoArrows.Validated += new System.EventHandler(this.speciesHPEVNumericNoArrows_Validated);
             // 
             // speciesSpeedEVlabel
             // 
@@ -964,20 +721,21 @@
             // 
             // speciesHMCheckedListBox
             // 
+            this.speciesHMCheckedListBox.CheckOnClick = true;
             this.speciesHMCheckedListBox.FormattingEnabled = true;
             this.speciesHMCheckedListBox.Location = new System.Drawing.Point(726, 339);
             this.speciesHMCheckedListBox.Name = "speciesHMCheckedListBox";
             this.speciesHMCheckedListBox.Size = new System.Drawing.Size(160, 124);
-            this.speciesHMCheckedListBox.TabIndex = 57;
+            this.speciesHMCheckedListBox.TabIndex = 33;
             // 
             // speciesTMCheckedListBox
             // 
+            this.speciesTMCheckedListBox.CheckOnClick = true;
             this.speciesTMCheckedListBox.FormattingEnabled = true;
             this.speciesTMCheckedListBox.Location = new System.Drawing.Point(727, 128);
             this.speciesTMCheckedListBox.Name = "speciesTMCheckedListBox";
             this.speciesTMCheckedListBox.Size = new System.Drawing.Size(160, 184);
-            this.speciesTMCheckedListBox.TabIndex = 56;
-            
+            this.speciesTMCheckedListBox.TabIndex = 32;
             // 
             // speciesComboBox
             // 
@@ -987,7 +745,7 @@
             this.speciesComboBox.Location = new System.Drawing.Point(370, 49);
             this.speciesComboBox.Name = "speciesComboBox";
             this.speciesComboBox.Size = new System.Drawing.Size(121, 21);
-            this.speciesComboBox.TabIndex = 55;
+            this.speciesComboBox.TabIndex = 0;
             this.speciesComboBox.SelectedIndexChanged += new System.EventHandler(this.speciesComboBox_SelectedIndexChanged);
             // 
             // speciesHeldItemsGroupBox
@@ -999,7 +757,7 @@
             this.speciesHeldItemsGroupBox.Location = new System.Drawing.Point(441, 109);
             this.speciesHeldItemsGroupBox.Name = "speciesHeldItemsGroupBox";
             this.speciesHeldItemsGroupBox.Size = new System.Drawing.Size(139, 164);
-            this.speciesHeldItemsGroupBox.TabIndex = 54;
+            this.speciesHeldItemsGroupBox.TabIndex = 6;
             this.speciesHeldItemsGroupBox.TabStop = false;
             this.speciesHeldItemsGroupBox.Text = "Held Items in the Wild";
             // 
@@ -1019,7 +777,7 @@
             this.speciesHeldItem1ComboBox.Location = new System.Drawing.Point(9, 51);
             this.speciesHeldItem1ComboBox.Name = "speciesHeldItem1ComboBox";
             this.speciesHeldItem1ComboBox.Size = new System.Drawing.Size(98, 21);
-            this.speciesHeldItem1ComboBox.TabIndex = 20;
+            this.speciesHeldItem1ComboBox.TabIndex = 19;
             this.speciesHeldItem1ComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesHeldItem1ComboBox_SelectionChangeCommitted);
             // 
             // speciesHeldItem2ComboBox
@@ -1029,7 +787,7 @@
             this.speciesHeldItem2ComboBox.Location = new System.Drawing.Point(7, 114);
             this.speciesHeldItem2ComboBox.Name = "speciesHeldItem2ComboBox";
             this.speciesHeldItem2ComboBox.Size = new System.Drawing.Size(98, 21);
-            this.speciesHeldItem2ComboBox.TabIndex = 22;
+            this.speciesHeldItem2ComboBox.TabIndex = 20;
             this.speciesHeldItem2ComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesHeldItem2ComboBox_SelectionChangeCommitted);
             // 
             // speciesHeldItem2Label
@@ -1050,7 +808,7 @@
             this.speciesAbilitiesGroupBox.Location = new System.Drawing.Point(280, 243);
             this.speciesAbilitiesGroupBox.Name = "speciesAbilitiesGroupBox";
             this.speciesAbilitiesGroupBox.Size = new System.Drawing.Size(141, 118);
-            this.speciesAbilitiesGroupBox.TabIndex = 53;
+            this.speciesAbilitiesGroupBox.TabIndex = 4;
             this.speciesAbilitiesGroupBox.TabStop = false;
             this.speciesAbilitiesGroupBox.Text = "Abilities";
             // 
@@ -1061,7 +819,7 @@
             this.speciesAbility1ComboBox.Location = new System.Drawing.Point(6, 33);
             this.speciesAbility1ComboBox.Name = "speciesAbility1ComboBox";
             this.speciesAbility1ComboBox.Size = new System.Drawing.Size(121, 21);
-            this.speciesAbility1ComboBox.TabIndex = 38;
+            this.speciesAbility1ComboBox.TabIndex = 15;
             this.speciesAbility1ComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesAbility1ComboBox_SelectionChangeCommitted);
             // 
             // speciesAbility1Label
@@ -1080,7 +838,7 @@
             this.speciesAbility2ComboBox.Location = new System.Drawing.Point(6, 83);
             this.speciesAbility2ComboBox.Name = "speciesAbility2ComboBox";
             this.speciesAbility2ComboBox.Size = new System.Drawing.Size(121, 21);
-            this.speciesAbility2ComboBox.TabIndex = 40;
+            this.speciesAbility2ComboBox.TabIndex = 16;
             this.speciesAbility2ComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesAbility2ComboBox_SelectionChangeCommitted);
             // 
             // speciesAbility2Label
@@ -1103,7 +861,7 @@
             this.speciesEggGroupsGroupBox.Location = new System.Drawing.Point(441, 278);
             this.speciesEggGroupsGroupBox.Name = "speciesEggGroupsGroupBox";
             this.speciesEggGroupsGroupBox.Size = new System.Drawing.Size(139, 188);
-            this.speciesEggGroupsGroupBox.TabIndex = 52;
+            this.speciesEggGroupsGroupBox.TabIndex = 7;
             this.speciesEggGroupsGroupBox.TabStop = false;
             this.speciesEggGroupsGroupBox.Text = "Egg";
             // 
@@ -1116,20 +874,6 @@
             this.speciesEggCyclesLabel.TabIndex = 39;
             this.speciesEggCyclesLabel.Text = "Egg Cycles";
             // 
-            // speciesEggCyclesNumericNoArrows
-            // 
-            this.speciesEggCyclesNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesEggCyclesNumericNoArrows.Location = new System.Drawing.Point(7, 146);
-            this.speciesEggCyclesNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesEggCyclesNumericNoArrows.Name = "speciesEggCyclesNumericNoArrows";
-            this.speciesEggCyclesNumericNoArrows.Size = new System.Drawing.Size(66, 20);
-            this.speciesEggCyclesNumericNoArrows.TabIndex = 38;
-            this.speciesEggCyclesNumericNoArrows.Validated += new System.EventHandler(this.speciesEggCyclesNumericNoArrows_Validated);
-            // 
             // speciesEggGroup1ComboBox
             // 
             this.speciesEggGroup1ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1137,7 +881,7 @@
             this.speciesEggGroup1ComboBox.Location = new System.Drawing.Point(6, 36);
             this.speciesEggGroup1ComboBox.Name = "speciesEggGroup1ComboBox";
             this.speciesEggGroup1ComboBox.Size = new System.Drawing.Size(121, 21);
-            this.speciesEggGroup1ComboBox.TabIndex = 34;
+            this.speciesEggGroup1ComboBox.TabIndex = 21;
             this.speciesEggGroup1ComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesEggGroup1ComboBox_SelectionChangeCommitted);
             // 
             // speciesEggGroup1Label
@@ -1156,7 +900,7 @@
             this.speciesEggGroup2ComboBox.Location = new System.Drawing.Point(6, 86);
             this.speciesEggGroup2ComboBox.Name = "speciesEggGroup2ComboBox";
             this.speciesEggGroup2ComboBox.Size = new System.Drawing.Size(121, 21);
-            this.speciesEggGroup2ComboBox.TabIndex = 36;
+            this.speciesEggGroup2ComboBox.TabIndex = 22;
             this.speciesEggGroup2ComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesEggGroup2ComboBox_SelectionChangeCommitted);
             // 
             // speciesEggGroup2Label
@@ -1177,7 +921,7 @@
             this.speciesTypesComboBox.Location = new System.Drawing.Point(280, 109);
             this.speciesTypesComboBox.Name = "speciesTypesComboBox";
             this.speciesTypesComboBox.Size = new System.Drawing.Size(141, 121);
-            this.speciesTypesComboBox.TabIndex = 51;
+            this.speciesTypesComboBox.TabIndex = 3;
             this.speciesTypesComboBox.TabStop = false;
             this.speciesTypesComboBox.Text = "Types";
             // 
@@ -1188,7 +932,7 @@
             this.speciesType1ComboBox.Location = new System.Drawing.Point(6, 34);
             this.speciesType1ComboBox.Name = "speciesType1ComboBox";
             this.speciesType1ComboBox.Size = new System.Drawing.Size(121, 21);
-            this.speciesType1ComboBox.TabIndex = 12;
+            this.speciesType1ComboBox.TabIndex = 13;
             this.speciesType1ComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesType1ComboBox_SelectionChangeCommitted);
             // 
             // speciesType1Label
@@ -1231,7 +975,7 @@
             this.speciesGenderGroupBox.Location = new System.Drawing.Point(602, 109);
             this.speciesGenderGroupBox.Name = "speciesGenderGroupBox";
             this.speciesGenderGroupBox.Size = new System.Drawing.Size(103, 179);
-            this.speciesGenderGroupBox.TabIndex = 50;
+            this.speciesGenderGroupBox.TabIndex = 8;
             this.speciesGenderGroupBox.TabStop = false;
             this.speciesGenderGroupBox.Text = "Gender";
             // 
@@ -1246,35 +990,6 @@
             this.speciesGenderlessRadioButton.Text = "Genderless";
             this.speciesGenderlessRadioButton.UseVisualStyleBackColor = true;
             this.speciesGenderlessRadioButton.CheckedChanged += new System.EventHandler(this.speciesGenderlessRadioButton_CheckedChanged);
-            // 
-            // speciesGenderRatioNumericNoArrows
-            // 
-            this.speciesGenderRatioNumericNoArrows.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesGenderRatioNumericNoArrows.Location = new System.Drawing.Point(6, 149);
-            this.speciesGenderRatioNumericNoArrows.Maximum = new decimal(new int[] {
-            253,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.Name = "speciesGenderRatioNumericNoArrows";
-            this.speciesGenderRatioNumericNoArrows.Size = new System.Drawing.Size(24, 20);
-            this.speciesGenderRatioNumericNoArrows.TabIndex = 28;
-            this.speciesGenderRatioNumericNoArrows.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.Validated += new System.EventHandler(this.speciesGenderRatioNumericNoArrows_Validated);
             // 
             // label35
             // 
@@ -1347,123 +1062,9 @@
             this.speciesBaseStatsGroupBox.Location = new System.Drawing.Point(27, 109);
             this.speciesBaseStatsGroupBox.Name = "speciesBaseStatsGroupBox";
             this.speciesBaseStatsGroupBox.Size = new System.Drawing.Size(111, 357);
-            this.speciesBaseStatsGroupBox.TabIndex = 49;
+            this.speciesBaseStatsGroupBox.TabIndex = 1;
             this.speciesBaseStatsGroupBox.TabStop = false;
             this.speciesBaseStatsGroupBox.Text = "Base Stats";
-            // 
-            // speciesHPNumericNoArrows
-            // 
-            this.speciesHPNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesHPNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesHPNumericNoArrows.Location = new System.Drawing.Point(14, 46);
-            this.speciesHPNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesHPNumericNoArrows.Name = "speciesHPNumericNoArrows";
-            this.speciesHPNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesHPNumericNoArrows.TabIndex = 0;
-            this.speciesHPNumericNoArrows.Validated += new System.EventHandler(this.speciesHPNumericNoArrows_Validated);
-            // 
-            // speciesAttackNumericNoArrows
-            // 
-            this.speciesAttackNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesAttackNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesAttackNumericNoArrows.Location = new System.Drawing.Point(17, 100);
-            this.speciesAttackNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesAttackNumericNoArrows.Name = "speciesAttackNumericNoArrows";
-            this.speciesAttackNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesAttackNumericNoArrows.TabIndex = 2;
-            this.speciesAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackNumericNoArrows_Validated);
-            // 
-            // speciesDefenseNumericNoArrows
-            // 
-            this.speciesDefenseNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesDefenseNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesDefenseNumericNoArrows.Location = new System.Drawing.Point(17, 159);
-            this.speciesDefenseNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesDefenseNumericNoArrows.Name = "speciesDefenseNumericNoArrows";
-            this.speciesDefenseNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesDefenseNumericNoArrows.TabIndex = 4;
-            this.speciesDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseNumericNoArrows_Validated);
-            // 
-            // speciesSpeedNumericNoArrows
-            // 
-            this.speciesSpeedNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesSpeedNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpeedNumericNoArrows.Location = new System.Drawing.Point(17, 320);
-            this.speciesSpeedNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSpeedNumericNoArrows.Name = "speciesSpeedNumericNoArrows";
-            this.speciesSpeedNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpeedNumericNoArrows.TabIndex = 6;
-            this.speciesSpeedNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedNumericNoArrows_Validated);
-            // 
-            // speciesSpecialAttackNumericNoArrows
-            // 
-            this.speciesSpecialAttackNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesSpecialAttackNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialAttackNumericNoArrows.Location = new System.Drawing.Point(17, 214);
-            this.speciesSpecialAttackNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSpecialAttackNumericNoArrows.Name = "speciesSpecialAttackNumericNoArrows";
-            this.speciesSpecialAttackNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpecialAttackNumericNoArrows.TabIndex = 8;
-            this.speciesSpecialAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackNumericNoArrows_Validated);
-            // 
-            // speciesSpecialDefenseNumericNoArrows
-            // 
-            this.speciesSpecialDefenseNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesSpecialDefenseNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialDefenseNumericNoArrows.Location = new System.Drawing.Point(17, 270);
-            this.speciesSpecialDefenseNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSpecialDefenseNumericNoArrows.Name = "speciesSpecialDefenseNumericNoArrows";
-            this.speciesSpecialDefenseNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpecialDefenseNumericNoArrows.TabIndex = 10;
-            this.speciesSpecialDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseNumericNoArrows_Validated);
             // 
             // speciesHPLabel
             // 
@@ -1539,16 +1140,16 @@
             this.label33.TabIndex = 46;
             this.label33.Text = "Learnable TMs";
             // 
-            // menuStrip1
+            // mainFormMenuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mainFormMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(932, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.mainFormMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.mainFormMenuStrip.Name = "mainFormMenuStrip";
+            this.mainFormMenuStrip.Size = new System.Drawing.Size(932, 24);
+            this.mainFormMenuStrip.TabIndex = 1;
+            this.mainFormMenuStrip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -1590,69 +1191,480 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
+            // moveEffectNumericNoArrows
+            // 
+            this.moveEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.moveEffectNumericNoArrows.Location = new System.Drawing.Point(326, 125);
+            this.moveEffectNumericNoArrows.Name = "moveEffectNumericNoArrows";
+            this.moveEffectNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.moveEffectNumericNoArrows.TabIndex = 6;
+            this.moveEffectNumericNoArrows.Validated += new System.EventHandler(this.moveEffectNumericNoArrows_Validated);
+            // 
+            // movePriorityNumericNoArrows
+            // 
+            this.movePriorityNumericNoArrows.InterceptArrowKeys = false;
+            this.movePriorityNumericNoArrows.Location = new System.Drawing.Point(326, 237);
+            this.movePriorityNumericNoArrows.Maximum = new decimal(new int[] {
+            127,
+            0,
+            0,
+            0});
+            this.movePriorityNumericNoArrows.Minimum = new decimal(new int[] {
+            128,
+            0,
+            0,
+            -2147483648});
+            this.movePriorityNumericNoArrows.Name = "movePriorityNumericNoArrows";
+            this.movePriorityNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.movePriorityNumericNoArrows.TabIndex = 8;
+            this.movePriorityNumericNoArrows.Validated += new System.EventHandler(this.movePriorityNumericNoArrows_Validated);
+            // 
+            // moveEffectChanceNumericNoArrows
+            // 
+            this.moveEffectChanceNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.moveEffectChanceNumericNoArrows.InterceptArrowKeys = false;
+            this.moveEffectChanceNumericNoArrows.Location = new System.Drawing.Point(326, 183);
+            this.moveEffectChanceNumericNoArrows.Name = "moveEffectChanceNumericNoArrows";
+            this.moveEffectChanceNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.moveEffectChanceNumericNoArrows.TabIndex = 7;
+            this.moveEffectChanceNumericNoArrows.Validated += new System.EventHandler(this.moveEffectChanceNumericNoArrows_Validated);
+            // 
+            // movePPNumericNoArrows
+            // 
+            this.movePPNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.InterceptArrowKeys = false;
+            this.movePPNumericNoArrows.Location = new System.Drawing.Point(173, 239);
+            this.movePPNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
+            this.movePPNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.movePPNumericNoArrows.TabIndex = 3;
+            this.movePPNumericNoArrows.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.Validated += new System.EventHandler(this.movePPNumericNoArrows_Validated);
+            // 
+            // moveAccuracyNumericNoArrows
+            // 
+            this.moveAccuracyNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.moveAccuracyNumericNoArrows.InterceptArrowKeys = false;
+            this.moveAccuracyNumericNoArrows.Location = new System.Drawing.Point(173, 183);
+            this.moveAccuracyNumericNoArrows.Name = "moveAccuracyNumericNoArrows";
+            this.moveAccuracyNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.moveAccuracyNumericNoArrows.TabIndex = 2;
+            this.moveAccuracyNumericNoArrows.Validated += new System.EventHandler(this.moveAccuracyNumericNoArrows_Validated);
+            // 
+            // movePowerNumericNoArrows
+            // 
+            this.movePowerNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePowerNumericNoArrows.InterceptArrowKeys = false;
+            this.movePowerNumericNoArrows.Location = new System.Drawing.Point(173, 126);
+            this.movePowerNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.movePowerNumericNoArrows.Name = "movePowerNumericNoArrows";
+            this.movePowerNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.movePowerNumericNoArrows.TabIndex = 1;
+            this.movePowerNumericNoArrows.Validated += new System.EventHandler(this.movePowerNumericNoArrows_Validated);
+            // 
+            // speciesCatchRateNumericNoArrows
+            // 
+            this.speciesCatchRateNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesCatchRateNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesCatchRateNumericNoArrows.Location = new System.Drawing.Point(6, 35);
+            this.speciesCatchRateNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesCatchRateNumericNoArrows.Name = "speciesCatchRateNumericNoArrows";
+            this.speciesCatchRateNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesCatchRateNumericNoArrows.TabIndex = 29;
+            this.speciesCatchRateNumericNoArrows.Validated += new System.EventHandler(this.speciesCatchRateNumericNoArrows_Validated);
+            // 
+            // speciesBaseFriendshipNumericNoArrows
+            // 
+            this.speciesBaseFriendshipNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesBaseFriendshipNumericNoArrows.Location = new System.Drawing.Point(6, 82);
+            this.speciesBaseFriendshipNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesBaseFriendshipNumericNoArrows.Name = "speciesBaseFriendshipNumericNoArrows";
+            this.speciesBaseFriendshipNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesBaseFriendshipNumericNoArrows.TabIndex = 30;
+            this.speciesBaseFriendshipNumericNoArrows.Validated += new System.EventHandler(this.speciesHappinessNumericNoArrows_Validated);
+            // 
+            // speciesSafariRunChanceNumericNoArrows
+            // 
+            this.speciesSafariRunChanceNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSafariRunChanceNumericNoArrows.Location = new System.Drawing.Point(6, 145);
+            this.speciesSafariRunChanceNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSafariRunChanceNumericNoArrows.Name = "speciesSafariRunChanceNumericNoArrows";
+            this.speciesSafariRunChanceNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSafariRunChanceNumericNoArrows.TabIndex = 31;
+            this.speciesSafariRunChanceNumericNoArrows.Validated += new System.EventHandler(this.speciesSafariRunChanceNumericNoArrows_Validated);
+            // 
+            // speciesBaseXPYieldNumericNoArrows
+            // 
+            this.speciesBaseXPYieldNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesBaseXPYieldNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesBaseXPYieldNumericNoArrows.Location = new System.Drawing.Point(9, 72);
+            this.speciesBaseXPYieldNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesBaseXPYieldNumericNoArrows.Name = "speciesBaseXPYieldNumericNoArrows";
+            this.speciesBaseXPYieldNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesBaseXPYieldNumericNoArrows.TabIndex = 18;
+            this.speciesBaseXPYieldNumericNoArrows.Validated += new System.EventHandler(this.speciesBaseXPYieldNumericNoArrows_Validated);
+            // 
+            // speciesSpeedEVNumericNoArrows
+            // 
+            this.speciesSpeedEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpeedEVNumericNoArrows.Location = new System.Drawing.Point(9, 320);
+            this.speciesSpeedEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesSpeedEVNumericNoArrows.Name = "speciesSpeedEVNumericNoArrows";
+            this.speciesSpeedEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpeedEVNumericNoArrows.TabIndex = 12;
+            this.speciesSpeedEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedEVNumericNoArrows_Validated);
+            // 
+            // speciesSpecialDefenseEVNumericNoArrows
+            // 
+            this.speciesSpecialDefenseEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialDefenseEVNumericNoArrows.Location = new System.Drawing.Point(9, 270);
+            this.speciesSpecialDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesSpecialDefenseEVNumericNoArrows.Name = "speciesSpecialDefenseEVNumericNoArrows";
+            this.speciesSpecialDefenseEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpecialDefenseEVNumericNoArrows.TabIndex = 11;
+            this.speciesSpecialDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseEVNumericNoArrows_Validated);
+            // 
+            // speciesSpecialAttackEVNumericNoArrows
+            // 
+            this.speciesSpecialAttackEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialAttackEVNumericNoArrows.Location = new System.Drawing.Point(9, 214);
+            this.speciesSpecialAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesSpecialAttackEVNumericNoArrows.Name = "speciesSpecialAttackEVNumericNoArrows";
+            this.speciesSpecialAttackEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpecialAttackEVNumericNoArrows.TabIndex = 10;
+            this.speciesSpecialAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackEVNumericNoArrows_Validated);
+            // 
+            // speciesDefenseEVNumericNoArrows
+            // 
+            this.speciesDefenseEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesDefenseEVNumericNoArrows.Location = new System.Drawing.Point(9, 159);
+            this.speciesDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesDefenseEVNumericNoArrows.Name = "speciesDefenseEVNumericNoArrows";
+            this.speciesDefenseEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesDefenseEVNumericNoArrows.TabIndex = 9;
+            this.speciesDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseEVNumericNoArrows_Validated);
+            // 
+            // speciesAttackEVNumericNoArrows
+            // 
+            this.speciesAttackEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesAttackEVNumericNoArrows.Location = new System.Drawing.Point(9, 100);
+            this.speciesAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesAttackEVNumericNoArrows.Name = "speciesAttackEVNumericNoArrows";
+            this.speciesAttackEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesAttackEVNumericNoArrows.TabIndex = 8;
+            this.speciesAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackEVNumericNoArrows_Validated);
+            // 
+            // speciesHPEVNumericNoArrows
+            // 
+            this.speciesHPEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesHPEVNumericNoArrows.Location = new System.Drawing.Point(9, 46);
+            this.speciesHPEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesHPEVNumericNoArrows.Name = "speciesHPEVNumericNoArrows";
+            this.speciesHPEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesHPEVNumericNoArrows.TabIndex = 7;
+            this.speciesHPEVNumericNoArrows.Validated += new System.EventHandler(this.speciesHPEVNumericNoArrows_Validated);
+            // 
+            // speciesEggCyclesNumericNoArrows
+            // 
+            this.speciesEggCyclesNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesEggCyclesNumericNoArrows.Location = new System.Drawing.Point(7, 146);
+            this.speciesEggCyclesNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesEggCyclesNumericNoArrows.Name = "speciesEggCyclesNumericNoArrows";
+            this.speciesEggCyclesNumericNoArrows.Size = new System.Drawing.Size(66, 20);
+            this.speciesEggCyclesNumericNoArrows.TabIndex = 23;
+            this.speciesEggCyclesNumericNoArrows.Validated += new System.EventHandler(this.speciesEggCyclesNumericNoArrows_Validated);
+            // 
+            // speciesGenderRatioNumericNoArrows
+            // 
+            this.speciesGenderRatioNumericNoArrows.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesGenderRatioNumericNoArrows.Location = new System.Drawing.Point(6, 149);
+            this.speciesGenderRatioNumericNoArrows.Maximum = new decimal(new int[] {
+            253,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.Name = "speciesGenderRatioNumericNoArrows";
+            this.speciesGenderRatioNumericNoArrows.Size = new System.Drawing.Size(24, 20);
+            this.speciesGenderRatioNumericNoArrows.TabIndex = 28;
+            this.speciesGenderRatioNumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.Validated += new System.EventHandler(this.speciesGenderRatioNumericNoArrows_Validated);
+            // 
+            // speciesHPNumericNoArrows
+            // 
+            this.speciesHPNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesHPNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesHPNumericNoArrows.Location = new System.Drawing.Point(14, 46);
+            this.speciesHPNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesHPNumericNoArrows.Name = "speciesHPNumericNoArrows";
+            this.speciesHPNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesHPNumericNoArrows.TabIndex = 1;
+            this.speciesHPNumericNoArrows.Validated += new System.EventHandler(this.speciesHPNumericNoArrows_Validated);
+            // 
+            // speciesAttackNumericNoArrows
+            // 
+            this.speciesAttackNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesAttackNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesAttackNumericNoArrows.Location = new System.Drawing.Point(17, 100);
+            this.speciesAttackNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesAttackNumericNoArrows.Name = "speciesAttackNumericNoArrows";
+            this.speciesAttackNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesAttackNumericNoArrows.TabIndex = 2;
+            this.speciesAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackNumericNoArrows_Validated);
+            // 
+            // speciesDefenseNumericNoArrows
+            // 
+            this.speciesDefenseNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesDefenseNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesDefenseNumericNoArrows.Location = new System.Drawing.Point(17, 159);
+            this.speciesDefenseNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesDefenseNumericNoArrows.Name = "speciesDefenseNumericNoArrows";
+            this.speciesDefenseNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesDefenseNumericNoArrows.TabIndex = 3;
+            this.speciesDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseNumericNoArrows_Validated);
+            // 
+            // speciesSpeedNumericNoArrows
+            // 
+            this.speciesSpeedNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesSpeedNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpeedNumericNoArrows.Location = new System.Drawing.Point(17, 320);
+            this.speciesSpeedNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSpeedNumericNoArrows.Name = "speciesSpeedNumericNoArrows";
+            this.speciesSpeedNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpeedNumericNoArrows.TabIndex = 6;
+            this.speciesSpeedNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedNumericNoArrows_Validated);
+            // 
+            // speciesSpecialAttackNumericNoArrows
+            // 
+            this.speciesSpecialAttackNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesSpecialAttackNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialAttackNumericNoArrows.Location = new System.Drawing.Point(17, 214);
+            this.speciesSpecialAttackNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSpecialAttackNumericNoArrows.Name = "speciesSpecialAttackNumericNoArrows";
+            this.speciesSpecialAttackNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpecialAttackNumericNoArrows.TabIndex = 4;
+            this.speciesSpecialAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackNumericNoArrows_Validated);
+            // 
+            // speciesSpecialDefenseNumericNoArrows
+            // 
+            this.speciesSpecialDefenseNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesSpecialDefenseNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialDefenseNumericNoArrows.Location = new System.Drawing.Point(17, 270);
+            this.speciesSpecialDefenseNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSpecialDefenseNumericNoArrows.Name = "speciesSpecialDefenseNumericNoArrows";
+            this.speciesSpecialDefenseNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpecialDefenseNumericNoArrows.TabIndex = 5;
+            this.speciesSpecialDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseNumericNoArrows_Validated);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 530);
             this.Controls.Add(this.mainTabControl);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.mainFormMenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.mainFormMenuStrip;
             this.Name = "MainForm";
             this.Text = "Pokemon Sinjoh Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.mainTabControl.ResumeLayout(false);
             this.movesTabPage.ResumeLayout(false);
             this.movesTabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).EndInit();
             this.moveFlagsGroupBox.ResumeLayout(false);
             this.moveFlagsGroupBox.PerformLayout();
             this.speciesTabPage.ResumeLayout(false);
             this.speciesTabPage.PerformLayout();
             this.speciesMiscGroupBox.ResumeLayout(false);
             this.speciesMiscGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesCatchRateNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesHappinessNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSafariRunChanceNumericNoArrows)).EndInit();
             this.speciesXPGroupBox.ResumeLayout(false);
             this.speciesXPGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseXPYieldNumericNoArrows)).EndInit();
             this.speciesEVOnDefeatGroupBox.ResumeLayout(false);
             this.speciesEVOnDefeatGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesAttackEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesHPEVNumericNoArrows)).EndInit();
             this.speciesHeldItemsGroupBox.ResumeLayout(false);
             this.speciesHeldItemsGroupBox.PerformLayout();
             this.speciesAbilitiesGroupBox.ResumeLayout(false);
             this.speciesAbilitiesGroupBox.PerformLayout();
             this.speciesEggGroupsGroupBox.ResumeLayout(false);
             this.speciesEggGroupsGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).EndInit();
             this.speciesTypesComboBox.ResumeLayout(false);
             this.speciesTypesComboBox.PerformLayout();
             this.speciesGenderGroupBox.ResumeLayout(false);
             this.speciesGenderGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).EndInit();
             this.speciesBaseStatsGroupBox.ResumeLayout(false);
             this.speciesBaseStatsGroupBox.PerformLayout();
+            this.mainFormMenuStrip.ResumeLayout(false);
+            this.mainFormMenuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesCatchRateNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseFriendshipNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSafariRunChanceNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseXPYieldNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesAttackEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesHPEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHPNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesAttackNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1663,7 +1675,7 @@
         private System.Windows.Forms.TabControl mainTabControl;
         private System.Windows.Forms.TabPage movesTabPage;
         private System.Windows.Forms.TabPage speciesTabPage;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip mainFormMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
@@ -1737,7 +1749,7 @@
         private System.Windows.Forms.Label speciesXPGroupLabel;
         private System.Windows.Forms.ComboBox speciesXPGroupComboBox;
         private System.Windows.Forms.Label speciesBaseHappinessLabel;
-        private NumericNoArrows speciesHappinessNumericNoArrows;
+        private NumericNoArrows speciesBaseFriendshipNumericNoArrows;
         private System.Windows.Forms.Label speciesSafariRunChanceLabel;
         private NumericNoArrows speciesSafariRunChanceNumericNoArrows;
         private System.Windows.Forms.Label speciesAbility2Label;
@@ -1794,6 +1806,17 @@
         private System.Windows.Forms.Label speciesSpecialDefenseEVLabel;
         private System.Windows.Forms.GroupBox speciesXPGroupBox;
         private System.Windows.Forms.GroupBox speciesMiscGroupBox;
+        private System.Windows.Forms.ToolTip speciesTypeTooltip;
+        private System.Windows.Forms.ToolTip speciesAbilityTooltip;
+        private System.Windows.Forms.ToolTip speciesXPGroupTooltip;
+        private System.Windows.Forms.ToolTip speciesBaseXPTooltip;
+        private System.Windows.Forms.ToolTip speciesWildHeldItemTooltip;
+        private System.Windows.Forms.ToolTip speciesEggGroupTooltip;
+        private System.Windows.Forms.ToolTip speciesEggCyclesTooltip;
+        private System.Windows.Forms.ToolTip speciesBaseFriendshipTooltip;
+        private System.Windows.Forms.ToolTip speciesSafariRunChanceTooltip;
+        private System.Windows.Forms.ToolTip speciesCatchRateTooltip;
+        private System.Windows.Forms.ToolTip speciesEVYieldTooltip;
     }
 }
 
