@@ -484,7 +484,32 @@ namespace Pokemon_Sinjoh_Editor
 
         public static string GetGameVersion() => GameVersion.ToString();
 		public static string[] GetMoveNames() => MoveNames.ToArray();
-		public static string[] GetPokemonSpeciesNames() => PokemonNames.ToArray();
+		public static string[] GetPokemonSpeciesNames()
+		{
+			string[] speciesNames = new string[PokemonSpeciesList.Count];
+
+			for (int i = 0; i < PokemonNames.Count; i++)
+				speciesNames[i] = PokemonNames[i];
+
+            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 1] = "DEOXYS (Attack Form)";
+            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 2] = "DEOXYS (Defense Form)";
+            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 3] = "DEOXYS (Speed Form)";
+            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 4] = "WORMADAM (Sandy Form)";
+            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 5] = "WORMADAM (Trash Form)";
+
+            if (gameFamily == GameFamilies.HGSS || gameFamily == GameFamilies.PL)
+			{
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 6] = "GIRATINA (Origin Form)";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 7] = "SHAYMIN (Sky Form)";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 8] = "ROTOM (Heat Form)";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 9] = "ROTOM (Wash Form)";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 10] = "ROTOM (Frost Form)";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 11] = "ROTOM (Fan Form)";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 12] = "ROTOM (Mow Form)";
+            }
+
+			return speciesNames;
+        }
 		public static string[] GetItemNames() => ItemNames.ToArray();
 		public static string[] GetTypeNames() => TypeNames.ToArray();
 		public static string[] GetAbilityNames() => AbilityNames.ToArray();

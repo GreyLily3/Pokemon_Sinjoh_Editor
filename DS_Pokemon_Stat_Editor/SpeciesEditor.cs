@@ -151,6 +151,35 @@ namespace Pokemon_Sinjoh_Editor
             displaySpeciesValues(speciesComboBox.SelectedIndex);
             this.speciesTMCheckedListBox.ItemCheck += new ItemCheckEventHandler(this.speciesTMCheckedListBox_ItemCheck);
             this.speciesHMCheckedListBox.ItemCheck += new ItemCheckEventHandler(this.speciesHMCheckedListBox_ItemCheck);
+
+            if (speciesComboBox.SelectedIndex < PokemonSpecies.EGG_SPECIES_INDEX || speciesComboBox.SelectedIndex > PokemonSpecies.BAD_EGG_SPECIES_INDEX)
+            {
+                speciesBaseStatsGroupBox.Enabled = true;
+                speciesEVOnDefeatGroupBox.Enabled = true;
+                speciesTypesComboBox.Enabled = true;
+                speciesAbilitiesGroupBox.Enabled = true;
+                speciesXPGroupBox.Enabled = true;
+                speciesHeldItemsGroupBox.Enabled = true;
+                speciesEggGroupsGroupBox.Enabled = true;
+                speciesGenderGroupBox.Enabled = true;
+                speciesMiscGroupBox.Enabled = true;
+                speciesTMCheckedListBox.Enabled = true;
+                speciesHMCheckedListBox.Enabled = true;
+            }
+            else
+            {
+                speciesBaseStatsGroupBox.Enabled = false;
+                speciesEVOnDefeatGroupBox.Enabled = false;
+                speciesTypesComboBox.Enabled = false;
+                speciesAbilitiesGroupBox.Enabled = false;
+                speciesXPGroupBox.Enabled = false;
+                speciesHeldItemsGroupBox.Enabled = false;
+                speciesEggGroupsGroupBox.Enabled = false;
+                speciesGenderGroupBox.Enabled = false;
+                speciesMiscGroupBox.Enabled = false;
+                speciesTMCheckedListBox.Enabled = false;
+                speciesHMCheckedListBox.Enabled = false;
+            }
         }
 
         private void speciesMaleOnlyRadioButton_CheckedChanged(object sender, EventArgs e)

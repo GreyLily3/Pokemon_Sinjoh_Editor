@@ -60,6 +60,12 @@ namespace Pokemon_Sinjoh_Editor
         private const int SPECIAL_ATTACK_EV_BIT_SHIFT = 8;
         private const int SPECIAL_DEFENSE_EV_BIT_SHIFT = 10;
 
+        public const int HGSS_NUM_ALT_FORMS = 12;
+        public const int PL_NUM_ALT_FORMS = 12;
+        public const int DP_NUM_ALT_FORMS = 5;
+        public const int EGG_SPECIES_INDEX = 493; //1 less than actual game value because we remove the 0th placeholder entry
+        public const int BAD_EGG_SPECIES_INDEX = 494; //1 less than actual game value because we remove the 0th placeholder entry
+
         public enum EggGroups
         {
             NULL,
