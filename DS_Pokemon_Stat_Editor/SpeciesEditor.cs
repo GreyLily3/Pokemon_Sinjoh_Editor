@@ -182,8 +182,13 @@ namespace Pokemon_Sinjoh_Editor
             if (speciesMaleAndFemaleRadioButton.Checked)
             {
                 speciesGenderRatioNumericNoArrows.Enabled = true;
-                speciesGenderRatioNumericNoArrows.Value = PokemonSpecies.Get50PercentGenderRatio();
-                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].GenderRatio = (int)speciesGenderRatioNumericNoArrows.Value;
+
+                int genderRatio = RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].GenderRatio;
+                if (genderRatio < speciesGenderRatioNumericNoArrows.Minimum || genderRatio > speciesGenderRatioNumericNoArrows.Maximum)
+                {
+                    speciesGenderRatioNumericNoArrows.Value = PokemonSpecies.Get50PercentGenderRatio();
+                    RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].GenderRatio = (int)speciesGenderRatioNumericNoArrows.Value;
+                }
 
                 if (speciesRadioButtonsCanRecieveUserInput)
                     MarkUnsavedChanges();
@@ -403,9 +408,9 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesXPGroupComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].XPGroup != (PokemonSpecies.XPGroups)speciesAbility2ComboBox.SelectedIndex)
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].XPGroup != (PokemonSpecies.XPGroups)speciesXPGroupComboBox.SelectedIndex)
             {
-                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].XPGroup = (PokemonSpecies.XPGroups)speciesAbility2ComboBox.SelectedIndex;
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].XPGroup = (PokemonSpecies.XPGroups)speciesXPGroupComboBox.SelectedIndex;
                 MarkUnsavedChanges();
             }
         }
