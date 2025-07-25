@@ -90,7 +90,7 @@ namespace Pokemon_Sinjoh_Editor
             speciesXPGroupComboBox.SelectedIndex = (int)RomFile.PokemonSpeciesList[pokemonIndex].XPGroup;
 
             speciesCatchRateNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].CatchRate;
-            speciesHappinessNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].BaseHappiness;
+            speciesBaseFriendshipNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].BaseFriendship;
             speciesBaseXPYieldNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].BaseXP;
             speciesSafariRunChanceNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].SafariRunChance;
             speciesEggCyclesNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].NumEggCyles;
@@ -340,9 +340,9 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesHappinessNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseHappiness != speciesHappinessNumericNoArrows.Value)
+            if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseFriendship != speciesBaseFriendshipNumericNoArrows.Value)
             {
-                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseHappiness = (byte)speciesHappinessNumericNoArrows.Value;
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseFriendship = (byte)speciesBaseFriendshipNumericNoArrows.Value;
                 MarkUnsavedChanges();
             }
         }

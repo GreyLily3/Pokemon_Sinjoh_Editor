@@ -28,7 +28,7 @@ namespace Pokemon_Sinjoh_Editor
         public ushort Item2;
         private byte genderRatio;
         public byte NumEggCyles;
-        public byte BaseHappiness;
+        public byte BaseFriendship;
         public XPGroups XPGroup;
         public EggGroups EggGroup1;
         public EggGroups EggGroup2;
@@ -124,7 +124,7 @@ namespace Pokemon_Sinjoh_Editor
 
             genderRatio = pokemonSpeciesReader.ReadByte();
             NumEggCyles = pokemonSpeciesReader.ReadByte();
-            BaseHappiness = pokemonSpeciesReader.ReadByte();
+            BaseFriendship = pokemonSpeciesReader.ReadByte();
             XPGroup = (XPGroups)pokemonSpeciesReader.ReadByte();
 
             EggGroup1 = (EggGroups)pokemonSpeciesReader.ReadByte();
@@ -179,7 +179,7 @@ namespace Pokemon_Sinjoh_Editor
 
             pokemonSpeciesWriter.Write(genderRatio);
             pokemonSpeciesWriter.Write(NumEggCyles);
-            pokemonSpeciesWriter.Write(BaseHappiness);
+            pokemonSpeciesWriter.Write(BaseFriendship);
             pokemonSpeciesWriter.Write((byte)XPGroup);
 
             pokemonSpeciesWriter.Write((byte)EggGroup1);
