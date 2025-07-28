@@ -30,8 +30,8 @@ namespace Pokemon_Sinjoh_Editor
         public byte NumEggCyles;
         public byte BaseFriendship;
         public XPGroups XPGroup;
-        public EggGroups EggGroup1;
-        public EggGroups EggGroup2;
+        private EggGroups eggGroup1;
+        private EggGroups eggGroup2;
         public byte Ability1;
         public byte Ability2;
         public byte SafariRunChance;
@@ -46,6 +46,7 @@ namespace Pokemon_Sinjoh_Editor
         public const byte GENDER_RATIO_GENDERLESS = 255;
         public const byte GENDER_RATIO_50_PERCENT = 127;
         public const byte MAX_EV_YIELD = 3;
+        private const int EGG_GROUP_START_INDEX = 1;
 
         private const ushort HP_EV_MASK = 0b_0000_0000_0000_0011;
         private const ushort ATTACK_EV_MASK = 0b_0000_0000_0000_1100;
@@ -68,7 +69,6 @@ namespace Pokemon_Sinjoh_Editor
 
         public enum EggGroups
         {
-            NULL,
             MONSTER,
             WATER1,
             BUG,
@@ -133,8 +133,8 @@ namespace Pokemon_Sinjoh_Editor
             BaseFriendship = pokemonSpeciesReader.ReadByte();
             XPGroup = (XPGroups)pokemonSpeciesReader.ReadByte();
 
-            EggGroup1 = (EggGroups)pokemonSpeciesReader.ReadByte();
-            EggGroup2 = (EggGroups)pokemonSpeciesReader.ReadByte();
+            eggGroup1 = (EggGroups)pokemonSpeciesReader.ReadByte();
+            eggGroup2 = (EggGroups)pokemonSpeciesReader.ReadByte();
 
             Ability1 = pokemonSpeciesReader.ReadByte();
             Ability2 = pokemonSpeciesReader.ReadByte();
@@ -188,8 +188,8 @@ namespace Pokemon_Sinjoh_Editor
             pokemonSpeciesWriter.Write(BaseFriendship);
             pokemonSpeciesWriter.Write((byte)XPGroup);
 
-            pokemonSpeciesWriter.Write((byte)EggGroup1);
-            pokemonSpeciesWriter.Write((byte)EggGroup2);
+            pokemonSpeciesWriter.Write((byte)eggGroup1);
+            pokemonSpeciesWriter.Write((byte)eggGroup2);
 
             pokemonSpeciesWriter.Write(Ability1);
             pokemonSpeciesWriter.Write(Ability2);
@@ -215,8 +215,19 @@ namespace Pokemon_Sinjoh_Editor
         public bool GetIsFemaleOnly() => genderRatio == GENDER_RATIO_FEMALE_ONLY;
         public bool GetIsMaleOnly() => genderRatio == GENDER_RATIO_MALE_ONLY;
         public static byte Get50PercentGenderRatio() => GENDER_RATIO_50_PERCENT;
-
         public int GenderRatio { get => genderRatio; set { genderRatio = (byte)(value < GENDER_RATIO_FEMALE_ONLY ? value : GENDER_RATIO_FEMALE_ONLY - 1); } }
+
+        public EggGroups EggGroup1
+        {
+            get => eggGroup1 - EGG_GROUP_START_INDEX;
+            set => eggGroup1 = value + EGG_GROUP_START_INDEX;
+        }
+
+        public EggGroups EggGroup2
+        {
+            get => eggGroup2 - EGG_GROUP_START_INDEX;
+            set => eggGroup2 = value + EGG_GROUP_START_INDEX;
+        }
 
         public byte HPEVYield
         {

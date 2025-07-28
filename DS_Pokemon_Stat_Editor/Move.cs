@@ -14,7 +14,7 @@ namespace Pokemon_Sinjoh_Editor
         public byte Type;
         public byte Accuracy;
         public sbyte Priority;
-        public byte ContestEffect;
+        private byte contestEffect;
         public Categories Category;
         public ContestConditions ContestCondition;
         public Targets Target;
@@ -25,11 +25,10 @@ namespace Pokemon_Sinjoh_Editor
         private static bool[] DoEffectsCalcDamage;
 
         public const int NUM_EFFECTS = 276;
-      
+        private const byte CONTEST_EFFECT_START_INDEX = 1;
 
         public static string[] ContestEffectDescriptions { get; private set; } = new string[] 
         {
-            "N/A",
             "2 appeal, perform first next turn",
             "2 appeal, perform last next turn",
             "Unused",
@@ -125,6 +124,12 @@ namespace Pokemon_Sinjoh_Editor
             KINGS_ROCK = 32,
             KEEP_HP_BAR_VISIBLE = 64,
             HIDE_POKEMON_SHADOWS = 128
+        }
+
+        public byte ContestEffect
+        {
+            get => (byte)(contestEffect - CONTEST_EFFECT_START_INDEX);
+            set => contestEffect = (byte)(value + CONTEST_EFFECT_START_INDEX);
         }
 
         #endregion
@@ -250,7 +255,7 @@ namespace Pokemon_Sinjoh_Editor
             Accuracy = 0;
             Type = 0;
             Priority = 0;
-            ContestEffect = 0;
+            contestEffect = 0;
             Category = 0;
             ContestCondition = 0;
             Target = 0;
@@ -333,7 +338,7 @@ namespace Pokemon_Sinjoh_Editor
                     Target = (Targets)moveBinaryReader.ReadUInt16();
                     Priority = moveBinaryReader.ReadSByte();
                     flags = (Flags)moveBinaryReader.ReadByte();
-                    ContestEffect = moveBinaryReader.ReadByte();
+                    contestEffect = moveBinaryReader.ReadByte();
                     ContestCondition = (ContestConditions)moveBinaryReader.ReadByte();
                 }
 
@@ -352,7 +357,7 @@ namespace Pokemon_Sinjoh_Editor
                 moveBinaryWriter.Write((ushort)Target);
                 moveBinaryWriter.Write(Priority);
                 moveBinaryWriter.Write((byte)flags);
-                moveBinaryWriter.Write(ContestEffect);
+                moveBinaryWriter.Write(contestEffect);
                 moveBinaryWriter.Write((byte)ContestCondition);
                 moveBinaryWriter.Write((ushort)0x0000);
             }
@@ -389,7 +394,7 @@ namespace Pokemon_Sinjoh_Editor
             if (!string.Equals(comparingMove.ContestCondition, ContestCondition.ToString()))
                 return false;
 
-            if (comparingMove.ContestEffect != ContestEffect)
+            if (comparingMove.ContestEffect != contestEffect)
                 return false;
 
             if (comparingMove.ContactFlag != ContactFlag)
