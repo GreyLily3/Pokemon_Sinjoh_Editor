@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Pokemon_Sinjoh_Editor
@@ -8,11 +9,16 @@ namespace Pokemon_Sinjoh_Editor
 		private const int MOVE_PP_MULTIPLE = 5;
 		private const string SPECIES_TYPE_TOOLTIP_TEXT = "For monotype pokemon set type 1 & 2 to the same type";
 		private const string SPECIES_ABILITY_TOOLTIP_TEXT = "For pokemon with only one ability you can either set ability 1 & 2 to the same ability or set ability 2 to '---'";
-		private const string SPECIES_EGG_GROUP_TOOLTIP_TEXT = "Pokemon can only breed with other pokemon that share an egg group. For pokemon with 1 egg group set egg group 2 to the same as egg group 1";
+		private const string SPECIES_EGG_GROUP_TOOLTIP_TEXT = "Pokemon can only breed with other pokemon that share an egg group. For pokemon with a single egg group set egg groups 1 & 2 to be the same";
 		private const string SPECIES_WILD_HELD_ITEM_TOOLTIP_TEXT = "The item the pokemon has a chance of holding when encountered in the wild";
 		private const string SPECIES_EV_YIELD_TOOLTIP_TEXT = "What effort values the pokemon will give when defeated. Each pokemon can have a total of 510 EVs across all stats";
 
-		public MainForm()
+		private Color darkModeBackColor = Color.FromArgb(64, 64, 64);
+        private Color darkModeTextColor = Color.FromArgb(255, 255, 255);
+		private Color lightModeBackColor = SystemColors.Window;
+        private Color lightModeTextColor = SystemColors.WindowText;
+
+        public MainForm()
 		{
 			InitializeComponent();
 
@@ -52,6 +58,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesBaseFriendshipTooltip.SetToolTip(speciesBaseFriendshipNumericNoArrows, "How much friendship the pokemon will start with when caught or recieved from trading. Pokemon with friendship evolutions will evovle at 220");
             speciesSafariRunChanceTooltip.SetToolTip(speciesSafariRunChanceNumericNoArrows, "The base chance out of 254 a pokemon will run every turn when encountered in the safari zone/Great Marsh");
             speciesEVYieldTooltip.SetToolTip(speciesEVOnDefeatGroupBox, SPECIES_EV_YIELD_TOOLTIP_TEXT);
+
+			
         }
 
         private void IncludeGameVersionInText(string romName)
@@ -114,7 +122,8 @@ namespace Pokemon_Sinjoh_Editor
                         mainTabControl.Enabled = true;
                         LoadMoveData();
 						loadSpeciesData();
-
+						LoadTradeControlText();
+						UpdateDisplayedTradeValues();
                     }
 				}                
 			}

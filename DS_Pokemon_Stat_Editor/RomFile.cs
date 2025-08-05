@@ -11,6 +11,7 @@ namespace Pokemon_Sinjoh_Editor
 	{
 		private static NarcFile movesNarc;
 		private static NarcFile pokemonSpeciesNarc;
+		private static NarcFile npcTradesNarc;
 		private static NarcFile gameTextNarc;
 		private static TextArchive gameText;
 		private static GameVersions GameVersion;
@@ -20,12 +21,14 @@ namespace Pokemon_Sinjoh_Editor
 
 		public static List<Move> MoveList = new List<Move>();
         public static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
+		public static List<NPCTrade> NPCTradesList = new List<NPCTrade>();
 
 		public static List<string> MoveNames { get; private set; }
 		public static List<string> PokemonNames { get; private set; }
 		public static List<string> TypeNames { get; private set; }
 		public static List<string> AbilityNames { get; private set; }
 		public static List<string> ItemNames { get; private set; }
+		public static List<string> TradedPokemonAndTrainerNicknames { get; private set; }
 
 		private static FAT fat;
 
@@ -37,27 +40,31 @@ namespace Pokemon_Sinjoh_Editor
 		private const int ROM_NAME_LENGTH = 0xA;
 		private const int FAT_POINTER_OFFSET = 0x48;
 
-		const int MOVES_TEXT_BANK_DP = 589;
-		const int MOVES_TEXT_BANK_PL = 648;
-		const int MOVES_TEXT_BANK_HGSS = 751;
+		private const int MOVES_TEXT_BANK_DP = 589;
+        private const int MOVES_TEXT_BANK_PL = 648;
+        private const int MOVES_TEXT_BANK_HGSS = 751;
 
-		const int POKEMON_NAMES_TEXT_BANK_DP = 362;
-		const int POKEMON_NAMES_TEXT_BANK_PL = 412;
-		const int POKEMON_NAMES_TEXT_BANK_HGSS = 237;
+        private const int POKEMON_NAMES_TEXT_BANK_DP = 362;
+        private const int POKEMON_NAMES_TEXT_BANK_PL = 412;
+        private const int POKEMON_NAMES_TEXT_BANK_HGSS = 237;
 
-		const int TYPES_TEXT_BANK_DP = 565;
-		const int TYPES_TEXT_BANK_PL = 624;
-		const int TYPES_TEXT_BANK_HGSS = 735;
+        private const int TYPES_TEXT_BANK_DP = 565;
+        private const int TYPES_TEXT_BANK_PL = 624;
+        private const int TYPES_TEXT_BANK_HGSS = 735;
 
-		const int ABILITY_NAMES_TEXT_BANK_DP = 553;
-		const int ABILITY_NAMES_TEXT_BANK_PL = 611;
-		const int ABILITY_NAMES_TEXT_BANK_HGSS = 721;
+        private const int ABILITY_NAMES_TEXT_BANK_DP = 553;
+        private const int ABILITY_NAMES_TEXT_BANK_PL = 611;
+        private const int ABILITY_NAMES_TEXT_BANK_HGSS = 721;
 
-		const int ITEM_NAMES_TEXT_BANK_DP = 344;
-		const int ITEM_NAMES_TEXT_BANK_PL = 392;
-		const int ITEM_NAMES_TEXT_BANK_HGSS = 222;
+        private const int ITEM_NAMES_TEXT_BANK_DP = 344;
+        private const int ITEM_NAMES_TEXT_BANK_PL = 392;
+        private const int ITEM_NAMES_TEXT_BANK_HGSS = 222;
 
-		private const int MOVES_NARC_ID_DP = 0x158;
+        private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP = 326;
+        private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL = 370;
+        private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS = 200;
+
+        private const int MOVES_NARC_ID_DP = 0x158;
 		private const int MOVES_NARC_ID_PL = 0x1BE;
 		private const int MOVES_NARC_ID_HGSS = 0x8C;
 
@@ -66,7 +73,11 @@ namespace Pokemon_Sinjoh_Editor
 		private const int POKEMON_SPECIES_NARC_ID_PL = 0x1A5;
 		private const int POKEMON_SPECIES_NARC_ID_HGSS = 0x83;
 
-		private const int TEXT_NARC_ID_DP = 0x13D;
+        private const int NPC_TRADES_ID_DP = 0x10E;
+        private const int NPC_TRADES_ID_PL = 0x150;
+        private const int NPC_TRADES_NARC_ID_HGSS = 0xF1;
+
+        private const int TEXT_NARC_ID_DP = 0x13D;
 		private const int TEXT_NARC_ID_PL = 0x194;
 		private const int TEXT_NARC_ID_HGSS = 0x9C;
 
@@ -182,7 +193,10 @@ namespace Pokemon_Sinjoh_Editor
 			pokemonSpeciesNarc = new NarcFile(getSpeciesNarcOffset());
 			pokemonSpeciesNarc.Read(romFileReader);
 
-			gameTextNarc = new NarcFile(getTextNarcOffset());
+			npcTradesNarc = new NarcFile(getNPCTradesNarcOffset());
+			npcTradesNarc.Read(romFileReader);
+
+            gameTextNarc = new NarcFile(getTextNarcOffset());
 			gameTextNarc.Read(romFileReader);
 			gameText = new TextArchive(gameTextNarc);
 
@@ -195,22 +209,22 @@ namespace Pokemon_Sinjoh_Editor
 			TypeNames = gameText.TextBanks[getTypeNamesTextBankID()];
 			ItemNames = gameText.TextBanks[getItemNamesTextBankID()];
 			AbilityNames = gameText.TextBanks[getAbilityNamesTextBankID()];
+			TradedPokemonAndTrainerNicknames = gameText.TextBanks[getTradePokemonNicknamesAndTrainerNamesTextBankID()];
 
-			if (MoveList.Count > 0)
-				MoveList.RemoveRange(0, MoveList.Count);
+            MoveList.Clear();
+			PokemonSpeciesList.Clear();
+            NPCTradesList.Clear();
 
-			//skip the first move because it's a placeholder
-			for (int i = 1; i < movesNarc.Elements.Count; i++)
+            //skip the first move because it's a placeholder
+            for (int i = 1; i < movesNarc.Elements.Count; i++)
 				MoveList.Add(new Move(movesNarc.Elements[i]));
-
-            if (PokemonSpeciesList.Count > 0)
-                PokemonSpeciesList.RemoveRange(0, PokemonSpeciesList.Count);
 
 			//skip the first pokemon because it's a placeholder
             for (int i = 1; i < pokemonSpeciesNarc.Elements.Count; i++)
                 PokemonSpeciesList.Add(new PokemonSpecies(pokemonSpeciesNarc.Elements[i]));
-				
-			
+
+            for (int i = 0; i < npcTradesNarc.Elements.Count; i++)
+				NPCTradesList.Add(new NPCTrade(npcTradesNarc.Elements[i]));
 		}
 
 		private static void readHeader(BinaryReader romFileReader)
@@ -259,6 +273,17 @@ namespace Pokemon_Sinjoh_Editor
                 _ => 0
 			};
 		}
+
+		private static uint getNPCTradesNarcOffset()
+		{
+            return gameFamily switch
+            {
+                GameFamilies.DP => fat.GetStartOffset(NPC_TRADES_ID_DP),
+                GameFamilies.PL => fat.GetStartOffset(NPC_TRADES_ID_PL),
+                GameFamilies.HGSS => fat.GetStartOffset(NPC_TRADES_NARC_ID_HGSS),
+                _ => 0
+            };
+        }
 
 		private static uint getTextNarcOffset()
 		{
@@ -325,6 +350,17 @@ namespace Pokemon_Sinjoh_Editor
 				_ => -1
 			};
 		}
+
+		private static int getTradePokemonNicknamesAndTrainerNamesTextBankID()
+		{
+            return gameFamily switch
+            {
+                GameFamilies.DP => TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP,
+                GameFamilies.PL => TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL,
+                GameFamilies.HGSS => TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS,
+                _ => -1
+            };
+        }
 
         public static bool IsValidGameVersion()
         {
@@ -519,5 +555,8 @@ namespace Pokemon_Sinjoh_Editor
         public static string[] GetMoveTargets() => Enum.GetNames(typeof(Move.Targets));
 		public static string[] GetEggGroupNames() => Enum.GetNames(typeof(PokemonSpecies.EggGroups));
 		public static string[] GetXPGroupNames() => Enum.GetNames(typeof(PokemonSpecies.XPGroups));
+		public static string[] GetLanguageNames() => Enum.GetNames(typeof(NPCTrade.Languages));
+		public static string[] GetWantedGenderNames() => Enum.GetNames(typeof(NPCTrade.WantedGender));
+		public static string[] GetTradePokemonNickNames() => TradedPokemonAndTrainerNicknames.ToArray();
     }
 }
