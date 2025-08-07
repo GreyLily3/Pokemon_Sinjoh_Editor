@@ -28,9 +28,10 @@ namespace Pokemon_Sinjoh_Editor
 		public static List<string> TypeNames { get; private set; }
 		public static List<string> AbilityNames { get; private set; }
 		public static List<string> ItemNames { get; private set; }
-		public static List<string> TradedPokemonAndTrainerNicknames { get; private set; }
+		public static List<string> TradePokemonNicknames { get; private set; } = new List<string>();
+        public static List<string> TradePokemonTrainerNames { get; private set; } = new List<string>();
 
-		private static FAT fat;
+        private static FAT fat;
 
 		private static uint FATOffset;
         private static uint FATLength;
@@ -209,7 +210,17 @@ namespace Pokemon_Sinjoh_Editor
 			TypeNames = gameText.TextBanks[getTypeNamesTextBankID()];
 			ItemNames = gameText.TextBanks[getItemNamesTextBankID()];
 			AbilityNames = gameText.TextBanks[getAbilityNamesTextBankID()];
-			TradedPokemonAndTrainerNicknames = gameText.TextBanks[getTradePokemonNicknamesAndTrainerNamesTextBankID()];
+
+			TradePokemonNicknames.Clear();
+            TradePokemonTrainerNames.Clear();
+
+            for (int i = 0; i < npcTradesNarc.Elements.Count; i++)
+                TradePokemonNicknames.Add(gameText.TextBanks[getTradePokemonNicknamesAndTrainerNamesTextBankID()][i]);
+
+            //multiply count by 2 because there is a trainer name for pokemon nickname
+            for (int i = npcTradesNarc.Elements.Count; i < npcTradesNarc.Elements.Count * 2; i++)
+                TradePokemonTrainerNames.Add(gameText.TextBanks[getTradePokemonNicknamesAndTrainerNamesTextBankID()][i]);
+
 
             MoveList.Clear();
 			PokemonSpeciesList.Clear();
@@ -225,7 +236,9 @@ namespace Pokemon_Sinjoh_Editor
 
             for (int i = 0; i < npcTradesNarc.Elements.Count; i++)
 				NPCTradesList.Add(new NPCTrade(npcTradesNarc.Elements[i]));
-		}
+
+			
+        }
 
 		private static void readHeader(BinaryReader romFileReader)
 		{
@@ -389,10 +402,14 @@ namespace Pokemon_Sinjoh_Editor
 			for (int i = 0; i < PokemonSpeciesList.Count; i++)
 				pokemonSpeciesNarc.Elements[i + 1] = PokemonSpeciesList[i].GetBinary(); //skip the first pokemon in pokemonSpeciesNarc because it's a placeholder
 
+			for (int i = 0; i < NPCTradesList.Count; i++)
+                npcTradesNarc.Elements[i] = NPCTradesList[i].GetBinary();
+
             try
 			{
 				movesNarc.Write(romWriter);
 				pokemonSpeciesNarc.Write(romWriter);
+                npcTradesNarc.Write(romWriter);
                 AreUnsavedChanges = false;
             }
             catch (EndOfStreamException e)
@@ -557,6 +574,7 @@ namespace Pokemon_Sinjoh_Editor
 		public static string[] GetXPGroupNames() => Enum.GetNames(typeof(PokemonSpecies.XPGroups));
 		public static string[] GetLanguageNames() => Enum.GetNames(typeof(NPCTrade.Languages));
 		public static string[] GetWantedGenderNames() => Enum.GetNames(typeof(NPCTrade.WantedGender));
-		public static string[] GetTradePokemonNickNames() => TradedPokemonAndTrainerNicknames.ToArray();
+		public static string[] GetTradePokemonNickNames() => TradePokemonNicknames.ToArray();
+		public static string[] GetTradePokemonTrainerNames() => TradePokemonTrainerNames.ToArray();
     }
 }

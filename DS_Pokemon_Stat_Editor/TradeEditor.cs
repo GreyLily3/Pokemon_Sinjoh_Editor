@@ -26,9 +26,7 @@ namespace Pokemon_Sinjoh_Editor
             tradeLanguageComboBox.Items.AddRange(RomFile.GetLanguageNames());
             tradeGenderComboBox.Items.AddRange(RomFile.GetWantedGenderNames());
 
-
-            for (int i = RomFile.NPCTradesList.Count; i < RomFile.NPCTradesList.Count * 2; i++)
-                tradeTrainerComboBox.Items.Add(RomFile.TradedPokemonAndTrainerNicknames[i]);
+            tradeTrainerComboBox.Items.AddRange(RomFile.GetTradePokemonTrainerNames());
         }
 
         private void UpdateDisplayedTradeValues()
@@ -66,12 +64,192 @@ namespace Pokemon_Sinjoh_Editor
             tradeLanguageComboBox.SelectedIndex = (int)RomFile.NPCTradesList[tradeIndex].LanguageOfOrigin - 1;
             tradeGenderComboBox.SelectedIndex = (int)RomFile.NPCTradesList[tradeIndex].Gender;
 
-            tradeNicknameTextBox.Text = RomFile.TradedPokemonAndTrainerNicknames[tradeIndex];
+            tradeNicknameTextBox.Text = RomFile.TradePokemonNicknames[tradeIndex];
         }
 
         private void tradeTrainerComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             DisplayTradeValues(tradeTrainerComboBox.SelectedIndex);
+        }
+
+        private void tradeOriginalTrainerIDNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].OriginalTrainerID != (ushort)tradeOriginalTrainerIDNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].OriginalTrainerID = (ushort)tradeOriginalTrainerIDNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradePVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue != tradePVNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue = (uint)tradePVNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeCoolNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Cool != tradeCoolNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Cool = (byte)tradeCoolNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeBeautyNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Beauty != tradeBeautyNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Beauty = (byte)tradeBeautyNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeCuteNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Cute != tradeCuteNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Cute = (byte)tradeCuteNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeSmartNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Smart != tradeSmartNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Smart = (byte)tradeSmartNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeToughNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Tough != tradeToughNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Tough = (byte)tradeToughNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeSheenNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Sheen != tradeSheenNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Sheen = (byte)tradeSheenNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeHPIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].HPIV != tradeHPIVsNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].HPIV = (byte)tradeHPIVsNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeAttackIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].AttackIV != tradeAttackIVsNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].AttackIV = (byte)tradeAttackIVsNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeDefenseIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].DefenseIV != tradeDefenseIVsNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].DefenseIV = (byte)tradeDefenseIVsNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeSpeedIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpeedIV != tradeSpeedIVsNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpeedIV = (byte)tradeSpeedIVsNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeSpecialAttackIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpecialAttckIV != tradeSpecialAttackIVsNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpecialAttckIV = (byte)tradeSpecialAttackIVsNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeSpecialDefenseIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpecialDefenseIV != tradeSpecialAttackIVsNumericNoArrows.Value)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpecialDefenseIV = (byte)tradeSpecialAttackIVsNumericNoArrows.Value;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeWantedPokemonComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].WantedPokemon != tradeWantedPokemonComboBox.SelectedIndex + 1)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].WantedPokemon = (ushort)(tradeWantedPokemonComboBox.SelectedIndex + 1);
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeOfferedPokemonComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].OfferedPokemon != tradeOfferedPokemonComboBox.SelectedIndex + 1)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].OfferedPokemon = (ushort)(tradeOfferedPokemonComboBox.SelectedIndex + 1);
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeLanguageComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].LanguageOfOrigin != (NPCTrade.Languages)tradeLanguageComboBox.SelectedIndex)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].LanguageOfOrigin = (NPCTrade.Languages)tradeLanguageComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeHeldItemComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].HeldItem != tradeHeldItemComboBox.SelectedIndex)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].HeldItem = (ushort)tradeHeldItemComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeAbilityComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Ability != tradeAbilityComboBox.SelectedIndex)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Ability = (byte)tradeAbilityComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void tradeGenderComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Gender != (NPCTrade.WantedGender)tradeGenderComboBox.SelectedIndex)
+            {
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Gender = (NPCTrade.WantedGender)tradeGenderComboBox.SelectedIndex;
+                MarkUnsavedChanges();
+            }
         }
     }
 }
