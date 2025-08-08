@@ -30,6 +30,7 @@ namespace Pokemon_Sinjoh_Editor
 		public static List<string> ItemNames { get; private set; }
 		public static List<string> TradePokemonNicknames { get; private set; } = new List<string>();
         public static List<string> TradePokemonTrainerNames { get; private set; } = new List<string>();
+		public static List<string> PokedexText {  get; private set; } = new List<string>();
 
         private static FAT fat;
 
@@ -65,6 +66,49 @@ namespace Pokemon_Sinjoh_Editor
         private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL = 370;
         private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS = 200;
 
+        private const int POKEDEX_TEXT_BANK_DP = 614;
+        private const int POKEDEX_TEXT_BANK_PL = 697;
+        private const int POKEDEX_TEXT_BANK_HGSS = 802;
+
+        private const int DEOXYS_ATTACK_FORM_NAME_INDEX_DP = 111;
+        private const int DEOXYS_ATTACK_FORM_NAME_INDEX_PL = 112;
+        private const int DEOXYS_ATTACK_FORM_NAME_INDEX_HGSS = 146;
+
+        private const int DEOXYS_DEFENSE_FORM_NAME_INDEX_DP = 112;
+        private const int DEOXYS_DEFENSE_FORM_NAME_INDEX_PL = 113;
+        private const int DEOXYS_DEFENSE_FORM_NAME_INDEX_HGSS = 147;
+
+        private const int DEOXYS_SPEED_FORM_NAME_INDEX_DP = 113;
+        private const int DEOXYS_SPEED_FORM_NAME_INDEX_PL = 114;
+        private const int DEOXYS_SPEED_FORM_NAME_INDEX_HGSS = 148;
+
+        private const int SHAYMIN_SKY_FORM_NAME_INDEX_PL = 116;
+        private const int SHAYMIN_SKY_FORM_NAME_INDEX_HGSS = 150;
+
+        private const int GIRATINA_ORIGIN_FORM_NAME_INDEX_PL = 118;
+        private const int GIRATINA_ORIGIN_FORM_NAME_INDEX_HGSS = 152;
+
+        private const int ROTOM_HEAT_FORM_NAME_INDEX_PL = 120;
+        private const int ROTOM_HEAT_FORM_NAME_INDEX_HGSS = 154;
+
+        private const int ROTOM_WASH_FORM_NAME_INDEX_PL = 121;
+        private const int ROTOM_WASH_FORM_NAME_INDEX_HGSS = 155;
+
+        private const int ROTOM_FROST_FORM_NAME_INDEX_PL = 122;
+        private const int ROTOM_FROST_FORM_NAME_INDEX_HGSS = 156;
+
+        private const int ROTOM_FAN_FORM_NAME_INDEX_PL = 123;
+        private const int ROTOM_FAN_FORM_NAME_INDEX_HGSS = 157;
+
+        private const int ROTOM_MOW_FORM_NAME_INDEX_PL = 124;
+        private const int ROTOM_MOW_FORM_NAME_INDEX_HGSS = 158;
+
+        private const int WORMADAM_SANDY_FORM_NAME_INDEX_DPPL = 18;
+        private const int WORMADAM_SANDY_FORM_NAME_INDEX_HGSS = 119;
+
+        private const int WORMADAM_TRASH_FORM_NAME_INDEX_DPPL = 19;
+        private const int WORMADAM_TRASH_FORM_NAME_INDEX_HGSS = 120;
+
         private const int MOVES_NARC_ID_DP = 0x158;
 		private const int MOVES_NARC_ID_PL = 0x1BE;
 		private const int MOVES_NARC_ID_HGSS = 0x8C;
@@ -82,9 +126,26 @@ namespace Pokemon_Sinjoh_Editor
 		private const int TEXT_NARC_ID_PL = 0x194;
 		private const int TEXT_NARC_ID_HGSS = 0x9C;
 
-		#endregion
+		private const int SPECIES_START_INDEX = 1;
+        private const int MOVE_START_INDEX = 1;
 
-		public static void LoadNewRom(string romFilePath)
+        private const int SPECIES_WORMADAM_INDEX = 413;
+        private const int SPECIES_DEOXYS_INDEX = 386;
+        private const int SPECIES_GIRATINA_INDEX = 487;
+        private const int SPECIES_SHAYMIN_INDEX = 492;
+        private const int SPECIES_ROTOM_INDEX = 479;
+
+        private const int MOVE_CUT_INDEX = 15;
+        private const int MOVE_ROCK_SMASH_INDEX = 249;
+        private const int MOVE_STRENGTH_INDEX = 70;
+        private const int MOVE_FLY_INDEX = 19;
+        private const int MOVE_SURF_INDEX = 57;
+        private const int MOVE_WHIRLPOOL_INDEX = 250;
+        private const int MOVE_WATERFALL_INDEX = 127;
+
+        #endregion
+
+        public static void LoadNewRom(string romFilePath)
 		{
 			romPath = romFilePath;
 			FileStream romFileStream = new FileStream(romPath, FileMode.Open); //we need to store the filestream seperately to dispose of it later
@@ -210,8 +271,9 @@ namespace Pokemon_Sinjoh_Editor
 			TypeNames = gameText.TextBanks[getTypeNamesTextBankID()];
 			ItemNames = gameText.TextBanks[getItemNamesTextBankID()];
 			AbilityNames = gameText.TextBanks[getAbilityNamesTextBankID()];
+			PokedexText = gameText.TextBanks[getPokedexTextBankID()];
 
-			TradePokemonNicknames.Clear();
+            TradePokemonNicknames.Clear();
             TradePokemonTrainerNames.Clear();
 
             for (int i = 0; i < npcTradesNarc.Elements.Count; i++)
@@ -375,6 +437,142 @@ namespace Pokemon_Sinjoh_Editor
             };
         }
 
+		private static int getPokedexTextBankID()
+		{
+            return gameFamily switch
+            {
+                GameFamilies.DP => POKEDEX_TEXT_BANK_DP,
+                GameFamilies.PL => POKEDEX_TEXT_BANK_PL,
+                GameFamilies.HGSS => POKEDEX_TEXT_BANK_HGSS,
+                _ => -1
+            };
+        }
+
+		private static int getDeoxysAttackFormNameIndex()
+		{
+            return gameFamily switch
+            {
+                GameFamilies.DP => DEOXYS_ATTACK_FORM_NAME_INDEX_DP,
+                GameFamilies.PL => DEOXYS_ATTACK_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => DEOXYS_ATTACK_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getDeoxysDefenseFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => DEOXYS_DEFENSE_FORM_NAME_INDEX_DP,
+                GameFamilies.PL => DEOXYS_DEFENSE_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => DEOXYS_DEFENSE_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getDeoxysSpeedFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => DEOXYS_SPEED_FORM_NAME_INDEX_DP,
+                GameFamilies.PL => DEOXYS_SPEED_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => DEOXYS_SPEED_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getWormadamSandyFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => WORMADAM_SANDY_FORM_NAME_INDEX_DPPL,
+                GameFamilies.PL => WORMADAM_SANDY_FORM_NAME_INDEX_DPPL,
+                GameFamilies.HGSS => WORMADAM_SANDY_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getWormadamTrashFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => WORMADAM_TRASH_FORM_NAME_INDEX_DPPL,
+                GameFamilies.PL => WORMADAM_TRASH_FORM_NAME_INDEX_DPPL,
+                GameFamilies.HGSS => WORMADAM_TRASH_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getGiratinaOriginFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => GIRATINA_ORIGIN_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => GIRATINA_ORIGIN_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getShayminSkyFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => SHAYMIN_SKY_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => SHAYMIN_SKY_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getRotomHeatFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => ROTOM_HEAT_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => ROTOM_HEAT_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getRotomWashFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => ROTOM_WASH_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => ROTOM_WASH_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getRotomFrostFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => ROTOM_FROST_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => ROTOM_FROST_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getRotomFanFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => ROTOM_FAN_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => ROTOM_FAN_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        private static int getRotomMowFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => ROTOM_MOW_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => ROTOM_MOW_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
         public static bool IsValidGameVersion()
         {
             if (gameFamily == GameFamilies.NULL)
@@ -433,106 +631,31 @@ namespace Pokemon_Sinjoh_Editor
         //will replace this static list later if there's a good way to get/set what moves are set as TMs (this is stored in ARM9 binary)
         public static string[] GetTMNames()
 		{
-			return new string[] { 
-				"TM01 Focus Punch",
-				"TM02 Dragon Claw",
-				"TM03 Water Pulse",
-				"TM04 Calm Mind",
-				"TM05 Roar",
-				"TM06 Toxic",
-				"TM07 Hail",
-				"TM08 Bulk Up",
-				"TM09 Bullet Seed",
-				"TM10 Hidden Power",
-				"TM11 Sunny Day",
-				"TM12 Taunt",
-				"TM13 Ice Beam",
-				"TM14 Blizzard",
-				"TM15 Hyper Beam",
-				"TM16 Light Screen",
-				"TM17 Protect",
-				"TM18 Rain Dance",
-				"TM19 Giga Drain",
-				"TM20 Safeguard",
-				"TM21 Frustration",
-				"TM22 SolarBeam",
-				"TM23 Iron Tail",
-				"TM24 Thunderbolt",
-				"TM25 Thunder",
-				"TM26 Earthquake",
-				"TM27 Return",
-				"TM28 Dig",
-				"TM29 Psychic",
-				"TM30 Shadow Ball",
-				"TM31 Brick Break",
-				"TM32 Double Team",
-				"TM33 Reflect",
-				"TM34 Shock Wave",
-				"TM35 Flamethrower",
-				"TM36 Sludge Bomb",
-				"TM37 Sandstorm",
-				"TM38 Fire Blast",
-				"TM39 Rock Tomb",
-				"TM40 Aerial Ace",
-				"TM41 Torment",
-				"TM42 Facade",
-				"TM43 Secret Power",
-				"TM44 Rest",
-				"TM45 Attract",
-				"TM46 Thief",
-				"TM47 Steel Wing",
-				"TM48 Skill Swap",
-				"TM49 Snatch",
-				"TM50 Overheat",
-				"TM51 Roost",
-				"TM52 Focus Blast",
-				"TM53 Energy Ball",
-				"TM54 False Swipe",
-				"TM55 Brine",
-				"TM56 Fling",
-				"TM57 Charge Beam",
-				"TM58 Endure",
-				"TM59 Dragon Pulse",
-				"TM60 Drain Punch",
-				"TM61 Will-O-Wisp",
-				"TM62 Silver Wind",
-				"TM63 Embargo",
-				"TM64 Explosion",
-				"TM65 Shadow Claw",
-				"TM66 Payback",
-				"TM67 Recycle",
-				"TM68 Giga Impact",
-				"TM69 Rock Polish",
-				"TM70 Flash",
-				"TM71 Stone Edge",
-				"TM72 Avalanche",
-				"TM73 Thunder Wave",
-				"TM74 Gyro Ball",
-				"TM75 Swords Dance",
-				"TM76 Stealth Rock",
-				"TM77 Psych Up",
-				"TM78 Captivate",
-				"TM79 Dark Pulse",
-				"TM80 Rock Slide",
-				"TM81 X-Scissor",
-				"TM82 Sleep Talk",
-				"TM83 Natural Gift",
-				"TM84 Poison Jab",
-				"TM85 Dream Eater",
-				"TM86 Grass Knot",
-				"TM87 Swagger",
-				"TM88 Pluck",
-				"TM89 U-turn",
-				"TM90 Substitute",
-				"TM91 Flash Cannon",
-				"TM92 Trick Room"
-			};
+            string[] TMNames = new string[92];
+            int[] TMIndices = { 264, 337, 352, 347, 46, 92, 258, 339, 331, 237, 241, 269, 58, 59, 63, 113, 182, 240, 202, 219, 218, 76, 231, 85, 87, 89, 216,
+            91, 94, 247, 280, 104, 115, 351, 53, 188, 201, 126, 317, 332, 259, 263, 290, 156, 213, 168, 211, 285, 289, 315, 355, 411, 412, 206, 362, 374, 
+            451, 203, 406, 409, 261, 318, 373, 153, 421, 371, 278, 416, 397, 148, 444, 419, 86, 360, 14, 446, 244, 445, 399, 157, 404, 214,
+            363, 398, 138, 447, 207, 365, 369, 164, 430, 433};
+
+            for (int i = 0; i < 92; i++)
+                TMNames[i] = "TM" + (i + 1).ToString("D2") + " " + MoveNames[TMIndices[i] - MOVE_START_INDEX];
+
+            return TMNames;
 		}
 
-		//will replace this static list later if there's a good way to get/set what moves are set as HMs (this is stored in ARM9 binary)
+		//will replace static indices later if there's a good way to get/set what moves are HMs (this is stored in ARM9 binary)
         public static string[] GetHMNames()
         {
-			return new string[] { "HM01 CUT", "HM02 FLY", "HM03 SURF", "HM04 STRENGTH", "HM05 WHIRLPOOL", "HM06 ROCK SMASH", "HM07 WATERFALL", "HM08 ROCK CLIMB" };
+            string[] HMNames = new string[8];
+            int[] HMIndices = { 15, 19, 57, 70, 250, 249, 127, 431 };
+
+            if (gameFamily != GameFamilies.HGSS)
+                HMIndices[5] = 432; //replace whirlpool with defog for HM05
+
+            for (int i = 0; i < 8; i++)
+                HMNames[i] = "HM0" + (i + 1) + " " + MoveNames[HMIndices[i] - MOVE_START_INDEX];
+
+            return HMNames;
         }
 
         public static string GetGameVersion() => GameVersion.ToString();
@@ -544,21 +667,21 @@ namespace Pokemon_Sinjoh_Editor
 			for (int i = 0; i < PokemonNames.Count; i++)
 				speciesNames[i] = PokemonNames[i];
 
-            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 1] = "DEOXYS (Attack Form)";
-            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 2] = "DEOXYS (Defense Form)";
-            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 3] = "DEOXYS (Speed Form)";
-            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 4] = "WORMADAM (Sandy Form)";
-            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 5] = "WORMADAM (Trash Form)";
+            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 1] = speciesNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysAttackFormNameIndex()] + ")";
+            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 2] = speciesNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysDefenseFormNameIndex()] + ")";
+            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 3] = speciesNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysSpeedFormNameIndex()] + ")";
+            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 4] = speciesNames[SPECIES_WORMADAM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getWormadamSandyFormNameIndex()] + ")";
+            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 5] = speciesNames[SPECIES_WORMADAM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getWormadamTrashFormNameIndex()] + ")";
 
             if (gameFamily == GameFamilies.HGSS || gameFamily == GameFamilies.PL)
 			{
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 6] = "GIRATINA (Origin Form)";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 7] = "SHAYMIN (Sky Form)";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 8] = "ROTOM (Heat Form)";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 9] = "ROTOM (Wash Form)";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 10] = "ROTOM (Frost Form)";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 11] = "ROTOM (Fan Form)";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 12] = "ROTOM (Mow Form)";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 6] = speciesNames[SPECIES_GIRATINA_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getGiratinaOriginFormNameIndex()] + ")";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 7] = speciesNames[SPECIES_SHAYMIN_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getShayminSkyFormNameIndex()] + ")";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 8] = speciesNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomHeatFormNameIndex()] + ")";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 9] = speciesNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomWashFormNameIndex()] + ")";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 10] = speciesNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomFrostFormNameIndex()] + ")";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 11] = speciesNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomFanFormNameIndex()] + ")";
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 12] = speciesNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomMowFormNameIndex()] + ")";
             }
 
 			return speciesNames;

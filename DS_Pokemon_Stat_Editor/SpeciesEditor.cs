@@ -10,41 +10,41 @@ namespace Pokemon_Sinjoh_Editor
 
         private void loadSpeciesData()
         {
-            if (speciesComboBox.Items.Count > 0)
+            //if (speciesComboBox.Items.Count > 0)
                 speciesComboBox.Items.Clear();
 
-            if (speciesType1ComboBox.Items.Count > 0)
+            //if (speciesType1ComboBox.Items.Count > 0)
                 speciesType1ComboBox.Items.Clear();
 
-            if (speciesType2ComboBox.Items.Count > 0)
+            //if (speciesType2ComboBox.Items.Count > 0)
                 speciesType2ComboBox.Items.Clear();
 
-            if (speciesAbility1ComboBox.Items.Count > 0)
+            //if (speciesAbility1ComboBox.Items.Count > 0)
                 speciesAbility1ComboBox.Items.Clear();
 
-            if (speciesAbility2ComboBox.Items.Count > 0)
+            //if (speciesAbility2ComboBox.Items.Count > 0)
                 speciesAbility2ComboBox.Items.Clear();
 
-            if (speciesHeldItem1ComboBox.Items.Count > 0)
+            //if (speciesHeldItem1ComboBox.Items.Count > 0)
                 speciesHeldItem1ComboBox.Items.Clear();
 
-            if (speciesHeldItem2ComboBox.Items.Count > 0)
+            //if (speciesHeldItem2ComboBox.Items.Count > 0)
                 speciesHeldItem2ComboBox.Items.Clear();
 
-            if (speciesEggGroup1ComboBox.Items.Count > 0)
+            //if (speciesEggGroup1ComboBox.Items.Count > 0)
                 speciesEggGroup1ComboBox.Items.Clear();
 
-            if (speciesEggGroup2ComboBox.Items.Count > 0)
+            //if (speciesEggGroup2ComboBox.Items.Count > 0)
                 speciesEggGroup2ComboBox.Items.Clear();
 
-            if (speciesXPGroupComboBox.Items.Count > 0)
+            //if (speciesXPGroupComboBox.Items.Count > 0)
                 speciesXPGroupComboBox.Items.Clear();
 
-            if (speciesTMCheckedListBox.Items.Count == 0)
-                speciesTMCheckedListBox.Items.AddRange(RomFile.GetTMNames());
+            speciesTMCheckedListBox.Items.Clear();
+            speciesHMCheckedListBox.Items.Clear();
 
-            if (speciesHMCheckedListBox.Items.Count == 0)
-                speciesHMCheckedListBox.Items.AddRange(RomFile.GetHMNames());
+            speciesTMCheckedListBox.Items.AddRange(RomFile.GetTMNames());
+            speciesHMCheckedListBox.Items.AddRange(RomFile.GetHMNames());
 
             speciesComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNames());
             speciesType1ComboBox.Items.AddRange(RomFile.GetTypeNames());
