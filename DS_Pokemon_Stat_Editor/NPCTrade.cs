@@ -22,7 +22,7 @@ namespace Pokemon_Sinjoh_Editor
         public ushort HeldItem;
         public Languages LanguageOfOrigin;
         public WantedGender Gender;
-        public uint PersonalityValue;
+        public PersonalityValue PersonalityValue;
         public byte Sheen;
         public byte Cool;
         public byte Beauty;
@@ -70,7 +70,7 @@ namespace Pokemon_Sinjoh_Editor
             Smart = (byte)tradeBinaryReader.ReadUInt32();
             Tough = (byte)tradeBinaryReader.ReadUInt32();
 
-            PersonalityValue = tradeBinaryReader.ReadUInt32();
+            this.PersonalityValue = new PersonalityValue(tradeBinaryReader.ReadUInt32());
             HeldItem = (ushort)tradeBinaryReader.ReadUInt32();
             Gender = (WantedGender)tradeBinaryReader.ReadUInt32();
             Sheen = (byte)tradeBinaryReader.ReadUInt32();
@@ -101,7 +101,7 @@ namespace Pokemon_Sinjoh_Editor
                 tradeBinaryWriter.Write((uint)Smart);
                 tradeBinaryWriter.Write((uint)Tough);
 
-                tradeBinaryWriter.Write(PersonalityValue);
+                tradeBinaryWriter.Write(PersonalityValue.PV);
                 tradeBinaryWriter.Write((uint)HeldItem);
                 tradeBinaryWriter.Write((uint)Gender);
                 tradeBinaryWriter.Write((uint)Sheen);

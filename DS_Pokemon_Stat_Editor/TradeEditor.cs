@@ -15,14 +15,12 @@ namespace Pokemon_Sinjoh_Editor
             tradeHeldItemComboBox.Items.Clear();
             tradeTrainerComboBox.Items.Clear();
             tradeLanguageComboBox.Items.Clear();
-            tradeGenderComboBox.Items.Clear();
 
             tradeWantedPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNames());
             tradeOfferedPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNames());
 
             tradeHeldItemComboBox.Items.AddRange(RomFile.GetItemNames());
             tradeLanguageComboBox.Items.AddRange(RomFile.GetLanguageNames());
-            tradeGenderComboBox.Items.AddRange(RomFile.GetWantedGenderNames());
 
             tradeTrainerComboBox.Items.AddRange(RomFile.GetTradePokemonTrainerNames());
         }
@@ -54,12 +52,11 @@ namespace Pokemon_Sinjoh_Editor
             tradeSmartNumericNoArrows.Value = RomFile.NPCTradesList[tradeIndex].Smart;
             tradeToughNumericNoArrows.Value = RomFile.NPCTradesList[tradeIndex].Tough;
 
-            tradePVNumericNoArrows.Value = RomFile.NPCTradesList[tradeIndex].PersonalityValue;
+            tradePVNumericNoArrows.Value = RomFile.NPCTradesList[tradeIndex].PersonalityValue.PV;
             tradeOriginalTrainerIDNumericNoArrows.Value = RomFile.NPCTradesList[tradeIndex].OriginalTrainerID;
             tradeSheenNumericNoArrows.Value = RomFile.NPCTradesList[tradeIndex].Sheen;
 
             tradeLanguageComboBox.SelectedIndex = (int)RomFile.NPCTradesList[tradeIndex].LanguageOfOrigin - 1;
-            tradeGenderComboBox.SelectedIndex = (int)RomFile.NPCTradesList[tradeIndex].Gender;
 
             tradeNicknameTextBox.Text = RomFile.TradePokemonNicknames[tradeIndex];
         }
@@ -80,9 +77,9 @@ namespace Pokemon_Sinjoh_Editor
 
         private void tradePVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue != tradePVNumericNoArrows.Value)
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.PV != tradePVNumericNoArrows.Value)
             {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue = (uint)tradePVNumericNoArrows.Value;
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.PV = (uint)tradePVNumericNoArrows.Value;
                 MarkUnsavedChanges();
             }
         }
@@ -231,13 +228,14 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
-        private void tradeGenderComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        private void tradePVNumericNoArrows_ValueChanged(object sender, EventArgs e)
         {
-            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Gender != (NPCTrade.WantedGender)tradeGenderComboBox.SelectedIndex)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Gender = (NPCTrade.WantedGender)tradeGenderComboBox.SelectedIndex;
-                MarkUnsavedChanges();
-            }
+            PersonalityValue pv = new PersonalityValue((uint)tradePVNumericNoArrows.Value);
+
+            tradeGenderTextBox.Text = pv.GetGender(RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex].GenderRatio).ToString();
+            tradeNatureTextBox.Text = pv.GetNature().ToString();
+            tradeAbilityTextBox.Text = RomFile.GetAbilityName(tradeOfferedPokemonComboBox.SelectedIndex, pv);
         }
+
     }
 }

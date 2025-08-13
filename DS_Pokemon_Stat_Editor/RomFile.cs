@@ -658,6 +658,23 @@ namespace Pokemon_Sinjoh_Editor
             return HMNames;
         }
 
+        public static string GetAbilityName(int speciesIndex, PersonalityValue pv)
+        {
+            bool pokemonHasTwoAbilities;
+            int genderRatio = PokemonSpeciesList[speciesIndex].GenderRatio;
+
+            if (PokemonSpeciesList[speciesIndex].Ability1 == PokemonSpeciesList[speciesIndex].Ability2 || PokemonSpeciesList[speciesIndex].Ability2 == 0)
+                pokemonHasTwoAbilities = false;
+            else
+                pokemonHasTwoAbilities = true;
+
+            if (pokemonHasTwoAbilities && pv.GetHasSecondAbility())
+                return AbilityNames[PokemonSpeciesList[speciesIndex].Ability2];
+            else
+                return AbilityNames[PokemonSpeciesList[speciesIndex].Ability1];
+
+        }
+
         public static string GetGameVersion() => GameVersion.ToString();
 		public static string[] GetMoveNames() => MoveNames.ToArray();
 		public static string[] GetPokemonSpeciesNames()

@@ -82,6 +82,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NarcFile.cs" />
+    <Compile Include="Nature.cs" />
     <Compile Include="NPCTrade.cs" />
     <Compile Include="NumericNoArrows.cs">
       <SubType>Component</SubType>

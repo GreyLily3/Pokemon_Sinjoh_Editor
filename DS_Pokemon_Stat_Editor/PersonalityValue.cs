@@ -13,7 +13,7 @@ namespace Pokemon_Sinjoh_Editor
             this.PV = pv;
         }
 
-        public Gender GetGender(byte genderRatio)
+        public Gender GetGender(int genderRatio)
         {
             if (genderRatio == 255)
                 return Gender.UNKNOWN;
@@ -21,14 +21,14 @@ namespace Pokemon_Sinjoh_Editor
                 return (PV & 0b_1111_1111) > genderRatio ? Gender.MALE : Gender.FEMALE;
         }
 
-        public bool HasSecondAbility()
+        public bool GetHasSecondAbility()
         {
-            return (PV & 0b_0001) == 0;
+            return (PV & 0b_0001) == 1;
         }
 
-        public uint GetNature()
+        public Nature GetNature()
         {
-            return PV % 25;
+            return (Nature)(PV % 25);
         }
     }
 }
