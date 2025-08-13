@@ -142,11 +142,13 @@ namespace Pokemon_Sinjoh_Editor
 
         private void movePPNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            if (movePPNumericNoArrows.Value % MOVE_PP_MULTIPLE != 0)
+            if (movePPNumericNoArrows.Value > 5 && (movePPNumericNoArrows.Value % MOVE_PP_MULTIPLE != 0))
             {
                 //if PP is not a multiple of 5 then make it the next lowest multiple of 5
                 movePPNumericNoArrows.Value -= movePPNumericNoArrows.Value % MOVE_PP_MULTIPLE;
             }
+            else if (movePPNumericNoArrows.Value > 1 && movePPNumericNoArrows.Value < 5)
+                movePPNumericNoArrows.Value = 1;
 
             if (RomFile.MoveList[movesComboBox.SelectedIndex].PowerPoints != (byte)movePPNumericNoArrows.Value)
             {
