@@ -13,7 +13,6 @@ namespace Pokemon_Sinjoh_Editor
             tradeWantedPokemonComboBox.Items.Clear();
             tradeOfferedPokemonComboBox.Items.Clear();
             tradeHeldItemComboBox.Items.Clear();
-            tradeAbilityComboBox.Items.Clear();
             tradeTrainerComboBox.Items.Clear();
             tradeLanguageComboBox.Items.Clear();
             tradeGenderComboBox.Items.Clear();
@@ -22,7 +21,6 @@ namespace Pokemon_Sinjoh_Editor
             tradeOfferedPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNames());
 
             tradeHeldItemComboBox.Items.AddRange(RomFile.GetItemNames());
-            tradeAbilityComboBox.Items.AddRange(RomFile.GetAbilityNames());
             tradeLanguageComboBox.Items.AddRange(RomFile.GetLanguageNames());
             tradeGenderComboBox.Items.AddRange(RomFile.GetWantedGenderNames());
 
@@ -42,7 +40,6 @@ namespace Pokemon_Sinjoh_Editor
             tradeOfferedPokemonComboBox.SelectedIndex = RomFile.NPCTradesList[tradeIndex].OfferedPokemon - 1;
 
             tradeHeldItemComboBox.SelectedIndex = RomFile.NPCTradesList[tradeIndex].HeldItem;
-            tradeAbilityComboBox.SelectedIndex = RomFile.NPCTradesList[tradeIndex].Ability;
 
             tradeHPIVsNumericNoArrows.Value = RomFile.NPCTradesList[tradeIndex].HPIV;
             tradeAttackIVsNumericNoArrows.Value = RomFile.NPCTradesList[tradeIndex].AttackIV;
@@ -230,15 +227,6 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].HeldItem != tradeHeldItemComboBox.SelectedIndex)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].HeldItem = (ushort)tradeHeldItemComboBox.SelectedIndex;
-                MarkUnsavedChanges();
-            }
-        }
-
-        private void tradeAbilityComboBox_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Ability != tradeAbilityComboBox.SelectedIndex)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Ability = (byte)tradeAbilityComboBox.SelectedIndex;
                 MarkUnsavedChanges();
             }
         }
