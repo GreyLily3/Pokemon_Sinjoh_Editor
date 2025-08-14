@@ -22,6 +22,8 @@ namespace Pokemon_Sinjoh_Editor
 		{
 			InitializeComponent();
 
+			this.KeyPreview = true;
+
 			mainTabControl.Enabled = false;
 
 			moveEffectNumericNoArrows.Maximum = Pokemon_Sinjoh_Editor.Move.NUM_EFFECTS;
@@ -81,14 +83,11 @@ namespace Pokemon_Sinjoh_Editor
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (RomFile.IsValidGameVersion() && RomFile.AreUnsavedChanges)
-            {
-                save();
-            }
+			save();
         }
 
         private void openRomFileToolStripMenuItem_Click(object sender, EventArgs e)
-		{
+		{	
 			DialogResult saveChanges;
 			if (RomFile.IsValidGameVersion() && RomFile.AreUnsavedChanges)
 			{
@@ -146,14 +145,17 @@ namespace Pokemon_Sinjoh_Editor
 
 		private void save()
 		{
-			try
+			if (RomFile.IsValidGameVersion() && RomFile.AreUnsavedChanges)
 			{
-				RomFile.Write();
-				Text = Text.Remove(Text.Length - 1); //remove the * indicating unsaved changes
-			}
-			catch (Exception exception)
-			{
-				MessageBox.Show(exception.ToString());
+				try
+				{
+					RomFile.Write();
+					Text = Text.Remove(Text.Length - 1); //remove the * indicating unsaved changes
+				}
+				catch (Exception exception)
+				{
+					MessageBox.Show(exception.ToString());
+				}
 			}
 		}
 
@@ -171,6 +173,17 @@ namespace Pokemon_Sinjoh_Editor
 			}
 		}
 
-        
+        private void MainForm_KeyUp(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+			if (e.KeyCode == Keys.S && e.Modifiers == Keys.Control)
+			{
+                this.ActiveControl = null;
+
+                save();
+            }
+                
+
+        }
+
     }
 }
