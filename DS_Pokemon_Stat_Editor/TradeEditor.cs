@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,6 +65,31 @@ namespace Pokemon_Sinjoh_Editor
         private void tradeTrainerComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             DisplayTradeValues(tradeTrainerComboBox.SelectedIndex);
+
+            if (RomFile.gameFamily == RomFile.GameFamilies.HGSS && tradeTrainerComboBox.SelectedIndex >= RomFile.TRADE_JASMINE_INDEX && tradeTrainerComboBox.SelectedIndex <= RomFile.TRADE_WEBSTER_INDEX)
+            {
+                tradeWantedPokemonComboBox.Visible = false;
+
+                if (tradeTrainerComboBox.SelectedIndex == RomFile.TRADE_JASMINE_INDEX)
+                {
+                    tradeWantedPokemonLabel.Visible = true;
+                    tradeAnyPokemonWantedComboBox.SelectedIndex = 0;
+                    tradeAnyPokemonWantedComboBox.Visible = true;
+                    tradeAnyPokemonWantedComboBox.Location = tradeWantedPokemonComboBox.Location;
+                }
+                else
+                {
+                    tradeAnyPokemonWantedComboBox.Visible = false;
+                    tradeWantedPokemonLabel.Visible = false;
+                }
+                    
+            }
+            else
+            {
+                tradeWantedPokemonComboBox.Visible = true;
+                tradeWantedPokemonLabel.Visible = true;
+                tradeAnyPokemonWantedComboBox.Visible = false;
+            }
         }
 
         private void tradeOriginalTrainerIDNumericNoArrows_Validated(object sender, EventArgs e)

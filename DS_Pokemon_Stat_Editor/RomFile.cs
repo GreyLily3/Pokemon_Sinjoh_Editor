@@ -137,13 +137,9 @@ namespace Pokemon_Sinjoh_Editor
         private const int SPECIES_SHAYMIN_INDEX = 492;
         private const int SPECIES_ROTOM_INDEX = 479;
 
-        private const int MOVE_CUT_INDEX = 15;
-        private const int MOVE_ROCK_SMASH_INDEX = 249;
-        private const int MOVE_STRENGTH_INDEX = 70;
-        private const int MOVE_FLY_INDEX = 19;
-        private const int MOVE_SURF_INDEX = 57;
-        private const int MOVE_WHIRLPOOL_INDEX = 250;
-        private const int MOVE_WATERFALL_INDEX = 127;
+        public const int TRADE_JASMINE_INDEX = 5;
+        public const int TRADE_WEBSTER_INDEX = 7;
+
 
         #endregion
 
