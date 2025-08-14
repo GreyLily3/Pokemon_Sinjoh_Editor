@@ -61,7 +61,10 @@ namespace Pokemon_Sinjoh_Editor
             speciesSafariRunChanceTooltip.SetToolTip(speciesSafariRunChanceNumericNoArrows, "The base chance out of 254 a pokemon will run every turn when encountered in the safari zone/Great Marsh");
             speciesEVYieldTooltip.SetToolTip(speciesEVOnDefeatGroupBox, SPECIES_EV_YIELD_TOOLTIP_TEXT);
 
-			
+			tradeAbilityTooltip.AutomaticDelay = 500;
+			tradeGenderTooltip.AutomaticDelay = 500;
+			tradeNatureTooltip.AutomaticDelay = 500;
+
         }
 
         private void IncludeGameVersionInText(string romName)
@@ -181,9 +184,22 @@ namespace Pokemon_Sinjoh_Editor
 
                 save();
             }
-                
-
         }
 
+        private void tradeAbilityTextBox_MouseHover(object sender, EventArgs e)
+        {
+			tradeAbilityTooltip.Show("If the personality value is odd, the pokemon will have it's first ability. If it's even, the pokemon will have it's second ability (if it has one)", tradeAbilityTextBox);
+        }
+
+        private void tradeGenderTextBox_MouseHover(object sender, EventArgs e)
+        {
+			tradeGenderTooltip.Show("If the personality value % 256 is greater than the pokemon's gender ratio it will be male, unless the pokemon is gender unknown", tradeGenderTextBox);
+        }
+
+        private void tradeNatureTextBox_MouseHover(object sender, EventArgs e)
+        {
+            tradeNatureTooltip.Show("The pokemon's nature is personality value % 25, with 0 = Hardy, and 24 = Quirky", tradeNatureTextBox);
+        }
+    
     }
 }
