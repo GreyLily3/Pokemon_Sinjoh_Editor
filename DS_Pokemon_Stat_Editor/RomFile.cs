@@ -709,9 +709,37 @@ namespace Pokemon_Sinjoh_Editor
         public static string[] GetMoveCategories() => Enum.GetNames(typeof(Move.Categories));
         public static string[] GetMoveContestConditions() => Enum.GetNames(typeof(Move.ContestConditions));
 		public static string[] GetMoveContestEffect() => Move.ContestEffectDescriptions;
-        public static string[] GetMoveTargets() => Enum.GetNames(typeof(Move.Targets));
-		public static string[] GetEggGroupNames() => Enum.GetNames(typeof(PokemonSpecies.EggGroups));
-		public static string[] GetXPGroupNames() => Enum.GetNames(typeof(PokemonSpecies.XPGroups));
+
+        public static string[] GetMoveTargets()
+        {
+            string[] targetNames = Enum.GetNames(typeof(Move.Targets));
+
+            for (int i = 0; i < targetNames.Length; i++)
+                targetNames[i] = targetNames[i].Replace('_', ' ');
+
+            return targetNames;
+        }
+
+        public static string[] GetEggGroupNames() 
+        {
+            string[] eggGroupNames = Enum.GetNames(typeof(PokemonSpecies.EggGroups));
+
+            for (int i = 0; i < eggGroupNames.Length; i++)
+                eggGroupNames[i] = eggGroupNames[i].Replace('_', ' ');
+
+            return eggGroupNames;
+        }
+
+        public static string[] GetXPGroupNames()
+        {
+            string[] xpGroupNames = Enum.GetNames(typeof(PokemonSpecies.XPGroups));
+
+            for (int i = 0; i < xpGroupNames.Length; i++)
+                xpGroupNames[i] = xpGroupNames[i].Replace('_', ' ');
+
+            return xpGroupNames;
+        }
+
 		public static string[] GetLanguageNames() => Enum.GetNames(typeof(NPCTrade.Languages));
 		public static string[] GetWantedGenderNames() => Enum.GetNames(typeof(NPCTrade.WantedGender));
 		public static string[] GetTradePokemonNickNames() => TradePokemonNicknames.ToArray();
