@@ -30,18 +30,6 @@ namespace Pokemon_Sinjoh_Editor
         public byte Smart;
         public byte Tough;
 
-        public enum Languages
-        {
-            JAPANESE = 1,
-            ENGLISH,
-            FRENCH,
-            ITALIAN,
-            GERMAN,
-            UNKNOWN,
-            SPANISH,
-            KOREAN
-        }
-
         public enum WantedGender
         {
             ANY,

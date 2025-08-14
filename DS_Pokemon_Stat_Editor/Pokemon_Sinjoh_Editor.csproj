@@ -71,6 +71,7 @@
     <Compile Include="FAT.cs" />
     <Compile Include="Gender.cs" />
     <Compile Include="INIManager.cs" />
+    <Compile Include="Languages.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -14,6 +14,7 @@ namespace Pokemon_Sinjoh_Editor
 		private static NarcFile npcTradesNarc;
 		private static NarcFile gameTextNarc;
 		private static TextArchive gameText;
+        public static Languages Language;
 		private static GameVersions GameVersion;
         public static GameFamilies gameFamily = GameFamilies.NULL;
 		private static string romPath;
@@ -41,8 +42,9 @@ namespace Pokemon_Sinjoh_Editor
 
 		private const int ROM_NAME_LENGTH = 0xA;
 		private const int FAT_POINTER_OFFSET = 0x48;
+        private const int LANGUAGE_GAME_CODE_OFFSET = 0xF;
 
-		private const int MOVES_TEXT_BANK_DP = 589;
+        private const int MOVES_TEXT_BANK_DP = 589;
         private const int MOVES_TEXT_BANK_PL = 648;
         private const int MOVES_TEXT_BANK_HGSS = 751;
 
@@ -306,9 +308,42 @@ namespace Pokemon_Sinjoh_Editor
 		{
             try
 			{
+                romFileReader.BaseStream.Position = LANGUAGE_GAME_CODE_OFFSET;
+
+                switch (romFileReader.ReadChar())
+                {
+                    case 'E':
+                        Language = Languages.ENGLISH;
+                        break;
+                    case 'J':
+                        Language = Languages.JAPANESE;
+                        break;
+                    case 'K':
+                        Language = Languages.KOREAN;
+                        break;
+                    case 'S':
+                        Language = Languages.SPANISH;
+                        break;
+                    case 'D':
+                        Language = Languages.GERMAN;
+                        break;
+                    case 'F':
+                        Language = Languages.FRENCH;
+                        break;
+                    case 'I':
+                        Language = Languages.ITALIAN;
+                        break;
+                    default:
+                        Language = Languages.UNKNOWN;
+                        break;
+                }
+
                 romFileReader.BaseStream.Position = FAT_POINTER_OFFSET;
                 FATOffset = romFileReader.ReadUInt32();
                 FATLength = romFileReader.ReadUInt32();
+
+
+
             }
 			catch (EndOfStreamException e)
 			{
@@ -740,7 +775,7 @@ namespace Pokemon_Sinjoh_Editor
             return xpGroupNames;
         }
 
-		public static string[] GetLanguageNames() => Enum.GetNames(typeof(NPCTrade.Languages));
+		public static string[] GetLanguageNames() => Enum.GetNames(typeof(Languages));
 		public static string[] GetWantedGenderNames() => Enum.GetNames(typeof(NPCTrade.WantedGender));
 		public static string[] GetTradePokemonNickNames() => TradePokemonNicknames.ToArray();
 		public static string[] GetTradePokemonTrainerNames() => TradePokemonTrainerNames.ToArray();

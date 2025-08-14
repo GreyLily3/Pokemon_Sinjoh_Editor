@@ -212,9 +212,9 @@ namespace Pokemon_Sinjoh_Editor
 
         private void tradeLanguageComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].LanguageOfOrigin != (NPCTrade.Languages)tradeLanguageComboBox.SelectedIndex)
+            if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].LanguageOfOrigin != (Languages)tradeLanguageComboBox.SelectedIndex)
             {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].LanguageOfOrigin = (NPCTrade.Languages)tradeLanguageComboBox.SelectedIndex;
+                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].LanguageOfOrigin = (Languages)tradeLanguageComboBox.SelectedIndex;
                 MarkUnsavedChanges();
             }
         }
