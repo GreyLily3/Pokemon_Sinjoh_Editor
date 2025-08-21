@@ -1,6 +1,6 @@
 # Pokemon Sinjoh Editor
 
-The Pokemon Sinjoh Editor is a multi-purpose binary rom hacking tool for Generation 4 pokemon games (Diamond, Pearl, Platinum, Heartgold, SoulSilver) with the goals of speed, user-friendliness, and compability with decompilation hacks (including [HG-Engine](https://github.com/BluRosie/hg-engine)). The Sinjoh editor also aims to reduce the barrier of entry when it comes to ROM hacking, users shouldn't need to know teachnical knowledge of the data they're editing or worry about setting invalid values that lead to game crashes.
+The Pokemon Sinjoh Editor is a multi-purpose binary rom hacking tool for Generation 4 pokemon games (Diamond, Pearl, Platinum, Heartgold, SoulSilver) with the goals of speed, user-friendliness, and compability with decompilation hacks (including [HG-Engine](https://github.com/BluRosie/hg-engine)). The Sinjoh editor also aims to reduce the barrier of entry when it comes to ROM hacking, users shouldn't need to know teachnical knowledge of the data they're editing or worry about setting invalid values that lead to game crashes. Sinjoh editor is also compatible with Mac-os and Linux using WINE.
 
 -Move editor
 
@@ -18,4 +18,5 @@ The Pokemon Sinjoh Editor is a multi-purpose binary rom hacking tool for Generat
 - Learnset editor (change what moves a pokemon learns by leveling up)
 - Evolution editor (change method and level-up requirement)
 - In game trade editor
+- Translations to French, German, Spanish, Italian, Japanese, and Korean (the languages the Gen 4 games were released for)
 
