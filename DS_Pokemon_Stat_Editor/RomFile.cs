@@ -118,7 +118,7 @@ namespace Pokemon_Sinjoh_Editor
         private const int WORMADAM_TRASH_FORM_NAME_INDEX_HGSS = 120;
 
         private const int MOVES_NARC_ID_DP = 0x158;
-		private const int MOVES_NARC_ID_PL = 0x1BE;
+		private const int MOVES_NARC_ID_PL = 0x1BD;
 		private const int MOVES_NARC_ID_HGSS = 0x8C;
 
 		private const int POKEMON_SPECIES_NARC_ID_DIAMOND = 0x146;

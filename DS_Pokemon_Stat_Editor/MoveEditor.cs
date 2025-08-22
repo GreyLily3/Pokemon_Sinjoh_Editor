@@ -159,9 +159,9 @@ namespace Pokemon_Sinjoh_Editor
 
         private void moveEffectNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            if (RomFile.MoveList[movesComboBox.SelectedIndex].Effect != (byte)moveEffectNumericNoArrows.Value)
+            if (RomFile.MoveList[movesComboBox.SelectedIndex].Effect != (ushort)moveEffectNumericNoArrows.Value)
             {
-                RomFile.MoveList[movesComboBox.SelectedIndex].Effect = (byte)moveEffectNumericNoArrows.Value;
+                RomFile.MoveList[movesComboBox.SelectedIndex].Effect = (ushort)moveEffectNumericNoArrows.Value;
                 MarkUnsavedChanges();
             }
         }

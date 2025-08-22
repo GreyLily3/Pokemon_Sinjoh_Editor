@@ -344,6 +344,11 @@
             // 
             this.moveEffectNumericNoArrows.InterceptArrowKeys = false;
             this.moveEffectNumericNoArrows.Location = new System.Drawing.Point(326, 125);
+            this.moveEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            276,
+            0,
+            0,
+            0});
             this.moveEffectNumericNoArrows.Name = "moveEffectNumericNoArrows";
             this.moveEffectNumericNoArrows.Size = new System.Drawing.Size(74, 20);
             this.moveEffectNumericNoArrows.TabIndex = 6;
