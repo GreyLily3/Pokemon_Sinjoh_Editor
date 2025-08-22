@@ -111,7 +111,7 @@
             this.speciesEggGroup1Label = new System.Windows.Forms.Label();
             this.speciesEggGroup2ComboBox = new System.Windows.Forms.ComboBox();
             this.speciesEggGroup2Label = new System.Windows.Forms.Label();
-            this.speciesTypesComboBox = new System.Windows.Forms.GroupBox();
+            this.speciesTypesGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesType1ComboBox = new System.Windows.Forms.ComboBox();
             this.speciesType1Label = new System.Windows.Forms.Label();
             this.speciesType2ComboBox = new System.Windows.Forms.ComboBox();
@@ -123,7 +123,7 @@
             this.speciesMaleOnlyRadioButton = new System.Windows.Forms.RadioButton();
             this.speciesFemaleOnlyRadioButton = new System.Windows.Forms.RadioButton();
             this.speciesMaleAndFemaleRadioButton = new System.Windows.Forms.RadioButton();
-            this.label25 = new System.Windows.Forms.Label();
+            this.speciesGenderMaleToFemaleLabel = new System.Windows.Forms.Label();
             this.speciesBaseStatsGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesHPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
@@ -137,8 +137,8 @@
             this.speciesSpeedLabel = new System.Windows.Forms.Label();
             this.speciesSpecialAttackLabel = new System.Windows.Forms.Label();
             this.speciesSpecialDefenseLabel = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
+            this.speciesLearnableHMsLabel = new System.Windows.Forms.Label();
+            this.speciesLearnableTMsLabel = new System.Windows.Forms.Label();
             this.npcTradeTabPage = new System.Windows.Forms.TabPage();
             this.tradeAnyPokemonWantedComboBox = new System.Windows.Forms.ComboBox();
             this.tradePVDerivedGroupBox = new System.Windows.Forms.GroupBox();
@@ -148,7 +148,7 @@
             this.tradeNatureTextBox = new System.Windows.Forms.TextBox();
             this.tradeGenderTextBox = new System.Windows.Forms.TextBox();
             this.tradeGenderLabel = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tradeIVsGroupBox = new System.Windows.Forms.GroupBox();
             this.tradeSpeedIVsLabel = new System.Windows.Forms.Label();
             this.tradeSpecialDefenseIVsLabel = new System.Windows.Forms.Label();
             this.tradeHPIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
@@ -161,7 +161,7 @@
             this.tradeAttackIVsLabel = new System.Windows.Forms.Label();
             this.tradeDefenseIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeDefenseIVsLabel = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tradeContestStatsGroupBox = new System.Windows.Forms.GroupBox();
             this.tradeSheenNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeSheenLabel = new System.Windows.Forms.Label();
             this.tradeCoolNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
@@ -194,6 +194,14 @@
             this.openRomFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.españolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.françaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deutschToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.italianoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.日本語ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movePowerTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.moveAccuracyTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.movePowerPointsTooltip = new System.Windows.Forms.ToolTip(this.components);
@@ -254,7 +262,7 @@
             this.speciesAbilitiesGroupBox.SuspendLayout();
             this.speciesEggGroupsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).BeginInit();
-            this.speciesTypesComboBox.SuspendLayout();
+            this.speciesTypesGroupBox.SuspendLayout();
             this.speciesGenderGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).BeginInit();
             this.speciesBaseStatsGroupBox.SuspendLayout();
@@ -266,14 +274,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).BeginInit();
             this.npcTradeTabPage.SuspendLayout();
             this.tradePVDerivedGroupBox.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.tradeIVsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeHPIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpeedIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialDefenseIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeAttackIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialAttackIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeDefenseIVsNumericNoArrows)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.tradeContestStatsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSheenNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeCoolNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeToughNumericNoArrows)).BeginInit();
@@ -696,9 +704,9 @@
             this.moveProtectCheckBox.AutoSize = true;
             this.moveProtectCheckBox.Location = new System.Drawing.Point(7, 43);
             this.moveProtectCheckBox.Name = "moveProtectCheckBox";
-            this.moveProtectCheckBox.Size = new System.Drawing.Size(116, 17);
+            this.moveProtectCheckBox.Size = new System.Drawing.Size(117, 17);
             this.moveProtectCheckBox.TabIndex = 13;
-            this.moveProtectCheckBox.Text = "Affected by protect";
+            this.moveProtectCheckBox.Text = "Affected by Protect";
             this.moveProtectCheckBox.UseVisualStyleBackColor = true;
             this.moveProtectCheckBox.Click += new System.EventHandler(this.moveProtectCheckBox_Click);
             // 
@@ -724,11 +732,11 @@
             this.speciesTabPage.Controls.Add(this.speciesHeldItemsGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesAbilitiesGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesEggGroupsGroupBox);
-            this.speciesTabPage.Controls.Add(this.speciesTypesComboBox);
+            this.speciesTabPage.Controls.Add(this.speciesTypesGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesGenderGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesBaseStatsGroupBox);
-            this.speciesTabPage.Controls.Add(this.label34);
-            this.speciesTabPage.Controls.Add(this.label33);
+            this.speciesTabPage.Controls.Add(this.speciesLearnableHMsLabel);
+            this.speciesTabPage.Controls.Add(this.speciesLearnableTMsLabel);
             this.speciesTabPage.Location = new System.Drawing.Point(4, 22);
             this.speciesTabPage.Name = "speciesTabPage";
             this.speciesTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -1199,9 +1207,9 @@
             this.speciesEggCyclesLabel.AutoSize = true;
             this.speciesEggCyclesLabel.Location = new System.Drawing.Point(6, 130);
             this.speciesEggCyclesLabel.Name = "speciesEggCyclesLabel";
-            this.speciesEggCyclesLabel.Size = new System.Drawing.Size(60, 13);
+            this.speciesEggCyclesLabel.Size = new System.Drawing.Size(63, 13);
             this.speciesEggCyclesLabel.TabIndex = 39;
-            this.speciesEggCyclesLabel.Text = "Egg Cycles";
+            this.speciesEggCyclesLabel.Text = "Egg Cycles:";
             // 
             // speciesEggCyclesNumericNoArrows
             // 
@@ -1255,18 +1263,18 @@
             this.speciesEggGroup2Label.TabIndex = 37;
             this.speciesEggGroup2Label.Text = "Egg Group 2:";
             // 
-            // speciesTypesComboBox
+            // speciesTypesGroupBox
             // 
-            this.speciesTypesComboBox.Controls.Add(this.speciesType1ComboBox);
-            this.speciesTypesComboBox.Controls.Add(this.speciesType1Label);
-            this.speciesTypesComboBox.Controls.Add(this.speciesType2ComboBox);
-            this.speciesTypesComboBox.Controls.Add(this.speciesType2Label);
-            this.speciesTypesComboBox.Location = new System.Drawing.Point(280, 109);
-            this.speciesTypesComboBox.Name = "speciesTypesComboBox";
-            this.speciesTypesComboBox.Size = new System.Drawing.Size(141, 121);
-            this.speciesTypesComboBox.TabIndex = 3;
-            this.speciesTypesComboBox.TabStop = false;
-            this.speciesTypesComboBox.Text = "Types";
+            this.speciesTypesGroupBox.Controls.Add(this.speciesType1ComboBox);
+            this.speciesTypesGroupBox.Controls.Add(this.speciesType1Label);
+            this.speciesTypesGroupBox.Controls.Add(this.speciesType2ComboBox);
+            this.speciesTypesGroupBox.Controls.Add(this.speciesType2Label);
+            this.speciesTypesGroupBox.Location = new System.Drawing.Point(280, 109);
+            this.speciesTypesGroupBox.Name = "speciesTypesGroupBox";
+            this.speciesTypesGroupBox.Size = new System.Drawing.Size(141, 121);
+            this.speciesTypesGroupBox.TabIndex = 3;
+            this.speciesTypesGroupBox.TabStop = false;
+            this.speciesTypesGroupBox.Text = "Types";
             // 
             // speciesType1ComboBox
             // 
@@ -1314,7 +1322,7 @@
             this.speciesGenderGroupBox.Controls.Add(this.speciesMaleOnlyRadioButton);
             this.speciesGenderGroupBox.Controls.Add(this.speciesFemaleOnlyRadioButton);
             this.speciesGenderGroupBox.Controls.Add(this.speciesMaleAndFemaleRadioButton);
-            this.speciesGenderGroupBox.Controls.Add(this.label25);
+            this.speciesGenderGroupBox.Controls.Add(this.speciesGenderMaleToFemaleLabel);
             this.speciesGenderGroupBox.Location = new System.Drawing.Point(602, 109);
             this.speciesGenderGroupBox.Name = "speciesGenderGroupBox";
             this.speciesGenderGroupBox.Size = new System.Drawing.Size(103, 179);
@@ -1408,14 +1416,14 @@
             this.speciesMaleAndFemaleRadioButton.UseVisualStyleBackColor = true;
             this.speciesMaleAndFemaleRadioButton.CheckedChanged += new System.EventHandler(this.speciesMaleAndFemaleRadioButton_CheckedChanged);
             // 
-            // label25
+            // speciesGenderMaleToFemaleLabel
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(3, 120);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(85, 26);
-            this.label25.TabIndex = 29;
-            this.label25.Text = "Gender Ratio:\r\n(Male to Female)";
+            this.speciesGenderMaleToFemaleLabel.AutoSize = true;
+            this.speciesGenderMaleToFemaleLabel.Location = new System.Drawing.Point(3, 120);
+            this.speciesGenderMaleToFemaleLabel.Name = "speciesGenderMaleToFemaleLabel";
+            this.speciesGenderMaleToFemaleLabel.Size = new System.Drawing.Size(85, 26);
+            this.speciesGenderMaleToFemaleLabel.TabIndex = 29;
+            this.speciesGenderMaleToFemaleLabel.Text = "Gender Ratio:\r\n(Male to Female)";
             // 
             // speciesBaseStatsGroupBox
             // 
@@ -1608,30 +1616,30 @@
             this.speciesSpecialDefenseLabel.Text = "Special Defense:";
             this.speciesSpecialDefenseLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label34
+            // speciesLearnableHMsLabel
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(723, 323);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(79, 13);
-            this.label34.TabIndex = 47;
-            this.label34.Text = "Learnable HMs";
+            this.speciesLearnableHMsLabel.AutoSize = true;
+            this.speciesLearnableHMsLabel.Location = new System.Drawing.Point(723, 323);
+            this.speciesLearnableHMsLabel.Name = "speciesLearnableHMsLabel";
+            this.speciesLearnableHMsLabel.Size = new System.Drawing.Size(82, 13);
+            this.speciesLearnableHMsLabel.TabIndex = 47;
+            this.speciesLearnableHMsLabel.Text = "Learnable HMs:";
             // 
-            // label33
+            // speciesLearnableTMsLabel
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(724, 113);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(78, 13);
-            this.label33.TabIndex = 46;
-            this.label33.Text = "Learnable TMs";
+            this.speciesLearnableTMsLabel.AutoSize = true;
+            this.speciesLearnableTMsLabel.Location = new System.Drawing.Point(724, 113);
+            this.speciesLearnableTMsLabel.Name = "speciesLearnableTMsLabel";
+            this.speciesLearnableTMsLabel.Size = new System.Drawing.Size(81, 13);
+            this.speciesLearnableTMsLabel.TabIndex = 46;
+            this.speciesLearnableTMsLabel.Text = "Learnable TMs:";
             // 
             // npcTradeTabPage
             // 
             this.npcTradeTabPage.Controls.Add(this.tradeAnyPokemonWantedComboBox);
             this.npcTradeTabPage.Controls.Add(this.tradePVDerivedGroupBox);
-            this.npcTradeTabPage.Controls.Add(this.groupBox2);
-            this.npcTradeTabPage.Controls.Add(this.groupBox1);
+            this.npcTradeTabPage.Controls.Add(this.tradeIVsGroupBox);
+            this.npcTradeTabPage.Controls.Add(this.tradeContestStatsGroupBox);
             this.npcTradeTabPage.Controls.Add(this.tradeTrainerComboBox);
             this.npcTradeTabPage.Controls.Add(this.tradeLanguageLabel);
             this.npcTradeTabPage.Controls.Add(this.tradeLanguageComboBox);
@@ -1736,26 +1744,26 @@
             this.tradeGenderLabel.TabIndex = 14;
             this.tradeGenderLabel.Text = "Gender";
             // 
-            // groupBox2
+            // tradeIVsGroupBox
             // 
-            this.groupBox2.Controls.Add(this.tradeSpeedIVsLabel);
-            this.groupBox2.Controls.Add(this.tradeSpecialDefenseIVsLabel);
-            this.groupBox2.Controls.Add(this.tradeHPIVsNumericNoArrows);
-            this.groupBox2.Controls.Add(this.tradeSpeedIVsNumericNoArrows);
-            this.groupBox2.Controls.Add(this.tradeSpecialDefenseIVsNumericNoArrows);
-            this.groupBox2.Controls.Add(this.tradeHPIVsLabel);
-            this.groupBox2.Controls.Add(this.tradeSpecialAttackIVsLabel);
-            this.groupBox2.Controls.Add(this.tradeAttackIVsNumericNoArrows);
-            this.groupBox2.Controls.Add(this.tradeSpecialAttackIVsNumericNoArrows);
-            this.groupBox2.Controls.Add(this.tradeAttackIVsLabel);
-            this.groupBox2.Controls.Add(this.tradeDefenseIVsNumericNoArrows);
-            this.groupBox2.Controls.Add(this.tradeDefenseIVsLabel);
-            this.groupBox2.Location = new System.Drawing.Point(272, 159);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(111, 288);
-            this.groupBox2.TabIndex = 44;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "IVs";
+            this.tradeIVsGroupBox.Controls.Add(this.tradeSpeedIVsLabel);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeSpecialDefenseIVsLabel);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeHPIVsNumericNoArrows);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeSpeedIVsNumericNoArrows);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeSpecialDefenseIVsNumericNoArrows);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeHPIVsLabel);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeSpecialAttackIVsLabel);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeAttackIVsNumericNoArrows);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeSpecialAttackIVsNumericNoArrows);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeAttackIVsLabel);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeDefenseIVsNumericNoArrows);
+            this.tradeIVsGroupBox.Controls.Add(this.tradeDefenseIVsLabel);
+            this.tradeIVsGroupBox.Location = new System.Drawing.Point(272, 159);
+            this.tradeIVsGroupBox.Name = "tradeIVsGroupBox";
+            this.tradeIVsGroupBox.Size = new System.Drawing.Size(111, 288);
+            this.tradeIVsGroupBox.TabIndex = 44;
+            this.tradeIVsGroupBox.TabStop = false;
+            this.tradeIVsGroupBox.Text = "IVs";
             // 
             // tradeSpeedIVsLabel
             // 
@@ -1895,26 +1903,26 @@
             this.tradeDefenseIVsLabel.TabIndex = 39;
             this.tradeDefenseIVsLabel.Text = "Defense";
             // 
-            // groupBox1
+            // tradeContestStatsGroupBox
             // 
-            this.groupBox1.Controls.Add(this.tradeSheenNumericNoArrows);
-            this.groupBox1.Controls.Add(this.tradeSheenLabel);
-            this.groupBox1.Controls.Add(this.tradeCoolNumericNoArrows);
-            this.groupBox1.Controls.Add(this.tradeCoolLabel);
-            this.groupBox1.Controls.Add(this.tradeToughNumericNoArrows);
-            this.groupBox1.Controls.Add(this.tradeToughLabel);
-            this.groupBox1.Controls.Add(this.tradeBeautyNumericNoArrows);
-            this.groupBox1.Controls.Add(this.tradeBeautyLabel);
-            this.groupBox1.Controls.Add(this.tradeSmartNumericNoArrows);
-            this.groupBox1.Controls.Add(this.tradeSmartLabel);
-            this.groupBox1.Controls.Add(this.tradeCuteNumericNoArrows);
-            this.groupBox1.Controls.Add(this.tradeCuteLabel);
-            this.groupBox1.Location = new System.Drawing.Point(389, 162);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(111, 285);
-            this.groupBox1.TabIndex = 43;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Contest Stats";
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeSheenNumericNoArrows);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeSheenLabel);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeCoolNumericNoArrows);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeCoolLabel);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeToughNumericNoArrows);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeToughLabel);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeBeautyNumericNoArrows);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeBeautyLabel);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeSmartNumericNoArrows);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeSmartLabel);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeCuteNumericNoArrows);
+            this.tradeContestStatsGroupBox.Controls.Add(this.tradeCuteLabel);
+            this.tradeContestStatsGroupBox.Location = new System.Drawing.Point(389, 162);
+            this.tradeContestStatsGroupBox.Name = "tradeContestStatsGroupBox";
+            this.tradeContestStatsGroupBox.Size = new System.Drawing.Size(111, 285);
+            this.tradeContestStatsGroupBox.TabIndex = 43;
+            this.tradeContestStatsGroupBox.TabStop = false;
+            this.tradeContestStatsGroupBox.Text = "Contest Stats";
             // 
             // tradeSheenNumericNoArrows
             // 
@@ -2207,7 +2215,8 @@
             // mainFormMenuStrip
             // 
             this.mainFormMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.optionsToolStripMenuItem});
             this.mainFormMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.mainFormMenuStrip.Name = "mainFormMenuStrip";
             this.mainFormMenuStrip.Size = new System.Drawing.Size(932, 24);
@@ -2249,8 +2258,71 @@
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             this.quitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.quitToolStripMenuItem.Text = "Quit";
+            this.quitToolStripMenuItem.Text = "Exit";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.languageToolStripMenuItem});
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.optionsToolStripMenuItem.Text = "Options";
+            // 
+            // languageToolStripMenuItem
+            // 
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.españolToolStripMenuItem,
+            this.françaisToolStripMenuItem,
+            this.deutschToolStripMenuItem,
+            this.italianoToolStripMenuItem,
+            this.日本語ToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.languageToolStripMenuItem.Text = "Language";
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.englishToolStripMenuItem.Text = "English";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // españolToolStripMenuItem
+            // 
+            this.españolToolStripMenuItem.Name = "españolToolStripMenuItem";
+            this.españolToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.españolToolStripMenuItem.Text = "Español";
+            this.españolToolStripMenuItem.Click += new System.EventHandler(this.españolToolStripMenuItem_Click);
+            // 
+            // françaisToolStripMenuItem
+            // 
+            this.françaisToolStripMenuItem.Name = "françaisToolStripMenuItem";
+            this.françaisToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.françaisToolStripMenuItem.Text = "Français";
+            this.françaisToolStripMenuItem.Click += new System.EventHandler(this.françaisToolStripMenuItem_Click);
+            // 
+            // deutschToolStripMenuItem
+            // 
+            this.deutschToolStripMenuItem.Name = "deutschToolStripMenuItem";
+            this.deutschToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.deutschToolStripMenuItem.Text = "Deutsch";
+            this.deutschToolStripMenuItem.Click += new System.EventHandler(this.deutschToolStripMenuItem_Click);
+            // 
+            // italianoToolStripMenuItem
+            // 
+            this.italianoToolStripMenuItem.Name = "italianoToolStripMenuItem";
+            this.italianoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.italianoToolStripMenuItem.Text = "Italiano";
+            this.italianoToolStripMenuItem.Click += new System.EventHandler(this.italianoToolStripMenuItem_Click);
+            // 
+            // 日本語ToolStripMenuItem
+            // 
+            this.日本語ToolStripMenuItem.Name = "日本語ToolStripMenuItem";
+            this.日本語ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.日本語ToolStripMenuItem.Text = "日本語";
+            this.日本語ToolStripMenuItem.Click += new System.EventHandler(this.日本語ToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -2262,7 +2334,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.mainFormMenuStrip;
             this.Name = "MainForm";
-            this.Text = "Pokemon Sinjoh Editor";
+            this.Text = "Pokémon Sinjoh Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyUp);
             this.mainTabControl.ResumeLayout(false);
@@ -2301,8 +2373,8 @@
             this.speciesEggGroupsGroupBox.ResumeLayout(false);
             this.speciesEggGroupsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).EndInit();
-            this.speciesTypesComboBox.ResumeLayout(false);
-            this.speciesTypesComboBox.PerformLayout();
+            this.speciesTypesGroupBox.ResumeLayout(false);
+            this.speciesTypesGroupBox.PerformLayout();
             this.speciesGenderGroupBox.ResumeLayout(false);
             this.speciesGenderGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).EndInit();
@@ -2318,16 +2390,16 @@
             this.npcTradeTabPage.PerformLayout();
             this.tradePVDerivedGroupBox.ResumeLayout(false);
             this.tradePVDerivedGroupBox.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.tradeIVsGroupBox.ResumeLayout(false);
+            this.tradeIVsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeHPIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpeedIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialDefenseIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeAttackIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialAttackIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeDefenseIVsNumericNoArrows)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.tradeContestStatsGroupBox.ResumeLayout(false);
+            this.tradeContestStatsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSheenNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeCoolNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeToughNumericNoArrows)).EndInit();
@@ -2412,7 +2484,7 @@
         private System.Windows.Forms.RadioButton speciesGenderlessRadioButton;
         private System.Windows.Forms.RadioButton speciesFemaleOnlyRadioButton;
         private System.Windows.Forms.RadioButton speciesMaleOnlyRadioButton;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label speciesGenderMaleToFemaleLabel;
         private NumericNoArrows speciesGenderRatioNumericNoArrows;
         private System.Windows.Forms.Label speciesEggGroup2Label;
         private System.Windows.Forms.ComboBox speciesEggGroup2ComboBox;
@@ -2428,8 +2500,8 @@
         private System.Windows.Forms.ComboBox speciesAbility2ComboBox;
         private System.Windows.Forms.Label speciesAbility1Label;
         private System.Windows.Forms.ComboBox speciesAbility1ComboBox;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label speciesLearnableHMsLabel;
+        private System.Windows.Forms.Label speciesLearnableTMsLabel;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.ToolStripMenuItem openRomFileToolStripMenuItem;
         private NumericNoArrows moveEffectNumericNoArrows;
@@ -2455,7 +2527,7 @@
         private System.Windows.Forms.GroupBox speciesBaseStatsGroupBox;
         private System.Windows.Forms.GroupBox speciesGenderGroupBox;
         private System.Windows.Forms.GroupBox speciesEggGroupsGroupBox;
-        private System.Windows.Forms.GroupBox speciesTypesComboBox;
+        private System.Windows.Forms.GroupBox speciesTypesGroupBox;
         private System.Windows.Forms.GroupBox speciesHeldItemsGroupBox;
         private System.Windows.Forms.GroupBox speciesAbilitiesGroupBox;
         private System.Windows.Forms.ComboBox speciesComboBox;
@@ -2531,8 +2603,8 @@
         private NumericNoArrows tradeSpeedIVsNumericNoArrows;
         private NumericNoArrows tradeDefenseIVsNumericNoArrows;
         private NumericNoArrows tradeAttackIVsNumericNoArrows;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox tradeContestStatsGroupBox;
+        private System.Windows.Forms.GroupBox tradeIVsGroupBox;
         private System.Windows.Forms.TextBox tradeAbilityTextBox;
         private System.Windows.Forms.TextBox tradeGenderTextBox;
         private System.Windows.Forms.Label tradeNatureLabel;
@@ -2542,6 +2614,14 @@
         private System.Windows.Forms.ToolTip tradeAbilityTooltip;
         private System.Windows.Forms.ToolTip tradeGenderTooltip;
         private System.Windows.Forms.ToolTip tradeNatureTooltip;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem españolToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem françaisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deutschToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 日本語ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem italianoToolStripMenuItem;
     }
 }
 

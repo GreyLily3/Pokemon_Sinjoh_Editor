@@ -156,7 +156,7 @@ namespace Pokemon_Sinjoh_Editor
             {
                 speciesBaseStatsGroupBox.Enabled = true;
                 speciesEVOnDefeatGroupBox.Enabled = true;
-                speciesTypesComboBox.Enabled = true;
+                speciesTypesGroupBox.Enabled = true;
                 speciesAbilitiesGroupBox.Enabled = true;
                 speciesXPGroupBox.Enabled = true;
                 speciesHeldItemsGroupBox.Enabled = true;
@@ -170,7 +170,7 @@ namespace Pokemon_Sinjoh_Editor
             {
                 speciesBaseStatsGroupBox.Enabled = false;
                 speciesEVOnDefeatGroupBox.Enabled = false;
-                speciesTypesComboBox.Enabled = false;
+                speciesTypesGroupBox.Enabled = false;
                 speciesAbilitiesGroupBox.Enabled = false;
                 speciesXPGroupBox.Enabled = false;
                 speciesHeldItemsGroupBox.Enabled = false;

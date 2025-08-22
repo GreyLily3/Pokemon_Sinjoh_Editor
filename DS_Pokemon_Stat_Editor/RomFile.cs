@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -32,6 +33,7 @@ namespace Pokemon_Sinjoh_Editor
 		public static List<string> TradePokemonNicknames { get; private set; } = new List<string>();
         public static List<string> TradePokemonTrainerNames { get; private set; } = new List<string>();
 		public static List<string> PokedexText {  get; private set; } = new List<string>();
+        public static List<string> NatureNames { get; private set; } = new List<string>();
 
         private static FAT fat;
 
@@ -71,6 +73,10 @@ namespace Pokemon_Sinjoh_Editor
         private const int POKEDEX_TEXT_BANK_DP = 614;
         private const int POKEDEX_TEXT_BANK_PL = 697;
         private const int POKEDEX_TEXT_BANK_HGSS = 802;
+
+        private const int NATURE_TEXT_BANK_DP = 190;
+        private const int NATURE_TEXT_BANK_PL = 202;
+        private const int NATURE_TEXT_BANK_HGSS = 34;
 
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_DP = 111;
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_PL = 112;
@@ -140,6 +146,8 @@ namespace Pokemon_Sinjoh_Editor
         public const int TRADE_JASMINE_INDEX = 5;
         public const int TRADE_WEBSTER_INDEX = 7;
 
+        public const int POKEMON_NAME_MAX_LENGTH = 10;
+        public const int MOVE_NAME_MAX_LENGTH = 12;
 
         #endregion
 
@@ -270,6 +278,7 @@ namespace Pokemon_Sinjoh_Editor
 			ItemNames = gameText.TextBanks[getItemNamesTextBankID()];
 			AbilityNames = gameText.TextBanks[getAbilityNamesTextBankID()];
 			PokedexText = gameText.TextBanks[getPokedexTextBankID()];
+            NatureNames = gameText.TextBanks[getNatureTextBankID()];
 
             TradePokemonNicknames.Clear();
             TradePokemonTrainerNames.Clear();
@@ -604,6 +613,17 @@ namespace Pokemon_Sinjoh_Editor
             };
         }
 
+        private static int getNatureTextBankID()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => NATURE_TEXT_BANK_DP,
+                GameFamilies.PL => NATURE_TEXT_BANK_PL,
+                GameFamilies.HGSS => NATURE_TEXT_BANK_HGSS,
+                _ => 0
+            };
+        }
+
         public static bool IsValidGameVersion()
         {
             if (gameFamily == GameFamilies.NULL)
@@ -662,14 +682,27 @@ namespace Pokemon_Sinjoh_Editor
         //will replace this static list later if there's a good way to get/set what moves are set as TMs (this is stored in ARM9 binary)
         public static string[] GetTMNames()
 		{
+            string tmString;
             string[] TMNames = new string[92];
             int[] TMIndices = { 264, 337, 352, 347, 46, 92, 258, 339, 331, 237, 241, 269, 58, 59, 63, 113, 182, 240, 202, 219, 218, 76, 231, 85, 87, 89, 216,
             91, 94, 247, 280, 104, 115, 351, 53, 188, 201, 126, 317, 332, 259, 263, 290, 156, 213, 168, 211, 285, 289, 315, 355, 411, 412, 206, 362, 374, 
             451, 203, 406, 409, 261, 318, 373, 153, 421, 371, 278, 416, 397, 148, 444, 419, 86, 360, 14, 446, 244, 445, 399, 157, 404, 214,
             363, 398, 138, 447, 207, 365, 369, 164, 430, 433};
 
+            tmString = INIManager.Language switch
+            {
+                Languages.ENGLISH => "TM",
+                Languages.FRENCH => "CT",
+                Languages.SPANISH => "MT",
+                Languages.GERMAN => "TM",
+                Languages.ITALIAN => "MT",
+                Languages.JAPANESE => "わざマシン",
+                Languages.KOREAN => "TM",
+                _ => "TM"
+            };
+
             for (int i = 0; i < 92; i++)
-                TMNames[i] = "TM" + (i + 1).ToString("D2") + " " + MoveNames[TMIndices[i] - MOVE_START_INDEX];
+                TMNames[i] = tmString + (i + 1).ToString("D2") + " " + MoveNames[TMIndices[i] - MOVE_START_INDEX];
 
             return TMNames;
 		}
@@ -677,14 +710,27 @@ namespace Pokemon_Sinjoh_Editor
 		//will replace static indices later if there's a good way to get/set what moves are HMs (this is stored in ARM9 binary)
         public static string[] GetHMNames()
         {
+            string hmString;
             string[] HMNames = new string[8];
             int[] HMIndices = { 15, 19, 57, 70, 250, 249, 127, 431 };
 
             if (gameFamily != GameFamilies.HGSS)
                 HMIndices[5] = 432; //replace whirlpool with defog for HM05
 
+            hmString = INIManager.Language switch
+            {
+                Languages.ENGLISH => "HM0",
+                Languages.FRENCH => "CS0",
+                Languages.SPANISH => "MO0",
+                Languages.GERMAN => "VM",
+                Languages.ITALIAN => "MN",
+                Languages.JAPANESE => "ひでんマシン0",
+                Languages.KOREAN => "TM",
+                _ => "HM0"
+            };
+
             for (int i = 0; i < 8; i++)
-                HMNames[i] = "HM0" + (i + 1) + " " + MoveNames[HMIndices[i] - MOVE_START_INDEX];
+                HMNames[i] = hmString + (i + 1) + " " + MoveNames[HMIndices[i] - MOVE_START_INDEX];
 
             return HMNames;
         }
@@ -737,8 +783,41 @@ namespace Pokemon_Sinjoh_Editor
 		public static string[] GetItemNames() => ItemNames.ToArray();
 		public static string[] GetTypeNames() => TypeNames.ToArray();
 		public static string[] GetAbilityNames() => AbilityNames.ToArray();
-        public static string[] GetMoveCategories() => Enum.GetNames(typeof(Move.Categories));
-        public static string[] GetMoveContestConditions() => Enum.GetNames(typeof(Move.ContestConditions));
+        public static string[] GetMoveCategories()
+        {
+            return INIManager.Language switch
+            {
+                Languages.ENGLISH => Enum.GetNames(typeof(Move.Categories)),
+                Languages.FRENCH => new string[]{ "Physique", "Spéciale", "Statut" },
+                Languages.SPANISH => new string[] { "Físico", "Especial", "Estado" },
+                Languages.GERMAN => new string[] { "Physische", "Spezial", "Status" },
+                Languages.ITALIAN => new string[] { "Fisica", "Speciale", "Stato" },
+                Languages.JAPANESE => new string[] { "物理", "特殊", "変化" },
+                Languages.KOREAN => new string[] { "물리", "특수", "변화" },
+                _ => Enum.GetNames(typeof(Move.Categories))
+            };
+            
+        }
+
+        public static string[] GetMoveContestConditions()
+        {
+            if (INIManager.Language == Languages.ENGLISH)
+                return Enum.GetNames(typeof(Move.ContestConditions));
+            else if (INIManager.Language == Languages.FRENCH)
+                return new string[] { "Sang-froid", "Beauté", "Grâce", "Intelligence", "Robustesse" };
+            else if (INIManager.Language == Languages.SPANISH)
+                return new string[] { "Carisma", "Belleza", "Dulzura", "Ingenio", "Dureza" };
+            else if (INIManager.Language == Languages.GERMAN)
+                return new string[] { "Coole", "Schönheit", "Anmut", "Klugheit", "Stärke" };
+            else if (INIManager.Language == Languages.ITALIAN)
+                return new string[] { "Classe", "Bellezza", "Grazia", "Acume", "Grinta" };
+            else if (INIManager.Language == Languages.JAPANESE)
+                return new string[] { "かっこよさ", "うつくしさ", "かわいさ", "かしこさ", "たくましさ" };
+            else if (INIManager.Language == Languages.KOREAN)
+                return new string[] { "근사함", "아름다움", "귀여움", "슬기로움", "강인함" };
+            else
+                return Enum.GetNames(typeof(Move.ContestConditions));
+        }
 		public static string[] GetMoveContestEffect() => Move.ContestEffectDescriptions;
 
         public static string[] GetMoveTargets()
@@ -753,26 +832,131 @@ namespace Pokemon_Sinjoh_Editor
 
         public static string[] GetEggGroupNames() 
         {
-            string[] eggGroupNames = Enum.GetNames(typeof(PokemonSpecies.EggGroups));
+            string[] eggGroupNames;
 
-            for (int i = 0; i < eggGroupNames.Length; i++)
-                eggGroupNames[i] = eggGroupNames[i].Replace('_', ' ');
+            if (INIManager.Language == Languages.ENGLISH)
+            {
+                eggGroupNames = Enum.GetNames(typeof(PokemonSpecies.EggGroups));
+
+                for (int i = 0; i < eggGroupNames.Length; i++)
+                    eggGroupNames[i] = eggGroupNames[i].Replace('_', ' ');
+            }
+            else
+            {
+                eggGroupNames = INIManager.Language switch
+                {
+                    Languages.FRENCH => new string[] { "Monstreux", "Aquatique", "Insectoïde" , "Aérien" , "Terrestre", "Féerique", "Végétal", "Humanoïde", "Aquatique 3", "Minéral", "Amorphe", "Aquatique 2", "Métamorph", "Draconique", "Inconnu" },
+                    Languages.SPANISH => new string[] { "Monstruo", "Agua 1"   , "Bicho"      , "Volador", "Campo"    , "Hada"    , "Planta", "Humanoide", "Agua 3", "Mineral", "Amorfo", "Agua 2", "Ditto", "Dragón", "Desconocido" },
+                    Languages.GERMAN => new string[] { "Monster"  , "Wasser 1" , "Käfer"      , "Flug"   , "Feld"     , "Fee"     , "Pflanze", "Humanotyp", "Wasser 3", "Mineral", "Amorph", "Wasser 2", "Ditto", "Drache", "Unbekannt" },
+                    Languages.ITALIAN => new string[] { "Mostro"  , "Acqua 1"  , " Coleottero", "Volante", "Campo"    , "Magico"  , "Erba", "Umanoide", "Acqua 3", "Minerale", "Amorfo", "Acqua 2", "Ditto", "Drago", "Sconosciuto" },
+                    Languages.JAPANESE => new string[] { "怪獣"    , "水中 1"   , "虫グ"        , "飛行"   , "陸上"      , "妖精"    , "植物", "人型", "水中 3", "鉱物", "不定形", "水中 2", "メタモン", "ドラゴ", "タマゴ未発見" },
+                    Languages.KOREAN => new string[] { "괴수"      , "수중 1"   , "벌레"        , "비행"   , "육상"      , "요정"    , "식물", "인간형", "수중 3", "광물", "부정형", "수중 2", "메타몽", "드래곤", "알미발견" },
+                };
+            }
 
             return eggGroupNames;
         }
 
         public static string[] GetXPGroupNames()
         {
-            string[] xpGroupNames = Enum.GetNames(typeof(PokemonSpecies.XPGroups));
+            string[] xpGroupNames;
 
-            for (int i = 0; i < xpGroupNames.Length; i++)
-                xpGroupNames[i] = xpGroupNames[i].Replace('_', ' ');
+            if (INIManager.Language == Languages.ENGLISH)
+            {
+                xpGroupNames = Enum.GetNames(typeof(PokemonSpecies.XPGroups));
+
+                for (int i = 0; i < xpGroupNames.Length; i++)
+                    xpGroupNames[i] = xpGroupNames[i].Replace('_', ' ');
+            }
+            else
+            {
+                xpGroupNames = INIManager.Language switch
+                {
+                    Languages.FRENCH => new string[] { "Moyenne", "Erratique", "Fluctuante", "Parabolique", "Rapide", "Lente", "???", "???"},
+                    Languages.SPANISH => new string[] { "Medio", "Errático", "Fluctuante", "Parabólico", "Rápido", "Lento", "???", "???"},
+                    Languages.GERMAN => new string[] { "Mittel-Schnell", "Erratic", "Fluctuating", "Mittel-Langsam", "Schnell", "Langsam", "???", "???"},
+                    Languages.ITALIAN => new string[] { "Medio-veloce", "Irregolare", "Fluttuante", "Medio-lenta", "Veloce", "Lenta", "???", "???"},
+                    Languages.JAPANESE => new string[] { "100万タイプ", "60万タイプ", "164万タイプ", "105万タイプ", "80万タイプ", "125万タイプ", "???", "???" },
+                    Languages.KOREAN => new string[] { "괴수", "수중 1", "벌레", "비행", "육상", "요정", "식물", "인간형"},
+                };
+            }
+
 
             return xpGroupNames;
         }
 
-		public static string[] GetLanguageNames() => Enum.GetNames(typeof(Languages));
+		public static string[] GetLanguageNames()
+        {
+            return INIManager.Language switch
+            {
+                Languages.ENGLISH => Enum.GetNames(typeof(Languages)),
+                Languages.FRENCH => new string[] { "Japonais", "Anglais", "Français", "Italien", "Allemand", "???", "Espagnol", "Coréen" },
+                Languages.SPANISH => new string[] { "Japonés", "Inglés", "Francés", "Italiano", "Alemán", "???", "Español", "Coreano" },
+                Languages.GERMAN => new string[] { "Japanisch", "Englisch", "Französisch", "Italienisch", "Deutsch", "???", "Spanisch", "Koreanisch" },
+                Languages.ITALIAN => new string[] { "Giapponese", "Inglese", "Francese", "Italiano", "Tedesco", "???", "Spagnolo", "Coreano" },
+                Languages.JAPANESE => new string[] { "日本語", "英語", "フランス語", "イタリア語", "ドイツ語", "???", "スペイン語", "ハングル語" },
+                Languages.KOREAN => new string[] { "물리", "특수", "변화" },
+                _ => Enum.GetNames(typeof(Languages))
+            };
+
+            
+        }
+
 		public static string[] GetWantedGenderNames() => Enum.GetNames(typeof(NPCTrade.WantedGender));
+
+        public static string GetGenderName(Gender gender)
+        {
+            switch (INIManager.Language)
+            {
+                case Languages.ENGLISH:
+                    return gender.ToString();
+                case Languages.FRENCH:
+                    if (gender == Gender.MALE)
+                        return "Mâle";
+                    else if (gender == Gender.FEMALE)
+                        return "Femelle";
+                    else
+                        return "Inconnu";
+                case Languages.SPANISH:
+                    if (gender == Gender.MALE)
+                        return "Macho";
+                    else if (gender == Gender.FEMALE)
+                        return "Hembra";
+                    else
+                        return "Sin sexo";
+                case Languages.GERMAN:
+                    if (gender == Gender.MALE)
+                        return "Männlich";
+                    else if (gender == Gender.FEMALE)
+                        return "Weiblich";
+                    else
+                        return "Unbekannt";
+                case Languages.ITALIAN:
+                    if (gender == Gender.MALE)
+                        return "Maschio";
+                    else if (gender == Gender.FEMALE)
+                        return "Femmina";
+                    else
+                        return "Unbekannt";
+                case Languages.JAPANESE:
+                    if (gender == Gender.MALE)
+                        return "オス";
+                    else if (gender == Gender.FEMALE)
+                        return "メス";
+                    else
+                        return "性別不明";
+                case Languages.KOREAN:
+                    if (gender == Gender.MALE)
+                        return "オス";
+                    else if (gender == Gender.FEMALE)
+                        return "メス";
+                    else
+                        return "性別不明";
+                default:
+                    return gender.ToString();
+            }
+        }
+
 		public static string[] GetTradePokemonNickNames() => TradePokemonNicknames.ToArray();
 		public static string[] GetTradePokemonTrainerNames() => TradePokemonTrainerNames.ToArray();
     }

@@ -258,8 +258,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             PersonalityValue pv = new PersonalityValue((uint)tradePVNumericNoArrows.Value);
 
-            tradeGenderTextBox.Text = pv.GetGender(RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex].GenderRatio).ToString();
-            tradeNatureTextBox.Text = pv.GetNature().ToString();
+            tradeGenderTextBox.Text = RomFile.GetGenderName(pv.GetGender(RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex].GenderRatio));
+            tradeNatureTextBox.Text = RomFile.NatureNames[(int)(pv.GetNature())];
             tradeAbilityTextBox.Text = RomFile.GetAbilityName(tradeOfferedPokemonComboBox.SelectedIndex, pv);
         }
 
