@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Xml.Serialization;
 
 namespace Pokemon_Sinjoh_Editor
 {
@@ -97,6 +96,10 @@ namespace Pokemon_Sinjoh_Editor
                 case Languages.GERMAN:
                     setTextToGerman();
                     deutschToolStripMenuItem.Checked = true;
+                    break;
+                case Languages.KOREAN:
+                    setTextToKorean();
+                    한국어ToolStripMenuItem.Checked = true;
                     break;
 
             }
@@ -312,7 +315,7 @@ namespace Pokemon_Sinjoh_Editor
             tradeCuteLabel.Text = "Dulzura";
             tradeSmartLabel.Text = "Ingenio";
             tradeToughLabel.Text = "Dureza";
-            tradeSheenLabel.Text = "Sheen";
+            tradeSheenLabel.Text = "Brillo";
 
             tradeHeldItemLabel.Text = "Objeto Equipado";
             tradeLanguageLabel.Text = "Language of Origin";
@@ -424,7 +427,7 @@ namespace Pokemon_Sinjoh_Editor
             tradeCuteLabel.Text = "Grâce";
             tradeSmartLabel.Text = "Intelligence";
             tradeToughLabel.Text = "Robustesse";
-            tradeSheenLabel.Text = "Sheen";
+            tradeSheenLabel.Text = "Lustre";
 
             tradeHeldItemLabel.Text = "Objet Tenu";
             tradeLanguageLabel.Text = "Langue";
@@ -536,7 +539,7 @@ namespace Pokemon_Sinjoh_Editor
             tradeCuteLabel.Text = "Anmut";
             tradeSmartLabel.Text = "Klugheit";
             tradeToughLabel.Text = "Stärke";
-            tradeSheenLabel.Text = "Sheen";
+            tradeSheenLabel.Text = "Glanz";
 
             tradeHeldItemLabel.Text = "Getragenes Item";
             tradeLanguageLabel.Text = "Sprache";
@@ -648,7 +651,7 @@ namespace Pokemon_Sinjoh_Editor
             tradeCuteLabel.Text = "Grazia";
             tradeSmartLabel.Text = "Acume";
             tradeToughLabel.Text = "Grinta";
-            tradeSheenLabel.Text = "Lucentezza";
+            tradeSheenLabel.Text = "Lustro";
 
             tradeHeldItemLabel.Text = "Strumento";
             tradeLanguageLabel.Text = "Lingua";
@@ -768,6 +771,118 @@ namespace Pokemon_Sinjoh_Editor
 
             tradeIVsGroupBox.Text = "個体値";
             tradeContestStatsGroupBox.Text = "コンテスト";
+            tradePVDerivedGroupBox.Text = "Derived from PV";
+        }
+
+        private void setTextToKorean()
+        {
+            fileToolStripMenuItem.Text = "파일";
+            optionsToolStripMenuItem.Text = "설정";
+            languageToolStripMenuItem.Text = "언어";
+            openRomFileToolStripMenuItem.Text = "열기";
+            saveToolStripMenuItem.Text = "저장";
+            quitToolStripMenuItem.Text = "종료";
+
+            movesTabPage.Text = "기술";
+            speciesTabPage.Text = "포켓몬";
+            npcTradeTabPage.Text = "교환";
+
+            moveSelectedLabel.Text = "기술:";
+            movePowerLabel.Text = "위력:";
+            moveAccuracyLabel.Text = "명중:";
+            movePPLabel.Text = "PP:";
+            moveTypeLabel.Text = "타입:";
+            moveCategoryLabel.Text = "분류:";
+            moveEffectLabel.Text = "효과:";
+            moveEffectChanceLabel.Text = "Effect Chance:";
+            movePriorityLabel.Text = "선제기술:";
+            moveTargetLabel.Text = "범위:";
+            moveContestEffectLabel.Text = "Contest Effect:";
+            moveContestConditionLabel.Text = "컨디션:";
+
+            moveContactCheckBox.Text = "접촉";
+            moveProtectCheckBox.Text = "방어";
+            moveMagicCoatCheckBox.Text = "매직코트";
+            moveSnatchCheckBox.Text = "가로챔";
+            moveMirrorMoveCheckBox.Text = "따라하기";
+            moveKingsRockCheckBox.Text = "왕의징표석";
+            moveHPBarCheckBox.Text = "Keep HP Bar";
+            moveShadowCheckBox.Text = "Hide Shadow";
+
+            speciesHPLabel.Text = "HP:";
+            speciesAttackLabel.Text = "공격:";
+            speciesDefenseLabel.Text = "방어:";
+            speciesSpecialAttackLabel.Text = "특수공격:";
+            speciesSpecialDefenseLabel.Text = "특수방어:";
+            speciesSpeedLabel.Text = "스피드:";
+
+            speciesHPEVlabel.Text = "HP:";
+            speciesAttackEVLabel.Text = "공격:";
+            speciesDefenseEVLabel.Text = "방어:";
+            speciesSpecialAttackEVLabel.Text = "특수공격:";
+            speciesSpecialDefenseEVLabel.Text = "특수방어:";
+            speciesSpeedEVlabel.Text = "스피드:";
+
+            speciesType1Label.Text = "타입 1:";
+            speciesType2Label.Text = "타입 2:";
+            speciesAbility1Label.Text = "특성 1:";
+            speciesAbility2Label.Text = "특성 2:";
+            speciesXPGroupLabel.Text = "Experience Group:";
+            speciesBaseXPLabel.Text = "Base EXP Yield:";
+            speciesHeldItem1Label.Text = "지닌물건 1:\r\n(50%)\r\n";
+            speciesHeldItem2Label.Text = "지닌물건 2:\r\n(5%)\r\n";
+            speciesEggGroup1Label.Text = "알그룹 1:";
+            speciesEggGroup2Label.Text = "알그룹 2:";
+            speciesEggCyclesLabel.Text = "Egg Cycles:";
+            speciesMaleOnlyRadioButton.Text = "수컷";
+            speciesFemaleOnlyRadioButton.Text = "암컷";
+            speciesGenderlessRadioButton.Text = "성별 불명";
+            speciesMaleAndFemaleRadioButton.Text = "수컷 && 암컷";
+            speciesGenderMaleToFemaleLabel.Text = "수컷 / 암컷)";
+            speciesCatchRateLabel.Text = "포획률:";
+            speciesBaseHappinessLabel.Text = "친밀도:";
+            speciesSafariRunChanceLabel.Text = "Run Chance:\r\n(사파리존)";
+            speciesLearnableTMsLabel.Text = "기술머신:";
+            speciesLearnableHMsLabel.Text = "비전머신:";
+
+            speciesBaseStatsGroupBox.Text = "종족값";
+            speciesEVOnDefeatGroupBox.Text = "기초포인트";
+            speciesTypesGroupBox.Text = "타입";
+            speciesAbilitiesGroupBox.Text = "특성";
+            speciesXPGroupBox.Text = "경험";
+            speciesHeldItemsGroupBox.Text = "Held Items in the Wild";
+            speciesEggGroupsGroupBox.Text = "알";
+            speciesGenderGroupBox.Text = "성별";
+            speciesMiscGroupBox.Text = "Misc";
+
+            tradeWantedPokemonLabel.Text = "Wanted Pokemon";
+            tradeOfferedPokemonLabel.Text = "Offered Pokemon";
+            tradeNicknameLabel.Text = "Offered Pokemon Nickname";
+            tradeOriginalTrainerIDLabel.Text = "IDNo.";
+
+            tradeHPIVsLabel.Text = "HP";
+            tradeAttackIVsLabel.Text = "공격";
+            tradeDefenseIVsLabel.Text = "방어";
+            tradeSpecialAttackIVsLabel.Text = "특수공격";
+            tradeSpecialDefenseIVsLabel.Text = "특수방어";
+            tradeSpeedIVsLabel.Text = "스피드";
+
+            tradeCoolLabel.Text = "근사함";
+            tradeBeautyLabel.Text = "아름다움";
+            tradeCuteLabel.Text = "귀여움";
+            tradeSmartLabel.Text = "슬기로움";
+            tradeToughLabel.Text = "강인함";
+            tradeSheenLabel.Text = "털색";
+
+            tradeHeldItemLabel.Text = "지닌물건";
+            tradeLanguageLabel.Text = "언어";
+            tradePVLabel.Text = "Personality Value";
+            tradeAbilityLabel.Text = "특성";
+            tradeGenderLabel.Text = "성별";
+            tradeNatureLabel.Text = "성격";
+
+            tradeIVsGroupBox.Text = "개체값";
+            tradeContestStatsGroupBox.Text = "Contest Stats";
             tradePVDerivedGroupBox.Text = "Derived from PV";
         }
 
@@ -919,6 +1034,7 @@ namespace Pokemon_Sinjoh_Editor
                 deutschToolStripMenuItem.Checked = false;
                 italianoToolStripMenuItem.Checked = false;
                 日本語ToolStripMenuItem.Checked = false;
+                한국어ToolStripMenuItem.Checked = false;
             }
         }
 
@@ -936,6 +1052,7 @@ namespace Pokemon_Sinjoh_Editor
                 deutschToolStripMenuItem.Checked = false;
                 italianoToolStripMenuItem.Checked = false;
                 日本語ToolStripMenuItem.Checked = false;
+                한국어ToolStripMenuItem.Checked = false;
             }
 		}
 
@@ -953,6 +1070,7 @@ namespace Pokemon_Sinjoh_Editor
                 deutschToolStripMenuItem.Checked = false;
                 italianoToolStripMenuItem.Checked = false;
                 日本語ToolStripMenuItem.Checked = false;
+                한국어ToolStripMenuItem.Checked = false;
             }
         }
 
@@ -970,6 +1088,7 @@ namespace Pokemon_Sinjoh_Editor
                 françaisToolStripMenuItem.Checked = false;
                 italianoToolStripMenuItem.Checked = false;
                 日本語ToolStripMenuItem.Checked = false;
+                한국어ToolStripMenuItem.Checked = false;
             }
 		}
 
@@ -987,6 +1106,7 @@ namespace Pokemon_Sinjoh_Editor
                 françaisToolStripMenuItem.Checked = false;
                 deutschToolStripMenuItem.Checked = false;
                 日本語ToolStripMenuItem.Checked = false;
+                한국어ToolStripMenuItem.Checked = false;
             }
 		}
 
@@ -1004,7 +1124,28 @@ namespace Pokemon_Sinjoh_Editor
                 françaisToolStripMenuItem.Checked = false;
                 deutschToolStripMenuItem.Checked = false;
                 italianoToolStripMenuItem.Checked = false;
+                한국어ToolStripMenuItem.Checked = false;
             }
         }
+
+        private void 한국어ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (INIManager.Language != Languages.KOREAN)
+            {
+                한국어ToolStripMenuItem.Checked = true;
+                setTextToKorean();
+                INIManager.Language = Languages.KOREAN;
+                INIManager.SaveINI();
+
+                englishToolStripMenuItem.Checked = false;
+                日本語ToolStripMenuItem.Checked = false;
+                españolToolStripMenuItem.Checked = false;
+                françaisToolStripMenuItem.Checked = false;
+                deutschToolStripMenuItem.Checked = false;
+                italianoToolStripMenuItem.Checked = false;
+            }
+        }
+
+        
     }
 }

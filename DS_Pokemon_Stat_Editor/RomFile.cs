@@ -852,7 +852,7 @@ namespace Pokemon_Sinjoh_Editor
                 Languages.GERMAN => "TM",
                 Languages.ITALIAN => "MT",
                 Languages.JAPANESE => "わざマシン",
-                Languages.KOREAN => "TM",
+                Languages.KOREAN => "기술머신",
                 _ => "TM"
             };
 
@@ -880,7 +880,7 @@ namespace Pokemon_Sinjoh_Editor
                 Languages.GERMAN => "VM",
                 Languages.ITALIAN => "MN",
                 Languages.JAPANESE => "ひでんマシン0",
-                Languages.KOREAN => "TM",
+                Languages.KOREAN => "비전머신",
                 _ => "HM0"
             };
 
@@ -977,10 +977,29 @@ namespace Pokemon_Sinjoh_Editor
 
         public static string[] GetMoveTargets()
         {
-            string[] targetNames = Enum.GetNames(typeof(Move.Targets));
+            string[] targetNames;
 
-            for (int i = 0; i < targetNames.Length; i++)
-                targetNames[i] = targetNames[i].Replace('_', ' ');
+            if (INIManager.Language == Languages.ENGLISH)
+            {
+                targetNames = Enum.GetNames(typeof(Move.Targets));
+
+                for (int i = 0; i < targetNames.Length; i++)
+                    targetNames[i] = targetNames[i].Replace('_', ' ');
+
+                
+            }
+            else
+            {
+                targetNames = INIManager.Language switch
+                {
+                    Languages.FRENCH => new string[] { "Normale", "1 OTHER", "1 adv. au hasard", "Adv. proches", "PKMN proches", "Soi", "Côté allié", "Tous côtés", "Côté adv.", "1 allié", "Soi ou 1 allié", "ANY FOE"},
+                    Languages.SPANISH => new string[] { "Normal", "1 OTHER", "1 rival aleatorio", "Rivales cercanos", "Pokémon cercanos", "Usuario", "Aliados de combate", "Todos", "Rivales de combate", "1 aliado", "Usuario o 1 aliado", "ANY FOE" },
+                    Languages.GERMAN => new string[] { "Normal", "1 OTHER", "1 beliebiger Gegner", "Mehrere Gegner", "PKMN im Umkreis", "Anwender", "Eigene Seite", "Beide Seiten", "Gegnerseite", "1 Mitstreiter", "Anwender oder 1 Mitsreiter", "ANY FOE" },
+                    Languages.ITALIAN => new string[] { "Normale", "1 OTHER", "Un nemico a caso", "Più nemici", "Più alleati", "Se stesso", "Tuo campo", "Entrambi i campi", "Campo nemico", "Un alleato", "Se stesso o un alleato", "ANY FOE" },
+                    Languages.JAPANESE => new string[] { "通常", "相手複数", "相手ランダ", "相手複数", "相手", "自分", "味方場", "味方複数", "相手場", "味方１匹", "自分か味方１匹", "相手１匹" },
+                    Languages.KOREAN => new string[] { "통상", "1 OTHER", "상대랜덤1마리", "상대복수", "상대·같은편복수", "자신", "같은편장소", "상대·같으편장소", "상대장소", "같은편1마리", "자신또는같은편1마리", "ANY FOE" },
+                };
+            }
 
             return targetNames;
         }
@@ -1032,7 +1051,7 @@ namespace Pokemon_Sinjoh_Editor
                     Languages.GERMAN => new string[] { "Mittel-Schnell", "Erratic", "Fluctuating", "Mittel-Langsam", "Schnell", "Langsam", "???", "???"},
                     Languages.ITALIAN => new string[] { "Medio-veloce", "Irregolare", "Fluttuante", "Medio-lenta", "Veloce", "Lenta", "???", "???"},
                     Languages.JAPANESE => new string[] { "100万タイプ", "60万タイプ", "164万タイプ", "105万タイプ", "80万タイプ", "125万タイプ", "???", "???" },
-                    Languages.KOREAN => new string[] { "괴수", "수중 1", "벌레", "비행", "육상", "요정", "식물", "인간형"},
+                    Languages.KOREAN => new string[] { "MEDIUM_FAST", "ERRATIC", "FLUCTUATING", "MEDIUM_SLOW", "FAST", "SLOW", "UNUSED1", "UNUSED2" },
                 };
             }
 
@@ -1050,7 +1069,7 @@ namespace Pokemon_Sinjoh_Editor
                 Languages.GERMAN => new string[] { "Japanisch", "Englisch", "Französisch", "Italienisch", "Deutsch", "???", "Spanisch", "Koreanisch" },
                 Languages.ITALIAN => new string[] { "Giapponese", "Inglese", "Francese", "Italiano", "Tedesco", "???", "Spagnolo", "Coreano" },
                 Languages.JAPANESE => new string[] { "日本語", "英語", "フランス語", "イタリア語", "ドイツ語", "???", "スペイン語", "ハングル語" },
-                Languages.KOREAN => new string[] { "물리", "특수", "변화" },
+                Languages.KOREAN => new string[] { "일본어", "영어", "프랑스어", "이탈리아어", "독일어", "???", "스페인어", "한국어" },
                 _ => Enum.GetNames(typeof(Languages))
             };
 
@@ -1102,11 +1121,11 @@ namespace Pokemon_Sinjoh_Editor
                         return "性別不明";
                 case Languages.KOREAN:
                     if (gender == Gender.MALE)
-                        return "オス";
+                        return "수컷";
                     else if (gender == Gender.FEMALE)
-                        return "メス";
+                        return "암컷";
                     else
-                        return "性別不明";
+                        return "성별 불명";
                 default:
                     return gender.ToString();
             }

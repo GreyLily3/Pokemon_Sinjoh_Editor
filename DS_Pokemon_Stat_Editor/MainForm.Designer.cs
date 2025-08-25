@@ -202,6 +202,7 @@
             this.deutschToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.italianoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.日本語ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.한국어ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movePowerTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.moveAccuracyTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.movePowerPointsTooltip = new System.Windows.Forms.ToolTip(this.components);
@@ -1066,7 +1067,7 @@
             this.speciesHMCheckedListBox.FormattingEnabled = true;
             this.speciesHMCheckedListBox.Location = new System.Drawing.Point(726, 339);
             this.speciesHMCheckedListBox.Name = "speciesHMCheckedListBox";
-            this.speciesHMCheckedListBox.Size = new System.Drawing.Size(160, 124);
+            this.speciesHMCheckedListBox.Size = new System.Drawing.Size(190, 124);
             this.speciesHMCheckedListBox.TabIndex = 33;
             // 
             // speciesTMCheckedListBox
@@ -1075,7 +1076,7 @@
             this.speciesTMCheckedListBox.FormattingEnabled = true;
             this.speciesTMCheckedListBox.Location = new System.Drawing.Point(727, 128);
             this.speciesTMCheckedListBox.Name = "speciesTMCheckedListBox";
-            this.speciesTMCheckedListBox.Size = new System.Drawing.Size(160, 184);
+            this.speciesTMCheckedListBox.Size = new System.Drawing.Size(189, 184);
             this.speciesTMCheckedListBox.TabIndex = 32;
             // 
             // speciesComboBox
@@ -1084,9 +1085,9 @@
             this.speciesComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.speciesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.speciesComboBox.FormattingEnabled = true;
-            this.speciesComboBox.Location = new System.Drawing.Point(370, 49);
+            this.speciesComboBox.Location = new System.Drawing.Point(349, 49);
             this.speciesComboBox.Name = "speciesComboBox";
-            this.speciesComboBox.Size = new System.Drawing.Size(165, 21);
+            this.speciesComboBox.Size = new System.Drawing.Size(186, 21);
             this.speciesComboBox.TabIndex = 0;
             this.speciesComboBox.SelectedIndexChanged += new System.EventHandler(this.speciesComboBox_SelectedIndexChanged);
             // 
@@ -1106,7 +1107,7 @@
             // speciesHeldItem1Label
             // 
             this.speciesHeldItem1Label.AutoSize = true;
-            this.speciesHeldItem1Label.Location = new System.Drawing.Point(6, 22);
+            this.speciesHeldItem1Label.Location = new System.Drawing.Point(6, 34);
             this.speciesHeldItem1Label.Name = "speciesHeldItem1Label";
             this.speciesHeldItem1Label.Size = new System.Drawing.Size(88, 26);
             this.speciesHeldItem1Label.TabIndex = 21;
@@ -1116,9 +1117,9 @@
             // 
             this.speciesHeldItem1ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.speciesHeldItem1ComboBox.FormattingEnabled = true;
-            this.speciesHeldItem1ComboBox.Location = new System.Drawing.Point(9, 51);
+            this.speciesHeldItem1ComboBox.Location = new System.Drawing.Point(9, 63);
             this.speciesHeldItem1ComboBox.Name = "speciesHeldItem1ComboBox";
-            this.speciesHeldItem1ComboBox.Size = new System.Drawing.Size(98, 21);
+            this.speciesHeldItem1ComboBox.Size = new System.Drawing.Size(118, 21);
             this.speciesHeldItem1ComboBox.TabIndex = 19;
             this.speciesHeldItem1ComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesHeldItem1ComboBox_SelectionChangeCommitted);
             // 
@@ -1126,16 +1127,16 @@
             // 
             this.speciesHeldItem2ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.speciesHeldItem2ComboBox.FormattingEnabled = true;
-            this.speciesHeldItem2ComboBox.Location = new System.Drawing.Point(7, 114);
+            this.speciesHeldItem2ComboBox.Location = new System.Drawing.Point(7, 126);
             this.speciesHeldItem2ComboBox.Name = "speciesHeldItem2ComboBox";
-            this.speciesHeldItem2ComboBox.Size = new System.Drawing.Size(98, 21);
+            this.speciesHeldItem2ComboBox.Size = new System.Drawing.Size(120, 21);
             this.speciesHeldItem2ComboBox.TabIndex = 20;
             this.speciesHeldItem2ComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesHeldItem2ComboBox_SelectionChangeCommitted);
             // 
             // speciesHeldItem2Label
             // 
             this.speciesHeldItem2Label.AutoSize = true;
-            this.speciesHeldItem2Label.Location = new System.Drawing.Point(6, 85);
+            this.speciesHeldItem2Label.Location = new System.Drawing.Point(6, 97);
             this.speciesHeldItem2Label.Name = "speciesHeldItem2Label";
             this.speciesHeldItem2Label.Size = new System.Drawing.Size(88, 26);
             this.speciesHeldItem2Label.TabIndex = 23;
@@ -2282,7 +2283,8 @@
             this.françaisToolStripMenuItem,
             this.deutschToolStripMenuItem,
             this.italianoToolStripMenuItem,
-            this.日本語ToolStripMenuItem});
+            this.日本語ToolStripMenuItem,
+            this.한국어ToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.languageToolStripMenuItem.Text = "Language";
@@ -2328,6 +2330,13 @@
             this.日本語ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.日本語ToolStripMenuItem.Text = "日本語";
             this.日本語ToolStripMenuItem.Click += new System.EventHandler(this.日本語ToolStripMenuItem_Click);
+            // 
+            // 한국어ToolStripMenuItem
+            // 
+            this.한국어ToolStripMenuItem.Name = "한국어ToolStripMenuItem";
+            this.한국어ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.한국어ToolStripMenuItem.Text = "한국어";
+            this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -2627,6 +2636,7 @@
         private System.Windows.Forms.ToolStripMenuItem deutschToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 日本語ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem italianoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 한국어ToolStripMenuItem;
     }
 }
 
