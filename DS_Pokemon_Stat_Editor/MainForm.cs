@@ -280,8 +280,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesMaleOnlyRadioButton.Text = "Macho";
             speciesFemaleOnlyRadioButton.Text = "Hembra";
             speciesGenderlessRadioButton.Text = "Sin Sexo";
-            speciesMaleAndFemaleRadioButton.Text = "Masculino con Femenino";
-            speciesGenderMaleToFemaleLabel.Text = "Proporción de Sexos:\r\n(Masculino / Femenino)";
+            speciesMaleAndFemaleRadioButton.Text = "Masculino\r\ncon Femenino";
+            speciesGenderMaleToFemaleLabel.Text = "Masculino\r\n/Femenino";
             speciesCatchRateLabel.Text = "Ratio de captura:";
             speciesBaseHappinessLabel.Text = "Amistad base:";
             speciesSafariRunChanceLabel.Text = "Run Chance:\r\n(Zona Safari)";
@@ -504,8 +504,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesMaleOnlyRadioButton.Text = "Männlich";
             speciesFemaleOnlyRadioButton.Text = "Weiblich";
             speciesGenderlessRadioButton.Text = "Genderless";
-            speciesMaleAndFemaleRadioButton.Text = "Männlich && Weiblich";
-            speciesGenderMaleToFemaleLabel.Text = "Männlich / Weiblich";
+            speciesMaleAndFemaleRadioButton.Text = "Männlich\r\n&& Weiblich";
+            speciesGenderMaleToFemaleLabel.Text = "Männlich/Weiblich";
             speciesCatchRateLabel.Text = "Fangrate:";
             speciesBaseHappinessLabel.Text = "Start-Freundschaft:";
             speciesSafariRunChanceLabel.Text = "Run Chance:\r\n(Safari-Zone)";
@@ -615,9 +615,9 @@ namespace Pokemon_Sinjoh_Editor
             speciesEggCyclesLabel.Text = "Cicli Uovo:";
             speciesMaleOnlyRadioButton.Text = "Maschio";
             speciesFemaleOnlyRadioButton.Text = "Femmina";
-            speciesGenderlessRadioButton.Text = "Genere Sconosciuto";
-            speciesMaleAndFemaleRadioButton.Text = "Maschio e Femmina";
-            speciesGenderMaleToFemaleLabel.Text = "Maschio / Femmina";
+            speciesGenderlessRadioButton.Text = "Genere\r\nSconosciuto";
+            speciesMaleAndFemaleRadioButton.Text = "Maschio\r\ne Femmina";
+            speciesGenderMaleToFemaleLabel.Text = "Maschio/Femmina";
             speciesCatchRateLabel.Text = "Tasso di cattura:";
             speciesBaseHappinessLabel.Text = "Affetto di base:";
             speciesSafariRunChanceLabel.Text = "Run Chance:\r\n(Zona Safari)";

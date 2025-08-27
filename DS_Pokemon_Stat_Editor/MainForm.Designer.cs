@@ -1339,7 +1339,7 @@
             // speciesGenderlessRadioButton
             // 
             this.speciesGenderlessRadioButton.AutoSize = true;
-            this.speciesGenderlessRadioButton.Location = new System.Drawing.Point(6, 74);
+            this.speciesGenderlessRadioButton.Location = new System.Drawing.Point(6, 58);
             this.speciesGenderlessRadioButton.Name = "speciesGenderlessRadioButton";
             this.speciesGenderlessRadioButton.Size = new System.Drawing.Size(78, 17);
             this.speciesGenderlessRadioButton.TabIndex = 26;
@@ -1389,7 +1389,7 @@
             // speciesMaleOnlyRadioButton
             // 
             this.speciesMaleOnlyRadioButton.AutoSize = true;
-            this.speciesMaleOnlyRadioButton.Location = new System.Drawing.Point(6, 27);
+            this.speciesMaleOnlyRadioButton.Location = new System.Drawing.Point(6, 19);
             this.speciesMaleOnlyRadioButton.Name = "speciesMaleOnlyRadioButton";
             this.speciesMaleOnlyRadioButton.Size = new System.Drawing.Size(72, 17);
             this.speciesMaleOnlyRadioButton.TabIndex = 24;
@@ -1401,7 +1401,7 @@
             // speciesFemaleOnlyRadioButton
             // 
             this.speciesFemaleOnlyRadioButton.AutoSize = true;
-            this.speciesFemaleOnlyRadioButton.Location = new System.Drawing.Point(6, 51);
+            this.speciesFemaleOnlyRadioButton.Location = new System.Drawing.Point(6, 38);
             this.speciesFemaleOnlyRadioButton.Name = "speciesFemaleOnlyRadioButton";
             this.speciesFemaleOnlyRadioButton.Size = new System.Drawing.Size(81, 17);
             this.speciesFemaleOnlyRadioButton.TabIndex = 25;
@@ -1413,7 +1413,7 @@
             // speciesMaleAndFemaleRadioButton
             // 
             this.speciesMaleAndFemaleRadioButton.AutoSize = true;
-            this.speciesMaleAndFemaleRadioButton.Location = new System.Drawing.Point(6, 97);
+            this.speciesMaleAndFemaleRadioButton.Location = new System.Drawing.Point(6, 84);
             this.speciesMaleAndFemaleRadioButton.Name = "speciesMaleAndFemaleRadioButton";
             this.speciesMaleAndFemaleRadioButton.Size = new System.Drawing.Size(94, 17);
             this.speciesMaleAndFemaleRadioButton.TabIndex = 27;
