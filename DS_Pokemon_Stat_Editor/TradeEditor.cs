@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Pokemon_Sinjoh_Editor
 {
     partial class MainForm
     {
-        private void LoadTradeControlText()
+        private void setupTradeText()
         {
             tradeWantedPokemonComboBox.Items.Clear();
             tradeOfferedPokemonComboBox.Items.Clear();
@@ -255,6 +251,11 @@ namespace Pokemon_Sinjoh_Editor
         }
 
         private void tradePVNumericNoArrows_ValueChanged(object sender, EventArgs e)
+        {
+            updatePVDerivedFields();
+        }
+
+        public void updatePVDerivedFields()
         {
             PersonalityValue pv = new PersonalityValue((uint)tradePVNumericNoArrows.Value);
 

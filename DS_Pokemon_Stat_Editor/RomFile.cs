@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Diagnostics.Eventing.Reader;
 using System.IO;
-using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Pokemon_Sinjoh_Editor

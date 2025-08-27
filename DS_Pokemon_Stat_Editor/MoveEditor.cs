@@ -1,32 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Pokemon_Sinjoh_Editor
 {
     partial class MainForm
     {
-        private void LoadMoveData()
+        private void setupMoveText()
         {
-            if (movesComboBox.Items.Count > 0)
-                movesComboBox.Items.Clear();
-
-            if (moveTypeComboBox.Items.Count > 0)
-                moveTypeComboBox.Items.Clear();
-
-            if (moveTargetComboBox.Items.Count > 0)
-                moveTargetComboBox.Items.Clear();
-
-            if (moveContestConditionComboBox.Items.Count > 0)
-                moveContestConditionComboBox.Items.Clear();
-
-            if (moveContestEffectComboBox.Items.Count > 0)
-                moveContestEffectComboBox.Items.Clear();
-
-            if (moveCategoryComboBox.Items.Count > 0)
-                moveCategoryComboBox.Items.Clear();
+            movesComboBox.Items.Clear();
+            moveTypeComboBox.Items.Clear();
+            moveTargetComboBox.Items.Clear();
+            moveContestConditionComboBox.Items.Clear();
+            moveContestEffectComboBox.Items.Clear();
+            moveCategoryComboBox.Items.Clear();
 
             movesComboBox.Items.AddRange(RomFile.GetMoveNames());
             moveTypeComboBox.Items.AddRange(RomFile.GetTypeNames());
@@ -34,14 +19,15 @@ namespace Pokemon_Sinjoh_Editor
             moveContestConditionComboBox.Items.AddRange(RomFile.GetMoveContestConditions());
             moveContestEffectComboBox.Items.AddRange(RomFile.GetMoveContestEffect());
             moveCategoryComboBox.Items.AddRange(RomFile.GetMoveCategories());
+        }
 
-
+        private void UpdateDisplayedMoveValues()
+        {
             //we need the event handler to only be set after all text is loaded into the controls
             this.moveCategoryComboBox.SelectedValueChanged += new System.EventHandler(this.moveCategoryComboBox_SelectedValueChanged);
 
             movesComboBox.SelectedIndex = 0; //makes pound the initially selected move
             DisplayMoveValues(0); //needed to make sure the values displayed are updated when changing to a new rom without closing if Pound is selected as the move
-
         }
 
         private void DisplayMoveValues(int moveIndex)

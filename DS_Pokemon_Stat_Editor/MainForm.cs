@@ -941,10 +941,12 @@ namespace Pokemon_Sinjoh_Editor
 					{
 						IncludeGameVersionInText(RomFile.GetGameVersion());
                         mainTabControl.Enabled = true;
-                        LoadMoveData();
-						loadSpeciesData();
-						LoadTradeControlText();
-						UpdateDisplayedTradeValues();
+                        setupMoveText();
+                        setupSpeciesText();
+                        setupTradeText();
+                        UpdateDisplayedMoveValues();
+                        UpdateDisplayedSpeciesValues();
+                        UpdateDisplayedTradeValues();
                     }
 				}                
 			}
@@ -1020,6 +1022,31 @@ namespace Pokemon_Sinjoh_Editor
             tradeNatureTooltip.Show("The pokemon's nature is personality value % 25, with 0 = Hardy, and 24 = Quirky", tradeNatureTextBox);
         }
 
+        private void switchComboBoxesTextLanguage()
+        {
+            int moveSelected;
+            int speciesSelected;
+            int tradeSelected;
+
+            //fixes all combo boxes and the gender textbox in the trade editor not updating their text properly when switching languages
+            if (RomFile.IsValidGameVersion())
+            {
+                moveSelected = movesComboBox.SelectedIndex;
+                speciesSelected = speciesComboBox.SelectedIndex;
+                tradeSelected = tradeTrainerComboBox.SelectedIndex;
+
+                setupMoveText();
+                setupSpeciesText();
+                setupTradeText();
+
+                movesComboBox.SelectedIndex = moveSelected;
+                speciesComboBox.SelectedIndex = speciesSelected;
+                tradeTrainerComboBox.SelectedIndex = tradeSelected;
+
+                updatePVDerivedFields();
+            }
+        }
+
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (INIManager.Language != Languages.ENGLISH)
@@ -1035,6 +1062,8 @@ namespace Pokemon_Sinjoh_Editor
                 italianoToolStripMenuItem.Checked = false;
                 日本語ToolStripMenuItem.Checked = false;
                 한국어ToolStripMenuItem.Checked = false;
+
+                switchComboBoxesTextLanguage();
             }
         }
 
@@ -1053,6 +1082,8 @@ namespace Pokemon_Sinjoh_Editor
                 italianoToolStripMenuItem.Checked = false;
                 日本語ToolStripMenuItem.Checked = false;
                 한국어ToolStripMenuItem.Checked = false;
+
+                switchComboBoxesTextLanguage();
             }
 		}
 
@@ -1071,6 +1102,8 @@ namespace Pokemon_Sinjoh_Editor
                 italianoToolStripMenuItem.Checked = false;
                 日本語ToolStripMenuItem.Checked = false;
                 한국어ToolStripMenuItem.Checked = false;
+
+                switchComboBoxesTextLanguage();
             }
         }
 
@@ -1089,6 +1122,8 @@ namespace Pokemon_Sinjoh_Editor
                 italianoToolStripMenuItem.Checked = false;
                 日本語ToolStripMenuItem.Checked = false;
                 한국어ToolStripMenuItem.Checked = false;
+
+                switchComboBoxesTextLanguage();
             }
 		}
 
@@ -1107,6 +1142,8 @@ namespace Pokemon_Sinjoh_Editor
                 deutschToolStripMenuItem.Checked = false;
                 日本語ToolStripMenuItem.Checked = false;
                 한국어ToolStripMenuItem.Checked = false;
+
+                switchComboBoxesTextLanguage();
             }
 		}
 
@@ -1125,6 +1162,8 @@ namespace Pokemon_Sinjoh_Editor
                 deutschToolStripMenuItem.Checked = false;
                 italianoToolStripMenuItem.Checked = false;
                 한국어ToolStripMenuItem.Checked = false;
+
+                switchComboBoxesTextLanguage();
             }
         }
 
@@ -1143,6 +1182,8 @@ namespace Pokemon_Sinjoh_Editor
                 françaisToolStripMenuItem.Checked = false;
                 deutschToolStripMenuItem.Checked = false;
                 italianoToolStripMenuItem.Checked = false;
+
+                switchComboBoxesTextLanguage();
             }
         }
 
