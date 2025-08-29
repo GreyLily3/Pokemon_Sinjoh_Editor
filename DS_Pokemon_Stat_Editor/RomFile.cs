@@ -46,50 +46,82 @@ namespace Pokemon_Sinjoh_Editor
         private const int MOVES_TEXT_BANK_DP = 589;
         private const int MOVES_TEXT_BANK_PL = 648;
         private const int MOVES_TEXT_BANK_HGSS = 751;
+        private const int JAP_MOVES_TEXT_BANK_DP = 575;
+        private const int JAP_MOVES_TEXT_BANK_PL = 636;
         private const int JAP_MOVES_TEXT_BANK_HGSS = 739;
         private const int KOR_MOVES_TEXT_BANK_HGSS = 743;
+        private const int KOR_MOVES_TEXT_BANK_PL = 637;
+        private const int KOR_MOVES_TEXT_BANK_DP = 577;
 
         private const int POKEMON_NAMES_TEXT_BANK_DP = 362;
         private const int POKEMON_NAMES_TEXT_BANK_PL = 412;
         private const int POKEMON_NAMES_TEXT_BANK_HGSS = 237;
+        private const int JAP_POKEMON_NAMES_TEXT_BANK_DP = 356;
+        private const int JAP_POKEMON_NAMES_TEXT_BANK_PL = 408;
         private const int JAP_POKEMON_NAMES_TEXT_BANK_HGSS = 232;
         private const int KOR_POKEMON_NAMES_TEXT_BANK_HGSS = 233;
+        private const int KOR_POKEMON_NAMES_TEXT_BANK_PL = 408;
+        private const int KOR_POKEMON_NAMES_TEXT_BANK_DP = 357;
 
         private const int TYPES_TEXT_BANK_DP = 565;
         private const int TYPES_TEXT_BANK_PL = 624;
         private const int TYPES_TEXT_BANK_HGSS = 735;
+        private const int JAP_TYPES_TEXT_BANK_DP = 555;
+        private const int JAP_TYPES_TEXT_BANK_PL = 616;
         private const int JAP_TYPES_TEXT_BANK_HGSS = 724;
         private const int KOR_TYPES_TEXT_BANK_HGSS = 728;
+        private const int KOR_TYPES_TEXT_BANK_PL = 617;
+        private const int KOR_TYPES_TEXT_BANK_DP = 557;
 
         private const int ABILITY_NAMES_TEXT_BANK_DP = 553;
         private const int ABILITY_NAMES_TEXT_BANK_PL = 611;
         private const int ABILITY_NAMES_TEXT_BANK_HGSS = 721;
+        private const int JAP_ABILITY_NAMES_TEXT_BANK_DP = 544;
+        private const int JAP_ABILITY_NAMES_TEXT_BANK_PL = 604;
         private const int JAP_ABILITY_NAMES_TEXT_BANK_HGSS = 711;
         private const int KOR_ABILITY_NAMES_TEXT_BANK_HGSS = 715;
+        private const int KOR_ABILITY_NAMES_TEXT_BANK_PL = 605;
+        private const int KOR_ABILITY_NAMES_TEXT_BANK_DP = 546;
 
         private const int ITEM_NAMES_TEXT_BANK_DP = 344;
         private const int ITEM_NAMES_TEXT_BANK_PL = 392;
         private const int ITEM_NAMES_TEXT_BANK_HGSS = 222;
+        private const int JAP_ITEM_NAMES_TEXT_BANK_DP = 341;
+        private const int JAP_ITEM_NAMES_TEXT_BANK_PL = 390;
         private const int JAP_ITEM_NAMES_TEXT_BANK_HGSS = 219;
         private const int KOR_ITEM_NAMES_TEXT_BANK_HGSS = 220;
+        private const int KOR_ITEM_NAMES_TEXT_BANK_PL = 390;
+        private const int KOR_ITEM_NAMES_TEXT_BANK_DP = 342;
 
         private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP = 326;
         private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL = 370;
         private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS = 200;
+        private const int JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP = 324;
+        private const int JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL = 369;
         private const int JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS = 198;
         private const int KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS = 199;
+        private const int KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL = 369;
+        private const int KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP = 325;
 
         private const int POKEDEX_TEXT_BANK_DP = 614;
         private const int POKEDEX_TEXT_BANK_PL = 697;
         private const int POKEDEX_TEXT_BANK_HGSS = 802;
+        private const int JAP_POKEDEX_TEXT_BANK_DP = 600;
+        private const int JAP_POKEDEX_TEXT_BANK_PL = 685;
         private const int JAP_POKEDEX_TEXT_BANK_HGSS = 790;
         private const int KOR_POKEDEX_TEXT_BANK_HGSS = 795;
+        private const int KOR_POKEDEX_TEXT_BANK_PL = 687;
+        private const int KOR_POKEDEX_TEXT_BANK_DP = 602;
 
         private const int NATURE_TEXT_BANK_DP = 190;
         private const int NATURE_TEXT_BANK_PL = 202;
         private const int NATURE_TEXT_BANK_HGSS = 34;
+        private const int JAP_NATURE_TEXT_BANK_DP = 189;
+        private const int JAP_NATURE_TEXT_BANK_PL = 201;
         private const int JAP_NATURE_TEXT_BANK_HGSS = 33;
         private const int KOR_NATURE_TEXT_BANK_HGSS = 33;
+        private const int KOR_NATURE_TEXT_BANK_PL = 201;
+        private const int KOR_NATURE_TEXT_BANK_DP = 189;
 
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_DP = 111;
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_PL = 112;
@@ -133,23 +165,40 @@ namespace Pokemon_Sinjoh_Editor
         private const int MOVES_NARC_ID_DP = 0x158;
 		private const int MOVES_NARC_ID_PL = 0x1BD;
 		private const int MOVES_NARC_ID_HGSS = 0x8C;
+        private const int JAP_MOVES_NARC_ID_DP = 0x159;
+        private const int JAP_MOVES_NARC_ID_PL = 0x1C3;
         private const int JAP_MOVES_NARC_ID_HGSS = 0x8B;
+        private const int KOR_MOVES_NARC_ID_PL = 0x1A3;
+        private const int KOR_MOVES_NARC_ID_DP = 0x144;
 
         private const int POKEMON_SPECIES_NARC_ID_DIAMOND = 0x146;
 		private const int POKEMON_SPECIES_NARC_ID_PEARL = 0x148;
 		private const int POKEMON_SPECIES_NARC_ID_PL = 0x1A5;
 		private const int POKEMON_SPECIES_NARC_ID_HGSS = 0x83;
+        private const int JAP_POKEMON_SPECIES_NARC_ID_D = 0x147;
+        private const int JAP_POKEMON_SPECIES_NARC_ID_P = 0x149;
+        private const int JAP_POKEMON_SPECIES_NARC_ID_PL = 0x1AB;
         private const int JAP_POKEMON_SPECIES_NARC_ID_HGSS = 0x82;
+        private const int KOR_POKEMON_SPECIES_NARC_ID_PL = 0x18B;
+        private const int KOR_POKEMON_SPECIES_NARC_ID_D = 0x132;
+        private const int KOR_POKEMON_SPECIES_NARC_ID_P = 0x134;
 
         private const int NPC_TRADES_NARC_ID_DP = 0x10E;
         private const int NPC_TRADES_NARC_ID_PL = 0x150;
         private const int NPC_TRADES_NARC_ID_HGSS = 0xF1;
+        private const int JAP_NPC_TRADES_NARC_ID_PL = 0x151;
         private const int JAP_NPC_TRADES_NARC_ID_HGSS = 0xF0;
+        private const int KOR_NPC_TRADES_NARC_ID_PL = 0x1BB;
+        private const int KOR_NPC_TRADES_NARC_ID_DP = 0x152;
 
         private const int TEXT_NARC_ID_DP = 0x13D;
 		private const int TEXT_NARC_ID_PL = 0x194;
 		private const int TEXT_NARC_ID_HGSS = 0x9C;
+        private const int JAP_TEXT_NARC_ID_DP = 0x13E;
+        private const int JAP_TEXT_NARC_ID_PL = 0x19A;
         private const int JAP_TEXT_NARC_ID_HGSS = 0x9B;
+        private const int KOR_TEXT_NARC_ID_DP = 0x129;
+        private const int KOR_TEXT_NARC_ID_PL = 0x17A;
 
         private const int SPECIES_START_INDEX = 1;
         private const int MOVE_START_INDEX = 1;
@@ -389,9 +438,19 @@ namespace Pokemon_Sinjoh_Editor
             {
                 return gameFamily switch
                 {
-                    GameFamilies.DP => fat.GetStartOffset(MOVES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(MOVES_NARC_ID_PL),
+                    GameFamilies.DP => fat.GetStartOffset(JAP_MOVES_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(JAP_MOVES_NARC_ID_PL),
                     GameFamilies.HGSS => fat.GetStartOffset(JAP_MOVES_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KOR_MOVES_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(KOR_MOVES_NARC_ID_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(MOVES_NARC_ID_HGSS),
                     _ => 0
                 };
             }
@@ -414,11 +473,23 @@ namespace Pokemon_Sinjoh_Editor
             {
                 return GameVersion switch
                 {
-                    GameVersions.DIAMOND => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_DIAMOND),
-                    GameVersions.PEARL => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_PEARL),
-                    GameVersions.PLATINUM => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_PL),
+                    GameVersions.DIAMOND => fat.GetStartOffset(JAP_POKEMON_SPECIES_NARC_ID_D),
+                    GameVersions.PEARL => fat.GetStartOffset(JAP_POKEMON_SPECIES_NARC_ID_P),
+                    GameVersions.PLATINUM => fat.GetStartOffset(JAP_POKEMON_SPECIES_NARC_ID_PL),
                     GameVersions.HEARTGOLD => fat.GetStartOffset(JAP_POKEMON_SPECIES_NARC_ID_HGSS),
                     GameVersions.SOULSILVER => fat.GetStartOffset(JAP_POKEMON_SPECIES_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return GameVersion switch
+                {
+                    GameVersions.DIAMOND => fat.GetStartOffset(KOR_POKEMON_SPECIES_NARC_ID_D),
+                    GameVersions.PEARL => fat.GetStartOffset(KOR_POKEMON_SPECIES_NARC_ID_P),
+                    GameVersions.PLATINUM => fat.GetStartOffset(KOR_POKEMON_SPECIES_NARC_ID_PL),
+                    GameVersions.HEARTGOLD => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_HGSS),
+                    GameVersions.SOULSILVER => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_HGSS),
                     _ => 0
                 };
             }
@@ -444,8 +515,18 @@ namespace Pokemon_Sinjoh_Editor
                 return gameFamily switch
                 {
                     GameFamilies.DP => fat.GetStartOffset(NPC_TRADES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(NPC_TRADES_NARC_ID_PL),
+                    GameFamilies.PL => fat.GetStartOffset(JAP_NPC_TRADES_NARC_ID_PL),
                     GameFamilies.HGSS => fat.GetStartOffset(JAP_NPC_TRADES_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KOR_NPC_TRADES_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(KOR_NPC_TRADES_NARC_ID_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(NPC_TRADES_NARC_ID_HGSS),
                     _ => 0
                 };
             }
@@ -470,9 +551,19 @@ namespace Pokemon_Sinjoh_Editor
             {
                 return gameFamily switch
                 {
-                    GameFamilies.DP => fat.GetStartOffset(TEXT_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(TEXT_NARC_ID_PL),
+                    GameFamilies.DP => fat.GetStartOffset(JAP_TEXT_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(JAP_TEXT_NARC_ID_PL),
                     GameFamilies.HGSS => fat.GetStartOffset(JAP_TEXT_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KOR_TEXT_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(KOR_TEXT_NARC_ID_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(TEXT_NARC_ID_HGSS),
                     _ => 0
                 };
             }
@@ -494,9 +585,19 @@ namespace Pokemon_Sinjoh_Editor
             switch (gameFamily)
             {
                 case GameFamilies.DP:
-                    return MOVES_TEXT_BANK_DP;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_MOVES_TEXT_BANK_DP;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_MOVES_TEXT_BANK_DP;
+                    else
+                        return MOVES_TEXT_BANK_DP;
                 case GameFamilies.PL:
-                    return MOVES_TEXT_BANK_PL;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_MOVES_TEXT_BANK_PL;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_MOVES_TEXT_BANK_PL;
+                    else
+                        return MOVES_TEXT_BANK_PL;
                 case GameFamilies.HGSS:
                     if (Language == Languages.JAPANESE)
                         return JAP_MOVES_TEXT_BANK_HGSS;
@@ -514,9 +615,19 @@ namespace Pokemon_Sinjoh_Editor
             switch (gameFamily)
             {
                 case GameFamilies.DP:
-                    return TYPES_TEXT_BANK_DP;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_TYPES_TEXT_BANK_DP;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_TYPES_TEXT_BANK_DP;
+                    else
+                        return TYPES_TEXT_BANK_DP;
                 case GameFamilies.PL:
-                    return TYPES_TEXT_BANK_PL;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_TYPES_TEXT_BANK_PL;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_TYPES_TEXT_BANK_PL;
+                    else
+                        return TYPES_TEXT_BANK_PL;
                 case GameFamilies.HGSS:
                     if (Language == Languages.JAPANESE)
                         return JAP_TYPES_TEXT_BANK_HGSS;
@@ -534,9 +645,19 @@ namespace Pokemon_Sinjoh_Editor
             switch (gameFamily)
             {
                 case GameFamilies.DP:
-                    return POKEMON_NAMES_TEXT_BANK_DP;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_POKEMON_NAMES_TEXT_BANK_DP;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_POKEMON_NAMES_TEXT_BANK_DP;
+                    else
+                        return POKEMON_NAMES_TEXT_BANK_DP;
                 case GameFamilies.PL:
-                    return POKEMON_NAMES_TEXT_BANK_PL;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_POKEMON_NAMES_TEXT_BANK_PL;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_POKEMON_NAMES_TEXT_BANK_PL;
+                    else
+                        return POKEMON_NAMES_TEXT_BANK_PL;
                 case GameFamilies.HGSS:
                     if (Language == Languages.JAPANESE)
                         return JAP_POKEMON_NAMES_TEXT_BANK_HGSS;
@@ -554,9 +675,19 @@ namespace Pokemon_Sinjoh_Editor
             switch (gameFamily)
             {
                 case GameFamilies.DP:
-                    return ITEM_NAMES_TEXT_BANK_DP;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_ITEM_NAMES_TEXT_BANK_DP;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_ITEM_NAMES_TEXT_BANK_DP;
+                    else
+                        return ITEM_NAMES_TEXT_BANK_DP;
                 case GameFamilies.PL:
-                    return ITEM_NAMES_TEXT_BANK_PL;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_ITEM_NAMES_TEXT_BANK_PL;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_ITEM_NAMES_TEXT_BANK_PL;
+                    else
+                        return ITEM_NAMES_TEXT_BANK_PL;
                 case GameFamilies.HGSS:
                     if (Language == Languages.JAPANESE)
                         return JAP_ITEM_NAMES_TEXT_BANK_HGSS;
@@ -574,9 +705,19 @@ namespace Pokemon_Sinjoh_Editor
             switch (gameFamily)
             {
                 case GameFamilies.DP:
-                    return ABILITY_NAMES_TEXT_BANK_DP;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_ABILITY_NAMES_TEXT_BANK_DP;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_ABILITY_NAMES_TEXT_BANK_DP;
+                    else
+                        return ABILITY_NAMES_TEXT_BANK_DP;
                 case GameFamilies.PL:
-                    return ABILITY_NAMES_TEXT_BANK_PL;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_ABILITY_NAMES_TEXT_BANK_PL;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_ABILITY_NAMES_TEXT_BANK_PL;
+                    else
+                        return ABILITY_NAMES_TEXT_BANK_PL;
                 case GameFamilies.HGSS:
                     if (Language == Languages.JAPANESE)
                         return JAP_ABILITY_NAMES_TEXT_BANK_HGSS;
@@ -594,9 +735,19 @@ namespace Pokemon_Sinjoh_Editor
             switch (gameFamily)
             {
                 case GameFamilies.DP:
-                    return TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP;
+                    else
+                        return TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP;
                 case GameFamilies.PL:
-                    return TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL;
+                    else
+                        return TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL;
                 case GameFamilies.HGSS:
                     if (Language == Languages.JAPANESE)
                         return JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS;
@@ -614,9 +765,19 @@ namespace Pokemon_Sinjoh_Editor
             switch (gameFamily)
             {
                 case GameFamilies.DP:
-                    return POKEDEX_TEXT_BANK_DP;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_POKEDEX_TEXT_BANK_DP;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_POKEDEX_TEXT_BANK_DP;
+                    else
+                        return POKEDEX_TEXT_BANK_DP;
                 case GameFamilies.PL:
-                    return POKEDEX_TEXT_BANK_PL;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_POKEDEX_TEXT_BANK_PL;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_POKEDEX_TEXT_BANK_PL;
+                    else
+                        return POKEDEX_TEXT_BANK_PL;
                 case GameFamilies.HGSS:
                     if (Language == Languages.JAPANESE)
                         return JAP_POKEDEX_TEXT_BANK_HGSS;
@@ -634,9 +795,19 @@ namespace Pokemon_Sinjoh_Editor
             switch (gameFamily)
             {
                 case GameFamilies.DP:
-                    return NATURE_TEXT_BANK_DP;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_NATURE_TEXT_BANK_DP;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_NATURE_TEXT_BANK_DP;
+                    else
+                        return NATURE_TEXT_BANK_DP;
                 case GameFamilies.PL:
-                    return NATURE_TEXT_BANK_PL;
+                    if (Language == Languages.JAPANESE)
+                        return JAP_NATURE_TEXT_BANK_PL;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_NATURE_TEXT_BANK_PL;
+                    else
+                        return NATURE_TEXT_BANK_PL;
                 case GameFamilies.HGSS:
                     if (Language == Languages.JAPANESE)
                         return JAP_NATURE_TEXT_BANK_HGSS;
