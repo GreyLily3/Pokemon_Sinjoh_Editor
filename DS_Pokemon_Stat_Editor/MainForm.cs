@@ -82,7 +82,7 @@ namespace Pokemon_Sinjoh_Editor
                     setTextToEnglish();
                     break;
                 case Languages.FRENCH:
-                    englishToolStripMenuItem.Checked = true;
+                    françaisToolStripMenuItem.Checked = true;
                     setTextToFrench();
                     break;
                 case Languages.SPANISH:
