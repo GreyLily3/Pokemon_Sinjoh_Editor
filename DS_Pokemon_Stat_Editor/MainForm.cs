@@ -177,7 +177,7 @@ namespace Pokemon_Sinjoh_Editor
             speciesLearnableHMsLabel.Text = "Learnable HMs:";
 
 			speciesBaseStatsGroupBox.Text = "Base Stats";
-            speciesEVOnDefeatGroupBox.Text = "Effort Values Awarded";
+            speciesEVOnDefeatGroupBox.Text = "Effort Yield";
             speciesTypesGroupBox.Text = "Types";
             speciesAbilitiesGroupBox.Text = "Abilities";
             speciesXPGroupBox.Text = "EXP";
@@ -188,7 +188,7 @@ namespace Pokemon_Sinjoh_Editor
 
             tradeWantedPokemonLabel.Text = "Wanted Pokemon";
             tradeOfferedPokemonLabel.Text = "Offered Pokemon";
-            tradeNicknameLabel.Text = "Offered Pokemon Nickname";
+            tradeNicknameLabel.Text = "Nickname";
             tradeOriginalTrainerIDLabel.Text = "Original Trainer ID";
 
             tradeHPIVsLabel.Text = "HP";
@@ -857,7 +857,7 @@ namespace Pokemon_Sinjoh_Editor
 
             tradeWantedPokemonLabel.Text = "Wanted Pokemon";
             tradeOfferedPokemonLabel.Text = "Offered Pokemon";
-            tradeNicknameLabel.Text = "Offered Pokemon Nickname";
+            tradeNicknameLabel.Text = "Nickname";
             tradeOriginalTrainerIDLabel.Text = "IDNo.";
 
             tradeHPIVsLabel.Text = "HP";
@@ -996,16 +996,6 @@ namespace Pokemon_Sinjoh_Editor
 					e.Cancel = true;
 			}
 		}
-
-        private void MainForm_KeyUp(object sender, System.Windows.Forms.KeyEventArgs e)
-        {
-			if (e.KeyCode == Keys.S && e.Modifiers == Keys.Control)
-			{
-                this.ActiveControl = null;
-
-                save();
-            }
-        }
 
         private void tradeAbilityTextBox_MouseHover(object sender, EventArgs e)
         {
@@ -1187,6 +1177,5 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
-        
     }
 }

@@ -919,7 +919,7 @@
             this.speciesEVOnDefeatGroupBox.Size = new System.Drawing.Size(111, 357);
             this.speciesEVOnDefeatGroupBox.TabIndex = 2;
             this.speciesEVOnDefeatGroupBox.TabStop = false;
-            this.speciesEVOnDefeatGroupBox.Text = "Effort Values Awarded";
+            this.speciesEVOnDefeatGroupBox.Text = "Effort Yield";
             // 
             // speciesSpeedEVNumericNoArrows
             // 
@@ -1689,7 +1689,7 @@
             this.tradePVDerivedGroupBox.Controls.Add(this.tradeNatureTextBox);
             this.tradePVDerivedGroupBox.Controls.Add(this.tradeGenderTextBox);
             this.tradePVDerivedGroupBox.Controls.Add(this.tradeGenderLabel);
-            this.tradePVDerivedGroupBox.Location = new System.Drawing.Point(543, 292);
+            this.tradePVDerivedGroupBox.Location = new System.Drawing.Point(506, 291);
             this.tradePVDerivedGroupBox.Name = "tradePVDerivedGroupBox";
             this.tradePVDerivedGroupBox.Size = new System.Drawing.Size(141, 155);
             this.tradePVDerivedGroupBox.TabIndex = 49;
@@ -1703,6 +1703,7 @@
             this.tradeAbilityTextBox.ReadOnly = true;
             this.tradeAbilityTextBox.Size = new System.Drawing.Size(121, 20);
             this.tradeAbilityTextBox.TabIndex = 45;
+            this.tradeAbilityTextBox.TabStop = false;
             this.tradeAbilityTextBox.MouseHover += new System.EventHandler(this.tradeAbilityTextBox_MouseHover);
             // 
             // tradeNatureLabel
@@ -1730,6 +1731,7 @@
             this.tradeNatureTextBox.ReadOnly = true;
             this.tradeNatureTextBox.Size = new System.Drawing.Size(121, 20);
             this.tradeNatureTextBox.TabIndex = 47;
+            this.tradeNatureTextBox.TabStop = false;
             this.tradeNatureTextBox.MouseHover += new System.EventHandler(this.tradeNatureTextBox_MouseHover);
             // 
             // tradeGenderTextBox
@@ -1739,6 +1741,7 @@
             this.tradeGenderTextBox.ReadOnly = true;
             this.tradeGenderTextBox.Size = new System.Drawing.Size(121, 20);
             this.tradeGenderTextBox.TabIndex = 46;
+            this.tradeGenderTextBox.TabStop = false;
             this.tradeGenderTextBox.MouseHover += new System.EventHandler(this.tradeGenderTextBox_MouseHover);
             // 
             // tradeGenderLabel
@@ -1767,7 +1770,7 @@
             this.tradeIVsGroupBox.Location = new System.Drawing.Point(272, 159);
             this.tradeIVsGroupBox.Name = "tradeIVsGroupBox";
             this.tradeIVsGroupBox.Size = new System.Drawing.Size(111, 288);
-            this.tradeIVsGroupBox.TabIndex = 44;
+            this.tradeIVsGroupBox.TabIndex = 4;
             this.tradeIVsGroupBox.TabStop = false;
             this.tradeIVsGroupBox.Text = "IVs";
             // 
@@ -1800,7 +1803,7 @@
             0});
             this.tradeHPIVsNumericNoArrows.Name = "tradeHPIVsNumericNoArrows";
             this.tradeHPIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeHPIVsNumericNoArrows.TabIndex = 36;
+            this.tradeHPIVsNumericNoArrows.TabIndex = 1;
             this.tradeHPIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeHPIVsNumericNoArrows_Validated);
             // 
             // tradeSpeedIVsNumericNoArrows
@@ -1814,7 +1817,7 @@
             0});
             this.tradeSpeedIVsNumericNoArrows.Name = "tradeSpeedIVsNumericNoArrows";
             this.tradeSpeedIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeSpeedIVsNumericNoArrows.TabIndex = 33;
+            this.tradeSpeedIVsNumericNoArrows.TabIndex = 6;
             this.tradeSpeedIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpeedIVsNumericNoArrows_Validated);
             // 
             // tradeSpecialDefenseIVsNumericNoArrows
@@ -1828,7 +1831,7 @@
             0});
             this.tradeSpecialDefenseIVsNumericNoArrows.Name = "tradeSpecialDefenseIVsNumericNoArrows";
             this.tradeSpecialDefenseIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeSpecialDefenseIVsNumericNoArrows.TabIndex = 35;
+            this.tradeSpecialDefenseIVsNumericNoArrows.TabIndex = 5;
             this.tradeSpecialDefenseIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpecialDefenseIVsNumericNoArrows_Validated);
             // 
             // tradeHPIVsLabel
@@ -1860,7 +1863,7 @@
             0});
             this.tradeAttackIVsNumericNoArrows.Name = "tradeAttackIVsNumericNoArrows";
             this.tradeAttackIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeAttackIVsNumericNoArrows.TabIndex = 31;
+            this.tradeAttackIVsNumericNoArrows.TabIndex = 2;
             this.tradeAttackIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeAttackIVsNumericNoArrows_Validated);
             // 
             // tradeSpecialAttackIVsNumericNoArrows
@@ -1874,7 +1877,7 @@
             0});
             this.tradeSpecialAttackIVsNumericNoArrows.Name = "tradeSpecialAttackIVsNumericNoArrows";
             this.tradeSpecialAttackIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeSpecialAttackIVsNumericNoArrows.TabIndex = 34;
+            this.tradeSpecialAttackIVsNumericNoArrows.TabIndex = 4;
             this.tradeSpecialAttackIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpecialAttackIVsNumericNoArrows_Validated);
             // 
             // tradeAttackIVsLabel
@@ -1897,7 +1900,7 @@
             0});
             this.tradeDefenseIVsNumericNoArrows.Name = "tradeDefenseIVsNumericNoArrows";
             this.tradeDefenseIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeDefenseIVsNumericNoArrows.TabIndex = 32;
+            this.tradeDefenseIVsNumericNoArrows.TabIndex = 3;
             this.tradeDefenseIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeDefenseIVsNumericNoArrows_Validated);
             // 
             // tradeDefenseIVsLabel
@@ -1926,7 +1929,7 @@
             this.tradeContestStatsGroupBox.Location = new System.Drawing.Point(389, 162);
             this.tradeContestStatsGroupBox.Name = "tradeContestStatsGroupBox";
             this.tradeContestStatsGroupBox.Size = new System.Drawing.Size(111, 285);
-            this.tradeContestStatsGroupBox.TabIndex = 43;
+            this.tradeContestStatsGroupBox.TabIndex = 5;
             this.tradeContestStatsGroupBox.TabStop = false;
             this.tradeContestStatsGroupBox.Text = "Contest Stats";
             // 
@@ -1941,13 +1944,13 @@
             0});
             this.tradeSheenNumericNoArrows.Name = "tradeSheenNumericNoArrows";
             this.tradeSheenNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeSheenNumericNoArrows.TabIndex = 18;
+            this.tradeSheenNumericNoArrows.TabIndex = 6;
             this.tradeSheenNumericNoArrows.Validated += new System.EventHandler(this.tradeSheenNumericNoArrows_Validated);
             // 
             // tradeSheenLabel
             // 
             this.tradeSheenLabel.AutoSize = true;
-            this.tradeSheenLabel.Location = new System.Drawing.Point(6, 234);
+            this.tradeSheenLabel.Location = new System.Drawing.Point(7, 237);
             this.tradeSheenLabel.Name = "tradeSheenLabel";
             this.tradeSheenLabel.Size = new System.Drawing.Size(38, 13);
             this.tradeSheenLabel.TabIndex = 19;
@@ -1964,7 +1967,7 @@
             0});
             this.tradeCoolNumericNoArrows.Name = "tradeCoolNumericNoArrows";
             this.tradeCoolNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeCoolNumericNoArrows.TabIndex = 29;
+            this.tradeCoolNumericNoArrows.TabIndex = 1;
             this.tradeCoolNumericNoArrows.Validated += new System.EventHandler(this.tradeCoolNumericNoArrows_Validated);
             // 
             // tradeCoolLabel
@@ -1987,7 +1990,7 @@
             0});
             this.tradeToughNumericNoArrows.Name = "tradeToughNumericNoArrows";
             this.tradeToughNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeToughNumericNoArrows.TabIndex = 25;
+            this.tradeToughNumericNoArrows.TabIndex = 5;
             this.tradeToughNumericNoArrows.Validated += new System.EventHandler(this.tradeToughNumericNoArrows_Validated);
             // 
             // tradeToughLabel
@@ -2010,7 +2013,7 @@
             0});
             this.tradeBeautyNumericNoArrows.Name = "tradeBeautyNumericNoArrows";
             this.tradeBeautyNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeBeautyNumericNoArrows.TabIndex = 27;
+            this.tradeBeautyNumericNoArrows.TabIndex = 2;
             this.tradeBeautyNumericNoArrows.Validated += new System.EventHandler(this.tradeBeautyNumericNoArrows_Validated);
             // 
             // tradeBeautyLabel
@@ -2033,7 +2036,7 @@
             0});
             this.tradeSmartNumericNoArrows.Name = "tradeSmartNumericNoArrows";
             this.tradeSmartNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeSmartNumericNoArrows.TabIndex = 28;
+            this.tradeSmartNumericNoArrows.TabIndex = 4;
             this.tradeSmartNumericNoArrows.Validated += new System.EventHandler(this.tradeSmartNumericNoArrows_Validated);
             // 
             // tradeSmartLabel
@@ -2056,7 +2059,7 @@
             0});
             this.tradeCuteNumericNoArrows.Name = "tradeCuteNumericNoArrows";
             this.tradeCuteNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeCuteNumericNoArrows.TabIndex = 26;
+            this.tradeCuteNumericNoArrows.TabIndex = 3;
             this.tradeCuteNumericNoArrows.Validated += new System.EventHandler(this.tradeCuteNumericNoArrows_Validated);
             // 
             // tradeCuteLabel
@@ -2075,13 +2078,13 @@
             this.tradeTrainerComboBox.Location = new System.Drawing.Point(336, 44);
             this.tradeTrainerComboBox.Name = "tradeTrainerComboBox";
             this.tradeTrainerComboBox.Size = new System.Drawing.Size(121, 21);
-            this.tradeTrainerComboBox.TabIndex = 30;
+            this.tradeTrainerComboBox.TabIndex = 0;
             this.tradeTrainerComboBox.SelectedIndexChanged += new System.EventHandler(this.tradeTrainerComboBox_SelectedIndexChanged);
             // 
             // tradeLanguageLabel
             // 
             this.tradeLanguageLabel.AutoSize = true;
-            this.tradeLanguageLabel.Location = new System.Drawing.Point(540, 206);
+            this.tradeLanguageLabel.Location = new System.Drawing.Point(503, 205);
             this.tradeLanguageLabel.Name = "tradeLanguageLabel";
             this.tradeLanguageLabel.Size = new System.Drawing.Size(97, 13);
             this.tradeLanguageLabel.TabIndex = 17;
@@ -2091,16 +2094,16 @@
             // 
             this.tradeLanguageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tradeLanguageComboBox.FormattingEnabled = true;
-            this.tradeLanguageComboBox.Location = new System.Drawing.Point(543, 221);
+            this.tradeLanguageComboBox.Location = new System.Drawing.Point(506, 220);
             this.tradeLanguageComboBox.Name = "tradeLanguageComboBox";
             this.tradeLanguageComboBox.Size = new System.Drawing.Size(121, 21);
-            this.tradeLanguageComboBox.TabIndex = 16;
+            this.tradeLanguageComboBox.TabIndex = 7;
             this.tradeLanguageComboBox.SelectionChangeCommitted += new System.EventHandler(this.tradeLanguageComboBox_SelectionChangeCommitted);
             // 
             // tradePVLabel
             // 
             this.tradePVLabel.AutoSize = true;
-            this.tradePVLabel.Location = new System.Drawing.Point(540, 250);
+            this.tradePVLabel.Location = new System.Drawing.Point(503, 249);
             this.tradePVLabel.Name = "tradePVLabel";
             this.tradePVLabel.Size = new System.Drawing.Size(88, 13);
             this.tradePVLabel.TabIndex = 12;
@@ -2111,14 +2114,14 @@
             this.tradeNicknameLabel.AutoSize = true;
             this.tradeNicknameLabel.Location = new System.Drawing.Point(396, 117);
             this.tradeNicknameLabel.Name = "tradeNicknameLabel";
-            this.tradeNicknameLabel.Size = new System.Drawing.Size(141, 13);
+            this.tradeNicknameLabel.Size = new System.Drawing.Size(55, 13);
             this.tradeNicknameLabel.TabIndex = 11;
-            this.tradeNicknameLabel.Text = "Offered Pokemon Nickname";
+            this.tradeNicknameLabel.Text = "Nickname";
             // 
             // tradeOriginalTrainerIDLabel
             // 
             this.tradeOriginalTrainerIDLabel.AutoSize = true;
-            this.tradeOriginalTrainerIDLabel.Location = new System.Drawing.Point(540, 116);
+            this.tradeOriginalTrainerIDLabel.Location = new System.Drawing.Point(503, 115);
             this.tradeOriginalTrainerIDLabel.Name = "tradeOriginalTrainerIDLabel";
             this.tradeOriginalTrainerIDLabel.Size = new System.Drawing.Size(92, 13);
             this.tradeOriginalTrainerIDLabel.TabIndex = 9;
@@ -2131,11 +2134,12 @@
             this.tradeNicknameTextBox.ReadOnly = true;
             this.tradeNicknameTextBox.Size = new System.Drawing.Size(100, 20);
             this.tradeNicknameTextBox.TabIndex = 6;
+            this.tradeNicknameTextBox.TabStop = false;
             // 
             // tradeHeldItemLabel
             // 
             this.tradeHeldItemLabel.AutoSize = true;
-            this.tradeHeldItemLabel.Location = new System.Drawing.Point(540, 160);
+            this.tradeHeldItemLabel.Location = new System.Drawing.Point(503, 159);
             this.tradeHeldItemLabel.Name = "tradeHeldItemLabel";
             this.tradeHeldItemLabel.Size = new System.Drawing.Size(52, 13);
             this.tradeHeldItemLabel.TabIndex = 5;
@@ -2163,36 +2167,40 @@
             // 
             this.tradeHeldItemComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tradeHeldItemComboBox.FormattingEnabled = true;
-            this.tradeHeldItemComboBox.Location = new System.Drawing.Point(543, 176);
+            this.tradeHeldItemComboBox.Location = new System.Drawing.Point(506, 175);
             this.tradeHeldItemComboBox.Name = "tradeHeldItemComboBox";
             this.tradeHeldItemComboBox.Size = new System.Drawing.Size(121, 21);
-            this.tradeHeldItemComboBox.TabIndex = 2;
+            this.tradeHeldItemComboBox.TabIndex = 6;
             this.tradeHeldItemComboBox.SelectionChangeCommitted += new System.EventHandler(this.tradeHeldItemComboBox_SelectionChangeCommitted);
             // 
             // tradeOfferedPokemonComboBox
             // 
+            this.tradeOfferedPokemonComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tradeOfferedPokemonComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.tradeOfferedPokemonComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tradeOfferedPokemonComboBox.FormattingEnabled = true;
             this.tradeOfferedPokemonComboBox.Location = new System.Drawing.Point(272, 132);
             this.tradeOfferedPokemonComboBox.Name = "tradeOfferedPokemonComboBox";
             this.tradeOfferedPokemonComboBox.Size = new System.Drawing.Size(121, 21);
-            this.tradeOfferedPokemonComboBox.TabIndex = 1;
+            this.tradeOfferedPokemonComboBox.TabIndex = 2;
             this.tradeOfferedPokemonComboBox.SelectionChangeCommitted += new System.EventHandler(this.tradeOfferedPokemonComboBox_SelectionChangeCommitted);
             // 
             // tradeWantedPokemonComboBox
             // 
+            this.tradeWantedPokemonComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tradeWantedPokemonComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.tradeWantedPokemonComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tradeWantedPokemonComboBox.FormattingEnabled = true;
             this.tradeWantedPokemonComboBox.Location = new System.Drawing.Point(145, 132);
             this.tradeWantedPokemonComboBox.Name = "tradeWantedPokemonComboBox";
             this.tradeWantedPokemonComboBox.Size = new System.Drawing.Size(121, 21);
-            this.tradeWantedPokemonComboBox.TabIndex = 0;
+            this.tradeWantedPokemonComboBox.TabIndex = 1;
             this.tradeWantedPokemonComboBox.SelectionChangeCommitted += new System.EventHandler(this.tradeWantedPokemonComboBox_SelectionChangeCommitted);
             // 
             // tradePVNumericNoArrows
             // 
             this.tradePVNumericNoArrows.InterceptArrowKeys = false;
-            this.tradePVNumericNoArrows.Location = new System.Drawing.Point(543, 266);
+            this.tradePVNumericNoArrows.Location = new System.Drawing.Point(506, 265);
             this.tradePVNumericNoArrows.Maximum = new decimal(new int[] {
             -1,
             0,
@@ -2200,14 +2208,14 @@
             0});
             this.tradePVNumericNoArrows.Name = "tradePVNumericNoArrows";
             this.tradePVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.tradePVNumericNoArrows.TabIndex = 13;
+            this.tradePVNumericNoArrows.TabIndex = 8;
             this.tradePVNumericNoArrows.ValueChanged += new System.EventHandler(this.tradePVNumericNoArrows_ValueChanged);
             this.tradePVNumericNoArrows.Validated += new System.EventHandler(this.tradePVNumericNoArrows_Validated);
             // 
             // tradeOriginalTrainerIDNumericNoArrows
             // 
             this.tradeOriginalTrainerIDNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeOriginalTrainerIDNumericNoArrows.Location = new System.Drawing.Point(543, 132);
+            this.tradeOriginalTrainerIDNumericNoArrows.Location = new System.Drawing.Point(506, 131);
             this.tradeOriginalTrainerIDNumericNoArrows.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -2215,7 +2223,7 @@
             0});
             this.tradeOriginalTrainerIDNumericNoArrows.Name = "tradeOriginalTrainerIDNumericNoArrows";
             this.tradeOriginalTrainerIDNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.tradeOriginalTrainerIDNumericNoArrows.TabIndex = 8;
+            this.tradeOriginalTrainerIDNumericNoArrows.TabIndex = 3;
             this.tradeOriginalTrainerIDNumericNoArrows.Validated += new System.EventHandler(this.tradeOriginalTrainerIDNumericNoArrows_Validated);
             // 
             // mainFormMenuStrip
@@ -2253,7 +2261,8 @@
             this.saveToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.saveToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+S";
+            this.saveToolStripMenuItem.ShortcutKeyDisplayString = "";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
@@ -2350,7 +2359,6 @@
             this.Name = "MainForm";
             this.Text = "Pokémon Sinjoh Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyUp);
             this.mainTabControl.ResumeLayout(false);
             this.movesTabPage.ResumeLayout(false);
             this.movesTabPage.PerformLayout();
