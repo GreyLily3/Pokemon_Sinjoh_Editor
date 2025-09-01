@@ -1103,6 +1103,15 @@ namespace Pokemon_Sinjoh_Editor
 
 			return speciesNames;
         }
+        public static string[] GetPokemonSpeciesNamesNoAltForms()
+        {
+            string[] speciesNames = new string[PokemonSpecies.EGG_SPECIES_INDEX];
+
+            for (int i = 0; i < (PokemonSpecies.EGG_SPECIES_INDEX); i++)
+                speciesNames[i] = PokemonNames[i];
+
+            return speciesNames;
+        }
 		public static string[] GetItemNames() => ItemNames.ToArray();
 		public static string[] GetTypeNames() => TypeNames.ToArray();
 		public static string[] GetAbilityNames() => AbilityNames.ToArray();

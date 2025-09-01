@@ -13,8 +13,8 @@ namespace Pokemon_Sinjoh_Editor
             tradeTrainerComboBox.Items.Clear();
             tradeLanguageComboBox.Items.Clear();
 
-            tradeWantedPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNames());
-            tradeOfferedPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNames());
+            tradeWantedPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNamesNoAltForms());
+            tradeOfferedPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNamesNoAltForms());
 
             tradeHeldItemComboBox.Items.AddRange(RomFile.GetItemNames());
             tradeLanguageComboBox.Items.AddRange(RomFile.GetLanguageNames());
