@@ -229,6 +229,7 @@ namespace Pokemon_Sinjoh_Editor
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].OfferedPokemon = (ushort)(tradeOfferedPokemonComboBox.SelectedIndex + 1);
                 MarkUnsavedChanges();
+                updatePVDerivedFields();
             }
         }
 
