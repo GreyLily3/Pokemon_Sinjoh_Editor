@@ -4,13 +4,17 @@ The Pokemon Sinjoh Editor is a multi-purpose binary rom hacking tool for Generat
 
 Partial translations for French, Spanish, Italian, German, Japanese, & Korean.
 
--Move editor
+-Move Editor
 
 ![sinjoh_editor_move_preview.PNG](https://github.com/OtakuGracie/Pokemon_Sinjoh_Editor/blob/138645bc6c3c13b7b2dba94a4d0279acb855706a/sinjoh_editor_move_preview.PNG)
 
--Pokemon editor
+-Species Editor
 
-![sinjoh_editor_species_preview.PNG](https://github.com/OtakuGracie/Pokemon_Sinjoh_Editor/blob/138645bc6c3c13b7b2dba94a4d0279acb855706a/sinjoh_editor_species_preview.PNG)
+![sinjoh_editor_species_preview.PNG](https://github.com/OtakuGracie/Pokemon_Sinjoh_Editor/blob/0bf94e390476e3a694d10b62a0e78ee6df9064ef/sinjoh_editor_species_preview.PNG)
+
+-NPC Trade Editor
+
+![sinjoh_editor_trade_preview.PNG](https://github.com/OtakuGracie/Pokemon_Sinjoh_Editor/blob/0bf94e390476e3a694d10b62a0e78ee6df9064ef/sinjoh_editor_trade_preview.PNG)
 
 **Planned features:**
 - A dark mode
