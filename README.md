@@ -20,6 +20,7 @@ Partial translations for French, Spanish, Italian, German, Japanese, & Korean.
 - A dark mode
 - Item Editor (change buy prices, fling power and effect, natural gift power and effect, what pocket it appears in, etc.)
 - Pokedex editor (change height, weight, description, and type of pokemon (ex. mouse pokemon)
+- Text editing capabilities
 - Trainer editor
 - wild encounter editor (including safari zone and headbutt encounters)
 - XP group editor (adjust formulas for xp per level)
