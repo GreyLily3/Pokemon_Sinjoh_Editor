@@ -26,4 +26,4 @@ Partial translations for French, Spanish, Italian, German, Japanese, & Korean.
 - XP group editor (adjust formulas for xp per level)
 - Learnset editor (change what moves a pokemon learns by leveling up)
 - Evolution editor (change method and level-up requirement)
-- Translation for chinese (Mandarin) and support for Taiwan get soon
+- Translation for chinese (Mandarin) and support for Taiwanese versions
