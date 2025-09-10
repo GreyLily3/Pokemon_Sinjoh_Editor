@@ -189,6 +189,30 @@
             this.tradeWantedPokemonComboBox = new System.Windows.Forms.ComboBox();
             this.tradePVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeOriginalTrainerIDNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemsTabPage = new System.Windows.Forms.TabPage();
+            this.itemNaturalGiftUseableCheckBox = new System.Windows.Forms.CheckBox();
+            this.itemSelectedComboBox = new System.Windows.Forms.ComboBox();
+            this.itemNaturalGiftTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.itemBattlePocketLabel = new System.Windows.Forms.Label();
+            this.itemFieldPocketLabel = new System.Windows.Forms.Label();
+            this.itemBattlePocketComboBox = new System.Windows.Forms.ComboBox();
+            this.itemFieldPocketComboBox = new System.Windows.Forms.ComboBox();
+            this.itemPreventTossCheckBox = new System.Windows.Forms.CheckBox();
+            this.itemNaturalGiftTypeLabel = new System.Windows.Forms.Label();
+            this.itemNaturalGiftPowerLabel = new System.Windows.Forms.Label();
+            this.itemNaturalGiftPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemFlingEffectLabel = new System.Windows.Forms.Label();
+            this.itemFlingEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemFlingPowerLabel = new System.Windows.Forms.Label();
+            this.itemFlingPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemPluckEffectLabel = new System.Windows.Forms.Label();
+            this.itemPluckEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemHoldParemeterLabel = new System.Windows.Forms.Label();
+            this.itemHoldParameterNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemHoldEffectLabel = new System.Windows.Forms.Label();
+            this.itemHoldEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemPriceLabel = new System.Windows.Forms.Label();
+            this.itemPriceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.mainFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openRomFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -236,6 +260,11 @@
             this.tradeAbilityTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeGenderTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeNatureTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.itemsBattlePocketsGroupBox = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
@@ -291,7 +320,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.tradeCuteNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradePVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeOriginalTrainerIDNumericNoArrows)).BeginInit();
+            this.itemsTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.itemNaturalGiftPowerNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemFlingEffectNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemFlingPowerNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemPluckEffectNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemHoldParameterNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemHoldEffectNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).BeginInit();
             this.mainFormMenuStrip.SuspendLayout();
+            this.itemsBattlePocketsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -299,6 +337,7 @@
             this.mainTabControl.Controls.Add(this.movesTabPage);
             this.mainTabControl.Controls.Add(this.speciesTabPage);
             this.mainTabControl.Controls.Add(this.npcTradeTabPage);
+            this.mainTabControl.Controls.Add(this.itemsTabPage);
             this.mainTabControl.Location = new System.Drawing.Point(0, 27);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
@@ -2226,6 +2265,278 @@
             this.tradeOriginalTrainerIDNumericNoArrows.TabIndex = 3;
             this.tradeOriginalTrainerIDNumericNoArrows.Validated += new System.EventHandler(this.tradeOriginalTrainerIDNumericNoArrows_Validated);
             // 
+            // itemsTabPage
+            // 
+            this.itemsTabPage.Controls.Add(this.itemsBattlePocketsGroupBox);
+            this.itemsTabPage.Controls.Add(this.itemNaturalGiftUseableCheckBox);
+            this.itemsTabPage.Controls.Add(this.itemSelectedComboBox);
+            this.itemsTabPage.Controls.Add(this.itemNaturalGiftTypeComboBox);
+            this.itemsTabPage.Controls.Add(this.itemBattlePocketLabel);
+            this.itemsTabPage.Controls.Add(this.itemFieldPocketLabel);
+            this.itemsTabPage.Controls.Add(this.itemBattlePocketComboBox);
+            this.itemsTabPage.Controls.Add(this.itemFieldPocketComboBox);
+            this.itemsTabPage.Controls.Add(this.itemPreventTossCheckBox);
+            this.itemsTabPage.Controls.Add(this.itemNaturalGiftTypeLabel);
+            this.itemsTabPage.Controls.Add(this.itemNaturalGiftPowerLabel);
+            this.itemsTabPage.Controls.Add(this.itemNaturalGiftPowerNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemFlingEffectLabel);
+            this.itemsTabPage.Controls.Add(this.itemFlingEffectNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemFlingPowerLabel);
+            this.itemsTabPage.Controls.Add(this.itemFlingPowerNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemPluckEffectLabel);
+            this.itemsTabPage.Controls.Add(this.itemPluckEffectNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemHoldParemeterLabel);
+            this.itemsTabPage.Controls.Add(this.itemHoldParameterNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemHoldEffectLabel);
+            this.itemsTabPage.Controls.Add(this.itemHoldEffectNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemPriceLabel);
+            this.itemsTabPage.Controls.Add(this.itemPriceNumericNoArrows);
+            this.itemsTabPage.Location = new System.Drawing.Point(4, 22);
+            this.itemsTabPage.Name = "itemsTabPage";
+            this.itemsTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.itemsTabPage.Size = new System.Drawing.Size(924, 475);
+            this.itemsTabPage.TabIndex = 3;
+            this.itemsTabPage.Text = "Items";
+            this.itemsTabPage.UseVisualStyleBackColor = true;
+            // 
+            // itemNaturalGiftUseableCheckBox
+            // 
+            this.itemNaturalGiftUseableCheckBox.AutoSize = true;
+            this.itemNaturalGiftUseableCheckBox.Location = new System.Drawing.Point(373, 176);
+            this.itemNaturalGiftUseableCheckBox.Name = "itemNaturalGiftUseableCheckBox";
+            this.itemNaturalGiftUseableCheckBox.Size = new System.Drawing.Size(135, 17);
+            this.itemNaturalGiftUseableCheckBox.TabIndex = 23;
+            this.itemNaturalGiftUseableCheckBox.Text = "Useable by Natural Gift";
+            this.itemNaturalGiftUseableCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // itemSelectedComboBox
+            // 
+            this.itemSelectedComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.itemSelectedComboBox.FormattingEnabled = true;
+            this.itemSelectedComboBox.Location = new System.Drawing.Point(533, 31);
+            this.itemSelectedComboBox.Name = "itemSelectedComboBox";
+            this.itemSelectedComboBox.Size = new System.Drawing.Size(121, 21);
+            this.itemSelectedComboBox.TabIndex = 22;
+            this.itemSelectedComboBox.SelectedIndexChanged += new System.EventHandler(this.itemSelectedComboBox_SelectedIndexChanged);
+            // 
+            // itemNaturalGiftTypeComboBox
+            // 
+            this.itemNaturalGiftTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.itemNaturalGiftTypeComboBox.FormattingEnabled = true;
+            this.itemNaturalGiftTypeComboBox.Location = new System.Drawing.Point(373, 133);
+            this.itemNaturalGiftTypeComboBox.Name = "itemNaturalGiftTypeComboBox";
+            this.itemNaturalGiftTypeComboBox.Size = new System.Drawing.Size(121, 21);
+            this.itemNaturalGiftTypeComboBox.TabIndex = 21;
+            // 
+            // itemBattlePocketLabel
+            // 
+            this.itemBattlePocketLabel.AutoSize = true;
+            this.itemBattlePocketLabel.Location = new System.Drawing.Point(614, 241);
+            this.itemBattlePocketLabel.Name = "itemBattlePocketLabel";
+            this.itemBattlePocketLabel.Size = new System.Drawing.Size(71, 13);
+            this.itemBattlePocketLabel.TabIndex = 20;
+            this.itemBattlePocketLabel.Text = "Battle Pocket";
+            // 
+            // itemFieldPocketLabel
+            // 
+            this.itemFieldPocketLabel.AutoSize = true;
+            this.itemFieldPocketLabel.Location = new System.Drawing.Point(614, 180);
+            this.itemFieldPocketLabel.Name = "itemFieldPocketLabel";
+            this.itemFieldPocketLabel.Size = new System.Drawing.Size(66, 13);
+            this.itemFieldPocketLabel.TabIndex = 19;
+            this.itemFieldPocketLabel.Text = "Field Pocket";
+            // 
+            // itemBattlePocketComboBox
+            // 
+            this.itemBattlePocketComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.itemBattlePocketComboBox.FormattingEnabled = true;
+            this.itemBattlePocketComboBox.Location = new System.Drawing.Point(617, 256);
+            this.itemBattlePocketComboBox.Name = "itemBattlePocketComboBox";
+            this.itemBattlePocketComboBox.Size = new System.Drawing.Size(121, 21);
+            this.itemBattlePocketComboBox.TabIndex = 18;
+            // 
+            // itemFieldPocketComboBox
+            // 
+            this.itemFieldPocketComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.itemFieldPocketComboBox.FormattingEnabled = true;
+            this.itemFieldPocketComboBox.Location = new System.Drawing.Point(617, 196);
+            this.itemFieldPocketComboBox.Name = "itemFieldPocketComboBox";
+            this.itemFieldPocketComboBox.Size = new System.Drawing.Size(121, 21);
+            this.itemFieldPocketComboBox.TabIndex = 17;
+            // 
+            // itemPreventTossCheckBox
+            // 
+            this.itemPreventTossCheckBox.AutoSize = true;
+            this.itemPreventTossCheckBox.Location = new System.Drawing.Point(99, 324);
+            this.itemPreventTossCheckBox.Name = "itemPreventTossCheckBox";
+            this.itemPreventTossCheckBox.Size = new System.Drawing.Size(89, 17);
+            this.itemPreventTossCheckBox.TabIndex = 16;
+            this.itemPreventTossCheckBox.Text = "Prevent Toss";
+            this.itemPreventTossCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // itemNaturalGiftTypeLabel
+            // 
+            this.itemNaturalGiftTypeLabel.AutoSize = true;
+            this.itemNaturalGiftTypeLabel.Location = new System.Drawing.Point(370, 117);
+            this.itemNaturalGiftTypeLabel.Name = "itemNaturalGiftTypeLabel";
+            this.itemNaturalGiftTypeLabel.Size = new System.Drawing.Size(87, 13);
+            this.itemNaturalGiftTypeLabel.TabIndex = 15;
+            this.itemNaturalGiftTypeLabel.Text = "Natural Gift Type";
+            // 
+            // itemNaturalGiftPowerLabel
+            // 
+            this.itemNaturalGiftPowerLabel.AutoSize = true;
+            this.itemNaturalGiftPowerLabel.Location = new System.Drawing.Point(370, 58);
+            this.itemNaturalGiftPowerLabel.Name = "itemNaturalGiftPowerLabel";
+            this.itemNaturalGiftPowerLabel.Size = new System.Drawing.Size(93, 13);
+            this.itemNaturalGiftPowerLabel.TabIndex = 13;
+            this.itemNaturalGiftPowerLabel.Text = "Natural Gift Power";
+            // 
+            // itemNaturalGiftPowerNumericNoArrows
+            // 
+            this.itemNaturalGiftPowerNumericNoArrows.InterceptArrowKeys = false;
+            this.itemNaturalGiftPowerNumericNoArrows.Location = new System.Drawing.Point(373, 74);
+            this.itemNaturalGiftPowerNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemNaturalGiftPowerNumericNoArrows.Name = "itemNaturalGiftPowerNumericNoArrows";
+            this.itemNaturalGiftPowerNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.itemNaturalGiftPowerNumericNoArrows.TabIndex = 12;
+            // 
+            // itemFlingEffectLabel
+            // 
+            this.itemFlingEffectLabel.AutoSize = true;
+            this.itemFlingEffectLabel.Location = new System.Drawing.Point(258, 118);
+            this.itemFlingEffectLabel.Name = "itemFlingEffectLabel";
+            this.itemFlingEffectLabel.Size = new System.Drawing.Size(60, 13);
+            this.itemFlingEffectLabel.TabIndex = 11;
+            this.itemFlingEffectLabel.Text = "Fling Effect";
+            // 
+            // itemFlingEffectNumericNoArrows
+            // 
+            this.itemFlingEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.itemFlingEffectNumericNoArrows.Location = new System.Drawing.Point(261, 134);
+            this.itemFlingEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemFlingEffectNumericNoArrows.Name = "itemFlingEffectNumericNoArrows";
+            this.itemFlingEffectNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.itemFlingEffectNumericNoArrows.TabIndex = 10;
+            // 
+            // itemFlingPowerLabel
+            // 
+            this.itemFlingPowerLabel.AutoSize = true;
+            this.itemFlingPowerLabel.Location = new System.Drawing.Point(258, 59);
+            this.itemFlingPowerLabel.Name = "itemFlingPowerLabel";
+            this.itemFlingPowerLabel.Size = new System.Drawing.Size(62, 13);
+            this.itemFlingPowerLabel.TabIndex = 9;
+            this.itemFlingPowerLabel.Text = "Fling Power";
+            // 
+            // itemFlingPowerNumericNoArrows
+            // 
+            this.itemFlingPowerNumericNoArrows.InterceptArrowKeys = false;
+            this.itemFlingPowerNumericNoArrows.Location = new System.Drawing.Point(261, 75);
+            this.itemFlingPowerNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemFlingPowerNumericNoArrows.Name = "itemFlingPowerNumericNoArrows";
+            this.itemFlingPowerNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.itemFlingPowerNumericNoArrows.TabIndex = 8;
+            // 
+            // itemPluckEffectLabel
+            // 
+            this.itemPluckEffectLabel.AutoSize = true;
+            this.itemPluckEffectLabel.Location = new System.Drawing.Point(99, 241);
+            this.itemPluckEffectLabel.Name = "itemPluckEffectLabel";
+            this.itemPluckEffectLabel.Size = new System.Drawing.Size(65, 13);
+            this.itemPluckEffectLabel.TabIndex = 7;
+            this.itemPluckEffectLabel.Text = "Pluck Effect";
+            // 
+            // itemPluckEffectNumericNoArrows
+            // 
+            this.itemPluckEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.itemPluckEffectNumericNoArrows.Location = new System.Drawing.Point(102, 257);
+            this.itemPluckEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemPluckEffectNumericNoArrows.Name = "itemPluckEffectNumericNoArrows";
+            this.itemPluckEffectNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.itemPluckEffectNumericNoArrows.TabIndex = 6;
+            // 
+            // itemHoldParemeterLabel
+            // 
+            this.itemHoldParemeterLabel.AutoSize = true;
+            this.itemHoldParemeterLabel.Location = new System.Drawing.Point(99, 182);
+            this.itemHoldParemeterLabel.Name = "itemHoldParemeterLabel";
+            this.itemHoldParemeterLabel.Size = new System.Drawing.Size(111, 13);
+            this.itemHoldParemeterLabel.TabIndex = 5;
+            this.itemHoldParemeterLabel.Text = "Hold Effect Parameter";
+            // 
+            // itemHoldParameterNumericNoArrows
+            // 
+            this.itemHoldParameterNumericNoArrows.InterceptArrowKeys = false;
+            this.itemHoldParameterNumericNoArrows.Location = new System.Drawing.Point(102, 198);
+            this.itemHoldParameterNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemHoldParameterNumericNoArrows.Name = "itemHoldParameterNumericNoArrows";
+            this.itemHoldParameterNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.itemHoldParameterNumericNoArrows.TabIndex = 4;
+            // 
+            // itemHoldEffectLabel
+            // 
+            this.itemHoldEffectLabel.AutoSize = true;
+            this.itemHoldEffectLabel.Location = new System.Drawing.Point(96, 120);
+            this.itemHoldEffectLabel.Name = "itemHoldEffectLabel";
+            this.itemHoldEffectLabel.Size = new System.Drawing.Size(60, 13);
+            this.itemHoldEffectLabel.TabIndex = 3;
+            this.itemHoldEffectLabel.Text = "Hold Effect";
+            // 
+            // itemHoldEffectNumericNoArrows
+            // 
+            this.itemHoldEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.itemHoldEffectNumericNoArrows.Location = new System.Drawing.Point(99, 136);
+            this.itemHoldEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemHoldEffectNumericNoArrows.Name = "itemHoldEffectNumericNoArrows";
+            this.itemHoldEffectNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.itemHoldEffectNumericNoArrows.TabIndex = 2;
+            // 
+            // itemPriceLabel
+            // 
+            this.itemPriceLabel.AutoSize = true;
+            this.itemPriceLabel.Location = new System.Drawing.Point(96, 59);
+            this.itemPriceLabel.Name = "itemPriceLabel";
+            this.itemPriceLabel.Size = new System.Drawing.Size(31, 13);
+            this.itemPriceLabel.TabIndex = 1;
+            this.itemPriceLabel.Text = "Price";
+            // 
+            // itemPriceNumericNoArrows
+            // 
+            this.itemPriceNumericNoArrows.InterceptArrowKeys = false;
+            this.itemPriceNumericNoArrows.Location = new System.Drawing.Point(99, 75);
+            this.itemPriceNumericNoArrows.Maximum = new decimal(new int[] {
+            65565,
+            0,
+            0,
+            0});
+            this.itemPriceNumericNoArrows.Name = "itemPriceNumericNoArrows";
+            this.itemPriceNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.itemPriceNumericNoArrows.TabIndex = 0;
+            // 
             // mainFormMenuStrip
             // 
             this.mainFormMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2347,6 +2658,59 @@
             this.한국어ToolStripMenuItem.Text = "한국어";
             this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
             // 
+            // itemsBattlePocketsGroupBox
+            // 
+            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox4);
+            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox3);
+            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox2);
+            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox1);
+            this.itemsBattlePocketsGroupBox.Location = new System.Drawing.Point(617, 301);
+            this.itemsBattlePocketsGroupBox.Name = "itemsBattlePocketsGroupBox";
+            this.itemsBattlePocketsGroupBox.Size = new System.Drawing.Size(149, 142);
+            this.itemsBattlePocketsGroupBox.TabIndex = 24;
+            this.itemsBattlePocketsGroupBox.TabStop = false;
+            this.itemsBattlePocketsGroupBox.Text = "Battle Pockets";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(7, 23);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(73, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "PokeBalls";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(7, 46);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(100, 17);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "HP/PP Restore";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(6, 69);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(96, 17);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "Status Restore";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(6, 92);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(53, 17);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "Battle";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2430,8 +2794,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.tradeCuteNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradePVNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeOriginalTrainerIDNumericNoArrows)).EndInit();
+            this.itemsTabPage.ResumeLayout(false);
+            this.itemsTabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.itemNaturalGiftPowerNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemFlingEffectNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemFlingPowerNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemPluckEffectNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemHoldParameterNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemHoldEffectNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).EndInit();
             this.mainFormMenuStrip.ResumeLayout(false);
             this.mainFormMenuStrip.PerformLayout();
+            this.itemsBattlePocketsGroupBox.ResumeLayout(false);
+            this.itemsBattlePocketsGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2645,6 +3020,35 @@
         private System.Windows.Forms.ToolStripMenuItem 日本語ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem italianoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 한국어ToolStripMenuItem;
+        private System.Windows.Forms.TabPage itemsTabPage;
+        private System.Windows.Forms.Label itemHoldEffectLabel;
+        private NumericNoArrows itemHoldEffectNumericNoArrows;
+        private System.Windows.Forms.Label itemPriceLabel;
+        private NumericNoArrows itemPriceNumericNoArrows;
+        private System.Windows.Forms.ComboBox itemFieldPocketComboBox;
+        private System.Windows.Forms.CheckBox itemPreventTossCheckBox;
+        private System.Windows.Forms.Label itemNaturalGiftTypeLabel;
+        private System.Windows.Forms.Label itemNaturalGiftPowerLabel;
+        private NumericNoArrows itemNaturalGiftPowerNumericNoArrows;
+        private System.Windows.Forms.Label itemFlingEffectLabel;
+        private NumericNoArrows itemFlingEffectNumericNoArrows;
+        private System.Windows.Forms.Label itemFlingPowerLabel;
+        private NumericNoArrows itemFlingPowerNumericNoArrows;
+        private System.Windows.Forms.Label itemPluckEffectLabel;
+        private NumericNoArrows itemPluckEffectNumericNoArrows;
+        private System.Windows.Forms.Label itemHoldParemeterLabel;
+        private NumericNoArrows itemHoldParameterNumericNoArrows;
+        private System.Windows.Forms.Label itemBattlePocketLabel;
+        private System.Windows.Forms.Label itemFieldPocketLabel;
+        private System.Windows.Forms.ComboBox itemBattlePocketComboBox;
+        private System.Windows.Forms.ComboBox itemNaturalGiftTypeComboBox;
+        private System.Windows.Forms.ComboBox itemSelectedComboBox;
+        private System.Windows.Forms.CheckBox itemNaturalGiftUseableCheckBox;
+        private System.Windows.Forms.GroupBox itemsBattlePocketsGroupBox;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

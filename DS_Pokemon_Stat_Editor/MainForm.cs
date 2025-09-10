@@ -944,9 +944,11 @@ namespace Pokemon_Sinjoh_Editor
                         setupMoveText();
                         setupSpeciesText();
                         setupTradeText();
+                        setupItemText();
                         UpdateDisplayedMoveValues();
                         UpdateDisplayedSpeciesValues();
                         UpdateDisplayedTradeValues();
+                        updateDisplayedItemValues();
                     }
 				}                
 			}
@@ -1176,6 +1178,5 @@ namespace Pokemon_Sinjoh_Editor
                 switchComboBoxesTextLanguage();
             }
         }
-
     }
 }

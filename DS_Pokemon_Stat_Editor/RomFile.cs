@@ -11,6 +11,7 @@ namespace Pokemon_Sinjoh_Editor
 		private static NarcFile pokemonSpeciesNarc;
 		private static NarcFile npcTradesNarc;
 		private static NarcFile gameTextNarc;
+        private static NarcFile itemsNarc;
 		private static TextArchive gameText;
         public static Languages Language;
 		private static GameVersions GameVersion;
@@ -21,6 +22,7 @@ namespace Pokemon_Sinjoh_Editor
 		public static List<Move> MoveList = new List<Move>();
         public static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
 		public static List<NPCTrade> NPCTradesList = new List<NPCTrade>();
+        public static List<Item> ItemList = new List<Item>();
 
 		public static List<string> MoveNames { get; private set; }
 		public static List<string> PokemonNames { get; private set; }
@@ -200,6 +202,16 @@ namespace Pokemon_Sinjoh_Editor
         private const int KOR_TEXT_NARC_ID_DP = 0x129;
         private const int KOR_TEXT_NARC_ID_PL = 0x17A;
 
+        private const int ITEMS_NARC_ID_DP = 0x13A;
+        private const int ITEMS_NARC_ID_PL = 0x192;
+        private const int ITEMS_NARC_ID_HGSS = 0x92;
+        private const int JAP_ITEMS_NARC_ID_DP = 0x13B;
+        private const int JAP_ITEMS_NARC_ID_PL = 0x198;
+        private const int JAP_ITEMS_NARC_ID_HGSS = 0x91;
+        private const int KOR_ITEMS_NARC_ID_DP = 0x126;
+        private const int KOR_ITEMS_NARC_ID_PL = 0x178;
+        private const int KOR_ITEMS_NARC_ID_HGSS = 0x92;
+
         private const int SPECIES_START_INDEX = 1;
         private const int MOVE_START_INDEX = 1;
 
@@ -211,6 +223,11 @@ namespace Pokemon_Sinjoh_Editor
 
         public const int TRADE_JASMINE_INDEX = 5;
         public const int TRADE_WEBSTER_INDEX = 7;
+
+        public const int NUM_UNKNOWN_ITEMS_BLOCK1 = 22;
+        public const int NUM_UNKNOWN_ITEMS_BLOCK2 = 1;
+        public const int UNKNOWN_ITEM_FIRST_INDEX = 113;
+        public const int UNKNOWN_ITEM_LAST_INDEX = 428;
 
         public const int POKEMON_NAME_MAX_LENGTH = 10;
         public const int MOVE_NAME_MAX_LENGTH = 12;
@@ -330,6 +347,9 @@ namespace Pokemon_Sinjoh_Editor
 			npcTradesNarc = new NarcFile(getNPCTradesNarcOffset());
 			npcTradesNarc.Read(romFileReader);
 
+            itemsNarc = new NarcFile(getItemsNarcOffset());
+            itemsNarc.Read(romFileReader);
+
             gameTextNarc = new NarcFile(getTextNarcOffset());
 			gameTextNarc.Read(romFileReader);
 			
@@ -373,7 +393,9 @@ namespace Pokemon_Sinjoh_Editor
             for (int i = 0; i < npcTradesNarc.Elements.Count; i++)
 				NPCTradesList.Add(new NPCTrade(npcTradesNarc.Elements[i]));
 
-			
+
+			for (int i = 0; i < itemsNarc.Elements.Count; i++)
+                ItemList.Add(new Item(itemsNarc.Elements[i]));
         }
 
 		private static void readHeader(BinaryReader romFileReader)
@@ -540,9 +562,40 @@ namespace Pokemon_Sinjoh_Editor
                     _ => 0
                 };
             }
+        }
 
-
-                
+        private static uint getItemsNarcOffset()
+        { 
+            if (Language == Languages.JAPANESE)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(JAP_ITEMS_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(JAP_ITEMS_NARC_ID_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(JAP_ITEMS_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KOR_ITEMS_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(KOR_ITEMS_NARC_ID_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(KOR_ITEMS_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
+            else
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(ITEMS_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(ITEMS_NARC_ID_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(ITEMS_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
         }
 
 		private static uint getTextNarcOffset()
@@ -1113,6 +1166,22 @@ namespace Pokemon_Sinjoh_Editor
             return speciesNames;
         }
 		public static string[] GetItemNames() => ItemNames.ToArray();
+        public static string[] GetItemNamesWithoutUnknown()
+        {
+            string[] itemNames = new string[itemsNarc.Elements.Count];
+
+            for (int i = 0; i < UNKNOWN_ITEM_FIRST_INDEX; i++)
+                itemNames[i] = ItemNames[i];
+
+            for (int i = (UNKNOWN_ITEM_FIRST_INDEX + NUM_UNKNOWN_ITEMS_BLOCK1); i < UNKNOWN_ITEM_LAST_INDEX; i++)
+                itemNames[i - NUM_UNKNOWN_ITEMS_BLOCK1] = ItemNames[i];
+
+            for (int i = (UNKNOWN_ITEM_LAST_INDEX + NUM_UNKNOWN_ITEMS_BLOCK2); i < ItemNames.Count; i++)
+                itemNames[(i - NUM_UNKNOWN_ITEMS_BLOCK1) - NUM_UNKNOWN_ITEMS_BLOCK2] = ItemNames[i];
+
+            return itemNames;
+        }
+
 		public static string[] GetTypeNames() => TypeNames.ToArray();
 		public static string[] GetAbilityNames() => AbilityNames.ToArray();
         public static string[] GetMoveCategories()
@@ -1310,5 +1379,7 @@ namespace Pokemon_Sinjoh_Editor
 
 		public static string[] GetTradePokemonNickNames() => TradePokemonNicknames.ToArray();
 		public static string[] GetTradePokemonTrainerNames() => TradePokemonTrainerNames.ToArray();
+        public static string[] GetFieldPocketNames() => Enum.GetNames(typeof(Item.FieldPockets));
+        public static string[] GetBattlePocketNames() => Enum.GetNames(typeof(Item.BattlePockets));
     }
 }
