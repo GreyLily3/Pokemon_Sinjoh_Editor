@@ -52,6 +52,8 @@ namespace Pokemon_Sinjoh_Editor
             moveKingsRockCheckBox.Checked = RomFile.MoveList[moveIndex].KingsRockFlag;
             moveHPBarCheckBox.Checked = RomFile.MoveList[moveIndex].KeepHPBarVisibleFlag;
             moveShadowCheckBox.Checked = RomFile.MoveList[moveIndex].HidePokemonShadowsFlag;
+
+            moveDescriptionTextBox.Text = RomFile.GetMoveDescription(moveIndex);
         }
 
         private void movesComboBox_SelectedIndexChanged(object sender, EventArgs e)

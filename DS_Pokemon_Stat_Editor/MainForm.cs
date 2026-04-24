@@ -13,7 +13,19 @@ namespace Pokemon_Sinjoh_Editor
 		private const string SPECIES_WILD_HELD_ITEM_TOOLTIP_TEXT = "The item the pokemon has a chance of holding when encountered in the wild";
 		private const string SPECIES_EV_YIELD_TOOLTIP_TEXT = "What effort values the pokemon will give when defeated. Each pokemon can have a total of 510 EVs across all stats";
 
-		private Color darkModeBackColor = Color.FromArgb(64, 64, 64);
+        private const string ENG_MOVE_TEXT = "Move";
+        private const string ENG_SPECIES_TEXT = "Species";
+        private const string ENG_TRADES_TEXT = "NPC Trades";
+        private const string ENG_ITEMS_TEXT = "Items";
+
+        private const string ENG_ATTACK_TEXT = "Attack";
+        private const string ENG_DEFENSE_TEXT = "Defense";
+        private const string ENG_SPEED_TEXT = "Speed";
+
+        private const string ENG_TYPE_TEXT = "Type";
+        private const string ENG_ABILITY_TEXT = "Ability";
+
+        private Color darkModeBackColor = Color.FromArgb(64, 64, 64);
         private Color darkModeTextColor = Color.FromArgb(255, 255, 255);
 		private Color lightModeBackColor = SystemColors.Window;
         private Color lightModeTextColor = SystemColors.WindowText;
@@ -114,15 +126,15 @@ namespace Pokemon_Sinjoh_Editor
             saveToolStripMenuItem.Text = "Save";
             quitToolStripMenuItem.Text = "Exit";
 
-            movesTabPage.Text = "Moves";
-            speciesTabPage.Text = "Pokémon";
-            npcTradeTabPage.Text = "NPC Trades";
+            movesTabPage.Text = ENG_MOVE_TEXT + "s";
+            speciesTabPage.Text = ENG_SPECIES_TEXT;
+            npcTradeTabPage.Text = ENG_TRADES_TEXT;
 
-            moveSelectedLabel.Text = "Move:";
+            moveSelectedLabel.Text = ENG_MOVE_TEXT;
             movePowerLabel.Text = "Power:";
             moveAccuracyLabel.Text = "Accuracy:";
             movePPLabel.Text = "PP:";
-            moveTypeLabel.Text = "Type:";
+            moveTypeLabel.Text = ENG_TYPE_TEXT;
             moveCategoryLabel.Text = "Category:";
             moveEffectLabel.Text = "Effect:";
             moveEffectChanceLabel.Text = "Effect Chance:";
@@ -141,23 +153,23 @@ namespace Pokemon_Sinjoh_Editor
 			moveShadowCheckBox.Text = "Hide Shadow";
 
 			speciesHPLabel.Text = "HP:";
-            speciesAttackLabel.Text = "Attack:";
+            speciesAttackLabel.Text = ENG_ATTACK_TEXT;
             speciesDefenseLabel.Text = "Defense:";
             speciesSpecialAttackLabel.Text = "Special Attack:";
             speciesSpecialDefenseLabel.Text = "Special Defense:";
-            speciesSpeedLabel.Text = "Speed:";
+            speciesSpeedLabel.Text = ENG_SPEED_TEXT;
 
 			speciesHPEVlabel.Text = "HP:";
-            speciesAttackEVLabel.Text = "Attack:";
+            speciesAttackEVLabel.Text = ENG_ATTACK_TEXT;
             speciesDefenseEVLabel.Text = "Defense:";
             speciesSpecialAttackEVLabel.Text = "Special Attack:";
             speciesSpecialDefenseEVLabel.Text = "Special Defense:";
-            speciesSpeedEVlabel.Text = "Speed:";
+            speciesSpeedEVlabel.Text = ENG_SPEED_TEXT;
 
-			speciesType1Label.Text = "Type 1:";
-            speciesType2Label.Text = "Type 2:";
-            speciesAbility1Label.Text = "Ability 1:";
-            speciesAbility2Label.Text = "Ability 2:";
+			speciesType1Label.Text = ENG_TYPE_TEXT + " 1";
+            speciesType2Label.Text = ENG_TYPE_TEXT + " 2";
+            speciesAbility1Label.Text = ENG_ABILITY_TEXT + " 1";
+            speciesAbility2Label.Text = ENG_ABILITY_TEXT + " 2";
 			speciesXPGroupLabel.Text = "Experience Group:";
             speciesBaseXPLabel.Text = "Base EXP Yield:";
             speciesHeldItem1Label.Text = "Wild Held Item 1:\r\n(50% chance)\r\n";
@@ -178,7 +190,7 @@ namespace Pokemon_Sinjoh_Editor
 
 			speciesBaseStatsGroupBox.Text = "Base Stats";
             speciesEVOnDefeatGroupBox.Text = "Effort Yield";
-            speciesTypesGroupBox.Text = "Types";
+            speciesTypesGroupBox.Text = ENG_TYPE_TEXT + "s";
             speciesAbilitiesGroupBox.Text = "Abilities";
             speciesXPGroupBox.Text = "EXP";
             speciesHeldItemsGroupBox.Text = "Held Items in the Wild";
@@ -192,11 +204,11 @@ namespace Pokemon_Sinjoh_Editor
             tradeOriginalTrainerIDLabel.Text = "Original Trainer ID";
 
             tradeHPIVsLabel.Text = "HP";
-            tradeAttackIVsLabel.Text = "Attack";
+            tradeAttackIVsLabel.Text = ENG_ATTACK_TEXT;
             tradeDefenseIVsLabel.Text = "Defense";
             tradeSpecialAttackIVsLabel.Text = "Special Attack";
             tradeSpecialDefenseIVsLabel.Text = "Special Defense";
-            tradeSpeedIVsLabel.Text = "Speed";
+            tradeSpeedIVsLabel.Text = ENG_SPEED_TEXT;
 
             tradeCoolLabel.Text = "Cool";
             tradeBeautyLabel.Text = "Beauty";
@@ -208,7 +220,7 @@ namespace Pokemon_Sinjoh_Editor
             tradeHeldItemLabel.Text = "Held Item";
             tradeLanguageLabel.Text = "Language of Origin";
             tradePVLabel.Text = "Personality Value";
-            tradeAbilityLabel.Text = "Ability";
+            tradeAbilityLabel.Text = ENG_ABILITY_TEXT;
             tradeGenderLabel.Text = "Gender";
             tradeNatureLabel.Text = "Nature";
 

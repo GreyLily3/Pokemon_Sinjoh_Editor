@@ -25,7 +25,8 @@ namespace Pokemon_Sinjoh_Editor
         public static List<Item> ItemList = new List<Item>();
 
 		public static List<string> MoveNames { get; private set; }
-		public static List<string> PokemonNames { get; private set; }
+        public static List<string> MoveDescriptions { get; private set; }
+        public static List<string> PokemonNames { get; private set; }
 		public static List<string> TypeNames { get; private set; }
 		public static List<string> AbilityNames { get; private set; }
 		public static List<string> ItemNames { get; private set; }
@@ -54,6 +55,16 @@ namespace Pokemon_Sinjoh_Editor
         private const int KOR_MOVES_TEXT_BANK_HGSS = 743;
         private const int KOR_MOVES_TEXT_BANK_PL = 637;
         private const int KOR_MOVES_TEXT_BANK_DP = 577;
+
+        private const int MOVES_DESCRIPTION_TEXT_BANK_DP = 587;
+        private const int MOVES_DESCRIPTION_TEXT_BANK_PL = 646;
+        private const int MOVES_DESCRIPTION_TEXT_BANK_HGSS = 749;
+        private const int JAP_MOVES_DESCRIPTION_TEXT_BANK_DP = 573;
+        private const int JAP_MOVES_DESCRIPTION_TEXT_BANK_PL = 634;
+        private const int JAP_MOVES_DESCRIPTION_TEXT_BANK_HGSS = 738;
+        private const int KOR_MOVES_DESCRIPTION_TEXT_BANK_DP = 575;
+        private const int KOR_MOVES_DESCRIPTION_TEXT_BANK_PL = 635;
+        private const int KOR_MOVES_DESCRIPTION_TEXT_BANK_HGSS = 741;
 
         private const int POKEMON_NAMES_TEXT_BANK_DP = 362;
         private const int POKEMON_NAMES_TEXT_BANK_PL = 412;
@@ -358,7 +369,10 @@ namespace Pokemon_Sinjoh_Editor
             MoveNames = gameText.TextBanks[getMoveNameTextBankID()];
 			MoveNames.RemoveAt(0); //remove the first entry because it's a placeholder
 
-			PokemonNames = gameText.TextBanks[getPokemonNamesTextBankID()];
+            MoveDescriptions = gameText.TextBanks[getMoveDescriptionTextBankID()];
+            MoveDescriptions.RemoveAt(0); //remove the first entry because it's a placeholder
+
+            PokemonNames = gameText.TextBanks[getPokemonNamesTextBankID()];
 			PokemonNames.RemoveAt(0); //remove the first entry because it's a placeholder
 
 			TypeNames = gameText.TextBanks[getTypeNamesTextBankID()];
@@ -663,7 +677,37 @@ namespace Pokemon_Sinjoh_Editor
             }
 		}
 
-		private static int getTypeNamesTextBankID()
+        private static int getMoveDescriptionTextBankID()
+        {
+            switch (gameFamily)
+            {
+                case GameFamilies.DP:
+                    if (Language == Languages.JAPANESE)
+                        return JAP_MOVES_DESCRIPTION_TEXT_BANK_DP;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_MOVES_DESCRIPTION_TEXT_BANK_DP;
+                    else
+                        return MOVES_TEXT_BANK_DP;
+                case GameFamilies.PL:
+                    if (Language == Languages.JAPANESE)
+                        return JAP_MOVES_DESCRIPTION_TEXT_BANK_PL;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_MOVES_DESCRIPTION_TEXT_BANK_PL;
+                    else
+                        return MOVES_TEXT_BANK_PL;
+                case GameFamilies.HGSS:
+                    if (Language == Languages.JAPANESE)
+                        return JAP_MOVES_DESCRIPTION_TEXT_BANK_HGSS;
+                    else if (Language == Languages.KOREAN)
+                        return KOR_MOVES_DESCRIPTION_TEXT_BANK_HGSS;
+                    else
+                        return MOVES_DESCRIPTION_TEXT_BANK_HGSS;
+                default:
+                    return -1;
+            }
+        }
+
+        private static int getTypeNamesTextBankID()
 		{
             switch (gameFamily)
             {
@@ -1130,7 +1174,8 @@ namespace Pokemon_Sinjoh_Editor
 
         public static string GetGameVersion() => GameVersion.ToString();
 		public static string[] GetMoveNames() => MoveNames.ToArray();
-		public static string[] GetPokemonSpeciesNames()
+        public static string GetMoveDescription(int moveIndex) => MoveDescriptions[moveIndex].Replace("\\n", " ");
+        public static string[] GetPokemonSpeciesNames()
 		{
 			string[] speciesNames = new string[PokemonSpeciesList.Count];
 

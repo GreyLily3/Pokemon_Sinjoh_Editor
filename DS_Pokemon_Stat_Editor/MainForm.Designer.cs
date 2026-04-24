@@ -190,6 +190,11 @@
             this.tradePVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeOriginalTrainerIDNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemsTabPage = new System.Windows.Forms.TabPage();
+            this.itemsBattlePocketsGroupBox = new System.Windows.Forms.GroupBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.itemNaturalGiftUseableCheckBox = new System.Windows.Forms.CheckBox();
             this.itemSelectedComboBox = new System.Windows.Forms.ComboBox();
             this.itemNaturalGiftTypeComboBox = new System.Windows.Forms.ComboBox();
@@ -260,11 +265,7 @@
             this.tradeAbilityTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeGenderTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeNatureTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.itemsBattlePocketsGroupBox = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.moveDescriptionTextBox = new System.Windows.Forms.RichTextBox();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
@@ -321,6 +322,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tradePVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeOriginalTrainerIDNumericNoArrows)).BeginInit();
             this.itemsTabPage.SuspendLayout();
+            this.itemsBattlePocketsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemNaturalGiftPowerNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingPowerNumericNoArrows)).BeginInit();
@@ -329,7 +331,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).BeginInit();
             this.mainFormMenuStrip.SuspendLayout();
-            this.itemsBattlePocketsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -347,6 +348,7 @@
             // movesTabPage
             // 
             this.movesTabPage.BackColor = System.Drawing.Color.Transparent;
+            this.movesTabPage.Controls.Add(this.moveDescriptionTextBox);
             this.movesTabPage.Controls.Add(this.moveEffectNumericNoArrows);
             this.movesTabPage.Controls.Add(this.moveSelectedLabel);
             this.movesTabPage.Controls.Add(this.movesComboBox);
@@ -2299,6 +2301,59 @@
             this.itemsTabPage.Text = "Items";
             this.itemsTabPage.UseVisualStyleBackColor = true;
             // 
+            // itemsBattlePocketsGroupBox
+            // 
+            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox4);
+            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox3);
+            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox2);
+            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox1);
+            this.itemsBattlePocketsGroupBox.Location = new System.Drawing.Point(617, 301);
+            this.itemsBattlePocketsGroupBox.Name = "itemsBattlePocketsGroupBox";
+            this.itemsBattlePocketsGroupBox.Size = new System.Drawing.Size(149, 142);
+            this.itemsBattlePocketsGroupBox.TabIndex = 24;
+            this.itemsBattlePocketsGroupBox.TabStop = false;
+            this.itemsBattlePocketsGroupBox.Text = "Battle Pockets";
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(6, 92);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(53, 17);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "Battle";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(6, 69);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(96, 17);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "Status Restore";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(7, 46);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(100, 17);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "HP/PP Restore";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(7, 23);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(73, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "PokeBalls";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // itemNaturalGiftUseableCheckBox
             // 
             this.itemNaturalGiftUseableCheckBox.AutoSize = true;
@@ -2658,58 +2713,14 @@
             this.한국어ToolStripMenuItem.Text = "한국어";
             this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
             // 
-            // itemsBattlePocketsGroupBox
+            // moveDescriptionTextBox
             // 
-            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox4);
-            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox3);
-            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox2);
-            this.itemsBattlePocketsGroupBox.Controls.Add(this.checkBox1);
-            this.itemsBattlePocketsGroupBox.Location = new System.Drawing.Point(617, 301);
-            this.itemsBattlePocketsGroupBox.Name = "itemsBattlePocketsGroupBox";
-            this.itemsBattlePocketsGroupBox.Size = new System.Drawing.Size(149, 142);
-            this.itemsBattlePocketsGroupBox.TabIndex = 24;
-            this.itemsBattlePocketsGroupBox.TabStop = false;
-            this.itemsBattlePocketsGroupBox.Text = "Battle Pockets";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(7, 23);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(73, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "PokeBalls";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(7, 46);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(100, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "HP/PP Restore";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 69);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(96, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Status Restore";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 92);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(53, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Battle";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.moveDescriptionTextBox.Location = new System.Drawing.Point(713, 229);
+            this.moveDescriptionTextBox.Name = "moveDescriptionTextBox";
+            this.moveDescriptionTextBox.ReadOnly = true;
+            this.moveDescriptionTextBox.Size = new System.Drawing.Size(151, 96);
+            this.moveDescriptionTextBox.TabIndex = 26;
+            this.moveDescriptionTextBox.Text = "";
             // 
             // MainForm
             // 
@@ -2796,6 +2807,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tradeOriginalTrainerIDNumericNoArrows)).EndInit();
             this.itemsTabPage.ResumeLayout(false);
             this.itemsTabPage.PerformLayout();
+            this.itemsBattlePocketsGroupBox.ResumeLayout(false);
+            this.itemsBattlePocketsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemNaturalGiftPowerNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingEffectNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingPowerNumericNoArrows)).EndInit();
@@ -2805,8 +2818,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).EndInit();
             this.mainFormMenuStrip.ResumeLayout(false);
             this.mainFormMenuStrip.PerformLayout();
-            this.itemsBattlePocketsGroupBox.ResumeLayout(false);
-            this.itemsBattlePocketsGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3049,6 +3060,7 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.RichTextBox moveDescriptionTextBox;
     }
 }
 
