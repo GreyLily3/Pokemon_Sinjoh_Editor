@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="FAT.cs" />
     <Compile Include="Gender.cs" />
+    <Compile Include="Height.cs" />
     <Compile Include="INIManager.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="ItemEditor.cs">
@@ -96,6 +97,9 @@
       <DependentUpon>NumericNoArrows.cs</DependentUpon>
     </Compile>
     <Compile Include="PersonalityValue.cs" />
+    <Compile Include="PokedexEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PokemonSpecies.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,9 +108,11 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TextArchive.cs" />
+    <Compile Include="TextBankName.cs" />
     <Compile Include="TradeEditor.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Weight.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

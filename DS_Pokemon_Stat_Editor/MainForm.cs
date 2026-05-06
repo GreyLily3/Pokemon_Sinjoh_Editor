@@ -4,14 +4,14 @@ using System.Windows.Forms;
 
 namespace Pokemon_Sinjoh_Editor
 {
-	public partial class MainForm : Form
-	{
-		private const int MOVE_PP_MULTIPLE = 5;
-		private const string SPECIES_TYPE_TOOLTIP_TEXT = "For monotype pokemon set type 1 & 2 to the same type";
-		private const string SPECIES_ABILITY_TOOLTIP_TEXT = "For pokemon with only one ability you can either set ability 1 & 2 to the same ability or set ability 2 to '---'";
-		private const string SPECIES_EGG_GROUP_TOOLTIP_TEXT = "Pokemon can only breed with other pokemon that share an egg group. For pokemon with a single egg group set egg groups 1 & 2 to be the same";
-		private const string SPECIES_WILD_HELD_ITEM_TOOLTIP_TEXT = "The item the pokemon has a chance of holding when encountered in the wild";
-		private const string SPECIES_EV_YIELD_TOOLTIP_TEXT = "What effort values the pokemon will give when defeated. Each pokemon can have a total of 510 EVs across all stats";
+    public partial class MainForm : Form
+    {
+        private const int MOVE_PP_MULTIPLE = 5;
+        private const string SPECIES_TYPE_TOOLTIP_TEXT = "For monotype pokemon set type 1 & 2 to the same type";
+        private const string SPECIES_ABILITY_TOOLTIP_TEXT = "For pokemon with only one ability you can either set ability 1 & 2 to the same ability or set ability 2 to '---'";
+        private const string SPECIES_EGG_GROUP_TOOLTIP_TEXT = "Pokemon can only breed with other pokemon that share an egg group. For pokemon with a single egg group set egg groups 1 & 2 to be the same";
+        private const string SPECIES_WILD_HELD_ITEM_TOOLTIP_TEXT = "The item the pokemon has a chance of holding when encountered in the wild";
+        private const string SPECIES_EV_YIELD_TOOLTIP_TEXT = "What effort values the pokemon will give when defeated. Each pokemon can have a total of 510 EVs across all stats";
 
         private const string ENG_MOVE_TEXT = "Move";
         private const string ENG_SPECIES_TEXT = "Species";
@@ -25,37 +25,32 @@ namespace Pokemon_Sinjoh_Editor
         private const string ENG_TYPE_TEXT = "Type";
         private const string ENG_ABILITY_TEXT = "Ability";
 
-        private Color darkModeBackColor = Color.FromArgb(64, 64, 64);
-        private Color darkModeTextColor = Color.FromArgb(255, 255, 255);
-		private Color lightModeBackColor = SystemColors.Window;
-        private Color lightModeTextColor = SystemColors.WindowText;
-
         public MainForm()
-		{
-			InitializeComponent();
+        {
+            InitializeComponent();
 
-			this.KeyPreview = true;
+            this.KeyPreview = true;
 
-			mainTabControl.Enabled = false;
+            mainTabControl.Enabled = false;
 
-			moveEffectNumericNoArrows.Maximum = Pokemon_Sinjoh_Editor.Move.NUM_EFFECTS;
+            moveEffectNumericNoArrows.Maximum = Pokemon_Sinjoh_Editor.Move.NUM_EFFECTS;
 
-			movePowerTooltip.SetToolTip(movePowerNumericNoArrows, "The base damage of the move. Whether or not this field is used for an attack is determined by the move effect");            
-			moveAccuracyTooltip.SetToolTip(moveAccuracyNumericNoArrows, "The chance of a move working on an enemy/enemies. Moves that target the User or User and Allies ignore this field");
-			movePowerPointsTooltip.SetToolTip(movePPNumericNoArrows, "The base Power Points for a move. Can only be a mutiple of 5, otherwise it breaks PP ups and Max PPs");
-			moveEffectTooltip.SetToolTip(moveEffectNumericNoArrows, "What the move actually does, including whether or not it calculates damage based on its power");
-			moveEffectChanceTooltip.SetToolTip(moveEffectChanceNumericNoArrows, "The chance of the move applying a secondary effect based on the set effect, ie. a status condition, stat change or flinch when using a damaging move");
-			movePriorityTooltip.SetToolTip(movePriorityNumericNoArrows, "The order the move will be used in compared to the opponent's move. NOTE: This field is only checked if certain effects are assigned");
-			moveTargetTooltip.SetToolTip(moveTargetComboBox, "What pokemon in battle the move is used on. NOTE: Moves may cause effects to pokemon other than the target, ex. Swagger confusing the user while targetting another pokemon");
-			
-			moveContactTooltip.SetToolTip(moveContactCheckBox, "If the move counts as making contact for certain abilities and held items, ex. static, rough skin, the poison barb");
-			moveProtectTooltip.SetToolTip(moveProtectCheckBox, "If the move is negated when its target is using protect");
-			moveMagicCoatTooltip.SetToolTip(moveMagicCoatCheckBox, "If the move can be reflected back onto the user by a target using magic coat");
-			moveSnatchTooltip.SetToolTip(moveSnatchCheckBox, "If the move can be stolen by another pokemon using snatch");
-			moveMirrorMoveTooltip.SetToolTip(moveMirrorMoveCheckBox, "If the move can be copied by another pokemon using mirror move on the user");
-			moveMirrorMoveTooltip.SetToolTip(moveKingsRockCheckBox, "If the flinch chance from holding the king's rock will applied when this move is used");
-			moveHPBarTooltip.SetToolTip(moveHPBarCheckBox, "If both pokemons' HP bars are shown when the move's animation is playing");
-			moveShadowTooltip.SetToolTip(moveShadowCheckBox, "If both pokemons' shadows are hidden when the move's animation is playing");
+            movePowerTooltip.SetToolTip(movePowerNumericNoArrows, "The base damage of the move. Whether or not this field is used for an attack is determined by the move effect");
+            moveAccuracyTooltip.SetToolTip(moveAccuracyNumericNoArrows, "The chance of a move working on an enemy/enemies. Moves that target the User or User and Allies ignore this field");
+            movePowerPointsTooltip.SetToolTip(movePPNumericNoArrows, "The base Power Points for a move. Can only be a mutiple of 5, otherwise it breaks PP ups and Max PPs");
+            moveEffectTooltip.SetToolTip(moveEffectNumericNoArrows, "What the move actually does, including whether or not it calculates damage based on its power");
+            moveEffectChanceTooltip.SetToolTip(moveEffectChanceNumericNoArrows, "The chance of the move applying a secondary effect based on the set effect, ie. a status condition, stat change or flinch when using a damaging move");
+            movePriorityTooltip.SetToolTip(movePriorityNumericNoArrows, "The order the move will be used in compared to the opponent's move. NOTE: This field is only checked if certain effects are assigned");
+            moveTargetTooltip.SetToolTip(moveTargetComboBox, "What pokemon in battle the move is used on. NOTE: Moves may cause effects to pokemon other than the target, ex. Swagger confusing the user while targetting another pokemon");
+
+            moveContactTooltip.SetToolTip(moveContactCheckBox, "If the move counts as making contact for certain abilities and held items, ex. static, rough skin, the poison barb");
+            moveProtectTooltip.SetToolTip(moveProtectCheckBox, "If the move is negated when its target is using protect");
+            moveMagicCoatTooltip.SetToolTip(moveMagicCoatCheckBox, "If the move can be reflected back onto the user by a target using magic coat");
+            moveSnatchTooltip.SetToolTip(moveSnatchCheckBox, "If the move can be stolen by another pokemon using snatch");
+            moveMirrorMoveTooltip.SetToolTip(moveMirrorMoveCheckBox, "If the move can be copied by another pokemon using mirror move on the user");
+            moveMirrorMoveTooltip.SetToolTip(moveKingsRockCheckBox, "If the flinch chance from holding the king's rock will applied when this move is used");
+            moveHPBarTooltip.SetToolTip(moveHPBarCheckBox, "If both pokemons' HP bars are shown when the move's animation is playing");
+            moveShadowTooltip.SetToolTip(moveShadowCheckBox, "If both pokemons' shadows are hidden when the move's animation is playing");
 
             speciesTypeTooltip.SetToolTip(speciesType1ComboBox, SPECIES_TYPE_TOOLTIP_TEXT);
             speciesTypeTooltip.SetToolTip(speciesType2ComboBox, SPECIES_TYPE_TOOLTIP_TEXT);
@@ -73,20 +68,20 @@ namespace Pokemon_Sinjoh_Editor
             speciesSafariRunChanceTooltip.SetToolTip(speciesSafariRunChanceNumericNoArrows, "The base chance out of 254 a pokemon will run every turn when encountered in the safari zone/Great Marsh");
             speciesEVYieldTooltip.SetToolTip(speciesEVOnDefeatGroupBox, SPECIES_EV_YIELD_TOOLTIP_TEXT);
 
-			tradeAbilityTooltip.AutomaticDelay = 500;
-			tradeGenderTooltip.AutomaticDelay = 500;
-			tradeNatureTooltip.AutomaticDelay = 500;
+            tradeAbilityTooltip.AutomaticDelay = 500;
+            tradeGenderTooltip.AutomaticDelay = 500;
+            tradeNatureTooltip.AutomaticDelay = 500;
 
-			INIManager.LoadINI();
-			setLanguage();
+            INIManager.LoadINI();
+            setLanguage();
         }
 
-		private void setLanguage()
-		{
-			switch (INIManager.Language)
-			{
-				case Languages.JAPANESE:
-					日本語ToolStripMenuItem.Checked = true;
+        private void setLanguage()
+        {
+            switch (INIManager.Language)
+            {
+                case Languages.JAPANESE:
+                    日本語ToolStripMenuItem.Checked = true;
                     setTextToJapanese();
                     break;
                 case Languages.ENGLISH:
@@ -115,10 +110,10 @@ namespace Pokemon_Sinjoh_Editor
                     break;
 
             }
-		}
+        }
 
-		private void setTextToEnglish()
-		{
+        private void setTextToEnglish()
+        {
             fileToolStripMenuItem.Text = "File";
             optionsToolStripMenuItem.Text = "Options";
             languageToolStripMenuItem.Text = "Language";
@@ -140,7 +135,7 @@ namespace Pokemon_Sinjoh_Editor
             moveEffectChanceLabel.Text = "Effect Chance:";
             movePriorityLabel.Text = "Priority:";
             moveTargetLabel.Text = "Target:";
-			moveContestEffectLabel.Text = "Contest Effect:";
+            moveContestEffectLabel.Text = "Contest Effect:";
             moveContestConditionLabel.Text = "Contest Condition:";
 
             moveContactCheckBox.Text = "Makes Contact";
@@ -149,35 +144,35 @@ namespace Pokemon_Sinjoh_Editor
             moveSnatchCheckBox.Text = "Affected by Snatch";
             moveMirrorMoveCheckBox.Text = "Affected by Mirror Move";
             moveKingsRockCheckBox.Text = "Affected by King's Rock";
-			moveHPBarCheckBox.Text = "Keep HP Bar";
-			moveShadowCheckBox.Text = "Hide Shadow";
+            moveHPBarCheckBox.Text = "Keep HP Bar";
+            moveShadowCheckBox.Text = "Hide Shadow";
 
-			speciesHPLabel.Text = "HP:";
+            speciesHPLabel.Text = "HP:";
             speciesAttackLabel.Text = ENG_ATTACK_TEXT;
             speciesDefenseLabel.Text = "Defense:";
             speciesSpecialAttackLabel.Text = "Special Attack:";
             speciesSpecialDefenseLabel.Text = "Special Defense:";
             speciesSpeedLabel.Text = ENG_SPEED_TEXT;
 
-			speciesHPEVlabel.Text = "HP:";
+            speciesHPEVlabel.Text = "HP:";
             speciesAttackEVLabel.Text = ENG_ATTACK_TEXT;
             speciesDefenseEVLabel.Text = "Defense:";
             speciesSpecialAttackEVLabel.Text = "Special Attack:";
             speciesSpecialDefenseEVLabel.Text = "Special Defense:";
             speciesSpeedEVlabel.Text = ENG_SPEED_TEXT;
 
-			speciesType1Label.Text = ENG_TYPE_TEXT + " 1";
+            speciesType1Label.Text = ENG_TYPE_TEXT + " 1";
             speciesType2Label.Text = ENG_TYPE_TEXT + " 2";
             speciesAbility1Label.Text = ENG_ABILITY_TEXT + " 1";
             speciesAbility2Label.Text = ENG_ABILITY_TEXT + " 2";
-			speciesXPGroupLabel.Text = "Experience Group:";
+            speciesXPGroupLabel.Text = "Experience Group:";
             speciesBaseXPLabel.Text = "Base EXP Yield:";
             speciesHeldItem1Label.Text = "Wild Held Item 1:\r\n(50% chance)\r\n";
             speciesHeldItem2Label.Text = "Wild Held Item 2:\r\n(5% chance)\r\n";
             speciesEggGroup1Label.Text = "Egg Group 1:";
             speciesEggGroup2Label.Text = "Egg Group 2:";
             speciesEggCyclesLabel.Text = "Egg Cycles:";
-			speciesMaleOnlyRadioButton.Text = "Male Only";
+            speciesMaleOnlyRadioButton.Text = "Male Only";
             speciesFemaleOnlyRadioButton.Text = "Female only";
             speciesGenderlessRadioButton.Text = "Genderless";
             speciesMaleAndFemaleRadioButton.Text = "Male && Female";
@@ -188,7 +183,7 @@ namespace Pokemon_Sinjoh_Editor
             speciesLearnableTMsLabel.Text = "Learnable TMs:";
             speciesLearnableHMsLabel.Text = "Learnable HMs:";
 
-			speciesBaseStatsGroupBox.Text = "Base Stats";
+            speciesBaseStatsGroupBox.Text = "Base Stats";
             speciesEVOnDefeatGroupBox.Text = "Effort Yield";
             speciesTypesGroupBox.Text = ENG_TYPE_TEXT + "s";
             speciesAbilitiesGroupBox.Text = "Abilities";
@@ -678,7 +673,7 @@ namespace Pokemon_Sinjoh_Editor
         }
 
         private void setTextToJapanese()
-		{
+        {
             fileToolStripMenuItem.Text = "ファイル";
             optionsToolStripMenuItem.Text = "設定";
             languageToolStripMenuItem.Text = "言語";
@@ -691,22 +686,22 @@ namespace Pokemon_Sinjoh_Editor
             npcTradeTabPage.Text = "交換";
 
             moveSelectedLabel.Text = "わざ";
-			movePowerLabel.Text = "威力";
-			moveAccuracyLabel.Text = "命中率";
-			movePPLabel.Text = "PP";
-			moveTypeLabel.Text = "タイプ";
-			moveCategoryLabel.Text = "分類";
-			moveEffectLabel.Text = "効果";
-			moveEffectChanceLabel.Text = "確率";
+            movePowerLabel.Text = "威力";
+            moveAccuracyLabel.Text = "命中率";
+            movePPLabel.Text = "PP";
+            moveTypeLabel.Text = "タイプ";
+            moveCategoryLabel.Text = "分類";
+            moveEffectLabel.Text = "効果";
+            moveEffectChanceLabel.Text = "確率";
             movePriorityLabel.Text = "優先度";
-			moveTargetLabel.Text = "範囲";
-			moveContestConditionLabel.Text = "コンディション";
+            moveTargetLabel.Text = "範囲";
+            moveContestConditionLabel.Text = "コンディション";
 
-			moveContactCheckBox.Text = "接触";
-			moveProtectCheckBox.Text = "まもる";
-			moveMagicCoatCheckBox.Text = "マジックコート";
-			moveSnatchCheckBox.Text = "よこどり";
-			moveMirrorMoveCheckBox.Text = "オウムがえし";
+            moveContactCheckBox.Text = "接触";
+            moveProtectCheckBox.Text = "まもる";
+            moveMagicCoatCheckBox.Text = "マジックコート";
+            moveSnatchCheckBox.Text = "よこどり";
+            moveMirrorMoveCheckBox.Text = "オウムがえし";
             moveKingsRockCheckBox.Text = "おうじゃのしるし";
 
             speciesHPLabel.Text = "HP";
@@ -899,16 +894,16 @@ namespace Pokemon_Sinjoh_Editor
         }
 
         private void IncludeGameVersionInText(string romName)
-		{
-			Text = "Pokemon Sinjoh Editor - " + romName;
-		}
+        {
+            Text = "Pokemon Sinjoh Editor - " + romName;
+        }
 
-		private void MarkUnsavedChanges()
-		{
-			if (!Text.Contains("*"))
-				Text += '*';
-			RomFile.AreUnsavedChanges = true;
-		}
+        private void MarkUnsavedChanges()
+        {
+            if (!Text.Contains("*"))
+                Text += '*';
+            RomFile.AreUnsavedChanges = true;
+        }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -917,108 +912,110 @@ namespace Pokemon_Sinjoh_Editor
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-			save();
+            save();
         }
 
         private void openRomFileToolStripMenuItem_Click(object sender, EventArgs e)
-		{	
-			DialogResult saveChanges;
-			if (RomFile.IsValidGameVersion() && RomFile.AreUnsavedChanges)
-			{
-				if (RomFile.AreUnsavedChanges)
-				{
-					saveChanges = MessageBox.Show("There are unsaved changes to the selected ROM, do you want to save them before opening a new ROM?", "Save Changes before opening new ROM?", MessageBoxButtons.YesNoCancel);
+        {
+            DialogResult saveChanges;
+            if (RomFile.IsValidGameVersion() && RomFile.AreUnsavedChanges)
+            {
+                if (RomFile.AreUnsavedChanges)
+                {
+                    saveChanges = MessageBox.Show("There are unsaved changes to the selected ROM, do you want to save them before opening a new ROM?", "Save Changes before opening new ROM?", MessageBoxButtons.YesNoCancel);
 
-					if (saveChanges == DialogResult.Yes)
-						save();
-					else if (saveChanges == DialogResult.Cancel)
-						return;
-				}
-			}
+                    if (saveChanges == DialogResult.Yes)
+                        save();
+                    else if (saveChanges == DialogResult.Cancel)
+                        return;
+                }
+            }
 
-			using (OpenFileDialog filePicker = new OpenFileDialog())
-			{
-				filePicker.Filter = "NDS files (*.nds)|*.nds";
-				filePicker.RestoreDirectory = true;
+            using (OpenFileDialog filePicker = new OpenFileDialog())
+            {
+                filePicker.Filter = "NDS files (*.nds)|*.nds";
+                filePicker.RestoreDirectory = true;
 
-				if (filePicker.ShowDialog() == DialogResult.OK)
-				{
-					RomFile.LoadNewRom(filePicker.FileName);
+                if (filePicker.ShowDialog() == DialogResult.OK)
+                {
+                    RomFile.LoadNewRom(filePicker.FileName);
 
-					if (!RomFile.IsValidGameVersion())
-						MessageBox.Show("File selected is not a valid DS pokemon rom. It will not be loaded.");
-					else if (!RomFile.IsSupportedGameVersion())
-						MessageBox.Show("Pokemon Black/White and Black2/White2 roms are not supported due to significant differences in data structures from Gen 4.");
-					else
-					{
-						IncludeGameVersionInText(RomFile.GetGameVersion());
+                    if (!RomFile.IsValidGameVersion())
+                        MessageBox.Show("File selected is not a valid DS pokemon rom. It will not be loaded.");
+                    else if (!RomFile.IsSupportedGameVersion())
+                        MessageBox.Show("Pokemon Black/White and Black2/White2 roms are not supported due to significant differences in data structures from Gen 4.");
+                    else
+                    {
+                        IncludeGameVersionInText(RomFile.GetGameVersion());
                         mainTabControl.Enabled = true;
                         setupMoveText();
                         setupSpeciesText();
                         setupTradeText();
                         setupItemText();
+                        setupPokedexText();
                         UpdateDisplayedMoveValues();
                         UpdateDisplayedSpeciesValues();
                         UpdateDisplayedTradeValues();
                         updateDisplayedItemValues();
+                        UpdateDisplayedPokedexValues();
                     }
-				}                
-			}
+                }
+            }
 
-			if (RomFile.gameFamily == RomFile.GameFamilies.HGSS)
-			{
-				moveContestConditionComboBox.Enabled = false;
-				moveContestEffectComboBox.Enabled = false;
-				moveContestConditionTooltip.SetToolTip(moveContestConditionComboBox, "Unused in HeartGold and SoulSilver");
-				moveContestEffectTooltip.SetToolTip(moveContestEffectComboBox, "Unused in HeartGold and SoulSilver");
-			}
-			else
-			{
-				moveContestConditionComboBox.Enabled = true;
-				moveContestEffectComboBox.Enabled = true;
-				moveContestConditionTooltip.SetToolTip(moveContestConditionComboBox, "Determines what contest type the move will score best in when used");
-				moveContestEffectTooltip.SetToolTip(moveContestEffectComboBox, "What a move will do when used in contests");
-			}
-		}
+            if (RomFile.gameFamily == RomFile.GameFamilies.HGSS)
+            {
+                moveContestConditionComboBox.Enabled = false;
+                moveContestEffectComboBox.Enabled = false;
+                moveContestConditionTooltip.SetToolTip(moveContestConditionComboBox, "Unused in HeartGold and SoulSilver");
+                moveContestEffectTooltip.SetToolTip(moveContestEffectComboBox, "Unused in HeartGold and SoulSilver");
+            }
+            else
+            {
+                moveContestConditionComboBox.Enabled = true;
+                moveContestEffectComboBox.Enabled = true;
+                moveContestConditionTooltip.SetToolTip(moveContestConditionComboBox, "Determines what contest type the move will score best in when used");
+                moveContestEffectTooltip.SetToolTip(moveContestEffectComboBox, "What a move will do when used in contests");
+            }
+        }
 
-		private void save()
-		{
-			if (RomFile.IsValidGameVersion() && RomFile.AreUnsavedChanges)
-			{
-				try
-				{
-					RomFile.Write();
-					Text = Text.Remove(Text.Length - 1); //remove the * indicating unsaved changes
-				}
-				catch (Exception exception)
-				{
-					MessageBox.Show(exception.ToString());
-				}
-			}
-		}
+        private void save()
+        {
+            if (RomFile.IsValidGameVersion() && RomFile.AreUnsavedChanges)
+            {
+                try
+                {
+                    RomFile.Write();
+                    Text = Text.Remove(Text.Length - 1); //remove the * indicating unsaved changes
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.ToString());
+                }
+            }
+        }
 
-		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-		{
-			DialogResult saveChanges;
-			if (RomFile.AreUnsavedChanges)
-			{
-				saveChanges = MessageBox.Show("There are unsaved changes to the selected ROM, do you want to save them before closing?", "Save Changes before Closing?", MessageBoxButtons.YesNoCancel);
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult saveChanges;
+            if (RomFile.AreUnsavedChanges)
+            {
+                saveChanges = MessageBox.Show("There are unsaved changes to the selected ROM, do you want to save them before closing?", "Save Changes before Closing?", MessageBoxButtons.YesNoCancel);
 
-				if (saveChanges == DialogResult.Yes)
-					save();
-				else if (saveChanges == DialogResult.Cancel)
-					e.Cancel = true;
-			}
-		}
+                if (saveChanges == DialogResult.Yes)
+                    save();
+                else if (saveChanges == DialogResult.Cancel)
+                    e.Cancel = true;
+            }
+        }
 
         private void tradeAbilityTextBox_MouseHover(object sender, EventArgs e)
         {
-			tradeAbilityTooltip.Show("If the personality value is odd, the pokemon will have it's first ability. If it's even, the pokemon will have it's second ability (if it has one)", tradeAbilityTextBox);
+            tradeAbilityTooltip.Show("If the personality value is odd, the pokemon will have it's first ability. If it's even, the pokemon will have it's second ability (if it has one)", tradeAbilityTextBox);
         }
 
         private void tradeGenderTextBox_MouseHover(object sender, EventArgs e)
         {
-			tradeGenderTooltip.Show("If the personality value % 256 is greater than the pokemon's gender ratio it will be male, unless the pokemon is gender unknown", tradeGenderTextBox);
+            tradeGenderTooltip.Show("If the personality value % 256 is greater than the pokemon's gender ratio it will be male, unless the pokemon is gender unknown", tradeGenderTextBox);
         }
 
         private void tradeNatureTextBox_MouseHover(object sender, EventArgs e)
@@ -1055,8 +1052,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (INIManager.Language != Languages.ENGLISH)
             {
-				englishToolStripMenuItem.Checked = true;
-				setTextToEnglish();
+                englishToolStripMenuItem.Checked = true;
+                setTextToEnglish();
                 INIManager.Language = Languages.ENGLISH;
                 INIManager.SaveINI();
 
@@ -1071,10 +1068,10 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
-		private void españolToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			if (INIManager.Language != Languages.SPANISH)
-			{
+        private void españolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (INIManager.Language != Languages.SPANISH)
+            {
                 españolToolStripMenuItem.Checked = true;
                 setTextToSpanish();
                 INIManager.Language = Languages.SPANISH;
@@ -1089,12 +1086,12 @@ namespace Pokemon_Sinjoh_Editor
 
                 switchComboBoxesTextLanguage();
             }
-		}
+        }
 
         private void françaisToolStripMenuItem_Click(object sender, EventArgs e)
         {
-			if (INIManager.Language != Languages.FRENCH)
-			{
+            if (INIManager.Language != Languages.FRENCH)
+            {
                 françaisToolStripMenuItem.Checked = true;
                 setTextToFrench();
                 INIManager.Language = Languages.FRENCH;
@@ -1111,10 +1108,10 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
-		private void deutschToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			if (INIManager.Language != Languages.GERMAN)
-			{
+        private void deutschToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (INIManager.Language != Languages.GERMAN)
+            {
                 deutschToolStripMenuItem.Checked = true;
                 setTextToGerman();
                 INIManager.Language = Languages.GERMAN;
@@ -1129,12 +1126,12 @@ namespace Pokemon_Sinjoh_Editor
 
                 switchComboBoxesTextLanguage();
             }
-		}
+        }
 
-		private void italianoToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			if (INIManager.Language != Languages.ITALIAN)
-			{
+        private void italianoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (INIManager.Language != Languages.ITALIAN)
+            {
                 italianoToolStripMenuItem.Checked = true;
                 setTextToItalian();
                 INIManager.Language = Languages.ITALIAN;
@@ -1149,14 +1146,14 @@ namespace Pokemon_Sinjoh_Editor
 
                 switchComboBoxesTextLanguage();
             }
-		}
+        }
 
         private void 日本語ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (INIManager.Language != Languages.JAPANESE)
             {
                 日本語ToolStripMenuItem.Checked = true;
-				setTextToJapanese();
+                setTextToJapanese();
                 INIManager.Language = Languages.JAPANESE;
                 INIManager.SaveINI();
 
@@ -1190,5 +1187,203 @@ namespace Pokemon_Sinjoh_Editor
                 switchComboBoxesTextLanguage();
             }
         }
+
+        /*
+        private void moveEffectNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void movePriorityNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moveEffectChanceNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void movePPNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moveAccuracyNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void movePowerNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesCatchRateNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesHappinessNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesSafariRunChanceNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesBaseXPYieldNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesSpeedEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesSpecialDefenseEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesSpecialAttackEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesDefenseEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesAttackEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesHPEVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesEggCyclesNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesGenderRatioNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesHPNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesAttackNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesDefenseNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesSpeedNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesSpecialAttackNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void speciesSpecialDefenseNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeHPIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeSpeedIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeSpecialDefenseIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeAttackIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeSpecialAttackIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeDefenseIVsNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeSheenNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeCoolNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeToughNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeBeautyNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeSmartNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeCuteNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradePVNumericNoArrows_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradePVNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tradeOriginalTrainerIDNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        */
     }
 }

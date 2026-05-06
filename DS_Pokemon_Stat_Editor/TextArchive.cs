@@ -11,6 +11,13 @@ namespace Pokemon_Sinjoh_Editor
 {
     internal class TextArchive
     {
+        //stores text bank indices for all indo-european languages
+        public Dictionary<(RomFile.GameFamilies, TextBankName), int> TextBankIndexIndoEuro = new Dictionary<(RomFile.GameFamilies, TextBankName), int>();
+        public Dictionary<(RomFile.GameFamilies, TextBankName), int> TextBankIndexJapanese = new Dictionary<(RomFile.GameFamilies, TextBankName), int>();
+        public Dictionary<(RomFile.GameFamilies, TextBankName), int> TextBankIndexKorean = new Dictionary<(RomFile.GameFamilies, TextBankName), int>();
+
+        public const int INVALIDTEXTBANKINDEX = -1;
+
         //code modified from https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor/blob/main/DS_Map/MessageEnc/EncryptText.cs
         public List<string>[] TextBanks { get; private set; } //each bank stores similar text together
         private List<int> initialTextBankKeys = new List<int>();
@@ -9781,7 +9788,186 @@ namespace Pokemon_Sinjoh_Editor
 
             }
 
-            
+            #region TextBankDictionaryEntries
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP, TextBankName.MOVES), 589);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL, TextBankName.MOVES), 648);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS, TextBankName.MOVES), 751);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.MOVES), 575);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.MOVES), 636);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.MOVES), 739);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.MOVES), 577);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.MOVES), 637);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.MOVES), 743);
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP, TextBankName.MOVEDESCRIPTIONS), 587);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL, TextBankName.MOVEDESCRIPTIONS), 646);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS, TextBankName.MOVEDESCRIPTIONS), 749);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.MOVEDESCRIPTIONS), 573);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.MOVEDESCRIPTIONS), 634);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.MOVEDESCRIPTIONS), 738);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.MOVEDESCRIPTIONS), 575);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.MOVEDESCRIPTIONS), 635);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.MOVEDESCRIPTIONS), 741);
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.POKEMON), 362);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.POKEMON), 412);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.POKEMON), 237);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.POKEMON), 356);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.POKEMON), 408);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEMON), 232);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.POKEMON), 357);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.POKEMON), 408);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEMON), 233);
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.POKEDEXCATEGORIES), 214);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.POKEDEXCATEGORIES), 711); //also 718
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.POKEDEXCATEGORIES), 816); //also 823
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.POKEDEXCATEGORIES), 356); //needs updating
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.POKEDEXCATEGORIES), 408); //needs updating
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEDEXCATEGORIES), 232); //needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.POKEDEXCATEGORIES), 357); //needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.POKEDEXCATEGORIES), 408); //needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEDEXCATEGORIES), 233); //needs updating
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.TYPES), 565);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.TYPES), 624);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.TYPES), 735);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.TYPES), 555);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.TYPES), 616);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.TYPES), 724);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.TYPES), 557);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.TYPES), 617);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.TYPES), 728);
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.ABILITIES), 553);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.ABILITIES), 611);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.ABILITIES), 721);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.ABILITIES), 544);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.ABILITIES), 604);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.ABILITIES), 711);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.ABILITIES), 546);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.ABILITIES), 605);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.ABILITIES), 715);
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.ITEMS), 344);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.ITEMS), 392);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.ITEMS), 222);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.ITEMS), 341);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.ITEMS), 390);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.ITEMS), 219);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.ITEMS), 342);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.ITEMS), 390);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.ITEMS), 220);
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.TRADES), 326);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.TRADES), 370);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.TRADES), 200);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.TRADES), 324);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.TRADES), 369);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.TRADES), 198);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.TRADES), 325);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.TRADES), 369);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.TRADES), 199);
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.NATURES), 190);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.NATURES), 202);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.NATURES), 34);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.NATURES), 189);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.NATURES), 201);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.NATURES), 33);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.NATURES), 189);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.NATURES), 201);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.NATURES), 33);
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.POKEDEXMISC), 614);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.POKEDEXMISC), 697);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.POKEDEXMISC), 802);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.POKEDEXMISC), 600);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.POKEDEXMISC), 685);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEDEXMISC), 790);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.POKEDEXMISC), 602);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.POKEDEXMISC), 687);
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEDEXMISC), 795);
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.POKEDEXDESCRIPTIONS), 615); //616 is pearl's
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.POKEDEXDESCRIPTIONS), 706);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.POKEDEXDESCRIPTIONS), 803);
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.POKEDEXDESCRIPTIONS), 600); //needs updating
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.POKEDEXDESCRIPTIONS), 685); //needs updating
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEDEXDESCRIPTIONS), 790); //needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.POKEDEXDESCRIPTIONS), 602); //needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.POKEDEXDESCRIPTIONS), 687); //needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEDEXDESCRIPTIONS), 795); //needs updating
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.POKEMONWEIGHTS), 619);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.POKEMONWEIGHTS), 707); //also 708
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.POKEMONWEIGHTS), 813); //also 812
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.POKEMONWEIGHTS), 600);//needs updating
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.POKEMONWEIGHTS), 685);//needs updating
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEMONWEIGHTS), 790);//needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.POKEMONWEIGHTS), 602);//needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.POKEMONWEIGHTS), 687);//needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEMONWEIGHTS), 795);//needs updating
+
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.POKEMONHEIGHTS), 620);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.POKEMONHEIGHTS), 709);//also 710
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.POKEMONHEIGHTS), 815); //also 814
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.POKEMONHEIGHTS), 600);//needs updating
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.PL, TextBankName.POKEMONHEIGHTS), 685);//needs updating
+            TextBankIndexJapanese.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEMONHEIGHTS), 790);//needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.DP, TextBankName.POKEMONHEIGHTS), 602);//needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.POKEMONHEIGHTS), 687);//needs updating
+            TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEMONHEIGHTS), 795);//needs updating
+            #endregion
+        }
+
+        public bool TryGetTextBankIndex(RomFile.GameFamilies gameFamily, Languages lang, TextBankName textBankName, out int textBankIndex)
+        {
+            switch (lang)
+            {
+                case Languages.ENGLISH:
+                case Languages.FRENCH:
+                case Languages.GERMAN:
+                case Languages.ITALIAN:
+                case Languages.SPANISH:
+                    if (TextBankIndexIndoEuro.ContainsKey((gameFamily, textBankName)))
+                    {
+                        textBankIndex = TextBankIndexIndoEuro[(gameFamily, textBankName)];
+                        return true;
+                    }
+                    else
+                    {
+                        textBankIndex = INVALIDTEXTBANKINDEX;
+                        return false;
+                    }
+                       
+                case Languages.JAPANESE:
+                    if (TextBankIndexJapanese.ContainsKey((gameFamily, textBankName)))
+                    {
+                        textBankIndex = TextBankIndexIndoEuro[(gameFamily, textBankName)];
+                        return true;
+                    }
+                    else
+                    {
+                        textBankIndex = INVALIDTEXTBANKINDEX;
+                        return false;
+                    }
+                case Languages.KOREAN:
+                    if (TextBankIndexJapanese.ContainsKey((gameFamily, textBankName)))
+                    {
+                        textBankIndex = TextBankIndexKorean[(gameFamily, textBankName)];
+                        return true;
+                    }
+                    else
+                    {
+                        textBankIndex = INVALIDTEXTBANKINDEX;
+                        return false;
+                    }
+                default:
+                    textBankIndex = INVALIDTEXTBANKINDEX;
+                    return false;
+            }
+                
         }
 
         public static string DecodeMessage(BinaryReader reader, int key, int offset, int size, bool isKorean)

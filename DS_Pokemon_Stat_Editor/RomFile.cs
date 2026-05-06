@@ -12,6 +12,7 @@ namespace Pokemon_Sinjoh_Editor
 		private static NarcFile npcTradesNarc;
 		private static NarcFile gameTextNarc;
         private static NarcFile itemsNarc;
+        private static NarcFile pokedexNarc;
 		private static TextArchive gameText;
         public static Languages Language;
 		private static GameVersions GameVersion;
@@ -23,9 +24,13 @@ namespace Pokemon_Sinjoh_Editor
         public static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
 		public static List<NPCTrade> NPCTradesList = new List<NPCTrade>();
         public static List<Item> ItemList = new List<Item>();
+        public static List<Height> HeightList = new List<Height>();
+        public static List<Weight> WeightList = new List<Weight>();
 
-		public static List<string> MoveNames { get; private set; }
+        public static List<string> MoveNames { get; private set; }
         public static List<string> MoveDescriptions { get; private set; }
+        public static List<string> PokedexCategoryNames { get; private set; }
+        public static List<string> PokedexDescriptions { get; private set; }
         public static List<string> PokemonNames { get; private set; }
 		public static List<string> TypeNames { get; private set; }
 		public static List<string> AbilityNames { get; private set; }
@@ -46,95 +51,8 @@ namespace Pokemon_Sinjoh_Editor
 		private const int FAT_POINTER_OFFSET = 0x48;
         private const int LANGUAGE_GAME_CODE_OFFSET = 0xF;
 
-        private const int MOVES_TEXT_BANK_DP = 589;
-        private const int MOVES_TEXT_BANK_PL = 648;
-        private const int MOVES_TEXT_BANK_HGSS = 751;
-        private const int JAP_MOVES_TEXT_BANK_DP = 575;
-        private const int JAP_MOVES_TEXT_BANK_PL = 636;
-        private const int JAP_MOVES_TEXT_BANK_HGSS = 739;
-        private const int KOR_MOVES_TEXT_BANK_HGSS = 743;
-        private const int KOR_MOVES_TEXT_BANK_PL = 637;
-        private const int KOR_MOVES_TEXT_BANK_DP = 577;
 
-        private const int MOVES_DESCRIPTION_TEXT_BANK_DP = 587;
-        private const int MOVES_DESCRIPTION_TEXT_BANK_PL = 646;
-        private const int MOVES_DESCRIPTION_TEXT_BANK_HGSS = 749;
-        private const int JAP_MOVES_DESCRIPTION_TEXT_BANK_DP = 573;
-        private const int JAP_MOVES_DESCRIPTION_TEXT_BANK_PL = 634;
-        private const int JAP_MOVES_DESCRIPTION_TEXT_BANK_HGSS = 738;
-        private const int KOR_MOVES_DESCRIPTION_TEXT_BANK_DP = 575;
-        private const int KOR_MOVES_DESCRIPTION_TEXT_BANK_PL = 635;
-        private const int KOR_MOVES_DESCRIPTION_TEXT_BANK_HGSS = 741;
 
-        private const int POKEMON_NAMES_TEXT_BANK_DP = 362;
-        private const int POKEMON_NAMES_TEXT_BANK_PL = 412;
-        private const int POKEMON_NAMES_TEXT_BANK_HGSS = 237;
-        private const int JAP_POKEMON_NAMES_TEXT_BANK_DP = 356;
-        private const int JAP_POKEMON_NAMES_TEXT_BANK_PL = 408;
-        private const int JAP_POKEMON_NAMES_TEXT_BANK_HGSS = 232;
-        private const int KOR_POKEMON_NAMES_TEXT_BANK_HGSS = 233;
-        private const int KOR_POKEMON_NAMES_TEXT_BANK_PL = 408;
-        private const int KOR_POKEMON_NAMES_TEXT_BANK_DP = 357;
-
-        private const int TYPES_TEXT_BANK_DP = 565;
-        private const int TYPES_TEXT_BANK_PL = 624;
-        private const int TYPES_TEXT_BANK_HGSS = 735;
-        private const int JAP_TYPES_TEXT_BANK_DP = 555;
-        private const int JAP_TYPES_TEXT_BANK_PL = 616;
-        private const int JAP_TYPES_TEXT_BANK_HGSS = 724;
-        private const int KOR_TYPES_TEXT_BANK_HGSS = 728;
-        private const int KOR_TYPES_TEXT_BANK_PL = 617;
-        private const int KOR_TYPES_TEXT_BANK_DP = 557;
-
-        private const int ABILITY_NAMES_TEXT_BANK_DP = 553;
-        private const int ABILITY_NAMES_TEXT_BANK_PL = 611;
-        private const int ABILITY_NAMES_TEXT_BANK_HGSS = 721;
-        private const int JAP_ABILITY_NAMES_TEXT_BANK_DP = 544;
-        private const int JAP_ABILITY_NAMES_TEXT_BANK_PL = 604;
-        private const int JAP_ABILITY_NAMES_TEXT_BANK_HGSS = 711;
-        private const int KOR_ABILITY_NAMES_TEXT_BANK_HGSS = 715;
-        private const int KOR_ABILITY_NAMES_TEXT_BANK_PL = 605;
-        private const int KOR_ABILITY_NAMES_TEXT_BANK_DP = 546;
-
-        private const int ITEM_NAMES_TEXT_BANK_DP = 344;
-        private const int ITEM_NAMES_TEXT_BANK_PL = 392;
-        private const int ITEM_NAMES_TEXT_BANK_HGSS = 222;
-        private const int JAP_ITEM_NAMES_TEXT_BANK_DP = 341;
-        private const int JAP_ITEM_NAMES_TEXT_BANK_PL = 390;
-        private const int JAP_ITEM_NAMES_TEXT_BANK_HGSS = 219;
-        private const int KOR_ITEM_NAMES_TEXT_BANK_HGSS = 220;
-        private const int KOR_ITEM_NAMES_TEXT_BANK_PL = 390;
-        private const int KOR_ITEM_NAMES_TEXT_BANK_DP = 342;
-
-        private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP = 326;
-        private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL = 370;
-        private const int TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS = 200;
-        private const int JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP = 324;
-        private const int JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL = 369;
-        private const int JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS = 198;
-        private const int KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS = 199;
-        private const int KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL = 369;
-        private const int KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP = 325;
-
-        private const int POKEDEX_TEXT_BANK_DP = 614;
-        private const int POKEDEX_TEXT_BANK_PL = 697;
-        private const int POKEDEX_TEXT_BANK_HGSS = 802;
-        private const int JAP_POKEDEX_TEXT_BANK_DP = 600;
-        private const int JAP_POKEDEX_TEXT_BANK_PL = 685;
-        private const int JAP_POKEDEX_TEXT_BANK_HGSS = 790;
-        private const int KOR_POKEDEX_TEXT_BANK_HGSS = 795;
-        private const int KOR_POKEDEX_TEXT_BANK_PL = 687;
-        private const int KOR_POKEDEX_TEXT_BANK_DP = 602;
-
-        private const int NATURE_TEXT_BANK_DP = 190;
-        private const int NATURE_TEXT_BANK_PL = 202;
-        private const int NATURE_TEXT_BANK_HGSS = 34;
-        private const int JAP_NATURE_TEXT_BANK_DP = 189;
-        private const int JAP_NATURE_TEXT_BANK_PL = 201;
-        private const int JAP_NATURE_TEXT_BANK_HGSS = 33;
-        private const int KOR_NATURE_TEXT_BANK_HGSS = 33;
-        private const int KOR_NATURE_TEXT_BANK_PL = 201;
-        private const int KOR_NATURE_TEXT_BANK_DP = 189;
 
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_DP = 111;
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_PL = 112;
@@ -195,6 +113,8 @@ namespace Pokemon_Sinjoh_Editor
         private const int KOR_POKEMON_SPECIES_NARC_ID_PL = 0x18B;
         private const int KOR_POKEMON_SPECIES_NARC_ID_D = 0x132;
         private const int KOR_POKEMON_SPECIES_NARC_ID_P = 0x134;
+
+        private const int POKEDEX_NARC_ID_HGSS = 0x157;
 
         private const int NPC_TRADES_NARC_ID_DP = 0x10E;
         private const int NPC_TRADES_NARC_ID_PL = 0x150;
@@ -355,7 +275,10 @@ namespace Pokemon_Sinjoh_Editor
 			pokemonSpeciesNarc = new NarcFile(getSpeciesNarcOffset());
 			pokemonSpeciesNarc.Read(romFileReader);
 
-			npcTradesNarc = new NarcFile(getNPCTradesNarcOffset());
+            pokedexNarc = new NarcFile(getPokedexNarcOffset());
+            pokedexNarc.Read(romFileReader);
+
+            npcTradesNarc = new NarcFile(getNPCTradesNarcOffset());
 			npcTradesNarc.Read(romFileReader);
 
             itemsNarc = new NarcFile(getItemsNarcOffset());
@@ -366,34 +289,10 @@ namespace Pokemon_Sinjoh_Editor
 			
             gameText = new TextArchive(gameTextNarc, Language == Languages.KOREAN);
 
-            MoveNames = gameText.TextBanks[getMoveNameTextBankID()];
-			MoveNames.RemoveAt(0); //remove the first entry because it's a placeholder
-
-            MoveDescriptions = gameText.TextBanks[getMoveDescriptionTextBankID()];
-            MoveDescriptions.RemoveAt(0); //remove the first entry because it's a placeholder
-
-            PokemonNames = gameText.TextBanks[getPokemonNamesTextBankID()];
-			PokemonNames.RemoveAt(0); //remove the first entry because it's a placeholder
-
-			TypeNames = gameText.TextBanks[getTypeNamesTextBankID()];
-			ItemNames = gameText.TextBanks[getItemNamesTextBankID()];
-			AbilityNames = gameText.TextBanks[getAbilityNamesTextBankID()];
-			PokedexText = gameText.TextBanks[getPokedexTextBankID()];
-            NatureNames = gameText.TextBanks[getNatureTextBankID()];
-
-            TradePokemonNicknames.Clear();
-            TradePokemonTrainerNames.Clear();
-
-            for (int i = 0; i < npcTradesNarc.Elements.Count; i++)
-                TradePokemonNicknames.Add(gameText.TextBanks[getTradePokemonNicknamesAndTrainerNamesTextBankID()][i]);
-
-            //multiply count by 2 because there is a trainer name for pokemon nickname
-            for (int i = npcTradesNarc.Elements.Count; i < npcTradesNarc.Elements.Count * 2; i++)
-                TradePokemonTrainerNames.Add(gameText.TextBanks[getTradePokemonNicknamesAndTrainerNamesTextBankID()][i]);
-
+            SetupTextArrays();
 
             MoveList.Clear();
-			PokemonSpeciesList.Clear();
+            PokemonSpeciesList.Clear();
             NPCTradesList.Clear();
 
             //skip the first move because it's a placeholder
@@ -410,6 +309,16 @@ namespace Pokemon_Sinjoh_Editor
 
 			for (int i = 0; i < itemsNarc.Elements.Count; i++)
                 ItemList.Add(new Item(itemsNarc.Elements[i]));
+
+            using (BinaryReader pokedexHeightReader = new BinaryReader(pokedexNarc.Elements[0]))
+            {
+                for (int i = 0; i < pokedexNarc.Elements[0].Length; i += 4)
+                {
+                    HeightList.Add(new Height(pokedexHeightReader.ReadUInt32()));
+                }
+            }
+
+            
         }
 
 		private static void readHeader(BinaryReader romFileReader)
@@ -467,6 +376,66 @@ namespace Pokemon_Sinjoh_Editor
 			}
 			
 		}
+
+        private static void SetupTextArrays()
+        {
+            int textBankIndex;
+            List<string> tradesTextBank;
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.MOVES, out textBankIndex))
+                MoveNames = setupTextListWithPlaceholder(textBankIndex);
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.MOVEDESCRIPTIONS, out textBankIndex))
+                MoveDescriptions = setupTextListWithPlaceholder(textBankIndex);
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.POKEMON, out textBankIndex))
+                PokemonNames = setupTextListWithPlaceholder(textBankIndex);
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.POKEDEXCATEGORIES, out textBankIndex))
+                PokedexCategoryNames = setupTextListWithPlaceholder(textBankIndex);
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.POKEDEXDESCRIPTIONS, out textBankIndex))
+                PokedexDescriptions = setupTextListWithPlaceholder(textBankIndex);
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.TYPES, out textBankIndex))
+                TypeNames = gameText.TextBanks[textBankIndex];
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.ITEMS, out textBankIndex))
+                ItemNames = gameText.TextBanks[textBankIndex];
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.ABILITIES, out textBankIndex))
+                AbilityNames = gameText.TextBanks[textBankIndex];
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.POKEDEXMISC, out textBankIndex))
+                PokedexText = gameText.TextBanks[textBankIndex];
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.NATURES, out textBankIndex))
+                NatureNames = gameText.TextBanks[textBankIndex];
+
+            TradePokemonNicknames.Clear();
+            TradePokemonTrainerNames.Clear();
+
+            if (gameText.TryGetTextBankIndex(gameFamily, Language, TextBankName.TRADES, out textBankIndex))
+            {
+                tradesTextBank = gameText.TextBanks[textBankIndex];
+                for (int i = 0; i < npcTradesNarc.Elements.Count; i++)
+                    TradePokemonNicknames.Add(tradesTextBank[i]);
+
+                //multiply count by 2 because there is a trainer name for each pokemon nickname at the start of the text bank
+                for (int i = npcTradesNarc.Elements.Count; i < npcTradesNarc.Elements.Count * 2; i++)
+                    TradePokemonTrainerNames.Add(tradesTextBank[i]);
+            }
+                
+        }
+
+        private static List<string> setupTextListWithPlaceholder(int textBankIndex)
+        {
+            List<string> textList;
+
+            textList = gameText.TextBanks[textBankIndex];
+            textList.RemoveAt(0);
+            return textList;
+        }
 
 		private static uint getMovesNarcOffset()
 		{
@@ -543,6 +512,40 @@ namespace Pokemon_Sinjoh_Editor
             }
             
 		}
+
+        private static uint getPokedexNarcOffset()
+        {
+            if (Language == Languages.JAPANESE)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(NPC_TRADES_NARC_ID_DP), //needs updated
+                    GameFamilies.PL => fat.GetStartOffset(JAP_NPC_TRADES_NARC_ID_PL), //needs updated
+                    GameFamilies.HGSS => fat.GetStartOffset(JAP_NPC_TRADES_NARC_ID_HGSS), //needs updated
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KOR_NPC_TRADES_NARC_ID_DP), //needs updated
+                    GameFamilies.PL => fat.GetStartOffset(KOR_NPC_TRADES_NARC_ID_PL), //needs updated
+                    GameFamilies.HGSS => fat.GetStartOffset(NPC_TRADES_NARC_ID_HGSS), //needs updated
+                    _ => 0
+                };
+            }
+            else
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(NPC_TRADES_NARC_ID_DP), //needs updated
+                    GameFamilies.PL => fat.GetStartOffset(NPC_TRADES_NARC_ID_PL), //needs updated
+                    GameFamilies.HGSS => fat.GetStartOffset(POKEDEX_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
+        }
 
 		private static uint getNPCTradesNarcOffset()
 		{
@@ -646,276 +649,6 @@ namespace Pokemon_Sinjoh_Editor
             }
                 
 		}
-
-		private static int getMoveNameTextBankID()
-		{
-            switch (gameFamily)
-            {
-                case GameFamilies.DP:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_MOVES_TEXT_BANK_DP;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_MOVES_TEXT_BANK_DP;
-                    else
-                        return MOVES_TEXT_BANK_DP;
-                case GameFamilies.PL:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_MOVES_TEXT_BANK_PL;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_MOVES_TEXT_BANK_PL;
-                    else
-                        return MOVES_TEXT_BANK_PL;
-                case GameFamilies.HGSS:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_MOVES_TEXT_BANK_HGSS;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_MOVES_TEXT_BANK_HGSS;
-                    else
-                        return MOVES_TEXT_BANK_HGSS;
-                default:
-                    return -1;
-            }
-		}
-
-        private static int getMoveDescriptionTextBankID()
-        {
-            switch (gameFamily)
-            {
-                case GameFamilies.DP:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_MOVES_DESCRIPTION_TEXT_BANK_DP;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_MOVES_DESCRIPTION_TEXT_BANK_DP;
-                    else
-                        return MOVES_TEXT_BANK_DP;
-                case GameFamilies.PL:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_MOVES_DESCRIPTION_TEXT_BANK_PL;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_MOVES_DESCRIPTION_TEXT_BANK_PL;
-                    else
-                        return MOVES_TEXT_BANK_PL;
-                case GameFamilies.HGSS:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_MOVES_DESCRIPTION_TEXT_BANK_HGSS;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_MOVES_DESCRIPTION_TEXT_BANK_HGSS;
-                    else
-                        return MOVES_DESCRIPTION_TEXT_BANK_HGSS;
-                default:
-                    return -1;
-            }
-        }
-
-        private static int getTypeNamesTextBankID()
-		{
-            switch (gameFamily)
-            {
-                case GameFamilies.DP:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_TYPES_TEXT_BANK_DP;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_TYPES_TEXT_BANK_DP;
-                    else
-                        return TYPES_TEXT_BANK_DP;
-                case GameFamilies.PL:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_TYPES_TEXT_BANK_PL;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_TYPES_TEXT_BANK_PL;
-                    else
-                        return TYPES_TEXT_BANK_PL;
-                case GameFamilies.HGSS:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_TYPES_TEXT_BANK_HGSS;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_TYPES_TEXT_BANK_HGSS;
-                    else
-                        return TYPES_TEXT_BANK_HGSS;
-                default:
-                    return -1;
-            }
-		}
-
-		private static int getPokemonNamesTextBankID()
-		{
-            switch (gameFamily)
-            {
-                case GameFamilies.DP:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_POKEMON_NAMES_TEXT_BANK_DP;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_POKEMON_NAMES_TEXT_BANK_DP;
-                    else
-                        return POKEMON_NAMES_TEXT_BANK_DP;
-                case GameFamilies.PL:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_POKEMON_NAMES_TEXT_BANK_PL;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_POKEMON_NAMES_TEXT_BANK_PL;
-                    else
-                        return POKEMON_NAMES_TEXT_BANK_PL;
-                case GameFamilies.HGSS:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_POKEMON_NAMES_TEXT_BANK_HGSS;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_POKEMON_NAMES_TEXT_BANK_HGSS;
-                    else
-                        return POKEMON_NAMES_TEXT_BANK_HGSS;
-                default:
-                    return -1;
-            }
-		}
-
-		private static int getItemNamesTextBankID()
-		{
-            switch (gameFamily)
-            {
-                case GameFamilies.DP:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_ITEM_NAMES_TEXT_BANK_DP;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_ITEM_NAMES_TEXT_BANK_DP;
-                    else
-                        return ITEM_NAMES_TEXT_BANK_DP;
-                case GameFamilies.PL:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_ITEM_NAMES_TEXT_BANK_PL;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_ITEM_NAMES_TEXT_BANK_PL;
-                    else
-                        return ITEM_NAMES_TEXT_BANK_PL;
-                case GameFamilies.HGSS:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_ITEM_NAMES_TEXT_BANK_HGSS;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_ITEM_NAMES_TEXT_BANK_HGSS;
-                    else
-                        return ITEM_NAMES_TEXT_BANK_HGSS;
-                default:
-                    return -1;
-            }
-		}
-
-		private static int getAbilityNamesTextBankID()
-		{
-            switch (gameFamily)
-            {
-                case GameFamilies.DP:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_ABILITY_NAMES_TEXT_BANK_DP;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_ABILITY_NAMES_TEXT_BANK_DP;
-                    else
-                        return ABILITY_NAMES_TEXT_BANK_DP;
-                case GameFamilies.PL:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_ABILITY_NAMES_TEXT_BANK_PL;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_ABILITY_NAMES_TEXT_BANK_PL;
-                    else
-                        return ABILITY_NAMES_TEXT_BANK_PL;
-                case GameFamilies.HGSS:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_ABILITY_NAMES_TEXT_BANK_HGSS;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_ABILITY_NAMES_TEXT_BANK_HGSS;
-                    else
-                        return ABILITY_NAMES_TEXT_BANK_HGSS;
-                default:
-                    return -1;
-            }
-		}
-
-		private static int getTradePokemonNicknamesAndTrainerNamesTextBankID()
-		{
-            switch (gameFamily)
-            {
-                case GameFamilies.DP:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP;
-                    else
-                        return TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_DP;
-                case GameFamilies.PL:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL;
-                    else
-                        return TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_PL;
-                case GameFamilies.HGSS:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS;
-                    else
-                        return TRADE_POKEMON_NICKNAME_AND_TRAINER_TEXT_BANK_HGSS;
-                default:
-                    return -1;
-            }
-        }
-
-		private static int getPokedexTextBankID()
-		{
-            switch (gameFamily)
-            {
-                case GameFamilies.DP:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_POKEDEX_TEXT_BANK_DP;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_POKEDEX_TEXT_BANK_DP;
-                    else
-                        return POKEDEX_TEXT_BANK_DP;
-                case GameFamilies.PL:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_POKEDEX_TEXT_BANK_PL;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_POKEDEX_TEXT_BANK_PL;
-                    else
-                        return POKEDEX_TEXT_BANK_PL;
-                case GameFamilies.HGSS:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_POKEDEX_TEXT_BANK_HGSS;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_POKEDEX_TEXT_BANK_HGSS;
-                    else
-                        return POKEDEX_TEXT_BANK_HGSS;
-                default:
-                    return -1;
-            }
-        }
-
-        private static int getNatureTextBankID()
-        {
-            switch (gameFamily)
-            {
-                case GameFamilies.DP:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_NATURE_TEXT_BANK_DP;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_NATURE_TEXT_BANK_DP;
-                    else
-                        return NATURE_TEXT_BANK_DP;
-                case GameFamilies.PL:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_NATURE_TEXT_BANK_PL;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_NATURE_TEXT_BANK_PL;
-                    else
-                        return NATURE_TEXT_BANK_PL;
-                case GameFamilies.HGSS:
-                    if (Language == Languages.JAPANESE)
-                        return JAP_NATURE_TEXT_BANK_HGSS;
-                    else if (Language == Languages.KOREAN)
-                        return KOR_NATURE_TEXT_BANK_HGSS;
-                    else
-                        return NATURE_TEXT_BANK_HGSS;
-                default:
-                    return -1;
-            }  
-        }
 
         private static int getDeoxysAttackFormNameIndex()
 		{
@@ -1175,6 +908,7 @@ namespace Pokemon_Sinjoh_Editor
         public static string GetGameVersion() => GameVersion.ToString();
 		public static string[] GetMoveNames() => MoveNames.ToArray();
         public static string GetMoveDescription(int moveIndex) => MoveDescriptions[moveIndex].Replace("\\n", " ");
+        public static string GetPokedexDescription(int pokemonIndex) => PokedexDescriptions[pokemonIndex].Replace("\\n", " ");
         public static string[] GetPokemonSpeciesNames()
 		{
 			string[] speciesNames = new string[PokemonSpeciesList.Count];
@@ -1210,7 +944,8 @@ namespace Pokemon_Sinjoh_Editor
 
             return speciesNames;
         }
-		public static string[] GetItemNames() => ItemNames.ToArray();
+        public static string GetPokedexCategory(int pokemonIndex) => PokedexCategoryNames[pokemonIndex];
+        public static string[] GetItemNames() => ItemNames.ToArray();
         public static string[] GetItemNamesWithoutUnknown()
         {
             string[] itemNames = new string[itemsNarc.Elements.Count];
@@ -1227,7 +962,8 @@ namespace Pokemon_Sinjoh_Editor
             return itemNames;
         }
 
-		public static string[] GetTypeNames() => TypeNames.ToArray();
+
+        public static string[] GetTypeNames() => TypeNames.ToArray();
 		public static string[] GetAbilityNames() => AbilityNames.ToArray();
         public static string[] GetMoveCategories()
         {

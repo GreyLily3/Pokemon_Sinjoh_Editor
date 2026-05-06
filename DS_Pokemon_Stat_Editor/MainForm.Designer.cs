@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.movesTabPage = new System.Windows.Forms.TabPage();
+            this.moveDescriptionTextBox = new System.Windows.Forms.RichTextBox();
             this.moveEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveSelectedLabel = new System.Windows.Forms.Label();
             this.movesComboBox = new System.Windows.Forms.ComboBox();
@@ -205,19 +206,26 @@
             this.itemPreventTossCheckBox = new System.Windows.Forms.CheckBox();
             this.itemNaturalGiftTypeLabel = new System.Windows.Forms.Label();
             this.itemNaturalGiftPowerLabel = new System.Windows.Forms.Label();
-            this.itemNaturalGiftPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemFlingEffectLabel = new System.Windows.Forms.Label();
-            this.itemFlingEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemFlingPowerLabel = new System.Windows.Forms.Label();
-            this.itemFlingPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemPluckEffectLabel = new System.Windows.Forms.Label();
-            this.itemPluckEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemHoldParemeterLabel = new System.Windows.Forms.Label();
-            this.itemHoldParameterNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemHoldEffectLabel = new System.Windows.Forms.Label();
-            this.itemHoldEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemPriceLabel = new System.Windows.Forms.Label();
+            this.itemNaturalGiftPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemFlingEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemFlingPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemPluckEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemHoldParameterNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemHoldEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemPriceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexTabPage = new System.Windows.Forms.TabPage();
+            this.pokdexEntryRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pokedexCategoryTextBox = new System.Windows.Forms.TextBox();
+            this.pokedexNumTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.pokedexNameComboBox = new System.Windows.Forms.ComboBox();
             this.mainFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openRomFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -265,7 +273,14 @@
             this.tradeAbilityTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeGenderTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeNatureTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.moveDescriptionTextBox = new System.Windows.Forms.RichTextBox();
+            this.pokedexWTUnitLabel = new System.Windows.Forms.Label();
+            this.pokedexHTMetersLabel = new System.Windows.Forms.Label();
+            this.pokedexHTMetersNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexWTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexHTFTLabel = new System.Windows.Forms.Label();
+            this.pokedexHTINLabel = new System.Windows.Forms.Label();
+            this.pokedexHTFTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexHTINNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
@@ -330,7 +345,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldParameterNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).BeginInit();
+            this.pokedexTabPage.SuspendLayout();
             this.mainFormMenuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTMetersNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTFTNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTINNumericNoArrows)).BeginInit();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -339,6 +359,7 @@
             this.mainTabControl.Controls.Add(this.speciesTabPage);
             this.mainTabControl.Controls.Add(this.npcTradeTabPage);
             this.mainTabControl.Controls.Add(this.itemsTabPage);
+            this.mainTabControl.Controls.Add(this.pokedexTabPage);
             this.mainTabControl.Location = new System.Drawing.Point(0, 27);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
@@ -381,6 +402,15 @@
             this.movesTabPage.Size = new System.Drawing.Size(924, 475);
             this.movesTabPage.TabIndex = 0;
             this.movesTabPage.Text = "Moves";
+            // 
+            // moveDescriptionTextBox
+            // 
+            this.moveDescriptionTextBox.Location = new System.Drawing.Point(713, 229);
+            this.moveDescriptionTextBox.Name = "moveDescriptionTextBox";
+            this.moveDescriptionTextBox.ReadOnly = true;
+            this.moveDescriptionTextBox.Size = new System.Drawing.Size(151, 96);
+            this.moveDescriptionTextBox.TabIndex = 26;
+            this.moveDescriptionTextBox.Text = "";
             // 
             // moveEffectNumericNoArrows
             // 
@@ -2280,18 +2310,18 @@
             this.itemsTabPage.Controls.Add(this.itemPreventTossCheckBox);
             this.itemsTabPage.Controls.Add(this.itemNaturalGiftTypeLabel);
             this.itemsTabPage.Controls.Add(this.itemNaturalGiftPowerLabel);
-            this.itemsTabPage.Controls.Add(this.itemNaturalGiftPowerNumericNoArrows);
             this.itemsTabPage.Controls.Add(this.itemFlingEffectLabel);
-            this.itemsTabPage.Controls.Add(this.itemFlingEffectNumericNoArrows);
             this.itemsTabPage.Controls.Add(this.itemFlingPowerLabel);
-            this.itemsTabPage.Controls.Add(this.itemFlingPowerNumericNoArrows);
             this.itemsTabPage.Controls.Add(this.itemPluckEffectLabel);
-            this.itemsTabPage.Controls.Add(this.itemPluckEffectNumericNoArrows);
             this.itemsTabPage.Controls.Add(this.itemHoldParemeterLabel);
-            this.itemsTabPage.Controls.Add(this.itemHoldParameterNumericNoArrows);
             this.itemsTabPage.Controls.Add(this.itemHoldEffectLabel);
-            this.itemsTabPage.Controls.Add(this.itemHoldEffectNumericNoArrows);
             this.itemsTabPage.Controls.Add(this.itemPriceLabel);
+            this.itemsTabPage.Controls.Add(this.itemNaturalGiftPowerNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemFlingEffectNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemFlingPowerNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemPluckEffectNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemHoldParameterNumericNoArrows);
+            this.itemsTabPage.Controls.Add(this.itemHoldEffectNumericNoArrows);
             this.itemsTabPage.Controls.Add(this.itemPriceNumericNoArrows);
             this.itemsTabPage.Location = new System.Drawing.Point(4, 22);
             this.itemsTabPage.Name = "itemsTabPage";
@@ -2447,6 +2477,60 @@
             this.itemNaturalGiftPowerLabel.TabIndex = 13;
             this.itemNaturalGiftPowerLabel.Text = "Natural Gift Power";
             // 
+            // itemFlingEffectLabel
+            // 
+            this.itemFlingEffectLabel.AutoSize = true;
+            this.itemFlingEffectLabel.Location = new System.Drawing.Point(258, 118);
+            this.itemFlingEffectLabel.Name = "itemFlingEffectLabel";
+            this.itemFlingEffectLabel.Size = new System.Drawing.Size(60, 13);
+            this.itemFlingEffectLabel.TabIndex = 11;
+            this.itemFlingEffectLabel.Text = "Fling Effect";
+            // 
+            // itemFlingPowerLabel
+            // 
+            this.itemFlingPowerLabel.AutoSize = true;
+            this.itemFlingPowerLabel.Location = new System.Drawing.Point(258, 59);
+            this.itemFlingPowerLabel.Name = "itemFlingPowerLabel";
+            this.itemFlingPowerLabel.Size = new System.Drawing.Size(62, 13);
+            this.itemFlingPowerLabel.TabIndex = 9;
+            this.itemFlingPowerLabel.Text = "Fling Power";
+            // 
+            // itemPluckEffectLabel
+            // 
+            this.itemPluckEffectLabel.AutoSize = true;
+            this.itemPluckEffectLabel.Location = new System.Drawing.Point(99, 241);
+            this.itemPluckEffectLabel.Name = "itemPluckEffectLabel";
+            this.itemPluckEffectLabel.Size = new System.Drawing.Size(65, 13);
+            this.itemPluckEffectLabel.TabIndex = 7;
+            this.itemPluckEffectLabel.Text = "Pluck Effect";
+            // 
+            // itemHoldParemeterLabel
+            // 
+            this.itemHoldParemeterLabel.AutoSize = true;
+            this.itemHoldParemeterLabel.Location = new System.Drawing.Point(99, 182);
+            this.itemHoldParemeterLabel.Name = "itemHoldParemeterLabel";
+            this.itemHoldParemeterLabel.Size = new System.Drawing.Size(111, 13);
+            this.itemHoldParemeterLabel.TabIndex = 5;
+            this.itemHoldParemeterLabel.Text = "Hold Effect Parameter";
+            // 
+            // itemHoldEffectLabel
+            // 
+            this.itemHoldEffectLabel.AutoSize = true;
+            this.itemHoldEffectLabel.Location = new System.Drawing.Point(96, 120);
+            this.itemHoldEffectLabel.Name = "itemHoldEffectLabel";
+            this.itemHoldEffectLabel.Size = new System.Drawing.Size(60, 13);
+            this.itemHoldEffectLabel.TabIndex = 3;
+            this.itemHoldEffectLabel.Text = "Hold Effect";
+            // 
+            // itemPriceLabel
+            // 
+            this.itemPriceLabel.AutoSize = true;
+            this.itemPriceLabel.Location = new System.Drawing.Point(96, 59);
+            this.itemPriceLabel.Name = "itemPriceLabel";
+            this.itemPriceLabel.Size = new System.Drawing.Size(31, 13);
+            this.itemPriceLabel.TabIndex = 1;
+            this.itemPriceLabel.Text = "Price";
+            // 
             // itemNaturalGiftPowerNumericNoArrows
             // 
             this.itemNaturalGiftPowerNumericNoArrows.InterceptArrowKeys = false;
@@ -2459,15 +2543,6 @@
             this.itemNaturalGiftPowerNumericNoArrows.Name = "itemNaturalGiftPowerNumericNoArrows";
             this.itemNaturalGiftPowerNumericNoArrows.Size = new System.Drawing.Size(65, 20);
             this.itemNaturalGiftPowerNumericNoArrows.TabIndex = 12;
-            // 
-            // itemFlingEffectLabel
-            // 
-            this.itemFlingEffectLabel.AutoSize = true;
-            this.itemFlingEffectLabel.Location = new System.Drawing.Point(258, 118);
-            this.itemFlingEffectLabel.Name = "itemFlingEffectLabel";
-            this.itemFlingEffectLabel.Size = new System.Drawing.Size(60, 13);
-            this.itemFlingEffectLabel.TabIndex = 11;
-            this.itemFlingEffectLabel.Text = "Fling Effect";
             // 
             // itemFlingEffectNumericNoArrows
             // 
@@ -2482,15 +2557,6 @@
             this.itemFlingEffectNumericNoArrows.Size = new System.Drawing.Size(62, 20);
             this.itemFlingEffectNumericNoArrows.TabIndex = 10;
             // 
-            // itemFlingPowerLabel
-            // 
-            this.itemFlingPowerLabel.AutoSize = true;
-            this.itemFlingPowerLabel.Location = new System.Drawing.Point(258, 59);
-            this.itemFlingPowerLabel.Name = "itemFlingPowerLabel";
-            this.itemFlingPowerLabel.Size = new System.Drawing.Size(62, 13);
-            this.itemFlingPowerLabel.TabIndex = 9;
-            this.itemFlingPowerLabel.Text = "Fling Power";
-            // 
             // itemFlingPowerNumericNoArrows
             // 
             this.itemFlingPowerNumericNoArrows.InterceptArrowKeys = false;
@@ -2503,15 +2569,6 @@
             this.itemFlingPowerNumericNoArrows.Name = "itemFlingPowerNumericNoArrows";
             this.itemFlingPowerNumericNoArrows.Size = new System.Drawing.Size(62, 20);
             this.itemFlingPowerNumericNoArrows.TabIndex = 8;
-            // 
-            // itemPluckEffectLabel
-            // 
-            this.itemPluckEffectLabel.AutoSize = true;
-            this.itemPluckEffectLabel.Location = new System.Drawing.Point(99, 241);
-            this.itemPluckEffectLabel.Name = "itemPluckEffectLabel";
-            this.itemPluckEffectLabel.Size = new System.Drawing.Size(65, 13);
-            this.itemPluckEffectLabel.TabIndex = 7;
-            this.itemPluckEffectLabel.Text = "Pluck Effect";
             // 
             // itemPluckEffectNumericNoArrows
             // 
@@ -2526,15 +2583,6 @@
             this.itemPluckEffectNumericNoArrows.Size = new System.Drawing.Size(62, 20);
             this.itemPluckEffectNumericNoArrows.TabIndex = 6;
             // 
-            // itemHoldParemeterLabel
-            // 
-            this.itemHoldParemeterLabel.AutoSize = true;
-            this.itemHoldParemeterLabel.Location = new System.Drawing.Point(99, 182);
-            this.itemHoldParemeterLabel.Name = "itemHoldParemeterLabel";
-            this.itemHoldParemeterLabel.Size = new System.Drawing.Size(111, 13);
-            this.itemHoldParemeterLabel.TabIndex = 5;
-            this.itemHoldParemeterLabel.Text = "Hold Effect Parameter";
-            // 
             // itemHoldParameterNumericNoArrows
             // 
             this.itemHoldParameterNumericNoArrows.InterceptArrowKeys = false;
@@ -2547,15 +2595,6 @@
             this.itemHoldParameterNumericNoArrows.Name = "itemHoldParameterNumericNoArrows";
             this.itemHoldParameterNumericNoArrows.Size = new System.Drawing.Size(62, 20);
             this.itemHoldParameterNumericNoArrows.TabIndex = 4;
-            // 
-            // itemHoldEffectLabel
-            // 
-            this.itemHoldEffectLabel.AutoSize = true;
-            this.itemHoldEffectLabel.Location = new System.Drawing.Point(96, 120);
-            this.itemHoldEffectLabel.Name = "itemHoldEffectLabel";
-            this.itemHoldEffectLabel.Size = new System.Drawing.Size(60, 13);
-            this.itemHoldEffectLabel.TabIndex = 3;
-            this.itemHoldEffectLabel.Text = "Hold Effect";
             // 
             // itemHoldEffectNumericNoArrows
             // 
@@ -2570,15 +2609,6 @@
             this.itemHoldEffectNumericNoArrows.Size = new System.Drawing.Size(65, 20);
             this.itemHoldEffectNumericNoArrows.TabIndex = 2;
             // 
-            // itemPriceLabel
-            // 
-            this.itemPriceLabel.AutoSize = true;
-            this.itemPriceLabel.Location = new System.Drawing.Point(96, 59);
-            this.itemPriceLabel.Name = "itemPriceLabel";
-            this.itemPriceLabel.Size = new System.Drawing.Size(31, 13);
-            this.itemPriceLabel.TabIndex = 1;
-            this.itemPriceLabel.Text = "Price";
-            // 
             // itemPriceNumericNoArrows
             // 
             this.itemPriceNumericNoArrows.InterceptArrowKeys = false;
@@ -2591,6 +2621,80 @@
             this.itemPriceNumericNoArrows.Name = "itemPriceNumericNoArrows";
             this.itemPriceNumericNoArrows.Size = new System.Drawing.Size(65, 20);
             this.itemPriceNumericNoArrows.TabIndex = 0;
+            // 
+            // pokedexTabPage
+            // 
+            this.pokedexTabPage.Controls.Add(this.pokedexHTINNumericNoArrows);
+            this.pokedexTabPage.Controls.Add(this.pokedexHTFTNumericNoArrows);
+            this.pokedexTabPage.Controls.Add(this.pokedexHTINLabel);
+            this.pokedexTabPage.Controls.Add(this.pokedexHTFTLabel);
+            this.pokedexTabPage.Controls.Add(this.pokedexWTNumericNoArrows);
+            this.pokedexTabPage.Controls.Add(this.pokedexHTMetersNumericNoArrows);
+            this.pokedexTabPage.Controls.Add(this.pokedexHTMetersLabel);
+            this.pokedexTabPage.Controls.Add(this.pokedexWTUnitLabel);
+            this.pokedexTabPage.Controls.Add(this.pokdexEntryRichTextBox);
+            this.pokedexTabPage.Controls.Add(this.label2);
+            this.pokedexTabPage.Controls.Add(this.label1);
+            this.pokedexTabPage.Controls.Add(this.pokedexCategoryTextBox);
+            this.pokedexTabPage.Controls.Add(this.pokedexNumTextBox);
+            this.pokedexTabPage.Controls.Add(this.pokedexNameComboBox);
+            this.pokedexTabPage.Location = new System.Drawing.Point(4, 22);
+            this.pokedexTabPage.Name = "pokedexTabPage";
+            this.pokedexTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.pokedexTabPage.Size = new System.Drawing.Size(924, 475);
+            this.pokedexTabPage.TabIndex = 4;
+            this.pokedexTabPage.Text = "Pokedex";
+            this.pokedexTabPage.UseVisualStyleBackColor = true;
+            // 
+            // pokdexEntryRichTextBox
+            // 
+            this.pokdexEntryRichTextBox.Location = new System.Drawing.Point(262, 258);
+            this.pokdexEntryRichTextBox.Name = "pokdexEntryRichTextBox";
+            this.pokdexEntryRichTextBox.ReadOnly = true;
+            this.pokdexEntryRichTextBox.Size = new System.Drawing.Size(312, 79);
+            this.pokdexEntryRichTextBox.TabIndex = 7;
+            this.pokdexEntryRichTextBox.Text = "";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(450, 218);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(25, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "WT";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(450, 191);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "HT";
+            // 
+            // pokedexCategoryTextBox
+            // 
+            this.pokedexCategoryTextBox.Location = new System.Drawing.Point(400, 125);
+            this.pokedexCategoryTextBox.Name = "pokedexCategoryTextBox";
+            this.pokedexCategoryTextBox.Size = new System.Drawing.Size(174, 20);
+            this.pokedexCategoryTextBox.TabIndex = 2;
+            // 
+            // pokedexNumTextBox
+            // 
+            this.pokedexNumTextBox.Location = new System.Drawing.Point(400, 98);
+            this.pokedexNumTextBox.Name = "pokedexNumTextBox";
+            this.pokedexNumTextBox.Size = new System.Drawing.Size(47, 20);
+            this.pokedexNumTextBox.TabIndex = 1;
+            // 
+            // pokedexNameComboBox
+            // 
+            this.pokedexNameComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.pokedexNameComboBox.FormattingEnabled = true;
+            this.pokedexNameComboBox.Location = new System.Drawing.Point(453, 98);
+            this.pokedexNameComboBox.Name = "pokedexNameComboBox";
+            this.pokedexNameComboBox.Size = new System.Drawing.Size(121, 21);
+            this.pokedexNameComboBox.TabIndex = 0;
             // 
             // mainFormMenuStrip
             // 
@@ -2713,14 +2817,80 @@
             this.한국어ToolStripMenuItem.Text = "한국어";
             this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
             // 
-            // moveDescriptionTextBox
+            // pokedexWTUnitLabel
             // 
-            this.moveDescriptionTextBox.Location = new System.Drawing.Point(713, 229);
-            this.moveDescriptionTextBox.Name = "moveDescriptionTextBox";
-            this.moveDescriptionTextBox.ReadOnly = true;
-            this.moveDescriptionTextBox.Size = new System.Drawing.Size(151, 96);
-            this.moveDescriptionTextBox.TabIndex = 26;
-            this.moveDescriptionTextBox.Text = "";
+            this.pokedexWTUnitLabel.AutoSize = true;
+            this.pokedexWTUnitLabel.Location = new System.Drawing.Point(553, 218);
+            this.pokedexWTUnitLabel.Name = "pokedexWTUnitLabel";
+            this.pokedexWTUnitLabel.Size = new System.Drawing.Size(19, 13);
+            this.pokedexWTUnitLabel.TabIndex = 8;
+            this.pokedexWTUnitLabel.Text = "kg";
+            // 
+            // pokedexHTMetersLabel
+            // 
+            this.pokedexHTMetersLabel.AutoSize = true;
+            this.pokedexHTMetersLabel.Location = new System.Drawing.Point(553, 193);
+            this.pokedexHTMetersLabel.Name = "pokedexHTMetersLabel";
+            this.pokedexHTMetersLabel.Size = new System.Drawing.Size(15, 13);
+            this.pokedexHTMetersLabel.TabIndex = 9;
+            this.pokedexHTMetersLabel.Text = "m";
+            // 
+            // pokedexHTMetersNumericNoArrows
+            // 
+            this.pokedexHTMetersNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexHTMetersNumericNoArrows.Location = new System.Drawing.Point(518, 191);
+            this.pokedexHTMetersNumericNoArrows.Name = "pokedexHTMetersNumericNoArrows";
+            this.pokedexHTMetersNumericNoArrows.Size = new System.Drawing.Size(33, 20);
+            this.pokedexHTMetersNumericNoArrows.TabIndex = 10;
+            this.pokedexHTMetersNumericNoArrows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // pokedexWTNumericNoArrows
+            // 
+            this.pokedexWTNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexWTNumericNoArrows.Location = new System.Drawing.Point(518, 218);
+            this.pokedexWTNumericNoArrows.Name = "pokedexWTNumericNoArrows";
+            this.pokedexWTNumericNoArrows.Size = new System.Drawing.Size(33, 20);
+            this.pokedexWTNumericNoArrows.TabIndex = 11;
+            this.pokedexWTNumericNoArrows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // pokedexHTFTLabel
+            // 
+            this.pokedexHTFTLabel.AutoSize = true;
+            this.pokedexHTFTLabel.Location = new System.Drawing.Point(639, 191);
+            this.pokedexHTFTLabel.Name = "pokedexHTFTLabel";
+            this.pokedexHTFTLabel.Size = new System.Drawing.Size(9, 13);
+            this.pokedexHTFTLabel.TabIndex = 12;
+            this.pokedexHTFTLabel.Text = "\'";
+            // 
+            // pokedexHTINLabel
+            // 
+            this.pokedexHTINLabel.AutoSize = true;
+            this.pokedexHTINLabel.Location = new System.Drawing.Point(680, 191);
+            this.pokedexHTINLabel.Name = "pokedexHTINLabel";
+            this.pokedexHTINLabel.Size = new System.Drawing.Size(12, 13);
+            this.pokedexHTINLabel.TabIndex = 13;
+            this.pokedexHTINLabel.Text = "\"";
+            // 
+            // pokedexHTFTNumericNoArrows
+            // 
+            this.pokedexHTFTNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexHTFTNumericNoArrows.Location = new System.Drawing.Point(642, 207);
+            this.pokedexHTFTNumericNoArrows.Name = "pokedexHTFTNumericNoArrows";
+            this.pokedexHTFTNumericNoArrows.Size = new System.Drawing.Size(34, 20);
+            this.pokedexHTFTNumericNoArrows.TabIndex = 14;
+            // 
+            // pokedexHTINNumericNoArrows
+            // 
+            this.pokedexHTINNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexHTINNumericNoArrows.Location = new System.Drawing.Point(682, 207);
+            this.pokedexHTINNumericNoArrows.Maximum = new decimal(new int[] {
+            11,
+            0,
+            0,
+            0});
+            this.pokedexHTINNumericNoArrows.Name = "pokedexHTINNumericNoArrows";
+            this.pokedexHTINNumericNoArrows.Size = new System.Drawing.Size(22, 20);
+            this.pokedexHTINNumericNoArrows.TabIndex = 15;
             // 
             // MainForm
             // 
@@ -2816,8 +2986,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldParameterNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldEffectNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).EndInit();
+            this.pokedexTabPage.ResumeLayout(false);
+            this.pokedexTabPage.PerformLayout();
             this.mainFormMenuStrip.ResumeLayout(false);
             this.mainFormMenuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTMetersNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTFTNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTINNumericNoArrows)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3061,6 +3237,21 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.RichTextBox moveDescriptionTextBox;
+        private System.Windows.Forms.TabPage pokedexTabPage;
+        private System.Windows.Forms.MaskedTextBox pokedexNumTextBox;
+        private System.Windows.Forms.ComboBox pokedexNameComboBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox pokedexCategoryTextBox;
+        private System.Windows.Forms.RichTextBox pokdexEntryRichTextBox;
+        private NumericNoArrows pokedexHTMetersNumericNoArrows;
+        private System.Windows.Forms.Label pokedexHTMetersLabel;
+        private System.Windows.Forms.Label pokedexWTUnitLabel;
+        private NumericNoArrows pokedexWTNumericNoArrows;
+        private System.Windows.Forms.Label pokedexHTINLabel;
+        private System.Windows.Forms.Label pokedexHTFTLabel;
+        private NumericNoArrows pokedexHTINNumericNoArrows;
+        private NumericNoArrows pokedexHTFTNumericNoArrows;
     }
 }
 
