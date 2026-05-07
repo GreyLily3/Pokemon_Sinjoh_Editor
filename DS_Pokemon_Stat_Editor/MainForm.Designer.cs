@@ -33,26 +33,20 @@
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.movesTabPage = new System.Windows.Forms.TabPage();
             this.moveDescriptionTextBox = new System.Windows.Forms.RichTextBox();
-            this.moveEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveSelectedLabel = new System.Windows.Forms.Label();
             this.movesComboBox = new System.Windows.Forms.ComboBox();
             this.moveTargetComboBox = new System.Windows.Forms.ComboBox();
             this.moveTargetLabel = new System.Windows.Forms.Label();
             this.movePriorityLabel = new System.Windows.Forms.Label();
-            this.movePriorityNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveCategoryLabel = new System.Windows.Forms.Label();
             this.moveCategoryComboBox = new System.Windows.Forms.ComboBox();
             this.moveEffectChanceLabel = new System.Windows.Forms.Label();
-            this.moveEffectChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveEffectLabel = new System.Windows.Forms.Label();
             this.moveTypeLabel = new System.Windows.Forms.Label();
             this.moveTypeComboBox = new System.Windows.Forms.ComboBox();
             this.movePPLabel = new System.Windows.Forms.Label();
-            this.movePPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveAccuracyLabel = new System.Windows.Forms.Label();
-            this.moveAccuracyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.movePowerLabel = new System.Windows.Forms.Label();
-            this.movePowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveContestConditionLabel = new System.Windows.Forms.Label();
             this.moveContestEffectLabel = new System.Windows.Forms.Label();
             this.moveContestConditionComboBox = new System.Windows.Forms.ComboBox();
@@ -68,24 +62,14 @@
             this.moveContactCheckBox = new System.Windows.Forms.CheckBox();
             this.speciesTabPage = new System.Windows.Forms.TabPage();
             this.speciesMiscGroupBox = new System.Windows.Forms.GroupBox();
-            this.speciesCatchRateNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesBaseFriendshipNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSafariRunChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesCatchRateLabel = new System.Windows.Forms.Label();
             this.speciesBaseHappinessLabel = new System.Windows.Forms.Label();
             this.speciesSafariRunChanceLabel = new System.Windows.Forms.Label();
             this.speciesXPGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesXPGroupLabel = new System.Windows.Forms.Label();
-            this.speciesBaseXPYieldNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesBaseXPLabel = new System.Windows.Forms.Label();
             this.speciesXPGroupComboBox = new System.Windows.Forms.ComboBox();
             this.speciesEVOnDefeatGroupBox = new System.Windows.Forms.GroupBox();
-            this.speciesSpeedEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesHPEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesSpeedEVlabel = new System.Windows.Forms.Label();
             this.speciesSpecialDefenseEVLabel = new System.Windows.Forms.Label();
             this.speciesSpecialAttackEVLabel = new System.Windows.Forms.Label();
@@ -107,7 +91,6 @@
             this.speciesAbility2Label = new System.Windows.Forms.Label();
             this.speciesEggGroupsGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesEggCyclesLabel = new System.Windows.Forms.Label();
-            this.speciesEggCyclesNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesEggGroup1ComboBox = new System.Windows.Forms.ComboBox();
             this.speciesEggGroup1Label = new System.Windows.Forms.Label();
             this.speciesEggGroup2ComboBox = new System.Windows.Forms.ComboBox();
@@ -119,19 +102,12 @@
             this.speciesType2Label = new System.Windows.Forms.Label();
             this.speciesGenderGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesGenderlessRadioButton = new System.Windows.Forms.RadioButton();
-            this.speciesGenderRatioNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.label35 = new System.Windows.Forms.Label();
             this.speciesMaleOnlyRadioButton = new System.Windows.Forms.RadioButton();
             this.speciesFemaleOnlyRadioButton = new System.Windows.Forms.RadioButton();
             this.speciesMaleAndFemaleRadioButton = new System.Windows.Forms.RadioButton();
             this.speciesGenderMaleToFemaleLabel = new System.Windows.Forms.Label();
             this.speciesBaseStatsGroupBox = new System.Windows.Forms.GroupBox();
-            this.speciesHPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpeedNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesHPLabel = new System.Windows.Forms.Label();
             this.speciesAttackLabel = new System.Windows.Forms.Label();
             this.speciesDefenseLabel = new System.Windows.Forms.Label();
@@ -152,28 +128,16 @@
             this.tradeIVsGroupBox = new System.Windows.Forms.GroupBox();
             this.tradeSpeedIVsLabel = new System.Windows.Forms.Label();
             this.tradeSpecialDefenseIVsLabel = new System.Windows.Forms.Label();
-            this.tradeHPIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.tradeSpeedIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.tradeSpecialDefenseIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeHPIVsLabel = new System.Windows.Forms.Label();
             this.tradeSpecialAttackIVsLabel = new System.Windows.Forms.Label();
-            this.tradeAttackIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.tradeSpecialAttackIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeAttackIVsLabel = new System.Windows.Forms.Label();
-            this.tradeDefenseIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeDefenseIVsLabel = new System.Windows.Forms.Label();
             this.tradeContestStatsGroupBox = new System.Windows.Forms.GroupBox();
-            this.tradeSheenNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeSheenLabel = new System.Windows.Forms.Label();
-            this.tradeCoolNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeCoolLabel = new System.Windows.Forms.Label();
-            this.tradeToughNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeToughLabel = new System.Windows.Forms.Label();
-            this.tradeBeautyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeBeautyLabel = new System.Windows.Forms.Label();
-            this.tradeSmartNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeSmartLabel = new System.Windows.Forms.Label();
-            this.tradeCuteNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeCuteLabel = new System.Windows.Forms.Label();
             this.tradeTrainerComboBox = new System.Windows.Forms.ComboBox();
             this.tradeLanguageLabel = new System.Windows.Forms.Label();
@@ -188,8 +152,6 @@
             this.tradeHeldItemComboBox = new System.Windows.Forms.ComboBox();
             this.tradeOfferedPokemonComboBox = new System.Windows.Forms.ComboBox();
             this.tradeWantedPokemonComboBox = new System.Windows.Forms.ComboBox();
-            this.tradePVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.tradeOriginalTrainerIDNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemsTabPage = new System.Windows.Forms.TabPage();
             this.itemsBattlePocketsGroupBox = new System.Windows.Forms.GroupBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
@@ -212,14 +174,11 @@
             this.itemHoldParemeterLabel = new System.Windows.Forms.Label();
             this.itemHoldEffectLabel = new System.Windows.Forms.Label();
             this.itemPriceLabel = new System.Windows.Forms.Label();
-            this.itemNaturalGiftPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemFlingEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemFlingPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemPluckEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemHoldParameterNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemHoldEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemPriceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.pokedexTabPage = new System.Windows.Forms.TabPage();
+            this.pokedexHTINLabel = new System.Windows.Forms.Label();
+            this.pokedexHTFTLabel = new System.Windows.Forms.Label();
+            this.pokedexHTMetersLabel = new System.Windows.Forms.Label();
+            this.pokedexWTUnitLabel = new System.Windows.Forms.Label();
             this.pokdexEntryRichTextBox = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -273,61 +232,106 @@
             this.tradeAbilityTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeGenderTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeNatureTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.pokedexWTUnitLabel = new System.Windows.Forms.Label();
-            this.pokedexHTMetersLabel = new System.Windows.Forms.Label();
-            this.pokedexHTMetersNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.pokedexWTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.pokedexHTFTLabel = new System.Windows.Forms.Label();
-            this.pokedexHTINLabel = new System.Windows.Forms.Label();
-            this.pokedexHTFTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.moveEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.movePriorityNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.moveEffectChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.movePPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.moveAccuracyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.movePowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesCatchRateNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesBaseFriendshipNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSafariRunChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesBaseXPYieldNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpeedEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesHPEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesEggCyclesNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesGenderRatioNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesHPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpeedNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeHPIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeSpeedIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeSpecialDefenseIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeAttackIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeSpecialAttackIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeDefenseIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeSheenNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeCoolNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeToughNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeBeautyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeSmartNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeCuteNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradePVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeOriginalTrainerIDNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemNaturalGiftPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemFlingEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemFlingPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemPluckEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemHoldParameterNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemHoldEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemPriceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.pokedexHTINNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexHTFTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexWTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexHTMetersNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
+            this.moveFlagsGroupBox.SuspendLayout();
+            this.speciesTabPage.SuspendLayout();
+            this.speciesMiscGroupBox.SuspendLayout();
+            this.speciesXPGroupBox.SuspendLayout();
+            this.speciesEVOnDefeatGroupBox.SuspendLayout();
+            this.speciesHeldItemsGroupBox.SuspendLayout();
+            this.speciesAbilitiesGroupBox.SuspendLayout();
+            this.speciesEggGroupsGroupBox.SuspendLayout();
+            this.speciesTypesGroupBox.SuspendLayout();
+            this.speciesGenderGroupBox.SuspendLayout();
+            this.speciesBaseStatsGroupBox.SuspendLayout();
+            this.npcTradeTabPage.SuspendLayout();
+            this.tradePVDerivedGroupBox.SuspendLayout();
+            this.tradeIVsGroupBox.SuspendLayout();
+            this.tradeContestStatsGroupBox.SuspendLayout();
+            this.itemsTabPage.SuspendLayout();
+            this.itemsBattlePocketsGroupBox.SuspendLayout();
+            this.pokedexTabPage.SuspendLayout();
+            this.mainFormMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).BeginInit();
-            this.moveFlagsGroupBox.SuspendLayout();
-            this.speciesTabPage.SuspendLayout();
-            this.speciesMiscGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesCatchRateNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesBaseFriendshipNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSafariRunChanceNumericNoArrows)).BeginInit();
-            this.speciesXPGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesBaseXPYieldNumericNoArrows)).BeginInit();
-            this.speciesEVOnDefeatGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesAttackEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHPEVNumericNoArrows)).BeginInit();
-            this.speciesHeldItemsGroupBox.SuspendLayout();
-            this.speciesAbilitiesGroupBox.SuspendLayout();
-            this.speciesEggGroupsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).BeginInit();
-            this.speciesTypesGroupBox.SuspendLayout();
-            this.speciesGenderGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).BeginInit();
-            this.speciesBaseStatsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHPNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesAttackNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).BeginInit();
-            this.npcTradeTabPage.SuspendLayout();
-            this.tradePVDerivedGroupBox.SuspendLayout();
-            this.tradeIVsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeHPIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpeedIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialDefenseIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeAttackIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialAttackIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeDefenseIVsNumericNoArrows)).BeginInit();
-            this.tradeContestStatsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSheenNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeCoolNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeToughNumericNoArrows)).BeginInit();
@@ -336,8 +340,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tradeCuteNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradePVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeOriginalTrainerIDNumericNoArrows)).BeginInit();
-            this.itemsTabPage.SuspendLayout();
-            this.itemsBattlePocketsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemNaturalGiftPowerNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingPowerNumericNoArrows)).BeginInit();
@@ -345,12 +347,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldParameterNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).BeginInit();
-            this.pokedexTabPage.SuspendLayout();
-            this.mainFormMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTMetersNumericNoArrows)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTFTNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTINNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTFTNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTMetersNumericNoArrows)).BeginInit();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -412,20 +412,6 @@
             this.moveDescriptionTextBox.TabIndex = 26;
             this.moveDescriptionTextBox.Text = "";
             // 
-            // moveEffectNumericNoArrows
-            // 
-            this.moveEffectNumericNoArrows.InterceptArrowKeys = false;
-            this.moveEffectNumericNoArrows.Location = new System.Drawing.Point(326, 125);
-            this.moveEffectNumericNoArrows.Maximum = new decimal(new int[] {
-            276,
-            0,
-            0,
-            0});
-            this.moveEffectNumericNoArrows.Name = "moveEffectNumericNoArrows";
-            this.moveEffectNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveEffectNumericNoArrows.TabIndex = 6;
-            this.moveEffectNumericNoArrows.Validated += new System.EventHandler(this.moveEffectNumericNoArrows_Validated);
-            // 
             // moveSelectedLabel
             // 
             this.moveSelectedLabel.AutoSize = true;
@@ -475,25 +461,6 @@
             this.movePriorityLabel.TabIndex = 20;
             this.movePriorityLabel.Text = "Priority:";
             // 
-            // movePriorityNumericNoArrows
-            // 
-            this.movePriorityNumericNoArrows.InterceptArrowKeys = false;
-            this.movePriorityNumericNoArrows.Location = new System.Drawing.Point(326, 237);
-            this.movePriorityNumericNoArrows.Maximum = new decimal(new int[] {
-            127,
-            0,
-            0,
-            0});
-            this.movePriorityNumericNoArrows.Minimum = new decimal(new int[] {
-            128,
-            0,
-            0,
-            -2147483648});
-            this.movePriorityNumericNoArrows.Name = "movePriorityNumericNoArrows";
-            this.movePriorityNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePriorityNumericNoArrows.TabIndex = 8;
-            this.movePriorityNumericNoArrows.Validated += new System.EventHandler(this.movePriorityNumericNoArrows_Validated);
-            // 
             // moveCategoryLabel
             // 
             this.moveCategoryLabel.AutoSize = true;
@@ -521,20 +488,6 @@
             this.moveEffectChanceLabel.Size = new System.Drawing.Size(78, 13);
             this.moveEffectChanceLabel.TabIndex = 16;
             this.moveEffectChanceLabel.Text = "Effect Chance:";
-            // 
-            // moveEffectChanceNumericNoArrows
-            // 
-            this.moveEffectChanceNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.moveEffectChanceNumericNoArrows.InterceptArrowKeys = false;
-            this.moveEffectChanceNumericNoArrows.Location = new System.Drawing.Point(326, 183);
-            this.moveEffectChanceNumericNoArrows.Name = "moveEffectChanceNumericNoArrows";
-            this.moveEffectChanceNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveEffectChanceNumericNoArrows.TabIndex = 7;
-            this.moveEffectChanceNumericNoArrows.Validated += new System.EventHandler(this.moveEffectChanceNumericNoArrows_Validated);
             // 
             // moveEffectLabel
             // 
@@ -573,35 +526,6 @@
             this.movePPLabel.TabIndex = 10;
             this.movePPLabel.Text = "PP:";
             // 
-            // movePPNumericNoArrows
-            // 
-            this.movePPNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.InterceptArrowKeys = false;
-            this.movePPNumericNoArrows.Location = new System.Drawing.Point(173, 239);
-            this.movePPNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
-            this.movePPNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePPNumericNoArrows.TabIndex = 3;
-            this.movePPNumericNoArrows.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Validated += new System.EventHandler(this.movePPNumericNoArrows_Validated);
-            // 
             // moveAccuracyLabel
             // 
             this.moveAccuracyLabel.AutoSize = true;
@@ -611,20 +535,6 @@
             this.moveAccuracyLabel.TabIndex = 8;
             this.moveAccuracyLabel.Text = "Accuracy:";
             // 
-            // moveAccuracyNumericNoArrows
-            // 
-            this.moveAccuracyNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.moveAccuracyNumericNoArrows.InterceptArrowKeys = false;
-            this.moveAccuracyNumericNoArrows.Location = new System.Drawing.Point(173, 183);
-            this.moveAccuracyNumericNoArrows.Name = "moveAccuracyNumericNoArrows";
-            this.moveAccuracyNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.moveAccuracyNumericNoArrows.TabIndex = 2;
-            this.moveAccuracyNumericNoArrows.Validated += new System.EventHandler(this.moveAccuracyNumericNoArrows_Validated);
-            // 
             // movePowerLabel
             // 
             this.movePowerLabel.AutoSize = true;
@@ -633,27 +543,6 @@
             this.movePowerLabel.Size = new System.Drawing.Size(40, 13);
             this.movePowerLabel.TabIndex = 6;
             this.movePowerLabel.Text = "Power:";
-            // 
-            // movePowerNumericNoArrows
-            // 
-            this.movePowerNumericNoArrows.BackColor = System.Drawing.SystemColors.Window;
-            this.movePowerNumericNoArrows.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.movePowerNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePowerNumericNoArrows.InterceptArrowKeys = false;
-            this.movePowerNumericNoArrows.Location = new System.Drawing.Point(173, 126);
-            this.movePowerNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.movePowerNumericNoArrows.Name = "movePowerNumericNoArrows";
-            this.movePowerNumericNoArrows.Size = new System.Drawing.Size(74, 20);
-            this.movePowerNumericNoArrows.TabIndex = 1;
-            this.movePowerNumericNoArrows.Validated += new System.EventHandler(this.movePowerNumericNoArrows_Validated);
             // 
             // moveContestConditionLabel
             // 
@@ -837,53 +726,6 @@
             this.speciesMiscGroupBox.TabStop = false;
             this.speciesMiscGroupBox.Text = "Misc";
             // 
-            // speciesCatchRateNumericNoArrows
-            // 
-            this.speciesCatchRateNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesCatchRateNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesCatchRateNumericNoArrows.Location = new System.Drawing.Point(6, 35);
-            this.speciesCatchRateNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesCatchRateNumericNoArrows.Name = "speciesCatchRateNumericNoArrows";
-            this.speciesCatchRateNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesCatchRateNumericNoArrows.TabIndex = 29;
-            this.speciesCatchRateNumericNoArrows.Validated += new System.EventHandler(this.speciesCatchRateNumericNoArrows_Validated);
-            // 
-            // speciesBaseFriendshipNumericNoArrows
-            // 
-            this.speciesBaseFriendshipNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesBaseFriendshipNumericNoArrows.Location = new System.Drawing.Point(6, 82);
-            this.speciesBaseFriendshipNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesBaseFriendshipNumericNoArrows.Name = "speciesBaseFriendshipNumericNoArrows";
-            this.speciesBaseFriendshipNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesBaseFriendshipNumericNoArrows.TabIndex = 30;
-            this.speciesBaseFriendshipNumericNoArrows.Validated += new System.EventHandler(this.speciesHappinessNumericNoArrows_Validated);
-            // 
-            // speciesSafariRunChanceNumericNoArrows
-            // 
-            this.speciesSafariRunChanceNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSafariRunChanceNumericNoArrows.Location = new System.Drawing.Point(6, 145);
-            this.speciesSafariRunChanceNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSafariRunChanceNumericNoArrows.Name = "speciesSafariRunChanceNumericNoArrows";
-            this.speciesSafariRunChanceNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSafariRunChanceNumericNoArrows.TabIndex = 31;
-            this.speciesSafariRunChanceNumericNoArrows.Validated += new System.EventHandler(this.speciesSafariRunChanceNumericNoArrows_Validated);
-            // 
             // speciesCatchRateLabel
             // 
             this.speciesCatchRateLabel.AutoSize = true;
@@ -933,25 +775,6 @@
             this.speciesXPGroupLabel.TabIndex = 33;
             this.speciesXPGroupLabel.Text = "Experience Group:";
             // 
-            // speciesBaseXPYieldNumericNoArrows
-            // 
-            this.speciesBaseXPYieldNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesBaseXPYieldNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesBaseXPYieldNumericNoArrows.Location = new System.Drawing.Point(9, 72);
-            this.speciesBaseXPYieldNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesBaseXPYieldNumericNoArrows.Name = "speciesBaseXPYieldNumericNoArrows";
-            this.speciesBaseXPYieldNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesBaseXPYieldNumericNoArrows.TabIndex = 18;
-            this.speciesBaseXPYieldNumericNoArrows.Validated += new System.EventHandler(this.speciesBaseXPYieldNumericNoArrows_Validated);
-            // 
             // speciesBaseXPLabel
             // 
             this.speciesBaseXPLabel.AutoSize = true;
@@ -991,90 +814,6 @@
             this.speciesEVOnDefeatGroupBox.TabIndex = 2;
             this.speciesEVOnDefeatGroupBox.TabStop = false;
             this.speciesEVOnDefeatGroupBox.Text = "Effort Yield";
-            // 
-            // speciesSpeedEVNumericNoArrows
-            // 
-            this.speciesSpeedEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpeedEVNumericNoArrows.Location = new System.Drawing.Point(9, 320);
-            this.speciesSpeedEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesSpeedEVNumericNoArrows.Name = "speciesSpeedEVNumericNoArrows";
-            this.speciesSpeedEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpeedEVNumericNoArrows.TabIndex = 12;
-            this.speciesSpeedEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedEVNumericNoArrows_Validated);
-            // 
-            // speciesSpecialDefenseEVNumericNoArrows
-            // 
-            this.speciesSpecialDefenseEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialDefenseEVNumericNoArrows.Location = new System.Drawing.Point(9, 270);
-            this.speciesSpecialDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesSpecialDefenseEVNumericNoArrows.Name = "speciesSpecialDefenseEVNumericNoArrows";
-            this.speciesSpecialDefenseEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpecialDefenseEVNumericNoArrows.TabIndex = 11;
-            this.speciesSpecialDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseEVNumericNoArrows_Validated);
-            // 
-            // speciesSpecialAttackEVNumericNoArrows
-            // 
-            this.speciesSpecialAttackEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialAttackEVNumericNoArrows.Location = new System.Drawing.Point(9, 214);
-            this.speciesSpecialAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesSpecialAttackEVNumericNoArrows.Name = "speciesSpecialAttackEVNumericNoArrows";
-            this.speciesSpecialAttackEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpecialAttackEVNumericNoArrows.TabIndex = 10;
-            this.speciesSpecialAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackEVNumericNoArrows_Validated);
-            // 
-            // speciesDefenseEVNumericNoArrows
-            // 
-            this.speciesDefenseEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesDefenseEVNumericNoArrows.Location = new System.Drawing.Point(9, 159);
-            this.speciesDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesDefenseEVNumericNoArrows.Name = "speciesDefenseEVNumericNoArrows";
-            this.speciesDefenseEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesDefenseEVNumericNoArrows.TabIndex = 9;
-            this.speciesDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseEVNumericNoArrows_Validated);
-            // 
-            // speciesAttackEVNumericNoArrows
-            // 
-            this.speciesAttackEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesAttackEVNumericNoArrows.Location = new System.Drawing.Point(9, 100);
-            this.speciesAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesAttackEVNumericNoArrows.Name = "speciesAttackEVNumericNoArrows";
-            this.speciesAttackEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesAttackEVNumericNoArrows.TabIndex = 8;
-            this.speciesAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackEVNumericNoArrows_Validated);
-            // 
-            // speciesHPEVNumericNoArrows
-            // 
-            this.speciesHPEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesHPEVNumericNoArrows.Location = new System.Drawing.Point(9, 46);
-            this.speciesHPEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesHPEVNumericNoArrows.Name = "speciesHPEVNumericNoArrows";
-            this.speciesHPEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesHPEVNumericNoArrows.TabIndex = 7;
-            this.speciesHPEVNumericNoArrows.Validated += new System.EventHandler(this.speciesHPEVNumericNoArrows_Validated);
             // 
             // speciesSpeedEVlabel
             // 
@@ -1288,20 +1027,6 @@
             this.speciesEggCyclesLabel.TabIndex = 39;
             this.speciesEggCyclesLabel.Text = "Egg Cycles:";
             // 
-            // speciesEggCyclesNumericNoArrows
-            // 
-            this.speciesEggCyclesNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesEggCyclesNumericNoArrows.Location = new System.Drawing.Point(7, 146);
-            this.speciesEggCyclesNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesEggCyclesNumericNoArrows.Name = "speciesEggCyclesNumericNoArrows";
-            this.speciesEggCyclesNumericNoArrows.Size = new System.Drawing.Size(66, 20);
-            this.speciesEggCyclesNumericNoArrows.TabIndex = 23;
-            this.speciesEggCyclesNumericNoArrows.Validated += new System.EventHandler(this.speciesEggCyclesNumericNoArrows_Validated);
-            // 
             // speciesEggGroup1ComboBox
             // 
             this.speciesEggGroup1ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1419,35 +1144,6 @@
             this.speciesGenderlessRadioButton.UseVisualStyleBackColor = true;
             this.speciesGenderlessRadioButton.CheckedChanged += new System.EventHandler(this.speciesGenderlessRadioButton_CheckedChanged);
             // 
-            // speciesGenderRatioNumericNoArrows
-            // 
-            this.speciesGenderRatioNumericNoArrows.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesGenderRatioNumericNoArrows.Location = new System.Drawing.Point(6, 149);
-            this.speciesGenderRatioNumericNoArrows.Maximum = new decimal(new int[] {
-            253,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.Name = "speciesGenderRatioNumericNoArrows";
-            this.speciesGenderRatioNumericNoArrows.Size = new System.Drawing.Size(24, 20);
-            this.speciesGenderRatioNumericNoArrows.TabIndex = 28;
-            this.speciesGenderRatioNumericNoArrows.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.Validated += new System.EventHandler(this.speciesGenderRatioNumericNoArrows_Validated);
-            // 
             // label35
             // 
             this.label35.AutoSize = true;
@@ -1522,120 +1218,6 @@
             this.speciesBaseStatsGroupBox.TabIndex = 1;
             this.speciesBaseStatsGroupBox.TabStop = false;
             this.speciesBaseStatsGroupBox.Text = "Base Stats";
-            // 
-            // speciesHPNumericNoArrows
-            // 
-            this.speciesHPNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesHPNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesHPNumericNoArrows.Location = new System.Drawing.Point(14, 46);
-            this.speciesHPNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesHPNumericNoArrows.Name = "speciesHPNumericNoArrows";
-            this.speciesHPNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesHPNumericNoArrows.TabIndex = 1;
-            this.speciesHPNumericNoArrows.Validated += new System.EventHandler(this.speciesHPNumericNoArrows_Validated);
-            // 
-            // speciesAttackNumericNoArrows
-            // 
-            this.speciesAttackNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesAttackNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesAttackNumericNoArrows.Location = new System.Drawing.Point(17, 100);
-            this.speciesAttackNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesAttackNumericNoArrows.Name = "speciesAttackNumericNoArrows";
-            this.speciesAttackNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesAttackNumericNoArrows.TabIndex = 2;
-            this.speciesAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackNumericNoArrows_Validated);
-            // 
-            // speciesDefenseNumericNoArrows
-            // 
-            this.speciesDefenseNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesDefenseNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesDefenseNumericNoArrows.Location = new System.Drawing.Point(17, 159);
-            this.speciesDefenseNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesDefenseNumericNoArrows.Name = "speciesDefenseNumericNoArrows";
-            this.speciesDefenseNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesDefenseNumericNoArrows.TabIndex = 3;
-            this.speciesDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseNumericNoArrows_Validated);
-            // 
-            // speciesSpeedNumericNoArrows
-            // 
-            this.speciesSpeedNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesSpeedNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpeedNumericNoArrows.Location = new System.Drawing.Point(17, 320);
-            this.speciesSpeedNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSpeedNumericNoArrows.Name = "speciesSpeedNumericNoArrows";
-            this.speciesSpeedNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpeedNumericNoArrows.TabIndex = 6;
-            this.speciesSpeedNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedNumericNoArrows_Validated);
-            // 
-            // speciesSpecialAttackNumericNoArrows
-            // 
-            this.speciesSpecialAttackNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesSpecialAttackNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialAttackNumericNoArrows.Location = new System.Drawing.Point(17, 214);
-            this.speciesSpecialAttackNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSpecialAttackNumericNoArrows.Name = "speciesSpecialAttackNumericNoArrows";
-            this.speciesSpecialAttackNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpecialAttackNumericNoArrows.TabIndex = 4;
-            this.speciesSpecialAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackNumericNoArrows_Validated);
-            // 
-            // speciesSpecialDefenseNumericNoArrows
-            // 
-            this.speciesSpecialDefenseNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesSpecialDefenseNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialDefenseNumericNoArrows.Location = new System.Drawing.Point(17, 270);
-            this.speciesSpecialDefenseNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSpecialDefenseNumericNoArrows.Name = "speciesSpecialDefenseNumericNoArrows";
-            this.speciesSpecialDefenseNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.speciesSpecialDefenseNumericNoArrows.TabIndex = 5;
-            this.speciesSpecialDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseNumericNoArrows_Validated);
             // 
             // speciesHPLabel
             // 
@@ -1863,48 +1445,6 @@
             this.tradeSpecialDefenseIVsLabel.TabIndex = 42;
             this.tradeSpecialDefenseIVsLabel.Text = "Sp. Defense";
             // 
-            // tradeHPIVsNumericNoArrows
-            // 
-            this.tradeHPIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeHPIVsNumericNoArrows.Location = new System.Drawing.Point(6, 33);
-            this.tradeHPIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeHPIVsNumericNoArrows.Name = "tradeHPIVsNumericNoArrows";
-            this.tradeHPIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeHPIVsNumericNoArrows.TabIndex = 1;
-            this.tradeHPIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeHPIVsNumericNoArrows_Validated);
-            // 
-            // tradeSpeedIVsNumericNoArrows
-            // 
-            this.tradeSpeedIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeSpeedIVsNumericNoArrows.Location = new System.Drawing.Point(9, 256);
-            this.tradeSpeedIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeSpeedIVsNumericNoArrows.Name = "tradeSpeedIVsNumericNoArrows";
-            this.tradeSpeedIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeSpeedIVsNumericNoArrows.TabIndex = 6;
-            this.tradeSpeedIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpeedIVsNumericNoArrows_Validated);
-            // 
-            // tradeSpecialDefenseIVsNumericNoArrows
-            // 
-            this.tradeSpecialDefenseIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeSpecialDefenseIVsNumericNoArrows.Location = new System.Drawing.Point(9, 212);
-            this.tradeSpecialDefenseIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeSpecialDefenseIVsNumericNoArrows.Name = "tradeSpecialDefenseIVsNumericNoArrows";
-            this.tradeSpecialDefenseIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeSpecialDefenseIVsNumericNoArrows.TabIndex = 5;
-            this.tradeSpecialDefenseIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpecialDefenseIVsNumericNoArrows_Validated);
-            // 
             // tradeHPIVsLabel
             // 
             this.tradeHPIVsLabel.AutoSize = true;
@@ -1923,34 +1463,6 @@
             this.tradeSpecialAttackIVsLabel.TabIndex = 41;
             this.tradeSpecialAttackIVsLabel.Text = "Sp. Attack";
             // 
-            // tradeAttackIVsNumericNoArrows
-            // 
-            this.tradeAttackIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeAttackIVsNumericNoArrows.Location = new System.Drawing.Point(9, 77);
-            this.tradeAttackIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeAttackIVsNumericNoArrows.Name = "tradeAttackIVsNumericNoArrows";
-            this.tradeAttackIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeAttackIVsNumericNoArrows.TabIndex = 2;
-            this.tradeAttackIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeAttackIVsNumericNoArrows_Validated);
-            // 
-            // tradeSpecialAttackIVsNumericNoArrows
-            // 
-            this.tradeSpecialAttackIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeSpecialAttackIVsNumericNoArrows.Location = new System.Drawing.Point(9, 168);
-            this.tradeSpecialAttackIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeSpecialAttackIVsNumericNoArrows.Name = "tradeSpecialAttackIVsNumericNoArrows";
-            this.tradeSpecialAttackIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeSpecialAttackIVsNumericNoArrows.TabIndex = 4;
-            this.tradeSpecialAttackIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpecialAttackIVsNumericNoArrows_Validated);
-            // 
             // tradeAttackIVsLabel
             // 
             this.tradeAttackIVsLabel.AutoSize = true;
@@ -1959,20 +1471,6 @@
             this.tradeAttackIVsLabel.Size = new System.Drawing.Size(38, 13);
             this.tradeAttackIVsLabel.TabIndex = 38;
             this.tradeAttackIVsLabel.Text = "Attack";
-            // 
-            // tradeDefenseIVsNumericNoArrows
-            // 
-            this.tradeDefenseIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeDefenseIVsNumericNoArrows.Location = new System.Drawing.Point(9, 121);
-            this.tradeDefenseIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeDefenseIVsNumericNoArrows.Name = "tradeDefenseIVsNumericNoArrows";
-            this.tradeDefenseIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeDefenseIVsNumericNoArrows.TabIndex = 3;
-            this.tradeDefenseIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeDefenseIVsNumericNoArrows_Validated);
             // 
             // tradeDefenseIVsLabel
             // 
@@ -2004,20 +1502,6 @@
             this.tradeContestStatsGroupBox.TabStop = false;
             this.tradeContestStatsGroupBox.Text = "Contest Stats";
             // 
-            // tradeSheenNumericNoArrows
-            // 
-            this.tradeSheenNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeSheenNumericNoArrows.Location = new System.Drawing.Point(9, 253);
-            this.tradeSheenNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeSheenNumericNoArrows.Name = "tradeSheenNumericNoArrows";
-            this.tradeSheenNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeSheenNumericNoArrows.TabIndex = 6;
-            this.tradeSheenNumericNoArrows.Validated += new System.EventHandler(this.tradeSheenNumericNoArrows_Validated);
-            // 
             // tradeSheenLabel
             // 
             this.tradeSheenLabel.AutoSize = true;
@@ -2026,20 +1510,6 @@
             this.tradeSheenLabel.Size = new System.Drawing.Size(38, 13);
             this.tradeSheenLabel.TabIndex = 19;
             this.tradeSheenLabel.Text = "Sheen";
-            // 
-            // tradeCoolNumericNoArrows
-            // 
-            this.tradeCoolNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeCoolNumericNoArrows.Location = new System.Drawing.Point(9, 32);
-            this.tradeCoolNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeCoolNumericNoArrows.Name = "tradeCoolNumericNoArrows";
-            this.tradeCoolNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeCoolNumericNoArrows.TabIndex = 1;
-            this.tradeCoolNumericNoArrows.Validated += new System.EventHandler(this.tradeCoolNumericNoArrows_Validated);
             // 
             // tradeCoolLabel
             // 
@@ -2050,20 +1520,6 @@
             this.tradeCoolLabel.TabIndex = 20;
             this.tradeCoolLabel.Text = "Cool";
             // 
-            // tradeToughNumericNoArrows
-            // 
-            this.tradeToughNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeToughNumericNoArrows.Location = new System.Drawing.Point(9, 209);
-            this.tradeToughNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeToughNumericNoArrows.Name = "tradeToughNumericNoArrows";
-            this.tradeToughNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeToughNumericNoArrows.TabIndex = 5;
-            this.tradeToughNumericNoArrows.Validated += new System.EventHandler(this.tradeToughNumericNoArrows_Validated);
-            // 
             // tradeToughLabel
             // 
             this.tradeToughLabel.AutoSize = true;
@@ -2072,20 +1528,6 @@
             this.tradeToughLabel.Size = new System.Drawing.Size(38, 13);
             this.tradeToughLabel.TabIndex = 24;
             this.tradeToughLabel.Text = "Tough";
-            // 
-            // tradeBeautyNumericNoArrows
-            // 
-            this.tradeBeautyNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeBeautyNumericNoArrows.Location = new System.Drawing.Point(9, 75);
-            this.tradeBeautyNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeBeautyNumericNoArrows.Name = "tradeBeautyNumericNoArrows";
-            this.tradeBeautyNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeBeautyNumericNoArrows.TabIndex = 2;
-            this.tradeBeautyNumericNoArrows.Validated += new System.EventHandler(this.tradeBeautyNumericNoArrows_Validated);
             // 
             // tradeBeautyLabel
             // 
@@ -2096,20 +1538,6 @@
             this.tradeBeautyLabel.TabIndex = 21;
             this.tradeBeautyLabel.Text = "Beauty";
             // 
-            // tradeSmartNumericNoArrows
-            // 
-            this.tradeSmartNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeSmartNumericNoArrows.Location = new System.Drawing.Point(9, 165);
-            this.tradeSmartNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeSmartNumericNoArrows.Name = "tradeSmartNumericNoArrows";
-            this.tradeSmartNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeSmartNumericNoArrows.TabIndex = 4;
-            this.tradeSmartNumericNoArrows.Validated += new System.EventHandler(this.tradeSmartNumericNoArrows_Validated);
-            // 
             // tradeSmartLabel
             // 
             this.tradeSmartLabel.AutoSize = true;
@@ -2118,20 +1546,6 @@
             this.tradeSmartLabel.Size = new System.Drawing.Size(34, 13);
             this.tradeSmartLabel.TabIndex = 23;
             this.tradeSmartLabel.Text = "Smart";
-            // 
-            // tradeCuteNumericNoArrows
-            // 
-            this.tradeCuteNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeCuteNumericNoArrows.Location = new System.Drawing.Point(9, 118);
-            this.tradeCuteNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeCuteNumericNoArrows.Name = "tradeCuteNumericNoArrows";
-            this.tradeCuteNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.tradeCuteNumericNoArrows.TabIndex = 3;
-            this.tradeCuteNumericNoArrows.Validated += new System.EventHandler(this.tradeCuteNumericNoArrows_Validated);
             // 
             // tradeCuteLabel
             // 
@@ -2267,35 +1681,6 @@
             this.tradeWantedPokemonComboBox.Size = new System.Drawing.Size(121, 21);
             this.tradeWantedPokemonComboBox.TabIndex = 1;
             this.tradeWantedPokemonComboBox.SelectionChangeCommitted += new System.EventHandler(this.tradeWantedPokemonComboBox_SelectionChangeCommitted);
-            // 
-            // tradePVNumericNoArrows
-            // 
-            this.tradePVNumericNoArrows.InterceptArrowKeys = false;
-            this.tradePVNumericNoArrows.Location = new System.Drawing.Point(506, 265);
-            this.tradePVNumericNoArrows.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.tradePVNumericNoArrows.Name = "tradePVNumericNoArrows";
-            this.tradePVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.tradePVNumericNoArrows.TabIndex = 8;
-            this.tradePVNumericNoArrows.ValueChanged += new System.EventHandler(this.tradePVNumericNoArrows_ValueChanged);
-            this.tradePVNumericNoArrows.Validated += new System.EventHandler(this.tradePVNumericNoArrows_Validated);
-            // 
-            // tradeOriginalTrainerIDNumericNoArrows
-            // 
-            this.tradeOriginalTrainerIDNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeOriginalTrainerIDNumericNoArrows.Location = new System.Drawing.Point(506, 131);
-            this.tradeOriginalTrainerIDNumericNoArrows.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.tradeOriginalTrainerIDNumericNoArrows.Name = "tradeOriginalTrainerIDNumericNoArrows";
-            this.tradeOriginalTrainerIDNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.tradeOriginalTrainerIDNumericNoArrows.TabIndex = 3;
-            this.tradeOriginalTrainerIDNumericNoArrows.Validated += new System.EventHandler(this.tradeOriginalTrainerIDNumericNoArrows_Validated);
             // 
             // itemsTabPage
             // 
@@ -2531,97 +1916,6 @@
             this.itemPriceLabel.TabIndex = 1;
             this.itemPriceLabel.Text = "Price";
             // 
-            // itemNaturalGiftPowerNumericNoArrows
-            // 
-            this.itemNaturalGiftPowerNumericNoArrows.InterceptArrowKeys = false;
-            this.itemNaturalGiftPowerNumericNoArrows.Location = new System.Drawing.Point(373, 74);
-            this.itemNaturalGiftPowerNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemNaturalGiftPowerNumericNoArrows.Name = "itemNaturalGiftPowerNumericNoArrows";
-            this.itemNaturalGiftPowerNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.itemNaturalGiftPowerNumericNoArrows.TabIndex = 12;
-            // 
-            // itemFlingEffectNumericNoArrows
-            // 
-            this.itemFlingEffectNumericNoArrows.InterceptArrowKeys = false;
-            this.itemFlingEffectNumericNoArrows.Location = new System.Drawing.Point(261, 134);
-            this.itemFlingEffectNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemFlingEffectNumericNoArrows.Name = "itemFlingEffectNumericNoArrows";
-            this.itemFlingEffectNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.itemFlingEffectNumericNoArrows.TabIndex = 10;
-            // 
-            // itemFlingPowerNumericNoArrows
-            // 
-            this.itemFlingPowerNumericNoArrows.InterceptArrowKeys = false;
-            this.itemFlingPowerNumericNoArrows.Location = new System.Drawing.Point(261, 75);
-            this.itemFlingPowerNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemFlingPowerNumericNoArrows.Name = "itemFlingPowerNumericNoArrows";
-            this.itemFlingPowerNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.itemFlingPowerNumericNoArrows.TabIndex = 8;
-            // 
-            // itemPluckEffectNumericNoArrows
-            // 
-            this.itemPluckEffectNumericNoArrows.InterceptArrowKeys = false;
-            this.itemPluckEffectNumericNoArrows.Location = new System.Drawing.Point(102, 257);
-            this.itemPluckEffectNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemPluckEffectNumericNoArrows.Name = "itemPluckEffectNumericNoArrows";
-            this.itemPluckEffectNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.itemPluckEffectNumericNoArrows.TabIndex = 6;
-            // 
-            // itemHoldParameterNumericNoArrows
-            // 
-            this.itemHoldParameterNumericNoArrows.InterceptArrowKeys = false;
-            this.itemHoldParameterNumericNoArrows.Location = new System.Drawing.Point(102, 198);
-            this.itemHoldParameterNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemHoldParameterNumericNoArrows.Name = "itemHoldParameterNumericNoArrows";
-            this.itemHoldParameterNumericNoArrows.Size = new System.Drawing.Size(62, 20);
-            this.itemHoldParameterNumericNoArrows.TabIndex = 4;
-            // 
-            // itemHoldEffectNumericNoArrows
-            // 
-            this.itemHoldEffectNumericNoArrows.InterceptArrowKeys = false;
-            this.itemHoldEffectNumericNoArrows.Location = new System.Drawing.Point(99, 136);
-            this.itemHoldEffectNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemHoldEffectNumericNoArrows.Name = "itemHoldEffectNumericNoArrows";
-            this.itemHoldEffectNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.itemHoldEffectNumericNoArrows.TabIndex = 2;
-            // 
-            // itemPriceNumericNoArrows
-            // 
-            this.itemPriceNumericNoArrows.InterceptArrowKeys = false;
-            this.itemPriceNumericNoArrows.Location = new System.Drawing.Point(99, 75);
-            this.itemPriceNumericNoArrows.Maximum = new decimal(new int[] {
-            65565,
-            0,
-            0,
-            0});
-            this.itemPriceNumericNoArrows.Name = "itemPriceNumericNoArrows";
-            this.itemPriceNumericNoArrows.Size = new System.Drawing.Size(65, 20);
-            this.itemPriceNumericNoArrows.TabIndex = 0;
-            // 
             // pokedexTabPage
             // 
             this.pokedexTabPage.Controls.Add(this.pokedexHTINNumericNoArrows);
@@ -2645,6 +1939,42 @@
             this.pokedexTabPage.TabIndex = 4;
             this.pokedexTabPage.Text = "Pokedex";
             this.pokedexTabPage.UseVisualStyleBackColor = true;
+            // 
+            // pokedexHTINLabel
+            // 
+            this.pokedexHTINLabel.AutoSize = true;
+            this.pokedexHTINLabel.Location = new System.Drawing.Point(680, 191);
+            this.pokedexHTINLabel.Name = "pokedexHTINLabel";
+            this.pokedexHTINLabel.Size = new System.Drawing.Size(12, 13);
+            this.pokedexHTINLabel.TabIndex = 13;
+            this.pokedexHTINLabel.Text = "\"";
+            // 
+            // pokedexHTFTLabel
+            // 
+            this.pokedexHTFTLabel.AutoSize = true;
+            this.pokedexHTFTLabel.Location = new System.Drawing.Point(639, 191);
+            this.pokedexHTFTLabel.Name = "pokedexHTFTLabel";
+            this.pokedexHTFTLabel.Size = new System.Drawing.Size(9, 13);
+            this.pokedexHTFTLabel.TabIndex = 12;
+            this.pokedexHTFTLabel.Text = "\'";
+            // 
+            // pokedexHTMetersLabel
+            // 
+            this.pokedexHTMetersLabel.AutoSize = true;
+            this.pokedexHTMetersLabel.Location = new System.Drawing.Point(553, 193);
+            this.pokedexHTMetersLabel.Name = "pokedexHTMetersLabel";
+            this.pokedexHTMetersLabel.Size = new System.Drawing.Size(15, 13);
+            this.pokedexHTMetersLabel.TabIndex = 9;
+            this.pokedexHTMetersLabel.Text = "m";
+            // 
+            // pokedexWTUnitLabel
+            // 
+            this.pokedexWTUnitLabel.AutoSize = true;
+            this.pokedexWTUnitLabel.Location = new System.Drawing.Point(553, 218);
+            this.pokedexWTUnitLabel.Name = "pokedexWTUnitLabel";
+            this.pokedexWTUnitLabel.Size = new System.Drawing.Size(19, 13);
+            this.pokedexWTUnitLabel.TabIndex = 8;
+            this.pokedexWTUnitLabel.Text = "kg";
             // 
             // pokdexEntryRichTextBox
             // 
@@ -2817,70 +2147,719 @@
             this.한국어ToolStripMenuItem.Text = "한국어";
             this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
             // 
-            // pokedexWTUnitLabel
+            // moveEffectNumericNoArrows
             // 
-            this.pokedexWTUnitLabel.AutoSize = true;
-            this.pokedexWTUnitLabel.Location = new System.Drawing.Point(553, 218);
-            this.pokedexWTUnitLabel.Name = "pokedexWTUnitLabel";
-            this.pokedexWTUnitLabel.Size = new System.Drawing.Size(19, 13);
-            this.pokedexWTUnitLabel.TabIndex = 8;
-            this.pokedexWTUnitLabel.Text = "kg";
+            this.moveEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.moveEffectNumericNoArrows.Location = new System.Drawing.Point(326, 125);
+            this.moveEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            276,
+            0,
+            0,
+            0});
+            this.moveEffectNumericNoArrows.Name = "moveEffectNumericNoArrows";
+            this.moveEffectNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.moveEffectNumericNoArrows.TabIndex = 6;
+            this.moveEffectNumericNoArrows.Validated += new System.EventHandler(this.moveEffectNumericNoArrows_Validated);
             // 
-            // pokedexHTMetersLabel
+            // movePriorityNumericNoArrows
             // 
-            this.pokedexHTMetersLabel.AutoSize = true;
-            this.pokedexHTMetersLabel.Location = new System.Drawing.Point(553, 193);
-            this.pokedexHTMetersLabel.Name = "pokedexHTMetersLabel";
-            this.pokedexHTMetersLabel.Size = new System.Drawing.Size(15, 13);
-            this.pokedexHTMetersLabel.TabIndex = 9;
-            this.pokedexHTMetersLabel.Text = "m";
+            this.movePriorityNumericNoArrows.InterceptArrowKeys = false;
+            this.movePriorityNumericNoArrows.Location = new System.Drawing.Point(326, 237);
+            this.movePriorityNumericNoArrows.Maximum = new decimal(new int[] {
+            127,
+            0,
+            0,
+            0});
+            this.movePriorityNumericNoArrows.Minimum = new decimal(new int[] {
+            128,
+            0,
+            0,
+            -2147483648});
+            this.movePriorityNumericNoArrows.Name = "movePriorityNumericNoArrows";
+            this.movePriorityNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.movePriorityNumericNoArrows.TabIndex = 8;
+            this.movePriorityNumericNoArrows.Validated += new System.EventHandler(this.movePriorityNumericNoArrows_Validated);
             // 
-            // pokedexHTMetersNumericNoArrows
+            // moveEffectChanceNumericNoArrows
             // 
-            this.pokedexHTMetersNumericNoArrows.InterceptArrowKeys = false;
-            this.pokedexHTMetersNumericNoArrows.Location = new System.Drawing.Point(518, 191);
-            this.pokedexHTMetersNumericNoArrows.Name = "pokedexHTMetersNumericNoArrows";
-            this.pokedexHTMetersNumericNoArrows.Size = new System.Drawing.Size(33, 20);
-            this.pokedexHTMetersNumericNoArrows.TabIndex = 10;
-            this.pokedexHTMetersNumericNoArrows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.moveEffectChanceNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.moveEffectChanceNumericNoArrows.InterceptArrowKeys = false;
+            this.moveEffectChanceNumericNoArrows.Location = new System.Drawing.Point(326, 183);
+            this.moveEffectChanceNumericNoArrows.Name = "moveEffectChanceNumericNoArrows";
+            this.moveEffectChanceNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.moveEffectChanceNumericNoArrows.TabIndex = 7;
+            this.moveEffectChanceNumericNoArrows.Validated += new System.EventHandler(this.moveEffectChanceNumericNoArrows_Validated);
             // 
-            // pokedexWTNumericNoArrows
+            // movePPNumericNoArrows
             // 
-            this.pokedexWTNumericNoArrows.InterceptArrowKeys = false;
-            this.pokedexWTNumericNoArrows.Location = new System.Drawing.Point(518, 218);
-            this.pokedexWTNumericNoArrows.Name = "pokedexWTNumericNoArrows";
-            this.pokedexWTNumericNoArrows.Size = new System.Drawing.Size(33, 20);
-            this.pokedexWTNumericNoArrows.TabIndex = 11;
-            this.pokedexWTNumericNoArrows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.movePPNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.InterceptArrowKeys = false;
+            this.movePPNumericNoArrows.Location = new System.Drawing.Point(173, 239);
+            this.movePPNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
+            this.movePPNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.movePPNumericNoArrows.TabIndex = 3;
+            this.movePPNumericNoArrows.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.Validated += new System.EventHandler(this.movePPNumericNoArrows_Validated);
             // 
-            // pokedexHTFTLabel
+            // moveAccuracyNumericNoArrows
             // 
-            this.pokedexHTFTLabel.AutoSize = true;
-            this.pokedexHTFTLabel.Location = new System.Drawing.Point(639, 191);
-            this.pokedexHTFTLabel.Name = "pokedexHTFTLabel";
-            this.pokedexHTFTLabel.Size = new System.Drawing.Size(9, 13);
-            this.pokedexHTFTLabel.TabIndex = 12;
-            this.pokedexHTFTLabel.Text = "\'";
+            this.moveAccuracyNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.moveAccuracyNumericNoArrows.InterceptArrowKeys = false;
+            this.moveAccuracyNumericNoArrows.Location = new System.Drawing.Point(173, 183);
+            this.moveAccuracyNumericNoArrows.Name = "moveAccuracyNumericNoArrows";
+            this.moveAccuracyNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.moveAccuracyNumericNoArrows.TabIndex = 2;
+            this.moveAccuracyNumericNoArrows.Validated += new System.EventHandler(this.moveAccuracyNumericNoArrows_Validated);
             // 
-            // pokedexHTINLabel
+            // movePowerNumericNoArrows
             // 
-            this.pokedexHTINLabel.AutoSize = true;
-            this.pokedexHTINLabel.Location = new System.Drawing.Point(680, 191);
-            this.pokedexHTINLabel.Name = "pokedexHTINLabel";
-            this.pokedexHTINLabel.Size = new System.Drawing.Size(12, 13);
-            this.pokedexHTINLabel.TabIndex = 13;
-            this.pokedexHTINLabel.Text = "\"";
+            this.movePowerNumericNoArrows.BackColor = System.Drawing.SystemColors.Window;
+            this.movePowerNumericNoArrows.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.movePowerNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePowerNumericNoArrows.InterceptArrowKeys = false;
+            this.movePowerNumericNoArrows.Location = new System.Drawing.Point(173, 126);
+            this.movePowerNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.movePowerNumericNoArrows.Name = "movePowerNumericNoArrows";
+            this.movePowerNumericNoArrows.Size = new System.Drawing.Size(74, 20);
+            this.movePowerNumericNoArrows.TabIndex = 1;
+            this.movePowerNumericNoArrows.Validated += new System.EventHandler(this.movePowerNumericNoArrows_Validated);
             // 
-            // pokedexHTFTNumericNoArrows
+            // speciesCatchRateNumericNoArrows
             // 
-            this.pokedexHTFTNumericNoArrows.InterceptArrowKeys = false;
-            this.pokedexHTFTNumericNoArrows.Location = new System.Drawing.Point(642, 207);
-            this.pokedexHTFTNumericNoArrows.Name = "pokedexHTFTNumericNoArrows";
-            this.pokedexHTFTNumericNoArrows.Size = new System.Drawing.Size(34, 20);
-            this.pokedexHTFTNumericNoArrows.TabIndex = 14;
+            this.speciesCatchRateNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesCatchRateNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesCatchRateNumericNoArrows.Location = new System.Drawing.Point(6, 35);
+            this.speciesCatchRateNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesCatchRateNumericNoArrows.Name = "speciesCatchRateNumericNoArrows";
+            this.speciesCatchRateNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesCatchRateNumericNoArrows.TabIndex = 29;
+            this.speciesCatchRateNumericNoArrows.Validated += new System.EventHandler(this.speciesCatchRateNumericNoArrows_Validated);
+            // 
+            // speciesBaseFriendshipNumericNoArrows
+            // 
+            this.speciesBaseFriendshipNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesBaseFriendshipNumericNoArrows.Location = new System.Drawing.Point(6, 82);
+            this.speciesBaseFriendshipNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesBaseFriendshipNumericNoArrows.Name = "speciesBaseFriendshipNumericNoArrows";
+            this.speciesBaseFriendshipNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesBaseFriendshipNumericNoArrows.TabIndex = 30;
+            this.speciesBaseFriendshipNumericNoArrows.Validated += new System.EventHandler(this.speciesHappinessNumericNoArrows_Validated);
+            // 
+            // speciesSafariRunChanceNumericNoArrows
+            // 
+            this.speciesSafariRunChanceNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSafariRunChanceNumericNoArrows.Location = new System.Drawing.Point(6, 145);
+            this.speciesSafariRunChanceNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSafariRunChanceNumericNoArrows.Name = "speciesSafariRunChanceNumericNoArrows";
+            this.speciesSafariRunChanceNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSafariRunChanceNumericNoArrows.TabIndex = 31;
+            this.speciesSafariRunChanceNumericNoArrows.Validated += new System.EventHandler(this.speciesSafariRunChanceNumericNoArrows_Validated);
+            // 
+            // speciesBaseXPYieldNumericNoArrows
+            // 
+            this.speciesBaseXPYieldNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesBaseXPYieldNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesBaseXPYieldNumericNoArrows.Location = new System.Drawing.Point(9, 72);
+            this.speciesBaseXPYieldNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesBaseXPYieldNumericNoArrows.Name = "speciesBaseXPYieldNumericNoArrows";
+            this.speciesBaseXPYieldNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesBaseXPYieldNumericNoArrows.TabIndex = 18;
+            this.speciesBaseXPYieldNumericNoArrows.Validated += new System.EventHandler(this.speciesBaseXPYieldNumericNoArrows_Validated);
+            // 
+            // speciesSpeedEVNumericNoArrows
+            // 
+            this.speciesSpeedEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpeedEVNumericNoArrows.Location = new System.Drawing.Point(9, 320);
+            this.speciesSpeedEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesSpeedEVNumericNoArrows.Name = "speciesSpeedEVNumericNoArrows";
+            this.speciesSpeedEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpeedEVNumericNoArrows.TabIndex = 12;
+            this.speciesSpeedEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedEVNumericNoArrows_Validated);
+            // 
+            // speciesSpecialDefenseEVNumericNoArrows
+            // 
+            this.speciesSpecialDefenseEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialDefenseEVNumericNoArrows.Location = new System.Drawing.Point(9, 270);
+            this.speciesSpecialDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesSpecialDefenseEVNumericNoArrows.Name = "speciesSpecialDefenseEVNumericNoArrows";
+            this.speciesSpecialDefenseEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpecialDefenseEVNumericNoArrows.TabIndex = 11;
+            this.speciesSpecialDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseEVNumericNoArrows_Validated);
+            // 
+            // speciesSpecialAttackEVNumericNoArrows
+            // 
+            this.speciesSpecialAttackEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialAttackEVNumericNoArrows.Location = new System.Drawing.Point(9, 214);
+            this.speciesSpecialAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesSpecialAttackEVNumericNoArrows.Name = "speciesSpecialAttackEVNumericNoArrows";
+            this.speciesSpecialAttackEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpecialAttackEVNumericNoArrows.TabIndex = 10;
+            this.speciesSpecialAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackEVNumericNoArrows_Validated);
+            // 
+            // speciesDefenseEVNumericNoArrows
+            // 
+            this.speciesDefenseEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesDefenseEVNumericNoArrows.Location = new System.Drawing.Point(9, 159);
+            this.speciesDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesDefenseEVNumericNoArrows.Name = "speciesDefenseEVNumericNoArrows";
+            this.speciesDefenseEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesDefenseEVNumericNoArrows.TabIndex = 9;
+            this.speciesDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseEVNumericNoArrows_Validated);
+            // 
+            // speciesAttackEVNumericNoArrows
+            // 
+            this.speciesAttackEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesAttackEVNumericNoArrows.Location = new System.Drawing.Point(9, 100);
+            this.speciesAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesAttackEVNumericNoArrows.Name = "speciesAttackEVNumericNoArrows";
+            this.speciesAttackEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesAttackEVNumericNoArrows.TabIndex = 8;
+            this.speciesAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackEVNumericNoArrows_Validated);
+            // 
+            // speciesHPEVNumericNoArrows
+            // 
+            this.speciesHPEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesHPEVNumericNoArrows.Location = new System.Drawing.Point(9, 46);
+            this.speciesHPEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesHPEVNumericNoArrows.Name = "speciesHPEVNumericNoArrows";
+            this.speciesHPEVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesHPEVNumericNoArrows.TabIndex = 7;
+            this.speciesHPEVNumericNoArrows.Validated += new System.EventHandler(this.speciesHPEVNumericNoArrows_Validated);
+            // 
+            // speciesEggCyclesNumericNoArrows
+            // 
+            this.speciesEggCyclesNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesEggCyclesNumericNoArrows.Location = new System.Drawing.Point(7, 146);
+            this.speciesEggCyclesNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesEggCyclesNumericNoArrows.Name = "speciesEggCyclesNumericNoArrows";
+            this.speciesEggCyclesNumericNoArrows.Size = new System.Drawing.Size(66, 20);
+            this.speciesEggCyclesNumericNoArrows.TabIndex = 23;
+            this.speciesEggCyclesNumericNoArrows.Validated += new System.EventHandler(this.speciesEggCyclesNumericNoArrows_Validated);
+            // 
+            // speciesGenderRatioNumericNoArrows
+            // 
+            this.speciesGenderRatioNumericNoArrows.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesGenderRatioNumericNoArrows.Location = new System.Drawing.Point(6, 149);
+            this.speciesGenderRatioNumericNoArrows.Maximum = new decimal(new int[] {
+            253,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.Name = "speciesGenderRatioNumericNoArrows";
+            this.speciesGenderRatioNumericNoArrows.Size = new System.Drawing.Size(24, 20);
+            this.speciesGenderRatioNumericNoArrows.TabIndex = 28;
+            this.speciesGenderRatioNumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.Validated += new System.EventHandler(this.speciesGenderRatioNumericNoArrows_Validated);
+            // 
+            // speciesHPNumericNoArrows
+            // 
+            this.speciesHPNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesHPNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesHPNumericNoArrows.Location = new System.Drawing.Point(14, 46);
+            this.speciesHPNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesHPNumericNoArrows.Name = "speciesHPNumericNoArrows";
+            this.speciesHPNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesHPNumericNoArrows.TabIndex = 1;
+            this.speciesHPNumericNoArrows.Validated += new System.EventHandler(this.speciesHPNumericNoArrows_Validated);
+            // 
+            // speciesAttackNumericNoArrows
+            // 
+            this.speciesAttackNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesAttackNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesAttackNumericNoArrows.Location = new System.Drawing.Point(17, 100);
+            this.speciesAttackNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesAttackNumericNoArrows.Name = "speciesAttackNumericNoArrows";
+            this.speciesAttackNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesAttackNumericNoArrows.TabIndex = 2;
+            this.speciesAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackNumericNoArrows_Validated);
+            // 
+            // speciesDefenseNumericNoArrows
+            // 
+            this.speciesDefenseNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesDefenseNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesDefenseNumericNoArrows.Location = new System.Drawing.Point(17, 159);
+            this.speciesDefenseNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesDefenseNumericNoArrows.Name = "speciesDefenseNumericNoArrows";
+            this.speciesDefenseNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesDefenseNumericNoArrows.TabIndex = 3;
+            this.speciesDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseNumericNoArrows_Validated);
+            // 
+            // speciesSpeedNumericNoArrows
+            // 
+            this.speciesSpeedNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesSpeedNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpeedNumericNoArrows.Location = new System.Drawing.Point(17, 320);
+            this.speciesSpeedNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSpeedNumericNoArrows.Name = "speciesSpeedNumericNoArrows";
+            this.speciesSpeedNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpeedNumericNoArrows.TabIndex = 6;
+            this.speciesSpeedNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedNumericNoArrows_Validated);
+            // 
+            // speciesSpecialAttackNumericNoArrows
+            // 
+            this.speciesSpecialAttackNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesSpecialAttackNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialAttackNumericNoArrows.Location = new System.Drawing.Point(17, 214);
+            this.speciesSpecialAttackNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSpecialAttackNumericNoArrows.Name = "speciesSpecialAttackNumericNoArrows";
+            this.speciesSpecialAttackNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpecialAttackNumericNoArrows.TabIndex = 4;
+            this.speciesSpecialAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackNumericNoArrows_Validated);
+            // 
+            // speciesSpecialDefenseNumericNoArrows
+            // 
+            this.speciesSpecialDefenseNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesSpecialDefenseNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialDefenseNumericNoArrows.Location = new System.Drawing.Point(17, 270);
+            this.speciesSpecialDefenseNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSpecialDefenseNumericNoArrows.Name = "speciesSpecialDefenseNumericNoArrows";
+            this.speciesSpecialDefenseNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.speciesSpecialDefenseNumericNoArrows.TabIndex = 5;
+            this.speciesSpecialDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseNumericNoArrows_Validated);
+            // 
+            // tradeHPIVsNumericNoArrows
+            // 
+            this.tradeHPIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeHPIVsNumericNoArrows.Location = new System.Drawing.Point(6, 33);
+            this.tradeHPIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeHPIVsNumericNoArrows.Name = "tradeHPIVsNumericNoArrows";
+            this.tradeHPIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeHPIVsNumericNoArrows.TabIndex = 1;
+            this.tradeHPIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeHPIVsNumericNoArrows_Validated);
+            // 
+            // tradeSpeedIVsNumericNoArrows
+            // 
+            this.tradeSpeedIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeSpeedIVsNumericNoArrows.Location = new System.Drawing.Point(9, 256);
+            this.tradeSpeedIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeSpeedIVsNumericNoArrows.Name = "tradeSpeedIVsNumericNoArrows";
+            this.tradeSpeedIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeSpeedIVsNumericNoArrows.TabIndex = 6;
+            this.tradeSpeedIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpeedIVsNumericNoArrows_Validated);
+            // 
+            // tradeSpecialDefenseIVsNumericNoArrows
+            // 
+            this.tradeSpecialDefenseIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeSpecialDefenseIVsNumericNoArrows.Location = new System.Drawing.Point(9, 212);
+            this.tradeSpecialDefenseIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeSpecialDefenseIVsNumericNoArrows.Name = "tradeSpecialDefenseIVsNumericNoArrows";
+            this.tradeSpecialDefenseIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeSpecialDefenseIVsNumericNoArrows.TabIndex = 5;
+            this.tradeSpecialDefenseIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpecialDefenseIVsNumericNoArrows_Validated);
+            // 
+            // tradeAttackIVsNumericNoArrows
+            // 
+            this.tradeAttackIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeAttackIVsNumericNoArrows.Location = new System.Drawing.Point(9, 77);
+            this.tradeAttackIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeAttackIVsNumericNoArrows.Name = "tradeAttackIVsNumericNoArrows";
+            this.tradeAttackIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeAttackIVsNumericNoArrows.TabIndex = 2;
+            this.tradeAttackIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeAttackIVsNumericNoArrows_Validated);
+            // 
+            // tradeSpecialAttackIVsNumericNoArrows
+            // 
+            this.tradeSpecialAttackIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeSpecialAttackIVsNumericNoArrows.Location = new System.Drawing.Point(9, 168);
+            this.tradeSpecialAttackIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeSpecialAttackIVsNumericNoArrows.Name = "tradeSpecialAttackIVsNumericNoArrows";
+            this.tradeSpecialAttackIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeSpecialAttackIVsNumericNoArrows.TabIndex = 4;
+            this.tradeSpecialAttackIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpecialAttackIVsNumericNoArrows_Validated);
+            // 
+            // tradeDefenseIVsNumericNoArrows
+            // 
+            this.tradeDefenseIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeDefenseIVsNumericNoArrows.Location = new System.Drawing.Point(9, 121);
+            this.tradeDefenseIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeDefenseIVsNumericNoArrows.Name = "tradeDefenseIVsNumericNoArrows";
+            this.tradeDefenseIVsNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeDefenseIVsNumericNoArrows.TabIndex = 3;
+            this.tradeDefenseIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeDefenseIVsNumericNoArrows_Validated);
+            // 
+            // tradeSheenNumericNoArrows
+            // 
+            this.tradeSheenNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeSheenNumericNoArrows.Location = new System.Drawing.Point(9, 253);
+            this.tradeSheenNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeSheenNumericNoArrows.Name = "tradeSheenNumericNoArrows";
+            this.tradeSheenNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeSheenNumericNoArrows.TabIndex = 6;
+            this.tradeSheenNumericNoArrows.Validated += new System.EventHandler(this.tradeSheenNumericNoArrows_Validated);
+            // 
+            // tradeCoolNumericNoArrows
+            // 
+            this.tradeCoolNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeCoolNumericNoArrows.Location = new System.Drawing.Point(9, 32);
+            this.tradeCoolNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeCoolNumericNoArrows.Name = "tradeCoolNumericNoArrows";
+            this.tradeCoolNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeCoolNumericNoArrows.TabIndex = 1;
+            this.tradeCoolNumericNoArrows.Validated += new System.EventHandler(this.tradeCoolNumericNoArrows_Validated);
+            // 
+            // tradeToughNumericNoArrows
+            // 
+            this.tradeToughNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeToughNumericNoArrows.Location = new System.Drawing.Point(9, 209);
+            this.tradeToughNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeToughNumericNoArrows.Name = "tradeToughNumericNoArrows";
+            this.tradeToughNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeToughNumericNoArrows.TabIndex = 5;
+            this.tradeToughNumericNoArrows.Validated += new System.EventHandler(this.tradeToughNumericNoArrows_Validated);
+            // 
+            // tradeBeautyNumericNoArrows
+            // 
+            this.tradeBeautyNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeBeautyNumericNoArrows.Location = new System.Drawing.Point(9, 75);
+            this.tradeBeautyNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeBeautyNumericNoArrows.Name = "tradeBeautyNumericNoArrows";
+            this.tradeBeautyNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeBeautyNumericNoArrows.TabIndex = 2;
+            this.tradeBeautyNumericNoArrows.Validated += new System.EventHandler(this.tradeBeautyNumericNoArrows_Validated);
+            // 
+            // tradeSmartNumericNoArrows
+            // 
+            this.tradeSmartNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeSmartNumericNoArrows.Location = new System.Drawing.Point(9, 165);
+            this.tradeSmartNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeSmartNumericNoArrows.Name = "tradeSmartNumericNoArrows";
+            this.tradeSmartNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeSmartNumericNoArrows.TabIndex = 4;
+            this.tradeSmartNumericNoArrows.Validated += new System.EventHandler(this.tradeSmartNumericNoArrows_Validated);
+            // 
+            // tradeCuteNumericNoArrows
+            // 
+            this.tradeCuteNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeCuteNumericNoArrows.Location = new System.Drawing.Point(9, 118);
+            this.tradeCuteNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeCuteNumericNoArrows.Name = "tradeCuteNumericNoArrows";
+            this.tradeCuteNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.tradeCuteNumericNoArrows.TabIndex = 3;
+            this.tradeCuteNumericNoArrows.Validated += new System.EventHandler(this.tradeCuteNumericNoArrows_Validated);
+            // 
+            // tradePVNumericNoArrows
+            // 
+            this.tradePVNumericNoArrows.InterceptArrowKeys = false;
+            this.tradePVNumericNoArrows.Location = new System.Drawing.Point(506, 265);
+            this.tradePVNumericNoArrows.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
+            this.tradePVNumericNoArrows.Name = "tradePVNumericNoArrows";
+            this.tradePVNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.tradePVNumericNoArrows.TabIndex = 8;
+            this.tradePVNumericNoArrows.ValueChanged += new System.EventHandler(this.tradePVNumericNoArrows_ValueChanged);
+            this.tradePVNumericNoArrows.Validated += new System.EventHandler(this.tradePVNumericNoArrows_Validated);
+            // 
+            // tradeOriginalTrainerIDNumericNoArrows
+            // 
+            this.tradeOriginalTrainerIDNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeOriginalTrainerIDNumericNoArrows.Location = new System.Drawing.Point(506, 131);
+            this.tradeOriginalTrainerIDNumericNoArrows.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.tradeOriginalTrainerIDNumericNoArrows.Name = "tradeOriginalTrainerIDNumericNoArrows";
+            this.tradeOriginalTrainerIDNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.tradeOriginalTrainerIDNumericNoArrows.TabIndex = 3;
+            this.tradeOriginalTrainerIDNumericNoArrows.Validated += new System.EventHandler(this.tradeOriginalTrainerIDNumericNoArrows_Validated);
+            // 
+            // itemNaturalGiftPowerNumericNoArrows
+            // 
+            this.itemNaturalGiftPowerNumericNoArrows.InterceptArrowKeys = false;
+            this.itemNaturalGiftPowerNumericNoArrows.Location = new System.Drawing.Point(373, 74);
+            this.itemNaturalGiftPowerNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemNaturalGiftPowerNumericNoArrows.Name = "itemNaturalGiftPowerNumericNoArrows";
+            this.itemNaturalGiftPowerNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.itemNaturalGiftPowerNumericNoArrows.TabIndex = 12;
+            // 
+            // itemFlingEffectNumericNoArrows
+            // 
+            this.itemFlingEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.itemFlingEffectNumericNoArrows.Location = new System.Drawing.Point(261, 134);
+            this.itemFlingEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemFlingEffectNumericNoArrows.Name = "itemFlingEffectNumericNoArrows";
+            this.itemFlingEffectNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.itemFlingEffectNumericNoArrows.TabIndex = 10;
+            // 
+            // itemFlingPowerNumericNoArrows
+            // 
+            this.itemFlingPowerNumericNoArrows.InterceptArrowKeys = false;
+            this.itemFlingPowerNumericNoArrows.Location = new System.Drawing.Point(261, 75);
+            this.itemFlingPowerNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemFlingPowerNumericNoArrows.Name = "itemFlingPowerNumericNoArrows";
+            this.itemFlingPowerNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.itemFlingPowerNumericNoArrows.TabIndex = 8;
+            // 
+            // itemPluckEffectNumericNoArrows
+            // 
+            this.itemPluckEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.itemPluckEffectNumericNoArrows.Location = new System.Drawing.Point(102, 257);
+            this.itemPluckEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemPluckEffectNumericNoArrows.Name = "itemPluckEffectNumericNoArrows";
+            this.itemPluckEffectNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.itemPluckEffectNumericNoArrows.TabIndex = 6;
+            // 
+            // itemHoldParameterNumericNoArrows
+            // 
+            this.itemHoldParameterNumericNoArrows.InterceptArrowKeys = false;
+            this.itemHoldParameterNumericNoArrows.Location = new System.Drawing.Point(102, 198);
+            this.itemHoldParameterNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemHoldParameterNumericNoArrows.Name = "itemHoldParameterNumericNoArrows";
+            this.itemHoldParameterNumericNoArrows.Size = new System.Drawing.Size(62, 20);
+            this.itemHoldParameterNumericNoArrows.TabIndex = 4;
+            // 
+            // itemHoldEffectNumericNoArrows
+            // 
+            this.itemHoldEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.itemHoldEffectNumericNoArrows.Location = new System.Drawing.Point(99, 136);
+            this.itemHoldEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemHoldEffectNumericNoArrows.Name = "itemHoldEffectNumericNoArrows";
+            this.itemHoldEffectNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.itemHoldEffectNumericNoArrows.TabIndex = 2;
+            // 
+            // itemPriceNumericNoArrows
+            // 
+            this.itemPriceNumericNoArrows.InterceptArrowKeys = false;
+            this.itemPriceNumericNoArrows.Location = new System.Drawing.Point(99, 75);
+            this.itemPriceNumericNoArrows.Maximum = new decimal(new int[] {
+            65565,
+            0,
+            0,
+            0});
+            this.itemPriceNumericNoArrows.Name = "itemPriceNumericNoArrows";
+            this.itemPriceNumericNoArrows.Size = new System.Drawing.Size(65, 20);
+            this.itemPriceNumericNoArrows.TabIndex = 0;
             // 
             // pokedexHTINNumericNoArrows
             // 
+            this.pokedexHTINNumericNoArrows.Increment = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
             this.pokedexHTINNumericNoArrows.InterceptArrowKeys = false;
             this.pokedexHTINNumericNoArrows.Location = new System.Drawing.Point(682, 207);
             this.pokedexHTINNumericNoArrows.Maximum = new decimal(new int[] {
@@ -2891,6 +2870,79 @@
             this.pokedexHTINNumericNoArrows.Name = "pokedexHTINNumericNoArrows";
             this.pokedexHTINNumericNoArrows.Size = new System.Drawing.Size(22, 20);
             this.pokedexHTINNumericNoArrows.TabIndex = 15;
+            // 
+            // pokedexHTFTNumericNoArrows
+            // 
+            this.pokedexHTFTNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexHTFTNumericNoArrows.Location = new System.Drawing.Point(642, 207);
+            this.pokedexHTFTNumericNoArrows.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.pokedexHTFTNumericNoArrows.Name = "pokedexHTFTNumericNoArrows";
+            this.pokedexHTFTNumericNoArrows.Size = new System.Drawing.Size(34, 20);
+            this.pokedexHTFTNumericNoArrows.TabIndex = 14;
+            this.pokedexHTFTNumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // pokedexWTNumericNoArrows
+            // 
+            this.pokedexWTNumericNoArrows.DecimalPlaces = 1;
+            this.pokedexWTNumericNoArrows.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.pokedexWTNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexWTNumericNoArrows.Location = new System.Drawing.Point(518, 218);
+            this.pokedexWTNumericNoArrows.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.pokedexWTNumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.pokedexWTNumericNoArrows.Name = "pokedexWTNumericNoArrows";
+            this.pokedexWTNumericNoArrows.Size = new System.Drawing.Size(33, 20);
+            this.pokedexWTNumericNoArrows.TabIndex = 11;
+            this.pokedexWTNumericNoArrows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.pokedexWTNumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            // 
+            // pokedexHTMetersNumericNoArrows
+            // 
+            this.pokedexHTMetersNumericNoArrows.DecimalPlaces = 1;
+            this.pokedexHTMetersNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexHTMetersNumericNoArrows.Location = new System.Drawing.Point(518, 191);
+            this.pokedexHTMetersNumericNoArrows.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.pokedexHTMetersNumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.pokedexHTMetersNumericNoArrows.Name = "pokedexHTMetersNumericNoArrows";
+            this.pokedexHTMetersNumericNoArrows.Size = new System.Drawing.Size(33, 20);
+            this.pokedexHTMetersNumericNoArrows.TabIndex = 10;
+            this.pokedexHTMetersNumericNoArrows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.pokedexHTMetersNumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             // 
             // MainForm
             // 
@@ -2907,66 +2959,74 @@
             this.mainTabControl.ResumeLayout(false);
             this.movesTabPage.ResumeLayout(false);
             this.movesTabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).EndInit();
             this.moveFlagsGroupBox.ResumeLayout(false);
             this.moveFlagsGroupBox.PerformLayout();
             this.speciesTabPage.ResumeLayout(false);
             this.speciesTabPage.PerformLayout();
             this.speciesMiscGroupBox.ResumeLayout(false);
             this.speciesMiscGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesCatchRateNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseFriendshipNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSafariRunChanceNumericNoArrows)).EndInit();
             this.speciesXPGroupBox.ResumeLayout(false);
             this.speciesXPGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseXPYieldNumericNoArrows)).EndInit();
             this.speciesEVOnDefeatGroupBox.ResumeLayout(false);
             this.speciesEVOnDefeatGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesAttackEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesHPEVNumericNoArrows)).EndInit();
             this.speciesHeldItemsGroupBox.ResumeLayout(false);
             this.speciesHeldItemsGroupBox.PerformLayout();
             this.speciesAbilitiesGroupBox.ResumeLayout(false);
             this.speciesAbilitiesGroupBox.PerformLayout();
             this.speciesEggGroupsGroupBox.ResumeLayout(false);
             this.speciesEggGroupsGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).EndInit();
             this.speciesTypesGroupBox.ResumeLayout(false);
             this.speciesTypesGroupBox.PerformLayout();
             this.speciesGenderGroupBox.ResumeLayout(false);
             this.speciesGenderGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).EndInit();
             this.speciesBaseStatsGroupBox.ResumeLayout(false);
             this.speciesBaseStatsGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesHPNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesAttackNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).EndInit();
             this.npcTradeTabPage.ResumeLayout(false);
             this.npcTradeTabPage.PerformLayout();
             this.tradePVDerivedGroupBox.ResumeLayout(false);
             this.tradePVDerivedGroupBox.PerformLayout();
             this.tradeIVsGroupBox.ResumeLayout(false);
             this.tradeIVsGroupBox.PerformLayout();
+            this.tradeContestStatsGroupBox.ResumeLayout(false);
+            this.tradeContestStatsGroupBox.PerformLayout();
+            this.itemsTabPage.ResumeLayout(false);
+            this.itemsTabPage.PerformLayout();
+            this.itemsBattlePocketsGroupBox.ResumeLayout(false);
+            this.itemsBattlePocketsGroupBox.PerformLayout();
+            this.pokedexTabPage.ResumeLayout(false);
+            this.pokedexTabPage.PerformLayout();
+            this.mainFormMenuStrip.ResumeLayout(false);
+            this.mainFormMenuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesCatchRateNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseFriendshipNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSafariRunChanceNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseXPYieldNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesAttackEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesHPEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesHPNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesAttackNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeHPIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpeedIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialDefenseIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeAttackIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialAttackIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeDefenseIVsNumericNoArrows)).EndInit();
-            this.tradeContestStatsGroupBox.ResumeLayout(false);
-            this.tradeContestStatsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSheenNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeCoolNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeToughNumericNoArrows)).EndInit();
@@ -2975,10 +3035,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tradeCuteNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradePVNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeOriginalTrainerIDNumericNoArrows)).EndInit();
-            this.itemsTabPage.ResumeLayout(false);
-            this.itemsTabPage.PerformLayout();
-            this.itemsBattlePocketsGroupBox.ResumeLayout(false);
-            this.itemsBattlePocketsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemNaturalGiftPowerNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingEffectNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingPowerNumericNoArrows)).EndInit();
@@ -2986,14 +3042,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldParameterNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldEffectNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).EndInit();
-            this.pokedexTabPage.ResumeLayout(false);
-            this.pokedexTabPage.PerformLayout();
-            this.mainFormMenuStrip.ResumeLayout(false);
-            this.mainFormMenuStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTMetersNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTFTNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTINNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTFTNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTMetersNumericNoArrows)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
