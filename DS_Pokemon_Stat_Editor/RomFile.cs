@@ -289,7 +289,7 @@ namespace Pokemon_Sinjoh_Editor
 			
             gameText = new TextArchive(gameTextNarc, Language == Languages.KOREAN);
 
-            SetupTextArrays();
+            SetupTextLists();
 
             MoveList.Clear();
             PokemonSpeciesList.Clear();
@@ -310,15 +310,29 @@ namespace Pokemon_Sinjoh_Editor
 			for (int i = 0; i < itemsNarc.Elements.Count; i++)
                 ItemList.Add(new Item(itemsNarc.Elements[i]));
 
+            //height is stored in the 0th element of the narc
             using (BinaryReader pokedexHeightReader = new BinaryReader(pokedexNarc.Elements[0]))
             {
-                for (int i = 0; i < pokedexNarc.Elements[0].Length; i += 4)
+                pokedexHeightReader.ReadUInt32();
+
+                for (int i = 4; i < pokedexNarc.Elements[0].Length; i += 4)
                 {
                     HeightList.Add(new Height(pokedexHeightReader.ReadUInt32()));
                 }
             }
 
-            
+            //weight is stored in the 1st element of the narc
+            using (BinaryReader pokedexWeightReader = new BinaryReader(pokedexNarc.Elements[1]))
+            {
+                pokedexWeightReader.ReadUInt32();
+
+                for (int i = 4; i < pokedexNarc.Elements[1].Length; i += 4)
+                {
+                    WeightList.Add(new Weight(pokedexWeightReader.ReadUInt32()));
+                }
+            }
+
+
         }
 
 		private static void readHeader(BinaryReader romFileReader)
@@ -377,7 +391,7 @@ namespace Pokemon_Sinjoh_Editor
 			
 		}
 
-        private static void SetupTextArrays()
+        private static void SetupTextLists()
         {
             int textBankIndex;
             List<string> tradesTextBank;
