@@ -82,8 +82,47 @@ namespace Pokemon_Sinjoh_Editor
         private void pokedexNumNationalNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
             if (!pokedexNumChangedByCode)
-            {
                 pokedexNameComboBox.SelectedIndex = (int)pokedexNumNationalNumericUpDown.Value - 1;
+        }
+
+        private void pokedexWTNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.Language == Languages.ENGLISH && RomFile.WeightList[pokedexNameComboBox.SelectedIndex].GetPounds() != (double)pokedexWTNumericNoArrows.Value)
+            {
+                RomFile.WeightList[pokedexNameComboBox.SelectedIndex].SetImperial((double)pokedexWTNumericNoArrows.Value);
+                MarkUnsavedChanges();
+            }
+            else if (RomFile.WeightList[pokedexNameComboBox.SelectedIndex].GetKilograms() != (double)pokedexWTNumericNoArrows.Value)
+            {
+                RomFile.WeightList[pokedexNameComboBox.SelectedIndex].SetKilograms((double)pokedexWTNumericNoArrows.Value);
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void pokedexHTMetersNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetMeters() != (double)pokedexHTMetersNumericNoArrows.Value)
+            {
+                RomFile.HeightList[pokedexNameComboBox.SelectedIndex].SetMeters((double)pokedexHTMetersNumericNoArrows.Value);
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void pokedexHTFTNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetFeet() != (int)pokedexHTFTNumericNoArrows.Value)
+            {
+                RomFile.HeightList[pokedexNameComboBox.SelectedIndex].SetImperial((int)pokedexHTFTNumericNoArrows.Value, (int)pokedexHTINNumericNoArrows.Value);
+                MarkUnsavedChanges();
+            }
+        }
+
+        private void pokedexHTINNumericNoArrows_Validated(object sender, EventArgs e)
+        {
+            if (RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetInches() != (int)pokedexHTINNumericNoArrows.Value)
+            {
+                RomFile.HeightList[pokedexNameComboBox.SelectedIndex].SetImperial((int)pokedexHTFTNumericNoArrows.Value, (int)pokedexHTINNumericNoArrows.Value);
+                MarkUnsavedChanges();
             }
         }
     }

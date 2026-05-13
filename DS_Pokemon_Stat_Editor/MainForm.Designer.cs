@@ -220,6 +220,7 @@
             this.itemHoldEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemPriceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.pokedexTabPage = new System.Windows.Forms.TabPage();
+            this.pokedexNumNationalNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.pokedexHTINNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.pokedexHTFTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.pokedexHTINLabel = new System.Windows.Forms.Label();
@@ -280,7 +281,6 @@
             this.tradeAbilityTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeGenderTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeNatureTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.pokedexNumNationalNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
@@ -346,12 +346,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).BeginInit();
             this.pokedexTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexNumNationalNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTINNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTFTNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTMetersNumericNoArrows)).BeginInit();
             this.mainFormMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexNumNationalNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -2647,6 +2647,24 @@
             this.pokedexTabPage.Text = "Pokedex";
             this.pokedexTabPage.UseVisualStyleBackColor = true;
             // 
+            // pokedexNumNationalNumericUpDown
+            // 
+            this.pokedexNumNationalNumericUpDown.Location = new System.Drawing.Point(398, 98);
+            this.pokedexNumNationalNumericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.pokedexNumNationalNumericUpDown.Name = "pokedexNumNationalNumericUpDown";
+            this.pokedexNumNationalNumericUpDown.Size = new System.Drawing.Size(49, 20);
+            this.pokedexNumNationalNumericUpDown.TabIndex = 17;
+            this.pokedexNumNationalNumericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.pokedexNumNationalNumericUpDown.ValueChanged += new System.EventHandler(this.pokedexNumNationalNumericUpDown_ValueChanged);
+            // 
             // pokedexHTINNumericNoArrows
             // 
             this.pokedexHTINNumericNoArrows.Increment = new decimal(new int[] {
@@ -2665,6 +2683,7 @@
             this.pokedexHTINNumericNoArrows.Size = new System.Drawing.Size(22, 20);
             this.pokedexHTINNumericNoArrows.TabIndex = 15;
             this.pokedexHTINNumericNoArrows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.pokedexHTINNumericNoArrows.Validated += new System.EventHandler(this.pokedexHTINNumericNoArrows_Validated);
             // 
             // pokedexHTFTNumericNoArrows
             // 
@@ -2679,6 +2698,7 @@
             this.pokedexHTFTNumericNoArrows.Size = new System.Drawing.Size(24, 20);
             this.pokedexHTFTNumericNoArrows.TabIndex = 14;
             this.pokedexHTFTNumericNoArrows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.pokedexHTFTNumericNoArrows.Validated += new System.EventHandler(this.pokedexHTFTNumericNoArrows_Validated);
             // 
             // pokedexHTINLabel
             // 
@@ -2727,6 +2747,7 @@
             0,
             0,
             65536});
+            this.pokedexWTNumericNoArrows.Validated += new System.EventHandler(this.pokedexWTNumericNoArrows_Validated);
             // 
             // pokedexHTMetersNumericNoArrows
             // 
@@ -2752,6 +2773,7 @@
             0,
             0,
             65536});
+            this.pokedexHTMetersNumericNoArrows.Validated += new System.EventHandler(this.pokedexHTMetersNumericNoArrows_Validated);
             // 
             // pokedexHTMetersLabel
             // 
@@ -2935,24 +2957,6 @@
             this.한국어ToolStripMenuItem.Text = "한국어";
             this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
             // 
-            // pokedexNumNationalNumericUpDown
-            // 
-            this.pokedexNumNationalNumericUpDown.Location = new System.Drawing.Point(398, 98);
-            this.pokedexNumNationalNumericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.pokedexNumNationalNumericUpDown.Name = "pokedexNumNationalNumericUpDown";
-            this.pokedexNumNationalNumericUpDown.Size = new System.Drawing.Size(49, 20);
-            this.pokedexNumNationalNumericUpDown.TabIndex = 17;
-            this.pokedexNumNationalNumericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.pokedexNumNationalNumericUpDown.ValueChanged += new System.EventHandler(this.pokedexNumNationalNumericUpDown_ValueChanged);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3049,13 +3053,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).EndInit();
             this.pokedexTabPage.ResumeLayout(false);
             this.pokedexTabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexNumNationalNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTINNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTFTNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTMetersNumericNoArrows)).EndInit();
             this.mainFormMenuStrip.ResumeLayout(false);
             this.mainFormMenuStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexNumNationalNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
