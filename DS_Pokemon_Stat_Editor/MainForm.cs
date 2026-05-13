@@ -902,7 +902,19 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (!Text.Contains("*"))
                 Text += '*';
+
             RomFile.AreUnsavedChanges = true;
+
+            if (mainTabControl.SelectedTab == movesTabPage)
+                RomFile.UnsavedChangesMoves = true;
+            else if (mainTabControl.SelectedTab == speciesTabPage)
+                RomFile.UnsavedChangesSpecies = true;
+            else if (mainTabControl.SelectedTab == npcTradeTabPage)
+                RomFile.UnsavedChangesTrades = true;
+            else if (mainTabControl.SelectedTab == itemsTabPage)
+                RomFile.UnsavedChangesItems = true;
+            else if (mainTabControl.SelectedTab == pokedexTabPage)
+                RomFile.UnsavedChangesPokedex = true;
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)

@@ -19,8 +19,13 @@ namespace Pokemon_Sinjoh_Editor
         public static GameFamilies gameFamily = GameFamilies.NULL;
 		private static string romPath;
 		public static bool AreUnsavedChanges = false;
+        public static bool UnsavedChangesMoves = false;
+        public static bool UnsavedChangesSpecies = false;
+        public static bool UnsavedChangesTrades = false;
+        public static bool UnsavedChangesItems = false;
+        public static bool UnsavedChangesPokedex = false;
 
-		public static List<Move> MoveList = new List<Move>();
+        public static List<Move> MoveList = new List<Move>();
         public static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
 		public static List<NPCTrade> NPCTradesList = new List<NPCTrade>();
         public static List<Item> ItemList = new List<Item>();
@@ -812,20 +817,47 @@ namespace Pokemon_Sinjoh_Editor
 			FileStream romFileStream = new FileStream(romPath, FileMode.Open);
             BinaryWriter romWriter = new BinaryWriter(romFileStream, Encoding.UTF8, true);
 
-			for (int i = 0; i < MoveList.Count; i++)
-				movesNarc.Elements[i + 1] = MoveList[i].GetBinary(); //skip the first move in movesNarc because it's a placeholder
+            if (UnsavedChangesMoves)
+            {
+                for (int i = 0; i < MoveList.Count; i++)
+                    movesNarc.Elements[i + 1] = MoveList[i].GetBinary(); //skip the first move in movesNarc because it's a placeholder
+            }
+			
+            if (UnsavedChangesSpecies)
+            {
+                for (int i = 0; i < PokemonSpeciesList.Count; i++)
+                    pokemonSpeciesNarc.Elements[i + 1] = PokemonSpeciesList[i].GetBinary(); //skip the first pokemon in pokemonSpeciesNarc because it's a placeholder
+            }
 
-			for (int i = 0; i < PokemonSpeciesList.Count; i++)
-				pokemonSpeciesNarc.Elements[i + 1] = PokemonSpeciesList[i].GetBinary(); //skip the first pokemon in pokemonSpeciesNarc because it's a placeholder
+			if (UnsavedChangesTrades)
+            {
+                for (int i = 0; i < NPCTradesList.Count; i++)
+                    npcTradesNarc.Elements[i] = NPCTradesList[i].GetBinary();
+            }
 
-			for (int i = 0; i < NPCTradesList.Count; i++)
-                npcTradesNarc.Elements[i] = NPCTradesList[i].GetBinary();
+			
 
             try
 			{
-				movesNarc.Write(romWriter);
-				pokemonSpeciesNarc.Write(romWriter);
-                npcTradesNarc.Write(romWriter);
+                if (UnsavedChangesMoves)
+                {
+                    movesNarc.Write(romWriter);
+                    UnsavedChangesMoves = false;
+                }
+
+                if (UnsavedChangesSpecies)
+                {
+                    pokemonSpeciesNarc.Write(romWriter);
+                    UnsavedChangesSpecies = false;
+                } 
+
+                if (UnsavedChangesTrades)
+                {
+                    npcTradesNarc.Write(romWriter);
+                    UnsavedChangesTrades = false;
+                }
+                    
+
                 AreUnsavedChanges = false;
             }
             catch (EndOfStreamException e)
