@@ -789,7 +789,7 @@ namespace Pokemon_Sinjoh_Editor
             };
         }
 
-        
+        public static int GetNumPokemon() => WeightList.Count;
 
         public static bool IsValidGameVersion()
         {

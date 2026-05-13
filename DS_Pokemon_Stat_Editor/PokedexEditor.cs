@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Drawing;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Pokemon_Sinjoh_Editor
 {
     partial class MainForm
     {
+        private bool pokedexNumChangedByCode = false;
+
         private void setupPokedexText()
         {
             pokedexNameComboBox.Items.Clear();
@@ -22,6 +23,11 @@ namespace Pokemon_Sinjoh_Editor
                 pokedexHTFTLabel.Visible = true;
                 pokedexHTINLabel.Visible = true;
                 pokedexWTUnitLabel.Text = "lbs.";
+
+                pokedexHTFTLabel.Location = new Point(pokedexHTFTLabel.Location.X, pokedexHTMetersLabel.Location.Y);
+                pokedexHTINLabel.Location = new Point(pokedexHTINLabel.Location.X, pokedexHTMetersLabel.Location.Y);
+                pokedexHTFTNumericNoArrows.Location = new Point(pokedexHTFTNumericNoArrows.Location.X, pokedexHTMetersLabel.Location.Y);
+                pokedexHTINNumericNoArrows.Location = new Point(pokedexHTINNumericNoArrows.Location.X, pokedexHTMetersLabel.Location.Y);
             }
             else
             {
@@ -33,7 +39,8 @@ namespace Pokemon_Sinjoh_Editor
                 pokedexHTINLabel.Visible = false;
                 pokedexWTUnitLabel.Text = "kg";
             }
-                
+
+            pokedexNumNationalNumericUpDown.Maximum = RomFile.GetNumPokemon();
         }
 
         private void UpdateDisplayedPokedexValues()
@@ -47,7 +54,11 @@ namespace Pokemon_Sinjoh_Editor
         private void DisplayPokedexValues(int pokemonIndex)
         {
             pokedexCategoryTextBox.Text = RomFile.GetPokedexCategory(pokemonIndex);
-            pokedexNumTextBox.Text = (pokemonIndex + 1).ToString();
+
+            pokedexNumChangedByCode = true;
+            pokedexNumNationalNumericUpDown.Value = pokemonIndex + 1; //add 1 because pokedex num is not a 0th based index
+            pokedexNumChangedByCode = false;
+
             pokdexEntryRichTextBox.Text = RomFile.GetPokedexDescription(pokemonIndex);
             
             if (RomFile.Language == Languages.ENGLISH)
@@ -66,6 +77,14 @@ namespace Pokemon_Sinjoh_Editor
         private void pokedexNameComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
             DisplayPokedexValues(pokedexNameComboBox.SelectedIndex);
+        }
+
+        private void pokedexNumNationalNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            if (!pokedexNumChangedByCode)
+            {
+                pokedexNameComboBox.SelectedIndex = (int)pokedexNumNationalNumericUpDown.Value - 1;
+            }
         }
     }
 }
