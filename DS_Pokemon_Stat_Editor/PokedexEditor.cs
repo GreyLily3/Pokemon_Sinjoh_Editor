@@ -48,7 +48,7 @@ namespace Pokemon_Sinjoh_Editor
             //we need the event handler to only be set after all text is loaded into the controls
             this.pokedexNameComboBox.SelectedValueChanged += new System.EventHandler(this.pokedexNameComboBox_SelectedValueChanged);
 
-            pokedexNameComboBox.SelectedIndex = 0; //makes pound the initially selected move
+            pokedexNameComboBox.SelectedIndex = 0; //makes bulbasaur's entry the first entry selected
         }
 
         private void DisplayPokedexValues(int pokemonIndex)
@@ -91,6 +91,8 @@ namespace Pokemon_Sinjoh_Editor
             {
                 RomFile.WeightList[pokedexNameComboBox.SelectedIndex].SetImperial((double)pokedexWTNumericNoArrows.Value);
                 MarkUnsavedChanges();
+                //make sure the weight displayed matches the rounding used in game
+                pokedexWTNumericNoArrows.Value = (decimal)RomFile.WeightList[pokedexNameComboBox.SelectedIndex].GetPounds(); 
             }
             else if (RomFile.WeightList[pokedexNameComboBox.SelectedIndex].GetKilograms() != (double)pokedexWTNumericNoArrows.Value)
             {
