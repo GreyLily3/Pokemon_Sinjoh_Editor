@@ -16,31 +16,17 @@ namespace Pokemon_Sinjoh_Editor
 
             if (RomFile.Language == Languages.ENGLISH)
             {
-                pokedexHTMetersNumericNoArrows.Visible = false;
-                pokedexHTMetersLabel.Visible = false;
-                pokedexHTFTNumericNoArrows.Visible = true;
-                pokedexHTINNumericNoArrows.Visible = true;
-                pokedexHTFTLabel.Visible = true;
-                pokedexHTINLabel.Visible = true;
                 pokedexWTUnitLabel.Text = "lbs.";
-
-                pokedexHTFTLabel.Location = new Point(pokedexHTFTLabel.Location.X, pokedexHTMetersLabel.Location.Y);
-                pokedexHTINLabel.Location = new Point(pokedexHTINLabel.Location.X, pokedexHTMetersLabel.Location.Y);
-                pokedexHTFTNumericNoArrows.Location = new Point(pokedexHTFTNumericNoArrows.Location.X, pokedexHTMetersLabel.Location.Y);
-                pokedexHTINNumericNoArrows.Location = new Point(pokedexHTINNumericNoArrows.Location.X, pokedexHTMetersLabel.Location.Y);
             }
             else
             {
-                pokedexHTMetersNumericNoArrows.Visible = true;
-                pokedexHTMetersLabel.Visible = true;
-                pokedexHTFTNumericNoArrows.Visible = false;
-                pokedexHTINNumericNoArrows.Visible = false;
-                pokedexHTFTLabel.Visible = false;
-                pokedexHTINLabel.Visible = false;
                 pokedexWTUnitLabel.Text = "kg";
             }
 
             pokedexNumNationalNumericUpDown.Maximum = RomFile.GetNumPokemon();
+            pokedexHTDecimetersNumericUpDown.Maximum = uint.MaxValue;
+            pokedexHTMetersNumericNoArrows.Maximum = uint.MaxValue;
+            pokedexHTFTNumericNoArrows.Maximum = uint.MaxValue;
         }
 
         private void UpdateDisplayedPokedexValues()
@@ -60,18 +46,17 @@ namespace Pokemon_Sinjoh_Editor
             pokedexNumChangedByCode = false;
 
             pokdexEntryRichTextBox.Text = RomFile.GetPokedexDescription(pokemonIndex);
-            
+
+            pokedexHTDecimetersNumericUpDown.Value = RomFile.HeightList[pokemonIndex].decimeters;
+            pokedexHTFTNumericNoArrows.Value = RomFile.HeightList[pokemonIndex].GetFeet();
+            pokedexHTINNumericNoArrows.Value = RomFile.HeightList[pokemonIndex].GetInches();
+            pokedexHTMetersNumericNoArrows.Value = (decimal)RomFile.HeightList[pokemonIndex].GetMeters();
+
             if (RomFile.Language == Languages.ENGLISH)
-            {
                 pokedexWTNumericNoArrows.Value = (decimal)RomFile.WeightList[pokemonIndex].GetPounds();
-                pokedexHTFTNumericNoArrows.Value = RomFile.HeightList[pokemonIndex].GetFeet();
-                pokedexHTINNumericNoArrows.Value = RomFile.HeightList[pokemonIndex].GetInches();
-            }
             else
-            {
                 pokedexWTNumericNoArrows.Value = (decimal)RomFile.WeightList[pokemonIndex].GetKilograms();
-                pokedexHTMetersNumericNoArrows.Value = (decimal)RomFile.HeightList[pokemonIndex].GetMeters();
-            }
+
         }
 
         private void pokedexNameComboBox_SelectedValueChanged(object sender, EventArgs e)
@@ -103,28 +88,29 @@ namespace Pokemon_Sinjoh_Editor
 
         private void pokedexHTMetersNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            if (RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetMeters() != (double)pokedexHTMetersNumericNoArrows.Value)
-            {
-                RomFile.HeightList[pokedexNameComboBox.SelectedIndex].SetMeters((double)pokedexHTMetersNumericNoArrows.Value);
-                MarkUnsavedChanges();
-            }
+
         }
 
         private void pokedexHTFTNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            if (RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetFeet() != (int)pokedexHTFTNumericNoArrows.Value)
-            {
-                RomFile.HeightList[pokedexNameComboBox.SelectedIndex].SetImperial((int)pokedexHTFTNumericNoArrows.Value, (int)pokedexHTINNumericNoArrows.Value);
-                MarkUnsavedChanges();
-            }
+ 
         }
 
         private void pokedexHTINNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            if (RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetInches() != (int)pokedexHTINNumericNoArrows.Value)
+
+        }
+
+        private void pokedexHTDecimetersNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            if (RomFile.HeightList[pokedexNameComboBox.SelectedIndex].decimeters != (uint)pokedexHTDecimetersNumericUpDown.Value)
             {
-                RomFile.HeightList[pokedexNameComboBox.SelectedIndex].SetImperial((int)pokedexHTFTNumericNoArrows.Value, (int)pokedexHTINNumericNoArrows.Value);
+                RomFile.HeightList[pokedexNameComboBox.SelectedIndex].decimeters = (uint)pokedexHTDecimetersNumericUpDown.Value;
                 MarkUnsavedChanges();
+
+                pokedexHTINNumericNoArrows.Value = RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetInches();
+                pokedexHTFTNumericNoArrows.Value = RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetFeet();
+                pokedexHTMetersNumericNoArrows.Value = (decimal)RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetMeters();
             }
         }
     }

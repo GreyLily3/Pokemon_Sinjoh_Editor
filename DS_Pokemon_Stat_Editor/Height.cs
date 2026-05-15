@@ -4,7 +4,7 @@ namespace Pokemon_Sinjoh_Editor
 {
     public class Height
     {
-        private uint decimeters;
+        public uint decimeters;
         private const double INCHES_PER_DECIMETERS = 3.937007874;
         private const double METERS_PER_DECIMETER = 0.1;
 
@@ -14,7 +14,7 @@ namespace Pokemon_Sinjoh_Editor
         }
 
         public int GetInches() => (int)Math.Round(decimeters * INCHES_PER_DECIMETERS) % 12;
-        public int GetFeet() => (int)Math.Round(decimeters * INCHES_PER_DECIMETERS, 1) / 12;
+        public int GetFeet() => (int)Math.Round(decimeters * INCHES_PER_DECIMETERS) / 12;
         public double GetMeters() => decimeters * METERS_PER_DECIMETER;
         public void SetImperial(int feet, int inches)
         {
