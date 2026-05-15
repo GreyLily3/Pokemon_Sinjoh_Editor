@@ -2729,7 +2729,7 @@
             this.pokedexWTNumericNoArrows.InterceptArrowKeys = false;
             this.pokedexWTNumericNoArrows.Location = new System.Drawing.Point(518, 218);
             this.pokedexWTNumericNoArrows.Maximum = new decimal(new int[] {
-            9999,
+            9998,
             0,
             0,
             0});

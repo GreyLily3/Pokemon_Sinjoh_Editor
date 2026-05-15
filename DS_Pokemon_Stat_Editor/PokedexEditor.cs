@@ -94,7 +94,7 @@ namespace Pokemon_Sinjoh_Editor
                 //make sure the weight displayed matches the rounding used in game
                 pokedexWTNumericNoArrows.Value = (decimal)RomFile.WeightList[pokedexNameComboBox.SelectedIndex].GetPounds(); 
             }
-            else if (RomFile.WeightList[pokedexNameComboBox.SelectedIndex].GetKilograms() != (double)pokedexWTNumericNoArrows.Value)
+            else if (RomFile.Language != Languages.ENGLISH && RomFile.WeightList[pokedexNameComboBox.SelectedIndex].GetKilograms() != (double)pokedexWTNumericNoArrows.Value)
             {
                 RomFile.WeightList[pokedexNameComboBox.SelectedIndex].SetKilograms((double)pokedexWTNumericNoArrows.Value);
                 MarkUnsavedChanges();
