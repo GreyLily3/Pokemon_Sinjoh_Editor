@@ -9819,7 +9819,7 @@ namespace Pokemon_Sinjoh_Editor
             TextBankIndexKorean.Add((RomFile.GameFamilies.PL, TextBankName.POKEMON), 408);
             TextBankIndexKorean.Add((RomFile.GameFamilies.HGSS, TextBankName.POKEMON), 233);
 
-            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.POKEDEXCATEGORIES), 214);
+            TextBankIndexIndoEuro.Add((RomFile.GameFamilies.DP,  TextBankName.POKEDEXCATEGORIES), 621);
             TextBankIndexIndoEuro.Add((RomFile.GameFamilies.PL,  TextBankName.POKEDEXCATEGORIES), 711); //also 718
             TextBankIndexIndoEuro.Add((RomFile.GameFamilies.HGSS,  TextBankName.POKEDEXCATEGORIES), 816); //also 823
             TextBankIndexJapanese.Add((RomFile.GameFamilies.DP, TextBankName.POKEDEXCATEGORIES), 607);
