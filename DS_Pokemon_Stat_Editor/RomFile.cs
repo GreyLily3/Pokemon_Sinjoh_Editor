@@ -56,8 +56,10 @@ namespace Pokemon_Sinjoh_Editor
 		private const int FAT_POINTER_OFFSET = 0x48;
         private const int LANGUAGE_GAME_CODE_OFFSET = 0xF;
 
+        private const int POKEDEX_NARC_HEIGHT_INDEX = 0;
+        private const int POKEDEX_NARC_WEIGHT_INDEX = 1;
 
-
+        private const int UINT_NUM_BYTES = 4;
 
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_DP = 111;
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_PL = 112;
@@ -119,7 +121,10 @@ namespace Pokemon_Sinjoh_Editor
         private const int KOR_POKEMON_SPECIES_NARC_ID_D = 0x132;
         private const int KOR_POKEMON_SPECIES_NARC_ID_P = 0x134;
 
-        private const int POKEDEX_NARC_ID_HGSS = 0x157;
+        private const int POKEDEX_NARC_ID_DP = 0x5A; //same for japanese & korean
+        private const int POKEDEX_NARC_ID_PL = 0x82; //same for japanese & korean, there is a seemingly identical narc at 0x81, but this one has gira in the name so it's likely the one platinum uses
+        private const int POKEDEX_NARC_ID_HGSS = 0x157; //same for korean
+        private const int JAP_POKEDEX_NARC_ID_HGSS = 0x156;
 
         private const int NPC_TRADES_NARC_ID_DP = 0x10E;
         private const int NPC_TRADES_NARC_ID_PL = 0x150;
@@ -320,7 +325,7 @@ namespace Pokemon_Sinjoh_Editor
             {
                 pokedexHeightReader.ReadUInt32();
 
-                for (int i = 4; i < pokedexNarc.Elements[0].Length; i += 4)
+                for (int i = UINT_NUM_BYTES; i < pokedexNarc.Elements[POKEDEX_NARC_HEIGHT_INDEX].Length; i += UINT_NUM_BYTES)
                 {
                     HeightList.Add(new Height(pokedexHeightReader.ReadUInt32()));
                 }
@@ -331,7 +336,7 @@ namespace Pokemon_Sinjoh_Editor
             {
                 pokedexWeightReader.ReadUInt32();
 
-                for (int i = 4; i < pokedexNarc.Elements[1].Length; i += 4)
+                for (int i = UINT_NUM_BYTES; i < pokedexNarc.Elements[POKEDEX_NARC_WEIGHT_INDEX].Length; i += UINT_NUM_BYTES)
                 {
                     WeightList.Add(new Weight(pokedexWeightReader.ReadUInt32()));
                 }
@@ -538,19 +543,9 @@ namespace Pokemon_Sinjoh_Editor
             {
                 return gameFamily switch
                 {
-                    GameFamilies.DP => fat.GetStartOffset(NPC_TRADES_NARC_ID_DP), //needs updated
-                    GameFamilies.PL => fat.GetStartOffset(JAP_NPC_TRADES_NARC_ID_PL), //needs updated
-                    GameFamilies.HGSS => fat.GetStartOffset(JAP_NPC_TRADES_NARC_ID_HGSS), //needs updated
-                    _ => 0
-                };
-            }
-            else if (Language == Languages.KOREAN)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(KOR_NPC_TRADES_NARC_ID_DP), //needs updated
-                    GameFamilies.PL => fat.GetStartOffset(KOR_NPC_TRADES_NARC_ID_PL), //needs updated
-                    GameFamilies.HGSS => fat.GetStartOffset(NPC_TRADES_NARC_ID_HGSS), //needs updated
+                    GameFamilies.DP => fat.GetStartOffset(POKEDEX_NARC_ID_DP), //same as all other langauges
+                    GameFamilies.PL => fat.GetStartOffset(POKEDEX_NARC_ID_PL), //same as all other langauges
+                    GameFamilies.HGSS => fat.GetStartOffset(JAP_POKEDEX_NARC_ID_HGSS),
                     _ => 0
                 };
             }
@@ -558,8 +553,8 @@ namespace Pokemon_Sinjoh_Editor
             {
                 return gameFamily switch
                 {
-                    GameFamilies.DP => fat.GetStartOffset(NPC_TRADES_NARC_ID_DP), //needs updated
-                    GameFamilies.PL => fat.GetStartOffset(NPC_TRADES_NARC_ID_PL), //needs updated
+                    GameFamilies.DP => fat.GetStartOffset(POKEDEX_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(POKEDEX_NARC_ID_PL),
                     GameFamilies.HGSS => fat.GetStartOffset(POKEDEX_NARC_ID_HGSS),
                     _ => 0
                 };
@@ -835,7 +830,24 @@ namespace Pokemon_Sinjoh_Editor
                     npcTradesNarc.Elements[i] = NPCTradesList[i].GetBinary();
             }
 
-			
+			if (UnsavedChangesPokedex)
+            {
+                using (BinaryWriter heightWriter = new BinaryWriter(new MemoryStream(HeightList.Count * UINT_NUM_BYTES)))
+                {
+                    for (int i = 0; i < HeightList.Count; i++)
+                        heightWriter.Write(HeightList[i].decimeters);
+
+                    pokedexNarc.Elements[POKEDEX_NARC_HEIGHT_INDEX] = (MemoryStream)heightWriter.BaseStream;
+                };
+
+                using (BinaryWriter weightWriter = new BinaryWriter(new MemoryStream(HeightList.Count * UINT_NUM_BYTES)))
+                {
+                    for (int i = 0; i < WeightList.Count; i++)
+                        weightWriter.Write(WeightList[i].hectograms);
+
+                    pokedexNarc.Elements[POKEDEX_NARC_WEIGHT_INDEX] = (MemoryStream)weightWriter.BaseStream;
+                };
+            }
 
             try
 			{
@@ -857,6 +869,11 @@ namespace Pokemon_Sinjoh_Editor
                     UnsavedChangesTrades = false;
                 }
                     
+                if (UnsavedChangesPokedex)
+                {
+                    pokedexNarc.Write(romWriter);
+                    UnsavedChangesPokedex = false;
+                }
 
                 AreUnsavedChanges = false;
             }
@@ -1004,6 +1021,8 @@ namespace Pokemon_Sinjoh_Editor
 
             for (int i = (UNKNOWN_ITEM_LAST_INDEX + NUM_UNKNOWN_ITEMS_BLOCK2); i < ItemNames.Count; i++)
                 itemNames[(i - NUM_UNKNOWN_ITEMS_BLOCK1) - NUM_UNKNOWN_ITEMS_BLOCK2] = ItemNames[i];
+
+
 
             return itemNames;
         }
