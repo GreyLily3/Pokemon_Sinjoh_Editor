@@ -165,10 +165,10 @@ namespace Pokemon_Sinjoh_Editor
         public const int TRADE_JASMINE_INDEX = 5;
         public const int TRADE_WEBSTER_INDEX = 7;
 
-        public const int NUM_UNKNOWN_ITEMS_BLOCK1 = 22;
-        public const int NUM_UNKNOWN_ITEMS_BLOCK2 = 1;
-        public const int UNKNOWN_ITEM_FIRST_INDEX = 113;
-        public const int UNKNOWN_ITEM_LAST_INDEX = 428;
+        public const int UNKNOWN_ITEM_BLOCK_FIRST_INDEX_PLHGSS = 113;
+        public const int UNKNOWN_ITEM_BLOCK_FIRST_INDEX_DP = 112;
+        public const int UNKNOWN_ITEM_BLOCK_LAST_INDEX = 134;
+        public const int UNKNOWN_ITEM_LAST_INDEX_HGSS = 428;
 
         public const int POKEMON_NAME_MAX_LENGTH = 10;
         public const int MOVE_NAME_MAX_LENGTH = 12;
@@ -1011,20 +1011,33 @@ namespace Pokemon_Sinjoh_Editor
         public static string[] GetItemNames() => ItemNames.ToArray();
         public static string[] GetItemNamesWithoutUnknown()
         {
-            string[] itemNames = new string[itemsNarc.Elements.Count];
+            List<string> itemNames = new List<string>(itemsNarc.Elements.Count);
 
-            for (int i = 0; i < UNKNOWN_ITEM_FIRST_INDEX; i++)
-                itemNames[i] = ItemNames[i];
+            int firstUnknownItemIndex;
+            int lastUnknownItemIndex;
 
-            for (int i = (UNKNOWN_ITEM_FIRST_INDEX + NUM_UNKNOWN_ITEMS_BLOCK1); i < UNKNOWN_ITEM_LAST_INDEX; i++)
-                itemNames[i - NUM_UNKNOWN_ITEMS_BLOCK1] = ItemNames[i];
+            if (gameFamily == GameFamilies.DP)
+                firstUnknownItemIndex = UNKNOWN_ITEM_BLOCK_FIRST_INDEX_DP;
+            else
+                firstUnknownItemIndex = UNKNOWN_ITEM_BLOCK_FIRST_INDEX_PLHGSS;
 
-            for (int i = (UNKNOWN_ITEM_LAST_INDEX + NUM_UNKNOWN_ITEMS_BLOCK2); i < ItemNames.Count; i++)
-                itemNames[(i - NUM_UNKNOWN_ITEMS_BLOCK1) - NUM_UNKNOWN_ITEMS_BLOCK2] = ItemNames[i];
+            for (int i = 0; i < firstUnknownItemIndex; i++)
+                itemNames.Add(ItemNames[i]);
 
+            if (gameFamily == GameFamilies.HGSS)
+            {
+                lastUnknownItemIndex = UNKNOWN_ITEM_LAST_INDEX_HGSS;
 
+                for (int i = UNKNOWN_ITEM_BLOCK_LAST_INDEX + 1; i < UNKNOWN_ITEM_LAST_INDEX_HGSS; i++)
+                    itemNames.Add(ItemNames[i]);
+            }
+            else
+                lastUnknownItemIndex = UNKNOWN_ITEM_BLOCK_LAST_INDEX;
 
-            return itemNames;
+                for (int i = lastUnknownItemIndex + 1; i < ItemNames.Count; i++)
+                    itemNames.Add(ItemNames[i]);
+
+            return itemNames.ToArray();
         }
 
 
