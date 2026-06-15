@@ -77,6 +77,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Languages.cs" />
+    <Compile Include="LocalizedText.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +110,9 @@
     </Compile>
     <Compile Include="TextArchive.cs" />
     <Compile Include="TextBankName.cs" />
+    <Compile Include="TextEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TradeEditor.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -8,7 +8,7 @@ using System.IO;
 
 namespace Pokemon_Sinjoh_Editor
 {
-    internal class NarcFile
+    public class NarcFile
     {
         private const uint NARC_FILE_MAGIC_NUM = 0x4352414E; //"NARC" in ascii/unicode
         private const uint NARC_FILE_SIGNATURE_END = 0x0100FFFE;

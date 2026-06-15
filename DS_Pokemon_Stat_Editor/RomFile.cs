@@ -13,7 +13,7 @@ namespace Pokemon_Sinjoh_Editor
 		private static NarcFile gameTextNarc;
         private static NarcFile itemsNarc;
         private static NarcFile pokedexNarc;
-		private static TextArchive gameText;
+		public static TextArchive gameText;
         public static Languages Language;
 		private static GameVersions GameVersion;
         public static GameFamilies gameFamily = GameFamilies.NULL;
@@ -970,6 +970,9 @@ namespace Pokemon_Sinjoh_Editor
 
         public static string GetGameVersion() => GameVersion.ToString();
 		public static string[] GetMoveNames() => MoveNames.ToArray();
+
+        public static int GetNumTextbanks() => gameText.TextBanks.Length - 1;
+
         public static string GetMoveDescription(int moveIndex) => MoveDescriptions[moveIndex].Replace("\\n", " ");
         public static string GetPokedexDescription(int pokemonIndex) => PokedexDescriptions[pokemonIndex].Replace("\\n", " ");
         public static string[] GetPokemonSpeciesNames()

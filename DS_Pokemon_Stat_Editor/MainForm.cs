@@ -965,11 +965,13 @@ namespace Pokemon_Sinjoh_Editor
                         setupTradeText();
                         setupItemText();
                         setupPokedexText();
+                        setupTextEditor();
                         UpdateDisplayedMoveValues();
                         UpdateDisplayedSpeciesValues();
                         UpdateDisplayedTradeValues();
                         updateDisplayedItemValues();
                         UpdateDisplayedPokedexValues();
+                        UpdateDisplayedTextValues();
                     }
                 }
             }

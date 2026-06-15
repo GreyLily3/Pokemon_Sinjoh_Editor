@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Pokemon_Sinjoh_Editor
 {
-    internal class TextArchive
+    public class TextArchive
     {
         //stores text bank indices for all indo-european languages
         public Dictionary<(RomFile.GameFamilies, TextBankName), int> TextBankIndexIndoEuro = new Dictionary<(RomFile.GameFamilies, TextBankName), int>();

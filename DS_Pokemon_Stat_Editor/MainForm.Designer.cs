@@ -237,6 +237,10 @@
             this.pokedexCategoryTextBox = new System.Windows.Forms.TextBox();
             this.pokedexNameComboBox = new System.Windows.Forms.ComboBox();
             this.pokedexWTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.textTabPage = new System.Windows.Forms.TabPage();
+            this.textInGameListView = new System.Windows.Forms.ListView();
+            this.TextBankIndexNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.textBankComboBox = new System.Windows.Forms.ComboBox();
             this.mainFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openRomFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -356,6 +360,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTDecimetersNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexNumNationalNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).BeginInit();
+            this.textTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBankIndexNumericUpDown)).BeginInit();
             this.mainFormMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -366,6 +372,7 @@
             this.mainTabControl.Controls.Add(this.npcTradeTabPage);
             this.mainTabControl.Controls.Add(this.itemsTabPage);
             this.mainTabControl.Controls.Add(this.pokedexTabPage);
+            this.mainTabControl.Controls.Add(this.textTabPage);
             this.mainTabControl.Location = new System.Drawing.Point(0, 27);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
@@ -2854,6 +2861,50 @@
             this.pokedexWTNumericNoArrows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.pokedexWTNumericNoArrows.Validated += new System.EventHandler(this.pokedexWTNumericNoArrows_Validated);
             // 
+            // textTabPage
+            // 
+            this.textTabPage.Controls.Add(this.textInGameListView);
+            this.textTabPage.Controls.Add(this.TextBankIndexNumericUpDown);
+            this.textTabPage.Controls.Add(this.textBankComboBox);
+            this.textTabPage.Location = new System.Drawing.Point(4, 22);
+            this.textTabPage.Name = "textTabPage";
+            this.textTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.textTabPage.Size = new System.Drawing.Size(924, 475);
+            this.textTabPage.TabIndex = 5;
+            this.textTabPage.Text = "Text";
+            this.textTabPage.UseVisualStyleBackColor = true;
+            // 
+            // textInGameListView
+            // 
+            this.textInGameListView.GridLines = true;
+            this.textInGameListView.HideSelection = false;
+            this.textInGameListView.LabelEdit = true;
+            this.textInGameListView.LabelWrap = false;
+            this.textInGameListView.Location = new System.Drawing.Point(125, 167);
+            this.textInGameListView.MultiSelect = false;
+            this.textInGameListView.Name = "textInGameListView";
+            this.textInGameListView.Size = new System.Drawing.Size(721, 258);
+            this.textInGameListView.TabIndex = 2;
+            this.textInGameListView.UseCompatibleStateImageBehavior = false;
+            this.textInGameListView.View = System.Windows.Forms.View.Details;
+            // 
+            // TextBankIndexNumericUpDown
+            // 
+            this.TextBankIndexNumericUpDown.Location = new System.Drawing.Point(407, 93);
+            this.TextBankIndexNumericUpDown.Name = "TextBankIndexNumericUpDown";
+            this.TextBankIndexNumericUpDown.Size = new System.Drawing.Size(70, 20);
+            this.TextBankIndexNumericUpDown.TabIndex = 1;
+            this.TextBankIndexNumericUpDown.ValueChanged += new System.EventHandler(this.TextBankIndexNumericUpDown_ValueChanged);
+            // 
+            // textBankComboBox
+            // 
+            this.textBankComboBox.FormattingEnabled = true;
+            this.textBankComboBox.Location = new System.Drawing.Point(508, 92);
+            this.textBankComboBox.Name = "textBankComboBox";
+            this.textBankComboBox.Size = new System.Drawing.Size(121, 21);
+            this.textBankComboBox.TabIndex = 0;
+            this.textBankComboBox.SelectedValueChanged += new System.EventHandler(this.textBankComboBox_SelectedValueChanged);
+            // 
             // mainFormMenuStrip
             // 
             this.mainFormMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -3079,6 +3130,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTDecimetersNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexNumNationalNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).EndInit();
+            this.textTabPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TextBankIndexNumericUpDown)).EndInit();
             this.mainFormMenuStrip.ResumeLayout(false);
             this.mainFormMenuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -3342,6 +3395,10 @@
         private System.Windows.Forms.NumericUpDown pokedexHTDecimetersNumericUpDown;
         private System.Windows.Forms.Label pokedexHTDMLabel;
         private System.Windows.Forms.GroupBox pokedexHeightConversionGroupBox;
+        private System.Windows.Forms.TabPage textTabPage;
+        private System.Windows.Forms.ComboBox textBankComboBox;
+        private System.Windows.Forms.NumericUpDown TextBankIndexNumericUpDown;
+        private System.Windows.Forms.ListView textInGameListView;
     }
 }
 

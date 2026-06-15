@@ -4,7 +4,7 @@ namespace Pokemon_Sinjoh_Editor
 {
     public class Weight
     {
-        private uint hectograms;
+        public uint hectograms { private set; get; }
         private const double POUNDS_PER_HECTOGRAM = 0.2204622622;
         private const double KILOGRAMS_PER_HECTOGRAM = 0.1;
 
