@@ -141,6 +141,10 @@
             this.speciesLearnableHMsLabel = new System.Windows.Forms.Label();
             this.speciesLearnableTMsLabel = new System.Windows.Forms.Label();
             this.npcTradeTabPage = new System.Windows.Forms.TabPage();
+            this.tradeNewPVAbilityComboBox = new System.Windows.Forms.ComboBox();
+            this.tradeNewPVGenderComboBox = new System.Windows.Forms.ComboBox();
+            this.tradeNewPVNatureComboBox = new System.Windows.Forms.ComboBox();
+            this.tradeRandomPVButton = new System.Windows.Forms.Button();
             this.tradeAnyPokemonWantedComboBox = new System.Windows.Forms.ComboBox();
             this.tradePVDerivedGroupBox = new System.Windows.Forms.GroupBox();
             this.tradeAbilityTextBox = new System.Windows.Forms.TextBox();
@@ -288,6 +292,9 @@
             this.tradeAbilityTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeGenderTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeNatureTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.tradeNewPVAbilityCheckBox = new System.Windows.Forms.CheckBox();
+            this.tradeNewPVGenderCheckBox = new System.Windows.Forms.CheckBox();
+            this.tradeNewPVNatureCheckBox = new System.Windows.Forms.CheckBox();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
@@ -1726,6 +1733,13 @@
             // 
             // npcTradeTabPage
             // 
+            this.npcTradeTabPage.Controls.Add(this.tradeNewPVNatureCheckBox);
+            this.npcTradeTabPage.Controls.Add(this.tradeNewPVGenderCheckBox);
+            this.npcTradeTabPage.Controls.Add(this.tradeNewPVAbilityCheckBox);
+            this.npcTradeTabPage.Controls.Add(this.tradeNewPVAbilityComboBox);
+            this.npcTradeTabPage.Controls.Add(this.tradeNewPVGenderComboBox);
+            this.npcTradeTabPage.Controls.Add(this.tradeNewPVNatureComboBox);
+            this.npcTradeTabPage.Controls.Add(this.tradeRandomPVButton);
             this.npcTradeTabPage.Controls.Add(this.tradeAnyPokemonWantedComboBox);
             this.npcTradeTabPage.Controls.Add(this.tradePVDerivedGroupBox);
             this.npcTradeTabPage.Controls.Add(this.tradeIVsGroupBox);
@@ -1752,6 +1766,43 @@
             this.npcTradeTabPage.TabIndex = 2;
             this.npcTradeTabPage.Text = "NPC Trades";
             this.npcTradeTabPage.UseVisualStyleBackColor = true;
+            // 
+            // tradeNewPVAbilityComboBox
+            // 
+            this.tradeNewPVAbilityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tradeNewPVAbilityComboBox.FormattingEnabled = true;
+            this.tradeNewPVAbilityComboBox.Location = new System.Drawing.Point(673, 325);
+            this.tradeNewPVAbilityComboBox.Name = "tradeNewPVAbilityComboBox";
+            this.tradeNewPVAbilityComboBox.Size = new System.Drawing.Size(109, 21);
+            this.tradeNewPVAbilityComboBox.TabIndex = 54;
+            // 
+            // tradeNewPVGenderComboBox
+            // 
+            this.tradeNewPVGenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tradeNewPVGenderComboBox.FormattingEnabled = true;
+            this.tradeNewPVGenderComboBox.Location = new System.Drawing.Point(673, 370);
+            this.tradeNewPVGenderComboBox.Name = "tradeNewPVGenderComboBox";
+            this.tradeNewPVGenderComboBox.Size = new System.Drawing.Size(109, 21);
+            this.tradeNewPVGenderComboBox.TabIndex = 53;
+            // 
+            // tradeNewPVNatureComboBox
+            // 
+            this.tradeNewPVNatureComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tradeNewPVNatureComboBox.FormattingEnabled = true;
+            this.tradeNewPVNatureComboBox.Location = new System.Drawing.Point(673, 417);
+            this.tradeNewPVNatureComboBox.Name = "tradeNewPVNatureComboBox";
+            this.tradeNewPVNatureComboBox.Size = new System.Drawing.Size(109, 21);
+            this.tradeNewPVNatureComboBox.TabIndex = 52;
+            // 
+            // tradeRandomPVButton
+            // 
+            this.tradeRandomPVButton.Location = new System.Drawing.Point(673, 291);
+            this.tradeRandomPVButton.Name = "tradeRandomPVButton";
+            this.tradeRandomPVButton.Size = new System.Drawing.Size(75, 23);
+            this.tradeRandomPVButton.TabIndex = 51;
+            this.tradeRandomPVButton.Text = "New PV";
+            this.tradeRandomPVButton.UseVisualStyleBackColor = true;
+            this.tradeRandomPVButton.Click += new System.EventHandler(this.tradeRandomPVButton_Click);
             // 
             // tradeAnyPokemonWantedComboBox
             // 
@@ -2267,6 +2318,7 @@
             this.tradeOfferedPokemonComboBox.Name = "tradeOfferedPokemonComboBox";
             this.tradeOfferedPokemonComboBox.Size = new System.Drawing.Size(121, 21);
             this.tradeOfferedPokemonComboBox.TabIndex = 2;
+            this.tradeOfferedPokemonComboBox.SelectedIndexChanged += new System.EventHandler(this.tradeOfferedPokemonComboBox_SelectedIndexChanged);
             this.tradeOfferedPokemonComboBox.SelectionChangeCommitted += new System.EventHandler(this.tradeOfferedPokemonComboBox_SelectionChangeCommitted);
             // 
             // tradeWantedPokemonComboBox
@@ -3026,6 +3078,36 @@
             this.한국어ToolStripMenuItem.Text = "한국어";
             this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
             // 
+            // tradeNewPVAbilityCheckBox
+            // 
+            this.tradeNewPVAbilityCheckBox.AutoSize = true;
+            this.tradeNewPVAbilityCheckBox.Location = new System.Drawing.Point(806, 327);
+            this.tradeNewPVAbilityCheckBox.Name = "tradeNewPVAbilityCheckBox";
+            this.tradeNewPVAbilityCheckBox.Size = new System.Drawing.Size(83, 17);
+            this.tradeNewPVAbilityCheckBox.TabIndex = 55;
+            this.tradeNewPVAbilityCheckBox.Text = "Either Ability";
+            this.tradeNewPVAbilityCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // tradeNewPVGenderCheckBox
+            // 
+            this.tradeNewPVGenderCheckBox.AutoSize = true;
+            this.tradeNewPVGenderCheckBox.Location = new System.Drawing.Point(806, 372);
+            this.tradeNewPVGenderCheckBox.Name = "tradeNewPVGenderCheckBox";
+            this.tradeNewPVGenderCheckBox.Size = new System.Drawing.Size(91, 17);
+            this.tradeNewPVGenderCheckBox.TabIndex = 56;
+            this.tradeNewPVGenderCheckBox.Text = "Either Gender";
+            this.tradeNewPVGenderCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // tradeNewPVNatureCheckBox
+            // 
+            this.tradeNewPVNatureCheckBox.AutoSize = true;
+            this.tradeNewPVNatureCheckBox.Location = new System.Drawing.Point(806, 418);
+            this.tradeNewPVNatureCheckBox.Name = "tradeNewPVNatureCheckBox";
+            this.tradeNewPVNatureCheckBox.Size = new System.Drawing.Size(79, 17);
+            this.tradeNewPVNatureCheckBox.TabIndex = 57;
+            this.tradeNewPVNatureCheckBox.Text = "Any Nature";
+            this.tradeNewPVNatureCheckBox.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3399,6 +3481,13 @@
         private System.Windows.Forms.ComboBox textBankComboBox;
         private System.Windows.Forms.NumericUpDown TextBankIndexNumericUpDown;
         private System.Windows.Forms.ListView textInGameListView;
+        private System.Windows.Forms.Button tradeRandomPVButton;
+        private System.Windows.Forms.ComboBox tradeNewPVAbilityComboBox;
+        private System.Windows.Forms.ComboBox tradeNewPVGenderComboBox;
+        private System.Windows.Forms.ComboBox tradeNewPVNatureComboBox;
+        private System.Windows.Forms.CheckBox tradeNewPVNatureCheckBox;
+        private System.Windows.Forms.CheckBox tradeNewPVGenderCheckBox;
+        private System.Windows.Forms.CheckBox tradeNewPVAbilityCheckBox;
     }
 }
 

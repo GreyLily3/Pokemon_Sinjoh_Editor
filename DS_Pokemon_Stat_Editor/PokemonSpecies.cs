@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Runtime.Remoting.Messaging;
 
 
 namespace Pokemon_Sinjoh_Editor
@@ -47,6 +46,7 @@ namespace Pokemon_Sinjoh_Editor
         public const byte GENDER_RATIO_50_PERCENT = 127;
         public const byte MAX_EV_YIELD = 3;
         private const int EGG_GROUP_START_INDEX = 1;
+        private const int NULL_ABILITY = 0;
 
         private const ushort HP_EV_MASK = 0b_0000_0000_0000_0011;
         private const ushort ATTACK_EV_MASK = 0b_0000_0000_0000_1100;
@@ -98,6 +98,39 @@ namespace Pokemon_Sinjoh_Editor
             UNUSED2
         }
 
+        public PokemonSpecies()
+        {
+            HP = 0;
+            Attack = 0;
+            Defense = 0;
+            SpecialAttack = 0;
+            SpecialDefense = 0;
+            Speed = 0;
+            Type1 = 0;
+            Type2 = 0;
+            Ability1 = 0;
+            Ability2 = 0;
+            CatchRate = 0;
+            BaseXP = 0;
+            BaseFriendship = 0;
+            hpEVYield = 0;
+            attackEVYield = 0;
+            defenseEVYield = 0;
+            specialAttackEVYield = 0;
+            specialDefenseEVYield = 0;
+            speedEVYield = 0;
+            Item1 = 0;
+            Item2 = 0;
+            genderRatio = 0;
+            NumEggCyles = 0;
+            XPGroup = 0;
+            eggGroup1 = 0;
+            eggGroup2 = 0;
+            SafariRunChance = 0;
+            PokedexColor = 0;
+            learnableTMsAndHMs = new BitArray(TOTAL_TM_HM_BYTES);
+
+        }
 
         public PokemonSpecies(MemoryStream pokemonSpecies)
         {
@@ -215,6 +248,7 @@ namespace Pokemon_Sinjoh_Editor
         public bool GetIsFemaleOnly() => genderRatio == GENDER_RATIO_FEMALE_ONLY;
         public bool GetIsMaleOnly() => genderRatio == GENDER_RATIO_MALE_ONLY;
         public static byte Get50PercentGenderRatio() => GENDER_RATIO_50_PERCENT;
+        public bool GetHasSecondAbility() => Ability1 != Ability2 && Ability2 != NULL_ABILITY;
         public int GenderRatio { get => genderRatio; set { genderRatio = (byte)(value < GENDER_RATIO_FEMALE_ONLY ? value : GENDER_RATIO_FEMALE_ONLY - 1); } }
 
         public EggGroups EggGroup1
