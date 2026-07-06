@@ -13,6 +13,7 @@ namespace Pokemon_Sinjoh_Editor
 		private static NarcFile gameTextNarc;
         private static NarcFile itemsNarc;
         private static NarcFile pokedexNarc;
+        private static NarcFile levelUpMovesNarc;
 		public static TextArchive gameText;
         public static Languages Language;
 		private static GameVersions GameVersion;
@@ -24,6 +25,8 @@ namespace Pokemon_Sinjoh_Editor
         public static bool UnsavedChangesTrades = false;
         public static bool UnsavedChangesItems = false;
         public static bool UnsavedChangesPokedex = false;
+        public static bool UnsavedChangesLevelUpMoves = false;
+        private static bool UnsavedChangesMoveTutorMoves = false;
 
         public static List<Move> MoveList = new List<Move>();
         public static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
@@ -31,6 +34,7 @@ namespace Pokemon_Sinjoh_Editor
         public static List<Item> ItemList = new List<Item>();
         public static List<Height> HeightList = new List<Height>();
         public static List<Weight> WeightList = new List<Weight>();
+        public static List<Learnset> LevelUpMovesList = new List<Learnset>();
 
         public static List<string> MoveNames { get; private set; }
         public static List<string> MoveDescriptions { get; private set; }
@@ -152,6 +156,16 @@ namespace Pokemon_Sinjoh_Editor
         private const int KOR_ITEMS_NARC_ID_DP = 0x126;
         private const int KOR_ITEMS_NARC_ID_PL = 0x178;
         private const int KOR_ITEMS_NARC_ID_HGSS = 0x92;
+
+        private const int LEVEL_UP_MOVES_NARC_ID_DP = 0x148;
+        private const int LEVEL_UP_MOVES_NARC_ID_PL = 0x1A7;
+        private const int LEVEL_UP_MOVES_NARC_ID_HGSS = 0xA2;
+        private const int JAP_LEVEL_UP_MOVES_NARC_ID_DP = 0x149;
+        private const int JAP_LEVEL_UP_MOVES_NARC_ID_PL = 0x1AD;
+        private const int JAP_LEVEL_UP_MOVES_NARC_ID_HGSS = 0xA1;
+        private const int KOR_LEVEL_UP_MOVES_NARC_ID_DP = 0x134;
+        private const int KOR_LEVEL_UP_MOVES_NARC_ID_PL = 0x18D;
+        
 
         private const int SPECIES_START_INDEX = 1;
         private const int MOVE_START_INDEX = 1;
@@ -294,6 +308,9 @@ namespace Pokemon_Sinjoh_Editor
             itemsNarc = new NarcFile(getItemsNarcOffset());
             itemsNarc.Read(romFileReader);
 
+            levelUpMovesNarc = new NarcFile(getLearnsetNarcOffset());
+            levelUpMovesNarc.Read(romFileReader);
+
             gameTextNarc = new NarcFile(getTextNarcOffset());
 			gameTextNarc.Read(romFileReader);
 			
@@ -304,6 +321,8 @@ namespace Pokemon_Sinjoh_Editor
             MoveList.Clear();
             PokemonSpeciesList.Clear();
             NPCTradesList.Clear();
+            ItemList.Clear();
+            LevelUpMovesList.Clear();
 
             //skip the first move because it's a placeholder
             for (int i = 1; i < movesNarc.Elements.Count; i++)
@@ -316,9 +335,11 @@ namespace Pokemon_Sinjoh_Editor
             for (int i = 0; i < npcTradesNarc.Elements.Count; i++)
 				NPCTradesList.Add(new NPCTrade(npcTradesNarc.Elements[i]));
 
-
 			for (int i = 0; i < itemsNarc.Elements.Count; i++)
                 ItemList.Add(new Item(itemsNarc.Elements[i]));
+
+            for (int i = 1; i < levelUpMovesNarc.Elements.Count; i++)
+                LevelUpMovesList.Add(new Learnset(levelUpMovesNarc.Elements[i]));
 
             //height is stored in the 0th element of the narc
             using (BinaryReader pokedexHeightReader = new BinaryReader(pokedexNarc.Elements[0]))
@@ -629,7 +650,41 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
-		private static uint getTextNarcOffset()
+        private static uint getLearnsetNarcOffset()
+        {
+            if (Language == Languages.JAPANESE)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(JAP_LEVEL_UP_MOVES_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(JAP_LEVEL_UP_MOVES_NARC_ID_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(JAP_LEVEL_UP_MOVES_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KOR_LEVEL_UP_MOVES_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(KOR_LEVEL_UP_MOVES_NARC_ID_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(LEVEL_UP_MOVES_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
+            else
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(LEVEL_UP_MOVES_NARC_ID_DP),
+                    GameFamilies.PL => fat.GetStartOffset(LEVEL_UP_MOVES_NARC_ID_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(LEVEL_UP_MOVES_NARC_ID_HGSS),
+                    _ => 0
+                };
+            }
+        }
+
+        private static uint getTextNarcOffset()
 		{
 			if (Language == Languages.JAPANESE)
             {
@@ -830,6 +885,12 @@ namespace Pokemon_Sinjoh_Editor
                     npcTradesNarc.Elements[i] = NPCTradesList[i].GetBinary();
             }
 
+            if (UnsavedChangesLevelUpMoves)
+            {
+                for (int i = 0; i < LevelUpMovesList.Count; i++)
+                    levelUpMovesNarc.Elements[i + 1] = LevelUpMovesList[i].GetBinary();
+            }
+
 			if (UnsavedChangesPokedex)
             {
                 using (BinaryWriter heightWriter = new BinaryWriter(new MemoryStream(HeightList.Count * UINT_NUM_BYTES)))
@@ -873,6 +934,12 @@ namespace Pokemon_Sinjoh_Editor
                 {
                     pokedexNarc.Write(romWriter);
                     UnsavedChangesPokedex = false;
+                }
+
+                if (UnsavedChangesLevelUpMoves)
+                {
+                    levelUpMovesNarc.Write(romWriter);
+                    UnsavedChangesLevelUpMoves = false;
                 }
 
                 AreUnsavedChanges = false;

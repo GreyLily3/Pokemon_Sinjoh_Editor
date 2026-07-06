@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pokemon_Sinjoh_Editor.Enums;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
@@ -75,14 +76,14 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.Language == Languages.ENGLISH && RomFile.WeightList[pokedexNameComboBox.SelectedIndex].GetPounds() != (double)pokedexWTNumericNoArrows.Value)
             {
                 RomFile.WeightList[pokedexNameComboBox.SelectedIndex].SetImperial((double)pokedexWTNumericNoArrows.Value);
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.POKEDEX);
                 //make sure the weight displayed matches the rounding used in game
                 pokedexWTNumericNoArrows.Value = (decimal)RomFile.WeightList[pokedexNameComboBox.SelectedIndex].GetPounds(); 
             }
             else if (RomFile.Language != Languages.ENGLISH && RomFile.WeightList[pokedexNameComboBox.SelectedIndex].GetKilograms() != (double)pokedexWTNumericNoArrows.Value)
             {
                 RomFile.WeightList[pokedexNameComboBox.SelectedIndex].SetKilograms((double)pokedexWTNumericNoArrows.Value);
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.POKEDEX);
             }
         }
 
@@ -106,7 +107,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.HeightList[pokedexNameComboBox.SelectedIndex].decimeters != (uint)pokedexHTDecimetersNumericUpDown.Value)
             {
                 RomFile.HeightList[pokedexNameComboBox.SelectedIndex].decimeters = (uint)pokedexHTDecimetersNumericUpDown.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.POKEDEX);
 
                 pokedexHTINNumericNoArrows.Value = RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetInches();
                 pokedexHTFTNumericNoArrows.Value = RomFile.HeightList[pokedexNameComboBox.SelectedIndex].GetFeet();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pokemon_Sinjoh_Editor.Enums;
+using System;
 
 namespace Pokemon_Sinjoh_Editor
 {
@@ -69,7 +70,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].Type != (byte)moveTypeComboBox.SelectedIndex)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].Type = (byte)moveTypeComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
         }
 
@@ -78,7 +79,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].Category != (Move.Categories)moveCategoryComboBox.SelectedIndex)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].Category = (Move.Categories)moveCategoryComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
         }
 
@@ -87,7 +88,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].Target != Pokemon_Sinjoh_Editor.Move.IndexValueToTargetEnum(moveTargetComboBox.SelectedIndex))
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].Target = Pokemon_Sinjoh_Editor.Move.IndexValueToTargetEnum(moveTargetComboBox.SelectedIndex);
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
         }
 
@@ -96,7 +97,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].ContestEffect != (byte)moveContestEffectComboBox.SelectedIndex)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].ContestEffect = (byte)moveContestEffectComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
         }
 
@@ -105,7 +106,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].ContestCondition != (Move.ContestConditions)moveContestConditionComboBox.SelectedIndex)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].ContestCondition = (Move.ContestConditions)moveContestConditionComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
         }
 
@@ -114,7 +115,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].Power != (byte)movePowerNumericNoArrows.Value)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].Power = (byte)movePowerNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
 
         }
@@ -124,7 +125,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].Accuracy != (byte)moveAccuracyNumericNoArrows.Value)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].Accuracy = (byte)moveAccuracyNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
         }
 
@@ -141,7 +142,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].PowerPoints != (byte)movePPNumericNoArrows.Value)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].PowerPoints = (byte)movePPNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
         }
 
@@ -150,7 +151,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].Effect != (ushort)moveEffectNumericNoArrows.Value)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].Effect = (ushort)moveEffectNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
         }
 
@@ -159,7 +160,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].EffectChance != (byte)moveEffectChanceNumericNoArrows.Value)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].EffectChance = (byte)moveEffectChanceNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
         }
 
@@ -168,56 +169,56 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.MoveList[movesComboBox.SelectedIndex].Priority != (sbyte)movePriorityNumericNoArrows.Value)
             {
                 RomFile.MoveList[movesComboBox.SelectedIndex].Priority = (sbyte)movePriorityNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.MOVES);
             }
         }
 
         private void moveContactCheckBox_Click(object sender, EventArgs e)
         {
             RomFile.MoveList[movesComboBox.SelectedIndex].ContactFlag = moveContactCheckBox.Checked;
-            MarkUnsavedChanges();
+            MarkUnsavedChanges(SaveSubFile.MOVES);
         }
 
         private void moveProtectCheckBox_Click(object sender, EventArgs e)
         {
             RomFile.MoveList[movesComboBox.SelectedIndex].ProtectFlag = moveProtectCheckBox.Checked;
-            MarkUnsavedChanges();
+            MarkUnsavedChanges(SaveSubFile.MOVES);
         }
 
         private void moveMagicCoatCheckBox_Click(object sender, EventArgs e)
         {
             RomFile.MoveList[movesComboBox.SelectedIndex].MagicCoatFlag = moveMagicCoatCheckBox.Checked;
-            MarkUnsavedChanges();
+            MarkUnsavedChanges(SaveSubFile.MOVES);
         }
 
         private void moveSnatchCheckBox_Click(object sender, EventArgs e)
         {
             RomFile.MoveList[movesComboBox.SelectedIndex].SnatchFlag = moveSnatchCheckBox.Checked;
-            MarkUnsavedChanges();
+            MarkUnsavedChanges(SaveSubFile.MOVES);
         }
 
         private void moveMirrorMoveCheckBox_Click(object sender, EventArgs e)
         {
             RomFile.MoveList[movesComboBox.SelectedIndex].MirrorMoveFlag = moveMirrorMoveCheckBox.Checked;
-            MarkUnsavedChanges();
+            MarkUnsavedChanges(SaveSubFile.MOVES);
         }
 
         private void moveKingsRockCheckBox_Click(object sender, EventArgs e)
         {
             RomFile.MoveList[movesComboBox.SelectedIndex].KingsRockFlag = moveKingsRockCheckBox.Checked;
-            MarkUnsavedChanges();
+            MarkUnsavedChanges(SaveSubFile.MOVES);
         }
 
         private void moveHPBarCheckBox_Click(object sender, EventArgs e)
         {
             RomFile.MoveList[movesComboBox.SelectedIndex].KeepHPBarVisibleFlag = moveHPBarCheckBox.Checked;
-            MarkUnsavedChanges();
+            MarkUnsavedChanges(SaveSubFile.MOVES);
         }
 
         private void moveShadowCheckBox_Click(object sender, EventArgs e)
         {
             RomFile.MoveList[movesComboBox.SelectedIndex].HidePokemonShadowsFlag = moveShadowCheckBox.Checked;
-            MarkUnsavedChanges();
+            MarkUnsavedChanges(SaveSubFile.MOVES);
         }
 
         private void moveCategoryComboBox_SelectedValueChanged(object sender, EventArgs e)

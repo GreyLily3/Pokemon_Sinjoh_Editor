@@ -43,7 +43,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void textBankComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
-
+            DisplayTextValues();
         }
     }
 }

@@ -68,6 +68,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\SaveSubFile.cs" />
     <Compile Include="FAT.cs" />
     <Compile Include="Gender.cs" />
     <Compile Include="Height.cs" />
@@ -77,6 +78,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Languages.cs" />
+    <Compile Include="Learnset.cs" />
+    <Compile Include="LearnsetEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LocalizedText.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

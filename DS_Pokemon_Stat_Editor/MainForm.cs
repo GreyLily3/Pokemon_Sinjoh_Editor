@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pokemon_Sinjoh_Editor.Enums;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -898,23 +899,34 @@ namespace Pokemon_Sinjoh_Editor
             Text = "Pokemon Sinjoh Editor - " + romName;
         }
 
-        private void MarkUnsavedChanges()
+        private void MarkUnsavedChanges(SaveSubFile subFile)
         {
             if (!Text.Contains("*"))
                 Text += '*';
 
             RomFile.AreUnsavedChanges = true;
 
-            if (mainTabControl.SelectedTab == movesTabPage)
-                RomFile.UnsavedChangesMoves = true;
-            else if (mainTabControl.SelectedTab == speciesTabPage)
-                RomFile.UnsavedChangesSpecies = true;
-            else if (mainTabControl.SelectedTab == npcTradeTabPage)
-                RomFile.UnsavedChangesTrades = true;
-            else if (mainTabControl.SelectedTab == itemsTabPage)
-                RomFile.UnsavedChangesItems = true;
-            else if (mainTabControl.SelectedTab == pokedexTabPage)
-                RomFile.UnsavedChangesPokedex = true;
+            switch (subFile)
+            {
+                case SaveSubFile.MOVES:
+                    RomFile.UnsavedChangesMoves = true;
+                    break;
+                case SaveSubFile.SPECIES:
+                    RomFile.UnsavedChangesSpecies = true;
+                    break;
+                case SaveSubFile.TRADES:
+                    RomFile.UnsavedChangesTrades = true;
+                    break;
+                case SaveSubFile.ITEMS:
+                    RomFile.UnsavedChangesItems = true;
+                    break;
+                case SaveSubFile.POKEDEX:
+                    RomFile.UnsavedChangesPokedex = true;
+                    break;
+                case SaveSubFile.LEVELUPMOVES:
+                    RomFile.UnsavedChangesLevelUpMoves = true;
+                    break;
+            }
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -966,12 +978,14 @@ namespace Pokemon_Sinjoh_Editor
                         setupItemText();
                         setupPokedexText();
                         setupTextEditor();
+                        setupLearnsetText();
                         UpdateDisplayedMoveValues();
                         UpdateDisplayedSpeciesValues();
                         UpdateDisplayedTradeValues();
                         updateDisplayedItemValues();
                         UpdateDisplayedPokedexValues();
                         UpdateDisplayedTextValues();
+                        UpdateDisplayedLearnsetValues();
                     }
                 }
             }

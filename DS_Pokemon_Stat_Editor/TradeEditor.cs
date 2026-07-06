@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pokemon_Sinjoh_Editor.Enums;
+using System;
 
 
 namespace Pokemon_Sinjoh_Editor
@@ -98,7 +99,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].OriginalTrainerID != (ushort)tradeOriginalTrainerIDNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].OriginalTrainerID = (ushort)tradeOriginalTrainerIDNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -107,7 +108,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.PV != tradePVNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.PV = (uint)tradePVNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -116,7 +117,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Cool != tradeCoolNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Cool = (byte)tradeCoolNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -125,7 +126,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Beauty != tradeBeautyNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Beauty = (byte)tradeBeautyNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -134,7 +135,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Cute != tradeCuteNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Cute = (byte)tradeCuteNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -143,7 +144,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Smart != tradeSmartNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Smart = (byte)tradeSmartNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -152,7 +153,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Tough != tradeToughNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Tough = (byte)tradeToughNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -161,7 +162,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Sheen != tradeSheenNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].Sheen = (byte)tradeSheenNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -170,7 +171,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].HPIV != tradeHPIVsNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].HPIV = (byte)tradeHPIVsNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -179,7 +180,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].AttackIV != tradeAttackIVsNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].AttackIV = (byte)tradeAttackIVsNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -188,7 +189,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].DefenseIV != tradeDefenseIVsNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].DefenseIV = (byte)tradeDefenseIVsNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -197,7 +198,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpeedIV != tradeSpeedIVsNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpeedIV = (byte)tradeSpeedIVsNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -206,7 +207,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpecialAttckIV != tradeSpecialAttackIVsNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpecialAttckIV = (byte)tradeSpecialAttackIVsNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -215,7 +216,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpecialDefenseIV != tradeSpecialAttackIVsNumericNoArrows.Value)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].SpecialDefenseIV = (byte)tradeSpecialAttackIVsNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -224,7 +225,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].WantedPokemon != tradeWantedPokemonComboBox.SelectedIndex + 1)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].WantedPokemon = (ushort)(tradeWantedPokemonComboBox.SelectedIndex + 1);
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -233,7 +234,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].OfferedPokemon != tradeOfferedPokemonComboBox.SelectedIndex + 1)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].OfferedPokemon = (ushort)(tradeOfferedPokemonComboBox.SelectedIndex + 1);
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
                 updatePVDerivedFields();
             }
         }
@@ -315,7 +316,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].LanguageOfOrigin != (Languages)tradeLanguageComboBox.SelectedIndex)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].LanguageOfOrigin = (Languages)tradeLanguageComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 
@@ -324,7 +325,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].HeldItem != tradeHeldItemComboBox.SelectedIndex)
             {
                 RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].HeldItem = (ushort)tradeHeldItemComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.TRADES);
             }
         }
 

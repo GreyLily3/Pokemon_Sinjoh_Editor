@@ -141,10 +141,14 @@
             this.speciesLearnableHMsLabel = new System.Windows.Forms.Label();
             this.speciesLearnableTMsLabel = new System.Windows.Forms.Label();
             this.npcTradeTabPage = new System.Windows.Forms.TabPage();
-            this.tradeNewPVAbilityComboBox = new System.Windows.Forms.ComboBox();
-            this.tradeNewPVGenderComboBox = new System.Windows.Forms.ComboBox();
-            this.tradeNewPVNatureComboBox = new System.Windows.Forms.ComboBox();
+            this.tradeNewPVGroupBox = new System.Windows.Forms.GroupBox();
             this.tradeRandomPVButton = new System.Windows.Forms.Button();
+            this.tradeNewPVNatureCheckBox = new System.Windows.Forms.CheckBox();
+            this.tradeNewPVNatureComboBox = new System.Windows.Forms.ComboBox();
+            this.tradeNewPVGenderCheckBox = new System.Windows.Forms.CheckBox();
+            this.tradeNewPVAbilityCheckBox = new System.Windows.Forms.CheckBox();
+            this.tradeNewPVGenderComboBox = new System.Windows.Forms.ComboBox();
+            this.tradeNewPVAbilityComboBox = new System.Windows.Forms.ComboBox();
             this.tradeAnyPokemonWantedComboBox = new System.Windows.Forms.ComboBox();
             this.tradePVDerivedGroupBox = new System.Windows.Forms.GroupBox();
             this.tradeAbilityTextBox = new System.Windows.Forms.TextBox();
@@ -245,6 +249,51 @@
             this.textInGameListView = new System.Windows.Forms.ListView();
             this.TextBankIndexNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.textBankComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetTabPage = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.learnsetMoveTutorCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.learnsetPokemonComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMovesGroupBox = new System.Windows.Forms.GroupBox();
+            this.learnsetLevelUpMove20ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove19ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove18ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove17ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove16ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove15ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove14ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove13ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove12ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove11ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove10ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove9ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove8ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove7ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove6ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove5ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove4ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove3ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpMove2ComboBox = new System.Windows.Forms.ComboBox();
+            this.learnsetLevelUpLevel20NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel19NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel18NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel17NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel16NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel15NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel14NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel13NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel12NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel11NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel10NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel9NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel8NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel7NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel6NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel5NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel4NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel3NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel2NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel1NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpMove1ComboBox = new System.Windows.Forms.ComboBox();
             this.mainFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openRomFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -292,9 +341,6 @@
             this.tradeAbilityTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeGenderTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeNatureTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.tradeNewPVAbilityCheckBox = new System.Windows.Forms.CheckBox();
-            this.tradeNewPVGenderCheckBox = new System.Windows.Forms.CheckBox();
-            this.tradeNewPVNatureCheckBox = new System.Windows.Forms.CheckBox();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
@@ -333,6 +379,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).BeginInit();
             this.npcTradeTabPage.SuspendLayout();
+            this.tradeNewPVGroupBox.SuspendLayout();
             this.tradePVDerivedGroupBox.SuspendLayout();
             this.tradeIVsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeHPIVsNumericNoArrows)).BeginInit();
@@ -369,6 +416,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).BeginInit();
             this.textTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TextBankIndexNumericUpDown)).BeginInit();
+            this.learnsetTabPage.SuspendLayout();
+            this.learnsetLevelUpMovesGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel20NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel19NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel18NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel17NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel16NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel15NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel14NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel13NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel12NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel11NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel10NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel9NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel8NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel7NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel6NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel5NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel4NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel3NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel2NumericNoArrows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel1NumericNoArrows)).BeginInit();
             this.mainFormMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -380,10 +449,11 @@
             this.mainTabControl.Controls.Add(this.itemsTabPage);
             this.mainTabControl.Controls.Add(this.pokedexTabPage);
             this.mainTabControl.Controls.Add(this.textTabPage);
+            this.mainTabControl.Controls.Add(this.learnsetTabPage);
             this.mainTabControl.Location = new System.Drawing.Point(0, 27);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(932, 501);
+            this.mainTabControl.Size = new System.Drawing.Size(932, 630);
             this.mainTabControl.TabIndex = 100;
             // 
             // movesTabPage
@@ -419,7 +489,7 @@
             this.movesTabPage.Location = new System.Drawing.Point(4, 22);
             this.movesTabPage.Name = "movesTabPage";
             this.movesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.movesTabPage.Size = new System.Drawing.Size(924, 475);
+            this.movesTabPage.Size = new System.Drawing.Size(924, 604);
             this.movesTabPage.TabIndex = 0;
             this.movesTabPage.Text = "Moves";
             // 
@@ -837,7 +907,7 @@
             this.speciesTabPage.Location = new System.Drawing.Point(4, 22);
             this.speciesTabPage.Name = "speciesTabPage";
             this.speciesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.speciesTabPage.Size = new System.Drawing.Size(924, 475);
+            this.speciesTabPage.Size = new System.Drawing.Size(924, 604);
             this.speciesTabPage.TabIndex = 1;
             this.speciesTabPage.Text = "Pokemon";
             this.speciesTabPage.UseVisualStyleBackColor = true;
@@ -850,7 +920,7 @@
             this.speciesMiscGroupBox.Controls.Add(this.speciesCatchRateLabel);
             this.speciesMiscGroupBox.Controls.Add(this.speciesBaseHappinessLabel);
             this.speciesMiscGroupBox.Controls.Add(this.speciesSafariRunChanceLabel);
-            this.speciesMiscGroupBox.Location = new System.Drawing.Point(599, 292);
+            this.speciesMiscGroupBox.Location = new System.Drawing.Point(593, 245);
             this.speciesMiscGroupBox.Name = "speciesMiscGroupBox";
             this.speciesMiscGroupBox.Size = new System.Drawing.Size(103, 174);
             this.speciesMiscGroupBox.TabIndex = 9;
@@ -937,7 +1007,7 @@
             this.speciesXPGroupBox.Controls.Add(this.speciesBaseXPYieldNumericNoArrows);
             this.speciesXPGroupBox.Controls.Add(this.speciesBaseXPLabel);
             this.speciesXPGroupBox.Controls.Add(this.speciesXPGroupComboBox);
-            this.speciesXPGroupBox.Location = new System.Drawing.Point(280, 366);
+            this.speciesXPGroupBox.Location = new System.Drawing.Point(274, 319);
             this.speciesXPGroupBox.Name = "speciesXPGroupBox";
             this.speciesXPGroupBox.Size = new System.Drawing.Size(141, 100);
             this.speciesXPGroupBox.TabIndex = 5;
@@ -1005,7 +1075,7 @@
             this.speciesEVOnDefeatGroupBox.Controls.Add(this.speciesDefenseEVLabel);
             this.speciesEVOnDefeatGroupBox.Controls.Add(this.speciesAttackEVLabel);
             this.speciesEVOnDefeatGroupBox.Controls.Add(this.speciesHPEVlabel);
-            this.speciesEVOnDefeatGroupBox.Location = new System.Drawing.Point(154, 109);
+            this.speciesEVOnDefeatGroupBox.Location = new System.Drawing.Point(148, 62);
             this.speciesEVOnDefeatGroupBox.Name = "speciesEVOnDefeatGroupBox";
             this.speciesEVOnDefeatGroupBox.Size = new System.Drawing.Size(111, 357);
             this.speciesEVOnDefeatGroupBox.TabIndex = 2;
@@ -1156,7 +1226,7 @@
             // 
             this.speciesHMCheckedListBox.CheckOnClick = true;
             this.speciesHMCheckedListBox.FormattingEnabled = true;
-            this.speciesHMCheckedListBox.Location = new System.Drawing.Point(726, 339);
+            this.speciesHMCheckedListBox.Location = new System.Drawing.Point(720, 292);
             this.speciesHMCheckedListBox.Name = "speciesHMCheckedListBox";
             this.speciesHMCheckedListBox.Size = new System.Drawing.Size(190, 124);
             this.speciesHMCheckedListBox.TabIndex = 33;
@@ -1165,7 +1235,7 @@
             // 
             this.speciesTMCheckedListBox.CheckOnClick = true;
             this.speciesTMCheckedListBox.FormattingEnabled = true;
-            this.speciesTMCheckedListBox.Location = new System.Drawing.Point(727, 128);
+            this.speciesTMCheckedListBox.Location = new System.Drawing.Point(721, 81);
             this.speciesTMCheckedListBox.Name = "speciesTMCheckedListBox";
             this.speciesTMCheckedListBox.Size = new System.Drawing.Size(189, 184);
             this.speciesTMCheckedListBox.TabIndex = 32;
@@ -1176,7 +1246,7 @@
             this.speciesComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.speciesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.speciesComboBox.FormattingEnabled = true;
-            this.speciesComboBox.Location = new System.Drawing.Point(349, 49);
+            this.speciesComboBox.Location = new System.Drawing.Point(349, 25);
             this.speciesComboBox.Name = "speciesComboBox";
             this.speciesComboBox.Size = new System.Drawing.Size(186, 21);
             this.speciesComboBox.TabIndex = 0;
@@ -1188,7 +1258,7 @@
             this.speciesHeldItemsGroupBox.Controls.Add(this.speciesHeldItem1ComboBox);
             this.speciesHeldItemsGroupBox.Controls.Add(this.speciesHeldItem2ComboBox);
             this.speciesHeldItemsGroupBox.Controls.Add(this.speciesHeldItem2Label);
-            this.speciesHeldItemsGroupBox.Location = new System.Drawing.Point(441, 109);
+            this.speciesHeldItemsGroupBox.Location = new System.Drawing.Point(435, 62);
             this.speciesHeldItemsGroupBox.Name = "speciesHeldItemsGroupBox";
             this.speciesHeldItemsGroupBox.Size = new System.Drawing.Size(139, 164);
             this.speciesHeldItemsGroupBox.TabIndex = 6;
@@ -1239,7 +1309,7 @@
             this.speciesAbilitiesGroupBox.Controls.Add(this.speciesAbility1Label);
             this.speciesAbilitiesGroupBox.Controls.Add(this.speciesAbility2ComboBox);
             this.speciesAbilitiesGroupBox.Controls.Add(this.speciesAbility2Label);
-            this.speciesAbilitiesGroupBox.Location = new System.Drawing.Point(280, 243);
+            this.speciesAbilitiesGroupBox.Location = new System.Drawing.Point(274, 196);
             this.speciesAbilitiesGroupBox.Name = "speciesAbilitiesGroupBox";
             this.speciesAbilitiesGroupBox.Size = new System.Drawing.Size(141, 118);
             this.speciesAbilitiesGroupBox.TabIndex = 4;
@@ -1292,7 +1362,7 @@
             this.speciesEggGroupsGroupBox.Controls.Add(this.speciesEggGroup1Label);
             this.speciesEggGroupsGroupBox.Controls.Add(this.speciesEggGroup2ComboBox);
             this.speciesEggGroupsGroupBox.Controls.Add(this.speciesEggGroup2Label);
-            this.speciesEggGroupsGroupBox.Location = new System.Drawing.Point(441, 278);
+            this.speciesEggGroupsGroupBox.Location = new System.Drawing.Point(435, 231);
             this.speciesEggGroupsGroupBox.Name = "speciesEggGroupsGroupBox";
             this.speciesEggGroupsGroupBox.Size = new System.Drawing.Size(139, 188);
             this.speciesEggGroupsGroupBox.TabIndex = 7;
@@ -1366,7 +1436,7 @@
             this.speciesTypesGroupBox.Controls.Add(this.speciesType1Label);
             this.speciesTypesGroupBox.Controls.Add(this.speciesType2ComboBox);
             this.speciesTypesGroupBox.Controls.Add(this.speciesType2Label);
-            this.speciesTypesGroupBox.Location = new System.Drawing.Point(280, 109);
+            this.speciesTypesGroupBox.Location = new System.Drawing.Point(274, 62);
             this.speciesTypesGroupBox.Name = "speciesTypesGroupBox";
             this.speciesTypesGroupBox.Size = new System.Drawing.Size(141, 121);
             this.speciesTypesGroupBox.TabIndex = 3;
@@ -1420,7 +1490,7 @@
             this.speciesGenderGroupBox.Controls.Add(this.speciesFemaleOnlyRadioButton);
             this.speciesGenderGroupBox.Controls.Add(this.speciesMaleAndFemaleRadioButton);
             this.speciesGenderGroupBox.Controls.Add(this.speciesGenderMaleToFemaleLabel);
-            this.speciesGenderGroupBox.Location = new System.Drawing.Point(602, 109);
+            this.speciesGenderGroupBox.Location = new System.Drawing.Point(596, 62);
             this.speciesGenderGroupBox.Name = "speciesGenderGroupBox";
             this.speciesGenderGroupBox.Size = new System.Drawing.Size(103, 179);
             this.speciesGenderGroupBox.TabIndex = 8;
@@ -1536,7 +1606,7 @@
             this.speciesBaseStatsGroupBox.Controls.Add(this.speciesSpeedLabel);
             this.speciesBaseStatsGroupBox.Controls.Add(this.speciesSpecialAttackLabel);
             this.speciesBaseStatsGroupBox.Controls.Add(this.speciesSpecialDefenseLabel);
-            this.speciesBaseStatsGroupBox.Location = new System.Drawing.Point(27, 109);
+            this.speciesBaseStatsGroupBox.Location = new System.Drawing.Point(21, 62);
             this.speciesBaseStatsGroupBox.Name = "speciesBaseStatsGroupBox";
             this.speciesBaseStatsGroupBox.Size = new System.Drawing.Size(111, 357);
             this.speciesBaseStatsGroupBox.TabIndex = 1;
@@ -1716,7 +1786,7 @@
             // speciesLearnableHMsLabel
             // 
             this.speciesLearnableHMsLabel.AutoSize = true;
-            this.speciesLearnableHMsLabel.Location = new System.Drawing.Point(723, 323);
+            this.speciesLearnableHMsLabel.Location = new System.Drawing.Point(717, 276);
             this.speciesLearnableHMsLabel.Name = "speciesLearnableHMsLabel";
             this.speciesLearnableHMsLabel.Size = new System.Drawing.Size(82, 13);
             this.speciesLearnableHMsLabel.TabIndex = 47;
@@ -1725,7 +1795,7 @@
             // speciesLearnableTMsLabel
             // 
             this.speciesLearnableTMsLabel.AutoSize = true;
-            this.speciesLearnableTMsLabel.Location = new System.Drawing.Point(724, 113);
+            this.speciesLearnableTMsLabel.Location = new System.Drawing.Point(718, 66);
             this.speciesLearnableTMsLabel.Name = "speciesLearnableTMsLabel";
             this.speciesLearnableTMsLabel.Size = new System.Drawing.Size(81, 13);
             this.speciesLearnableTMsLabel.TabIndex = 46;
@@ -1733,13 +1803,7 @@
             // 
             // npcTradeTabPage
             // 
-            this.npcTradeTabPage.Controls.Add(this.tradeNewPVNatureCheckBox);
-            this.npcTradeTabPage.Controls.Add(this.tradeNewPVGenderCheckBox);
-            this.npcTradeTabPage.Controls.Add(this.tradeNewPVAbilityCheckBox);
-            this.npcTradeTabPage.Controls.Add(this.tradeNewPVAbilityComboBox);
-            this.npcTradeTabPage.Controls.Add(this.tradeNewPVGenderComboBox);
-            this.npcTradeTabPage.Controls.Add(this.tradeNewPVNatureComboBox);
-            this.npcTradeTabPage.Controls.Add(this.tradeRandomPVButton);
+            this.npcTradeTabPage.Controls.Add(this.tradeNewPVGroupBox);
             this.npcTradeTabPage.Controls.Add(this.tradeAnyPokemonWantedComboBox);
             this.npcTradeTabPage.Controls.Add(this.tradePVDerivedGroupBox);
             this.npcTradeTabPage.Controls.Add(this.tradeIVsGroupBox);
@@ -1762,47 +1826,93 @@
             this.npcTradeTabPage.Location = new System.Drawing.Point(4, 22);
             this.npcTradeTabPage.Name = "npcTradeTabPage";
             this.npcTradeTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.npcTradeTabPage.Size = new System.Drawing.Size(924, 475);
+            this.npcTradeTabPage.Size = new System.Drawing.Size(924, 604);
             this.npcTradeTabPage.TabIndex = 2;
             this.npcTradeTabPage.Text = "NPC Trades";
             this.npcTradeTabPage.UseVisualStyleBackColor = true;
             // 
-            // tradeNewPVAbilityComboBox
+            // tradeNewPVGroupBox
             // 
-            this.tradeNewPVAbilityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.tradeNewPVAbilityComboBox.FormattingEnabled = true;
-            this.tradeNewPVAbilityComboBox.Location = new System.Drawing.Point(673, 325);
-            this.tradeNewPVAbilityComboBox.Name = "tradeNewPVAbilityComboBox";
-            this.tradeNewPVAbilityComboBox.Size = new System.Drawing.Size(109, 21);
-            this.tradeNewPVAbilityComboBox.TabIndex = 54;
-            // 
-            // tradeNewPVGenderComboBox
-            // 
-            this.tradeNewPVGenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.tradeNewPVGenderComboBox.FormattingEnabled = true;
-            this.tradeNewPVGenderComboBox.Location = new System.Drawing.Point(673, 370);
-            this.tradeNewPVGenderComboBox.Name = "tradeNewPVGenderComboBox";
-            this.tradeNewPVGenderComboBox.Size = new System.Drawing.Size(109, 21);
-            this.tradeNewPVGenderComboBox.TabIndex = 53;
-            // 
-            // tradeNewPVNatureComboBox
-            // 
-            this.tradeNewPVNatureComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.tradeNewPVNatureComboBox.FormattingEnabled = true;
-            this.tradeNewPVNatureComboBox.Location = new System.Drawing.Point(673, 417);
-            this.tradeNewPVNatureComboBox.Name = "tradeNewPVNatureComboBox";
-            this.tradeNewPVNatureComboBox.Size = new System.Drawing.Size(109, 21);
-            this.tradeNewPVNatureComboBox.TabIndex = 52;
+            this.tradeNewPVGroupBox.Controls.Add(this.tradeRandomPVButton);
+            this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVNatureCheckBox);
+            this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVNatureComboBox);
+            this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVGenderCheckBox);
+            this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVAbilityCheckBox);
+            this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVGenderComboBox);
+            this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVAbilityComboBox);
+            this.tradeNewPVGroupBox.Location = new System.Drawing.Point(662, 291);
+            this.tradeNewPVGroupBox.Name = "tradeNewPVGroupBox";
+            this.tradeNewPVGroupBox.Size = new System.Drawing.Size(254, 178);
+            this.tradeNewPVGroupBox.TabIndex = 58;
+            this.tradeNewPVGroupBox.TabStop = false;
+            this.tradeNewPVGroupBox.Text = "Generate PV";
             // 
             // tradeRandomPVButton
             // 
-            this.tradeRandomPVButton.Location = new System.Drawing.Point(673, 291);
+            this.tradeRandomPVButton.Location = new System.Drawing.Point(24, 150);
             this.tradeRandomPVButton.Name = "tradeRandomPVButton";
             this.tradeRandomPVButton.Size = new System.Drawing.Size(75, 23);
             this.tradeRandomPVButton.TabIndex = 51;
             this.tradeRandomPVButton.Text = "New PV";
             this.tradeRandomPVButton.UseVisualStyleBackColor = true;
             this.tradeRandomPVButton.Click += new System.EventHandler(this.tradeRandomPVButton_Click);
+            // 
+            // tradeNewPVNatureCheckBox
+            // 
+            this.tradeNewPVNatureCheckBox.AutoSize = true;
+            this.tradeNewPVNatureCheckBox.Location = new System.Drawing.Point(132, 123);
+            this.tradeNewPVNatureCheckBox.Name = "tradeNewPVNatureCheckBox";
+            this.tradeNewPVNatureCheckBox.Size = new System.Drawing.Size(79, 17);
+            this.tradeNewPVNatureCheckBox.TabIndex = 57;
+            this.tradeNewPVNatureCheckBox.Text = "Any Nature";
+            this.tradeNewPVNatureCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // tradeNewPVNatureComboBox
+            // 
+            this.tradeNewPVNatureComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tradeNewPVNatureComboBox.FormattingEnabled = true;
+            this.tradeNewPVNatureComboBox.Location = new System.Drawing.Point(6, 123);
+            this.tradeNewPVNatureComboBox.Name = "tradeNewPVNatureComboBox";
+            this.tradeNewPVNatureComboBox.Size = new System.Drawing.Size(109, 21);
+            this.tradeNewPVNatureComboBox.TabIndex = 52;
+            // 
+            // tradeNewPVGenderCheckBox
+            // 
+            this.tradeNewPVGenderCheckBox.AutoSize = true;
+            this.tradeNewPVGenderCheckBox.Location = new System.Drawing.Point(132, 79);
+            this.tradeNewPVGenderCheckBox.Name = "tradeNewPVGenderCheckBox";
+            this.tradeNewPVGenderCheckBox.Size = new System.Drawing.Size(91, 17);
+            this.tradeNewPVGenderCheckBox.TabIndex = 56;
+            this.tradeNewPVGenderCheckBox.Text = "Either Gender";
+            this.tradeNewPVGenderCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // tradeNewPVAbilityCheckBox
+            // 
+            this.tradeNewPVAbilityCheckBox.AutoSize = true;
+            this.tradeNewPVAbilityCheckBox.Location = new System.Drawing.Point(132, 39);
+            this.tradeNewPVAbilityCheckBox.Name = "tradeNewPVAbilityCheckBox";
+            this.tradeNewPVAbilityCheckBox.Size = new System.Drawing.Size(83, 17);
+            this.tradeNewPVAbilityCheckBox.TabIndex = 55;
+            this.tradeNewPVAbilityCheckBox.Text = "Either Ability";
+            this.tradeNewPVAbilityCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // tradeNewPVGenderComboBox
+            // 
+            this.tradeNewPVGenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tradeNewPVGenderComboBox.FormattingEnabled = true;
+            this.tradeNewPVGenderComboBox.Location = new System.Drawing.Point(6, 78);
+            this.tradeNewPVGenderComboBox.Name = "tradeNewPVGenderComboBox";
+            this.tradeNewPVGenderComboBox.Size = new System.Drawing.Size(109, 21);
+            this.tradeNewPVGenderComboBox.TabIndex = 53;
+            // 
+            // tradeNewPVAbilityComboBox
+            // 
+            this.tradeNewPVAbilityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tradeNewPVAbilityComboBox.FormattingEnabled = true;
+            this.tradeNewPVAbilityComboBox.Location = new System.Drawing.Point(6, 36);
+            this.tradeNewPVAbilityComboBox.Name = "tradeNewPVAbilityComboBox";
+            this.tradeNewPVAbilityComboBox.Size = new System.Drawing.Size(109, 21);
+            this.tradeNewPVAbilityComboBox.TabIndex = 54;
             // 
             // tradeAnyPokemonWantedComboBox
             // 
@@ -2391,7 +2501,7 @@
             this.itemsTabPage.Location = new System.Drawing.Point(4, 22);
             this.itemsTabPage.Name = "itemsTabPage";
             this.itemsTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.itemsTabPage.Size = new System.Drawing.Size(924, 475);
+            this.itemsTabPage.Size = new System.Drawing.Size(924, 604);
             this.itemsTabPage.TabIndex = 3;
             this.itemsTabPage.Text = "Items";
             this.itemsTabPage.UseVisualStyleBackColor = true;
@@ -2703,7 +2813,7 @@
             this.pokedexTabPage.Location = new System.Drawing.Point(4, 22);
             this.pokedexTabPage.Name = "pokedexTabPage";
             this.pokedexTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.pokedexTabPage.Size = new System.Drawing.Size(924, 475);
+            this.pokedexTabPage.Size = new System.Drawing.Size(924, 604);
             this.pokedexTabPage.TabIndex = 4;
             this.pokedexTabPage.Text = "Pokedex";
             this.pokedexTabPage.UseVisualStyleBackColor = true;
@@ -2921,7 +3031,7 @@
             this.textTabPage.Location = new System.Drawing.Point(4, 22);
             this.textTabPage.Name = "textTabPage";
             this.textTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.textTabPage.Size = new System.Drawing.Size(924, 475);
+            this.textTabPage.Size = new System.Drawing.Size(924, 604);
             this.textTabPage.TabIndex = 5;
             this.textTabPage.Text = "Text";
             this.textTabPage.UseVisualStyleBackColor = true;
@@ -2956,6 +3066,477 @@
             this.textBankComboBox.Size = new System.Drawing.Size(121, 21);
             this.textBankComboBox.TabIndex = 0;
             this.textBankComboBox.SelectedValueChanged += new System.EventHandler(this.textBankComboBox_SelectedValueChanged);
+            // 
+            // learnsetTabPage
+            // 
+            this.learnsetTabPage.Controls.Add(this.label3);
+            this.learnsetTabPage.Controls.Add(this.learnsetMoveTutorCheckedListBox);
+            this.learnsetTabPage.Controls.Add(this.learnsetPokemonComboBox);
+            this.learnsetTabPage.Controls.Add(this.learnsetLevelUpMovesGroupBox);
+            this.learnsetTabPage.Location = new System.Drawing.Point(4, 22);
+            this.learnsetTabPage.Name = "learnsetTabPage";
+            this.learnsetTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.learnsetTabPage.Size = new System.Drawing.Size(924, 604);
+            this.learnsetTabPage.TabIndex = 6;
+            this.learnsetTabPage.Text = "Learnset";
+            this.learnsetTabPage.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(357, 53);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Move Tutor Moves";
+            // 
+            // learnsetMoveTutorCheckedListBox
+            // 
+            this.learnsetMoveTutorCheckedListBox.FormattingEnabled = true;
+            this.learnsetMoveTutorCheckedListBox.Location = new System.Drawing.Point(360, 69);
+            this.learnsetMoveTutorCheckedListBox.Name = "learnsetMoveTutorCheckedListBox";
+            this.learnsetMoveTutorCheckedListBox.Size = new System.Drawing.Size(193, 124);
+            this.learnsetMoveTutorCheckedListBox.TabIndex = 2;
+            this.learnsetMoveTutorCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.learnsetMoveTutorCheckedListBox_ItemCheck);
+            // 
+            // learnsetPokemonComboBox
+            // 
+            this.learnsetPokemonComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetPokemonComboBox.FormattingEnabled = true;
+            this.learnsetPokemonComboBox.Location = new System.Drawing.Point(351, 21);
+            this.learnsetPokemonComboBox.Name = "learnsetPokemonComboBox";
+            this.learnsetPokemonComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetPokemonComboBox.TabIndex = 1;
+            this.learnsetPokemonComboBox.SelectedIndexChanged += new System.EventHandler(this.learnsetPokemonComboBox_SelectedIndexChanged);
+            // 
+            // learnsetLevelUpMovesGroupBox
+            // 
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove20ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove19ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove18ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove17ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove16ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove15ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove14ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove13ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove12ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove11ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove10ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove9ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove8ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove7ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove6ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove5ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove4ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove3ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove2ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel20NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel19NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel18NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel17NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel16NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel15NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel14NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel13NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel12NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel11NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel10NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel9NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel8NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel7NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel6NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel5NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel4NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel3NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel2NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpLevel1NumericNoArrows);
+            this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove1ComboBox);
+            this.learnsetLevelUpMovesGroupBox.Location = new System.Drawing.Point(29, 53);
+            this.learnsetLevelUpMovesGroupBox.Name = "learnsetLevelUpMovesGroupBox";
+            this.learnsetLevelUpMovesGroupBox.Size = new System.Drawing.Size(316, 542);
+            this.learnsetLevelUpMovesGroupBox.TabIndex = 0;
+            this.learnsetLevelUpMovesGroupBox.TabStop = false;
+            this.learnsetLevelUpMovesGroupBox.Text = "Level-Up Moves";
+            // 
+            // learnsetLevelUpMove20ComboBox
+            // 
+            this.learnsetLevelUpMove20ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove20ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove20ComboBox.Location = new System.Drawing.Point(74, 513);
+            this.learnsetLevelUpMove20ComboBox.Name = "learnsetLevelUpMove20ComboBox";
+            this.learnsetLevelUpMove20ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove20ComboBox.TabIndex = 39;
+            this.learnsetLevelUpMove20ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove20ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove19ComboBox
+            // 
+            this.learnsetLevelUpMove19ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove19ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove19ComboBox.Location = new System.Drawing.Point(74, 488);
+            this.learnsetLevelUpMove19ComboBox.Name = "learnsetLevelUpMove19ComboBox";
+            this.learnsetLevelUpMove19ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove19ComboBox.TabIndex = 38;
+            this.learnsetLevelUpMove19ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove19ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove18ComboBox
+            // 
+            this.learnsetLevelUpMove18ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove18ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove18ComboBox.Location = new System.Drawing.Point(74, 462);
+            this.learnsetLevelUpMove18ComboBox.Name = "learnsetLevelUpMove18ComboBox";
+            this.learnsetLevelUpMove18ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove18ComboBox.TabIndex = 37;
+            this.learnsetLevelUpMove18ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove18ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove17ComboBox
+            // 
+            this.learnsetLevelUpMove17ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove17ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove17ComboBox.Location = new System.Drawing.Point(74, 436);
+            this.learnsetLevelUpMove17ComboBox.Name = "learnsetLevelUpMove17ComboBox";
+            this.learnsetLevelUpMove17ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove17ComboBox.TabIndex = 36;
+            this.learnsetLevelUpMove17ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove17ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove16ComboBox
+            // 
+            this.learnsetLevelUpMove16ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove16ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove16ComboBox.Location = new System.Drawing.Point(74, 412);
+            this.learnsetLevelUpMove16ComboBox.Name = "learnsetLevelUpMove16ComboBox";
+            this.learnsetLevelUpMove16ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove16ComboBox.TabIndex = 35;
+            this.learnsetLevelUpMove16ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove16ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove15ComboBox
+            // 
+            this.learnsetLevelUpMove15ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove15ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove15ComboBox.Location = new System.Drawing.Point(74, 386);
+            this.learnsetLevelUpMove15ComboBox.Name = "learnsetLevelUpMove15ComboBox";
+            this.learnsetLevelUpMove15ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove15ComboBox.TabIndex = 34;
+            this.learnsetLevelUpMove15ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove15ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove14ComboBox
+            // 
+            this.learnsetLevelUpMove14ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove14ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove14ComboBox.Location = new System.Drawing.Point(74, 360);
+            this.learnsetLevelUpMove14ComboBox.Name = "learnsetLevelUpMove14ComboBox";
+            this.learnsetLevelUpMove14ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove14ComboBox.TabIndex = 33;
+            this.learnsetLevelUpMove14ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove14ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove13ComboBox
+            // 
+            this.learnsetLevelUpMove13ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove13ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove13ComboBox.Location = new System.Drawing.Point(74, 334);
+            this.learnsetLevelUpMove13ComboBox.Name = "learnsetLevelUpMove13ComboBox";
+            this.learnsetLevelUpMove13ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove13ComboBox.TabIndex = 32;
+            this.learnsetLevelUpMove13ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove13ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove12ComboBox
+            // 
+            this.learnsetLevelUpMove12ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove12ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove12ComboBox.Location = new System.Drawing.Point(74, 308);
+            this.learnsetLevelUpMove12ComboBox.Name = "learnsetLevelUpMove12ComboBox";
+            this.learnsetLevelUpMove12ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove12ComboBox.TabIndex = 31;
+            this.learnsetLevelUpMove12ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove12ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove11ComboBox
+            // 
+            this.learnsetLevelUpMove11ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove11ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove11ComboBox.Location = new System.Drawing.Point(74, 282);
+            this.learnsetLevelUpMove11ComboBox.Name = "learnsetLevelUpMove11ComboBox";
+            this.learnsetLevelUpMove11ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove11ComboBox.TabIndex = 30;
+            this.learnsetLevelUpMove11ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove11ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove10ComboBox
+            // 
+            this.learnsetLevelUpMove10ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove10ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove10ComboBox.Location = new System.Drawing.Point(74, 256);
+            this.learnsetLevelUpMove10ComboBox.Name = "learnsetLevelUpMove10ComboBox";
+            this.learnsetLevelUpMove10ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove10ComboBox.TabIndex = 29;
+            this.learnsetLevelUpMove10ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove10ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove9ComboBox
+            // 
+            this.learnsetLevelUpMove9ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove9ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove9ComboBox.Location = new System.Drawing.Point(74, 231);
+            this.learnsetLevelUpMove9ComboBox.Name = "learnsetLevelUpMove9ComboBox";
+            this.learnsetLevelUpMove9ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove9ComboBox.TabIndex = 28;
+            this.learnsetLevelUpMove9ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove9ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove8ComboBox
+            // 
+            this.learnsetLevelUpMove8ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove8ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove8ComboBox.Location = new System.Drawing.Point(74, 205);
+            this.learnsetLevelUpMove8ComboBox.Name = "learnsetLevelUpMove8ComboBox";
+            this.learnsetLevelUpMove8ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove8ComboBox.TabIndex = 27;
+            this.learnsetLevelUpMove8ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove8ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove7ComboBox
+            // 
+            this.learnsetLevelUpMove7ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove7ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove7ComboBox.Location = new System.Drawing.Point(74, 179);
+            this.learnsetLevelUpMove7ComboBox.Name = "learnsetLevelUpMove7ComboBox";
+            this.learnsetLevelUpMove7ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove7ComboBox.TabIndex = 26;
+            this.learnsetLevelUpMove7ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove7ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove6ComboBox
+            // 
+            this.learnsetLevelUpMove6ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove6ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove6ComboBox.Location = new System.Drawing.Point(74, 152);
+            this.learnsetLevelUpMove6ComboBox.Name = "learnsetLevelUpMove6ComboBox";
+            this.learnsetLevelUpMove6ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove6ComboBox.TabIndex = 25;
+            this.learnsetLevelUpMove6ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove6ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove5ComboBox
+            // 
+            this.learnsetLevelUpMove5ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove5ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove5ComboBox.Location = new System.Drawing.Point(74, 125);
+            this.learnsetLevelUpMove5ComboBox.Name = "learnsetLevelUpMove5ComboBox";
+            this.learnsetLevelUpMove5ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove5ComboBox.TabIndex = 24;
+            this.learnsetLevelUpMove5ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove5ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove4ComboBox
+            // 
+            this.learnsetLevelUpMove4ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove4ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove4ComboBox.Location = new System.Drawing.Point(74, 100);
+            this.learnsetLevelUpMove4ComboBox.Name = "learnsetLevelUpMove4ComboBox";
+            this.learnsetLevelUpMove4ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove4ComboBox.TabIndex = 23;
+            this.learnsetLevelUpMove4ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove4ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove3ComboBox
+            // 
+            this.learnsetLevelUpMove3ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove3ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove3ComboBox.Location = new System.Drawing.Point(74, 74);
+            this.learnsetLevelUpMove3ComboBox.Name = "learnsetLevelUpMove3ComboBox";
+            this.learnsetLevelUpMove3ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove3ComboBox.TabIndex = 22;
+            this.learnsetLevelUpMove3ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove3ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpMove2ComboBox
+            // 
+            this.learnsetLevelUpMove2ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove2ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove2ComboBox.Location = new System.Drawing.Point(74, 48);
+            this.learnsetLevelUpMove2ComboBox.Name = "learnsetLevelUpMove2ComboBox";
+            this.learnsetLevelUpMove2ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove2ComboBox.TabIndex = 21;
+            this.learnsetLevelUpMove2ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove2ComboBox_SelectionChangeCommitted);
+            // 
+            // learnsetLevelUpLevel20NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel20NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel20NumericNoArrows.Location = new System.Drawing.Point(22, 516);
+            this.learnsetLevelUpLevel20NumericNoArrows.Name = "learnsetLevelUpLevel20NumericNoArrows";
+            this.learnsetLevelUpLevel20NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel20NumericNoArrows.TabIndex = 20;
+            this.learnsetLevelUpLevel20NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel20NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel19NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel19NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel19NumericNoArrows.Location = new System.Drawing.Point(22, 490);
+            this.learnsetLevelUpLevel19NumericNoArrows.Name = "learnsetLevelUpLevel19NumericNoArrows";
+            this.learnsetLevelUpLevel19NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel19NumericNoArrows.TabIndex = 19;
+            this.learnsetLevelUpLevel19NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel19NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel18NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel18NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel18NumericNoArrows.Location = new System.Drawing.Point(22, 464);
+            this.learnsetLevelUpLevel18NumericNoArrows.Name = "learnsetLevelUpLevel18NumericNoArrows";
+            this.learnsetLevelUpLevel18NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel18NumericNoArrows.TabIndex = 18;
+            this.learnsetLevelUpLevel18NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel18NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel17NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel17NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel17NumericNoArrows.Location = new System.Drawing.Point(22, 438);
+            this.learnsetLevelUpLevel17NumericNoArrows.Name = "learnsetLevelUpLevel17NumericNoArrows";
+            this.learnsetLevelUpLevel17NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel17NumericNoArrows.TabIndex = 17;
+            this.learnsetLevelUpLevel17NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel17NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel16NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel16NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel16NumericNoArrows.Location = new System.Drawing.Point(22, 412);
+            this.learnsetLevelUpLevel16NumericNoArrows.Name = "learnsetLevelUpLevel16NumericNoArrows";
+            this.learnsetLevelUpLevel16NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel16NumericNoArrows.TabIndex = 16;
+            this.learnsetLevelUpLevel16NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel16NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel15NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel15NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel15NumericNoArrows.Location = new System.Drawing.Point(22, 386);
+            this.learnsetLevelUpLevel15NumericNoArrows.Name = "learnsetLevelUpLevel15NumericNoArrows";
+            this.learnsetLevelUpLevel15NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel15NumericNoArrows.TabIndex = 15;
+            this.learnsetLevelUpLevel15NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel15NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel14NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel14NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel14NumericNoArrows.Location = new System.Drawing.Point(22, 360);
+            this.learnsetLevelUpLevel14NumericNoArrows.Name = "learnsetLevelUpLevel14NumericNoArrows";
+            this.learnsetLevelUpLevel14NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel14NumericNoArrows.TabIndex = 14;
+            this.learnsetLevelUpLevel14NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel14NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel13NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel13NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel13NumericNoArrows.Location = new System.Drawing.Point(22, 334);
+            this.learnsetLevelUpLevel13NumericNoArrows.Name = "learnsetLevelUpLevel13NumericNoArrows";
+            this.learnsetLevelUpLevel13NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel13NumericNoArrows.TabIndex = 13;
+            this.learnsetLevelUpLevel13NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel13NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel12NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel12NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel12NumericNoArrows.Location = new System.Drawing.Point(22, 308);
+            this.learnsetLevelUpLevel12NumericNoArrows.Name = "learnsetLevelUpLevel12NumericNoArrows";
+            this.learnsetLevelUpLevel12NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel12NumericNoArrows.TabIndex = 12;
+            this.learnsetLevelUpLevel12NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel12NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel11NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel11NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel11NumericNoArrows.Location = new System.Drawing.Point(22, 282);
+            this.learnsetLevelUpLevel11NumericNoArrows.Name = "learnsetLevelUpLevel11NumericNoArrows";
+            this.learnsetLevelUpLevel11NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel11NumericNoArrows.TabIndex = 11;
+            this.learnsetLevelUpLevel11NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel11NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel10NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel10NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel10NumericNoArrows.Location = new System.Drawing.Point(22, 256);
+            this.learnsetLevelUpLevel10NumericNoArrows.Name = "learnsetLevelUpLevel10NumericNoArrows";
+            this.learnsetLevelUpLevel10NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel10NumericNoArrows.TabIndex = 10;
+            this.learnsetLevelUpLevel10NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel10NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel9NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel9NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel9NumericNoArrows.Location = new System.Drawing.Point(22, 230);
+            this.learnsetLevelUpLevel9NumericNoArrows.Name = "learnsetLevelUpLevel9NumericNoArrows";
+            this.learnsetLevelUpLevel9NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel9NumericNoArrows.TabIndex = 9;
+            this.learnsetLevelUpLevel9NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel9NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel8NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel8NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel8NumericNoArrows.Location = new System.Drawing.Point(22, 204);
+            this.learnsetLevelUpLevel8NumericNoArrows.Name = "learnsetLevelUpLevel8NumericNoArrows";
+            this.learnsetLevelUpLevel8NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel8NumericNoArrows.TabIndex = 8;
+            this.learnsetLevelUpLevel8NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel8NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel7NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel7NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel7NumericNoArrows.Location = new System.Drawing.Point(22, 178);
+            this.learnsetLevelUpLevel7NumericNoArrows.Name = "learnsetLevelUpLevel7NumericNoArrows";
+            this.learnsetLevelUpLevel7NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel7NumericNoArrows.TabIndex = 7;
+            this.learnsetLevelUpLevel7NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel7NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel6NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel6NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel6NumericNoArrows.Location = new System.Drawing.Point(22, 152);
+            this.learnsetLevelUpLevel6NumericNoArrows.Name = "learnsetLevelUpLevel6NumericNoArrows";
+            this.learnsetLevelUpLevel6NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel6NumericNoArrows.TabIndex = 6;
+            this.learnsetLevelUpLevel6NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel6NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel5NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel5NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel5NumericNoArrows.Location = new System.Drawing.Point(22, 126);
+            this.learnsetLevelUpLevel5NumericNoArrows.Name = "learnsetLevelUpLevel5NumericNoArrows";
+            this.learnsetLevelUpLevel5NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel5NumericNoArrows.TabIndex = 5;
+            this.learnsetLevelUpLevel5NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel5NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel4NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel4NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel4NumericNoArrows.Location = new System.Drawing.Point(22, 100);
+            this.learnsetLevelUpLevel4NumericNoArrows.Name = "learnsetLevelUpLevel4NumericNoArrows";
+            this.learnsetLevelUpLevel4NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel4NumericNoArrows.TabIndex = 4;
+            this.learnsetLevelUpLevel4NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel4NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel3NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel3NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel3NumericNoArrows.Location = new System.Drawing.Point(22, 74);
+            this.learnsetLevelUpLevel3NumericNoArrows.Name = "learnsetLevelUpLevel3NumericNoArrows";
+            this.learnsetLevelUpLevel3NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel3NumericNoArrows.TabIndex = 3;
+            this.learnsetLevelUpLevel3NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel3NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel2NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel2NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel2NumericNoArrows.Location = new System.Drawing.Point(22, 48);
+            this.learnsetLevelUpLevel2NumericNoArrows.Name = "learnsetLevelUpLevel2NumericNoArrows";
+            this.learnsetLevelUpLevel2NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel2NumericNoArrows.TabIndex = 2;
+            this.learnsetLevelUpLevel2NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel2NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpLevel1NumericNoArrows
+            // 
+            this.learnsetLevelUpLevel1NumericNoArrows.InterceptArrowKeys = false;
+            this.learnsetLevelUpLevel1NumericNoArrows.Location = new System.Drawing.Point(22, 22);
+            this.learnsetLevelUpLevel1NumericNoArrows.Name = "learnsetLevelUpLevel1NumericNoArrows";
+            this.learnsetLevelUpLevel1NumericNoArrows.Size = new System.Drawing.Size(36, 20);
+            this.learnsetLevelUpLevel1NumericNoArrows.TabIndex = 1;
+            this.learnsetLevelUpLevel1NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel1NumericNoArrows_Validated);
+            // 
+            // learnsetLevelUpMove1ComboBox
+            // 
+            this.learnsetLevelUpMove1ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove1ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove1ComboBox.Location = new System.Drawing.Point(74, 21);
+            this.learnsetLevelUpMove1ComboBox.Name = "learnsetLevelUpMove1ComboBox";
+            this.learnsetLevelUpMove1ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetLevelUpMove1ComboBox.TabIndex = 0;
+            this.learnsetLevelUpMove1ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove1ComboBox_SelectionChangeCommitted);
             // 
             // mainFormMenuStrip
             // 
@@ -3078,41 +3659,11 @@
             this.한국어ToolStripMenuItem.Text = "한국어";
             this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
             // 
-            // tradeNewPVAbilityCheckBox
-            // 
-            this.tradeNewPVAbilityCheckBox.AutoSize = true;
-            this.tradeNewPVAbilityCheckBox.Location = new System.Drawing.Point(806, 327);
-            this.tradeNewPVAbilityCheckBox.Name = "tradeNewPVAbilityCheckBox";
-            this.tradeNewPVAbilityCheckBox.Size = new System.Drawing.Size(83, 17);
-            this.tradeNewPVAbilityCheckBox.TabIndex = 55;
-            this.tradeNewPVAbilityCheckBox.Text = "Either Ability";
-            this.tradeNewPVAbilityCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // tradeNewPVGenderCheckBox
-            // 
-            this.tradeNewPVGenderCheckBox.AutoSize = true;
-            this.tradeNewPVGenderCheckBox.Location = new System.Drawing.Point(806, 372);
-            this.tradeNewPVGenderCheckBox.Name = "tradeNewPVGenderCheckBox";
-            this.tradeNewPVGenderCheckBox.Size = new System.Drawing.Size(91, 17);
-            this.tradeNewPVGenderCheckBox.TabIndex = 56;
-            this.tradeNewPVGenderCheckBox.Text = "Either Gender";
-            this.tradeNewPVGenderCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // tradeNewPVNatureCheckBox
-            // 
-            this.tradeNewPVNatureCheckBox.AutoSize = true;
-            this.tradeNewPVNatureCheckBox.Location = new System.Drawing.Point(806, 418);
-            this.tradeNewPVNatureCheckBox.Name = "tradeNewPVNatureCheckBox";
-            this.tradeNewPVNatureCheckBox.Size = new System.Drawing.Size(79, 17);
-            this.tradeNewPVNatureCheckBox.TabIndex = 57;
-            this.tradeNewPVNatureCheckBox.Text = "Any Nature";
-            this.tradeNewPVNatureCheckBox.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 530);
+            this.ClientSize = new System.Drawing.Size(932, 656);
             this.Controls.Add(this.mainTabControl);
             this.Controls.Add(this.mainFormMenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -3171,6 +3722,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).EndInit();
             this.npcTradeTabPage.ResumeLayout(false);
             this.npcTradeTabPage.PerformLayout();
+            this.tradeNewPVGroupBox.ResumeLayout(false);
+            this.tradeNewPVGroupBox.PerformLayout();
             this.tradePVDerivedGroupBox.ResumeLayout(false);
             this.tradePVDerivedGroupBox.PerformLayout();
             this.tradeIVsGroupBox.ResumeLayout(false);
@@ -3214,6 +3767,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).EndInit();
             this.textTabPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TextBankIndexNumericUpDown)).EndInit();
+            this.learnsetTabPage.ResumeLayout(false);
+            this.learnsetTabPage.PerformLayout();
+            this.learnsetLevelUpMovesGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel20NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel19NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel18NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel17NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel16NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel15NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel14NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel13NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel12NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel11NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel10NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel9NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel8NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel7NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel6NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel5NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel4NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel3NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel2NumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel1NumericNoArrows)).EndInit();
             this.mainFormMenuStrip.ResumeLayout(false);
             this.mainFormMenuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -3488,6 +4064,52 @@
         private System.Windows.Forms.CheckBox tradeNewPVNatureCheckBox;
         private System.Windows.Forms.CheckBox tradeNewPVGenderCheckBox;
         private System.Windows.Forms.CheckBox tradeNewPVAbilityCheckBox;
+        private System.Windows.Forms.GroupBox tradeNewPVGroupBox;
+        private System.Windows.Forms.TabPage learnsetTabPage;
+        private System.Windows.Forms.GroupBox learnsetLevelUpMovesGroupBox;
+        private NumericNoArrows learnsetLevelUpLevel8NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel7NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel6NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel5NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel4NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel3NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel2NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel1NumericNoArrows;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove1ComboBox;
+        private NumericNoArrows learnsetLevelUpLevel20NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel19NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel18NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel17NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel16NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel15NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel14NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel13NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel12NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel11NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel10NumericNoArrows;
+        private NumericNoArrows learnsetLevelUpLevel9NumericNoArrows;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove5ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove4ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove3ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove2ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove20ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove19ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove18ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove17ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove16ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove15ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove14ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove13ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove12ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove11ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove10ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove9ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove8ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove7ComboBox;
+        private System.Windows.Forms.ComboBox learnsetLevelUpMove6ComboBox;
+        private System.Windows.Forms.ComboBox learnsetPokemonComboBox;
+        private System.Windows.Forms.CheckedListBox learnsetMoveTutorCheckedListBox;
+        private System.Windows.Forms.Label label3;
     }
 }
 

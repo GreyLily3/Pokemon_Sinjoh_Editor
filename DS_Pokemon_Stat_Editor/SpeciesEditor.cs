@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pokemon_Sinjoh_Editor.Enums;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -174,7 +175,7 @@ namespace Pokemon_Sinjoh_Editor
                 speciesGenderRatioNumericNoArrows.Enabled = false;
                 
                 if (speciesControlsCanRecieveUserInput)
-                    MarkUnsavedChanges();
+                    MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -186,7 +187,7 @@ namespace Pokemon_Sinjoh_Editor
                 speciesGenderRatioNumericNoArrows.Enabled = false;
 
                 if (speciesControlsCanRecieveUserInput)
-                    MarkUnsavedChanges();
+                    MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -204,7 +205,7 @@ namespace Pokemon_Sinjoh_Editor
                 }
 
                 if (speciesControlsCanRecieveUserInput)
-                    MarkUnsavedChanges();
+                    MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -216,7 +217,7 @@ namespace Pokemon_Sinjoh_Editor
                 speciesGenderRatioNumericNoArrows.Enabled = false;
 
                 if (speciesControlsCanRecieveUserInput)
-                    MarkUnsavedChanges();
+                    MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -226,7 +227,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].HP != speciesHPNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].HP = (byte)speciesHPNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -235,7 +236,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Attack != speciesAttackNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Attack = (byte)speciesAttackNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -244,7 +245,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Defense != speciesDefenseNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Defense = (byte)speciesDefenseNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -253,7 +254,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialAttack != speciesSpecialAttackNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialAttack = (byte)speciesSpecialAttackNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -262,7 +263,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialDefense != speciesSpecialDefenseNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialDefense = (byte)speciesSpecialDefenseNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -271,7 +272,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Speed != speciesSpeedNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Speed = (byte)speciesSpeedNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -280,7 +281,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].HPEVYield != speciesHPEVNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].HPEVYield = (byte)speciesHPEVNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -289,7 +290,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].AttackEVYield != speciesAttackEVNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].AttackEVYield = (byte)speciesAttackEVNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -298,7 +299,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].DefenseEVYield != speciesDefenseEVNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].DefenseEVYield = (byte)speciesDefenseEVNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -307,7 +308,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialAttackEVYield != speciesSpecialAttackEVNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialAttackEVYield = (byte)speciesSpecialAttackEVNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -316,7 +317,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialDefenseEVYield != speciesSpecialDefenseEVNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpecialDefenseEVYield = (byte)speciesSpecialDefenseEVNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -325,7 +326,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpeedEVYield != speciesSpeedEVNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SpeedEVYield = (byte)speciesSpeedEVNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -334,7 +335,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseXP != speciesBaseXPYieldNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseXP = (byte)speciesBaseXPYieldNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -343,7 +344,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].NumEggCyles != speciesEggCyclesNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].NumEggCyles = (byte)speciesEggCyclesNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -352,7 +353,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].CatchRate != speciesCatchRateNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].CatchRate = (byte)speciesCatchRateNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -361,7 +362,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseFriendship != speciesBaseFriendshipNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].BaseFriendship = (byte)speciesBaseFriendshipNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -370,7 +371,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SafariRunChance != speciesSafariRunChanceNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SafariRunChance = (byte)speciesSafariRunChanceNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -379,7 +380,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].GenderRatio != speciesGenderRatioNumericNoArrows.Value)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].GenderRatio = (byte)speciesGenderRatioNumericNoArrows.Value;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -388,7 +389,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Type1 != speciesType1ComboBox.SelectedIndex)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Type1 = (byte)speciesType1ComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -397,7 +398,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Type2 != speciesType2ComboBox.SelectedIndex)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Type2 = (byte)speciesType2ComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -406,7 +407,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Ability1 != speciesAbility1ComboBox.SelectedIndex)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Ability1 = (byte)speciesAbility1ComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -415,7 +416,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Ability2 != speciesAbility2ComboBox.SelectedIndex)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Ability2 = (byte)speciesAbility2ComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -424,7 +425,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].XPGroup != (PokemonSpecies.XPGroups)speciesXPGroupComboBox.SelectedIndex)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].XPGroup = (PokemonSpecies.XPGroups)speciesXPGroupComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -433,7 +434,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Item1 != speciesHeldItem1ComboBox.SelectedIndex)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Item1 = (ushort)speciesHeldItem1ComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -442,7 +443,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Item2 != speciesHeldItem2ComboBox.SelectedIndex)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].Item2 = (ushort)speciesHeldItem2ComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -451,7 +452,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].EggGroup1 != (PokemonSpecies.EggGroups)speciesEggGroup1ComboBox.SelectedIndex)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].EggGroup1 = (PokemonSpecies.EggGroups)speciesEggGroup1ComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -460,7 +461,7 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].EggGroup2 != (PokemonSpecies.EggGroups)speciesEggGroup2ComboBox.SelectedIndex)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].EggGroup2 = (PokemonSpecies.EggGroups)speciesEggGroup2ComboBox.SelectedIndex;
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -469,7 +470,7 @@ namespace Pokemon_Sinjoh_Editor
             if (speciesControlsCanRecieveUserInput)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetLearnableTM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
@@ -478,7 +479,7 @@ namespace Pokemon_Sinjoh_Editor
             if (speciesControlsCanRecieveUserInput)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetLearnableHM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
-                MarkUnsavedChanges();
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
     }
