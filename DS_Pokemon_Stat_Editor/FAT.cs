@@ -3,7 +3,7 @@
 
 namespace Pokemon_Sinjoh_Editor
 {
-    internal class FAT //File Allocation Table
+    public class FAT //File Allocation Table
     {
         private uint[] startOffsets;
         private uint[] endOffsets;
@@ -53,5 +53,6 @@ namespace Pokemon_Sinjoh_Editor
 
         public uint GetStartOffset(int fileID) => startOffsets[fileID];
         public uint GetEndOffset(int fileID) => endOffsets[fileID];
+        public uint GetFileSize(int fileID) => endOffsets[fileID] - startOffsets[fileID];
     }
 }

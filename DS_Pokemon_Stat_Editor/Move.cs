@@ -26,6 +26,7 @@ namespace Pokemon_Sinjoh_Editor
 
         public const int NUM_EFFECTS = 276;
         private const byte CONTEST_EFFECT_START_INDEX = 1;
+        public const int STARTING_INDEX = 1;
 
         public static string[] ContestEffectDescriptions { get; private set; } = new string[] 
         {

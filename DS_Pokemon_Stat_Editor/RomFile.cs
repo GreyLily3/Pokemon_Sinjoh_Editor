@@ -7,6 +7,7 @@ namespace Pokemon_Sinjoh_Editor
 {
 	public static class RomFile
 	{
+        private static Dictionary<int, Overlay> Overlays = new Dictionary<int, Overlay>();
 		private static NarcFile movesNarc;
 		private static NarcFile pokemonSpeciesNarc;
 		private static NarcFile npcTradesNarc;
@@ -14,6 +15,7 @@ namespace Pokemon_Sinjoh_Editor
         private static NarcFile itemsNarc;
         private static NarcFile pokedexNarc;
         private static NarcFile levelUpMovesNarc;
+        private static PartialOverlay moveTutorLearnsetPL;
 		public static TextArchive gameText;
         public static Languages Language;
 		private static GameVersions GameVersion;
@@ -35,6 +37,7 @@ namespace Pokemon_Sinjoh_Editor
         public static List<Height> HeightList = new List<Height>();
         public static List<Weight> WeightList = new List<Weight>();
         public static List<Learnset> LevelUpMovesList = new List<Learnset>();
+        public static List<MoveTutorTable> MoveTutorTableList = new List<MoveTutorTable>();
 
         public static List<string> MoveNames { get; private set; }
         public static List<string> MoveDescriptions { get; private set; }
@@ -165,7 +168,9 @@ namespace Pokemon_Sinjoh_Editor
         private const int JAP_LEVEL_UP_MOVES_NARC_ID_HGSS = 0xA1;
         private const int KOR_LEVEL_UP_MOVES_NARC_ID_DP = 0x134;
         private const int KOR_LEVEL_UP_MOVES_NARC_ID_PL = 0x18D;
-        
+
+        private const int MOVE_TUTOR_TABLE_BIN_HGSS = 0x1E6;
+        private const int JP_KR_MOVE_TUTOR_TABLE_BIN_HGSS = 0x1E4;
 
         private const int SPECIES_START_INDEX = 1;
         private const int MOVE_START_INDEX = 1;
@@ -186,6 +191,10 @@ namespace Pokemon_Sinjoh_Editor
 
         public const int POKEMON_NAME_MAX_LENGTH = 10;
         public const int MOVE_NAME_MAX_LENGTH = 12;
+
+        private const int NUM_ALT_FORMS_DP = 5;
+        private const int NUM_ALT_FORMS_PL_HGSS = 12;
+
 
         #endregion
 
@@ -313,7 +322,7 @@ namespace Pokemon_Sinjoh_Editor
 
             gameTextNarc = new NarcFile(getTextNarcOffset());
 			gameTextNarc.Read(romFileReader);
-			
+
             gameText = new TextArchive(gameTextNarc, Language == Languages.KOREAN);
 
             SetupTextLists();
@@ -341,6 +350,31 @@ namespace Pokemon_Sinjoh_Editor
             for (int i = 1; i < levelUpMovesNarc.Elements.Count; i++)
                 LevelUpMovesList.Add(new Learnset(levelUpMovesNarc.Elements[i]));
 
+            setupOverlays(romFileReader);
+
+            if (gameFamily == GameFamilies.HGSS)
+            {
+                uint moveTutorTableOffset = fat.GetStartOffset(getMoveTutorTableBinOffset());
+                var moveTutorMemStreams = readBinaryTableFile(romFileReader, moveTutorTableOffset, MoveTutorTable.BYTES_PER_SPECIES_HGSS, PokemonSpeciesList.Count);
+
+                foreach (MemoryStream memStream in moveTutorMemStreams)
+                    MoveTutorTableList.Add(new MoveTutorTable(memStream));
+            }
+            else if (gameFamily == GameFamilies.PL)
+            {
+                uint numMoveTutorLearnsetEntries = (uint)(PokemonSpeciesList.Count - PokemonSpecies.NUM_EGG_ENTRIES);
+                uint moveTutorPoolOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL) + Overlay.MOVE_TUTOR_POOL_OFFSET_PL;
+                uint moveTutorLearnsetOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL) + Overlay.MOVE_TUTOR_LEARNSET_OFFSET_PL;
+                uint moveTutorLearnsetLength = numMoveTutorLearnsetEntries * MoveTutorTable.BYTES_PER_SPECIES_PL;
+
+                moveTutorLearnsetPL = new PartialOverlay(romFileReader, Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL, moveTutorLearnsetOffset, moveTutorLearnsetLength);
+
+                List<MemoryStream> moveTutorLearnsetMemStreams = moveTutorLearnsetPL.SplitIntoMemStreams(MoveTutorTable.BYTES_PER_SPECIES_PL);
+
+                foreach (MemoryStream moveTutorLearnsetMemStream in moveTutorLearnsetMemStreams)
+                    MoveTutorTableList.Add(new MoveTutorTable(moveTutorLearnsetMemStream));
+            }
+
             //height is stored in the 0th element of the narc
             using (BinaryReader pokedexHeightReader = new BinaryReader(pokedexNarc.Elements[0]))
             {
@@ -364,6 +398,14 @@ namespace Pokemon_Sinjoh_Editor
             }
 
 
+        }
+
+        private static void setupOverlays(BinaryReader romFileReader)
+        {
+            if (gameFamily == GameFamilies.PL)
+            {
+                Overlays.Add(5, new Overlay(fat, 5, romFileReader));
+            }
         }
 
 		private static void readHeader(BinaryReader romFileReader)
@@ -719,6 +761,25 @@ namespace Pokemon_Sinjoh_Editor
                 
 		}
 
+        private static int getMoveTutorTableBinOffset()
+        {
+            if (gameFamily == GameFamilies.HGSS)
+            {
+                switch (Language)
+                {
+                    case Languages.JAPANESE:
+                    case Languages.KOREAN:
+                        return JP_KR_MOVE_TUTOR_TABLE_BIN_HGSS;
+                    default:
+                        return MOVE_TUTOR_TABLE_BIN_HGSS;
+                }
+            }
+            else
+            {
+                return 0; //placeholder value
+            }
+        }
+
         private static int getDeoxysAttackFormNameIndex()
 		{
             return gameFamily switch
@@ -860,6 +921,22 @@ namespace Pokemon_Sinjoh_Editor
                 return false;
             else
                 return true;
+        }
+
+        private static List<MemoryStream> readBinaryTableFile(BinaryReader binaryReader, uint subFileOffset, int rowNumBytes, int numRows)
+        {
+            List<MemoryStream> binaryStreams = new List<MemoryStream>();
+            BinaryWriter binaryStreamWriter;
+            binaryReader.BaseStream.Position = subFileOffset;
+
+            for (int i = 0; i < numRows; i++)
+            {
+                binaryStreams.Add(new MemoryStream(rowNumBytes));
+                using (binaryStreamWriter = new BinaryWriter(binaryStreams[i],Encoding.UTF8, true))
+                    binaryStreamWriter.Write(binaryReader.ReadBytes(rowNumBytes));
+            }
+
+            return binaryStreams;
         }
 
 		public static void Write()
@@ -1046,25 +1123,14 @@ namespace Pokemon_Sinjoh_Editor
 			for (int i = 0; i < PokemonNames.Count; i++)
 				speciesNames[i] = PokemonNames[i];
 
-            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 1] = speciesNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysAttackFormNameIndex()] + ")";
-            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 2] = speciesNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysDefenseFormNameIndex()] + ")";
-            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 3] = speciesNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysSpeedFormNameIndex()] + ")";
-            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 4] = speciesNames[SPECIES_WORMADAM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getWormadamSandyFormNameIndex()] + ")";
-            speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 5] = speciesNames[SPECIES_WORMADAM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getWormadamTrashFormNameIndex()] + ")";
+            string[] altFormNames = GetSpeciesAltFormNames();
 
-            if (gameFamily == GameFamilies.HGSS || gameFamily == GameFamilies.PL)
-			{
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 6] = speciesNames[SPECIES_GIRATINA_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getGiratinaOriginFormNameIndex()] + ")";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 7] = speciesNames[SPECIES_SHAYMIN_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getShayminSkyFormNameIndex()] + ")";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 8] = speciesNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomHeatFormNameIndex()] + ")";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 9] = speciesNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomWashFormNameIndex()] + ")";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 10] = speciesNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomFrostFormNameIndex()] + ")";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 11] = speciesNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomFanFormNameIndex()] + ")";
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + 12] = speciesNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomMowFormNameIndex()] + ")";
-            }
+            for (int i = 0; i < altFormNames.Length; i++)
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + SPECIES_START_INDEX + i] = altFormNames[i];
 
-			return speciesNames;
+            return speciesNames;
         }
+
         public static string[] GetPokemonSpeciesNamesNoAltForms()
         {
             string[] speciesNames = new string[PokemonSpecies.EGG_SPECIES_INDEX];
@@ -1074,6 +1140,54 @@ namespace Pokemon_Sinjoh_Editor
 
             return speciesNames;
         }
+
+        public static string[] GetPokemonSpeciesNamesNoEggs()
+        {
+            string[] speciesNames = new string[PokemonSpeciesList.Count - PokemonSpecies.NUM_EGG_ENTRIES];
+
+            for (int i = 0; i < PokemonNames.Count; i++)
+            {
+                if (i != PokemonSpecies.EGG_SPECIES_INDEX && i != PokemonSpecies.BAD_EGG_SPECIES_INDEX)
+                    speciesNames[i] = PokemonNames[i];
+            }
+
+            string[] altFormNames = GetSpeciesAltFormNames();
+
+            for (int i = 0; i < altFormNames.Length; i++)
+                speciesNames[PokemonSpecies.EGG_SPECIES_INDEX + i] = altFormNames[i];
+
+            return speciesNames;
+        }
+
+        private static string[] GetSpeciesAltFormNames()
+        {
+            string[] altFormNames;
+
+            if (gameFamily == GameFamilies.DP)
+                altFormNames = new string[NUM_ALT_FORMS_DP];
+            else
+                altFormNames = new string[NUM_ALT_FORMS_PL_HGSS];
+
+            altFormNames[0] = PokemonNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysAttackFormNameIndex()] + ")";
+            altFormNames[1] = PokemonNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysDefenseFormNameIndex()] + ")";
+            altFormNames[2] = PokemonNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysSpeedFormNameIndex()] + ")";
+            altFormNames[3] = PokemonNames[SPECIES_WORMADAM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getWormadamSandyFormNameIndex()] + ")";
+            altFormNames[4] = PokemonNames[SPECIES_WORMADAM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getWormadamTrashFormNameIndex()] + ")";
+
+            if (gameFamily != GameFamilies.DP)
+            {
+                altFormNames[5] = PokemonNames[SPECIES_GIRATINA_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getGiratinaOriginFormNameIndex()] + ")";
+                altFormNames[6] = PokemonNames[SPECIES_SHAYMIN_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getShayminSkyFormNameIndex()] + ")";
+                altFormNames[7] = PokemonNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomHeatFormNameIndex()] + ")";
+                altFormNames[8] = PokemonNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomWashFormNameIndex()] + ")";
+                altFormNames[9] = PokemonNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomFrostFormNameIndex()] + ")";
+                altFormNames[10] = PokemonNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomFanFormNameIndex()] + ")";
+                altFormNames[11] = PokemonNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomMowFormNameIndex()] + ")";
+            }
+
+            return altFormNames;
+        }
+
         public static string GetPokedexCategory(int pokemonIndex) => PokedexCategoryNames[pokemonIndex];
         public static string[] GetItemNames() => ItemNames.ToArray();
         public static string[] GetItemNamesWithoutUnknown()

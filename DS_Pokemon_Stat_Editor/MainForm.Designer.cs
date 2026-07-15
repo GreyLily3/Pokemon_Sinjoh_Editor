@@ -250,7 +250,7 @@
             this.TextBankIndexNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.textBankComboBox = new System.Windows.Forms.ComboBox();
             this.learnsetTabPage = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
+            this.learnsetMoveTutorLabel = new System.Windows.Forms.Label();
             this.learnsetMoveTutorCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.learnsetPokemonComboBox = new System.Windows.Forms.ComboBox();
             this.learnsetLevelUpMovesGroupBox = new System.Windows.Forms.GroupBox();
@@ -3069,7 +3069,7 @@
             // 
             // learnsetTabPage
             // 
-            this.learnsetTabPage.Controls.Add(this.label3);
+            this.learnsetTabPage.Controls.Add(this.learnsetMoveTutorLabel);
             this.learnsetTabPage.Controls.Add(this.learnsetMoveTutorCheckedListBox);
             this.learnsetTabPage.Controls.Add(this.learnsetPokemonComboBox);
             this.learnsetTabPage.Controls.Add(this.learnsetLevelUpMovesGroupBox);
@@ -3081,21 +3081,21 @@
             this.learnsetTabPage.Text = "Learnset";
             this.learnsetTabPage.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // learnsetMoveTutorLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(357, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Move Tutor Moves";
+            this.learnsetMoveTutorLabel.AutoSize = true;
+            this.learnsetMoveTutorLabel.Location = new System.Drawing.Point(267, 53);
+            this.learnsetMoveTutorLabel.Name = "learnsetMoveTutorLabel";
+            this.learnsetMoveTutorLabel.Size = new System.Drawing.Size(97, 13);
+            this.learnsetMoveTutorLabel.TabIndex = 3;
+            this.learnsetMoveTutorLabel.Text = "Move Tutor Moves";
             // 
             // learnsetMoveTutorCheckedListBox
             // 
             this.learnsetMoveTutorCheckedListBox.FormattingEnabled = true;
-            this.learnsetMoveTutorCheckedListBox.Location = new System.Drawing.Point(360, 69);
+            this.learnsetMoveTutorCheckedListBox.Location = new System.Drawing.Point(270, 66);
             this.learnsetMoveTutorCheckedListBox.Name = "learnsetMoveTutorCheckedListBox";
-            this.learnsetMoveTutorCheckedListBox.Size = new System.Drawing.Size(193, 124);
+            this.learnsetMoveTutorCheckedListBox.Size = new System.Drawing.Size(193, 529);
             this.learnsetMoveTutorCheckedListBox.TabIndex = 2;
             this.learnsetMoveTutorCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.learnsetMoveTutorCheckedListBox_ItemCheck);
             // 
@@ -3105,7 +3105,7 @@
             this.learnsetPokemonComboBox.FormattingEnabled = true;
             this.learnsetPokemonComboBox.Location = new System.Drawing.Point(351, 21);
             this.learnsetPokemonComboBox.Name = "learnsetPokemonComboBox";
-            this.learnsetPokemonComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetPokemonComboBox.Size = new System.Drawing.Size(186, 21);
             this.learnsetPokemonComboBox.TabIndex = 1;
             this.learnsetPokemonComboBox.SelectedIndexChanged += new System.EventHandler(this.learnsetPokemonComboBox_SelectedIndexChanged);
             // 
@@ -3153,7 +3153,7 @@
             this.learnsetLevelUpMovesGroupBox.Controls.Add(this.learnsetLevelUpMove1ComboBox);
             this.learnsetLevelUpMovesGroupBox.Location = new System.Drawing.Point(29, 53);
             this.learnsetLevelUpMovesGroupBox.Name = "learnsetLevelUpMovesGroupBox";
-            this.learnsetLevelUpMovesGroupBox.Size = new System.Drawing.Size(316, 542);
+            this.learnsetLevelUpMovesGroupBox.Size = new System.Drawing.Size(224, 542);
             this.learnsetLevelUpMovesGroupBox.TabIndex = 0;
             this.learnsetLevelUpMovesGroupBox.TabStop = false;
             this.learnsetLevelUpMovesGroupBox.Text = "Level-Up Moves";
@@ -4109,7 +4109,7 @@
         private System.Windows.Forms.ComboBox learnsetLevelUpMove6ComboBox;
         private System.Windows.Forms.ComboBox learnsetPokemonComboBox;
         private System.Windows.Forms.CheckedListBox learnsetMoveTutorCheckedListBox;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label learnsetMoveTutorLabel;
     }
 }
 

@@ -93,6 +93,7 @@
     <Compile Include="MoveEditor.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MoveTutorTable.cs" />
     <Compile Include="NarcFile.cs" />
     <Compile Include="Nature.cs" />
     <Compile Include="NPCTrade.cs" />
@@ -102,6 +103,8 @@
     <Compile Include="NumericNoArrows.Designer.cs">
       <DependentUpon>NumericNoArrows.cs</DependentUpon>
     </Compile>
+    <Compile Include="Overlay.cs" />
+    <Compile Include="PartialOverlay.cs" />
     <Compile Include="PersonalityValue.cs" />
     <Compile Include="PokedexEditor.cs">
       <SubType>Form</SubType>

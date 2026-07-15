@@ -1216,6 +1216,6 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
-        
+       
     }
 }

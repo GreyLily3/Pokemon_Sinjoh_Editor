@@ -10,8 +10,7 @@ namespace Pokemon_Sinjoh_Editor
     {
         List<ComboBox> levelUpMovesComboBoxList = new List<ComboBox>();
         List<NumericNoArrows> levelUpMoveNumericNoArrowsList = new List<NumericNoArrows>();
-
-        private const int MOVES_STARTING_INDEX = 1;
+        bool learnsetControlsCanRecieveUserInput;
 
         private void setupLearnsetText()
         {
@@ -109,23 +108,55 @@ namespace Pokemon_Sinjoh_Editor
             learnsetLevelUpMove19ComboBox.Items.AddRange(RomFile.GetMoveNames());
             learnsetLevelUpMove20ComboBox.Items.AddRange(RomFile.GetMoveNames());
 
-            learnsetPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNames());
+            learnsetPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNamesNoEggs());
+
+            if (RomFile.gameFamily == RomFile.GameFamilies.HGSS)
+                learnsetMoveTutorCheckedListBox.Items.AddRange(MoveTutorTable.GetTutorMoveNamesHGSS());
+            else if (RomFile.gameFamily == RomFile.GameFamilies.PL)
+                learnsetMoveTutorCheckedListBox.Items.AddRange(MoveTutorTable.GetTutorMoveNamesPL());
 
 
         }
 
         private void UpdateDisplayedLearnsetValues()
         {
+            if (RomFile.gameFamily == RomFile.GameFamilies.DP)
+            {
+                learnsetMoveTutorCheckedListBox.Visible = false;
+                learnsetMoveTutorLabel.Visible = false;
+            }
+            else
+            {
+                learnsetMoveTutorCheckedListBox.Visible = true;
+                learnsetMoveTutorLabel.Visible = true;
+            }
+
+
+            //remove event handler for checkedListBox when updated, otherwise the event will fire while the user isn't interacting with the control
+            learnsetMoveTutorCheckedListBox.ItemCheck -= learnsetMoveTutorCheckedListBox_ItemCheck;
             learnsetPokemonComboBox.SelectedIndex = 0;
+            learnsetMoveTutorCheckedListBox.ItemCheck += learnsetMoveTutorCheckedListBox_ItemCheck;
+
+
         }
 
         private void displayLearnsetValues(int pokemonIndex)
         {
+            List<int> learnableTutorMoves;
+
+            //need to skip over egg entries in species list but only for level-up moves
+            if (pokemonIndex >= PokemonSpecies.EGG_SPECIES_INDEX)
+            {
+                pokemonIndex += PokemonSpecies.NUM_EGG_ENTRIES;
+            }
+
             int numMoves = RomFile.LevelUpMovesList[pokemonIndex].GetNumMoves();
+
+            learnsetControlsCanRecieveUserInput = false;
 
             for (int i = 0; i < numMoves; i++)
             {
-                levelUpMovesComboBoxList[i].SelectedIndex = RomFile.LevelUpMovesList[pokemonIndex].GetMoveID(i) - MOVES_STARTING_INDEX;
+                levelUpMovesComboBoxList[i].SelectedIndex = RomFile.LevelUpMovesList[pokemonIndex].GetMoveID(i) - Pokemon_Sinjoh_Editor.Move.STARTING_INDEX;
                 levelUpMoveNumericNoArrowsList[i].Value = RomFile.LevelUpMovesList[pokemonIndex].LevelsLearned[i];
                 levelUpMovesComboBoxList[i].Visible = true;
                 levelUpMoveNumericNoArrowsList[i].Visible = true;
@@ -136,6 +167,26 @@ namespace Pokemon_Sinjoh_Editor
                 levelUpMovesComboBoxList[i].Visible = false;
                 levelUpMoveNumericNoArrowsList[i].Visible = false;
             }
+
+            if (pokemonIndex >= PokemonSpecies.EGG_SPECIES_INDEX)
+            {
+                pokemonIndex -= PokemonSpecies.NUM_EGG_ENTRIES;
+            }
+
+            if (RomFile.gameFamily != RomFile.GameFamilies.DP)
+            {
+               
+                learnableTutorMoves = RomFile.MoveTutorTableList[pokemonIndex].GetLearnableMoves(RomFile.gameFamily);
+
+                for (int i = 0; i < learnsetMoveTutorCheckedListBox.Items.Count; i++)
+                    learnsetMoveTutorCheckedListBox.SetItemChecked(i, false);
+
+                foreach (int moveIndex in learnableTutorMoves)
+                    learnsetMoveTutorCheckedListBox.SetItemChecked(moveIndex, true);
+            }
+
+            learnsetControlsCanRecieveUserInput = true;
+
         }
 
         private void learnsetPokemonComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -145,7 +196,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void learnsetUpdateLearnedMoveID(int levelUpMoveIndex, int moveID)
         {
-            moveID += MOVES_STARTING_INDEX;
+            moveID += Pokemon_Sinjoh_Editor.Move.STARTING_INDEX;
 
             if (RomFile.LevelUpMovesList[learnsetPokemonComboBox.SelectedIndex].GetMoveID(levelUpMoveIndex) != moveID)
             {
@@ -365,7 +416,11 @@ namespace Pokemon_Sinjoh_Editor
 
         private void learnsetMoveTutorCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-
+            if (learnsetControlsCanRecieveUserInput)
+            {
+                RomFile.MoveTutorTableList[learnsetPokemonComboBox.SelectedIndex].SetLearnableMove(e.Index, e.NewValue.HasFlag(CheckState.Checked));
+                MarkUnsavedChanges(SaveSubFile.TUTORLEARNSET);
+            }
         }
     }
 }

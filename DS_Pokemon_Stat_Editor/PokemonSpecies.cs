@@ -66,6 +66,11 @@ namespace Pokemon_Sinjoh_Editor
         public const int DP_NUM_ALT_FORMS = 5;
         public const int EGG_SPECIES_INDEX = 493; //1 less than actual game value because we remove the 0th placeholder entry
         public const int BAD_EGG_SPECIES_INDEX = 494; //1 less than actual game value because we remove the 0th placeholder entry
+        public const int DEOXYS_ATTACK_FORM_INDEX = 496;
+        public const int DEOXYS_DEFENSE_FORM_INDEX = 497;
+        public const int DEOXYS_SPEED_FORM_INDEX = 498;
+        public const int NUM_EGG_ENTRIES = 2;
+
 
         public enum EggGroups
         {

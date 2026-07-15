@@ -10,6 +10,6 @@ namespace Pokemon_Sinjoh_Editor.Enums
         ITEMS,
         POKEDEX,
         LEVELUPMOVES,
-        TUTORMOVES
+        TUTORLEARNSET
     }
 }
