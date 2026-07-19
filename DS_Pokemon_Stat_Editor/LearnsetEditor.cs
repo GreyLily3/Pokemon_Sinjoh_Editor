@@ -214,6 +214,7 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
+
         private void learnsetLevelUpMove1ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
             learnsetUpdateLearnedMoveID(0, learnsetLevelUpMove1ComboBox.SelectedIndex);
@@ -316,96 +317,153 @@ namespace Pokemon_Sinjoh_Editor
 
         private void learnsetLevelUpLevel1NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel1NumericNoArrows.Value > learnsetLevelUpLevel2NumericNoArrows.Value && learnsetLevelUpLevel2NumericNoArrows.Visible)
+                learnsetLevelUpLevel1NumericNoArrows.Value = learnsetLevelUpLevel2NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(0, (int)learnsetLevelUpLevel1NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel2NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel2NumericNoArrows.Value > learnsetLevelUpLevel3NumericNoArrows.Value && learnsetLevelUpLevel3NumericNoArrows.Visible)
+                learnsetLevelUpLevel2NumericNoArrows.Value = learnsetLevelUpLevel3NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(1, (int)learnsetLevelUpLevel2NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel3NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel3NumericNoArrows.Value > learnsetLevelUpLevel4NumericNoArrows.Value && learnsetLevelUpLevel4NumericNoArrows.Visible)
+                learnsetLevelUpLevel3NumericNoArrows.Value = learnsetLevelUpLevel4NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(2, (int)learnsetLevelUpLevel3NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel4NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel4NumericNoArrows.Value > learnsetLevelUpLevel5NumericNoArrows.Value && learnsetLevelUpLevel5NumericNoArrows.Visible)
+                learnsetLevelUpLevel4NumericNoArrows.Value = learnsetLevelUpLevel5NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(3, (int)learnsetLevelUpLevel4NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel5NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel5NumericNoArrows.Value > learnsetLevelUpLevel6NumericNoArrows.Value && learnsetLevelUpLevel6NumericNoArrows.Visible)
+                learnsetLevelUpLevel5NumericNoArrows.Value = learnsetLevelUpLevel6NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(4, (int)learnsetLevelUpLevel5NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel6NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel6NumericNoArrows.Value > learnsetLevelUpLevel7NumericNoArrows.Value && learnsetLevelUpLevel7NumericNoArrows.Visible)
+                learnsetLevelUpLevel6NumericNoArrows.Value = learnsetLevelUpLevel7NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(5, (int)learnsetLevelUpLevel6NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel7NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel7NumericNoArrows.Value > learnsetLevelUpLevel8NumericNoArrows.Value && learnsetLevelUpLevel8NumericNoArrows.Visible)
+                learnsetLevelUpLevel7NumericNoArrows.Value = learnsetLevelUpLevel8NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(6, (int)learnsetLevelUpLevel7NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel8NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel8NumericNoArrows.Value > learnsetLevelUpLevel9NumericNoArrows.Value && learnsetLevelUpLevel9NumericNoArrows.Visible)
+                learnsetLevelUpLevel8NumericNoArrows.Value = learnsetLevelUpLevel9NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(7, (int)learnsetLevelUpLevel8NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel9NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel9NumericNoArrows.Value > learnsetLevelUpLevel10NumericNoArrows.Value && learnsetLevelUpLevel10NumericNoArrows.Visible)
+                learnsetLevelUpLevel9NumericNoArrows.Value = learnsetLevelUpLevel10NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(8, (int)learnsetLevelUpLevel9NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel10NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel10NumericNoArrows.Value > learnsetLevelUpLevel11NumericNoArrows.Value && learnsetLevelUpLevel11NumericNoArrows.Visible)
+                learnsetLevelUpLevel10NumericNoArrows.Value = learnsetLevelUpLevel11NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(9, (int)learnsetLevelUpLevel10NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel11NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel11NumericNoArrows.Value > learnsetLevelUpLevel12NumericNoArrows.Value && learnsetLevelUpLevel12NumericNoArrows.Visible)
+                learnsetLevelUpLevel11NumericNoArrows.Value = learnsetLevelUpLevel12NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(10, (int)learnsetLevelUpLevel11NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel12NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel12NumericNoArrows.Value > learnsetLevelUpLevel13NumericNoArrows.Value && learnsetLevelUpLevel13NumericNoArrows.Visible)
+                learnsetLevelUpLevel12NumericNoArrows.Value = learnsetLevelUpLevel13NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(11, (int)learnsetLevelUpLevel12NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel13NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel13NumericNoArrows.Value > learnsetLevelUpLevel14NumericNoArrows.Value && learnsetLevelUpLevel14NumericNoArrows.Visible)
+                learnsetLevelUpLevel13NumericNoArrows.Value = learnsetLevelUpLevel14NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(12, (int)learnsetLevelUpLevel13NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel14NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel14NumericNoArrows.Value > learnsetLevelUpLevel15NumericNoArrows.Value && learnsetLevelUpLevel15NumericNoArrows.Visible)
+                learnsetLevelUpLevel14NumericNoArrows.Value = learnsetLevelUpLevel15NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(13, (int)learnsetLevelUpLevel14NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel15NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel15NumericNoArrows.Value > learnsetLevelUpLevel16NumericNoArrows.Value && learnsetLevelUpLevel16NumericNoArrows.Visible)
+                learnsetLevelUpLevel15NumericNoArrows.Value = learnsetLevelUpLevel16NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(14, (int)learnsetLevelUpLevel15NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel16NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel16NumericNoArrows.Value > learnsetLevelUpLevel17NumericNoArrows.Value && learnsetLevelUpLevel17NumericNoArrows.Visible)
+                learnsetLevelUpLevel16NumericNoArrows.Value = learnsetLevelUpLevel17NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(15, (int)learnsetLevelUpLevel16NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel17NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel17NumericNoArrows.Value > learnsetLevelUpLevel18NumericNoArrows.Value && learnsetLevelUpLevel18NumericNoArrows.Visible)
+                learnsetLevelUpLevel17NumericNoArrows.Value = learnsetLevelUpLevel18NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(16, (int)learnsetLevelUpLevel17NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel18NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel18NumericNoArrows.Value > learnsetLevelUpLevel19NumericNoArrows.Value && learnsetLevelUpLevel19NumericNoArrows.Visible)
+                learnsetLevelUpLevel18NumericNoArrows.Value = learnsetLevelUpLevel19NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(17, (int)learnsetLevelUpLevel18NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel19NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel19NumericNoArrows.Value > learnsetLevelUpLevel20NumericNoArrows.Value && learnsetLevelUpLevel20NumericNoArrows.Visible)
+                learnsetLevelUpLevel19NumericNoArrows.Value = learnsetLevelUpLevel20NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(18, (int)learnsetLevelUpLevel19NumericNoArrows.Value);
         }
 
