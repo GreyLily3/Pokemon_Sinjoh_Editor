@@ -14,6 +14,7 @@ namespace Pokemon_Sinjoh_Editor
         public const int BYTES_PER_SPECIES_PL = 5;
         public const int BYTES_PER_SPECIES_HGSS = 8;
         public const int DEOXYS_ALT_FORMS_OFFSET = 2; //the 3 deoxys alt forms all share the same table row, so we need to offset every alt form after
+        private const int NUM_BITS_PER_BYTE = 8;
         public readonly static int[] MoveIDsDPPL = new int[] { 291,
             189,
             210,
@@ -157,6 +158,22 @@ namespace Pokemon_Sinjoh_Editor
                 moveNameList[i] = RomFile.MoveNames[MoveIDsHGSS[i] - Move.STARTING_INDEX];
 
             return moveNameList;
+        }
+
+        public MemoryStream GetBinaryStream()
+        {
+            byte[] learnableTutorLearnset = new byte[learnableMoves.Count / NUM_BITS_PER_BYTE];
+            learnableMoves.CopyTo(learnableTutorLearnset, 0);
+
+            return new MemoryStream(learnableTutorLearnset);
+        }
+
+        public byte[] GetBinaryByteArray()
+        {
+            byte[] learnableTutorLearnset = new byte[learnableMoves.Count / NUM_BITS_PER_BYTE];
+            learnableMoves.CopyTo(learnableTutorLearnset, 0);
+
+            return learnableTutorLearnset;
         }
 
     }

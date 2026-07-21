@@ -28,7 +28,7 @@ namespace Pokemon_Sinjoh_Editor
         public static bool UnsavedChangesItems = false;
         public static bool UnsavedChangesPokedex = false;
         public static bool UnsavedChangesLevelUpMoves = false;
-        private static bool UnsavedChangesMoveTutorMoves = false;
+        public static bool UnsavedChangesMoveTutorMoves = false;
 
         public static List<Move> MoveList = new List<Move>();
         public static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
@@ -939,10 +939,19 @@ namespace Pokemon_Sinjoh_Editor
             return binaryStreams;
         }
 
+        private static void WriteBinaryTableFile(BinaryWriter binaryWriter, List<Byte[]> binaryBytes, uint subFileOffset)
+        {
+            binaryWriter.BaseStream.Position = subFileOffset;
+
+            foreach (Byte[] bytes in binaryBytes)
+                binaryWriter.Write(bytes);
+        }
+
 		public static void Write()
 		{
 			FileStream romFileStream = new FileStream(romPath, FileMode.Open);
             BinaryWriter romWriter = new BinaryWriter(romFileStream, Encoding.UTF8, true);
+            uint moveTutorTableOffset;
 
             if (UnsavedChangesMoves)
             {
@@ -966,6 +975,46 @@ namespace Pokemon_Sinjoh_Editor
             {
                 for (int i = 0; i < LevelUpMovesList.Count; i++)
                     levelUpMovesNarc.Elements[i + 1] = LevelUpMovesList[i].GetBinary();
+            }
+
+            if (UnsavedChangesMoveTutorMoves)
+            {
+                if (gameFamily == GameFamilies.HGSS)
+                {
+                    var moveTutorLearnsetBytesList = new List<Byte[]>();
+                    moveTutorTableOffset = fat.GetStartOffset(getMoveTutorTableBinOffset());
+
+                    for (int i = 0; i < MoveTutorTableList.Count; i++)
+                        moveTutorLearnsetBytesList.Add(MoveTutorTableList[i].GetBinaryByteArray());
+
+                    try
+                    {
+                        WriteBinaryTableFile(romWriter, moveTutorLearnsetBytesList, moveTutorTableOffset);
+                    }
+                    catch (Exception e)
+                    {
+                        throw new Exception("An exception occured while attempting to save move tutor data.\n" + e.Message);
+                    }
+                    
+                }
+                else if (gameFamily == GameFamilies.PL)
+                {
+                    Byte[] wholeMoveTutorLearnset = new byte[MoveTutorTableList.Count * MoveTutorTable.BYTES_PER_SPECIES_PL];
+
+                    for (int i = 0; i < MoveTutorTableList.Count; i++)
+                        MoveTutorTableList[i].GetBinaryByteArray().CopyTo(wholeMoveTutorLearnset, i * MoveTutorTable.BYTES_PER_SPECIES_PL);
+
+                    moveTutorLearnsetPL.Content = wholeMoveTutorLearnset;
+
+                    try
+                    {
+                        moveTutorLearnsetPL.WriteUncompressed(romWriter);
+                    }
+                    catch (Exception e)
+                    {
+                        throw new Exception("An exception occured while attempting to save move tutor data.\n" + e.Message);
+                    }
+                }
             }
 
 			if (UnsavedChangesPokedex)
