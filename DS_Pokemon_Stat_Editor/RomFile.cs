@@ -305,26 +305,13 @@ namespace Pokemon_Sinjoh_Editor
 			fat.SetTotalLengthForRom(FATLength);
             fat.Read(romFileReader);
 
-			movesNarc = new NarcFile(getMovesNarcOffset());
-			movesNarc.Read(romFileReader);
-
-			pokemonSpeciesNarc = new NarcFile(getSpeciesNarcOffset());
-			pokemonSpeciesNarc.Read(romFileReader);
-
-            pokedexNarc = new NarcFile(getPokedexNarcOffset());
-            pokedexNarc.Read(romFileReader);
-
-            npcTradesNarc = new NarcFile(getNPCTradesNarcOffset());
-			npcTradesNarc.Read(romFileReader);
-
-            itemsNarc = new NarcFile(getItemsNarcOffset());
-            itemsNarc.Read(romFileReader);
-
-            levelUpMovesNarc = new NarcFile(getLearnsetNarcOffset());
-            levelUpMovesNarc.Read(romFileReader);
-
-            gameTextNarc = new NarcFile(getTextNarcOffset());
-			gameTextNarc.Read(romFileReader);
+			movesNarc = new NarcFile(getMovesNarcOffset(), romFileReader);
+			pokemonSpeciesNarc = new NarcFile(getSpeciesNarcOffset(), romFileReader);
+            pokedexNarc = new NarcFile(getPokedexNarcOffset(), romFileReader);
+            npcTradesNarc = new NarcFile(getNPCTradesNarcOffset(), romFileReader);
+            itemsNarc = new NarcFile(getItemsNarcOffset(), romFileReader);
+            levelUpMovesNarc = new NarcFile(getLearnsetNarcOffset(), romFileReader);
+            gameTextNarc = new NarcFile(getTextNarcOffset(), romFileReader);
 
             gameText = new TextArchive(gameTextNarc, Language == Languages.KOREAN);
 

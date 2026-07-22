@@ -32,35 +32,32 @@ namespace Pokemon_Sinjoh_Editor
 
         public List<MemoryStream> Elements { get; set; } = new List<MemoryStream>();
 
-        public NarcFile(long narcFileOffset)
+        public NarcFile(long narcFileOffset, BinaryReader narcReader)
         {
             this.narcFileOffset = narcFileOffset;
-        }
 
-        public void Read(BinaryReader reader)
-        {
             uint FNTBOffset;
 
-            reader.BaseStream.Position = narcFileOffset;
-            if (reader.ReadUInt32() != NARC_FILE_MAGIC_NUM)
+            narcReader.BaseStream.Position = narcFileOffset;
+            if (narcReader.ReadUInt32() != NARC_FILE_MAGIC_NUM)
             {
                 throw new Exception("Error! Narc sub-file expected at offset:" + narcFileOffset + "\nThe rom file's allocation table may be corrupted.\n");
             }
 
-            reader.BaseStream.Position = narcFileOffset + FAT_NUM_ELEMENTS_OFFSET;
-            numElements = reader.ReadUInt32();
+            narcReader.BaseStream.Position = narcFileOffset + FAT_NUM_ELEMENTS_OFFSET;
+            numElements = narcReader.ReadUInt32();
 
             FNTBOffset = numElements * FAT_ELEMENT_LENGTH + FAT_OFFSET + FAT_HEADER_LENGTH;
-            reader.BaseStream.Position = narcFileOffset + FNTBOffset + FILE_NAME_TABLE_SIGNATURE_LENGTH;
-            FimgOffset = reader.ReadUInt32() + FNTBOffset;
+            narcReader.BaseStream.Position = narcFileOffset + FNTBOffset + FILE_NAME_TABLE_SIGNATURE_LENGTH;
+            FimgOffset = narcReader.ReadUInt32() + FNTBOffset;
 
             fat = new FAT(narcFileOffset + FAT_OFFSET + FAT_HEADER_LENGTH);
             fat.SetNumFilesForNarc(numElements);
-            fat.Read(reader);
+            fat.Read(narcReader);
 
-            readElements(reader);
-
+            readElements(narcReader);
         }
+
 
         private void readElements(BinaryReader reader)
         {
