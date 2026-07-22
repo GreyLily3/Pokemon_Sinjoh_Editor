@@ -1308,86 +1308,85 @@ namespace Pokemon_Sinjoh_Editor
 
         public static string[] GetMoveTargets()
         {
-            string[] targetNames;
-
-            if (INIManager.Language == Languages.ENGLISH)
+            switch (INIManager.Language)
             {
-                targetNames = Enum.GetNames(typeof(Move.Targets));
+                case Languages.ENGLISH:
+                    string[] targetNames = Enum.GetNames(typeof(Move.Targets));
 
-                for (int i = 0; i < targetNames.Length; i++)
-                    targetNames[i] = targetNames[i].Replace('_', ' ');
-
-                
+                    for (int i = 0; i < targetNames.Length; i++)
+                        targetNames[i] = targetNames[i].Replace('_', ' ');
+                    return targetNames;
+                case Languages.FRENCH:
+                    return new string[] { "Normale", "1 OTHER", "1 adv. au hasard", "Adv. proches", "PKMN proches", "Soi", "Côté allié", "Tous côtés", "Côté adv.", "1 allié", "Soi ou 1 allié", "ANY FOE" };
+                case Languages.SPANISH:
+                    return new string[] { "Normal", "1 OTHER", "1 rival aleatorio", "Rivales cercanos", "Pokémon cercanos", "Usuario", "Aliados de combate", "Todos", "Rivales de combate", "1 aliado", "Usuario o 1 aliado", "ANY FOE" };
+                case Languages.GERMAN:
+                    return new string[] { "Normal", "1 OTHER", "1 beliebiger Gegner", "Mehrere Gegner", "PKMN im Umkreis", "Anwender", "Eigene Seite", "Beide Seiten", "Gegnerseite", "1 Mitstreiter", "Anwender oder 1 Mitsreiter", "ANY FOE" };
+                case Languages.ITALIAN:
+                    return new string[] { "Normale", "1 OTHER", "Un nemico a caso", "Più nemici", "Più alleati", "Se stesso", "Tuo campo", "Entrambi i campi", "Campo nemico", "Un alleato", "Se stesso o un alleato", "ANY FOE" };
+                case Languages.JAPANESE:
+                    return new string[] { "通常", "相手複数", "相手ランダ", "相手複数", "相手", "自分", "味方場", "味方複数", "相手場", "味方１匹", "自分か味方１匹", "相手１匹" };
+                case Languages.KOREAN:
+                    return new string[] { "통상", "1 OTHER", "상대랜덤1마리", "상대복수", "상대·같은편복수", "자신", "같은편장소", "상대·같으편장소", "상대장소", "같은편1마리", "자신또는같은편1마리", "ANY FOE" };
+                default:
+                    return new string[0];
             }
-            else
-            {
-                targetNames = INIManager.Language switch
-                {
-                    Languages.FRENCH => new string[] { "Normale", "1 OTHER", "1 adv. au hasard", "Adv. proches", "PKMN proches", "Soi", "Côté allié", "Tous côtés", "Côté adv.", "1 allié", "Soi ou 1 allié", "ANY FOE"},
-                    Languages.SPANISH => new string[] { "Normal", "1 OTHER", "1 rival aleatorio", "Rivales cercanos", "Pokémon cercanos", "Usuario", "Aliados de combate", "Todos", "Rivales de combate", "1 aliado", "Usuario o 1 aliado", "ANY FOE" },
-                    Languages.GERMAN => new string[] { "Normal", "1 OTHER", "1 beliebiger Gegner", "Mehrere Gegner", "PKMN im Umkreis", "Anwender", "Eigene Seite", "Beide Seiten", "Gegnerseite", "1 Mitstreiter", "Anwender oder 1 Mitsreiter", "ANY FOE" },
-                    Languages.ITALIAN => new string[] { "Normale", "1 OTHER", "Un nemico a caso", "Più nemici", "Più alleati", "Se stesso", "Tuo campo", "Entrambi i campi", "Campo nemico", "Un alleato", "Se stesso o un alleato", "ANY FOE" },
-                    Languages.JAPANESE => new string[] { "通常", "相手複数", "相手ランダ", "相手複数", "相手", "自分", "味方場", "味方複数", "相手場", "味方１匹", "自分か味方１匹", "相手１匹" },
-                    Languages.KOREAN => new string[] { "통상", "1 OTHER", "상대랜덤1마리", "상대복수", "상대·같은편복수", "자신", "같은편장소", "상대·같으편장소", "상대장소", "같은편1마리", "자신또는같은편1마리", "ANY FOE" },
-                };
-            }
-
-            return targetNames;
         }
 
         public static string[] GetEggGroupNames() 
         {
-            string[] eggGroupNames;
-
-            if (INIManager.Language == Languages.ENGLISH)
+            switch (INIManager.Language)
             {
-                eggGroupNames = Enum.GetNames(typeof(PokemonSpecies.EggGroups));
+                case Languages.ENGLISH:
+                    string[] eggGroupNames = Enum.GetNames(typeof(PokemonSpecies.EggGroups));
 
-                for (int i = 0; i < eggGroupNames.Length; i++)
-                    eggGroupNames[i] = eggGroupNames[i].Replace('_', ' ');
-            }
-            else
-            {
-                eggGroupNames = INIManager.Language switch
-                {
-                    Languages.FRENCH => new string[] { "Monstreux", "Aquatique", "Insectoïde" , "Aérien" , "Terrestre", "Féerique", "Végétal", "Humanoïde", "Aquatique 3", "Minéral", "Amorphe", "Aquatique 2", "Métamorph", "Draconique", "Inconnu" },
-                    Languages.SPANISH => new string[] { "Monstruo", "Agua 1"   , "Bicho"      , "Volador", "Campo"    , "Hada"    , "Planta", "Humanoide", "Agua 3", "Mineral", "Amorfo", "Agua 2", "Ditto", "Dragón", "Desconocido" },
-                    Languages.GERMAN => new string[] { "Monster"  , "Wasser 1" , "Käfer"      , "Flug"   , "Feld"     , "Fee"     , "Pflanze", "Humanotyp", "Wasser 3", "Mineral", "Amorph", "Wasser 2", "Ditto", "Drache", "Unbekannt" },
-                    Languages.ITALIAN => new string[] { "Mostro"  , "Acqua 1"  , " Coleottero", "Volante", "Campo"    , "Magico"  , "Erba", "Umanoide", "Acqua 3", "Minerale", "Amorfo", "Acqua 2", "Ditto", "Drago", "Sconosciuto" },
-                    Languages.JAPANESE => new string[] { "怪獣"    , "水中 1"   , "虫グ"        , "飛行"   , "陸上"      , "妖精"    , "植物", "人型", "水中 3", "鉱物", "不定形", "水中 2", "メタモン", "ドラゴ", "タマゴ未発見" },
-                    Languages.KOREAN => new string[] { "괴수"      , "수중 1"   , "벌레"        , "비행"   , "육상"      , "요정"    , "식물", "인간형", "수중 3", "광물", "부정형", "수중 2", "메타몽", "드래곤", "알미발견" },
-                };
-            }
+                    for (int i = 0; i < eggGroupNames.Length; i++)
+                        eggGroupNames[i] = eggGroupNames[i].Replace('_', ' ');
 
-            return eggGroupNames;
+                    return eggGroupNames;
+                case Languages.FRENCH:
+                    return new string[] { "Monstreux", "Aquatique", "Insectoïde", "Aérien", "Terrestre", "Féerique", "Végétal", "Humanoïde", "Aquatique 3", "Minéral", "Amorphe", "Aquatique 2", "Métamorph", "Draconique", "Inconnu" };
+                case Languages.SPANISH:
+                    return new string[] { "Monstruo", "Agua 1", "Bicho", "Volador", "Campo", "Hada", "Planta", "Humanoide", "Agua 3", "Mineral", "Amorfo", "Agua 2", "Ditto", "Dragón", "Desconocido" };
+                case Languages.GERMAN:
+                    return new string[] { "Monster", "Wasser 1", "Käfer", "Flug", "Feld", "Fee", "Pflanze", "Humanotyp", "Wasser 3", "Mineral", "Amorph", "Wasser 2", "Ditto", "Drache", "Unbekannt" };
+                case Languages.ITALIAN:
+                    return new string[] { "Mostro", "Acqua 1", " Coleottero", "Volante", "Campo", "Magico", "Erba", "Umanoide", "Acqua 3", "Minerale", "Amorfo", "Acqua 2", "Ditto", "Drago", "Sconosciuto" };
+                case Languages.JAPANESE:
+                    return new string[] { "怪獣"    , "水中 1"   , "虫グ"        , "飛行"   , "陸上"      , "妖精"    , "植物", "人型", "水中 3", "鉱物", "不定形", "水中 2", "メタモン", "ドラゴ", "タマゴ未発見" };
+                case Languages.KOREAN:
+                    return new string[] { "괴수", "수중 1", "벌레", "비행", "육상", "요정", "식물", "인간형", "수중 3", "광물", "부정형", "수중 2", "메타몽", "드래곤", "알미발견" };
+                default:
+                    return new string[0];
+            }
         }
 
         public static string[] GetXPGroupNames()
         {
-            string[] xpGroupNames;
-
-            if (INIManager.Language == Languages.ENGLISH)
+            switch (INIManager.Language)
             {
-                xpGroupNames = Enum.GetNames(typeof(PokemonSpecies.XPGroups));
+                case Languages.ENGLISH:
+                    string[] xpGroupNames = Enum.GetNames(typeof(PokemonSpecies.XPGroups));
 
-                for (int i = 0; i < xpGroupNames.Length; i++)
-                    xpGroupNames[i] = xpGroupNames[i].Replace('_', ' ');
+                    for (int i = 0; i < xpGroupNames.Length; i++)
+                        xpGroupNames[i] = xpGroupNames[i].Replace('_', ' ');
+                    return xpGroupNames;
+
+                case Languages.FRENCH:
+                    return new string[] { "Moyenne", "Erratique", "Fluctuante", "Parabolique", "Rapide", "Lente", "???", "???" };
+                case Languages.SPANISH:
+                    return new string[] { "Medio", "Errático", "Fluctuante", "Parabólico", "Rápido", "Lento", "???", "???" };
+                case Languages.GERMAN:
+                    return new string[] { "Mittel-Schnell", "Erratic", "Fluctuating", "Mittel-Langsam", "Schnell", "Langsam", "???", "???" };
+                case Languages.ITALIAN:
+                    return new string[] { "Medio-veloce", "Irregolare", "Fluttuante", "Medio-lenta", "Veloce", "Lenta", "???", "???" };
+                case Languages.JAPANESE:
+                    return new string[] { "100万タイプ", "60万タイプ", "164万タイプ", "105万タイプ", "80万タイプ", "125万タイプ", "???", "???" };
+                case Languages.KOREAN: 
+                    return new string[] { "MEDIUM_FAST", "ERRATIC", "FLUCTUATING", "MEDIUM_SLOW", "FAST", "SLOW", "UNUSED1", "UNUSED2" };
+                default:
+                    return new string[0];
             }
-            else
-            {
-                xpGroupNames = INIManager.Language switch
-                {
-                    Languages.FRENCH => new string[] { "Moyenne", "Erratique", "Fluctuante", "Parabolique", "Rapide", "Lente", "???", "???"},
-                    Languages.SPANISH => new string[] { "Medio", "Errático", "Fluctuante", "Parabólico", "Rápido", "Lento", "???", "???"},
-                    Languages.GERMAN => new string[] { "Mittel-Schnell", "Erratic", "Fluctuating", "Mittel-Langsam", "Schnell", "Langsam", "???", "???"},
-                    Languages.ITALIAN => new string[] { "Medio-veloce", "Irregolare", "Fluttuante", "Medio-lenta", "Veloce", "Lenta", "???", "???"},
-                    Languages.JAPANESE => new string[] { "100万タイプ", "60万タイプ", "164万タイプ", "105万タイプ", "80万タイプ", "125万タイプ", "???", "???" },
-                    Languages.KOREAN => new string[] { "MEDIUM_FAST", "ERRATIC", "FLUCTUATING", "MEDIUM_SLOW", "FAST", "SLOW", "UNUSED1", "UNUSED2" },
-                };
-            }
-
-
-            return xpGroupNames;
         }
 
 		public static string[] GetLanguageNames()
