@@ -124,6 +124,7 @@
     <Compile Include="TradeEditor.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TutorMoveEntryPL.cs" />
     <Compile Include="Weight.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

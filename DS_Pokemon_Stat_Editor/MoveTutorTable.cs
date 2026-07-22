@@ -15,44 +15,6 @@ namespace Pokemon_Sinjoh_Editor
         public const int BYTES_PER_SPECIES_HGSS = 8;
         public const int DEOXYS_ALT_FORMS_OFFSET = 2; //the 3 deoxys alt forms all share the same table row, so we need to offset every alt form after
         private const int NUM_BITS_PER_BYTE = 8;
-        public readonly static int[] MoveIDsDPPL = new int[] { 291,
-            189,
-            210,
-            196,
-            205,
-            9,
-            7,
-            276,
-            8,
-            442,
-            401,
-            466,
-            380,
-            173,
-            180,
-            314,
-            270,
-            283,
-            200,
-            246,
-            235,
-            324,
-            428,
-            410,
-            414,
-            441,
-            239,
-            402,
-            334,
-            393,
-            387,
-            340,
-            271,
-            257,
-            282,
-            389,
-            129,
-            253 };
 
         public readonly static int[] MoveIDsHGSS = new int[] { 291,
             189,
@@ -138,16 +100,6 @@ namespace Pokemon_Sinjoh_Editor
         public void SetLearnableMove(int moveID, bool isLearnable)
         {
             learnableMoves[moveID] = isLearnable;
-        }
-
-        public static string[] GetTutorMoveNamesPL()
-        {
-            string[] moveNameList = new string[NUM_MOVES_PL];
-
-            for (int i = 0; i < NUM_MOVES_PL; i++)
-                moveNameList[i] = RomFile.MoveNames[MoveIDsDPPL[i] - Move.STARTING_INDEX];
-
-            return moveNameList;
         }
 
         public static string[] GetTutorMoveNamesHGSS()

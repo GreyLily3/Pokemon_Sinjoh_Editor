@@ -113,7 +113,14 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.gameFamily == RomFile.GameFamilies.HGSS)
                 learnsetMoveTutorCheckedListBox.Items.AddRange(MoveTutorTable.GetTutorMoveNamesHGSS());
             else if (RomFile.gameFamily == RomFile.GameFamilies.PL)
-                learnsetMoveTutorCheckedListBox.Items.AddRange(MoveTutorTable.GetTutorMoveNamesPL());
+            {
+                learnsetMoveTutorCheckedListBox.BeginUpdate();
+
+                foreach (TutorMoveEntryPL tutorMove in RomFile.moveTutorPoolPL)
+                    learnsetMoveTutorCheckedListBox.Items.Add(RomFile.MoveNames[tutorMove.MoveID - Pokemon_Sinjoh_Editor.Move.STARTING_INDEX]);
+
+                learnsetMoveTutorCheckedListBox.EndUpdate();
+            }
 
 
         }

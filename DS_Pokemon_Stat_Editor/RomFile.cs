@@ -16,6 +16,8 @@ namespace Pokemon_Sinjoh_Editor
         private static NarcFile pokedexNarc;
         private static NarcFile levelUpMovesNarc;
         private static PartialOverlay moveTutorLearnsetPL;
+        private static PartialOverlay moveTutorPoolPartOverlayPL;
+        
 		public static TextArchive gameText;
         public static Languages Language;
 		private static GameVersions GameVersion;
@@ -38,6 +40,7 @@ namespace Pokemon_Sinjoh_Editor
         public static List<Weight> WeightList = new List<Weight>();
         public static List<Learnset> LevelUpMovesList = new List<Learnset>();
         public static List<MoveTutorTable> MoveTutorTableList = new List<MoveTutorTable>();
+        public static List<TutorMoveEntryPL> moveTutorPoolPL = new List<TutorMoveEntryPL>();
 
         public static List<string> MoveNames { get; private set; }
         public static List<string> MoveDescriptions { get; private set; }
@@ -366,13 +369,19 @@ namespace Pokemon_Sinjoh_Editor
                 uint moveTutorPoolOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL) + Overlay.MOVE_TUTOR_POOL_OFFSET_PL;
                 uint moveTutorLearnsetOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL) + Overlay.MOVE_TUTOR_LEARNSET_OFFSET_PL;
                 uint moveTutorLearnsetLength = numMoveTutorLearnsetEntries * MoveTutorTable.BYTES_PER_SPECIES_PL;
+                uint moveTutorPoolLength = MoveTutorTable.NUM_MOVES_PL * TutorMoveEntryPL.NUM_BYTES_PER;
 
                 moveTutorLearnsetPL = new PartialOverlay(romFileReader, Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL, moveTutorLearnsetOffset, moveTutorLearnsetLength);
+                moveTutorPoolPartOverlayPL = new PartialOverlay(romFileReader, Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL, moveTutorPoolOffset, moveTutorPoolLength);
 
                 List<MemoryStream> moveTutorLearnsetMemStreams = moveTutorLearnsetPL.SplitIntoMemStreams(MoveTutorTable.BYTES_PER_SPECIES_PL);
+                List<MemoryStream> moveTutorPoolMemoryStream = moveTutorPoolPartOverlayPL.SplitIntoMemStreams(TutorMoveEntryPL.NUM_BYTES_PER);
 
                 foreach (MemoryStream moveTutorLearnsetMemStream in moveTutorLearnsetMemStreams)
                     MoveTutorTableList.Add(new MoveTutorTable(moveTutorLearnsetMemStream));
+
+                foreach (MemoryStream moveTutorPoolEntry in moveTutorPoolMemoryStream)
+                    moveTutorPoolPL.Add(new TutorMoveEntryPL(moveTutorPoolEntry));
             }
 
             //height is stored in the 0th element of the narc
