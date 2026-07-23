@@ -75,11 +75,13 @@
     <Compile Include="INIManager.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="ItemEditor.cs">
+	  <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Languages.cs" />
     <Compile Include="Learnset.cs" />
     <Compile Include="LearnsetEditor.cs">
+	  <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LocalizedText.cs" />
@@ -91,6 +93,7 @@
     </Compile>
     <Compile Include="Move.cs" />
     <Compile Include="MoveEditor.cs">
+	  <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MoveTutorTable.cs" />
@@ -107,6 +110,7 @@
     <Compile Include="PartialOverlay.cs" />
     <Compile Include="PersonalityValue.cs" />
     <Compile Include="PokedexEditor.cs">
+	  <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PokemonSpecies.cs" />
@@ -114,14 +118,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RomFile.cs" />
     <Compile Include="SpeciesEditor.cs">
+	  <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TextArchive.cs" />
     <Compile Include="TextBankName.cs" />
     <Compile Include="TextEditor.cs">
+	  <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TradeEditor.cs">
+	  <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TutorMoveEntryPL.cs" />
