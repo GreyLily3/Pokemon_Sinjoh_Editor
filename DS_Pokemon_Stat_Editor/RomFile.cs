@@ -15,6 +15,7 @@ namespace Pokemon_Sinjoh_Editor
         private static NarcFile itemsNarc;
         private static NarcFile pokedexNarc;
         private static NarcFile levelUpMovesNarc;
+        private static NarcFile eggMovesHGSSNarc;
         private static PartialOverlay moveTutorLearnsetPL;
         private static PartialOverlay moveTutorPoolPartOverlayPL;
         
@@ -172,6 +173,9 @@ namespace Pokemon_Sinjoh_Editor
         private const int KOR_LEVEL_UP_MOVES_NARC_ID_DP = 0x134;
         private const int KOR_LEVEL_UP_MOVES_NARC_ID_PL = 0x18D;
 
+        private const int EGG_MOVES_NARC_ID_HGSS = 0x166;
+        private const int JAP_EGG_MOVES_NARC_ID_HGSS = 0x165;
+
         private const int MOVE_TUTOR_TABLE_BIN_HGSS = 0x1E6;
         private const int JP_KR_MOVE_TUTOR_TABLE_BIN_HGSS = 0x1E4;
 
@@ -312,6 +316,7 @@ namespace Pokemon_Sinjoh_Editor
             itemsNarc = new NarcFile(getItemsNarcOffset(), romFileReader);
             levelUpMovesNarc = new NarcFile(getLearnsetNarcOffset(), romFileReader);
             gameTextNarc = new NarcFile(getTextNarcOffset(), romFileReader);
+            eggMovesHGSSNarc = new NarcFile(getEggMoveNarcOffset(), romFileReader);
 
             gameText = new TextArchive(gameTextNarc, Language == Languages.KOREAN);
 
@@ -349,6 +354,8 @@ namespace Pokemon_Sinjoh_Editor
 
                 foreach (MemoryStream memStream in moveTutorMemStreams)
                     MoveTutorTableList.Add(new MoveTutorTable(memStream));
+
+                setEggMoves(eggMovesHGSSNarc.Elements[0]);
             }
             else if (gameFamily == GameFamilies.PL)
             {
@@ -757,6 +764,14 @@ namespace Pokemon_Sinjoh_Editor
                 
 		}
 
+        private static uint getEggMoveNarcOffset()
+        {
+            if (Language == Languages.JAPANESE)
+                return fat.GetStartOffset(JAP_EGG_MOVES_NARC_ID_HGSS);
+            else
+                return fat.GetStartOffset(EGG_MOVES_NARC_ID_HGSS);
+        }
+
         private static int getMoveTutorTableBinOffset()
         {
             if (gameFamily == GameFamilies.HGSS)
@@ -917,6 +932,25 @@ namespace Pokemon_Sinjoh_Editor
                 return false;
             else
                 return true;
+        }
+
+        private static void setEggMoves(MemoryStream eggMoveStream)
+        {
+            int pokemonIndex = 0;
+            using (var eggMoveStreamReader = new BinaryReader(eggMoveStream))
+            {
+                ushort buffer = eggMoveStreamReader.ReadUInt16();
+
+                while (buffer != PokemonSpecies.EGG_MOVE_TABLE_TERMINATOR)
+                {
+                    if (buffer > PokemonSpecies.EGG_MOVE_TABLE_POKEMON_INDEX_INDICATOR)
+                        pokemonIndex = buffer - PokemonSpecies.EGG_MOVE_TABLE_POKEMON_INDEX_INDICATOR - PokemonSpecies.START_INDEX;
+                    else
+                        PokemonSpeciesList[pokemonIndex].EggMoves.Add(buffer);
+
+                    buffer = eggMoveStreamReader.ReadUInt16();
+                }
+            }
         }
 
         private static List<MemoryStream> readBinaryTableFile(BinaryReader binaryReader, uint subFileOffset, int rowNumBytes, int numRows)

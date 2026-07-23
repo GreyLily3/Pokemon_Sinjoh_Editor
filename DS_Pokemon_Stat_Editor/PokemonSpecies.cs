@@ -37,6 +37,8 @@ namespace Pokemon_Sinjoh_Editor
         public byte PokedexColor;
         private BitArray learnableTMsAndHMs; //whether a pokemon can learn each TM and HM, ordered from TM01 to HM08
 
+        public List<ushort> EggMoves;
+
         private const int TOTAL_TM_HM_BYTES = 13;
         public const int TM_TOTAL = 92;
         public const int HM_TOTAL = 8;
@@ -70,7 +72,11 @@ namespace Pokemon_Sinjoh_Editor
         public const int DEOXYS_DEFENSE_FORM_INDEX = 497;
         public const int DEOXYS_SPEED_FORM_INDEX = 498;
         public const int NUM_EGG_ENTRIES = 2;
-
+        public const int EGG_MOVE_POKEMON_INDEX_LENGTH = 2;
+        public const int MAX_EGG_MOVES = 16;
+        public const int EGG_MOVE_TABLE_POKEMON_INDEX_INDICATOR = 20000;
+        public const int EGG_MOVE_TABLE_TERMINATOR = 0xFFFF;
+        public const int START_INDEX = 1;
 
         public enum EggGroups
         {
@@ -185,6 +191,8 @@ namespace Pokemon_Sinjoh_Editor
             learnableTMsAndHMs = new BitArray(pokemonSpeciesReader.ReadBytes(TOTAL_TM_HM_BYTES));
 
             pokemonSpeciesReader.Dispose();
+
+            EggMoves = new List<ushort>();
         }
 
         public MemoryStream GetBinary()
@@ -340,5 +348,17 @@ namespace Pokemon_Sinjoh_Editor
         }
 
         public void setAllTMsAndHMs(bool TMsAndHMsLearnable) => learnableTMsAndHMs.SetAll(TMsAndHMsLearnable);
+
+        public bool GetHasEggMoves() => EggMoves.Count > 0;
+
+        public void SetEggMoves(MemoryStream eggMoveStream)
+        {
+            eggMoveStream.Position = EGG_MOVE_POKEMON_INDEX_LENGTH;
+
+            using (BinaryReader eggMoveReader = new BinaryReader(eggMoveStream))
+            {
+                EggMoves.Add(eggMoveReader.ReadUInt16());
+            }
+        }
     }
 }

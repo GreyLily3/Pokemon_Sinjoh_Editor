@@ -10,6 +10,7 @@ namespace Pokemon_Sinjoh_Editor
     {
         List<ComboBox> levelUpMovesComboBoxList = new List<ComboBox>();
         List<NumericNoArrows> levelUpMoveNumericNoArrowsList = new List<NumericNoArrows>();
+        List<ComboBox> learnsetEggMovesComboBoxes = new List<ComboBox>();
         bool learnsetControlsCanRecieveUserInput;
 
         private void setupLearnsetText()
@@ -61,52 +62,41 @@ namespace Pokemon_Sinjoh_Editor
                 levelUpMoveNumericNoArrowsList.Add(learnsetLevelUpLevel18NumericNoArrows);
                 levelUpMoveNumericNoArrowsList.Add(learnsetLevelUpLevel19NumericNoArrows);
                 levelUpMoveNumericNoArrowsList.Add(learnsetLevelUpLevel20NumericNoArrows);
-
             }
 
-            learnsetLevelUpMove1ComboBox.Items.Clear();
-            learnsetLevelUpMove2ComboBox.Items.Clear();
-            learnsetLevelUpMove3ComboBox.Items.Clear();
-            learnsetLevelUpMove4ComboBox.Items.Clear();
-            learnsetLevelUpMove5ComboBox.Items.Clear();
-            learnsetLevelUpMove6ComboBox.Items.Clear();
-            learnsetLevelUpMove7ComboBox.Items.Clear();
-            learnsetLevelUpMove8ComboBox.Items.Clear();
-            learnsetLevelUpMove9ComboBox.Items.Clear();
-            learnsetLevelUpMove10ComboBox.Items.Clear();
-            learnsetLevelUpMove11ComboBox.Items.Clear();
-            learnsetLevelUpMove12ComboBox.Items.Clear();
-            learnsetLevelUpMove13ComboBox.Items.Clear();
-            learnsetLevelUpMove14ComboBox.Items.Clear();
-            learnsetLevelUpMove15ComboBox.Items.Clear();
-            learnsetLevelUpMove16ComboBox.Items.Clear();
-            learnsetLevelUpMove17ComboBox.Items.Clear();
-            learnsetLevelUpMove18ComboBox.Items.Clear();
-            learnsetLevelUpMove19ComboBox.Items.Clear();
-            learnsetLevelUpMove20ComboBox.Items.Clear();
+            if (learnsetEggMovesComboBoxes.Count == 0)
+            {
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove1ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove2ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove3ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove4ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove5ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove6ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove7ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove8ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove9ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove10ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove11ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove12ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove13ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove14ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove15ComboBox);
+                learnsetEggMovesComboBoxes.Add(learnsetEggMove16ComboBox);
+            }
+
+            foreach (ComboBox levelUpMoveComboBox in levelUpMovesComboBoxList)
+            {
+                levelUpMoveComboBox.Items.Clear();
+                levelUpMoveComboBox.Items.AddRange(RomFile.GetMoveNames());
+            }
+
+            foreach (ComboBox eggMoveComboBox in learnsetEggMovesComboBoxes)
+            {
+                eggMoveComboBox.Items.Clear();
+                eggMoveComboBox.Items.AddRange(RomFile.GetMoveNames());
+            }
 
             learnsetMoveTutorCheckedListBox.Items.Clear();
-
-            learnsetLevelUpMove1ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove2ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove3ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove4ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove5ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove6ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove7ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove8ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove9ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove10ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove11ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove12ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove13ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove14ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove15ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove16ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove17ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove18ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove19ComboBox.Items.AddRange(RomFile.GetMoveNames());
-            learnsetLevelUpMove20ComboBox.Items.AddRange(RomFile.GetMoveNames());
 
             learnsetPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNamesNoEggs());
 
@@ -190,6 +180,21 @@ namespace Pokemon_Sinjoh_Editor
 
                 foreach (int moveIndex in learnableTutorMoves)
                     learnsetMoveTutorCheckedListBox.SetItemChecked(moveIndex, true);
+            }
+
+            if (RomFile.gameFamily == RomFile.GameFamilies.HGSS)
+            {
+                int numEggMoves = RomFile.PokemonSpeciesList[pokemonIndex].EggMoves.Count;
+
+                for (int i = 0; i < numEggMoves; i++)
+                {
+                    learnsetEggMovesComboBoxes[i].Visible = true;
+                    learnsetEggMovesComboBoxes[i].SelectedIndex = RomFile.PokemonSpeciesList[pokemonIndex].EggMoves[i] - Pokemon_Sinjoh_Editor.Move.STARTING_INDEX;
+                }
+
+                for (int i = numEggMoves; i < learnsetEggMovesComboBoxes.Count; i++)
+                    learnsetEggMovesComboBoxes[i].Visible = false;
+
             }
 
             learnsetControlsCanRecieveUserInput = true;
