@@ -3628,171 +3628,361 @@
             // 
             this.learnsetLevelUpLevel20NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel20NumericNoArrows.Location = new System.Drawing.Point(22, 516);
+            this.learnsetLevelUpLevel20NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel20NumericNoArrows.Name = "learnsetLevelUpLevel20NumericNoArrows";
             this.learnsetLevelUpLevel20NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel20NumericNoArrows.TabIndex = 20;
+            this.learnsetLevelUpLevel20NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel20NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel20NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel19NumericNoArrows
             // 
             this.learnsetLevelUpLevel19NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel19NumericNoArrows.Location = new System.Drawing.Point(22, 490);
+            this.learnsetLevelUpLevel19NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel19NumericNoArrows.Name = "learnsetLevelUpLevel19NumericNoArrows";
             this.learnsetLevelUpLevel19NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel19NumericNoArrows.TabIndex = 19;
+            this.learnsetLevelUpLevel19NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel19NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel19NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel18NumericNoArrows
             // 
             this.learnsetLevelUpLevel18NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel18NumericNoArrows.Location = new System.Drawing.Point(22, 464);
+            this.learnsetLevelUpLevel18NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel18NumericNoArrows.Name = "learnsetLevelUpLevel18NumericNoArrows";
             this.learnsetLevelUpLevel18NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel18NumericNoArrows.TabIndex = 18;
+            this.learnsetLevelUpLevel18NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel18NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel18NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel17NumericNoArrows
             // 
             this.learnsetLevelUpLevel17NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel17NumericNoArrows.Location = new System.Drawing.Point(22, 438);
+            this.learnsetLevelUpLevel17NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel17NumericNoArrows.Name = "learnsetLevelUpLevel17NumericNoArrows";
             this.learnsetLevelUpLevel17NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel17NumericNoArrows.TabIndex = 17;
+            this.learnsetLevelUpLevel17NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel17NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel17NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel16NumericNoArrows
             // 
             this.learnsetLevelUpLevel16NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel16NumericNoArrows.Location = new System.Drawing.Point(22, 412);
+            this.learnsetLevelUpLevel16NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel16NumericNoArrows.Name = "learnsetLevelUpLevel16NumericNoArrows";
             this.learnsetLevelUpLevel16NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel16NumericNoArrows.TabIndex = 16;
+            this.learnsetLevelUpLevel16NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel16NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel16NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel15NumericNoArrows
             // 
             this.learnsetLevelUpLevel15NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel15NumericNoArrows.Location = new System.Drawing.Point(22, 386);
+            this.learnsetLevelUpLevel15NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel15NumericNoArrows.Name = "learnsetLevelUpLevel15NumericNoArrows";
             this.learnsetLevelUpLevel15NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel15NumericNoArrows.TabIndex = 15;
+            this.learnsetLevelUpLevel15NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel15NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel15NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel14NumericNoArrows
             // 
             this.learnsetLevelUpLevel14NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel14NumericNoArrows.Location = new System.Drawing.Point(22, 360);
+            this.learnsetLevelUpLevel14NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel14NumericNoArrows.Name = "learnsetLevelUpLevel14NumericNoArrows";
             this.learnsetLevelUpLevel14NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel14NumericNoArrows.TabIndex = 14;
+            this.learnsetLevelUpLevel14NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel14NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel14NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel13NumericNoArrows
             // 
             this.learnsetLevelUpLevel13NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel13NumericNoArrows.Location = new System.Drawing.Point(22, 334);
+            this.learnsetLevelUpLevel13NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel13NumericNoArrows.Name = "learnsetLevelUpLevel13NumericNoArrows";
             this.learnsetLevelUpLevel13NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel13NumericNoArrows.TabIndex = 13;
+            this.learnsetLevelUpLevel13NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel13NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel13NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel12NumericNoArrows
             // 
             this.learnsetLevelUpLevel12NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel12NumericNoArrows.Location = new System.Drawing.Point(22, 308);
+            this.learnsetLevelUpLevel12NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel12NumericNoArrows.Name = "learnsetLevelUpLevel12NumericNoArrows";
             this.learnsetLevelUpLevel12NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel12NumericNoArrows.TabIndex = 12;
+            this.learnsetLevelUpLevel12NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel12NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel12NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel11NumericNoArrows
             // 
             this.learnsetLevelUpLevel11NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel11NumericNoArrows.Location = new System.Drawing.Point(22, 282);
+            this.learnsetLevelUpLevel11NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel11NumericNoArrows.Name = "learnsetLevelUpLevel11NumericNoArrows";
             this.learnsetLevelUpLevel11NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel11NumericNoArrows.TabIndex = 11;
+            this.learnsetLevelUpLevel11NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel11NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel11NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel10NumericNoArrows
             // 
             this.learnsetLevelUpLevel10NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel10NumericNoArrows.Location = new System.Drawing.Point(22, 256);
+            this.learnsetLevelUpLevel10NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel10NumericNoArrows.Name = "learnsetLevelUpLevel10NumericNoArrows";
             this.learnsetLevelUpLevel10NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel10NumericNoArrows.TabIndex = 10;
+            this.learnsetLevelUpLevel10NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel10NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel10NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel9NumericNoArrows
             // 
             this.learnsetLevelUpLevel9NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel9NumericNoArrows.Location = new System.Drawing.Point(22, 230);
+            this.learnsetLevelUpLevel9NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel9NumericNoArrows.Name = "learnsetLevelUpLevel9NumericNoArrows";
             this.learnsetLevelUpLevel9NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel9NumericNoArrows.TabIndex = 9;
+            this.learnsetLevelUpLevel9NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel9NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel9NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel8NumericNoArrows
             // 
             this.learnsetLevelUpLevel8NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel8NumericNoArrows.Location = new System.Drawing.Point(22, 204);
+            this.learnsetLevelUpLevel8NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel8NumericNoArrows.Name = "learnsetLevelUpLevel8NumericNoArrows";
             this.learnsetLevelUpLevel8NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel8NumericNoArrows.TabIndex = 8;
+            this.learnsetLevelUpLevel8NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel8NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel8NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel7NumericNoArrows
             // 
             this.learnsetLevelUpLevel7NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel7NumericNoArrows.Location = new System.Drawing.Point(22, 178);
+            this.learnsetLevelUpLevel7NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel7NumericNoArrows.Name = "learnsetLevelUpLevel7NumericNoArrows";
             this.learnsetLevelUpLevel7NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel7NumericNoArrows.TabIndex = 7;
+            this.learnsetLevelUpLevel7NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel7NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel7NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel6NumericNoArrows
             // 
             this.learnsetLevelUpLevel6NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel6NumericNoArrows.Location = new System.Drawing.Point(22, 152);
+            this.learnsetLevelUpLevel6NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel6NumericNoArrows.Name = "learnsetLevelUpLevel6NumericNoArrows";
             this.learnsetLevelUpLevel6NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel6NumericNoArrows.TabIndex = 6;
+            this.learnsetLevelUpLevel6NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel6NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel6NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel5NumericNoArrows
             // 
             this.learnsetLevelUpLevel5NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel5NumericNoArrows.Location = new System.Drawing.Point(22, 126);
+            this.learnsetLevelUpLevel5NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel5NumericNoArrows.Name = "learnsetLevelUpLevel5NumericNoArrows";
             this.learnsetLevelUpLevel5NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel5NumericNoArrows.TabIndex = 5;
+            this.learnsetLevelUpLevel5NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel5NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel5NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel4NumericNoArrows
             // 
             this.learnsetLevelUpLevel4NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel4NumericNoArrows.Location = new System.Drawing.Point(22, 100);
+            this.learnsetLevelUpLevel4NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel4NumericNoArrows.Name = "learnsetLevelUpLevel4NumericNoArrows";
             this.learnsetLevelUpLevel4NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel4NumericNoArrows.TabIndex = 4;
+            this.learnsetLevelUpLevel4NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel4NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel4NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel3NumericNoArrows
             // 
             this.learnsetLevelUpLevel3NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel3NumericNoArrows.Location = new System.Drawing.Point(22, 74);
+            this.learnsetLevelUpLevel3NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel3NumericNoArrows.Name = "learnsetLevelUpLevel3NumericNoArrows";
             this.learnsetLevelUpLevel3NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel3NumericNoArrows.TabIndex = 3;
+            this.learnsetLevelUpLevel3NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel3NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel3NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel2NumericNoArrows
             // 
             this.learnsetLevelUpLevel2NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel2NumericNoArrows.Location = new System.Drawing.Point(22, 48);
+            this.learnsetLevelUpLevel2NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel2NumericNoArrows.Name = "learnsetLevelUpLevel2NumericNoArrows";
             this.learnsetLevelUpLevel2NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel2NumericNoArrows.TabIndex = 2;
+            this.learnsetLevelUpLevel2NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel2NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel2NumericNoArrows_Validated);
             // 
             // learnsetLevelUpLevel1NumericNoArrows
@@ -3800,9 +3990,19 @@
             this.learnsetLevelUpLevel1NumericNoArrows.Enabled = false;
             this.learnsetLevelUpLevel1NumericNoArrows.InterceptArrowKeys = false;
             this.learnsetLevelUpLevel1NumericNoArrows.Location = new System.Drawing.Point(22, 22);
+            this.learnsetLevelUpLevel1NumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel1NumericNoArrows.Name = "learnsetLevelUpLevel1NumericNoArrows";
             this.learnsetLevelUpLevel1NumericNoArrows.Size = new System.Drawing.Size(36, 20);
             this.learnsetLevelUpLevel1NumericNoArrows.TabIndex = 1;
+            this.learnsetLevelUpLevel1NumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.learnsetLevelUpLevel1NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel1NumericNoArrows_Validated);
             // 
             // learnsetLevelUpMove1ComboBox

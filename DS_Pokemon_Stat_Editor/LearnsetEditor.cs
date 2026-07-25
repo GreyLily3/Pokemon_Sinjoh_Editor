@@ -363,6 +363,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel3NumericNoArrows.Value > learnsetLevelUpLevel4NumericNoArrows.Value && learnsetLevelUpLevel4NumericNoArrows.Visible)
                 learnsetLevelUpLevel3NumericNoArrows.Value = learnsetLevelUpLevel4NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel3NumericNoArrows.Value < learnsetLevelUpLevel2NumericNoArrows.Value)
+                learnsetLevelUpLevel3NumericNoArrows.Value = learnsetLevelUpLevel2NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(2, (int)learnsetLevelUpLevel3NumericNoArrows.Value);
         }
@@ -371,6 +373,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel4NumericNoArrows.Value > learnsetLevelUpLevel5NumericNoArrows.Value && learnsetLevelUpLevel5NumericNoArrows.Visible)
                 learnsetLevelUpLevel4NumericNoArrows.Value = learnsetLevelUpLevel5NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel4NumericNoArrows.Value < learnsetLevelUpLevel3NumericNoArrows.Value)
+                learnsetLevelUpLevel4NumericNoArrows.Value = learnsetLevelUpLevel3NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(3, (int)learnsetLevelUpLevel4NumericNoArrows.Value);
         }
@@ -379,6 +383,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel5NumericNoArrows.Value > learnsetLevelUpLevel6NumericNoArrows.Value && learnsetLevelUpLevel6NumericNoArrows.Visible)
                 learnsetLevelUpLevel5NumericNoArrows.Value = learnsetLevelUpLevel6NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel5NumericNoArrows.Value < learnsetLevelUpLevel4NumericNoArrows.Value)
+                learnsetLevelUpLevel5NumericNoArrows.Value = learnsetLevelUpLevel4NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(4, (int)learnsetLevelUpLevel5NumericNoArrows.Value);
         }
@@ -387,6 +393,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel6NumericNoArrows.Value > learnsetLevelUpLevel7NumericNoArrows.Value && learnsetLevelUpLevel7NumericNoArrows.Visible)
                 learnsetLevelUpLevel6NumericNoArrows.Value = learnsetLevelUpLevel7NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel6NumericNoArrows.Value < learnsetLevelUpLevel5NumericNoArrows.Value)
+                learnsetLevelUpLevel6NumericNoArrows.Value = learnsetLevelUpLevel5NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(5, (int)learnsetLevelUpLevel6NumericNoArrows.Value);
         }
@@ -395,6 +403,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel7NumericNoArrows.Value > learnsetLevelUpLevel8NumericNoArrows.Value && learnsetLevelUpLevel8NumericNoArrows.Visible)
                 learnsetLevelUpLevel7NumericNoArrows.Value = learnsetLevelUpLevel8NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel7NumericNoArrows.Value < learnsetLevelUpLevel6NumericNoArrows.Value)
+                learnsetLevelUpLevel7NumericNoArrows.Value = learnsetLevelUpLevel6NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(6, (int)learnsetLevelUpLevel7NumericNoArrows.Value);
         }
@@ -403,6 +413,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel8NumericNoArrows.Value > learnsetLevelUpLevel9NumericNoArrows.Value && learnsetLevelUpLevel9NumericNoArrows.Visible)
                 learnsetLevelUpLevel8NumericNoArrows.Value = learnsetLevelUpLevel9NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel8NumericNoArrows.Value < learnsetLevelUpLevel7NumericNoArrows.Value)
+                learnsetLevelUpLevel8NumericNoArrows.Value = learnsetLevelUpLevel7NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(7, (int)learnsetLevelUpLevel8NumericNoArrows.Value);
         }
@@ -411,6 +423,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel9NumericNoArrows.Value > learnsetLevelUpLevel10NumericNoArrows.Value && learnsetLevelUpLevel10NumericNoArrows.Visible)
                 learnsetLevelUpLevel9NumericNoArrows.Value = learnsetLevelUpLevel10NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel9NumericNoArrows.Value < learnsetLevelUpLevel8NumericNoArrows.Value)
+                learnsetLevelUpLevel9NumericNoArrows.Value = learnsetLevelUpLevel8NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(8, (int)learnsetLevelUpLevel9NumericNoArrows.Value);
         }
@@ -419,6 +433,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel10NumericNoArrows.Value > learnsetLevelUpLevel11NumericNoArrows.Value && learnsetLevelUpLevel11NumericNoArrows.Visible)
                 learnsetLevelUpLevel10NumericNoArrows.Value = learnsetLevelUpLevel11NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel10NumericNoArrows.Value < learnsetLevelUpLevel9NumericNoArrows.Value)
+                learnsetLevelUpLevel10NumericNoArrows.Value = learnsetLevelUpLevel9NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(9, (int)learnsetLevelUpLevel10NumericNoArrows.Value);
         }
@@ -427,6 +443,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel11NumericNoArrows.Value > learnsetLevelUpLevel12NumericNoArrows.Value && learnsetLevelUpLevel12NumericNoArrows.Visible)
                 learnsetLevelUpLevel11NumericNoArrows.Value = learnsetLevelUpLevel12NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel11NumericNoArrows.Value < learnsetLevelUpLevel10NumericNoArrows.Value)
+                learnsetLevelUpLevel11NumericNoArrows.Value = learnsetLevelUpLevel10NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(10, (int)learnsetLevelUpLevel11NumericNoArrows.Value);
         }
@@ -435,6 +453,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel12NumericNoArrows.Value > learnsetLevelUpLevel13NumericNoArrows.Value && learnsetLevelUpLevel13NumericNoArrows.Visible)
                 learnsetLevelUpLevel12NumericNoArrows.Value = learnsetLevelUpLevel13NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel12NumericNoArrows.Value < learnsetLevelUpLevel11NumericNoArrows.Value)
+                learnsetLevelUpLevel12NumericNoArrows.Value = learnsetLevelUpLevel11NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(11, (int)learnsetLevelUpLevel12NumericNoArrows.Value);
         }
@@ -443,6 +463,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel13NumericNoArrows.Value > learnsetLevelUpLevel14NumericNoArrows.Value && learnsetLevelUpLevel14NumericNoArrows.Visible)
                 learnsetLevelUpLevel13NumericNoArrows.Value = learnsetLevelUpLevel14NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel13NumericNoArrows.Value < learnsetLevelUpLevel12NumericNoArrows.Value)
+                learnsetLevelUpLevel13NumericNoArrows.Value = learnsetLevelUpLevel12NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(12, (int)learnsetLevelUpLevel13NumericNoArrows.Value);
         }
@@ -451,6 +473,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel14NumericNoArrows.Value > learnsetLevelUpLevel15NumericNoArrows.Value && learnsetLevelUpLevel15NumericNoArrows.Visible)
                 learnsetLevelUpLevel14NumericNoArrows.Value = learnsetLevelUpLevel15NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel14NumericNoArrows.Value < learnsetLevelUpLevel13NumericNoArrows.Value)
+                learnsetLevelUpLevel14NumericNoArrows.Value = learnsetLevelUpLevel13NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(13, (int)learnsetLevelUpLevel14NumericNoArrows.Value);
         }
@@ -459,6 +483,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel15NumericNoArrows.Value > learnsetLevelUpLevel16NumericNoArrows.Value && learnsetLevelUpLevel16NumericNoArrows.Visible)
                 learnsetLevelUpLevel15NumericNoArrows.Value = learnsetLevelUpLevel16NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel15NumericNoArrows.Value < learnsetLevelUpLevel14NumericNoArrows.Value)
+                learnsetLevelUpLevel15NumericNoArrows.Value = learnsetLevelUpLevel14NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(14, (int)learnsetLevelUpLevel15NumericNoArrows.Value);
         }
@@ -467,6 +493,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel16NumericNoArrows.Value > learnsetLevelUpLevel17NumericNoArrows.Value && learnsetLevelUpLevel17NumericNoArrows.Visible)
                 learnsetLevelUpLevel16NumericNoArrows.Value = learnsetLevelUpLevel17NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel16NumericNoArrows.Value < learnsetLevelUpLevel15NumericNoArrows.Value)
+                learnsetLevelUpLevel16NumericNoArrows.Value = learnsetLevelUpLevel15NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(15, (int)learnsetLevelUpLevel16NumericNoArrows.Value);
         }
@@ -475,6 +503,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel17NumericNoArrows.Value > learnsetLevelUpLevel18NumericNoArrows.Value && learnsetLevelUpLevel18NumericNoArrows.Visible)
                 learnsetLevelUpLevel17NumericNoArrows.Value = learnsetLevelUpLevel18NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel17NumericNoArrows.Value < learnsetLevelUpLevel16NumericNoArrows.Value)
+                learnsetLevelUpLevel17NumericNoArrows.Value = learnsetLevelUpLevel16NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(16, (int)learnsetLevelUpLevel17NumericNoArrows.Value);
         }
@@ -483,6 +513,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel18NumericNoArrows.Value > learnsetLevelUpLevel19NumericNoArrows.Value && learnsetLevelUpLevel19NumericNoArrows.Visible)
                 learnsetLevelUpLevel18NumericNoArrows.Value = learnsetLevelUpLevel19NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel18NumericNoArrows.Value < learnsetLevelUpLevel17NumericNoArrows.Value)
+                learnsetLevelUpLevel18NumericNoArrows.Value = learnsetLevelUpLevel17NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(17, (int)learnsetLevelUpLevel18NumericNoArrows.Value);
         }
@@ -491,13 +523,19 @@ namespace Pokemon_Sinjoh_Editor
         {
             if (learnsetLevelUpLevel19NumericNoArrows.Value > learnsetLevelUpLevel20NumericNoArrows.Value && learnsetLevelUpLevel20NumericNoArrows.Visible)
                 learnsetLevelUpLevel19NumericNoArrows.Value = learnsetLevelUpLevel20NumericNoArrows.Value;
+            else if (learnsetLevelUpLevel19NumericNoArrows.Value < learnsetLevelUpLevel18NumericNoArrows.Value)
+                learnsetLevelUpLevel19NumericNoArrows.Value = learnsetLevelUpLevel18NumericNoArrows.Value;
 
             learnsetUpdateLearnedMoveLevel(18, (int)learnsetLevelUpLevel19NumericNoArrows.Value);
         }
 
         private void learnsetLevelUpLevel20NumericNoArrows_Validated(object sender, EventArgs e)
         {
+            if (learnsetLevelUpLevel20NumericNoArrows.Value < learnsetLevelUpLevel19NumericNoArrows.Value)
+                learnsetLevelUpLevel20NumericNoArrows.Value = learnsetLevelUpLevel19NumericNoArrows.Value;
+
             learnsetUpdateLearnedMoveLevel(19, (int)learnsetLevelUpLevel20NumericNoArrows.Value);
+
         }
 
         private void learnsetMoveTutorCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
