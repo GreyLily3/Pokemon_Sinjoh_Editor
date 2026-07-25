@@ -75,7 +75,7 @@ namespace Pokemon_Sinjoh_Editor
         public const int EGG_MOVE_POKEMON_INDEX_LENGTH = 2;
         public const int MAX_EGG_MOVES = 16;
         public const int EGG_MOVE_TABLE_POKEMON_INDEX_INDICATOR = 20000;
-        public const int EGG_MOVE_TABLE_TERMINATOR = 0xFFFF;
+        public const ushort EGG_MOVE_TABLE_TERMINATOR = 0xFFFF;
         public const int START_INDEX = 1;
 
         public enum EggGroups

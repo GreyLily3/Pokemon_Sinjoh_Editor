@@ -196,8 +196,13 @@ namespace Pokemon_Sinjoh_Editor
                     learnsetEggMovesComboBoxes[i].Visible = false;
 
             }
+            else
+            {
+                for (int i = 0; i < learnsetEggMovesComboBoxes.Count; i++)
+                    learnsetEggMovesComboBoxes[i].Visible = false;
+            }
 
-            learnsetControlsCanRecieveUserInput = true;
+                learnsetControlsCanRecieveUserInput = true;
 
         }
 
@@ -223,6 +228,17 @@ namespace Pokemon_Sinjoh_Editor
             {
                 RomFile.LevelUpMovesList[learnsetPokemonComboBox.SelectedIndex].LevelsLearned[levelUpMoveIndex] = (ushort)level;
                 MarkUnsavedChanges(SaveSubFile.LEVELUPMOVES);
+            }
+        }
+
+        private void learnsetUpdateEggMove(int eggMoveIndex, int moveID)
+        {
+            moveID += PokemonSpecies.START_INDEX;
+
+            if (RomFile.PokemonSpeciesList[learnsetPokemonComboBox.SelectedIndex].EggMoves[eggMoveIndex] != moveID)
+            {
+                RomFile.PokemonSpeciesList[learnsetPokemonComboBox.SelectedIndex].EggMoves[eggMoveIndex] = (ushort)moveID;
+                MarkUnsavedChanges(SaveSubFile.EGGMOVES);
             }
         }
 
@@ -491,6 +507,87 @@ namespace Pokemon_Sinjoh_Editor
                 RomFile.MoveTutorTableList[learnsetPokemonComboBox.SelectedIndex].SetLearnableMove(e.Index, e.NewValue.HasFlag(CheckState.Checked));
                 MarkUnsavedChanges(SaveSubFile.TUTORLEARNSET);
             }
+        }
+
+
+        private void learnsetEggMove1ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(0, learnsetEggMove1ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove2ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(1, learnsetEggMove2ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove3ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(2, learnsetEggMove3ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove4ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(3, learnsetEggMove4ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove5ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(4, learnsetEggMove5ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove6ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(5, learnsetEggMove6ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove7ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(6, learnsetEggMove7ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove8ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(7, learnsetEggMove8ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove9ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(8, learnsetEggMove9ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove10ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(9, learnsetEggMove10ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove11ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(10, learnsetEggMove11ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove12ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(11, learnsetEggMove12ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove13ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(12, learnsetEggMove13ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove14ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(13, learnsetEggMove14ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove15ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(14, learnsetEggMove15ComboBox.SelectedIndex);
+        }
+
+        private void learnsetEggMove16ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            learnsetUpdateEggMove(15, learnsetEggMove16ComboBox.SelectedIndex);
         }
     }
 }

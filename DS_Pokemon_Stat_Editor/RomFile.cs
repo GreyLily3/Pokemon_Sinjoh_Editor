@@ -32,6 +32,7 @@ namespace Pokemon_Sinjoh_Editor
         public static bool UnsavedChangesPokedex = false;
         public static bool UnsavedChangesLevelUpMoves = false;
         public static bool UnsavedChangesMoveTutorMoves = false;
+        public static bool UnsavedChangesEggMoves = false;
 
         public static List<Move> MoveList = new List<Move>();
         public static List<PokemonSpecies> PokemonSpeciesList = new List<PokemonSpecies>();
@@ -316,7 +317,9 @@ namespace Pokemon_Sinjoh_Editor
             itemsNarc = new NarcFile(getItemsNarcOffset(), romFileReader);
             levelUpMovesNarc = new NarcFile(getLearnsetNarcOffset(), romFileReader);
             gameTextNarc = new NarcFile(getTextNarcOffset(), romFileReader);
-            eggMovesHGSSNarc = new NarcFile(getEggMoveNarcOffset(), romFileReader);
+
+            if (gameFamily == GameFamilies.HGSS)
+                eggMovesHGSSNarc = new NarcFile(getEggMoveNarcOffset(), romFileReader);
 
             gameText = new TextArchive(gameTextNarc, Language == Languages.KOREAN);
 
@@ -953,6 +956,27 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
+        private static MemoryStream getEggMovesStream()
+        {
+            MemoryStream eggMoveStream = new MemoryStream();
+            var eggMoveWriter = new BinaryWriter(eggMoveStream);
+
+            for (int i = 0; i < PokemonSpeciesList.Count; i++)
+            {
+                if (PokemonSpeciesList[i].GetHasEggMoves())
+                {
+                    eggMoveWriter.Write((ushort)(i + PokemonSpecies.START_INDEX + PokemonSpecies.EGG_MOVE_TABLE_POKEMON_INDEX_INDICATOR));
+
+                    for (int j = 0; j < PokemonSpeciesList[i].EggMoves.Count; j++)
+                        eggMoveWriter.Write(PokemonSpeciesList[i].EggMoves[j]);
+                }
+            }
+
+            eggMoveWriter.Write(PokemonSpecies.EGG_MOVE_TABLE_TERMINATOR);
+
+            return eggMoveStream;
+        }
+
         private static List<MemoryStream> readBinaryTableFile(BinaryReader binaryReader, uint subFileOffset, int rowNumBytes, int numRows)
         {
             List<MemoryStream> binaryStreams = new List<MemoryStream>();
@@ -1066,6 +1090,12 @@ namespace Pokemon_Sinjoh_Editor
                 };
             }
 
+            if (UnsavedChangesEggMoves)
+            {
+                if (gameFamily == GameFamilies.HGSS)
+                    eggMovesHGSSNarc.Elements[0] = getEggMovesStream();
+            }
+
             try
 			{
                 if (UnsavedChangesMoves)
@@ -1096,6 +1126,12 @@ namespace Pokemon_Sinjoh_Editor
                 {
                     levelUpMovesNarc.Write(romWriter);
                     UnsavedChangesLevelUpMoves = false;
+                }
+
+                if (UnsavedChangesEggMoves)
+                {
+                    eggMovesHGSSNarc.Write(romWriter);
+                    UnsavedChangesEggMoves = false;
                 }
 
                 AreUnsavedChanges = false;

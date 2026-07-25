@@ -929,6 +929,9 @@ namespace Pokemon_Sinjoh_Editor
                 case SaveSubFile.TUTORLEARNSET:
                     RomFile.UnsavedChangesMoveTutorMoves = true;
                     break;
+                case SaveSubFile.EGGMOVES:
+                    RomFile.UnsavedChangesEggMoves = true;
+                    break;
             }
         }
 
@@ -1219,6 +1222,5 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
-        
     }
 }

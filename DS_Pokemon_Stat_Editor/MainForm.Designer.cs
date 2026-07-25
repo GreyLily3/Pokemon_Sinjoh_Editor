@@ -3135,6 +3135,7 @@
             this.learnsetEggMove16ComboBox.Name = "learnsetEggMove16ComboBox";
             this.learnsetEggMove16ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove16ComboBox.TabIndex = 19;
+            this.learnsetEggMove16ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove16ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove15ComboBox
             // 
@@ -3146,6 +3147,7 @@
             this.learnsetEggMove15ComboBox.Name = "learnsetEggMove15ComboBox";
             this.learnsetEggMove15ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove15ComboBox.TabIndex = 18;
+            this.learnsetEggMove15ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove15ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove14ComboBox
             // 
@@ -3157,6 +3159,7 @@
             this.learnsetEggMove14ComboBox.Name = "learnsetEggMove14ComboBox";
             this.learnsetEggMove14ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove14ComboBox.TabIndex = 17;
+            this.learnsetEggMove14ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove14ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove13ComboBox
             // 
@@ -3168,6 +3171,7 @@
             this.learnsetEggMove13ComboBox.Name = "learnsetEggMove13ComboBox";
             this.learnsetEggMove13ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove13ComboBox.TabIndex = 16;
+            this.learnsetEggMove13ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove13ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove12ComboBox
             // 
@@ -3179,6 +3183,7 @@
             this.learnsetEggMove12ComboBox.Name = "learnsetEggMove12ComboBox";
             this.learnsetEggMove12ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove12ComboBox.TabIndex = 15;
+            this.learnsetEggMove12ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove12ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove11ComboBox
             // 
@@ -3190,6 +3195,7 @@
             this.learnsetEggMove11ComboBox.Name = "learnsetEggMove11ComboBox";
             this.learnsetEggMove11ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove11ComboBox.TabIndex = 14;
+            this.learnsetEggMove11ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove11ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove10ComboBox
             // 
@@ -3201,6 +3207,7 @@
             this.learnsetEggMove10ComboBox.Name = "learnsetEggMove10ComboBox";
             this.learnsetEggMove10ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove10ComboBox.TabIndex = 13;
+            this.learnsetEggMove10ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove10ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove9ComboBox
             // 
@@ -3212,6 +3219,7 @@
             this.learnsetEggMove9ComboBox.Name = "learnsetEggMove9ComboBox";
             this.learnsetEggMove9ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove9ComboBox.TabIndex = 12;
+            this.learnsetEggMove9ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove9ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove8ComboBox
             // 
@@ -3223,6 +3231,7 @@
             this.learnsetEggMove8ComboBox.Name = "learnsetEggMove8ComboBox";
             this.learnsetEggMove8ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove8ComboBox.TabIndex = 11;
+            this.learnsetEggMove8ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove8ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove7ComboBox
             // 
@@ -3234,6 +3243,7 @@
             this.learnsetEggMove7ComboBox.Name = "learnsetEggMove7ComboBox";
             this.learnsetEggMove7ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove7ComboBox.TabIndex = 10;
+            this.learnsetEggMove7ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove7ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove6ComboBox
             // 
@@ -3245,6 +3255,7 @@
             this.learnsetEggMove6ComboBox.Name = "learnsetEggMove6ComboBox";
             this.learnsetEggMove6ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove6ComboBox.TabIndex = 9;
+            this.learnsetEggMove6ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove6ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove5ComboBox
             // 
@@ -3256,6 +3267,7 @@
             this.learnsetEggMove5ComboBox.Name = "learnsetEggMove5ComboBox";
             this.learnsetEggMove5ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove5ComboBox.TabIndex = 8;
+            this.learnsetEggMove5ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove5ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove4ComboBox
             // 
@@ -3267,6 +3279,7 @@
             this.learnsetEggMove4ComboBox.Name = "learnsetEggMove4ComboBox";
             this.learnsetEggMove4ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove4ComboBox.TabIndex = 7;
+            this.learnsetEggMove4ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove4ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove3ComboBox
             // 
@@ -3278,6 +3291,7 @@
             this.learnsetEggMove3ComboBox.Name = "learnsetEggMove3ComboBox";
             this.learnsetEggMove3ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove3ComboBox.TabIndex = 6;
+            this.learnsetEggMove3ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove3ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove2ComboBox
             // 
@@ -3289,6 +3303,7 @@
             this.learnsetEggMove2ComboBox.Name = "learnsetEggMove2ComboBox";
             this.learnsetEggMove2ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove2ComboBox.TabIndex = 5;
+            this.learnsetEggMove2ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove2ComboBox_SelectionChangeCommitted);
             // 
             // learnsetEggMove1ComboBox
             // 
@@ -3300,6 +3315,7 @@
             this.learnsetEggMove1ComboBox.Name = "learnsetEggMove1ComboBox";
             this.learnsetEggMove1ComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetEggMove1ComboBox.TabIndex = 4;
+            this.learnsetEggMove1ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetEggMove1ComboBox_SelectionChangeCommitted);
             // 
             // learnsetMoveTutorLabel
             // 
