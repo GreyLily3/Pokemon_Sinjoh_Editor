@@ -332,6 +332,10 @@ namespace Pokemon_Sinjoh_Editor
             NPCTradesList.Clear();
             ItemList.Clear();
             LevelUpMovesList.Clear();
+            HeightList.Clear();
+            WeightList.Clear();
+            MoveTutorTableList.Clear();
+            moveTutorPoolPL.Clear();
 
             //skip the first move because it's a placeholder
             for (int i = 1; i < movesNarc.Elements.Count; i++)
