@@ -11,6 +11,7 @@ namespace Pokemon_Sinjoh_Editor
         List<ComboBox> levelUpMovesComboBoxList = new List<ComboBox>();
         List<NumericNoArrows> levelUpMoveNumericNoArrowsList = new List<NumericNoArrows>();
         List<ComboBox> learnsetEggMovesComboBoxes = new List<ComboBox>();
+        List<int> learnsetPreviousEggMoves = new List<int>(PokemonSpecies.MAX_EGG_MOVES);
         bool learnsetControlsCanRecieveUserInput;
 
         private void setupLearnsetText()
@@ -84,6 +85,12 @@ namespace Pokemon_Sinjoh_Editor
                 learnsetEggMovesComboBoxes.Add(learnsetEggMove16ComboBox);
             }
 
+            if (learnsetPreviousEggMoves.Count == 0)
+            {
+                for (int i = 0; i < PokemonSpecies.MAX_EGG_MOVES; i++)
+                    learnsetPreviousEggMoves.Add(0);
+            }
+
             foreach (ComboBox levelUpMoveComboBox in levelUpMovesComboBoxList)
             {
                 levelUpMoveComboBox.Items.Clear();
@@ -133,8 +140,6 @@ namespace Pokemon_Sinjoh_Editor
             learnsetMoveTutorCheckedListBox.ItemCheck -= learnsetMoveTutorCheckedListBox_ItemCheck;
             learnsetPokemonComboBox.SelectedIndex = 0;
             learnsetMoveTutorCheckedListBox.ItemCheck += learnsetMoveTutorCheckedListBox_ItemCheck;
-
-
         }
 
         private void displayLearnsetValues(int pokemonIndex)
@@ -194,7 +199,9 @@ namespace Pokemon_Sinjoh_Editor
             for (int i = numEggMoves; i < learnsetEggMovesComboBoxes.Count; i++)
                 learnsetEggMovesComboBoxes[i].Visible = false;
 
-           
+            for (int i = 0; i < numEggMoves; i++)
+                learnsetPreviousEggMoves[i] = learnsetEggMovesComboBoxes[i].SelectedIndex;
+
             learnsetControlsCanRecieveUserInput = true;
 
         }
@@ -202,6 +209,19 @@ namespace Pokemon_Sinjoh_Editor
         private void learnsetPokemonComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             displayLearnsetValues(learnsetPokemonComboBox.SelectedIndex);
+        }
+
+        private bool learnsetIsDuplicateEggMove(int moveID)
+        {
+            int chosenMoveCount = 0;
+
+            for (int i = 0; i < RomFile.PokemonSpeciesList[learnsetPokemonComboBox.SelectedIndex].EggMoves.Count; i++)
+            {
+                if (learnsetEggMovesComboBoxes[i].SelectedIndex == moveID)
+                    chosenMoveCount++;
+            }
+
+            return chosenMoveCount > 1;
         }
 
         private void learnsetUpdateLearnedMoveID(int levelUpMoveIndex, int moveID)
@@ -226,13 +246,21 @@ namespace Pokemon_Sinjoh_Editor
 
         private void learnsetUpdateEggMove(int eggMoveIndex, int moveID)
         {
-            moveID += PokemonSpecies.START_INDEX;
-
-            if (RomFile.PokemonSpeciesList[learnsetPokemonComboBox.SelectedIndex].EggMoves[eggMoveIndex] != moveID)
+            if (learnsetIsDuplicateEggMove(moveID))
             {
-                RomFile.PokemonSpeciesList[learnsetPokemonComboBox.SelectedIndex].EggMoves[eggMoveIndex] = (ushort)moveID;
-                MarkUnsavedChanges(SaveSubFile.EGGMOVES);
+                learnsetEggMovesComboBoxes[eggMoveIndex].SelectedIndex = learnsetPreviousEggMoves[eggMoveIndex];
             }
+            else
+            {
+                moveID += PokemonSpecies.START_INDEX;
+
+                if (RomFile.PokemonSpeciesList[learnsetPokemonComboBox.SelectedIndex].EggMoves[eggMoveIndex] != moveID)
+                {
+                    learnsetPreviousEggMoves[eggMoveIndex] = moveID - PokemonSpecies.START_INDEX;
+                    RomFile.PokemonSpeciesList[learnsetPokemonComboBox.SelectedIndex].EggMoves[eggMoveIndex] = (ushort)moveID;
+                    MarkUnsavedChanges(SaveSubFile.EGGMOVES);
+                }
+            }  
         }
 
 
