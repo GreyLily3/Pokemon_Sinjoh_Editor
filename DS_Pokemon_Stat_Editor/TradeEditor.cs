@@ -20,10 +20,10 @@ namespace Pokemon_Sinjoh_Editor
             tradeWantedPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNamesNoAltForms());
             tradeOfferedPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNamesNoAltForms());
 
-            tradeHeldItemComboBox.Items.AddRange(RomFile.GetItemNames());
-            tradeLanguageComboBox.Items.AddRange(RomFile.GetLanguageNames());
+            tradeHeldItemComboBox.Items.AddRange(RomFile.ItemNames.ToArray());
+            tradeLanguageComboBox.Items.AddRange(TextArchive.GetLanguageNames());
 
-            tradeTrainerComboBox.Items.AddRange(RomFile.GetTradePokemonTrainerNames());
+            tradeTrainerComboBox.Items.AddRange(RomFile.TradePokemonTrainerNames.ToArray());
 
             tradeNewPVNatureComboBox.Items.AddRange(RomFile.NatureNames.ToArray());
         }
@@ -68,11 +68,11 @@ namespace Pokemon_Sinjoh_Editor
         {
             DisplayTradeValues(tradeTrainerComboBox.SelectedIndex);
 
-            if (RomFile.gameFamily == RomFile.GameFamilies.HGSS && tradeTrainerComboBox.SelectedIndex >= RomFile.TRADE_JASMINE_INDEX && tradeTrainerComboBox.SelectedIndex <= RomFile.TRADE_WEBSTER_INDEX)
+            if (RomFile.gameFamily == RomFile.GameFamilies.HGSS && tradeTrainerComboBox.SelectedIndex >= NPCTrade.TRADE_JASMINE_INDEX && tradeTrainerComboBox.SelectedIndex <= NPCTrade.TRADE_WEBSTER_INDEX)
             {
                 tradeWantedPokemonComboBox.Visible = false;
 
-                if (tradeTrainerComboBox.SelectedIndex == RomFile.TRADE_JASMINE_INDEX)
+                if (tradeTrainerComboBox.SelectedIndex == NPCTrade.TRADE_JASMINE_INDEX)
                 {
                     tradeWantedPokemonLabel.Visible = true;
                     tradeAnyPokemonWantedComboBox.SelectedIndex = 0;
@@ -338,8 +338,8 @@ namespace Pokemon_Sinjoh_Editor
         {
             PersonalityValue pv = RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue;
 
-            tradeGenderTextBox.Text = RomFile.GetGenderName(pv.GetGender(RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex].GenderRatio));
-            tradeNatureTextBox.Text = RomFile.NatureNames[(int)(pv.GetNature())];
+            tradeGenderTextBox.Text = TextArchive.GetGenderName(pv.GetGender(RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex].GenderRatio));
+            tradeNatureTextBox.Text = RomFile.NatureNames[(int)pv.GetNature()];
             tradeAbilityTextBox.Text = RomFile.GetAbilityName(tradeOfferedPokemonComboBox.SelectedIndex, pv);
 
 

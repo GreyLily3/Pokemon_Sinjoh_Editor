@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using static Pokemon_Sinjoh_Editor.RomFile;
 
 
 namespace Pokemon_Sinjoh_Editor
@@ -7324,7 +7325,46 @@ namespace Pokemon_Sinjoh_Editor
         private const int PRIVATEKEY1 = 0x2FD;
         private const int PRIVATEKEY2 = 0x91BD3;
         private const int PRIVATEKEY3 = 0x493D;
-        
+
+        private const int DEOXYS_ATTACK_FORM_NAME_INDEX_DP = 111;
+        private const int DEOXYS_ATTACK_FORM_NAME_INDEX_PL = 112;
+        private const int DEOXYS_ATTACK_FORM_NAME_INDEX_HGSS = 146;
+
+        private const int DEOXYS_DEFENSE_FORM_NAME_INDEX_DP = 112;
+        private const int DEOXYS_DEFENSE_FORM_NAME_INDEX_PL = 113;
+        private const int DEOXYS_DEFENSE_FORM_NAME_INDEX_HGSS = 147;
+
+        private const int DEOXYS_SPEED_FORM_NAME_INDEX_DP = 113;
+        private const int DEOXYS_SPEED_FORM_NAME_INDEX_PL = 114;
+        private const int DEOXYS_SPEED_FORM_NAME_INDEX_HGSS = 148;
+
+        private const int SHAYMIN_SKY_FORM_NAME_INDEX_PL = 116;
+        private const int SHAYMIN_SKY_FORM_NAME_INDEX_HGSS = 150;
+
+        private const int GIRATINA_ORIGIN_FORM_NAME_INDEX_PL = 118;
+        private const int GIRATINA_ORIGIN_FORM_NAME_INDEX_HGSS = 152;
+
+        private const int ROTOM_HEAT_FORM_NAME_INDEX_PL = 120;
+        private const int ROTOM_HEAT_FORM_NAME_INDEX_HGSS = 154;
+
+        private const int ROTOM_WASH_FORM_NAME_INDEX_PL = 121;
+        private const int ROTOM_WASH_FORM_NAME_INDEX_HGSS = 155;
+
+        private const int ROTOM_FROST_FORM_NAME_INDEX_PL = 122;
+        private const int ROTOM_FROST_FORM_NAME_INDEX_HGSS = 156;
+
+        private const int ROTOM_FAN_FORM_NAME_INDEX_PL = 123;
+        private const int ROTOM_FAN_FORM_NAME_INDEX_HGSS = 157;
+
+        private const int ROTOM_MOW_FORM_NAME_INDEX_PL = 124;
+        private const int ROTOM_MOW_FORM_NAME_INDEX_HGSS = 158;
+
+        private const int WORMADAM_SANDY_FORM_NAME_INDEX_DPPL = 18;
+        private const int WORMADAM_SANDY_FORM_NAME_INDEX_HGSS = 119;
+
+        private const int WORMADAM_TRASH_FORM_NAME_INDEX_DPPL = 19;
+        private const int WORMADAM_TRASH_FORM_NAME_INDEX_HGSS = 120;
+
         private void setUpKoreanTextDictionary()
         {
             koreanDecompressedTextDictionary = decompressedTextDictionary;
@@ -10207,6 +10247,379 @@ namespace Pokemon_Sinjoh_Editor
         }
     
         }*/
+
+        public static int GetDeoxysAttackFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => DEOXYS_ATTACK_FORM_NAME_INDEX_DP,
+                GameFamilies.PL => DEOXYS_ATTACK_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => DEOXYS_ATTACK_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetDeoxysDefenseFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => DEOXYS_DEFENSE_FORM_NAME_INDEX_DP,
+                GameFamilies.PL => DEOXYS_DEFENSE_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => DEOXYS_DEFENSE_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetDeoxysSpeedFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => DEOXYS_SPEED_FORM_NAME_INDEX_DP,
+                GameFamilies.PL => DEOXYS_SPEED_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => DEOXYS_SPEED_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetWormadamSandyFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => WORMADAM_SANDY_FORM_NAME_INDEX_DPPL,
+                GameFamilies.PL => WORMADAM_SANDY_FORM_NAME_INDEX_DPPL,
+                GameFamilies.HGSS => WORMADAM_SANDY_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetWormadamTrashFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => WORMADAM_TRASH_FORM_NAME_INDEX_DPPL,
+                GameFamilies.PL => WORMADAM_TRASH_FORM_NAME_INDEX_DPPL,
+                GameFamilies.HGSS => WORMADAM_TRASH_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetGiratinaOriginFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => GIRATINA_ORIGIN_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => GIRATINA_ORIGIN_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetShayminSkyFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => SHAYMIN_SKY_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => SHAYMIN_SKY_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetRotomHeatFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => ROTOM_HEAT_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => ROTOM_HEAT_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetRotomWashFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => ROTOM_WASH_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => ROTOM_WASH_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetRotomFrostFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => ROTOM_FROST_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => ROTOM_FROST_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetRotomFanFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => ROTOM_FAN_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => ROTOM_FAN_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetRotomMowFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => ROTOM_MOW_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => ROTOM_MOW_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static string[] GetMoveTargetNames()
+        {
+            switch (INIManager.Language)
+            {
+                case Languages.ENGLISH:
+                    string[] targetNames = Enum.GetNames(typeof(Move.Targets));
+
+                    for (int i = 0; i < targetNames.Length; i++)
+                        targetNames[i] = targetNames[i].Replace('_', ' ');
+                    return targetNames;
+                case Languages.FRENCH:
+                    return new string[] { "Normale", "1 OTHER", "1 adv. au hasard", "Adv. proches", "PKMN proches", "Soi", "Côté allié", "Tous côtés", "Côté adv.", "1 allié", "Soi ou 1 allié", "ANY FOE" };
+                case Languages.SPANISH:
+                    return new string[] { "Normal", "1 OTHER", "1 rival aleatorio", "Rivales cercanos", "Pokémon cercanos", "Usuario", "Aliados de combate", "Todos", "Rivales de combate", "1 aliado", "Usuario o 1 aliado", "ANY FOE" };
+                case Languages.GERMAN:
+                    return new string[] { "Normal", "1 OTHER", "1 beliebiger Gegner", "Mehrere Gegner", "PKMN im Umkreis", "Anwender", "Eigene Seite", "Beide Seiten", "Gegnerseite", "1 Mitstreiter", "Anwender oder 1 Mitsreiter", "ANY FOE" };
+                case Languages.ITALIAN:
+                    return new string[] { "Normale", "1 OTHER", "Un nemico a caso", "Più nemici", "Più alleati", "Se stesso", "Tuo campo", "Entrambi i campi", "Campo nemico", "Un alleato", "Se stesso o un alleato", "ANY FOE" };
+                case Languages.JAPANESE:
+                    return new string[] { "通常", "相手複数", "相手ランダ", "相手複数", "相手", "自分", "味方場", "味方複数", "相手場", "味方１匹", "自分か味方１匹", "相手１匹" };
+                case Languages.KOREAN:
+                    return new string[] { "통상", "1 OTHER", "상대랜덤1마리", "상대복수", "상대·같은편복수", "자신", "같은편장소", "상대·같으편장소", "상대장소", "같은편1마리", "자신또는같은편1마리", "ANY FOE" };
+                default:
+                    return new string[0];
+            }
+        }
+
+        public static string[] GetEggGroupNames()
+        {
+            switch (INIManager.Language)
+            {
+                case Languages.ENGLISH:
+                    string[] eggGroupNames = Enum.GetNames(typeof(PokemonSpecies.EggGroups));
+
+                    for (int i = 0; i < eggGroupNames.Length; i++)
+                        eggGroupNames[i] = eggGroupNames[i].Replace('_', ' ');
+
+                    return eggGroupNames;
+                case Languages.FRENCH:
+                    return new string[] { "Monstreux", "Aquatique", "Insectoïde", "Aérien", "Terrestre", "Féerique", "Végétal", "Humanoïde", "Aquatique 3", "Minéral", "Amorphe", "Aquatique 2", "Métamorph", "Draconique", "Inconnu" };
+                case Languages.SPANISH:
+                    return new string[] { "Monstruo", "Agua 1", "Bicho", "Volador", "Campo", "Hada", "Planta", "Humanoide", "Agua 3", "Mineral", "Amorfo", "Agua 2", "Ditto", "Dragón", "Desconocido" };
+                case Languages.GERMAN:
+                    return new string[] { "Monster", "Wasser 1", "Käfer", "Flug", "Feld", "Fee", "Pflanze", "Humanotyp", "Wasser 3", "Mineral", "Amorph", "Wasser 2", "Ditto", "Drache", "Unbekannt" };
+                case Languages.ITALIAN:
+                    return new string[] { "Mostro", "Acqua 1", " Coleottero", "Volante", "Campo", "Magico", "Erba", "Umanoide", "Acqua 3", "Minerale", "Amorfo", "Acqua 2", "Ditto", "Drago", "Sconosciuto" };
+                case Languages.JAPANESE:
+                    return new string[] { "怪獣", "水中 1", "虫グ", "飛行", "陸上", "妖精", "植物", "人型", "水中 3", "鉱物", "不定形", "水中 2", "メタモン", "ドラゴ", "タマゴ未発見" };
+                case Languages.KOREAN:
+                    return new string[] { "괴수", "수중 1", "벌레", "비행", "육상", "요정", "식물", "인간형", "수중 3", "광물", "부정형", "수중 2", "메타몽", "드래곤", "알미발견" };
+                default:
+                    return new string[0];
+            }
+        }
+
+        public static string[] GetXPGroupNames()
+        {
+            switch (INIManager.Language)
+            {
+                case Languages.ENGLISH:
+                    string[] xpGroupNames = Enum.GetNames(typeof(PokemonSpecies.XPGroups));
+
+                    for (int i = 0; i < xpGroupNames.Length; i++)
+                        xpGroupNames[i] = xpGroupNames[i].Replace('_', ' ');
+                    return xpGroupNames;
+
+                case Languages.FRENCH:
+                    return new string[] { "Moyenne", "Erratique", "Fluctuante", "Parabolique", "Rapide", "Lente", "???", "???" };
+                case Languages.SPANISH:
+                    return new string[] { "Medio", "Errático", "Fluctuante", "Parabólico", "Rápido", "Lento", "???", "???" };
+                case Languages.GERMAN:
+                    return new string[] { "Mittel-Schnell", "Erratic", "Fluctuating", "Mittel-Langsam", "Schnell", "Langsam", "???", "???" };
+                case Languages.ITALIAN:
+                    return new string[] { "Medio-veloce", "Irregolare", "Fluttuante", "Medio-lenta", "Veloce", "Lenta", "???", "???" };
+                case Languages.JAPANESE:
+                    return new string[] { "100万タイプ", "60万タイプ", "164万タイプ", "105万タイプ", "80万タイプ", "125万タイプ", "???", "???" };
+                case Languages.KOREAN:
+                    return new string[] { "MEDIUM_FAST", "ERRATIC", "FLUCTUATING", "MEDIUM_SLOW", "FAST", "SLOW", "UNUSED1", "UNUSED2" };
+                default:
+                    return new string[0];
+            }
+        }
+
+        public static string[] GetLanguageNames()
+        {
+            return INIManager.Language switch
+            {
+                Languages.ENGLISH => Enum.GetNames(typeof(Languages)),
+                Languages.FRENCH => new string[] { "Japonais", "Anglais", "Français", "Italien", "Allemand", "???", "Espagnol", "Coréen" },
+                Languages.SPANISH => new string[] { "Japonés", "Inglés", "Francés", "Italiano", "Alemán", "???", "Español", "Coreano" },
+                Languages.GERMAN => new string[] { "Japanisch", "Englisch", "Französisch", "Italienisch", "Deutsch", "???", "Spanisch", "Koreanisch" },
+                Languages.ITALIAN => new string[] { "Giapponese", "Inglese", "Francese", "Italiano", "Tedesco", "???", "Spagnolo", "Coreano" },
+                Languages.JAPANESE => new string[] { "日本語", "英語", "フランス語", "イタリア語", "ドイツ語", "???", "スペイン語", "ハングル語" },
+                Languages.KOREAN => new string[] { "일본어", "영어", "프랑스어", "이탈리아어", "독일어", "???", "스페인어", "한국어" },
+                _ => Enum.GetNames(typeof(Languages))
+            };
+
+
+        }
+
+        public static string[] GetMoveCategories()
+        {
+            return INIManager.Language switch
+            {
+                Languages.ENGLISH => Enum.GetNames(typeof(Move.Categories)),
+                Languages.FRENCH => new string[] { "Physique", "Spéciale", "Statut" },
+                Languages.SPANISH => new string[] { "Físico", "Especial", "Estado" },
+                Languages.GERMAN => new string[] { "Physische", "Spezial", "Status" },
+                Languages.ITALIAN => new string[] { "Fisica", "Speciale", "Stato" },
+                Languages.JAPANESE => new string[] { "物理", "特殊", "変化" },
+                Languages.KOREAN => new string[] { "물리", "특수", "변화" },
+                _ => Enum.GetNames(typeof(Move.Categories))
+            };
+
+        }
+
+        public static string[] GetMoveContestConditions()
+        {
+            if (INIManager.Language == Languages.ENGLISH)
+                return Enum.GetNames(typeof(Move.ContestConditions));
+            else if (INIManager.Language == Languages.FRENCH)
+                return new string[] { "Sang-froid", "Beauté", "Grâce", "Intelligence", "Robustesse" };
+            else if (INIManager.Language == Languages.SPANISH)
+                return new string[] { "Carisma", "Belleza", "Dulzura", "Ingenio", "Dureza" };
+            else if (INIManager.Language == Languages.GERMAN)
+                return new string[] { "Coole", "Schönheit", "Anmut", "Klugheit", "Stärke" };
+            else if (INIManager.Language == Languages.ITALIAN)
+                return new string[] { "Classe", "Bellezza", "Grazia", "Acume", "Grinta" };
+            else if (INIManager.Language == Languages.JAPANESE)
+                return new string[] { "かっこよさ", "うつくしさ", "かわいさ", "かしこさ", "たくましさ" };
+            else if (INIManager.Language == Languages.KOREAN)
+                return new string[] { "근사함", "아름다움", "귀여움", "슬기로움", "강인함" };
+            else
+                return Enum.GetNames(typeof(Move.ContestConditions));
+        }
+
+        public static string GetGenderName(Gender gender)
+        {
+            switch (INIManager.Language)
+            {
+                case Languages.ENGLISH:
+                    return gender.ToString();
+                case Languages.FRENCH:
+                    if (gender == Gender.MALE)
+                        return "Mâle";
+                    else if (gender == Gender.FEMALE)
+                        return "Femelle";
+                    else
+                        return "Inconnu";
+                case Languages.SPANISH:
+                    if (gender == Gender.MALE)
+                        return "Macho";
+                    else if (gender == Gender.FEMALE)
+                        return "Hembra";
+                    else
+                        return "Sin sexo";
+                case Languages.GERMAN:
+                    if (gender == Gender.MALE)
+                        return "Männlich";
+                    else if (gender == Gender.FEMALE)
+                        return "Weiblich";
+                    else
+                        return "Unbekannt";
+                case Languages.ITALIAN:
+                    if (gender == Gender.MALE)
+                        return "Maschio";
+                    else if (gender == Gender.FEMALE)
+                        return "Femmina";
+                    else
+                        return "Unbekannt";
+                case Languages.JAPANESE:
+                    if (gender == Gender.MALE)
+                        return "オス";
+                    else if (gender == Gender.FEMALE)
+                        return "メス";
+                    else
+                        return "性別不明";
+                case Languages.KOREAN:
+                    if (gender == Gender.MALE)
+                        return "수컷";
+                    else if (gender == Gender.FEMALE)
+                        return "암컷";
+                    else
+                        return "성별 불명";
+                default:
+                    return gender.ToString();
+            }
+        }
+
+        //will replace this static list later if there's a good way to get/set what moves are set as TMs (this is stored in ARM9 binary)
+        public static string[] GetTMNames()
+        {
+            string tmString;
+            string[] TMNames = new string[92];
+            int[] TMIndices = { 264, 337, 352, 347, 46, 92, 258, 339, 331, 237, 241, 269, 58, 59, 63, 113, 182, 240, 202, 219, 218, 76, 231, 85, 87, 89, 216,
+            91, 94, 247, 280, 104, 115, 351, 53, 188, 201, 126, 317, 332, 259, 263, 290, 156, 213, 168, 211, 285, 289, 315, 355, 411, 412, 206, 362, 374,
+            451, 203, 406, 409, 261, 318, 373, 153, 421, 371, 278, 416, 397, 148, 444, 419, 86, 360, 14, 446, 244, 445, 399, 157, 404, 214,
+            363, 398, 138, 447, 207, 365, 369, 164, 430, 433};
+
+            tmString = INIManager.Language switch
+            {
+                Languages.ENGLISH => "TM",
+                Languages.FRENCH => "CT",
+                Languages.SPANISH => "MT",
+                Languages.GERMAN => "TM",
+                Languages.ITALIAN => "MT",
+                Languages.JAPANESE => "わざマシン",
+                Languages.KOREAN => "기술머신",
+                _ => "TM"
+            };
+
+            for (int i = 0; i < 92; i++)
+                TMNames[i] = tmString + (i + 1).ToString("D2") + " " + MoveNames[TMIndices[i] - Move.START_INDEX];
+
+            return TMNames;
+        }
+
+        //will replace static indices later if there's a good way to get/set what moves are HMs (this is stored in ARM9 binary)
+        public static string[] GetHMNames()
+        {
+            string hmString;
+            string[] HMNames = new string[8];
+            int[] HMIndices = { 15, 19, 57, 70, 250, 249, 127, 431 };
+
+            if (gameFamily != GameFamilies.HGSS)
+                HMIndices[5] = 432; //replace whirlpool with defog for HM05
+
+            hmString = INIManager.Language switch
+            {
+                Languages.ENGLISH => "HM0",
+                Languages.FRENCH => "CS0",
+                Languages.SPANISH => "MO0",
+                Languages.GERMAN => "VM",
+                Languages.ITALIAN => "MN",
+                Languages.JAPANESE => "ひでんマシン0",
+                Languages.KOREAN => "비전머신",
+                _ => "HM0"
+            };
+
+            for (int i = 0; i < 8; i++)
+                HMNames[i] = hmString + (i + 1) + " " + MoveNames[HMIndices[i] - Move.START_INDEX];
+
+            return HMNames;
+        }
+
+        public static string[] GetFieldPocketNames() => Enum.GetNames(typeof(Item.FieldPockets));
+        public static string[] GetBattlePocketNames() => Enum.GetNames(typeof(Item.BattlePockets));
     }
 }
 

@@ -11,9 +11,9 @@ namespace Pokemon_Sinjoh_Editor
             itemSelectedComboBox.Items.Clear();
             itemNaturalGiftTypeComboBox.Items.Clear();
             itemSelectedComboBox.Items.AddRange(RomFile.GetItemNamesWithoutUnknown());
-            itemNaturalGiftTypeComboBox.Items.AddRange(RomFile.GetTypeNames());
-            itemFieldPocketComboBox.Items.AddRange(RomFile.GetFieldPocketNames());
-            itemBattlePocketComboBox.Items.AddRange(RomFile.GetBattlePocketNames());
+            itemNaturalGiftTypeComboBox.Items.AddRange(RomFile.TypeNames.ToArray());
+            itemFieldPocketComboBox.Items.AddRange(TextArchive.GetFieldPocketNames());
+            itemBattlePocketComboBox.Items.AddRange(TextArchive.GetBattlePocketNames());
         }
 
         private void updateDisplayedItemValues()

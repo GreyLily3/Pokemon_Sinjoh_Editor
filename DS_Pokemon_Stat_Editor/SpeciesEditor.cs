@@ -24,19 +24,19 @@ namespace Pokemon_Sinjoh_Editor
             speciesTMCheckedListBox.Items.Clear();
             speciesHMCheckedListBox.Items.Clear();
 
-            speciesTMCheckedListBox.Items.AddRange(RomFile.GetTMNames());
-            speciesHMCheckedListBox.Items.AddRange(RomFile.GetHMNames());
+            speciesTMCheckedListBox.Items.AddRange(TextArchive.GetTMNames());
+            speciesHMCheckedListBox.Items.AddRange(TextArchive.GetHMNames());
 
             speciesComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNames());
-            speciesType1ComboBox.Items.AddRange(RomFile.GetTypeNames());
-            speciesType2ComboBox.Items.AddRange(RomFile.GetTypeNames());
-            speciesAbility1ComboBox.Items.AddRange(RomFile.GetAbilityNames());
-            speciesAbility2ComboBox.Items.AddRange(RomFile.GetAbilityNames());
-            speciesHeldItem1ComboBox.Items.AddRange(RomFile.GetItemNames());
-            speciesHeldItem2ComboBox.Items.AddRange(RomFile.GetItemNames());
-            speciesEggGroup1ComboBox.Items.AddRange(RomFile.GetEggGroupNames());
-            speciesEggGroup2ComboBox.Items.AddRange(RomFile.GetEggGroupNames());
-            speciesXPGroupComboBox.Items.AddRange(RomFile.GetXPGroupNames());
+            speciesType1ComboBox.Items.AddRange(RomFile.TypeNames.ToArray());
+            speciesType2ComboBox.Items.AddRange(RomFile.TypeNames.ToArray());
+            speciesAbility1ComboBox.Items.AddRange(RomFile.AbilityNames.ToArray());
+            speciesAbility2ComboBox.Items.AddRange(RomFile.AbilityNames.ToArray());
+            speciesHeldItem1ComboBox.Items.AddRange(RomFile.ItemNames.ToArray());
+            speciesHeldItem2ComboBox.Items.AddRange(RomFile.ItemNames.ToArray());
+            speciesEggGroup1ComboBox.Items.AddRange(TextArchive.GetEggGroupNames());
+            speciesEggGroup2ComboBox.Items.AddRange(TextArchive.GetEggGroupNames());
+            speciesXPGroupComboBox.Items.AddRange(TextArchive.GetXPGroupNames());
         }
 
         private void UpdateDisplayedSpeciesValues()

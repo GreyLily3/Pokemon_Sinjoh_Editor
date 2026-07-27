@@ -87,13 +87,13 @@ namespace Pokemon_Sinjoh_Editor
             foreach (ComboBox levelUpMoveComboBox in levelUpMovesComboBoxList)
             {
                 levelUpMoveComboBox.Items.Clear();
-                levelUpMoveComboBox.Items.AddRange(RomFile.GetMoveNames());
+                levelUpMoveComboBox.Items.AddRange(RomFile.MoveNames.ToArray());
             }
 
             foreach (ComboBox eggMoveComboBox in learnsetEggMovesComboBoxes)
             {
                 eggMoveComboBox.Items.Clear();
-                eggMoveComboBox.Items.AddRange(RomFile.GetMoveNames());
+                eggMoveComboBox.Items.AddRange(RomFile.MoveNames.ToArray());
             }
 
             learnsetMoveTutorCheckedListBox.Items.Clear();
@@ -107,7 +107,7 @@ namespace Pokemon_Sinjoh_Editor
                 learnsetMoveTutorCheckedListBox.BeginUpdate();
 
                 foreach (TutorMoveEntryPL tutorMove in RomFile.moveTutorPoolPL)
-                    learnsetMoveTutorCheckedListBox.Items.Add(RomFile.MoveNames[tutorMove.MoveID - Pokemon_Sinjoh_Editor.Move.STARTING_INDEX]);
+                    learnsetMoveTutorCheckedListBox.Items.Add(RomFile.MoveNames[tutorMove.MoveID - Pokemon_Sinjoh_Editor.Move.START_INDEX]);
 
                 learnsetMoveTutorCheckedListBox.EndUpdate();
             }
@@ -153,7 +153,7 @@ namespace Pokemon_Sinjoh_Editor
 
             for (int i = 0; i < numMoves; i++)
             {
-                levelUpMovesComboBoxList[i].SelectedIndex = RomFile.LevelUpMovesList[pokemonIndex].GetMoveID(i) - Pokemon_Sinjoh_Editor.Move.STARTING_INDEX;
+                levelUpMovesComboBoxList[i].SelectedIndex = RomFile.LevelUpMovesList[pokemonIndex].GetMoveID(i) - Pokemon_Sinjoh_Editor.Move.START_INDEX;
                 levelUpMoveNumericNoArrowsList[i].Value = RomFile.LevelUpMovesList[pokemonIndex].LevelsLearned[i];
                 levelUpMovesComboBoxList[i].Visible = true;
                 levelUpMoveNumericNoArrowsList[i].Visible = true;
@@ -188,7 +188,7 @@ namespace Pokemon_Sinjoh_Editor
             for (int i = 0; i < numEggMoves; i++)
             {
                 learnsetEggMovesComboBoxes[i].Visible = true;
-                learnsetEggMovesComboBoxes[i].SelectedIndex = RomFile.PokemonSpeciesList[pokemonIndex].EggMoves[i] - Pokemon_Sinjoh_Editor.Move.STARTING_INDEX;
+                learnsetEggMovesComboBoxes[i].SelectedIndex = RomFile.PokemonSpeciesList[pokemonIndex].EggMoves[i] - Pokemon_Sinjoh_Editor.Move.START_INDEX;
             }
 
             for (int i = numEggMoves; i < learnsetEggMovesComboBoxes.Count; i++)
@@ -206,7 +206,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void learnsetUpdateLearnedMoveID(int levelUpMoveIndex, int moveID)
         {
-            moveID += Pokemon_Sinjoh_Editor.Move.STARTING_INDEX;
+            moveID += Pokemon_Sinjoh_Editor.Move.START_INDEX;
 
             if (RomFile.LevelUpMovesList[learnsetPokemonComboBox.SelectedIndex].GetMoveID(levelUpMoveIndex) != moveID)
             {

@@ -33,6 +33,11 @@ namespace Pokemon_Sinjoh_Editor
         private const int FIELD_POCKET_BIT_SHIFT = 7;
         private const int BATTLE_POCKET_BIT_SHIFT = 11;
 
+        public const int UNKNOWN_BLOCK_FIRST_INDEX_PLHGSS = 113;
+        public const int UNKNOWN_BLOCK_FIRST_INDEX_DP = 112;
+        public const int UNKNOWN_BLOCK_LAST_INDEX = 134;
+        public const int UNKNOWN_LAST_INDEX_HGSS = 428;
+
         public enum FieldPockets
         {
             ITEMS,

@@ -40,7 +40,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void DisplayPokedexValues(int pokemonIndex)
         {
-            pokedexCategoryTextBox.Text = RomFile.GetPokedexCategory(pokemonIndex);
+            pokedexCategoryTextBox.Text = RomFile.PokedexCategoryNames[pokemonIndex];
 
             pokedexNumChangedByCode = true;
             pokedexNumNationalNumericUpDown.Value = pokemonIndex + 1; //add 1 because pokedex num is not a 0th based index

@@ -107,7 +107,7 @@ namespace Pokemon_Sinjoh_Editor
             string[] moveNameList = new string[NUM_MOVES_HGSS];
 
             for (int i = 0; i < NUM_MOVES_HGSS; i++)
-                moveNameList[i] = RomFile.MoveNames[MoveIDsHGSS[i] - Move.STARTING_INDEX];
+                moveNameList[i] = RomFile.MoveNames[MoveIDsHGSS[i] - Move.START_INDEX];
 
             return moveNameList;
         }

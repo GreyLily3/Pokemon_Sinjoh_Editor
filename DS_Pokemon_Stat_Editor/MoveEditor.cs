@@ -14,12 +14,12 @@ namespace Pokemon_Sinjoh_Editor
             moveContestEffectComboBox.Items.Clear();
             moveCategoryComboBox.Items.Clear();
 
-            movesComboBox.Items.AddRange(RomFile.GetMoveNames());
-            moveTypeComboBox.Items.AddRange(RomFile.GetTypeNames());
-            moveTargetComboBox.Items.AddRange(RomFile.GetMoveTargets());
-            moveContestConditionComboBox.Items.AddRange(RomFile.GetMoveContestConditions());
-            moveContestEffectComboBox.Items.AddRange(RomFile.GetMoveContestEffect());
-            moveCategoryComboBox.Items.AddRange(RomFile.GetMoveCategories());
+            movesComboBox.Items.AddRange(RomFile.MoveNames.ToArray());
+            moveTypeComboBox.Items.AddRange(RomFile.TypeNames.ToArray());
+            moveTargetComboBox.Items.AddRange(TextArchive.GetMoveTargetNames());
+            moveContestConditionComboBox.Items.AddRange(TextArchive.GetMoveContestConditions());
+            moveContestEffectComboBox.Items.AddRange(Pokemon_Sinjoh_Editor.Move.ContestEffectDescriptions);
+            moveCategoryComboBox.Items.AddRange(TextArchive.GetMoveCategories());
         }
 
         private void UpdateDisplayedMoveValues()

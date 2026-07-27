@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using static Pokemon_Sinjoh_Editor.RomFile;
 
 namespace Pokemon_Sinjoh_Editor
 {
@@ -23,6 +24,74 @@ namespace Pokemon_Sinjoh_Editor
         private const uint FAT_ELEMENT_LENGTH = 0x8;
         private const uint FILE_IMAGE_HEADER_LENGTH = 0x8;   
         private const uint FILE_NAME_TABLE_SIGNATURE_LENGTH = 0x4;
+
+        private const int MOVES_INDEX_DP = 0x158;
+        private const int MOVES_INDEX_PL = 0x1BD;
+        private const int MOVES_INDEX_HGSS = 0x8C;
+        private const int JP_MOVES_INDEX_DP = 0x159;
+        private const int JP_MOVES_INDEX_PL = 0x1C3;
+        private const int JP_MOVES_INDEX_HGSS = 0x8B;
+        private const int KR_MOVES_INDEX_PL = 0x1A3;
+        private const int KR_MOVES_INDEX_DP = 0x144;
+
+        private const int POKEMON_SPECIES_INDEX_DIAMOND = 0x146;
+        private const int POKEMON_SPECIES_INDEX_PEARL = 0x148;
+        private const int POKEMON_SPECIES_INDEX_PL = 0x1A5;
+        private const int POKEMON_SPECIES_INDEX_HGSS = 0x83;
+        private const int JP_POKEMON_SPECIES_INDEX_D = 0x147;
+        private const int JP_POKEMON_SPECIES_INDEX_P = 0x149;
+        private const int JP_POKEMON_SPECIES_INDEX_PL = 0x1AB;
+        private const int JP_POKEMON_SPECIES_INDEX_HGSS = 0x82;
+        private const int KR_POKEMON_SPECIES_INDEX_PL = 0x18B;
+        private const int KR_POKEMON_SPECIES_INDEX_D = 0x132;
+        private const int KR_POKEMON_SPECIES_INDEX_P = 0x134;
+
+        private const int POKEDEX_INDEX_DP = 0x5A; //same for japanese & korean
+        private const int POKEDEX_INDEX_PL = 0x82; //same for japanese & korean, there is a seemingly identical narc at 0x81, but this one has gira in the name so it's likely the one platinum uses
+        private const int POKEDEX_INDEX_HGSS = 0x157; //same for korean
+        private const int JP_POKEDEX_INDEX_HGSS = 0x156;
+
+        private const int NPC_TRADES_INDEX_DP = 0x10E;
+        private const int NPC_TRADES_INDEX_PL = 0x150;
+        private const int NPC_TRADES_INDEX_HGSS = 0xF1;
+        private const int JP_NPC_TRADES_INDEX_PL = 0x151;
+        private const int JP_NPC_TRADES_INDEX_HGSS = 0xF0;
+        private const int KR_NPC_TRADES_INDEX_PL = 0x1BB;
+        private const int KR_NPC_TRADES_INDEX_DP = 0x152;
+
+        private const int TEXT_INDEX_DP = 0x13D;
+        private const int TEXT_INDEX_PL = 0x194;
+        private const int TEXT_INDEX_HGSS = 0x9C;
+        private const int JP_TEXT_INDEX_DP = 0x13E;
+        private const int JP_TEXT_INDEX_PL = 0x19A;
+        private const int JP_TEXT_INDEX_HGSS = 0x9B;
+        private const int KR_TEXT_INDEX_DP = 0x129;
+        private const int KR_TEXT_INDEX_PL = 0x17A;
+
+        private const int ITEMS_INDEX_DP = 0x13A;
+        private const int ITEMS_INDEX_PL = 0x192;
+        private const int ITEMS_INDEX_HGSS = 0x92;
+        private const int JP_ITEMS_INDEX_DP = 0x13B;
+        private const int JP_ITEMS_INDEX_PL = 0x198;
+        private const int JP_ITEMS_INDEX_HGSS = 0x91;
+        private const int KR_ITEMS_INDEX_DP = 0x126;
+        private const int KR_ITEMS_INDEX_PL = 0x178;
+        private const int KR_ITEMS_INDEX_HGSS = 0x92;
+
+        private const int LEVEL_UP_MOVES_INDEX_DP = 0x148;
+        private const int LEVEL_UP_MOVES_INDEX_PL = 0x1A7;
+        private const int LEVEL_UP_MOVES_INDEX_HGSS = 0xA2;
+        private const int JP_LEVEL_UP_MOVES_INDEX_DP = 0x149;
+        private const int JP_LEVEL_UP_MOVES_INDEX_PL = 0x1AD;
+        private const int JP_LEVEL_UP_MOVES_INDEX_HGSS = 0xA1;
+        private const int KR_LEVEL_UP_MOVES_INDEX_DP = 0x134;
+        private const int KR_LEVEL_UP_MOVES_INDEX_PL = 0x18D;
+
+        private const int EGG_MOVES_INDEX_HGSS = 0x166;
+        private const int JP_EGG_MOVES_INDEX_HGSS = 0x165;
+
+        public const int POKEDEX_HEIGHT_ELEMENT_INDEX = 0;
+        public const int POKEDEX_WEIGHT_ELEMENT_INDEX = 1;
 
         private FAT fat;
         private long narcFileOffset;
@@ -135,6 +204,251 @@ namespace Pokemon_Sinjoh_Editor
             bw.Write((UInt32)fileSize);
             bw.Seek((int)fimgSizeOffset, SeekOrigin.Begin);         // seeks back to FIMG size
             bw.Write((UInt32)curOffset + FILE_IMAGE_HEADER_LENGTH);
+        }
+
+        public static uint GetMovesNarcOffset(FAT fat)
+        {
+            if (Language == Languages.JAPANESE)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(JP_MOVES_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(JP_MOVES_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(JP_MOVES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KR_MOVES_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(KR_MOVES_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(MOVES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(MOVES_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(MOVES_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(MOVES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+
+        }
+
+        public static uint GetSpeciesNarcOffset(FAT fat, RomFile.GameVersions gameVersion)
+        {
+            if (Language == Languages.JAPANESE)
+            {
+                return gameVersion switch
+                {
+                    GameVersions.DIAMOND => fat.GetStartOffset(JP_POKEMON_SPECIES_INDEX_D),
+                    GameVersions.PEARL => fat.GetStartOffset(JP_POKEMON_SPECIES_INDEX_P),
+                    GameVersions.PLATINUM => fat.GetStartOffset(JP_POKEMON_SPECIES_INDEX_PL),
+                    GameVersions.HEARTGOLD => fat.GetStartOffset(JP_POKEMON_SPECIES_INDEX_HGSS),
+                    GameVersions.SOULSILVER => fat.GetStartOffset(JP_POKEMON_SPECIES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameVersion switch
+                {
+                    GameVersions.DIAMOND => fat.GetStartOffset(KR_POKEMON_SPECIES_INDEX_D),
+                    GameVersions.PEARL => fat.GetStartOffset(KR_POKEMON_SPECIES_INDEX_P),
+                    GameVersions.PLATINUM => fat.GetStartOffset(KR_POKEMON_SPECIES_INDEX_PL),
+                    GameVersions.HEARTGOLD => fat.GetStartOffset(POKEMON_SPECIES_INDEX_HGSS),
+                    GameVersions.SOULSILVER => fat.GetStartOffset(POKEMON_SPECIES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else
+            {
+                return gameVersion switch
+                {
+                    GameVersions.DIAMOND => fat.GetStartOffset(POKEMON_SPECIES_INDEX_DIAMOND),
+                    GameVersions.PEARL => fat.GetStartOffset(POKEMON_SPECIES_INDEX_PEARL),
+                    GameVersions.PLATINUM => fat.GetStartOffset(POKEMON_SPECIES_INDEX_PL),
+                    GameVersions.HEARTGOLD => fat.GetStartOffset(POKEMON_SPECIES_INDEX_HGSS),
+                    GameVersions.SOULSILVER => fat.GetStartOffset(POKEMON_SPECIES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+
+        }
+
+        public static uint GetPokedexNarcOffset(FAT fat)
+        {
+            if (Language == Languages.JAPANESE)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(POKEDEX_INDEX_DP), //same as all other langauges
+                    GameFamilies.PL => fat.GetStartOffset(POKEDEX_INDEX_PL), //same as all other langauges
+                    GameFamilies.HGSS => fat.GetStartOffset(JP_POKEDEX_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(POKEDEX_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(POKEDEX_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(POKEDEX_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+        }
+
+        public static uint GetNPCTradesNarcOffset(FAT fat)
+        {
+            if (Language == Languages.JAPANESE)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(NPC_TRADES_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(JP_NPC_TRADES_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(JP_NPC_TRADES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KR_NPC_TRADES_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(KR_NPC_TRADES_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(NPC_TRADES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(NPC_TRADES_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(NPC_TRADES_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(NPC_TRADES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+        }
+
+        public static uint GetItemsNarcOffset(FAT fat)
+        {
+            if (Language == Languages.JAPANESE)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(JP_ITEMS_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(JP_ITEMS_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(JP_ITEMS_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KR_ITEMS_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(KR_ITEMS_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(KR_ITEMS_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(ITEMS_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(ITEMS_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(ITEMS_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+        }
+
+        public static uint GetLearnsetNarcOffset(FAT fat)
+        {
+            if (Language == Languages.JAPANESE)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(JP_LEVEL_UP_MOVES_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(JP_LEVEL_UP_MOVES_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(JP_LEVEL_UP_MOVES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KR_LEVEL_UP_MOVES_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(KR_LEVEL_UP_MOVES_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(LEVEL_UP_MOVES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(LEVEL_UP_MOVES_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(LEVEL_UP_MOVES_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(LEVEL_UP_MOVES_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+        }
+
+        public static uint GetTextNarcOffset(FAT fat)
+        {
+            if (Language == Languages.JAPANESE)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(JP_TEXT_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(JP_TEXT_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(JP_TEXT_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else if (Language == Languages.KOREAN)
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(KR_TEXT_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(KR_TEXT_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(TEXT_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+            else
+            {
+                return gameFamily switch
+                {
+                    GameFamilies.DP => fat.GetStartOffset(TEXT_INDEX_DP),
+                    GameFamilies.PL => fat.GetStartOffset(TEXT_INDEX_PL),
+                    GameFamilies.HGSS => fat.GetStartOffset(TEXT_INDEX_HGSS),
+                    _ => 0
+                };
+            }
+
+        }
+
+        public static uint GetEggMoveNarcOffset(FAT fat)
+        {
+            if (Language == Languages.JAPANESE)
+                return fat.GetStartOffset(JP_EGG_MOVES_INDEX_HGSS);
+            else
+                return fat.GetStartOffset(EGG_MOVES_INDEX_HGSS);
         }
     }
 }

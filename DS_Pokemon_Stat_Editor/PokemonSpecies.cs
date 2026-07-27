@@ -78,6 +78,15 @@ namespace Pokemon_Sinjoh_Editor
         public const ushort EGG_MOVE_TABLE_TERMINATOR = 0xFFFF;
         public const int START_INDEX = 1;
 
+        public const int WORMADAM_INDEX = 413;
+        public const int DEOXYS_INDEX = 386;
+        public const int GIRATINA_INDEX = 487;
+        public const int SHAYMIN_INDEX = 492;
+        public const int ROTOM_INDEX = 479;
+
+        public const int NUM_ALT_FORMS_DP = 5;
+        public const int NUM_ALT_FORMS_PL_HGSS = 12;
+
         public enum EggGroups
         {
             MONSTER,

@@ -68,140 +68,15 @@ namespace Pokemon_Sinjoh_Editor
 		private const int FAT_POINTER_OFFSET = 0x48;
         private const int LANGUAGE_GAME_CODE_OFFSET = 0xF;
 
-        private const int POKEDEX_NARC_HEIGHT_INDEX = 0;
-        private const int POKEDEX_NARC_WEIGHT_INDEX = 1;
-
         private const int UINT_NUM_BYTES = 4;
-
-        private const int DEOXYS_ATTACK_FORM_NAME_INDEX_DP = 111;
-        private const int DEOXYS_ATTACK_FORM_NAME_INDEX_PL = 112;
-        private const int DEOXYS_ATTACK_FORM_NAME_INDEX_HGSS = 146;
-
-        private const int DEOXYS_DEFENSE_FORM_NAME_INDEX_DP = 112;
-        private const int DEOXYS_DEFENSE_FORM_NAME_INDEX_PL = 113;
-        private const int DEOXYS_DEFENSE_FORM_NAME_INDEX_HGSS = 147;
-
-        private const int DEOXYS_SPEED_FORM_NAME_INDEX_DP = 113;
-        private const int DEOXYS_SPEED_FORM_NAME_INDEX_PL = 114;
-        private const int DEOXYS_SPEED_FORM_NAME_INDEX_HGSS = 148;
-
-        private const int SHAYMIN_SKY_FORM_NAME_INDEX_PL = 116;
-        private const int SHAYMIN_SKY_FORM_NAME_INDEX_HGSS = 150;
-
-        private const int GIRATINA_ORIGIN_FORM_NAME_INDEX_PL = 118;
-        private const int GIRATINA_ORIGIN_FORM_NAME_INDEX_HGSS = 152;
-
-        private const int ROTOM_HEAT_FORM_NAME_INDEX_PL = 120;
-        private const int ROTOM_HEAT_FORM_NAME_INDEX_HGSS = 154;
-
-        private const int ROTOM_WASH_FORM_NAME_INDEX_PL = 121;
-        private const int ROTOM_WASH_FORM_NAME_INDEX_HGSS = 155;
-
-        private const int ROTOM_FROST_FORM_NAME_INDEX_PL = 122;
-        private const int ROTOM_FROST_FORM_NAME_INDEX_HGSS = 156;
-
-        private const int ROTOM_FAN_FORM_NAME_INDEX_PL = 123;
-        private const int ROTOM_FAN_FORM_NAME_INDEX_HGSS = 157;
-
-        private const int ROTOM_MOW_FORM_NAME_INDEX_PL = 124;
-        private const int ROTOM_MOW_FORM_NAME_INDEX_HGSS = 158;
-
-        private const int WORMADAM_SANDY_FORM_NAME_INDEX_DPPL = 18;
-        private const int WORMADAM_SANDY_FORM_NAME_INDEX_HGSS = 119;
-
-        private const int WORMADAM_TRASH_FORM_NAME_INDEX_DPPL = 19;
-        private const int WORMADAM_TRASH_FORM_NAME_INDEX_HGSS = 120;
-
-        private const int MOVES_NARC_ID_DP = 0x158;
-		private const int MOVES_NARC_ID_PL = 0x1BD;
-		private const int MOVES_NARC_ID_HGSS = 0x8C;
-        private const int JAP_MOVES_NARC_ID_DP = 0x159;
-        private const int JAP_MOVES_NARC_ID_PL = 0x1C3;
-        private const int JAP_MOVES_NARC_ID_HGSS = 0x8B;
-        private const int KOR_MOVES_NARC_ID_PL = 0x1A3;
-        private const int KOR_MOVES_NARC_ID_DP = 0x144;
-
-        private const int POKEMON_SPECIES_NARC_ID_DIAMOND = 0x146;
-		private const int POKEMON_SPECIES_NARC_ID_PEARL = 0x148;
-		private const int POKEMON_SPECIES_NARC_ID_PL = 0x1A5;
-		private const int POKEMON_SPECIES_NARC_ID_HGSS = 0x83;
-        private const int JAP_POKEMON_SPECIES_NARC_ID_D = 0x147;
-        private const int JAP_POKEMON_SPECIES_NARC_ID_P = 0x149;
-        private const int JAP_POKEMON_SPECIES_NARC_ID_PL = 0x1AB;
-        private const int JAP_POKEMON_SPECIES_NARC_ID_HGSS = 0x82;
-        private const int KOR_POKEMON_SPECIES_NARC_ID_PL = 0x18B;
-        private const int KOR_POKEMON_SPECIES_NARC_ID_D = 0x132;
-        private const int KOR_POKEMON_SPECIES_NARC_ID_P = 0x134;
-
-        private const int POKEDEX_NARC_ID_DP = 0x5A; //same for japanese & korean
-        private const int POKEDEX_NARC_ID_PL = 0x82; //same for japanese & korean, there is a seemingly identical narc at 0x81, but this one has gira in the name so it's likely the one platinum uses
-        private const int POKEDEX_NARC_ID_HGSS = 0x157; //same for korean
-        private const int JAP_POKEDEX_NARC_ID_HGSS = 0x156;
-
-        private const int NPC_TRADES_NARC_ID_DP = 0x10E;
-        private const int NPC_TRADES_NARC_ID_PL = 0x150;
-        private const int NPC_TRADES_NARC_ID_HGSS = 0xF1;
-        private const int JAP_NPC_TRADES_NARC_ID_PL = 0x151;
-        private const int JAP_NPC_TRADES_NARC_ID_HGSS = 0xF0;
-        private const int KOR_NPC_TRADES_NARC_ID_PL = 0x1BB;
-        private const int KOR_NPC_TRADES_NARC_ID_DP = 0x152;
-
-        private const int TEXT_NARC_ID_DP = 0x13D;
-		private const int TEXT_NARC_ID_PL = 0x194;
-		private const int TEXT_NARC_ID_HGSS = 0x9C;
-        private const int JAP_TEXT_NARC_ID_DP = 0x13E;
-        private const int JAP_TEXT_NARC_ID_PL = 0x19A;
-        private const int JAP_TEXT_NARC_ID_HGSS = 0x9B;
-        private const int KOR_TEXT_NARC_ID_DP = 0x129;
-        private const int KOR_TEXT_NARC_ID_PL = 0x17A;
-
-        private const int ITEMS_NARC_ID_DP = 0x13A;
-        private const int ITEMS_NARC_ID_PL = 0x192;
-        private const int ITEMS_NARC_ID_HGSS = 0x92;
-        private const int JAP_ITEMS_NARC_ID_DP = 0x13B;
-        private const int JAP_ITEMS_NARC_ID_PL = 0x198;
-        private const int JAP_ITEMS_NARC_ID_HGSS = 0x91;
-        private const int KOR_ITEMS_NARC_ID_DP = 0x126;
-        private const int KOR_ITEMS_NARC_ID_PL = 0x178;
-        private const int KOR_ITEMS_NARC_ID_HGSS = 0x92;
-
-        private const int LEVEL_UP_MOVES_NARC_ID_DP = 0x148;
-        private const int LEVEL_UP_MOVES_NARC_ID_PL = 0x1A7;
-        private const int LEVEL_UP_MOVES_NARC_ID_HGSS = 0xA2;
-        private const int JAP_LEVEL_UP_MOVES_NARC_ID_DP = 0x149;
-        private const int JAP_LEVEL_UP_MOVES_NARC_ID_PL = 0x1AD;
-        private const int JAP_LEVEL_UP_MOVES_NARC_ID_HGSS = 0xA1;
-        private const int KOR_LEVEL_UP_MOVES_NARC_ID_DP = 0x134;
-        private const int KOR_LEVEL_UP_MOVES_NARC_ID_PL = 0x18D;
-
-        private const int EGG_MOVES_NARC_ID_HGSS = 0x166;
-        private const int JAP_EGG_MOVES_NARC_ID_HGSS = 0x165;
 
         private const int MOVE_TUTOR_TABLE_BIN_HGSS = 0x1E6;
         private const int JP_KR_MOVE_TUTOR_TABLE_BIN_HGSS = 0x1E4;
 
-        private const int SPECIES_START_INDEX = 1;
-        private const int MOVE_START_INDEX = 1;
-
-        private const int SPECIES_WORMADAM_INDEX = 413;
-        private const int SPECIES_DEOXYS_INDEX = 386;
-        private const int SPECIES_GIRATINA_INDEX = 487;
-        private const int SPECIES_SHAYMIN_INDEX = 492;
-        private const int SPECIES_ROTOM_INDEX = 479;
-
-        public const int TRADE_JASMINE_INDEX = 5;
-        public const int TRADE_WEBSTER_INDEX = 7;
-
-        public const int UNKNOWN_ITEM_BLOCK_FIRST_INDEX_PLHGSS = 113;
-        public const int UNKNOWN_ITEM_BLOCK_FIRST_INDEX_DP = 112;
-        public const int UNKNOWN_ITEM_BLOCK_LAST_INDEX = 134;
-        public const int UNKNOWN_ITEM_LAST_INDEX_HGSS = 428;
-
         public const int POKEMON_NAME_MAX_LENGTH = 10;
         public const int MOVE_NAME_MAX_LENGTH = 12;
 
-        private const int NUM_ALT_FORMS_DP = 5;
-        private const int NUM_ALT_FORMS_PL_HGSS = 12;
+        
 
 
         #endregion
@@ -310,18 +185,18 @@ namespace Pokemon_Sinjoh_Editor
 			fat.SetTotalLengthForRom(FATLength);
             fat.Read(romFileReader);
 
-			movesNarc = new NarcFile(getMovesNarcOffset(), romFileReader);
-			pokemonSpeciesNarc = new NarcFile(getSpeciesNarcOffset(), romFileReader);
-            pokedexNarc = new NarcFile(getPokedexNarcOffset(), romFileReader);
-            npcTradesNarc = new NarcFile(getNPCTradesNarcOffset(), romFileReader);
-            itemsNarc = new NarcFile(getItemsNarcOffset(), romFileReader);
-            levelUpMovesNarc = new NarcFile(getLearnsetNarcOffset(), romFileReader);
-            gameTextNarc = new NarcFile(getTextNarcOffset(), romFileReader);
+			movesNarc = new NarcFile(NarcFile.GetMovesNarcOffset(fat), romFileReader);
+			pokemonSpeciesNarc = new NarcFile(NarcFile.GetSpeciesNarcOffset(fat, GameVersion), romFileReader);
+            pokedexNarc = new NarcFile(NarcFile.GetPokedexNarcOffset(fat), romFileReader);
+            npcTradesNarc = new NarcFile(NarcFile.GetNPCTradesNarcOffset(fat), romFileReader);
+            itemsNarc = new NarcFile(NarcFile.GetItemsNarcOffset(fat), romFileReader);
+            levelUpMovesNarc = new NarcFile(NarcFile.GetLearnsetNarcOffset(fat), romFileReader);
+            gameTextNarc = new NarcFile(NarcFile.GetTextNarcOffset(fat), romFileReader);
 
-            setupOverlays(romFileReader);
+            readOverlays(romFileReader);
 
             if (gameFamily == GameFamilies.HGSS)
-                eggMovesHGSSNarc = new NarcFile(getEggMoveNarcOffset(), romFileReader);
+                eggMovesHGSSNarc = new NarcFile(NarcFile.GetEggMoveNarcOffset(fat), romFileReader);
 
             gameText = new TextArchive(gameTextNarc, Language == Languages.KOREAN);
 
@@ -393,7 +268,7 @@ namespace Pokemon_Sinjoh_Editor
             {
                 pokedexHeightReader.ReadUInt32();
 
-                for (int i = UINT_NUM_BYTES; i < pokedexNarc.Elements[POKEDEX_NARC_HEIGHT_INDEX].Length; i += UINT_NUM_BYTES)
+                for (int i = UINT_NUM_BYTES; i < pokedexNarc.Elements[NarcFile.POKEDEX_HEIGHT_ELEMENT_INDEX].Length; i += UINT_NUM_BYTES)
                 {
                     HeightList.Add(new Height(pokedexHeightReader.ReadUInt32()));
                 }
@@ -404,7 +279,7 @@ namespace Pokemon_Sinjoh_Editor
             {
                 pokedexWeightReader.ReadUInt32();
 
-                for (int i = UINT_NUM_BYTES; i < pokedexNarc.Elements[POKEDEX_NARC_WEIGHT_INDEX].Length; i += UINT_NUM_BYTES)
+                for (int i = UINT_NUM_BYTES; i < pokedexNarc.Elements[NarcFile.POKEDEX_WEIGHT_ELEMENT_INDEX].Length; i += UINT_NUM_BYTES)
                 {
                     WeightList.Add(new Weight(pokedexWeightReader.ReadUInt32()));
                 }
@@ -413,7 +288,7 @@ namespace Pokemon_Sinjoh_Editor
 
         }
 
-        private static void setupOverlays(BinaryReader romFileReader)
+        private static void readOverlays(BinaryReader romFileReader)
         {
             if (gameFamily != GameFamilies.HGSS)
             {
@@ -537,251 +412,6 @@ namespace Pokemon_Sinjoh_Editor
             return textList;
         }
 
-		private static uint getMovesNarcOffset()
-		{
-            if (Language == Languages.JAPANESE)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(JAP_MOVES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(JAP_MOVES_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(JAP_MOVES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else if (Language == Languages.KOREAN)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(KOR_MOVES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(KOR_MOVES_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(MOVES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(MOVES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(MOVES_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(MOVES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-               
-		}
-
-		private static uint getSpeciesNarcOffset()
-		{
-            if (Language == Languages.JAPANESE)
-            {
-                return GameVersion switch
-                {
-                    GameVersions.DIAMOND => fat.GetStartOffset(JAP_POKEMON_SPECIES_NARC_ID_D),
-                    GameVersions.PEARL => fat.GetStartOffset(JAP_POKEMON_SPECIES_NARC_ID_P),
-                    GameVersions.PLATINUM => fat.GetStartOffset(JAP_POKEMON_SPECIES_NARC_ID_PL),
-                    GameVersions.HEARTGOLD => fat.GetStartOffset(JAP_POKEMON_SPECIES_NARC_ID_HGSS),
-                    GameVersions.SOULSILVER => fat.GetStartOffset(JAP_POKEMON_SPECIES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else if (Language == Languages.KOREAN)
-            {
-                return GameVersion switch
-                {
-                    GameVersions.DIAMOND => fat.GetStartOffset(KOR_POKEMON_SPECIES_NARC_ID_D),
-                    GameVersions.PEARL => fat.GetStartOffset(KOR_POKEMON_SPECIES_NARC_ID_P),
-                    GameVersions.PLATINUM => fat.GetStartOffset(KOR_POKEMON_SPECIES_NARC_ID_PL),
-                    GameVersions.HEARTGOLD => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_HGSS),
-                    GameVersions.SOULSILVER => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else
-            {
-                return GameVersion switch
-                {
-                    GameVersions.DIAMOND => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_DIAMOND),
-                    GameVersions.PEARL => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_PEARL),
-                    GameVersions.PLATINUM => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_PL),
-                    GameVersions.HEARTGOLD => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_HGSS),
-                    GameVersions.SOULSILVER => fat.GetStartOffset(POKEMON_SPECIES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            
-		}
-
-        private static uint getPokedexNarcOffset()
-        {
-            if (Language == Languages.JAPANESE)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(POKEDEX_NARC_ID_DP), //same as all other langauges
-                    GameFamilies.PL => fat.GetStartOffset(POKEDEX_NARC_ID_PL), //same as all other langauges
-                    GameFamilies.HGSS => fat.GetStartOffset(JAP_POKEDEX_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(POKEDEX_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(POKEDEX_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(POKEDEX_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-        }
-
-		private static uint getNPCTradesNarcOffset()
-		{
-            if (Language == Languages.JAPANESE)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(NPC_TRADES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(JAP_NPC_TRADES_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(JAP_NPC_TRADES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else if (Language == Languages.KOREAN)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(KOR_NPC_TRADES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(KOR_NPC_TRADES_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(NPC_TRADES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(NPC_TRADES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(NPC_TRADES_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(NPC_TRADES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-        }
-
-        private static uint getItemsNarcOffset()
-        { 
-            if (Language == Languages.JAPANESE)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(JAP_ITEMS_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(JAP_ITEMS_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(JAP_ITEMS_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else if (Language == Languages.KOREAN)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(KOR_ITEMS_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(KOR_ITEMS_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(KOR_ITEMS_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(ITEMS_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(ITEMS_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(ITEMS_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-        }
-
-        private static uint getLearnsetNarcOffset()
-        {
-            if (Language == Languages.JAPANESE)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(JAP_LEVEL_UP_MOVES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(JAP_LEVEL_UP_MOVES_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(JAP_LEVEL_UP_MOVES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else if (Language == Languages.KOREAN)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(KOR_LEVEL_UP_MOVES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(KOR_LEVEL_UP_MOVES_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(LEVEL_UP_MOVES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(LEVEL_UP_MOVES_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(LEVEL_UP_MOVES_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(LEVEL_UP_MOVES_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-        }
-
-        private static uint getTextNarcOffset()
-		{
-			if (Language == Languages.JAPANESE)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(JAP_TEXT_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(JAP_TEXT_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(JAP_TEXT_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else if (Language == Languages.KOREAN)
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(KOR_TEXT_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(KOR_TEXT_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(TEXT_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-            else
-            {
-                return gameFamily switch
-                {
-                    GameFamilies.DP => fat.GetStartOffset(TEXT_NARC_ID_DP),
-                    GameFamilies.PL => fat.GetStartOffset(TEXT_NARC_ID_PL),
-                    GameFamilies.HGSS => fat.GetStartOffset(TEXT_NARC_ID_HGSS),
-                    _ => 0
-                };
-            }
-                
-		}
-
-        private static uint getEggMoveNarcOffset()
-        {
-            if (Language == Languages.JAPANESE)
-                return fat.GetStartOffset(JAP_EGG_MOVES_NARC_ID_HGSS);
-            else
-                return fat.GetStartOffset(EGG_MOVES_NARC_ID_HGSS);
-        }
-
         private static int getMoveTutorTableBinOffset()
         {
             if (gameFamily == GameFamilies.HGSS)
@@ -799,131 +429,6 @@ namespace Pokemon_Sinjoh_Editor
             {
                 return 0; //placeholder value
             }
-        }
-
-        private static int getDeoxysAttackFormNameIndex()
-		{
-            return gameFamily switch
-            {
-                GameFamilies.DP => DEOXYS_ATTACK_FORM_NAME_INDEX_DP,
-                GameFamilies.PL => DEOXYS_ATTACK_FORM_NAME_INDEX_PL,
-                GameFamilies.HGSS => DEOXYS_ATTACK_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getDeoxysDefenseFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.DP => DEOXYS_DEFENSE_FORM_NAME_INDEX_DP,
-                GameFamilies.PL => DEOXYS_DEFENSE_FORM_NAME_INDEX_PL,
-                GameFamilies.HGSS => DEOXYS_DEFENSE_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getDeoxysSpeedFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.DP => DEOXYS_SPEED_FORM_NAME_INDEX_DP,
-                GameFamilies.PL => DEOXYS_SPEED_FORM_NAME_INDEX_PL,
-                GameFamilies.HGSS => DEOXYS_SPEED_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getWormadamSandyFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.DP => WORMADAM_SANDY_FORM_NAME_INDEX_DPPL,
-                GameFamilies.PL => WORMADAM_SANDY_FORM_NAME_INDEX_DPPL,
-                GameFamilies.HGSS => WORMADAM_SANDY_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getWormadamTrashFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.DP => WORMADAM_TRASH_FORM_NAME_INDEX_DPPL,
-                GameFamilies.PL => WORMADAM_TRASH_FORM_NAME_INDEX_DPPL,
-                GameFamilies.HGSS => WORMADAM_TRASH_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getGiratinaOriginFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.PL => GIRATINA_ORIGIN_FORM_NAME_INDEX_PL,
-                GameFamilies.HGSS => GIRATINA_ORIGIN_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getShayminSkyFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.PL => SHAYMIN_SKY_FORM_NAME_INDEX_PL,
-                GameFamilies.HGSS => SHAYMIN_SKY_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getRotomHeatFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.PL => ROTOM_HEAT_FORM_NAME_INDEX_PL,
-                GameFamilies.HGSS => ROTOM_HEAT_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getRotomWashFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.PL => ROTOM_WASH_FORM_NAME_INDEX_PL,
-                GameFamilies.HGSS => ROTOM_WASH_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getRotomFrostFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.PL => ROTOM_FROST_FORM_NAME_INDEX_PL,
-                GameFamilies.HGSS => ROTOM_FROST_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getRotomFanFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.PL => ROTOM_FAN_FORM_NAME_INDEX_PL,
-                GameFamilies.HGSS => ROTOM_FAN_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
-        }
-
-        private static int getRotomMowFormNameIndex()
-        {
-            return gameFamily switch
-            {
-                GameFamilies.PL => ROTOM_MOW_FORM_NAME_INDEX_PL,
-                GameFamilies.HGSS => ROTOM_MOW_FORM_NAME_INDEX_HGSS,
-                _ => -1
-            };
         }
 
         public static int GetNumPokemon() => WeightList.Count;
@@ -1085,7 +590,7 @@ namespace Pokemon_Sinjoh_Editor
                     for (int i = 0; i < HeightList.Count; i++)
                         heightWriter.Write(HeightList[i].decimeters);
 
-                    pokedexNarc.Elements[POKEDEX_NARC_HEIGHT_INDEX] = (MemoryStream)heightWriter.BaseStream;
+                    pokedexNarc.Elements[NarcFile.POKEDEX_HEIGHT_ELEMENT_INDEX] = (MemoryStream)heightWriter.BaseStream;
                 };
 
                 using (BinaryWriter weightWriter = new BinaryWriter(new MemoryStream(HeightList.Count * UINT_NUM_BYTES)))
@@ -1093,7 +598,7 @@ namespace Pokemon_Sinjoh_Editor
                     for (int i = 0; i < WeightList.Count; i++)
                         weightWriter.Write(WeightList[i].hectograms);
 
-                    pokedexNarc.Elements[POKEDEX_NARC_WEIGHT_INDEX] = (MemoryStream)weightWriter.BaseStream;
+                    pokedexNarc.Elements[NarcFile.POKEDEX_WEIGHT_ELEMENT_INDEX] = (MemoryStream)weightWriter.BaseStream;
                 };
             }
 
@@ -1169,62 +674,6 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
-        //will replace this static list later if there's a good way to get/set what moves are set as TMs (this is stored in ARM9 binary)
-        public static string[] GetTMNames()
-		{
-            string tmString;
-            string[] TMNames = new string[92];
-            int[] TMIndices = { 264, 337, 352, 347, 46, 92, 258, 339, 331, 237, 241, 269, 58, 59, 63, 113, 182, 240, 202, 219, 218, 76, 231, 85, 87, 89, 216,
-            91, 94, 247, 280, 104, 115, 351, 53, 188, 201, 126, 317, 332, 259, 263, 290, 156, 213, 168, 211, 285, 289, 315, 355, 411, 412, 206, 362, 374, 
-            451, 203, 406, 409, 261, 318, 373, 153, 421, 371, 278, 416, 397, 148, 444, 419, 86, 360, 14, 446, 244, 445, 399, 157, 404, 214,
-            363, 398, 138, 447, 207, 365, 369, 164, 430, 433};
-
-            tmString = INIManager.Language switch
-            {
-                Languages.ENGLISH => "TM",
-                Languages.FRENCH => "CT",
-                Languages.SPANISH => "MT",
-                Languages.GERMAN => "TM",
-                Languages.ITALIAN => "MT",
-                Languages.JAPANESE => "わざマシン",
-                Languages.KOREAN => "기술머신",
-                _ => "TM"
-            };
-
-            for (int i = 0; i < 92; i++)
-                TMNames[i] = tmString + (i + 1).ToString("D2") + " " + MoveNames[TMIndices[i] - MOVE_START_INDEX];
-
-            return TMNames;
-		}
-
-		//will replace static indices later if there's a good way to get/set what moves are HMs (this is stored in ARM9 binary)
-        public static string[] GetHMNames()
-        {
-            string hmString;
-            string[] HMNames = new string[8];
-            int[] HMIndices = { 15, 19, 57, 70, 250, 249, 127, 431 };
-
-            if (gameFamily != GameFamilies.HGSS)
-                HMIndices[5] = 432; //replace whirlpool with defog for HM05
-
-            hmString = INIManager.Language switch
-            {
-                Languages.ENGLISH => "HM0",
-                Languages.FRENCH => "CS0",
-                Languages.SPANISH => "MO0",
-                Languages.GERMAN => "VM",
-                Languages.ITALIAN => "MN",
-                Languages.JAPANESE => "ひでんマシン0",
-                Languages.KOREAN => "비전머신",
-                _ => "HM0"
-            };
-
-            for (int i = 0; i < 8; i++)
-                HMNames[i] = hmString + (i + 1) + " " + MoveNames[HMIndices[i] - MOVE_START_INDEX];
-
-            return HMNames;
-        }
-
         public static string GetAbilityName(int speciesIndex, PersonalityValue pv)
         {
             int genderRatio = PokemonSpeciesList[speciesIndex].GenderRatio;
@@ -1238,10 +687,7 @@ namespace Pokemon_Sinjoh_Editor
 
         public static string GetAbility1Name(int speciesIndex) => AbilityNames[PokemonSpeciesList[speciesIndex].Ability1];
         public static string GetAbility2Name(int speciesIndex) => AbilityNames[PokemonSpeciesList[speciesIndex].Ability2];
-
         public static string GetGameVersion() => GameVersion.ToString();
-		public static string[] GetMoveNames() => MoveNames.ToArray();
-
         public static int GetNumTextbanks() => gameText.TextBanks.Length - 1;
 
         public static string GetMoveDescription(int moveIndex) => MoveDescriptions[moveIndex].Replace("\\n", " ");
@@ -1256,7 +702,7 @@ namespace Pokemon_Sinjoh_Editor
             string[] altFormNames = GetSpeciesAltFormNames();
 
             for (int i = 0; i < altFormNames.Length; i++)
-                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + SPECIES_START_INDEX + i] = altFormNames[i];
+                speciesNames[PokemonSpecies.BAD_EGG_SPECIES_INDEX + PokemonSpecies.START_INDEX + i] = altFormNames[i];
 
             return speciesNames;
         }
@@ -1294,32 +740,30 @@ namespace Pokemon_Sinjoh_Editor
             string[] altFormNames;
 
             if (gameFamily == GameFamilies.DP)
-                altFormNames = new string[NUM_ALT_FORMS_DP];
+                altFormNames = new string[PokemonSpecies.NUM_ALT_FORMS_DP];
             else
-                altFormNames = new string[NUM_ALT_FORMS_PL_HGSS];
+                altFormNames = new string[PokemonSpecies.NUM_ALT_FORMS_PL_HGSS];
 
-            altFormNames[0] = PokemonNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysAttackFormNameIndex()] + ")";
-            altFormNames[1] = PokemonNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysDefenseFormNameIndex()] + ")";
-            altFormNames[2] = PokemonNames[SPECIES_DEOXYS_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getDeoxysSpeedFormNameIndex()] + ")";
-            altFormNames[3] = PokemonNames[SPECIES_WORMADAM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getWormadamSandyFormNameIndex()] + ")";
-            altFormNames[4] = PokemonNames[SPECIES_WORMADAM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getWormadamTrashFormNameIndex()] + ")";
+            altFormNames[0] = PokemonNames[PokemonSpecies.DEOXYS_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetDeoxysAttackFormNameIndex()] + ")";
+            altFormNames[1] = PokemonNames[PokemonSpecies.DEOXYS_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetDeoxysDefenseFormNameIndex()] + ")";
+            altFormNames[2] = PokemonNames[PokemonSpecies.DEOXYS_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetDeoxysSpeedFormNameIndex()] + ")";
+            altFormNames[3] = PokemonNames[PokemonSpecies.WORMADAM_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetWormadamSandyFormNameIndex()] + ")";
+            altFormNames[4] = PokemonNames[PokemonSpecies.WORMADAM_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetWormadamTrashFormNameIndex()] + ")";
 
             if (gameFamily != GameFamilies.DP)
             {
-                altFormNames[5] = PokemonNames[SPECIES_GIRATINA_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getGiratinaOriginFormNameIndex()] + ")";
-                altFormNames[6] = PokemonNames[SPECIES_SHAYMIN_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getShayminSkyFormNameIndex()] + ")";
-                altFormNames[7] = PokemonNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomHeatFormNameIndex()] + ")";
-                altFormNames[8] = PokemonNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomWashFormNameIndex()] + ")";
-                altFormNames[9] = PokemonNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomFrostFormNameIndex()] + ")";
-                altFormNames[10] = PokemonNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomFanFormNameIndex()] + ")";
-                altFormNames[11] = PokemonNames[SPECIES_ROTOM_INDEX - SPECIES_START_INDEX] + " (" + PokedexText[getRotomMowFormNameIndex()] + ")";
+                altFormNames[5] = PokemonNames[PokemonSpecies.GIRATINA_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetGiratinaOriginFormNameIndex()] + ")";
+                altFormNames[6] = PokemonNames[PokemonSpecies.SHAYMIN_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetShayminSkyFormNameIndex()] + ")";
+                altFormNames[7] = PokemonNames[PokemonSpecies.ROTOM_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetRotomHeatFormNameIndex()] + ")";
+                altFormNames[8] = PokemonNames[PokemonSpecies.ROTOM_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetRotomWashFormNameIndex()] + ")";
+                altFormNames[9] = PokemonNames[PokemonSpecies.ROTOM_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetRotomFrostFormNameIndex()] + ")";
+                altFormNames[10] = PokemonNames[PokemonSpecies.ROTOM_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetRotomFanFormNameIndex()] + ")";
+                altFormNames[11] = PokemonNames[PokemonSpecies.ROTOM_INDEX - PokemonSpecies.START_INDEX] + " (" + PokedexText[TextArchive.GetRotomMowFormNameIndex()] + ")";
             }
 
             return altFormNames;
         }
 
-        public static string GetPokedexCategory(int pokemonIndex) => PokedexCategoryNames[pokemonIndex];
-        public static string[] GetItemNames() => ItemNames.ToArray();
         public static string[] GetItemNamesWithoutUnknown()
         {
             List<string> itemNames = new List<string>(itemsNarc.Elements.Count);
@@ -1328,22 +772,22 @@ namespace Pokemon_Sinjoh_Editor
             int lastUnknownItemIndex;
 
             if (gameFamily == GameFamilies.DP)
-                firstUnknownItemIndex = UNKNOWN_ITEM_BLOCK_FIRST_INDEX_DP;
+                firstUnknownItemIndex = Item.UNKNOWN_BLOCK_FIRST_INDEX_DP;
             else
-                firstUnknownItemIndex = UNKNOWN_ITEM_BLOCK_FIRST_INDEX_PLHGSS;
+                firstUnknownItemIndex = Item.UNKNOWN_BLOCK_FIRST_INDEX_PLHGSS;
 
             for (int i = 0; i < firstUnknownItemIndex; i++)
                 itemNames.Add(ItemNames[i]);
 
             if (gameFamily == GameFamilies.HGSS)
             {
-                lastUnknownItemIndex = UNKNOWN_ITEM_LAST_INDEX_HGSS;
+                lastUnknownItemIndex = Item.UNKNOWN_LAST_INDEX_HGSS;
 
-                for (int i = UNKNOWN_ITEM_BLOCK_LAST_INDEX + 1; i < UNKNOWN_ITEM_LAST_INDEX_HGSS; i++)
+                for (int i = Item.UNKNOWN_BLOCK_LAST_INDEX + 1; i < Item.UNKNOWN_LAST_INDEX_HGSS; i++)
                     itemNames.Add(ItemNames[i]);
             }
             else
-                lastUnknownItemIndex = UNKNOWN_ITEM_BLOCK_LAST_INDEX;
+                lastUnknownItemIndex = Item.UNKNOWN_BLOCK_LAST_INDEX;
 
                 for (int i = lastUnknownItemIndex + 1; i < ItemNames.Count; i++)
                     itemNames.Add(ItemNames[i]);
@@ -1352,203 +796,6 @@ namespace Pokemon_Sinjoh_Editor
         }
 
 
-        public static string[] GetTypeNames() => TypeNames.ToArray();
-		public static string[] GetAbilityNames() => AbilityNames.ToArray();
-        public static string[] GetMoveCategories()
-        {
-            return INIManager.Language switch
-            {
-                Languages.ENGLISH => Enum.GetNames(typeof(Move.Categories)),
-                Languages.FRENCH => new string[]{ "Physique", "Spéciale", "Statut" },
-                Languages.SPANISH => new string[] { "Físico", "Especial", "Estado" },
-                Languages.GERMAN => new string[] { "Physische", "Spezial", "Status" },
-                Languages.ITALIAN => new string[] { "Fisica", "Speciale", "Stato" },
-                Languages.JAPANESE => new string[] { "物理", "特殊", "変化" },
-                Languages.KOREAN => new string[] { "물리", "특수", "변화" },
-                _ => Enum.GetNames(typeof(Move.Categories))
-            };
-            
-        }
-
-        public static string[] GetMoveContestConditions()
-        {
-            if (INIManager.Language == Languages.ENGLISH)
-                return Enum.GetNames(typeof(Move.ContestConditions));
-            else if (INIManager.Language == Languages.FRENCH)
-                return new string[] { "Sang-froid", "Beauté", "Grâce", "Intelligence", "Robustesse" };
-            else if (INIManager.Language == Languages.SPANISH)
-                return new string[] { "Carisma", "Belleza", "Dulzura", "Ingenio", "Dureza" };
-            else if (INIManager.Language == Languages.GERMAN)
-                return new string[] { "Coole", "Schönheit", "Anmut", "Klugheit", "Stärke" };
-            else if (INIManager.Language == Languages.ITALIAN)
-                return new string[] { "Classe", "Bellezza", "Grazia", "Acume", "Grinta" };
-            else if (INIManager.Language == Languages.JAPANESE)
-                return new string[] { "かっこよさ", "うつくしさ", "かわいさ", "かしこさ", "たくましさ" };
-            else if (INIManager.Language == Languages.KOREAN)
-                return new string[] { "근사함", "아름다움", "귀여움", "슬기로움", "강인함" };
-            else
-                return Enum.GetNames(typeof(Move.ContestConditions));
-        }
-		public static string[] GetMoveContestEffect() => Move.ContestEffectDescriptions;
-
-        public static string[] GetMoveTargets()
-        {
-            switch (INIManager.Language)
-            {
-                case Languages.ENGLISH:
-                    string[] targetNames = Enum.GetNames(typeof(Move.Targets));
-
-                    for (int i = 0; i < targetNames.Length; i++)
-                        targetNames[i] = targetNames[i].Replace('_', ' ');
-                    return targetNames;
-                case Languages.FRENCH:
-                    return new string[] { "Normale", "1 OTHER", "1 adv. au hasard", "Adv. proches", "PKMN proches", "Soi", "Côté allié", "Tous côtés", "Côté adv.", "1 allié", "Soi ou 1 allié", "ANY FOE" };
-                case Languages.SPANISH:
-                    return new string[] { "Normal", "1 OTHER", "1 rival aleatorio", "Rivales cercanos", "Pokémon cercanos", "Usuario", "Aliados de combate", "Todos", "Rivales de combate", "1 aliado", "Usuario o 1 aliado", "ANY FOE" };
-                case Languages.GERMAN:
-                    return new string[] { "Normal", "1 OTHER", "1 beliebiger Gegner", "Mehrere Gegner", "PKMN im Umkreis", "Anwender", "Eigene Seite", "Beide Seiten", "Gegnerseite", "1 Mitstreiter", "Anwender oder 1 Mitsreiter", "ANY FOE" };
-                case Languages.ITALIAN:
-                    return new string[] { "Normale", "1 OTHER", "Un nemico a caso", "Più nemici", "Più alleati", "Se stesso", "Tuo campo", "Entrambi i campi", "Campo nemico", "Un alleato", "Se stesso o un alleato", "ANY FOE" };
-                case Languages.JAPANESE:
-                    return new string[] { "通常", "相手複数", "相手ランダ", "相手複数", "相手", "自分", "味方場", "味方複数", "相手場", "味方１匹", "自分か味方１匹", "相手１匹" };
-                case Languages.KOREAN:
-                    return new string[] { "통상", "1 OTHER", "상대랜덤1마리", "상대복수", "상대·같은편복수", "자신", "같은편장소", "상대·같으편장소", "상대장소", "같은편1마리", "자신또는같은편1마리", "ANY FOE" };
-                default:
-                    return new string[0];
-            }
-        }
-
-        public static string[] GetEggGroupNames() 
-        {
-            switch (INIManager.Language)
-            {
-                case Languages.ENGLISH:
-                    string[] eggGroupNames = Enum.GetNames(typeof(PokemonSpecies.EggGroups));
-
-                    for (int i = 0; i < eggGroupNames.Length; i++)
-                        eggGroupNames[i] = eggGroupNames[i].Replace('_', ' ');
-
-                    return eggGroupNames;
-                case Languages.FRENCH:
-                    return new string[] { "Monstreux", "Aquatique", "Insectoïde", "Aérien", "Terrestre", "Féerique", "Végétal", "Humanoïde", "Aquatique 3", "Minéral", "Amorphe", "Aquatique 2", "Métamorph", "Draconique", "Inconnu" };
-                case Languages.SPANISH:
-                    return new string[] { "Monstruo", "Agua 1", "Bicho", "Volador", "Campo", "Hada", "Planta", "Humanoide", "Agua 3", "Mineral", "Amorfo", "Agua 2", "Ditto", "Dragón", "Desconocido" };
-                case Languages.GERMAN:
-                    return new string[] { "Monster", "Wasser 1", "Käfer", "Flug", "Feld", "Fee", "Pflanze", "Humanotyp", "Wasser 3", "Mineral", "Amorph", "Wasser 2", "Ditto", "Drache", "Unbekannt" };
-                case Languages.ITALIAN:
-                    return new string[] { "Mostro", "Acqua 1", " Coleottero", "Volante", "Campo", "Magico", "Erba", "Umanoide", "Acqua 3", "Minerale", "Amorfo", "Acqua 2", "Ditto", "Drago", "Sconosciuto" };
-                case Languages.JAPANESE:
-                    return new string[] { "怪獣"    , "水中 1"   , "虫グ"        , "飛行"   , "陸上"      , "妖精"    , "植物", "人型", "水中 3", "鉱物", "不定形", "水中 2", "メタモン", "ドラゴ", "タマゴ未発見" };
-                case Languages.KOREAN:
-                    return new string[] { "괴수", "수중 1", "벌레", "비행", "육상", "요정", "식물", "인간형", "수중 3", "광물", "부정형", "수중 2", "메타몽", "드래곤", "알미발견" };
-                default:
-                    return new string[0];
-            }
-        }
-
-        public static string[] GetXPGroupNames()
-        {
-            switch (INIManager.Language)
-            {
-                case Languages.ENGLISH:
-                    string[] xpGroupNames = Enum.GetNames(typeof(PokemonSpecies.XPGroups));
-
-                    for (int i = 0; i < xpGroupNames.Length; i++)
-                        xpGroupNames[i] = xpGroupNames[i].Replace('_', ' ');
-                    return xpGroupNames;
-
-                case Languages.FRENCH:
-                    return new string[] { "Moyenne", "Erratique", "Fluctuante", "Parabolique", "Rapide", "Lente", "???", "???" };
-                case Languages.SPANISH:
-                    return new string[] { "Medio", "Errático", "Fluctuante", "Parabólico", "Rápido", "Lento", "???", "???" };
-                case Languages.GERMAN:
-                    return new string[] { "Mittel-Schnell", "Erratic", "Fluctuating", "Mittel-Langsam", "Schnell", "Langsam", "???", "???" };
-                case Languages.ITALIAN:
-                    return new string[] { "Medio-veloce", "Irregolare", "Fluttuante", "Medio-lenta", "Veloce", "Lenta", "???", "???" };
-                case Languages.JAPANESE:
-                    return new string[] { "100万タイプ", "60万タイプ", "164万タイプ", "105万タイプ", "80万タイプ", "125万タイプ", "???", "???" };
-                case Languages.KOREAN: 
-                    return new string[] { "MEDIUM_FAST", "ERRATIC", "FLUCTUATING", "MEDIUM_SLOW", "FAST", "SLOW", "UNUSED1", "UNUSED2" };
-                default:
-                    return new string[0];
-            }
-        }
-
-		public static string[] GetLanguageNames()
-        {
-            return INIManager.Language switch
-            {
-                Languages.ENGLISH => Enum.GetNames(typeof(Languages)),
-                Languages.FRENCH => new string[] { "Japonais", "Anglais", "Français", "Italien", "Allemand", "???", "Espagnol", "Coréen" },
-                Languages.SPANISH => new string[] { "Japonés", "Inglés", "Francés", "Italiano", "Alemán", "???", "Español", "Coreano" },
-                Languages.GERMAN => new string[] { "Japanisch", "Englisch", "Französisch", "Italienisch", "Deutsch", "???", "Spanisch", "Koreanisch" },
-                Languages.ITALIAN => new string[] { "Giapponese", "Inglese", "Francese", "Italiano", "Tedesco", "???", "Spagnolo", "Coreano" },
-                Languages.JAPANESE => new string[] { "日本語", "英語", "フランス語", "イタリア語", "ドイツ語", "???", "スペイン語", "ハングル語" },
-                Languages.KOREAN => new string[] { "일본어", "영어", "프랑스어", "이탈리아어", "독일어", "???", "스페인어", "한국어" },
-                _ => Enum.GetNames(typeof(Languages))
-            };
-
-            
-        }
-
-		public static string[] GetWantedGenderNames() => Enum.GetNames(typeof(NPCTrade.WantedGender));
-
-        public static string GetGenderName(Gender gender)
-        {
-            switch (INIManager.Language)
-            {
-                case Languages.ENGLISH:
-                    return gender.ToString();
-                case Languages.FRENCH:
-                    if (gender == Gender.MALE)
-                        return "Mâle";
-                    else if (gender == Gender.FEMALE)
-                        return "Femelle";
-                    else
-                        return "Inconnu";
-                case Languages.SPANISH:
-                    if (gender == Gender.MALE)
-                        return "Macho";
-                    else if (gender == Gender.FEMALE)
-                        return "Hembra";
-                    else
-                        return "Sin sexo";
-                case Languages.GERMAN:
-                    if (gender == Gender.MALE)
-                        return "Männlich";
-                    else if (gender == Gender.FEMALE)
-                        return "Weiblich";
-                    else
-                        return "Unbekannt";
-                case Languages.ITALIAN:
-                    if (gender == Gender.MALE)
-                        return "Maschio";
-                    else if (gender == Gender.FEMALE)
-                        return "Femmina";
-                    else
-                        return "Unbekannt";
-                case Languages.JAPANESE:
-                    if (gender == Gender.MALE)
-                        return "オス";
-                    else if (gender == Gender.FEMALE)
-                        return "メス";
-                    else
-                        return "性別不明";
-                case Languages.KOREAN:
-                    if (gender == Gender.MALE)
-                        return "수컷";
-                    else if (gender == Gender.FEMALE)
-                        return "암컷";
-                    else
-                        return "성별 불명";
-                default:
-                    return gender.ToString();
-            }
-        }
-
-		public static string[] GetTradePokemonNickNames() => TradePokemonNicknames.ToArray();
-		public static string[] GetTradePokemonTrainerNames() => TradePokemonTrainerNames.ToArray();
-        public static string[] GetFieldPocketNames() => Enum.GetNames(typeof(Item.FieldPockets));
-        public static string[] GetBattlePocketNames() => Enum.GetNames(typeof(Item.BattlePockets));
+        
     }
 }

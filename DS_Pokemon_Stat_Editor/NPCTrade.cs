@@ -26,6 +26,9 @@ namespace Pokemon_Sinjoh_Editor
         public byte Smart;
         public byte Tough;
 
+        public const int TRADE_JASMINE_INDEX = 5;
+        public const int TRADE_WEBSTER_INDEX = 7;
+
         public enum WantedGender
         {
             ANY,
