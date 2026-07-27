@@ -17,7 +17,7 @@ namespace Pokemon_Sinjoh_Editor
         public ushort OriginalTrainerID;
         public ushort HeldItem;
         public Languages LanguageOfOrigin;
-        public WantedGender Gender;
+        public TrainerGender OTGender;
         public PersonalityValue PersonalityValue;
         public byte Sheen;
         public byte Cool;
@@ -29,9 +29,8 @@ namespace Pokemon_Sinjoh_Editor
         public const int TRADE_JASMINE_INDEX = 5;
         public const int TRADE_WEBSTER_INDEX = 7;
 
-        public enum WantedGender
+        public enum TrainerGender
         {
-            ANY,
             FEMALE,
             MALE
         }
@@ -59,7 +58,7 @@ namespace Pokemon_Sinjoh_Editor
 
             this.PersonalityValue = new PersonalityValue(tradeBinaryReader.ReadUInt32());
             HeldItem = (ushort)tradeBinaryReader.ReadUInt32();
-            Gender = (WantedGender)tradeBinaryReader.ReadUInt32();
+            OTGender = (TrainerGender)tradeBinaryReader.ReadUInt32();
             Sheen = (byte)tradeBinaryReader.ReadUInt32();
             LanguageOfOrigin = (Languages)tradeBinaryReader.ReadUInt32();
             WantedPokemon = (ushort)tradeBinaryReader.ReadUInt32();
@@ -90,7 +89,7 @@ namespace Pokemon_Sinjoh_Editor
 
                 tradeBinaryWriter.Write(PersonalityValue.PV);
                 tradeBinaryWriter.Write((uint)HeldItem);
-                tradeBinaryWriter.Write((uint)Gender);
+                tradeBinaryWriter.Write((uint)OTGender);
                 tradeBinaryWriter.Write((uint)Sheen);
                 tradeBinaryWriter.Write((uint)LanguageOfOrigin);
                 tradeBinaryWriter.Write((uint)WantedPokemon);
