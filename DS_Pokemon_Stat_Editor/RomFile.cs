@@ -318,6 +318,8 @@ namespace Pokemon_Sinjoh_Editor
             levelUpMovesNarc = new NarcFile(getLearnsetNarcOffset(), romFileReader);
             gameTextNarc = new NarcFile(getTextNarcOffset(), romFileReader);
 
+            setupOverlays(romFileReader);
+
             if (gameFamily == GameFamilies.HGSS)
                 eggMovesHGSSNarc = new NarcFile(getEggMoveNarcOffset(), romFileReader);
 
@@ -348,7 +350,8 @@ namespace Pokemon_Sinjoh_Editor
             for (int i = 1; i < levelUpMovesNarc.Elements.Count; i++)
                 LevelUpMovesList.Add(new Learnset(levelUpMovesNarc.Elements[i]));
 
-            setupOverlays(romFileReader);
+            if (gameFamily != GameFamilies.HGSS)
+                setEggMoves(Overlays[Overlay.EGG_MOVE_INDEX_DPPL].GetSubsetStream(Overlay.GetEggMovesOffset(gameFamily, Language), Overlay.EGG_MOVES_LENGTH));
 
             if (gameFamily == GameFamilies.HGSS)
             {
@@ -363,13 +366,13 @@ namespace Pokemon_Sinjoh_Editor
             else if (gameFamily == GameFamilies.PL)
             {
                 uint numMoveTutorLearnsetEntries = (uint)(PokemonSpeciesList.Count - PokemonSpecies.NUM_EGG_ENTRIES);
-                uint moveTutorPoolOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL) + Overlay.MOVE_TUTOR_POOL_OFFSET_PL;
-                uint moveTutorLearnsetOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL) + Overlay.MOVE_TUTOR_LEARNSET_OFFSET_PL;
+                uint moveTutorPoolOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_INDEX_PL) + Overlay.MOVE_TUTOR_POOL_OFFSET_PL;
+                uint moveTutorLearnsetOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_INDEX_PL) + Overlay.MOVE_TUTOR_LEARNSET_OFFSET_PL;
                 uint moveTutorLearnsetLength = numMoveTutorLearnsetEntries * MoveTutorTable.BYTES_PER_SPECIES_PL;
                 uint moveTutorPoolLength = MoveTutorTable.NUM_MOVES_PL * TutorMoveEntryPL.NUM_BYTES_PER;
 
-                moveTutorLearnsetPL = new PartialOverlay(romFileReader, Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL, moveTutorLearnsetOffset, moveTutorLearnsetLength);
-                moveTutorPoolPartOverlayPL = new PartialOverlay(romFileReader, Overlay.MOVE_TUTOR_OVERLAY_INDEX_PL, moveTutorPoolOffset, moveTutorPoolLength);
+                moveTutorLearnsetPL = new PartialOverlay(romFileReader, Overlay.MOVE_TUTOR_INDEX_PL, moveTutorLearnsetOffset, moveTutorLearnsetLength);
+                moveTutorPoolPartOverlayPL = new PartialOverlay(romFileReader, Overlay.MOVE_TUTOR_INDEX_PL, moveTutorPoolOffset, moveTutorPoolLength);
 
                 List<MemoryStream> moveTutorLearnsetMemStreams = moveTutorLearnsetPL.SplitIntoMemStreams(MoveTutorTable.BYTES_PER_SPECIES_PL);
                 List<MemoryStream> moveTutorPoolMemoryStream = moveTutorPoolPartOverlayPL.SplitIntoMemStreams(TutorMoveEntryPL.NUM_BYTES_PER);
@@ -408,7 +411,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private static void setupOverlays(BinaryReader romFileReader)
         {
-            if (gameFamily == GameFamilies.PL)
+            if (gameFamily != GameFamilies.HGSS)
             {
                 Overlays.Add(5, new Overlay(fat, 5, romFileReader));
             }
@@ -1094,6 +1097,10 @@ namespace Pokemon_Sinjoh_Editor
             {
                 if (gameFamily == GameFamilies.HGSS)
                     eggMovesHGSSNarc.Elements[0] = getEggMovesStream();
+                else
+                {
+                    Overlays[Overlay.EGG_MOVE_INDEX_DPPL].ReplaceSubset(getEggMovesStream(), Overlay.GetEggMovesOffset(gameFamily, Language));
+                }
             }
 
             try
@@ -1130,7 +1137,11 @@ namespace Pokemon_Sinjoh_Editor
 
                 if (UnsavedChangesEggMoves)
                 {
-                    eggMovesHGSSNarc.Write(romWriter);
+                    if (gameFamily == GameFamilies.HGSS)
+                        eggMovesHGSSNarc.Write(romWriter);
+                    else
+                        Overlays[Overlay.EGG_MOVE_INDEX_DPPL].Write(romWriter);
+
                     UnsavedChangesEggMoves = false;
                 }
 

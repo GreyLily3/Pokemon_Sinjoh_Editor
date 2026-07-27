@@ -30,7 +30,7 @@ namespace Pokemon_Sinjoh_Editor
             this.length = length;
             isOffsetOverlayRelative = true;
 
-            Content = parentOverlay.GetOverlaySubset(startRelativeOffset, length);
+            Content = parentOverlay.GetSubsetBytes(startRelativeOffset, length);
         }
 
         public List<MemoryStream> SplitIntoMemStreams(uint bytesPerStream)

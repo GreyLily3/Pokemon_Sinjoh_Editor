@@ -182,27 +182,20 @@ namespace Pokemon_Sinjoh_Editor
                     learnsetMoveTutorCheckedListBox.SetItemChecked(moveIndex, true);
             }
 
-            if (RomFile.gameFamily == RomFile.GameFamilies.HGSS)
+            
+            int numEggMoves = RomFile.PokemonSpeciesList[pokemonIndex].EggMoves.Count;
+
+            for (int i = 0; i < numEggMoves; i++)
             {
-                int numEggMoves = RomFile.PokemonSpeciesList[pokemonIndex].EggMoves.Count;
-
-                for (int i = 0; i < numEggMoves; i++)
-                {
-                    learnsetEggMovesComboBoxes[i].Visible = true;
-                    learnsetEggMovesComboBoxes[i].SelectedIndex = RomFile.PokemonSpeciesList[pokemonIndex].EggMoves[i] - Pokemon_Sinjoh_Editor.Move.STARTING_INDEX;
-                }
-
-                for (int i = numEggMoves; i < learnsetEggMovesComboBoxes.Count; i++)
-                    learnsetEggMovesComboBoxes[i].Visible = false;
-
-            }
-            else
-            {
-                for (int i = 0; i < learnsetEggMovesComboBoxes.Count; i++)
-                    learnsetEggMovesComboBoxes[i].Visible = false;
+                learnsetEggMovesComboBoxes[i].Visible = true;
+                learnsetEggMovesComboBoxes[i].SelectedIndex = RomFile.PokemonSpeciesList[pokemonIndex].EggMoves[i] - Pokemon_Sinjoh_Editor.Move.STARTING_INDEX;
             }
 
-                learnsetControlsCanRecieveUserInput = true;
+            for (int i = numEggMoves; i < learnsetEggMovesComboBoxes.Count; i++)
+                learnsetEggMovesComboBoxes[i].Visible = false;
+
+           
+            learnsetControlsCanRecieveUserInput = true;
 
         }
 
