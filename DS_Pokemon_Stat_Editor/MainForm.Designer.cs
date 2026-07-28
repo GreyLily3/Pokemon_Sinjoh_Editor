@@ -92,8 +92,6 @@
             this.speciesDefenseEVLabel = new System.Windows.Forms.Label();
             this.speciesAttackEVLabel = new System.Windows.Forms.Label();
             this.speciesHPEVlabel = new System.Windows.Forms.Label();
-            this.speciesHMCheckedListBox = new System.Windows.Forms.CheckedListBox();
-            this.speciesTMCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.speciesComboBox = new System.Windows.Forms.ComboBox();
             this.speciesHeldItemsGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesHeldItem1Label = new System.Windows.Forms.Label();
@@ -138,8 +136,6 @@
             this.speciesSpeedLabel = new System.Windows.Forms.Label();
             this.speciesSpecialAttackLabel = new System.Windows.Forms.Label();
             this.speciesSpecialDefenseLabel = new System.Windows.Forms.Label();
-            this.speciesLearnableHMsLabel = new System.Windows.Forms.Label();
-            this.speciesLearnableTMsLabel = new System.Windows.Forms.Label();
             this.npcTradeTabPage = new System.Windows.Forms.TabPage();
             this.tradeNewPVGroupBox = new System.Windows.Forms.GroupBox();
             this.tradeRandomPVButton = new System.Windows.Forms.Button();
@@ -250,6 +246,10 @@
             this.TextBankIndexNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.textBankComboBox = new System.Windows.Forms.ComboBox();
             this.learnsetTabPage = new System.Windows.Forms.TabPage();
+            this.learnsetLearnableTMsLabel = new System.Windows.Forms.Label();
+            this.learnsetHMCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.learnsetLearnableHMsLabel = new System.Windows.Forms.Label();
+            this.learnsetTMCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.learnsetEggMovesGroupBox = new System.Windows.Forms.GroupBox();
             this.learnsetEggMove16ComboBox = new System.Windows.Forms.ComboBox();
             this.learnsetEggMove15ComboBox = new System.Windows.Forms.ComboBox();
@@ -911,8 +911,6 @@
             this.speciesTabPage.Controls.Add(this.speciesMiscGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesXPGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesEVOnDefeatGroupBox);
-            this.speciesTabPage.Controls.Add(this.speciesHMCheckedListBox);
-            this.speciesTabPage.Controls.Add(this.speciesTMCheckedListBox);
             this.speciesTabPage.Controls.Add(this.speciesComboBox);
             this.speciesTabPage.Controls.Add(this.speciesHeldItemsGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesAbilitiesGroupBox);
@@ -920,8 +918,6 @@
             this.speciesTabPage.Controls.Add(this.speciesTypesGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesGenderGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesBaseStatsGroupBox);
-            this.speciesTabPage.Controls.Add(this.speciesLearnableHMsLabel);
-            this.speciesTabPage.Controls.Add(this.speciesLearnableTMsLabel);
             this.speciesTabPage.Location = new System.Drawing.Point(4, 22);
             this.speciesTabPage.Name = "speciesTabPage";
             this.speciesTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -1239,24 +1235,6 @@
             this.speciesHPEVlabel.Size = new System.Drawing.Size(25, 13);
             this.speciesHPEVlabel.TabIndex = 2;
             this.speciesHPEVlabel.Text = "HP:";
-            // 
-            // speciesHMCheckedListBox
-            // 
-            this.speciesHMCheckedListBox.CheckOnClick = true;
-            this.speciesHMCheckedListBox.FormattingEnabled = true;
-            this.speciesHMCheckedListBox.Location = new System.Drawing.Point(720, 292);
-            this.speciesHMCheckedListBox.Name = "speciesHMCheckedListBox";
-            this.speciesHMCheckedListBox.Size = new System.Drawing.Size(190, 124);
-            this.speciesHMCheckedListBox.TabIndex = 33;
-            // 
-            // speciesTMCheckedListBox
-            // 
-            this.speciesTMCheckedListBox.CheckOnClick = true;
-            this.speciesTMCheckedListBox.FormattingEnabled = true;
-            this.speciesTMCheckedListBox.Location = new System.Drawing.Point(721, 81);
-            this.speciesTMCheckedListBox.Name = "speciesTMCheckedListBox";
-            this.speciesTMCheckedListBox.Size = new System.Drawing.Size(189, 184);
-            this.speciesTMCheckedListBox.TabIndex = 32;
             // 
             // speciesComboBox
             // 
@@ -1800,24 +1778,6 @@
             this.speciesSpecialDefenseLabel.TabIndex = 11;
             this.speciesSpecialDefenseLabel.Text = "Special Defense:";
             this.speciesSpecialDefenseLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // speciesLearnableHMsLabel
-            // 
-            this.speciesLearnableHMsLabel.AutoSize = true;
-            this.speciesLearnableHMsLabel.Location = new System.Drawing.Point(717, 276);
-            this.speciesLearnableHMsLabel.Name = "speciesLearnableHMsLabel";
-            this.speciesLearnableHMsLabel.Size = new System.Drawing.Size(82, 13);
-            this.speciesLearnableHMsLabel.TabIndex = 47;
-            this.speciesLearnableHMsLabel.Text = "Learnable HMs:";
-            // 
-            // speciesLearnableTMsLabel
-            // 
-            this.speciesLearnableTMsLabel.AutoSize = true;
-            this.speciesLearnableTMsLabel.Location = new System.Drawing.Point(718, 66);
-            this.speciesLearnableTMsLabel.Name = "speciesLearnableTMsLabel";
-            this.speciesLearnableTMsLabel.Size = new System.Drawing.Size(81, 13);
-            this.speciesLearnableTMsLabel.TabIndex = 46;
-            this.speciesLearnableTMsLabel.Text = "Learnable TMs:";
             // 
             // npcTradeTabPage
             // 
@@ -3087,6 +3047,10 @@
             // 
             // learnsetTabPage
             // 
+            this.learnsetTabPage.Controls.Add(this.learnsetLearnableTMsLabel);
+            this.learnsetTabPage.Controls.Add(this.learnsetHMCheckedListBox);
+            this.learnsetTabPage.Controls.Add(this.learnsetLearnableHMsLabel);
+            this.learnsetTabPage.Controls.Add(this.learnsetTMCheckedListBox);
             this.learnsetTabPage.Controls.Add(this.learnsetEggMovesGroupBox);
             this.learnsetTabPage.Controls.Add(this.learnsetMoveTutorLabel);
             this.learnsetTabPage.Controls.Add(this.learnsetMoveTutorCheckedListBox);
@@ -3099,6 +3063,42 @@
             this.learnsetTabPage.TabIndex = 6;
             this.learnsetTabPage.Text = "Learnset";
             this.learnsetTabPage.UseVisualStyleBackColor = true;
+            // 
+            // learnsetLearnableTMsLabel
+            // 
+            this.learnsetLearnableTMsLabel.AutoSize = true;
+            this.learnsetLearnableTMsLabel.Location = new System.Drawing.Point(430, 48);
+            this.learnsetLearnableTMsLabel.Name = "learnsetLearnableTMsLabel";
+            this.learnsetLearnableTMsLabel.Size = new System.Drawing.Size(81, 13);
+            this.learnsetLearnableTMsLabel.TabIndex = 50;
+            this.learnsetLearnableTMsLabel.Text = "Learnable TMs:";
+            // 
+            // learnsetHMCheckedListBox
+            // 
+            this.learnsetHMCheckedListBox.CheckOnClick = true;
+            this.learnsetHMCheckedListBox.FormattingEnabled = true;
+            this.learnsetHMCheckedListBox.Location = new System.Drawing.Point(423, 463);
+            this.learnsetHMCheckedListBox.Name = "learnsetHMCheckedListBox";
+            this.learnsetHMCheckedListBox.Size = new System.Drawing.Size(190, 124);
+            this.learnsetHMCheckedListBox.TabIndex = 48;
+            // 
+            // learnsetLearnableHMsLabel
+            // 
+            this.learnsetLearnableHMsLabel.AutoSize = true;
+            this.learnsetLearnableHMsLabel.Location = new System.Drawing.Point(430, 451);
+            this.learnsetLearnableHMsLabel.Name = "learnsetLearnableHMsLabel";
+            this.learnsetLearnableHMsLabel.Size = new System.Drawing.Size(82, 13);
+            this.learnsetLearnableHMsLabel.TabIndex = 49;
+            this.learnsetLearnableHMsLabel.Text = "Learnable HMs:";
+            // 
+            // learnsetTMCheckedListBox
+            // 
+            this.learnsetTMCheckedListBox.CheckOnClick = true;
+            this.learnsetTMCheckedListBox.FormattingEnabled = true;
+            this.learnsetTMCheckedListBox.Location = new System.Drawing.Point(423, 59);
+            this.learnsetTMCheckedListBox.Name = "learnsetTMCheckedListBox";
+            this.learnsetTMCheckedListBox.Size = new System.Drawing.Size(189, 379);
+            this.learnsetTMCheckedListBox.TabIndex = 33;
             // 
             // learnsetEggMovesGroupBox
             // 
@@ -3118,7 +3118,7 @@
             this.learnsetEggMovesGroupBox.Controls.Add(this.learnsetEggMove3ComboBox);
             this.learnsetEggMovesGroupBox.Controls.Add(this.learnsetEggMove2ComboBox);
             this.learnsetEggMovesGroupBox.Controls.Add(this.learnsetEggMove1ComboBox);
-            this.learnsetEggMovesGroupBox.Location = new System.Drawing.Point(482, 53);
+            this.learnsetEggMovesGroupBox.Location = new System.Drawing.Point(269, 53);
             this.learnsetEggMovesGroupBox.Name = "learnsetEggMovesGroupBox";
             this.learnsetEggMovesGroupBox.Size = new System.Drawing.Size(135, 457);
             this.learnsetEggMovesGroupBox.TabIndex = 5;
@@ -3320,7 +3320,7 @@
             // learnsetMoveTutorLabel
             // 
             this.learnsetMoveTutorLabel.AutoSize = true;
-            this.learnsetMoveTutorLabel.Location = new System.Drawing.Point(267, 53);
+            this.learnsetMoveTutorLabel.Location = new System.Drawing.Point(647, 48);
             this.learnsetMoveTutorLabel.Name = "learnsetMoveTutorLabel";
             this.learnsetMoveTutorLabel.Size = new System.Drawing.Size(97, 13);
             this.learnsetMoveTutorLabel.TabIndex = 3;
@@ -3329,7 +3329,7 @@
             // learnsetMoveTutorCheckedListBox
             // 
             this.learnsetMoveTutorCheckedListBox.FormattingEnabled = true;
-            this.learnsetMoveTutorCheckedListBox.Location = new System.Drawing.Point(270, 66);
+            this.learnsetMoveTutorCheckedListBox.Location = new System.Drawing.Point(639, 59);
             this.learnsetMoveTutorCheckedListBox.Name = "learnsetMoveTutorCheckedListBox";
             this.learnsetMoveTutorCheckedListBox.Size = new System.Drawing.Size(193, 529);
             this.learnsetMoveTutorCheckedListBox.TabIndex = 2;
@@ -4162,7 +4162,6 @@
             this.moveFlagsGroupBox.ResumeLayout(false);
             this.moveFlagsGroupBox.PerformLayout();
             this.speciesTabPage.ResumeLayout(false);
-            this.speciesTabPage.PerformLayout();
             this.speciesMiscGroupBox.ResumeLayout(false);
             this.speciesMiscGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesCatchRateNumericNoArrows)).EndInit();
@@ -4362,8 +4361,6 @@
         private System.Windows.Forms.ComboBox speciesAbility2ComboBox;
         private System.Windows.Forms.Label speciesAbility1Label;
         private System.Windows.Forms.ComboBox speciesAbility1ComboBox;
-        private System.Windows.Forms.Label speciesLearnableHMsLabel;
-        private System.Windows.Forms.Label speciesLearnableTMsLabel;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.ToolStripMenuItem openRomFileToolStripMenuItem;
         private NumericNoArrows moveEffectNumericNoArrows;
@@ -4395,8 +4392,6 @@
         private System.Windows.Forms.ComboBox speciesComboBox;
         private System.Windows.Forms.Label speciesEggCyclesLabel;
         private NumericNoArrows speciesEggCyclesNumericNoArrows;
-        private System.Windows.Forms.CheckedListBox speciesHMCheckedListBox;
-        private System.Windows.Forms.CheckedListBox speciesTMCheckedListBox;
         private System.Windows.Forms.GroupBox speciesEVOnDefeatGroupBox;
         private System.Windows.Forms.Label speciesSpecialAttackEVLabel;
         private System.Windows.Forms.Label speciesDefenseEVLabel;
@@ -4607,6 +4602,10 @@
         private System.Windows.Forms.ComboBox learnsetEggMove3ComboBox;
         private System.Windows.Forms.ComboBox learnsetEggMove2ComboBox;
         private System.Windows.Forms.ComboBox learnsetEggMove1ComboBox;
+        private System.Windows.Forms.CheckedListBox learnsetTMCheckedListBox;
+        private System.Windows.Forms.CheckedListBox learnsetHMCheckedListBox;
+        private System.Windows.Forms.Label learnsetLearnableHMsLabel;
+        private System.Windows.Forms.Label learnsetLearnableTMsLabel;
     }
 }
 

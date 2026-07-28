@@ -104,8 +104,12 @@ namespace Pokemon_Sinjoh_Editor
             }
 
             learnsetMoveTutorCheckedListBox.Items.Clear();
+            learnsetTMCheckedListBox.Items.Clear();
+            learnsetHMCheckedListBox.Items.Clear();
 
             learnsetPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNamesNoEggs());
+            learnsetTMCheckedListBox.Items.AddRange(TextArchive.GetTMNames());
+            learnsetHMCheckedListBox.Items.AddRange(TextArchive.GetHMNames());
 
             if (RomFile.gameFamily == RomFile.GameFamilies.HGSS)
                 learnsetMoveTutorCheckedListBox.Items.AddRange(MoveTutorTable.GetTutorMoveNamesHGSS());
@@ -135,16 +139,21 @@ namespace Pokemon_Sinjoh_Editor
                 learnsetMoveTutorLabel.Visible = true;
             }
 
-
-            //remove event handler for checkedListBox when updated, otherwise the event will fire while the user isn't interacting with the control
+            //event handlers have to removed when checkedlistboxes are updated, otherwise they'll fire when the user isn't interacting with them
+            learnsetTMCheckedListBox.ItemCheck -= speciesTMCheckedListBox_ItemCheck;
+            learnsetHMCheckedListBox.ItemCheck -= speciesHMCheckedListBox_ItemCheck;
             learnsetMoveTutorCheckedListBox.ItemCheck -= learnsetMoveTutorCheckedListBox_ItemCheck;
             learnsetPokemonComboBox.SelectedIndex = 0;
             learnsetMoveTutorCheckedListBox.ItemCheck += learnsetMoveTutorCheckedListBox_ItemCheck;
+            learnsetTMCheckedListBox.ItemCheck += new ItemCheckEventHandler(speciesTMCheckedListBox_ItemCheck);
+            learnsetHMCheckedListBox.ItemCheck += new ItemCheckEventHandler(speciesHMCheckedListBox_ItemCheck);
         }
 
         private void displayLearnsetValues(int pokemonIndex)
         {
             List<int> learnableTutorMoves;
+
+            learnsetControlsCanRecieveUserInput = false;
 
             //need to skip over egg entries in species list but only for level-up moves
             if (pokemonIndex >= PokemonSpecies.EGG_SPECIES_INDEX)
@@ -153,8 +162,6 @@ namespace Pokemon_Sinjoh_Editor
             }
 
             int numMoves = RomFile.LevelUpMovesList[pokemonIndex].GetNumMoves();
-
-            learnsetControlsCanRecieveUserInput = false;
 
             for (int i = 0; i < numMoves; i++)
             {
@@ -201,6 +208,26 @@ namespace Pokemon_Sinjoh_Editor
 
             for (int i = 0; i < numEggMoves; i++)
                 learnsetPreviousEggMoves[i] = learnsetEggMovesComboBoxes[i].SelectedIndex;
+
+
+            List<int> learnableTMs;
+            learnableTMs = RomFile.PokemonSpeciesList[pokemonIndex].GetLearnableTMs();
+
+            for (int i = 0; i < learnsetTMCheckedListBox.Items.Count; i++)
+                learnsetTMCheckedListBox.SetItemChecked(i, false);
+
+            foreach (int tmIndex in learnableTMs)
+                learnsetTMCheckedListBox.SetItemChecked(tmIndex, true);
+
+
+            List<int> learnableHMs;
+            learnableHMs = RomFile.PokemonSpeciesList[pokemonIndex].GetLearnableHMs();
+
+            for (int i = 0; i < learnsetHMCheckedListBox.Items.Count; i++)
+                learnsetHMCheckedListBox.SetItemChecked(i, false);
+
+            foreach (int hmIndex in learnableHMs)
+                learnsetHMCheckedListBox.SetItemChecked(hmIndex, true);
 
             learnsetControlsCanRecieveUserInput = true;
 
@@ -565,6 +592,24 @@ namespace Pokemon_Sinjoh_Editor
             {
                 RomFile.MoveTutorTableList[learnsetPokemonComboBox.SelectedIndex].SetLearnableMove(e.Index, e.NewValue.HasFlag(CheckState.Checked));
                 MarkUnsavedChanges(SaveSubFile.TUTORLEARNSET);
+            }
+        }
+
+        private void speciesTMCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (learnsetControlsCanRecieveUserInput)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetLearnableTM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
+            }
+        }
+
+        private void speciesHMCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (learnsetControlsCanRecieveUserInput)
+            {
+                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetLearnableHM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
+                MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 

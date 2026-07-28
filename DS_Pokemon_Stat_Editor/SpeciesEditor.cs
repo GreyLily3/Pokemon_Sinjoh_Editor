@@ -21,11 +21,6 @@ namespace Pokemon_Sinjoh_Editor
             speciesEggGroup1ComboBox.Items.Clear();
             speciesEggGroup2ComboBox.Items.Clear();
             speciesXPGroupComboBox.Items.Clear();
-            speciesTMCheckedListBox.Items.Clear();
-            speciesHMCheckedListBox.Items.Clear();
-
-            speciesTMCheckedListBox.Items.AddRange(TextArchive.GetTMNames());
-            speciesHMCheckedListBox.Items.AddRange(TextArchive.GetHMNames());
 
             speciesComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNames());
             speciesType1ComboBox.Items.AddRange(RomFile.TypeNames.ToArray());
@@ -41,15 +36,8 @@ namespace Pokemon_Sinjoh_Editor
 
         private void UpdateDisplayedSpeciesValues()
         {
-            //event handlers have to removed when checkedlistboxes are updated, otherwise they'll fire when the user isn't interacting with the checkedlistboxes
-            this.speciesTMCheckedListBox.ItemCheck -= this.speciesTMCheckedListBox_ItemCheck;
-            this.speciesHMCheckedListBox.ItemCheck -= this.speciesHMCheckedListBox_ItemCheck;
-
             speciesComboBox.SelectedIndex = 0;
             displaySpeciesValues(0);
-
-            this.speciesTMCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.speciesTMCheckedListBox_ItemCheck);
-            this.speciesHMCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.speciesHMCheckedListBox_ItemCheck);
         }
 
 
@@ -106,36 +94,12 @@ namespace Pokemon_Sinjoh_Editor
                 speciesGenderRatioNumericNoArrows.Value = RomFile.PokemonSpeciesList[pokemonIndex].GenderRatio;
             }
 
-            List<int> learnableTMs;
-            learnableTMs = RomFile.PokemonSpeciesList[pokemonIndex].GetLearnableTMs();
-
-            for(int i = 0; i < speciesTMCheckedListBox.Items.Count; i++)
-                speciesTMCheckedListBox.SetItemChecked(i, false);
-
-            foreach (int tmIndex in learnableTMs)
-                speciesTMCheckedListBox.SetItemChecked(tmIndex, true);
-
-
-            List<int> learnableHMs;
-            learnableHMs = RomFile.PokemonSpeciesList[pokemonIndex].GetLearnableHMs();
-
-            for (int i = 0; i < speciesHMCheckedListBox.Items.Count; i++)
-                speciesHMCheckedListBox.SetItemChecked(i, false);
-
-            foreach (int hmIndex in learnableHMs)
-                speciesHMCheckedListBox.SetItemChecked(hmIndex, true);
-
             speciesControlsCanRecieveUserInput = true;
         }
 
         private void speciesComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //event handlers have to removed when checkedlistboxes are updated, otherwise they'll fire when the user isn't interacting with the checkedlistboxes
-            this.speciesTMCheckedListBox.ItemCheck -= speciesTMCheckedListBox_ItemCheck;
-            this.speciesHMCheckedListBox.ItemCheck -= speciesHMCheckedListBox_ItemCheck;
             displaySpeciesValues(speciesComboBox.SelectedIndex);
-            this.speciesTMCheckedListBox.ItemCheck += new ItemCheckEventHandler(this.speciesTMCheckedListBox_ItemCheck);
-            this.speciesHMCheckedListBox.ItemCheck += new ItemCheckEventHandler(this.speciesHMCheckedListBox_ItemCheck);
 
             if (speciesComboBox.SelectedIndex < PokemonSpecies.EGG_SPECIES_INDEX || speciesComboBox.SelectedIndex > PokemonSpecies.BAD_EGG_SPECIES_INDEX)
             {
@@ -148,8 +112,8 @@ namespace Pokemon_Sinjoh_Editor
                 speciesEggGroupsGroupBox.Enabled = true;
                 speciesGenderGroupBox.Enabled = true;
                 speciesMiscGroupBox.Enabled = true;
-                speciesTMCheckedListBox.Enabled = true;
-                speciesHMCheckedListBox.Enabled = true;
+                learnsetTMCheckedListBox.Enabled = true;
+                learnsetHMCheckedListBox.Enabled = true;
             }
             else
             {
@@ -162,8 +126,8 @@ namespace Pokemon_Sinjoh_Editor
                 speciesEggGroupsGroupBox.Enabled = false;
                 speciesGenderGroupBox.Enabled = false;
                 speciesMiscGroupBox.Enabled = false;
-                speciesTMCheckedListBox.Enabled = false;
-                speciesHMCheckedListBox.Enabled = false;
+                learnsetTMCheckedListBox.Enabled = false;
+                learnsetHMCheckedListBox.Enabled = false;
             }
         }
 
@@ -461,24 +425,6 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].EggGroup2 != (PokemonSpecies.EggGroups)speciesEggGroup2ComboBox.SelectedIndex)
             {
                 RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].EggGroup2 = (PokemonSpecies.EggGroups)speciesEggGroup2ComboBox.SelectedIndex;
-                MarkUnsavedChanges(SaveSubFile.SPECIES);
-            }
-        }
-
-        private void speciesTMCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-            if (speciesControlsCanRecieveUserInput)
-            {
-                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetLearnableTM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
-                MarkUnsavedChanges(SaveSubFile.SPECIES);
-            }
-        }
-
-        private void speciesHMCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-            if (speciesControlsCanRecieveUserInput)
-            {
-                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetLearnableHM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
                 MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }

@@ -181,8 +181,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesCatchRateLabel.Text = "Catch Rate:";
             speciesBaseHappinessLabel.Text = "Base Friendship:";
             speciesSafariRunChanceLabel.Text = "Run Chance:\r\n(Safari Zone)";
-            speciesLearnableTMsLabel.Text = "Learnable TMs:";
-            speciesLearnableHMsLabel.Text = "Learnable HMs:";
+            learnsetLearnableTMsLabel.Text = "Learnable TMs:";
+            learnsetLearnableHMsLabel.Text = "Learnable HMs:";
 
             speciesBaseStatsGroupBox.Text = "Base Stats";
             speciesEVOnDefeatGroupBox.Text = "Effort Yield";
@@ -293,8 +293,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesCatchRateLabel.Text = "Ratio de captura:";
             speciesBaseHappinessLabel.Text = "Amistad base:";
             speciesSafariRunChanceLabel.Text = "Run Chance:\r\n(Zona Safari)";
-            speciesLearnableTMsLabel.Text = "MT:";
-            speciesLearnableHMsLabel.Text = "MO:";
+            learnsetLearnableTMsLabel.Text = "MT:";
+            learnsetLearnableHMsLabel.Text = "MO:";
 
             speciesBaseStatsGroupBox.Text = "Características";
             speciesEVOnDefeatGroupBox.Text = "Effort Values Awarded";
@@ -405,8 +405,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesCatchRateLabel.Text = "Taux de Capture:";
             speciesBaseHappinessLabel.Text = "Bonheur:";
             speciesSafariRunChanceLabel.Text = "Run Chance:\r\n(Parc Safari)";
-            speciesLearnableTMsLabel.Text = "CT:";
-            speciesLearnableHMsLabel.Text = "CS:";
+            learnsetLearnableTMsLabel.Text = "CT:";
+            learnsetLearnableHMsLabel.Text = "CS:";
 
             speciesBaseStatsGroupBox.Text = "Statistique de Base";
             speciesEVOnDefeatGroupBox.Text = "Points effort";
@@ -517,8 +517,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesCatchRateLabel.Text = "Fangrate:";
             speciesBaseHappinessLabel.Text = "Start-Freundschaft:";
             speciesSafariRunChanceLabel.Text = "Run Chance:\r\n(Safari-Zone)";
-            speciesLearnableTMsLabel.Text = "TM:";
-            speciesLearnableHMsLabel.Text = "VM:";
+            learnsetLearnableTMsLabel.Text = "TM:";
+            learnsetLearnableHMsLabel.Text = "VM:";
 
             speciesBaseStatsGroupBox.Text = "Statuswerte";
             speciesEVOnDefeatGroupBox.Text = "Basispunkte";
@@ -629,8 +629,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesCatchRateLabel.Text = "Tasso di cattura:";
             speciesBaseHappinessLabel.Text = "Affetto di base:";
             speciesSafariRunChanceLabel.Text = "Run Chance:\r\n(Zona Safari)";
-            speciesLearnableTMsLabel.Text = "MT:";
-            speciesLearnableHMsLabel.Text = "MN:";
+            learnsetLearnableTMsLabel.Text = "MT:";
+            learnsetLearnableHMsLabel.Text = "MN:";
 
             speciesBaseStatsGroupBox.Text = "Statistiche";
             speciesEVOnDefeatGroupBox.Text = "Punti base ceduti";
@@ -738,8 +738,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesCatchRateLabel.Text = "捕捉率";
             speciesBaseHappinessLabel.Text = "なつき";
             speciesSafariRunChanceLabel.Text = "逃げる %:\r\n(サファリゾーン)";
-            speciesLearnableTMsLabel.Text = "わざマシン";
-            speciesLearnableHMsLabel.Text = "ひでんマシン";
+            learnsetLearnableTMsLabel.Text = "わざマシン";
+            learnsetLearnableHMsLabel.Text = "ひでんマシン";
 
             speciesBaseStatsGroupBox.Text = "種族値";
             speciesEVOnDefeatGroupBox.Text = "獲得努力値";
@@ -850,8 +850,8 @@ namespace Pokemon_Sinjoh_Editor
             speciesCatchRateLabel.Text = "포획률:";
             speciesBaseHappinessLabel.Text = "친밀도:";
             speciesSafariRunChanceLabel.Text = "Run Chance:\r\n(사파리존)";
-            speciesLearnableTMsLabel.Text = "기술머신:";
-            speciesLearnableHMsLabel.Text = "비전머신:";
+            learnsetLearnableTMsLabel.Text = "기술머신:";
+            learnsetLearnableHMsLabel.Text = "비전머신:";
 
             speciesBaseStatsGroupBox.Text = "종족값";
             speciesEVOnDefeatGroupBox.Text = "기초포인트";
