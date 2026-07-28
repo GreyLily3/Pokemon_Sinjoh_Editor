@@ -67,6 +67,7 @@
             this.moveProtectCheckBox = new System.Windows.Forms.CheckBox();
             this.moveContactCheckBox = new System.Windows.Forms.CheckBox();
             this.speciesTabPage = new System.Windows.Forms.TabPage();
+            this.speciesAltFormsComboBox = new System.Windows.Forms.ComboBox();
             this.speciesMiscGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesCatchRateNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesBaseFriendshipNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
@@ -908,6 +909,7 @@
             // 
             // speciesTabPage
             // 
+            this.speciesTabPage.Controls.Add(this.speciesAltFormsComboBox);
             this.speciesTabPage.Controls.Add(this.speciesMiscGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesXPGroupBox);
             this.speciesTabPage.Controls.Add(this.speciesEVOnDefeatGroupBox);
@@ -925,6 +927,18 @@
             this.speciesTabPage.TabIndex = 1;
             this.speciesTabPage.Text = "Pokemon";
             this.speciesTabPage.UseVisualStyleBackColor = true;
+            // 
+            // speciesAltFormsComboBox
+            // 
+            this.speciesAltFormsComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.speciesAltFormsComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.speciesAltFormsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.speciesAltFormsComboBox.FormattingEnabled = true;
+            this.speciesAltFormsComboBox.Location = new System.Drawing.Point(563, 25);
+            this.speciesAltFormsComboBox.Name = "speciesAltFormsComboBox";
+            this.speciesAltFormsComboBox.Size = new System.Drawing.Size(121, 21);
+            this.speciesAltFormsComboBox.TabIndex = 10;
+            this.speciesAltFormsComboBox.SelectionChangeCommitted += new System.EventHandler(this.speciesAltFormsComboBox_SelectionChangeCommitted);
             // 
             // speciesMiscGroupBox
             // 
@@ -1242,9 +1256,9 @@
             this.speciesComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.speciesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.speciesComboBox.FormattingEnabled = true;
-            this.speciesComboBox.Location = new System.Drawing.Point(349, 25);
+            this.speciesComboBox.Location = new System.Drawing.Point(408, 25);
             this.speciesComboBox.Name = "speciesComboBox";
-            this.speciesComboBox.Size = new System.Drawing.Size(186, 21);
+            this.speciesComboBox.Size = new System.Drawing.Size(121, 21);
             this.speciesComboBox.TabIndex = 0;
             this.speciesComboBox.SelectedIndexChanged += new System.EventHandler(this.speciesComboBox_SelectedIndexChanged);
             // 
@@ -4606,6 +4620,7 @@
         private System.Windows.Forms.CheckedListBox learnsetHMCheckedListBox;
         private System.Windows.Forms.Label learnsetLearnableHMsLabel;
         private System.Windows.Forms.Label learnsetLearnableTMsLabel;
+        private System.Windows.Forms.ComboBox speciesAltFormsComboBox;
     }
 }
 

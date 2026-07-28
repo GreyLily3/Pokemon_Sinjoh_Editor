@@ -84,6 +84,38 @@ namespace Pokemon_Sinjoh_Editor
         public const int SHAYMIN_INDEX = 492;
         public const int ROTOM_INDEX = 479;
 
+        public const int DEOXYS_ATTACK_INDEX = 496;
+        public const int DEOXYS_DEFENSE_INDEX = 497;
+        public const int DEOXYS_SPEED_INDEX = 498;
+        public const int WORMADAM_SANDY_INDEX = 499;
+        public const int WORMADAM_TRASH_INDEX = 500;
+        public const int GIRATINA_ORIGIN_INDEX = 501;
+        public const int SHAYMIN_SKY_INDEX = 502;
+        public const int ROTOM_HEAT_INDEX = 503;
+        public const int ROTOM_WASH_INDEX = 504;
+        public const int ROTOM_FROST_INDEX = 505;
+        public const int ROTOM_FAN_INDEX = 506;
+        public const int ROTOM_MOW_INDEX = 507;
+
+        public const int DEOXYS_ATTACK_ALT_FORM_INDEX = 1;
+        public const int DEOXYS_DEFENSE_ALT_FORM_INDEX = 2;
+        public const int DEOXYS_SPEED_ALT_FORM_INDEX = 3;
+        public const int WORMADAM_SANDY_ALT_FORM_INDEX = 1;
+        public const int WORMADAM_TRASH_ALT_FORM_INDEX = 2;
+        public const int SHAYMIN_SKY_ALT_FORM_INDEX = 1;
+        public const int GIRATINA_SKY_ALT_FORM_INDEX = 1;
+        public const int ROTOM_HEAT_ALT_FORM_INDEX = 1;
+        public const int ROTOM_WASH_ALT_FORM_INDEX = 2;
+        public const int ROTOM_FROST_ALT_FORM_INDEX = 3;
+        public const int ROTOM_FAN_ALT_FORM_INDEX = 4;
+        public const int ROTOM_MOW_ALT_FORM_INDEX = 5;
+
+        public const int WORMADAM_NUM_FORMS = 3;
+        public const int DEOXYS_NUM_FORMS = 4;
+        public const int GIRATINA_NUM_FORMS = 2;
+        public const int SHAYMIN_NUM_FORMS = 2;
+        public const int ROTOM_NUM_FORMS = 6;
+
         public const int NUM_ALT_FORMS_DP = 5;
         public const int NUM_ALT_FORMS_PL_HGSS = 12;
 
@@ -359,6 +391,54 @@ namespace Pokemon_Sinjoh_Editor
         public void setAllTMsAndHMs(bool TMsAndHMsLearnable) => learnableTMsAndHMs.SetAll(TMsAndHMsLearnable);
 
         public bool GetHasEggMoves() => EggMoves.Count > 0;
+
+        
+        public static int GetIndexForAltForm(int pokemonIndex, int altFormIndex)
+        {
+            switch (pokemonIndex)
+            {
+                case WORMADAM_INDEX:
+                    return (altFormIndex) switch
+                    {
+                        WORMADAM_SANDY_ALT_FORM_INDEX => WORMADAM_SANDY_INDEX,
+                        WORMADAM_TRASH_ALT_FORM_INDEX => WORMADAM_TRASH_INDEX,
+                        _ => WORMADAM_INDEX
+                    };
+                case DEOXYS_INDEX:
+                    return (altFormIndex) switch
+                    {
+                        DEOXYS_ATTACK_ALT_FORM_INDEX => DEOXYS_ATTACK_FORM_INDEX,
+                        DEOXYS_DEFENSE_ALT_FORM_INDEX => DEOXYS_DEFENSE_FORM_INDEX,
+                        DEOXYS_SPEED_ALT_FORM_INDEX => DEOXYS_SPEED_FORM_INDEX,
+                        _ => DEOXYS_INDEX
+                    };
+                case GIRATINA_INDEX:
+                    if (altFormIndex == 1 && RomFile.gameFamily != RomFile.GameFamilies.DP)
+                        return GIRATINA_ORIGIN_INDEX;
+                    else
+                        return GIRATINA_INDEX;
+                case SHAYMIN_INDEX:
+                    if (altFormIndex == 1 && RomFile.gameFamily != RomFile.GameFamilies.DP)
+                        return SHAYMIN_SKY_INDEX;
+                    else
+                        return SHAYMIN_INDEX;
+                case ROTOM_INDEX:
+                    if (RomFile.gameFamily == RomFile.GameFamilies.DP)
+                        return ROTOM_INDEX;
+
+                    return (altFormIndex) switch
+                    {
+                        ROTOM_HEAT_ALT_FORM_INDEX => ROTOM_HEAT_INDEX,
+                        ROTOM_WASH_ALT_FORM_INDEX => ROTOM_WASH_INDEX,
+                        ROTOM_FROST_ALT_FORM_INDEX => ROTOM_FROST_INDEX,
+                        ROTOM_FAN_ALT_FORM_INDEX => ROTOM_FAN_INDEX,
+                        ROTOM_MOW_ALT_FORM_INDEX => ROTOM_MOW_INDEX,
+                        _ => ROTOM_INDEX
+                    };
+                default:
+                    return pokemonIndex;
+            }     
+        }
 
         public void SetEggMoves(MemoryStream eggMoveStream)
         {

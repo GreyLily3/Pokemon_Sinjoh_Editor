@@ -7326,6 +7326,10 @@ namespace Pokemon_Sinjoh_Editor
         private const int PRIVATEKEY2 = 0x91BD3;
         private const int PRIVATEKEY3 = 0x493D;
 
+        private const int DEOXYS_NORMAL_FORM_NAME_INDEX_DP = 110;
+        private const int DEOXYS_NORMAL_FORM_NAME_INDEX_PL = 111;
+        private const int DEOXYS_NORMAL_FORM_NAME_INDEX_HGSS = 145;
+
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_DP = 111;
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_PL = 112;
         private const int DEOXYS_ATTACK_FORM_NAME_INDEX_HGSS = 146;
@@ -7338,8 +7342,14 @@ namespace Pokemon_Sinjoh_Editor
         private const int DEOXYS_SPEED_FORM_NAME_INDEX_PL = 114;
         private const int DEOXYS_SPEED_FORM_NAME_INDEX_HGSS = 148;
 
+        private const int SHAYMIN_LAND_FORM_NAME_INDEX_PL = 115;
+        private const int SHAYMIN_LAND_FORM_NAME_INDEX_HGSS = 149;
+
         private const int SHAYMIN_SKY_FORM_NAME_INDEX_PL = 116;
         private const int SHAYMIN_SKY_FORM_NAME_INDEX_HGSS = 150;
+
+        private const int GIRATINA_ALTER_FORM_NAME_INDEX_PL = 117;
+        private const int GIRATINA_ALTER_FORM_NAME_INDEX_HGSS = 151;
 
         private const int GIRATINA_ORIGIN_FORM_NAME_INDEX_PL = 118;
         private const int GIRATINA_ORIGIN_FORM_NAME_INDEX_HGSS = 152;
@@ -7358,6 +7368,9 @@ namespace Pokemon_Sinjoh_Editor
 
         private const int ROTOM_MOW_FORM_NAME_INDEX_PL = 124;
         private const int ROTOM_MOW_FORM_NAME_INDEX_HGSS = 158;
+
+        private const int WORMADAM_PLANT_FORM_NAME_INDEX_DPPL = 17;
+        private const int WORMADAM_PLANT_FORM_NAME_INDEX_HGSS = 118;
 
         private const int WORMADAM_SANDY_FORM_NAME_INDEX_DPPL = 18;
         private const int WORMADAM_SANDY_FORM_NAME_INDEX_HGSS = 119;
@@ -10248,6 +10261,17 @@ namespace Pokemon_Sinjoh_Editor
     
         }*/
 
+        public static int GetDeoxysNormalFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => DEOXYS_NORMAL_FORM_NAME_INDEX_DP,
+                GameFamilies.PL => DEOXYS_NORMAL_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => DEOXYS_NORMAL_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
         public static int GetDeoxysAttackFormNameIndex()
         {
             return gameFamily switch
@@ -10281,6 +10305,17 @@ namespace Pokemon_Sinjoh_Editor
             };
         }
 
+        public static int GetWormadamPlantFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.DP => WORMADAM_PLANT_FORM_NAME_INDEX_DPPL,
+                GameFamilies.PL => WORMADAM_PLANT_FORM_NAME_INDEX_DPPL,
+                GameFamilies.HGSS => WORMADAM_PLANT_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
         public static int GetWormadamSandyFormNameIndex()
         {
             return gameFamily switch
@@ -10303,12 +10338,32 @@ namespace Pokemon_Sinjoh_Editor
             };
         }
 
+        public static int GetGiratinaAlterFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => GIRATINA_ALTER_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => GIRATINA_ALTER_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
         public static int GetGiratinaOriginFormNameIndex()
         {
             return gameFamily switch
             {
                 GameFamilies.PL => GIRATINA_ORIGIN_FORM_NAME_INDEX_PL,
                 GameFamilies.HGSS => GIRATINA_ORIGIN_FORM_NAME_INDEX_HGSS,
+                _ => -1
+            };
+        }
+
+        public static int GetShayminLandFormNameIndex()
+        {
+            return gameFamily switch
+            {
+                GameFamilies.PL => SHAYMIN_LAND_FORM_NAME_INDEX_PL,
+                GameFamilies.HGSS => SHAYMIN_LAND_FORM_NAME_INDEX_HGSS,
                 _ => -1
             };
         }
@@ -10620,6 +10675,61 @@ namespace Pokemon_Sinjoh_Editor
 
         public static string[] GetFieldPocketNames() => Enum.GetNames(typeof(Item.FieldPockets));
         public static string[] GetBattlePocketNames() => Enum.GetNames(typeof(Item.BattlePockets));
+
+        public static string[] GetAltFormsNames(int pokemonIndex)
+        {
+            string[] altFormNames;
+
+            switch (pokemonIndex)
+            {
+                case PokemonSpecies.WORMADAM_INDEX:
+                    altFormNames = new string[PokemonSpecies.WORMADAM_NUM_FORMS];
+                    altFormNames[0] = PokedexText[GetWormadamPlantFormNameIndex()];
+                    altFormNames[1] = PokedexText[GetWormadamSandyFormNameIndex()];
+                    altFormNames[2] = PokedexText[GetWormadamTrashFormNameIndex()];
+                    break;
+                case PokemonSpecies.DEOXYS_INDEX:
+                    altFormNames = new string[PokemonSpecies.DEOXYS_NUM_FORMS];
+                    altFormNames[0] = PokedexText[GetDeoxysNormalFormNameIndex()];
+                    altFormNames[1] = PokedexText[GetDeoxysAttackFormNameIndex()];
+                    altFormNames[2] = PokedexText[GetDeoxysDefenseFormNameIndex()];
+                    altFormNames[3] = PokedexText[GetDeoxysSpeedFormNameIndex()];
+                    break;
+                case PokemonSpecies.GIRATINA_INDEX:
+                    if (gameFamily == GameFamilies.DP)
+                        return new string[0];
+
+                    altFormNames = new string[PokemonSpecies.GIRATINA_NUM_FORMS];
+                    altFormNames[0] = PokedexText[GetGiratinaAlterFormNameIndex()];
+                    altFormNames[1] = PokedexText[GetGiratinaOriginFormNameIndex()];
+                    break;
+                case PokemonSpecies.SHAYMIN_INDEX:
+                    if (gameFamily == GameFamilies.DP)
+                        return new string[0];
+
+                    altFormNames = new string[PokemonSpecies.SHAYMIN_NUM_FORMS];
+                    altFormNames[0] = PokedexText[GetShayminLandFormNameIndex()];
+                    altFormNames[1] = PokedexText[GetShayminSkyFormNameIndex()];
+                    break;
+                case PokemonSpecies.ROTOM_INDEX:
+                    if (gameFamily == GameFamilies.DP)
+                        return new string[0];
+
+                    altFormNames = new string[PokemonSpecies.ROTOM_NUM_FORMS];
+                    altFormNames[0] = PokemonNames[pokemonIndex - PokemonSpecies.START_INDEX];
+                    altFormNames[1] = PokedexText[GetRotomHeatFormNameIndex()];
+                    altFormNames[2] = PokedexText[GetRotomWashFormNameIndex()];
+                    altFormNames[3] = PokedexText[GetRotomFrostFormNameIndex()];
+                    altFormNames[4] = PokedexText[GetRotomFanFormNameIndex()];
+                    altFormNames[5] = PokedexText[GetRotomMowFormNameIndex()];
+                    break;
+                default:
+                    altFormNames = new string[0];
+                    break;
+            }
+
+            return altFormNames;
+        }
     }
 }
 
