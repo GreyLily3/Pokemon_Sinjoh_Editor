@@ -107,7 +107,7 @@ namespace Pokemon_Sinjoh_Editor
             learnsetTMCheckedListBox.Items.Clear();
             learnsetHMCheckedListBox.Items.Clear();
 
-            learnsetPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNamesNoEggs());
+            learnsetPokemonComboBox.Items.AddRange(RomFile.GetPokemonSpeciesNamesNoAltForms());
             learnsetTMCheckedListBox.Items.AddRange(TextArchive.GetTMNames());
             learnsetHMCheckedListBox.Items.AddRange(TextArchive.GetHMNames());
 
@@ -155,12 +155,6 @@ namespace Pokemon_Sinjoh_Editor
 
             learnsetControlsCanRecieveUserInput = false;
 
-            //need to skip over egg entries in species list but only for level-up moves
-            if (pokemonIndex >= PokemonSpecies.EGG_SPECIES_INDEX)
-            {
-                pokemonIndex += PokemonSpecies.NUM_EGG_ENTRIES;
-            }
-
             int numMoves = RomFile.LevelUpMovesList[pokemonIndex].GetNumMoves();
 
             for (int i = 0; i < numMoves; i++)
@@ -177,24 +171,6 @@ namespace Pokemon_Sinjoh_Editor
                 levelUpMoveNumericNoArrowsList[i].Visible = false;
             }
 
-            if (pokemonIndex >= PokemonSpecies.EGG_SPECIES_INDEX)
-            {
-                pokemonIndex -= PokemonSpecies.NUM_EGG_ENTRIES;
-            }
-
-            if (RomFile.gameFamily != RomFile.GameFamilies.DP)
-            {
-               
-                learnableTutorMoves = RomFile.MoveTutorTableList[pokemonIndex].GetLearnableMoves(RomFile.gameFamily);
-
-                for (int i = 0; i < learnsetMoveTutorCheckedListBox.Items.Count; i++)
-                    learnsetMoveTutorCheckedListBox.SetItemChecked(i, false);
-
-                foreach (int moveIndex in learnableTutorMoves)
-                    learnsetMoveTutorCheckedListBox.SetItemChecked(moveIndex, true);
-            }
-
-            
             int numEggMoves = RomFile.PokemonSpeciesList[pokemonIndex].EggMoves.Count;
 
             for (int i = 0; i < numEggMoves; i++)
@@ -229,13 +205,57 @@ namespace Pokemon_Sinjoh_Editor
             foreach (int hmIndex in learnableHMs)
                 learnsetHMCheckedListBox.SetItemChecked(hmIndex, true);
 
+
+            if (RomFile.gameFamily != RomFile.GameFamilies.DP)
+            {
+                //need to account for the fact that the move tutor table has no entries for EGG or BAD EGG
+                if (pokemonIndex >= PokemonSpecies.EGG_SPECIES_INDEX)
+                {
+                    pokemonIndex -= PokemonSpecies.NUM_EGG_ENTRIES;
+                }
+
+                learnableTutorMoves = RomFile.MoveTutorTableList[pokemonIndex].GetLearnableMoves(RomFile.gameFamily);
+
+                for (int i = 0; i < learnsetMoveTutorCheckedListBox.Items.Count; i++)
+                    learnsetMoveTutorCheckedListBox.SetItemChecked(i, false);
+
+                foreach (int moveIndex in learnableTutorMoves)
+                    learnsetMoveTutorCheckedListBox.SetItemChecked(moveIndex, true);
+            }
+
             learnsetControlsCanRecieveUserInput = true;
 
         }
 
         private void learnsetPokemonComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            displayLearnsetValues(learnsetPokemonComboBox.SelectedIndex);
+            int speciesIndex = learnsetPokemonComboBox.SelectedIndex;
+            string[] altFormNames = TextArchive.GetAltFormsNames(speciesIndex + PokemonSpecies.START_INDEX);
+
+            learnsetAltFormsComboBox.Items.Clear();
+
+            if (altFormNames.Length > 0)
+            {
+                learnsetAltFormsComboBox.Items.AddRange(altFormNames);
+                learnsetAltFormsComboBox.Enabled = true;
+                learnsetAltFormsComboBox.SelectedIndex = 0;
+                speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesIndex, learnsetAltFormsComboBox.SelectedIndex);
+            }
+            else
+            {
+                learnsetAltFormsComboBox.Items.Add(EN_SPECIES_NO_ALT_FORMS_TEXT);
+                learnsetAltFormsComboBox.SelectedIndex = 0;
+                learnsetAltFormsComboBox.Enabled = false;
+            }
+
+            displayLearnsetValues(speciesIndex);
+        }
+
+        private void learnsetAltFormsComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(learnsetPokemonComboBox.SelectedIndex, learnsetAltFormsComboBox.SelectedIndex);
+
+            displayLearnsetValues(speciesIndex);
         }
 
         private bool learnsetIsDuplicateEggMove(int moveID)
@@ -253,26 +273,32 @@ namespace Pokemon_Sinjoh_Editor
 
         private void learnsetUpdateLearnedMoveID(int levelUpMoveIndex, int moveID)
         {
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(learnsetPokemonComboBox.SelectedIndex, learnsetAltFormsComboBox.SelectedIndex);
+
             moveID += Pokemon_Sinjoh_Editor.Move.START_INDEX;
 
-            if (RomFile.LevelUpMovesList[learnsetPokemonComboBox.SelectedIndex].GetMoveID(levelUpMoveIndex) != moveID)
+            if (RomFile.LevelUpMovesList[speciesIndex].GetMoveID(levelUpMoveIndex) != moveID)
             {
-                RomFile.LevelUpMovesList[learnsetPokemonComboBox.SelectedIndex].SetMoveID(levelUpMoveIndex, moveID);
+                RomFile.LevelUpMovesList[speciesIndex].SetMoveID(levelUpMoveIndex, moveID);
                 MarkUnsavedChanges(SaveSubFile.LEVELUPMOVES);
             }
         }
 
         private void learnsetUpdateLearnedMoveLevel(int levelUpMoveIndex, int level)
         {
-            if (RomFile.LevelUpMovesList[learnsetPokemonComboBox.SelectedIndex].LevelsLearned[levelUpMoveIndex] != level)
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(learnsetPokemonComboBox.SelectedIndex, learnsetAltFormsComboBox.SelectedIndex);
+
+            if (RomFile.LevelUpMovesList[speciesIndex].LevelsLearned[levelUpMoveIndex] != level)
             {
-                RomFile.LevelUpMovesList[learnsetPokemonComboBox.SelectedIndex].LevelsLearned[levelUpMoveIndex] = (ushort)level;
+                RomFile.LevelUpMovesList[speciesIndex].LevelsLearned[levelUpMoveIndex] = (ushort)level;
                 MarkUnsavedChanges(SaveSubFile.LEVELUPMOVES);
             }
         }
 
         private void learnsetUpdateEggMove(int eggMoveIndex, int moveID)
         {
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(learnsetPokemonComboBox.SelectedIndex, learnsetAltFormsComboBox.SelectedIndex);
+
             if (learnsetIsDuplicateEggMove(moveID))
             {
                 learnsetEggMovesComboBoxes[eggMoveIndex].SelectedIndex = learnsetPreviousEggMoves[eggMoveIndex];
@@ -281,10 +307,10 @@ namespace Pokemon_Sinjoh_Editor
             {
                 moveID += PokemonSpecies.START_INDEX;
 
-                if (RomFile.PokemonSpeciesList[learnsetPokemonComboBox.SelectedIndex].EggMoves[eggMoveIndex] != moveID)
+                if (RomFile.PokemonSpeciesList[speciesIndex].EggMoves[eggMoveIndex] != moveID)
                 {
                     learnsetPreviousEggMoves[eggMoveIndex] = moveID - PokemonSpecies.START_INDEX;
-                    RomFile.PokemonSpeciesList[learnsetPokemonComboBox.SelectedIndex].EggMoves[eggMoveIndex] = (ushort)moveID;
+                    RomFile.PokemonSpeciesList[speciesIndex].EggMoves[eggMoveIndex] = (ushort)moveID;
                     MarkUnsavedChanges(SaveSubFile.EGGMOVES);
                 }
             }  
@@ -588,27 +614,36 @@ namespace Pokemon_Sinjoh_Editor
 
         private void learnsetMoveTutorCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(learnsetPokemonComboBox.SelectedIndex, learnsetAltFormsComboBox.SelectedIndex);
+
+            if (speciesIndex >= PokemonSpecies.EGG_SPECIES_INDEX)
+                speciesIndex -= PokemonSpecies.NUM_EGG_ENTRIES;
+
             if (learnsetControlsCanRecieveUserInput)
             {
-                RomFile.MoveTutorTableList[learnsetPokemonComboBox.SelectedIndex].SetLearnableMove(e.Index, e.NewValue.HasFlag(CheckState.Checked));
+                RomFile.MoveTutorTableList[speciesIndex].SetLearnableMove(e.Index, e.NewValue.HasFlag(CheckState.Checked));
                 MarkUnsavedChanges(SaveSubFile.TUTORLEARNSET);
             }
         }
 
         private void speciesTMCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(learnsetPokemonComboBox.SelectedIndex, learnsetAltFormsComboBox.SelectedIndex);
+
             if (learnsetControlsCanRecieveUserInput)
             {
-                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetLearnableTM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
+                RomFile.PokemonSpeciesList[speciesIndex].SetLearnableTM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
                 MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }
 
         private void speciesHMCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(learnsetPokemonComboBox.SelectedIndex, learnsetAltFormsComboBox.SelectedIndex);
+
             if (learnsetControlsCanRecieveUserInput)
             {
-                RomFile.PokemonSpeciesList[speciesComboBox.SelectedIndex].SetLearnableHM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
+                RomFile.PokemonSpeciesList[speciesIndex].SetLearnableHM(e.Index, e.NewValue.HasFlag(CheckState.Checked));
                 MarkUnsavedChanges(SaveSubFile.SPECIES);
             }
         }

@@ -359,6 +359,7 @@
             this.tradeAbilityTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeGenderTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeNatureTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.learnsetAltFormsComboBox = new System.Windows.Forms.ComboBox();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
@@ -3061,6 +3062,7 @@
             // 
             // learnsetTabPage
             // 
+            this.learnsetTabPage.Controls.Add(this.learnsetAltFormsComboBox);
             this.learnsetTabPage.Controls.Add(this.learnsetLearnableTMsLabel);
             this.learnsetTabPage.Controls.Add(this.learnsetHMCheckedListBox);
             this.learnsetTabPage.Controls.Add(this.learnsetLearnableHMsLabel);
@@ -3355,9 +3357,9 @@
             this.learnsetPokemonComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.learnsetPokemonComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.learnsetPokemonComboBox.FormattingEnabled = true;
-            this.learnsetPokemonComboBox.Location = new System.Drawing.Point(351, 21);
+            this.learnsetPokemonComboBox.Location = new System.Drawing.Point(416, 21);
             this.learnsetPokemonComboBox.Name = "learnsetPokemonComboBox";
-            this.learnsetPokemonComboBox.Size = new System.Drawing.Size(186, 21);
+            this.learnsetPokemonComboBox.Size = new System.Drawing.Size(121, 21);
             this.learnsetPokemonComboBox.TabIndex = 1;
             this.learnsetPokemonComboBox.SelectedIndexChanged += new System.EventHandler(this.learnsetPokemonComboBox_SelectedIndexChanged);
             // 
@@ -4152,6 +4154,18 @@
             this.한국어ToolStripMenuItem.Text = "한국어";
             this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
             // 
+            // learnsetAltFormsComboBox
+            // 
+            this.learnsetAltFormsComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.learnsetAltFormsComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.learnsetAltFormsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetAltFormsComboBox.FormattingEnabled = true;
+            this.learnsetAltFormsComboBox.Location = new System.Drawing.Point(543, 21);
+            this.learnsetAltFormsComboBox.Name = "learnsetAltFormsComboBox";
+            this.learnsetAltFormsComboBox.Size = new System.Drawing.Size(121, 21);
+            this.learnsetAltFormsComboBox.TabIndex = 51;
+            this.learnsetAltFormsComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetAltFormsComboBox_SelectionChangeCommitted);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4621,6 +4635,7 @@
         private System.Windows.Forms.Label learnsetLearnableHMsLabel;
         private System.Windows.Forms.Label learnsetLearnableTMsLabel;
         private System.Windows.Forms.ComboBox speciesAltFormsComboBox;
+        private System.Windows.Forms.ComboBox learnsetAltFormsComboBox;
     }
 }
 

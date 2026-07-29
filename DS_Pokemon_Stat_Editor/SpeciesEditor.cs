@@ -100,25 +100,31 @@ namespace Pokemon_Sinjoh_Editor
         private void speciesComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             int speciesIndex = speciesComboBox.SelectedIndex;
-            string[] altFormNames;
+            string[] altFormNames = TextArchive.GetAltFormsNames(speciesIndex + PokemonSpecies.START_INDEX);
 
             speciesAltFormsComboBox.Items.Clear();
-            
-            altFormNames = TextArchive.GetAltFormsNames(speciesIndex + PokemonSpecies.START_INDEX);
 
             if (altFormNames.Length > 0)
             {
                 speciesAltFormsComboBox.Items.AddRange(altFormNames);
+                speciesAltFormsComboBox.Enabled = true;
                 speciesAltFormsComboBox.SelectedIndex = 0;
-                speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesIndex);
+                speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesIndex, speciesAltFormsComboBox.SelectedIndex);
             }
+            else
+            {
+                speciesAltFormsComboBox.Items.Add(EN_SPECIES_NO_ALT_FORMS_TEXT);
+                speciesAltFormsComboBox.SelectedIndex = 0;
+                speciesAltFormsComboBox.Enabled = false;
+            }
+                
 
-            displaySpeciesValues(speciesIndex);
+                displaySpeciesValues(speciesIndex);
         }
 
         private void speciesMaleOnlyRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (speciesMaleOnlyRadioButton.Checked)
             {
@@ -132,7 +138,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesFemaleOnlyRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (speciesFemaleOnlyRadioButton.Checked)
             {
@@ -146,7 +152,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesMaleAndFemaleRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (speciesMaleAndFemaleRadioButton.Checked)
             {
@@ -166,7 +172,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesGenderlessRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (speciesGenderlessRadioButton.Checked)
             {
@@ -181,7 +187,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesHPNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].HP != speciesHPNumericNoArrows.Value)
             {
@@ -192,7 +198,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesAttackNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].Attack != speciesAttackNumericNoArrows.Value)
             {
@@ -203,7 +209,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesDefenseNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].Defense != speciesDefenseNumericNoArrows.Value)
             {
@@ -214,7 +220,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesSpecialAttackNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].SpecialAttack != speciesSpecialAttackNumericNoArrows.Value)
             {
@@ -225,7 +231,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesSpecialDefenseNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].SpecialDefense != speciesSpecialDefenseNumericNoArrows.Value)
             {
@@ -236,7 +242,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesSpeedNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].Speed != speciesSpeedNumericNoArrows.Value)
             {
@@ -247,7 +253,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesHPEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].HPEVYield != speciesHPEVNumericNoArrows.Value)
             {
@@ -258,7 +264,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesAttackEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].AttackEVYield != speciesAttackEVNumericNoArrows.Value)
             {
@@ -269,7 +275,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesDefenseEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].DefenseEVYield != speciesDefenseEVNumericNoArrows.Value)
             {
@@ -280,7 +286,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesSpecialAttackEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].SpecialAttackEVYield != speciesSpecialAttackEVNumericNoArrows.Value)
             {
@@ -291,7 +297,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesSpecialDefenseEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].SpecialDefenseEVYield != speciesSpecialDefenseEVNumericNoArrows.Value)
             {
@@ -302,7 +308,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesSpeedEVNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].SpeedEVYield != speciesSpeedEVNumericNoArrows.Value)
             {
@@ -313,7 +319,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesBaseXPYieldNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].BaseXP != speciesBaseXPYieldNumericNoArrows.Value)
             {
@@ -324,7 +330,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesEggCyclesNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].NumEggCyles != speciesEggCyclesNumericNoArrows.Value)
             {
@@ -335,7 +341,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesCatchRateNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].CatchRate != speciesCatchRateNumericNoArrows.Value)
             {
@@ -346,7 +352,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesHappinessNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].BaseFriendship != speciesBaseFriendshipNumericNoArrows.Value)
             {
@@ -357,7 +363,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesSafariRunChanceNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].SafariRunChance != speciesSafariRunChanceNumericNoArrows.Value)
             {
@@ -368,7 +374,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesGenderRatioNumericNoArrows_Validated(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].GenderRatio != speciesGenderRatioNumericNoArrows.Value)
             {
@@ -379,7 +385,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesType1ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].Type1 != speciesType1ComboBox.SelectedIndex)
             {
@@ -390,7 +396,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesType2ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].Type2 != speciesType2ComboBox.SelectedIndex)
             {
@@ -401,7 +407,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesAbility1ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].Ability1 != speciesAbility1ComboBox.SelectedIndex)
             {
@@ -412,7 +418,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesAbility2ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].Ability2 != speciesAbility2ComboBox.SelectedIndex)
             {
@@ -423,7 +429,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesXPGroupComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].XPGroup != (PokemonSpecies.XPGroups)speciesXPGroupComboBox.SelectedIndex)
             {
@@ -434,7 +440,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesHeldItem1ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].Item1 != speciesHeldItem1ComboBox.SelectedIndex)
             {
@@ -445,7 +451,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesHeldItem2ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].Item2 != speciesHeldItem2ComboBox.SelectedIndex)
             {
@@ -456,7 +462,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesEggGroup1ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].EggGroup1 != (PokemonSpecies.EggGroups)speciesEggGroup1ComboBox.SelectedIndex)
             {
@@ -467,7 +473,7 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesEggGroup2ComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             if (RomFile.PokemonSpeciesList[speciesIndex].EggGroup2 != (PokemonSpecies.EggGroups)speciesEggGroup2ComboBox.SelectedIndex)
             {
@@ -478,11 +484,11 @@ namespace Pokemon_Sinjoh_Editor
 
         private void speciesAltFormsComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex);
+            int speciesIndex = GetSpeciesAltFormCorrectedIndex(speciesComboBox.SelectedIndex, speciesAltFormsComboBox.SelectedIndex);
 
             displaySpeciesValues(speciesIndex);
         }
 
-        private int GetSpeciesAltFormCorrectedIndex(int speciesIndex) => PokemonSpecies.GetIndexForAltForm(speciesIndex + PokemonSpecies.START_INDEX, speciesAltFormsComboBox.SelectedIndex) - PokemonSpecies.START_INDEX;
+        private int GetSpeciesAltFormCorrectedIndex(int speciesIndex, int altFormIndex) => PokemonSpecies.GetIndexForAltForm(speciesIndex + PokemonSpecies.START_INDEX, altFormIndex) - PokemonSpecies.START_INDEX;
     }
 }

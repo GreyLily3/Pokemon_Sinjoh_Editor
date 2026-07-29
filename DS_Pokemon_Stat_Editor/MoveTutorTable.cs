@@ -13,7 +13,6 @@ namespace Pokemon_Sinjoh_Editor
         public const int NUM_MOVES_HGSS = 52;
         public const int BYTES_PER_SPECIES_PL = 5;
         public const int BYTES_PER_SPECIES_HGSS = 8;
-        public const int DEOXYS_ALT_FORMS_OFFSET = 2; //the 3 deoxys alt forms all share the same table row, so we need to offset every alt form after
         private const int NUM_BITS_PER_BYTE = 8;
 
         public readonly static int[] MoveIDsHGSS = new int[] { 291,
@@ -80,7 +79,6 @@ namespace Pokemon_Sinjoh_Editor
 
         public List<int> GetLearnableMoves(RomFile.GameFamilies gameFamily)
         {
-            List<int> learnableMoveIDs = new List<int>(NUM_MOVES_HGSS);
             int numMoves;
 
             if (gameFamily == RomFile.GameFamilies.HGSS)
@@ -88,11 +86,13 @@ namespace Pokemon_Sinjoh_Editor
             else
                 numMoves = NUM_MOVES_PL;
 
-                for (int i = 0; i < numMoves; i++)
-                {
-                    if (learnableMoves[i])
-                        learnableMoveIDs.Add(i);
-                }
+            List<int> learnableMoveIDs = new List<int>(numMoves);
+
+            for (int i = 0; i < numMoves; i++)
+            {
+                if (learnableMoves[i])
+                    learnableMoveIDs.Add(i);
+            }
 
             return learnableMoveIDs;
         }

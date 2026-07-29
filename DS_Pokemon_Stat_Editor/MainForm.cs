@@ -13,6 +13,7 @@ namespace Pokemon_Sinjoh_Editor
         private const string SPECIES_EGG_GROUP_TOOLTIP_TEXT = "Pokemon can only breed with other pokemon that share an egg group. For pokemon with a single egg group set egg groups 1 & 2 to be the same";
         private const string SPECIES_WILD_HELD_ITEM_TOOLTIP_TEXT = "The item the pokemon has a chance of holding when encountered in the wild";
         private const string SPECIES_EV_YIELD_TOOLTIP_TEXT = "What effort values the pokemon will give when defeated. Each pokemon can have a total of 510 EVs across all stats";
+        private const string EN_SPECIES_NO_ALT_FORMS_TEXT = "No alt forms";
 
         private const string ENG_MOVE_TEXT = "Move";
         private const string ENG_SPECIES_TEXT = "Species";
