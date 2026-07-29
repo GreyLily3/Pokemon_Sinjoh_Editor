@@ -20,7 +20,11 @@ namespace Pokemon_Sinjoh_Editor
         private const int FIRST_BIT_MASK = 1;
         private const int FIRST_BIT_ON = 1;
         public const int MOVE_TUTOR_LEARNSET_OFFSET_PL = 0x3012C;
+        public const int JP_MOVE_TUTOR_LEARNSET_OFFSET_PL = 0x2FF1C;
+        public const int KR_MOVE_TUTOR_LEARNSET_OFFSET_PL = 0x30124;
         public const int MOVE_TUTOR_POOL_OFFSET_PL = 0x2FF64;
+        public const int JP_MOVE_TUTOR_POOL_OFFSET_PL = 0x2FD54;
+        public const int KR_MOVE_TUTOR_POOL_OFFSET_PL = 0x2FF5C;
 
         private const uint EN_EGG_MOVES_OFFSET_PL = 0x29222;
         private const uint JP_EGG_MOVES_OFFSET_PL = 0x29012;

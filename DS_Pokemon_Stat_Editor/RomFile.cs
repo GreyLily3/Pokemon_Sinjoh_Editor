@@ -244,9 +244,30 @@ namespace Pokemon_Sinjoh_Editor
             }
             else if (gameFamily == GameFamilies.PL)
             {
+                uint moveTutorPoolOffset;
+                uint moveTutorLearnsetOffset;
+
                 uint numMoveTutorLearnsetEntries = (uint)(PokemonSpeciesList.Count - PokemonSpecies.NUM_EGG_ENTRIES);
-                uint moveTutorPoolOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_INDEX_PL) + Overlay.MOVE_TUTOR_POOL_OFFSET_PL;
-                uint moveTutorLearnsetOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_INDEX_PL) + Overlay.MOVE_TUTOR_LEARNSET_OFFSET_PL;
+
+                switch (Language)
+                {
+                    case Languages.JAPANESE:
+                        moveTutorPoolOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_INDEX_PL) + Overlay.JP_MOVE_TUTOR_POOL_OFFSET_PL;
+                        moveTutorLearnsetOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_INDEX_PL) + Overlay.JP_MOVE_TUTOR_LEARNSET_OFFSET_PL;
+                        break;
+                    case Languages.KOREAN:
+                        moveTutorPoolOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_INDEX_PL) + Overlay.KR_MOVE_TUTOR_POOL_OFFSET_PL;
+                        moveTutorLearnsetOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_INDEX_PL) + Overlay.KR_MOVE_TUTOR_LEARNSET_OFFSET_PL;
+                        break;
+                    default:
+                        moveTutorPoolOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_INDEX_PL) + Overlay.MOVE_TUTOR_POOL_OFFSET_PL;
+                        moveTutorLearnsetOffset = fat.GetStartOffset(Overlay.MOVE_TUTOR_INDEX_PL) + Overlay.MOVE_TUTOR_LEARNSET_OFFSET_PL;
+                        break;
+                }
+
+
+                
+
                 uint moveTutorLearnsetLength = numMoveTutorLearnsetEntries * MoveTutorTable.BYTES_PER_SPECIES_PL;
                 uint moveTutorPoolLength = MoveTutorTable.NUM_MOVES_PL * TutorMoveEntryPL.NUM_BYTES_PER;
 
