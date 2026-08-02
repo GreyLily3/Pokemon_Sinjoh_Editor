@@ -117,7 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="movesTabPage.Text" xml:space="preserve">
+    <value>기술</value>
+  </data>
+  <data name="speciesTabPage.Text" xml:space="preserve">
+    <value>포켓몬</value>
+  </data>
+  <data name="npcTradeTabPage.Text" xml:space="preserve">
+    <value>교환</value>
+  </data>
+  <data name="learnsetTabPage.Text" xml:space="preserve">
+    <value>배우는 기술</value>
+  </data>
+  <data name="itemsTabPage.Text" xml:space="preserve">
+    <value>아이템 </value>
+  </data>
+  <data name="pokedexTabPage.Text" xml:space="preserve">
+    <value>도감</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="moveDescriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 363</value>
+  </data>
   <data name="moveTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
@@ -202,8 +223,11 @@
   <data name="moveContactCheckBox.Text" xml:space="preserve">
     <value>접촉</value>
   </data>
-  <data name="movesTabPage.Text" xml:space="preserve">
-    <value>기술</value>
+  <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>517, 62</value>
+  </data>
+  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>669, 307</value>
   </data>
   <data name="speciesCatchRateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -221,14 +245,23 @@
     <value>Run Chance:
 (사파리존)</value>
   </data>
+  <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 381</value>
+  </data>
+  <data name="speciesXPGroupBox.Text" xml:space="preserve">
+    <value>경험</value>
+  </data>
   <data name="speciesXPGroupLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 13</value>
   </data>
   <data name="speciesXPGroupLabel.Text" xml:space="preserve">
     <value>LV.100 경험치량</value>
   </data>
-  <data name="speciesXPGroupBox.Text" xml:space="preserve">
-    <value>경험</value>
+  <data name="speciesEVOnDefeatGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 124</value>
+  </data>
+  <data name="speciesEVOnDefeatGroupBox.Text" xml:space="preserve">
+    <value>기초포인트</value>
   </data>
   <data name="speciesSpeedEVlabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -266,8 +299,14 @@
   <data name="speciesHPEVlabel.Text" xml:space="preserve">
     <value>HP</value>
   </data>
-  <data name="speciesEVOnDefeatGroupBox.Text" xml:space="preserve">
-    <value>기초포인트</value>
+  <data name="speciesComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 62</value>
+  </data>
+  <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>511, 124</value>
+  </data>
+  <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
+    <value>지니고 있는 도구</value>
   </data>
   <data name="speciesHeldItem1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 13</value>
@@ -282,8 +321,11 @@
     <value>지닌물건 1 (5%)
 </value>
   </data>
-  <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
-    <value>지니고 있는 도구</value>
+  <data name="speciesAbilitiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 258</value>
+  </data>
+  <data name="speciesAbilitiesGroupBox.Text" xml:space="preserve">
+    <value>특성</value>
   </data>
   <data name="speciesAbility1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -297,8 +339,11 @@
   <data name="speciesAbility2Label.Text" xml:space="preserve">
     <value>특성 2</value>
   </data>
-  <data name="speciesAbilitiesGroupBox.Text" xml:space="preserve">
-    <value>특성</value>
+  <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>511, 293</value>
+  </data>
+  <data name="speciesEggGroupsGroupBox.Text" xml:space="preserve">
+    <value>알</value>
   </data>
   <data name="speciesEggGroup1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 13</value>
@@ -312,8 +357,11 @@
   <data name="speciesEggGroup2Label.Text" xml:space="preserve">
     <value>알그룹 2:</value>
   </data>
-  <data name="speciesEggGroupsGroupBox.Text" xml:space="preserve">
-    <value>알</value>
+  <data name="speciesTypesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 124</value>
+  </data>
+  <data name="speciesTypesGroupBox.Text" xml:space="preserve">
+    <value>타입</value>
   </data>
   <data name="speciesType1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -327,8 +375,11 @@
   <data name="speciesType2Label.Text" xml:space="preserve">
     <value>타입 2</value>
   </data>
-  <data name="speciesTypesGroupBox.Text" xml:space="preserve">
-    <value>타입</value>
+  <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 124</value>
+  </data>
+  <data name="speciesGenderGroupBox.Text" xml:space="preserve">
+    <value>성별</value>
   </data>
   <data name="speciesGenderlessRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 17</value>
@@ -360,8 +411,11 @@
   <data name="speciesGenderMaleToFemaleLabel.Text" xml:space="preserve">
     <value>수컷 / 암컷</value>
   </data>
-  <data name="speciesGenderGroupBox.Text" xml:space="preserve">
-    <value>성별</value>
+  <data name="speciesBaseStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 124</value>
+  </data>
+  <data name="speciesBaseStatsGroupBox.Text" xml:space="preserve">
+    <value>종족값</value>
   </data>
   <data name="speciesHPLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 13</value>
@@ -399,12 +453,6 @@
   <data name="speciesSpecialDefenseLabel.Text" xml:space="preserve">
     <value>특수방어</value>
   </data>
-  <data name="speciesBaseStatsGroupBox.Text" xml:space="preserve">
-    <value>종족값</value>
-  </data>
-  <data name="speciesTabPage.Text" xml:space="preserve">
-    <value>포켓몬</value>
-  </data>
   <data name="tradeNatureLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
@@ -422,6 +470,9 @@
   </data>
   <data name="tradeGenderLabel.Text" xml:space="preserve">
     <value>성별</value>
+  </data>
+  <data name="tradeIVsGroupBox.Text" xml:space="preserve">
+    <value>개체값</value>
   </data>
   <data name="tradeSpeedIVsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -452,9 +503,6 @@
   </data>
   <data name="tradeDefenseIVsLabel.Text" xml:space="preserve">
     <value>방어</value>
-  </data>
-  <data name="tradeIVsGroupBox.Text" xml:space="preserve">
-    <value>개체값</value>
   </data>
   <data name="tradeSheenLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
@@ -510,27 +558,6 @@
   <data name="tradeHeldItemLabel.Text" xml:space="preserve">
     <value>지닌물건</value>
   </data>
-  <data name="npcTradeTabPage.Text" xml:space="preserve">
-    <value>교환</value>
-  </data>
-  <data name="itemsTabPage.Text" xml:space="preserve">
-    <value>아이템 </value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>몸무게 </value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 13</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>키</value>
-  </data>
-  <data name="pokedexTabPage.Text" xml:space="preserve">
-    <value>도감</value>
-  </data>
   <data name="learnsetLearnableTMsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
   </data>
@@ -555,26 +582,17 @@
   <data name="learnsetLevelUpMovesGroupBox.Text" xml:space="preserve">
     <value>레벨업으로 배우는 기술</value>
   </data>
-  <data name="learnsetTabPage.Text" xml:space="preserve">
-    <value>배우는 기술</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
   </data>
-  <data name="openRomFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>몸무게 </value>
   </data>
-  <data name="openRomFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>열기</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
   </data>
-  <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
-    <value>저장</value>
-  </data>
-  <data name="quitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="quitToolStripMenuItem.Text" xml:space="preserve">
-    <value>종료</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>키</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
@@ -582,17 +600,35 @@
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>파일</value>
   </data>
-  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 22</value>
+  <data name="openRomFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
   </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>언어</value>
+  <data name="openRomFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>열기</value>
+  </data>
+  <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="quitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="quitToolStripMenuItem.Text" xml:space="preserve">
+    <value>종료</value>
   </data>
   <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
   </data>
   <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
     <value>설정</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>언어</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

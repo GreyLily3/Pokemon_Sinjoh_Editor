@@ -129,10 +129,13 @@
   <data name="learnsetTabPage.Text" xml:space="preserve">
     <value>Mosse apprese</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="moveDescriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 363</value>
+  </data>
   <data name="moveTargetLabel.Text" xml:space="preserve">
     <value>Raggio</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="movePriorityLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 13</value>
   </data>
@@ -175,6 +178,9 @@
   <data name="moveContestConditionLabel.Text" xml:space="preserve">
     <value>Virtù</value>
   </data>
+  <data name="moveFlagsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 217</value>
+  </data>
   <data name="moveKingsRockCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 17</value>
   </data>
@@ -211,6 +217,12 @@
   <data name="moveContactCheckBox.Text" xml:space="preserve">
     <value>Contatto</value>
   </data>
+  <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>528, 58</value>
+  </data>
+  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>680, 315</value>
+  </data>
   <data name="speciesCatchRateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 13</value>
   </data>
@@ -230,6 +242,9 @@
     <value>Run Chance
 (Zona Safari)</value>
   </data>
+  <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 389</value>
+  </data>
   <data name="speciesXPGroupBox.Text" xml:space="preserve">
     <value>PE</value>
   </data>
@@ -244,6 +259,9 @@
   </data>
   <data name="speciesBaseXPLabel.Text" xml:space="preserve">
     <value>Esperienza base ceduta</value>
+  </data>
+  <data name="speciesEVOnDefeatGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 132</value>
   </data>
   <data name="speciesEVOnDefeatGroupBox.Text" xml:space="preserve">
     <value>Punti base ceduti</value>
@@ -284,8 +302,17 @@
   <data name="speciesHPEVlabel.Text" xml:space="preserve">
     <value>PS</value>
   </data>
+  <data name="speciesComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 58</value>
+  </data>
+  <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 132</value>
+  </data>
   <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
     <value>Strumenti tenuti</value>
+  </data>
+  <data name="speciesHeldItem1Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 34</value>
   </data>
   <data name="speciesHeldItem1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 26</value>
@@ -294,12 +321,21 @@
     <value>Strumenti tenuti 1
 (50%)</value>
   </data>
+  <data name="speciesHeldItem1ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 63</value>
+  </data>
+  <data name="speciesHeldItem2Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 97</value>
+  </data>
   <data name="speciesHeldItem2Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 26</value>
   </data>
   <data name="speciesHeldItem2Label.Text" xml:space="preserve">
     <value>Strumenti tenuti 2
 (5%)</value>
+  </data>
+  <data name="speciesAbilitiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 266</value>
   </data>
   <data name="speciesAbilitiesGroupBox.Text" xml:space="preserve">
     <value>Abilità</value>
@@ -315,6 +351,9 @@
   </data>
   <data name="speciesAbility2Label.Text" xml:space="preserve">
     <value>Abilità 2</value>
+  </data>
+  <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 301</value>
   </data>
   <data name="speciesEggGroupsGroupBox.Text" xml:space="preserve">
     <value>Uovo</value>
@@ -337,6 +376,9 @@
   <data name="speciesEggGroup2Label.Text" xml:space="preserve">
     <value>Gruppo Uova 2</value>
   </data>
+  <data name="speciesTypesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 132</value>
+  </data>
   <data name="speciesTypesGroupBox.Text" xml:space="preserve">
     <value>Tipo</value>
   </data>
@@ -351,6 +393,9 @@
   </data>
   <data name="speciesType2Label.Text" xml:space="preserve">
     <value>Tipo 2:</value>
+  </data>
+  <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>683, 132</value>
   </data>
   <data name="speciesGenderGroupBox.Text" xml:space="preserve">
     <value>Sesso</value>
@@ -389,6 +434,9 @@ Femmina</value>
   </data>
   <data name="speciesGenderMaleToFemaleLabel.Text" xml:space="preserve">
     <value>Maschio/Femmina</value>
+  </data>
+  <data name="speciesBaseStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 132</value>
   </data>
   <data name="speciesBaseStatsGroupBox.Text" xml:space="preserve">
     <value>Statistiche</value>
