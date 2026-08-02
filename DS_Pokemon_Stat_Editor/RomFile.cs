@@ -93,9 +93,21 @@ namespace Pokemon_Sinjoh_Editor
 			if (!IsValidGameVersion() || !IsSupportedGameVersion())
 				return;
 
-			read(romReader);
-			romFileStream.Dispose();
-			romReader.Dispose();
+            try
+            {
+                read(romReader);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error reading ROM file selected.\n " + e.Message);
+            }
+            finally
+            {
+                romFileStream.Dispose();
+                romReader.Dispose();
+            }
+			
+			
         }
 
 		public enum GameVersions
