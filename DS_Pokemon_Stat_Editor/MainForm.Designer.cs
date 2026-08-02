@@ -33,25 +33,19 @@
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.movesTabPage = new System.Windows.Forms.TabPage();
             this.moveDescriptionTextBox = new System.Windows.Forms.RichTextBox();
-            this.moveEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.movesComboBox = new System.Windows.Forms.ComboBox();
             this.moveTargetComboBox = new System.Windows.Forms.ComboBox();
             this.moveTargetLabel = new System.Windows.Forms.Label();
             this.movePriorityLabel = new System.Windows.Forms.Label();
-            this.movePriorityNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveCategoryLabel = new System.Windows.Forms.Label();
             this.moveCategoryComboBox = new System.Windows.Forms.ComboBox();
             this.moveEffectChanceLabel = new System.Windows.Forms.Label();
-            this.moveEffectChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveEffectLabel = new System.Windows.Forms.Label();
             this.moveTypeLabel = new System.Windows.Forms.Label();
             this.moveTypeComboBox = new System.Windows.Forms.ComboBox();
             this.movePPLabel = new System.Windows.Forms.Label();
-            this.movePPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveAccuracyLabel = new System.Windows.Forms.Label();
-            this.moveAccuracyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.movePowerLabel = new System.Windows.Forms.Label();
-            this.movePowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.moveContestConditionLabel = new System.Windows.Forms.Label();
             this.moveContestEffectLabel = new System.Windows.Forms.Label();
             this.moveContestConditionComboBox = new System.Windows.Forms.ComboBox();
@@ -68,24 +62,14 @@
             this.speciesTabPage = new System.Windows.Forms.TabPage();
             this.speciesAltFormsComboBox = new System.Windows.Forms.ComboBox();
             this.speciesMiscGroupBox = new System.Windows.Forms.GroupBox();
-            this.speciesCatchRateNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesBaseFriendshipNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSafariRunChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesCatchRateLabel = new System.Windows.Forms.Label();
             this.speciesBaseHappinessLabel = new System.Windows.Forms.Label();
             this.speciesSafariRunChanceLabel = new System.Windows.Forms.Label();
             this.speciesXPGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesXPGroupLabel = new System.Windows.Forms.Label();
-            this.speciesBaseXPYieldNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesBaseXPLabel = new System.Windows.Forms.Label();
             this.speciesXPGroupComboBox = new System.Windows.Forms.ComboBox();
             this.speciesEVOnDefeatGroupBox = new System.Windows.Forms.GroupBox();
-            this.speciesSpeedEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesHPEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesSpeedEVlabel = new System.Windows.Forms.Label();
             this.speciesSpecialDefenseEVLabel = new System.Windows.Forms.Label();
             this.speciesSpecialAttackEVLabel = new System.Windows.Forms.Label();
@@ -105,7 +89,6 @@
             this.speciesAbility2Label = new System.Windows.Forms.Label();
             this.speciesEggGroupsGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesEggCyclesLabel = new System.Windows.Forms.Label();
-            this.speciesEggCyclesNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesEggGroup1ComboBox = new System.Windows.Forms.ComboBox();
             this.speciesEggGroup1Label = new System.Windows.Forms.Label();
             this.speciesEggGroup2ComboBox = new System.Windows.Forms.ComboBox();
@@ -117,19 +100,12 @@
             this.speciesType2Label = new System.Windows.Forms.Label();
             this.speciesGenderGroupBox = new System.Windows.Forms.GroupBox();
             this.speciesGenderlessRadioButton = new System.Windows.Forms.RadioButton();
-            this.speciesGenderRatioNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.label35 = new System.Windows.Forms.Label();
             this.speciesMaleOnlyRadioButton = new System.Windows.Forms.RadioButton();
             this.speciesFemaleOnlyRadioButton = new System.Windows.Forms.RadioButton();
             this.speciesMaleAndFemaleRadioButton = new System.Windows.Forms.RadioButton();
             this.speciesGenderMaleToFemaleLabel = new System.Windows.Forms.Label();
             this.speciesBaseStatsGroupBox = new System.Windows.Forms.GroupBox();
-            this.speciesHPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpeedNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.speciesSpecialDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.speciesHPLabel = new System.Windows.Forms.Label();
             this.speciesAttackLabel = new System.Windows.Forms.Label();
             this.speciesDefenseLabel = new System.Windows.Forms.Label();
@@ -156,28 +132,16 @@
             this.tradeIVsGroupBox = new System.Windows.Forms.GroupBox();
             this.tradeSpeedIVsLabel = new System.Windows.Forms.Label();
             this.tradeSpecialDefenseIVsLabel = new System.Windows.Forms.Label();
-            this.tradeHPIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.tradeSpeedIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.tradeSpecialDefenseIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeHPIVsLabel = new System.Windows.Forms.Label();
             this.tradeSpecialAttackIVsLabel = new System.Windows.Forms.Label();
-            this.tradeAttackIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.tradeSpecialAttackIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeAttackIVsLabel = new System.Windows.Forms.Label();
-            this.tradeDefenseIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeDefenseIVsLabel = new System.Windows.Forms.Label();
             this.tradeContestStatsGroupBox = new System.Windows.Forms.GroupBox();
-            this.tradeSheenNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeSheenLabel = new System.Windows.Forms.Label();
-            this.tradeCoolNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeCoolLabel = new System.Windows.Forms.Label();
-            this.tradeToughNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeToughLabel = new System.Windows.Forms.Label();
-            this.tradeBeautyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeBeautyLabel = new System.Windows.Forms.Label();
-            this.tradeSmartNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeSmartLabel = new System.Windows.Forms.Label();
-            this.tradeCuteNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.tradeCuteLabel = new System.Windows.Forms.Label();
             this.tradeTrainerComboBox = new System.Windows.Forms.ComboBox();
             this.tradeLanguageLabel = new System.Windows.Forms.Label();
@@ -192,8 +156,6 @@
             this.tradeHeldItemComboBox = new System.Windows.Forms.ComboBox();
             this.tradeOfferedPokemonComboBox = new System.Windows.Forms.ComboBox();
             this.tradeWantedPokemonComboBox = new System.Windows.Forms.ComboBox();
-            this.tradePVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.tradeOriginalTrainerIDNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.itemsTabPage = new System.Windows.Forms.TabPage();
             this.itemsBattlePocketsGroupBox = new System.Windows.Forms.GroupBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
@@ -216,18 +178,8 @@
             this.itemHoldParemeterLabel = new System.Windows.Forms.Label();
             this.itemHoldEffectLabel = new System.Windows.Forms.Label();
             this.itemPriceLabel = new System.Windows.Forms.Label();
-            this.itemNaturalGiftPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemFlingEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemFlingPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemPluckEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemHoldParameterNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemHoldEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.itemPriceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.pokedexTabPage = new System.Windows.Forms.TabPage();
             this.pokedexHeightConversionGroupBox = new System.Windows.Forms.GroupBox();
-            this.pokedexHTMetersNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.pokedexHTFTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.pokedexHTINNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.pokedexHTMetersLabel = new System.Windows.Forms.Label();
             this.pokedexHTINLabel = new System.Windows.Forms.Label();
             this.pokedexHTFTLabel = new System.Windows.Forms.Label();
@@ -240,7 +192,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pokedexCategoryTextBox = new System.Windows.Forms.TextBox();
             this.pokedexNameComboBox = new System.Windows.Forms.ComboBox();
-            this.pokedexWTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.textTabPage = new System.Windows.Forms.TabPage();
             this.textInGameListView = new System.Windows.Forms.ListView();
             this.TextBankIndexNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -291,26 +242,6 @@
             this.learnsetLevelUpMove4ComboBox = new System.Windows.Forms.ComboBox();
             this.learnsetLevelUpMove3ComboBox = new System.Windows.Forms.ComboBox();
             this.learnsetLevelUpMove2ComboBox = new System.Windows.Forms.ComboBox();
-            this.learnsetLevelUpLevel20NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel19NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel18NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel17NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel16NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel15NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel14NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel13NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel12NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel11NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel10NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel9NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel8NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel7NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel6NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel5NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel4NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel3NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel2NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
-            this.learnsetLevelUpLevel1NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.learnsetLevelUpMove1ComboBox = new System.Windows.Forms.ComboBox();
             this.mainFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -359,54 +290,135 @@
             this.tradeAbilityTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeGenderTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.tradeNatureTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.moveEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.movePriorityNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.moveEffectChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.movePPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.moveAccuracyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.movePowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesCatchRateNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesBaseFriendshipNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSafariRunChanceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesBaseXPYieldNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpeedEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesDefenseEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesAttackEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesHPEVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesEggCyclesNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesGenderRatioNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesHPNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpeedNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialAttackNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.speciesSpecialDefenseNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeHPIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeSpeedIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeSpecialDefenseIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeAttackIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeSpecialAttackIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeDefenseIVsNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeSheenNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeCoolNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeToughNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeBeautyNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeSmartNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeCuteNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradePVNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.tradeOriginalTrainerIDNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemNaturalGiftPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemFlingEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemFlingPowerNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemPluckEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemHoldParameterNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemHoldEffectNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.itemPriceNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexHTMetersNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexHTFTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexHTINNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.pokedexWTNumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel20NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel19NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel18NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel17NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel16NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel15NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel14NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel13NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel12NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel11NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel10NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel9NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel8NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel7NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel6NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel5NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel4NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel3NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel2NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
+            this.learnsetLevelUpLevel1NumericNoArrows = new Pokemon_Sinjoh_Editor.NumericNoArrows();
             this.mainTabControl.SuspendLayout();
             this.movesTabPage.SuspendLayout();
+            this.moveFlagsGroupBox.SuspendLayout();
+            this.speciesTabPage.SuspendLayout();
+            this.speciesMiscGroupBox.SuspendLayout();
+            this.speciesXPGroupBox.SuspendLayout();
+            this.speciesEVOnDefeatGroupBox.SuspendLayout();
+            this.speciesHeldItemsGroupBox.SuspendLayout();
+            this.speciesAbilitiesGroupBox.SuspendLayout();
+            this.speciesEggGroupsGroupBox.SuspendLayout();
+            this.speciesTypesGroupBox.SuspendLayout();
+            this.speciesGenderGroupBox.SuspendLayout();
+            this.speciesBaseStatsGroupBox.SuspendLayout();
+            this.npcTradeTabPage.SuspendLayout();
+            this.tradeNewPVGroupBox.SuspendLayout();
+            this.tradePVDerivedGroupBox.SuspendLayout();
+            this.tradeIVsGroupBox.SuspendLayout();
+            this.tradeContestStatsGroupBox.SuspendLayout();
+            this.itemsTabPage.SuspendLayout();
+            this.itemsBattlePocketsGroupBox.SuspendLayout();
+            this.pokedexTabPage.SuspendLayout();
+            this.pokedexHeightConversionGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTDecimetersNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexNumNationalNumericUpDown)).BeginInit();
+            this.textTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBankIndexNumericUpDown)).BeginInit();
+            this.learnsetTabPage.SuspendLayout();
+            this.learnsetEggMovesGroupBox.SuspendLayout();
+            this.learnsetLevelUpMovesGroupBox.SuspendLayout();
+            this.mainFormMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).BeginInit();
-            this.moveFlagsGroupBox.SuspendLayout();
-            this.speciesTabPage.SuspendLayout();
-            this.speciesMiscGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesCatchRateNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesBaseFriendshipNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSafariRunChanceNumericNoArrows)).BeginInit();
-            this.speciesXPGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesBaseXPYieldNumericNoArrows)).BeginInit();
-            this.speciesEVOnDefeatGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesAttackEVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHPEVNumericNoArrows)).BeginInit();
-            this.speciesHeldItemsGroupBox.SuspendLayout();
-            this.speciesAbilitiesGroupBox.SuspendLayout();
-            this.speciesEggGroupsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).BeginInit();
-            this.speciesTypesGroupBox.SuspendLayout();
-            this.speciesGenderGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).BeginInit();
-            this.speciesBaseStatsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speciesHPNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesAttackNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).BeginInit();
-            this.npcTradeTabPage.SuspendLayout();
-            this.tradeNewPVGroupBox.SuspendLayout();
-            this.tradePVDerivedGroupBox.SuspendLayout();
-            this.tradeIVsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeHPIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpeedIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialDefenseIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeAttackIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialAttackIVsNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeDefenseIVsNumericNoArrows)).BeginInit();
-            this.tradeContestStatsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSheenNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeCoolNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeToughNumericNoArrows)).BeginInit();
@@ -415,8 +427,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tradeCuteNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradePVNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeOriginalTrainerIDNumericNoArrows)).BeginInit();
-            this.itemsTabPage.SuspendLayout();
-            this.itemsBattlePocketsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemNaturalGiftPowerNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingPowerNumericNoArrows)).BeginInit();
@@ -424,19 +434,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldParameterNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldEffectNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).BeginInit();
-            this.pokedexTabPage.SuspendLayout();
-            this.pokedexHeightConversionGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTMetersNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTFTNumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTINNumericNoArrows)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTDecimetersNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexNumNationalNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).BeginInit();
-            this.textTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TextBankIndexNumericUpDown)).BeginInit();
-            this.learnsetTabPage.SuspendLayout();
-            this.learnsetEggMovesGroupBox.SuspendLayout();
-            this.learnsetLevelUpMovesGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel20NumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel19NumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel18NumericNoArrows)).BeginInit();
@@ -457,7 +458,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel3NumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel2NumericNoArrows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel1NumericNoArrows)).BeginInit();
-            this.mainFormMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -466,10 +466,10 @@
             this.mainTabControl.Controls.Add(this.movesTabPage);
             this.mainTabControl.Controls.Add(this.speciesTabPage);
             this.mainTabControl.Controls.Add(this.npcTradeTabPage);
+            this.mainTabControl.Controls.Add(this.learnsetTabPage);
             this.mainTabControl.Controls.Add(this.itemsTabPage);
             this.mainTabControl.Controls.Add(this.pokedexTabPage);
             this.mainTabControl.Controls.Add(this.textTabPage);
-            this.mainTabControl.Controls.Add(this.learnsetTabPage);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
             this.moveMagicCoatTooltip.SetToolTip(this.mainTabControl, resources.GetString("mainTabControl.ToolTip"));
@@ -609,51 +609,6 @@
             this.moveContestEffectTooltip.SetToolTip(this.moveDescriptionTextBox, resources.GetString("moveDescriptionTextBox.ToolTip30"));
             this.moveTargetTooltip.SetToolTip(this.moveDescriptionTextBox, resources.GetString("moveDescriptionTextBox.ToolTip31"));
             this.moveCategoryTooltip.SetToolTip(this.moveDescriptionTextBox, resources.GetString("moveDescriptionTextBox.ToolTip32"));
-            // 
-            // moveEffectNumericNoArrows
-            // 
-            resources.ApplyResources(this.moveEffectNumericNoArrows, "moveEffectNumericNoArrows");
-            this.moveEffectNumericNoArrows.InterceptArrowKeys = false;
-            this.moveEffectNumericNoArrows.Maximum = new decimal(new int[] {
-            276,
-            0,
-            0,
-            0});
-            this.moveEffectNumericNoArrows.Name = "moveEffectNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip32"));
-            this.moveEffectNumericNoArrows.Validated += new System.EventHandler(this.moveEffectNumericNoArrows_Validated);
             // 
             // movesComboBox
             // 
@@ -815,56 +770,6 @@
             this.tradeAbilityTooltip.SetToolTip(this.movePriorityLabel, resources.GetString("movePriorityLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.movePriorityLabel, resources.GetString("movePriorityLabel.ToolTip32"));
             // 
-            // movePriorityNumericNoArrows
-            // 
-            resources.ApplyResources(this.movePriorityNumericNoArrows, "movePriorityNumericNoArrows");
-            this.movePriorityNumericNoArrows.InterceptArrowKeys = false;
-            this.movePriorityNumericNoArrows.Maximum = new decimal(new int[] {
-            127,
-            0,
-            0,
-            0});
-            this.movePriorityNumericNoArrows.Minimum = new decimal(new int[] {
-            128,
-            0,
-            0,
-            -2147483648});
-            this.movePriorityNumericNoArrows.Name = "movePriorityNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip32"));
-            this.movePriorityNumericNoArrows.Validated += new System.EventHandler(this.movePriorityNumericNoArrows_Validated);
-            // 
             // moveCategoryLabel
             // 
             resources.ApplyResources(this.moveCategoryLabel, "moveCategoryLabel");
@@ -981,51 +886,6 @@
             this.moveTargetTooltip.SetToolTip(this.moveEffectChanceLabel, resources.GetString("moveEffectChanceLabel.ToolTip30"));
             this.tradeAbilityTooltip.SetToolTip(this.moveEffectChanceLabel, resources.GetString("moveEffectChanceLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.moveEffectChanceLabel, resources.GetString("moveEffectChanceLabel.ToolTip32"));
-            // 
-            // moveEffectChanceNumericNoArrows
-            // 
-            resources.ApplyResources(this.moveEffectChanceNumericNoArrows, "moveEffectChanceNumericNoArrows");
-            this.moveEffectChanceNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.moveEffectChanceNumericNoArrows.InterceptArrowKeys = false;
-            this.moveEffectChanceNumericNoArrows.Name = "moveEffectChanceNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip32"));
-            this.moveEffectChanceNumericNoArrows.Validated += new System.EventHandler(this.moveEffectChanceNumericNoArrows_Validated);
             // 
             // moveEffectLabel
             // 
@@ -1182,66 +1042,6 @@
             this.tradeAbilityTooltip.SetToolTip(this.movePPLabel, resources.GetString("movePPLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.movePPLabel, resources.GetString("movePPLabel.ToolTip32"));
             // 
-            // movePPNumericNoArrows
-            // 
-            resources.ApplyResources(this.movePPNumericNoArrows, "movePPNumericNoArrows");
-            this.movePPNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.InterceptArrowKeys = false;
-            this.movePPNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip32"));
-            this.movePPNumericNoArrows.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePPNumericNoArrows.Validated += new System.EventHandler(this.movePPNumericNoArrows_Validated);
-            // 
             // moveAccuracyLabel
             // 
             resources.ApplyResources(this.moveAccuracyLabel, "moveAccuracyLabel");
@@ -1280,51 +1080,6 @@
             this.tradeAbilityTooltip.SetToolTip(this.moveAccuracyLabel, resources.GetString("moveAccuracyLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.moveAccuracyLabel, resources.GetString("moveAccuracyLabel.ToolTip32"));
             // 
-            // moveAccuracyNumericNoArrows
-            // 
-            resources.ApplyResources(this.moveAccuracyNumericNoArrows, "moveAccuracyNumericNoArrows");
-            this.moveAccuracyNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.moveAccuracyNumericNoArrows.InterceptArrowKeys = false;
-            this.moveAccuracyNumericNoArrows.Name = "moveAccuracyNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip32"));
-            this.moveAccuracyNumericNoArrows.Validated += new System.EventHandler(this.moveAccuracyNumericNoArrows_Validated);
-            // 
             // movePowerLabel
             // 
             resources.ApplyResources(this.movePowerLabel, "movePowerLabel");
@@ -1362,58 +1117,6 @@
             this.moveTargetTooltip.SetToolTip(this.movePowerLabel, resources.GetString("movePowerLabel.ToolTip30"));
             this.tradeAbilityTooltip.SetToolTip(this.movePowerLabel, resources.GetString("movePowerLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.movePowerLabel, resources.GetString("movePowerLabel.ToolTip32"));
-            // 
-            // movePowerNumericNoArrows
-            // 
-            resources.ApplyResources(this.movePowerNumericNoArrows, "movePowerNumericNoArrows");
-            this.movePowerNumericNoArrows.BackColor = System.Drawing.SystemColors.Window;
-            this.movePowerNumericNoArrows.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.movePowerNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.movePowerNumericNoArrows.InterceptArrowKeys = false;
-            this.movePowerNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.movePowerNumericNoArrows.Name = "movePowerNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip32"));
-            this.movePowerNumericNoArrows.Validated += new System.EventHandler(this.movePowerNumericNoArrows_Validated);
             // 
             // moveContestConditionLabel
             // 
@@ -2078,146 +1781,6 @@
             this.moveContestEffectTooltip.SetToolTip(this.speciesMiscGroupBox, resources.GetString("speciesMiscGroupBox.ToolTip31"));
             this.moveTypeTooltip.SetToolTip(this.speciesMiscGroupBox, resources.GetString("speciesMiscGroupBox.ToolTip32"));
             // 
-            // speciesCatchRateNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesCatchRateNumericNoArrows, "speciesCatchRateNumericNoArrows");
-            this.speciesCatchRateNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesCatchRateNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesCatchRateNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesCatchRateNumericNoArrows.Name = "speciesCatchRateNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip32"));
-            this.speciesCatchRateNumericNoArrows.Validated += new System.EventHandler(this.speciesCatchRateNumericNoArrows_Validated);
-            // 
-            // speciesBaseFriendshipNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesBaseFriendshipNumericNoArrows, "speciesBaseFriendshipNumericNoArrows");
-            this.speciesBaseFriendshipNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesBaseFriendshipNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesBaseFriendshipNumericNoArrows.Name = "speciesBaseFriendshipNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip32"));
-            this.speciesBaseFriendshipNumericNoArrows.Validated += new System.EventHandler(this.speciesHappinessNumericNoArrows_Validated);
-            // 
-            // speciesSafariRunChanceNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesSafariRunChanceNumericNoArrows, "speciesSafariRunChanceNumericNoArrows");
-            this.speciesSafariRunChanceNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSafariRunChanceNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSafariRunChanceNumericNoArrows.Name = "speciesSafariRunChanceNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip32"));
-            this.speciesSafariRunChanceNumericNoArrows.Validated += new System.EventHandler(this.speciesSafariRunChanceNumericNoArrows_Validated);
-            // 
             // speciesCatchRateLabel
             // 
             resources.ApplyResources(this.speciesCatchRateLabel, "speciesCatchRateLabel");
@@ -2413,56 +1976,6 @@
             this.tradeAbilityTooltip.SetToolTip(this.speciesXPGroupLabel, resources.GetString("speciesXPGroupLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.speciesXPGroupLabel, resources.GetString("speciesXPGroupLabel.ToolTip32"));
             // 
-            // speciesBaseXPYieldNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesBaseXPYieldNumericNoArrows, "speciesBaseXPYieldNumericNoArrows");
-            this.speciesBaseXPYieldNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesBaseXPYieldNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesBaseXPYieldNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesBaseXPYieldNumericNoArrows.Name = "speciesBaseXPYieldNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip32"));
-            this.speciesBaseXPYieldNumericNoArrows.Validated += new System.EventHandler(this.speciesBaseXPYieldNumericNoArrows_Validated);
-            // 
             // speciesBaseXPLabel
             // 
             resources.ApplyResources(this.speciesBaseXPLabel, "speciesBaseXPLabel");
@@ -2592,276 +2105,6 @@
             this.moveEffectChanceTooltip.SetToolTip(this.speciesEVOnDefeatGroupBox, resources.GetString("speciesEVOnDefeatGroupBox.ToolTip30"));
             this.moveContestEffectTooltip.SetToolTip(this.speciesEVOnDefeatGroupBox, resources.GetString("speciesEVOnDefeatGroupBox.ToolTip31"));
             this.moveTypeTooltip.SetToolTip(this.speciesEVOnDefeatGroupBox, resources.GetString("speciesEVOnDefeatGroupBox.ToolTip32"));
-            // 
-            // speciesSpeedEVNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesSpeedEVNumericNoArrows, "speciesSpeedEVNumericNoArrows");
-            this.speciesSpeedEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpeedEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesSpeedEVNumericNoArrows.Name = "speciesSpeedEVNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip32"));
-            this.speciesSpeedEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedEVNumericNoArrows_Validated);
-            // 
-            // speciesSpecialDefenseEVNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesSpecialDefenseEVNumericNoArrows, "speciesSpecialDefenseEVNumericNoArrows");
-            this.speciesSpecialDefenseEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesSpecialDefenseEVNumericNoArrows.Name = "speciesSpecialDefenseEVNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip32"));
-            this.speciesSpecialDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseEVNumericNoArrows_Validated);
-            // 
-            // speciesSpecialAttackEVNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesSpecialAttackEVNumericNoArrows, "speciesSpecialAttackEVNumericNoArrows");
-            this.speciesSpecialAttackEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesSpecialAttackEVNumericNoArrows.Name = "speciesSpecialAttackEVNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip32"));
-            this.speciesSpecialAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackEVNumericNoArrows_Validated);
-            // 
-            // speciesDefenseEVNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesDefenseEVNumericNoArrows, "speciesDefenseEVNumericNoArrows");
-            this.speciesDefenseEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesDefenseEVNumericNoArrows.Name = "speciesDefenseEVNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip32"));
-            this.speciesDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseEVNumericNoArrows_Validated);
-            // 
-            // speciesAttackEVNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesAttackEVNumericNoArrows, "speciesAttackEVNumericNoArrows");
-            this.speciesAttackEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesAttackEVNumericNoArrows.Name = "speciesAttackEVNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip32"));
-            this.speciesAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackEVNumericNoArrows_Validated);
-            // 
-            // speciesHPEVNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesHPEVNumericNoArrows, "speciesHPEVNumericNoArrows");
-            this.speciesHPEVNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesHPEVNumericNoArrows.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.speciesHPEVNumericNoArrows.Name = "speciesHPEVNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip32"));
-            this.speciesHPEVNumericNoArrows.Validated += new System.EventHandler(this.speciesHPEVNumericNoArrows_Validated);
             // 
             // speciesSpeedEVlabel
             // 
@@ -3619,51 +2862,6 @@
             this.tradeAbilityTooltip.SetToolTip(this.speciesEggCyclesLabel, resources.GetString("speciesEggCyclesLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.speciesEggCyclesLabel, resources.GetString("speciesEggCyclesLabel.ToolTip32"));
             // 
-            // speciesEggCyclesNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesEggCyclesNumericNoArrows, "speciesEggCyclesNumericNoArrows");
-            this.speciesEggCyclesNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesEggCyclesNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesEggCyclesNumericNoArrows.Name = "speciesEggCyclesNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip32"));
-            this.speciesEggCyclesNumericNoArrows.Validated += new System.EventHandler(this.speciesEggCyclesNumericNoArrows_Validated);
-            // 
             // speciesEggGroup1ComboBox
             // 
             resources.ApplyResources(this.speciesEggGroup1ComboBox, "speciesEggGroup1ComboBox");
@@ -4110,66 +3308,6 @@
             this.speciesGenderlessRadioButton.UseVisualStyleBackColor = true;
             this.speciesGenderlessRadioButton.CheckedChanged += new System.EventHandler(this.speciesGenderlessRadioButton_CheckedChanged);
             // 
-            // speciesGenderRatioNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesGenderRatioNumericNoArrows, "speciesGenderRatioNumericNoArrows");
-            this.speciesGenderRatioNumericNoArrows.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesGenderRatioNumericNoArrows.Maximum = new decimal(new int[] {
-            253,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.Name = "speciesGenderRatioNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip32"));
-            this.speciesGenderRatioNumericNoArrows.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.speciesGenderRatioNumericNoArrows.Validated += new System.EventHandler(this.speciesGenderRatioNumericNoArrows_Validated);
-            // 
             // label35
             // 
             resources.ApplyResources(this.label35, "label35");
@@ -4419,306 +3557,6 @@
             this.moveEffectChanceTooltip.SetToolTip(this.speciesBaseStatsGroupBox, resources.GetString("speciesBaseStatsGroupBox.ToolTip30"));
             this.moveContestEffectTooltip.SetToolTip(this.speciesBaseStatsGroupBox, resources.GetString("speciesBaseStatsGroupBox.ToolTip31"));
             this.moveTypeTooltip.SetToolTip(this.speciesBaseStatsGroupBox, resources.GetString("speciesBaseStatsGroupBox.ToolTip32"));
-            // 
-            // speciesHPNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesHPNumericNoArrows, "speciesHPNumericNoArrows");
-            this.speciesHPNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesHPNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesHPNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesHPNumericNoArrows.Name = "speciesHPNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip32"));
-            this.speciesHPNumericNoArrows.Validated += new System.EventHandler(this.speciesHPNumericNoArrows_Validated);
-            // 
-            // speciesAttackNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesAttackNumericNoArrows, "speciesAttackNumericNoArrows");
-            this.speciesAttackNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesAttackNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesAttackNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesAttackNumericNoArrows.Name = "speciesAttackNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip32"));
-            this.speciesAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackNumericNoArrows_Validated);
-            // 
-            // speciesDefenseNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesDefenseNumericNoArrows, "speciesDefenseNumericNoArrows");
-            this.speciesDefenseNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesDefenseNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesDefenseNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesDefenseNumericNoArrows.Name = "speciesDefenseNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip32"));
-            this.speciesDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseNumericNoArrows_Validated);
-            // 
-            // speciesSpeedNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesSpeedNumericNoArrows, "speciesSpeedNumericNoArrows");
-            this.speciesSpeedNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesSpeedNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpeedNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSpeedNumericNoArrows.Name = "speciesSpeedNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip32"));
-            this.speciesSpeedNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedNumericNoArrows_Validated);
-            // 
-            // speciesSpecialAttackNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesSpecialAttackNumericNoArrows, "speciesSpecialAttackNumericNoArrows");
-            this.speciesSpecialAttackNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesSpecialAttackNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialAttackNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSpecialAttackNumericNoArrows.Name = "speciesSpecialAttackNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip32"));
-            this.speciesSpecialAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackNumericNoArrows_Validated);
-            // 
-            // speciesSpecialDefenseNumericNoArrows
-            // 
-            resources.ApplyResources(this.speciesSpecialDefenseNumericNoArrows, "speciesSpecialDefenseNumericNoArrows");
-            this.speciesSpecialDefenseNumericNoArrows.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.speciesSpecialDefenseNumericNoArrows.InterceptArrowKeys = false;
-            this.speciesSpecialDefenseNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.speciesSpecialDefenseNumericNoArrows.Name = "speciesSpecialDefenseNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip32"));
-            this.speciesSpecialDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseNumericNoArrows_Validated);
             // 
             // speciesHPLabel
             // 
@@ -5781,141 +4619,6 @@
             this.tradeAbilityTooltip.SetToolTip(this.tradeSpecialDefenseIVsLabel, resources.GetString("tradeSpecialDefenseIVsLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.tradeSpecialDefenseIVsLabel, resources.GetString("tradeSpecialDefenseIVsLabel.ToolTip32"));
             // 
-            // tradeHPIVsNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeHPIVsNumericNoArrows, "tradeHPIVsNumericNoArrows");
-            this.tradeHPIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeHPIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeHPIVsNumericNoArrows.Name = "tradeHPIVsNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip32"));
-            this.tradeHPIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeHPIVsNumericNoArrows_Validated);
-            // 
-            // tradeSpeedIVsNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeSpeedIVsNumericNoArrows, "tradeSpeedIVsNumericNoArrows");
-            this.tradeSpeedIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeSpeedIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeSpeedIVsNumericNoArrows.Name = "tradeSpeedIVsNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip32"));
-            this.tradeSpeedIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpeedIVsNumericNoArrows_Validated);
-            // 
-            // tradeSpecialDefenseIVsNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeSpecialDefenseIVsNumericNoArrows, "tradeSpecialDefenseIVsNumericNoArrows");
-            this.tradeSpecialDefenseIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeSpecialDefenseIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeSpecialDefenseIVsNumericNoArrows.Name = "tradeSpecialDefenseIVsNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip32"));
-            this.tradeSpecialDefenseIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpecialDefenseIVsNumericNoArrows_Validated);
-            // 
             // tradeHPIVsLabel
             // 
             resources.ApplyResources(this.tradeHPIVsLabel, "tradeHPIVsLabel");
@@ -5992,96 +4695,6 @@
             this.tradeAbilityTooltip.SetToolTip(this.tradeSpecialAttackIVsLabel, resources.GetString("tradeSpecialAttackIVsLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.tradeSpecialAttackIVsLabel, resources.GetString("tradeSpecialAttackIVsLabel.ToolTip32"));
             // 
-            // tradeAttackIVsNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeAttackIVsNumericNoArrows, "tradeAttackIVsNumericNoArrows");
-            this.tradeAttackIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeAttackIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeAttackIVsNumericNoArrows.Name = "tradeAttackIVsNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip32"));
-            this.tradeAttackIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeAttackIVsNumericNoArrows_Validated);
-            // 
-            // tradeSpecialAttackIVsNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeSpecialAttackIVsNumericNoArrows, "tradeSpecialAttackIVsNumericNoArrows");
-            this.tradeSpecialAttackIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeSpecialAttackIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeSpecialAttackIVsNumericNoArrows.Name = "tradeSpecialAttackIVsNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip32"));
-            this.tradeSpecialAttackIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpecialAttackIVsNumericNoArrows_Validated);
-            // 
             // tradeAttackIVsLabel
             // 
             resources.ApplyResources(this.tradeAttackIVsLabel, "tradeAttackIVsLabel");
@@ -6119,51 +4732,6 @@
             this.moveTargetTooltip.SetToolTip(this.tradeAttackIVsLabel, resources.GetString("tradeAttackIVsLabel.ToolTip30"));
             this.tradeAbilityTooltip.SetToolTip(this.tradeAttackIVsLabel, resources.GetString("tradeAttackIVsLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.tradeAttackIVsLabel, resources.GetString("tradeAttackIVsLabel.ToolTip32"));
-            // 
-            // tradeDefenseIVsNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeDefenseIVsNumericNoArrows, "tradeDefenseIVsNumericNoArrows");
-            this.tradeDefenseIVsNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeDefenseIVsNumericNoArrows.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tradeDefenseIVsNumericNoArrows.Name = "tradeDefenseIVsNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip32"));
-            this.tradeDefenseIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeDefenseIVsNumericNoArrows_Validated);
             // 
             // tradeDefenseIVsLabel
             // 
@@ -6254,51 +4822,6 @@
             this.moveContestEffectTooltip.SetToolTip(this.tradeContestStatsGroupBox, resources.GetString("tradeContestStatsGroupBox.ToolTip31"));
             this.moveTypeTooltip.SetToolTip(this.tradeContestStatsGroupBox, resources.GetString("tradeContestStatsGroupBox.ToolTip32"));
             // 
-            // tradeSheenNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeSheenNumericNoArrows, "tradeSheenNumericNoArrows");
-            this.tradeSheenNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeSheenNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeSheenNumericNoArrows.Name = "tradeSheenNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip32"));
-            this.tradeSheenNumericNoArrows.Validated += new System.EventHandler(this.tradeSheenNumericNoArrows_Validated);
-            // 
             // tradeSheenLabel
             // 
             resources.ApplyResources(this.tradeSheenLabel, "tradeSheenLabel");
@@ -6336,51 +4859,6 @@
             this.moveTargetTooltip.SetToolTip(this.tradeSheenLabel, resources.GetString("tradeSheenLabel.ToolTip30"));
             this.tradeAbilityTooltip.SetToolTip(this.tradeSheenLabel, resources.GetString("tradeSheenLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.tradeSheenLabel, resources.GetString("tradeSheenLabel.ToolTip32"));
-            // 
-            // tradeCoolNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeCoolNumericNoArrows, "tradeCoolNumericNoArrows");
-            this.tradeCoolNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeCoolNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeCoolNumericNoArrows.Name = "tradeCoolNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip32"));
-            this.tradeCoolNumericNoArrows.Validated += new System.EventHandler(this.tradeCoolNumericNoArrows_Validated);
             // 
             // tradeCoolLabel
             // 
@@ -6420,51 +4898,6 @@
             this.tradeAbilityTooltip.SetToolTip(this.tradeCoolLabel, resources.GetString("tradeCoolLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.tradeCoolLabel, resources.GetString("tradeCoolLabel.ToolTip32"));
             // 
-            // tradeToughNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeToughNumericNoArrows, "tradeToughNumericNoArrows");
-            this.tradeToughNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeToughNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeToughNumericNoArrows.Name = "tradeToughNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip32"));
-            this.tradeToughNumericNoArrows.Validated += new System.EventHandler(this.tradeToughNumericNoArrows_Validated);
-            // 
             // tradeToughLabel
             // 
             resources.ApplyResources(this.tradeToughLabel, "tradeToughLabel");
@@ -6502,51 +4935,6 @@
             this.moveTargetTooltip.SetToolTip(this.tradeToughLabel, resources.GetString("tradeToughLabel.ToolTip30"));
             this.tradeAbilityTooltip.SetToolTip(this.tradeToughLabel, resources.GetString("tradeToughLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.tradeToughLabel, resources.GetString("tradeToughLabel.ToolTip32"));
-            // 
-            // tradeBeautyNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeBeautyNumericNoArrows, "tradeBeautyNumericNoArrows");
-            this.tradeBeautyNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeBeautyNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeBeautyNumericNoArrows.Name = "tradeBeautyNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip32"));
-            this.tradeBeautyNumericNoArrows.Validated += new System.EventHandler(this.tradeBeautyNumericNoArrows_Validated);
             // 
             // tradeBeautyLabel
             // 
@@ -6586,51 +4974,6 @@
             this.tradeAbilityTooltip.SetToolTip(this.tradeBeautyLabel, resources.GetString("tradeBeautyLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.tradeBeautyLabel, resources.GetString("tradeBeautyLabel.ToolTip32"));
             // 
-            // tradeSmartNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeSmartNumericNoArrows, "tradeSmartNumericNoArrows");
-            this.tradeSmartNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeSmartNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeSmartNumericNoArrows.Name = "tradeSmartNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip32"));
-            this.tradeSmartNumericNoArrows.Validated += new System.EventHandler(this.tradeSmartNumericNoArrows_Validated);
-            // 
             // tradeSmartLabel
             // 
             resources.ApplyResources(this.tradeSmartLabel, "tradeSmartLabel");
@@ -6668,51 +5011,6 @@
             this.moveTargetTooltip.SetToolTip(this.tradeSmartLabel, resources.GetString("tradeSmartLabel.ToolTip30"));
             this.tradeAbilityTooltip.SetToolTip(this.tradeSmartLabel, resources.GetString("tradeSmartLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.tradeSmartLabel, resources.GetString("tradeSmartLabel.ToolTip32"));
-            // 
-            // tradeCuteNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeCuteNumericNoArrows, "tradeCuteNumericNoArrows");
-            this.tradeCuteNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeCuteNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.tradeCuteNumericNoArrows.Name = "tradeCuteNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip32"));
-            this.tradeCuteNumericNoArrows.Validated += new System.EventHandler(this.tradeCuteNumericNoArrows_Validated);
             // 
             // tradeCuteLabel
             // 
@@ -7267,97 +5565,6 @@
             this.moveTargetTooltip.SetToolTip(this.tradeWantedPokemonComboBox, resources.GetString("tradeWantedPokemonComboBox.ToolTip31"));
             this.moveEffectTooltip.SetToolTip(this.tradeWantedPokemonComboBox, resources.GetString("tradeWantedPokemonComboBox.ToolTip32"));
             this.tradeWantedPokemonComboBox.SelectionChangeCommitted += new System.EventHandler(this.tradeWantedPokemonComboBox_SelectionChangeCommitted);
-            // 
-            // tradePVNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradePVNumericNoArrows, "tradePVNumericNoArrows");
-            this.tradePVNumericNoArrows.InterceptArrowKeys = false;
-            this.tradePVNumericNoArrows.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.tradePVNumericNoArrows.Name = "tradePVNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip32"));
-            this.tradePVNumericNoArrows.ValueChanged += new System.EventHandler(this.tradePVNumericNoArrows_ValueChanged);
-            this.tradePVNumericNoArrows.Validated += new System.EventHandler(this.tradePVNumericNoArrows_Validated);
-            // 
-            // tradeOriginalTrainerIDNumericNoArrows
-            // 
-            resources.ApplyResources(this.tradeOriginalTrainerIDNumericNoArrows, "tradeOriginalTrainerIDNumericNoArrows");
-            this.tradeOriginalTrainerIDNumericNoArrows.InterceptArrowKeys = false;
-            this.tradeOriginalTrainerIDNumericNoArrows.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.tradeOriginalTrainerIDNumericNoArrows.Name = "tradeOriginalTrainerIDNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip32"));
-            this.tradeOriginalTrainerIDNumericNoArrows.Validated += new System.EventHandler(this.tradeOriginalTrainerIDNumericNoArrows_Validated);
             // 
             // itemsTabPage
             // 
@@ -8240,314 +6447,6 @@
             this.tradeAbilityTooltip.SetToolTip(this.itemPriceLabel, resources.GetString("itemPriceLabel.ToolTip31"));
             this.tradeNatureTooltip.SetToolTip(this.itemPriceLabel, resources.GetString("itemPriceLabel.ToolTip32"));
             // 
-            // itemNaturalGiftPowerNumericNoArrows
-            // 
-            resources.ApplyResources(this.itemNaturalGiftPowerNumericNoArrows, "itemNaturalGiftPowerNumericNoArrows");
-            this.itemNaturalGiftPowerNumericNoArrows.InterceptArrowKeys = false;
-            this.itemNaturalGiftPowerNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemNaturalGiftPowerNumericNoArrows.Name = "itemNaturalGiftPowerNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip32"));
-            // 
-            // itemFlingEffectNumericNoArrows
-            // 
-            resources.ApplyResources(this.itemFlingEffectNumericNoArrows, "itemFlingEffectNumericNoArrows");
-            this.itemFlingEffectNumericNoArrows.InterceptArrowKeys = false;
-            this.itemFlingEffectNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemFlingEffectNumericNoArrows.Name = "itemFlingEffectNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip32"));
-            // 
-            // itemFlingPowerNumericNoArrows
-            // 
-            resources.ApplyResources(this.itemFlingPowerNumericNoArrows, "itemFlingPowerNumericNoArrows");
-            this.itemFlingPowerNumericNoArrows.InterceptArrowKeys = false;
-            this.itemFlingPowerNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemFlingPowerNumericNoArrows.Name = "itemFlingPowerNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip32"));
-            // 
-            // itemPluckEffectNumericNoArrows
-            // 
-            resources.ApplyResources(this.itemPluckEffectNumericNoArrows, "itemPluckEffectNumericNoArrows");
-            this.itemPluckEffectNumericNoArrows.InterceptArrowKeys = false;
-            this.itemPluckEffectNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemPluckEffectNumericNoArrows.Name = "itemPluckEffectNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip32"));
-            // 
-            // itemHoldParameterNumericNoArrows
-            // 
-            resources.ApplyResources(this.itemHoldParameterNumericNoArrows, "itemHoldParameterNumericNoArrows");
-            this.itemHoldParameterNumericNoArrows.InterceptArrowKeys = false;
-            this.itemHoldParameterNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemHoldParameterNumericNoArrows.Name = "itemHoldParameterNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip32"));
-            // 
-            // itemHoldEffectNumericNoArrows
-            // 
-            resources.ApplyResources(this.itemHoldEffectNumericNoArrows, "itemHoldEffectNumericNoArrows");
-            this.itemHoldEffectNumericNoArrows.InterceptArrowKeys = false;
-            this.itemHoldEffectNumericNoArrows.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.itemHoldEffectNumericNoArrows.Name = "itemHoldEffectNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip32"));
-            // 
-            // itemPriceNumericNoArrows
-            // 
-            resources.ApplyResources(this.itemPriceNumericNoArrows, "itemPriceNumericNoArrows");
-            this.itemPriceNumericNoArrows.InterceptArrowKeys = false;
-            this.itemPriceNumericNoArrows.Maximum = new decimal(new int[] {
-            65565,
-            0,
-            0,
-            0});
-            this.itemPriceNumericNoArrows.Name = "itemPriceNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip32"));
-            // 
             // pokedexTabPage
             // 
             resources.ApplyResources(this.pokedexTabPage, "pokedexTabPage");
@@ -8642,150 +6541,6 @@
             this.moveEffectChanceTooltip.SetToolTip(this.pokedexHeightConversionGroupBox, resources.GetString("pokedexHeightConversionGroupBox.ToolTip30"));
             this.moveContestEffectTooltip.SetToolTip(this.pokedexHeightConversionGroupBox, resources.GetString("pokedexHeightConversionGroupBox.ToolTip31"));
             this.moveTypeTooltip.SetToolTip(this.pokedexHeightConversionGroupBox, resources.GetString("pokedexHeightConversionGroupBox.ToolTip32"));
-            // 
-            // pokedexHTMetersNumericNoArrows
-            // 
-            resources.ApplyResources(this.pokedexHTMetersNumericNoArrows, "pokedexHTMetersNumericNoArrows");
-            this.pokedexHTMetersNumericNoArrows.DecimalPlaces = 1;
-            this.pokedexHTMetersNumericNoArrows.InterceptArrowKeys = false;
-            this.pokedexHTMetersNumericNoArrows.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.pokedexHTMetersNumericNoArrows.Name = "pokedexHTMetersNumericNoArrows";
-            this.pokedexHTMetersNumericNoArrows.ReadOnly = true;
-            this.moveProtectTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip32"));
-            this.pokedexHTMetersNumericNoArrows.Validated += new System.EventHandler(this.pokedexHTMetersNumericNoArrows_Validated);
-            // 
-            // pokedexHTFTNumericNoArrows
-            // 
-            resources.ApplyResources(this.pokedexHTFTNumericNoArrows, "pokedexHTFTNumericNoArrows");
-            this.pokedexHTFTNumericNoArrows.InterceptArrowKeys = false;
-            this.pokedexHTFTNumericNoArrows.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.pokedexHTFTNumericNoArrows.Name = "pokedexHTFTNumericNoArrows";
-            this.pokedexHTFTNumericNoArrows.ReadOnly = true;
-            this.moveProtectTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip32"));
-            this.pokedexHTFTNumericNoArrows.Validated += new System.EventHandler(this.pokedexHTFTNumericNoArrows_Validated);
-            // 
-            // pokedexHTINNumericNoArrows
-            // 
-            resources.ApplyResources(this.pokedexHTINNumericNoArrows, "pokedexHTINNumericNoArrows");
-            this.pokedexHTINNumericNoArrows.Increment = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.pokedexHTINNumericNoArrows.InterceptArrowKeys = false;
-            this.pokedexHTINNumericNoArrows.Maximum = new decimal(new int[] {
-            11,
-            0,
-            0,
-            0});
-            this.pokedexHTINNumericNoArrows.Name = "pokedexHTINNumericNoArrows";
-            this.pokedexHTINNumericNoArrows.ReadOnly = true;
-            this.moveProtectTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip32"));
-            this.pokedexHTINNumericNoArrows.Validated += new System.EventHandler(this.pokedexHTINNumericNoArrows_Validated);
             // 
             // pokedexHTMetersLabel
             // 
@@ -9257,57 +7012,6 @@
             this.moveContestEffectTooltip.SetToolTip(this.pokedexNameComboBox, resources.GetString("pokedexNameComboBox.ToolTip30"));
             this.moveTargetTooltip.SetToolTip(this.pokedexNameComboBox, resources.GetString("pokedexNameComboBox.ToolTip31"));
             this.moveEffectTooltip.SetToolTip(this.pokedexNameComboBox, resources.GetString("pokedexNameComboBox.ToolTip32"));
-            // 
-            // pokedexWTNumericNoArrows
-            // 
-            resources.ApplyResources(this.pokedexWTNumericNoArrows, "pokedexWTNumericNoArrows");
-            this.pokedexWTNumericNoArrows.DecimalPlaces = 1;
-            this.pokedexWTNumericNoArrows.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.pokedexWTNumericNoArrows.InterceptArrowKeys = false;
-            this.pokedexWTNumericNoArrows.Maximum = new decimal(new int[] {
-            9998,
-            0,
-            0,
-            0});
-            this.pokedexWTNumericNoArrows.Name = "pokedexWTNumericNoArrows";
-            this.moveProtectTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip7"));
-            this.tradeGenderTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip8"));
-            this.speciesAbilityTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip9"));
-            this.moveMagicCoatTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip15"));
-            this.speciesEVYieldTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip16"));
-            this.speciesCatchRateTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip17"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip19"));
-            this.moveTargetTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip21"));
-            this.moveContactTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip22"));
-            this.moveAccuracyTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip23"));
-            this.movePowerTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip24"));
-            this.moveTypeTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip25"));
-            this.movePowerPointsTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip26"));
-            this.tradeNatureTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip27"));
-            this.moveCategoryTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip28"));
-            this.movePriorityTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip29"));
-            this.moveEffectChanceTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip30"));
-            this.moveContestEffectTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip32"));
-            this.pokedexWTNumericNoArrows.Validated += new System.EventHandler(this.pokedexWTNumericNoArrows_Validated);
             // 
             // textTabPage
             // 
@@ -11482,6 +9186,2477 @@
             this.moveEffectTooltip.SetToolTip(this.learnsetLevelUpMove2ComboBox, resources.GetString("learnsetLevelUpMove2ComboBox.ToolTip32"));
             this.learnsetLevelUpMove2ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove2ComboBox_SelectionChangeCommitted);
             // 
+            // learnsetLevelUpMove1ComboBox
+            // 
+            resources.ApplyResources(this.learnsetLevelUpMove1ComboBox, "learnsetLevelUpMove1ComboBox");
+            this.learnsetLevelUpMove1ComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.learnsetLevelUpMove1ComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.learnsetLevelUpMove1ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.learnsetLevelUpMove1ComboBox.FormattingEnabled = true;
+            this.learnsetLevelUpMove1ComboBox.Name = "learnsetLevelUpMove1ComboBox";
+            this.moveShadowTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip"));
+            this.speciesTypeTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip1"));
+            this.tradeGenderTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip3"));
+            this.moveSnatchTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip4"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip5"));
+            this.speciesXPGroupTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip6"));
+            this.moveKingsRockTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip7"));
+            this.speciesAbilityTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip8"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip9"));
+            this.speciesBaseXPTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip10"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip11"));
+            this.speciesEggGroupTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip12"));
+            this.moveProtectTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip13"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip14"));
+            this.speciesEVYieldTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip15"));
+            this.speciesCatchRateTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip16"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip17"));
+            this.moveMagicCoatTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip18"));
+            this.tradeNatureTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip19"));
+            this.moveContactTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip21"));
+            this.moveAccuracyTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip22"));
+            this.moveContestConditionTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip23"));
+            this.moveTypeTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip24"));
+            this.movePowerPointsTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip25"));
+            this.movePowerTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip26"));
+            this.moveCategoryTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip27"));
+            this.movePriorityTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip28"));
+            this.moveEffectChanceTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip29"));
+            this.moveContestEffectTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip30"));
+            this.moveTargetTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip32"));
+            this.learnsetLevelUpMove1ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove1ComboBox_SelectionChangeCommitted);
+            // 
+            // mainFormMenuStrip
+            // 
+            resources.ApplyResources(this.mainFormMenuStrip, "mainFormMenuStrip");
+            this.mainFormMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.optionsToolStripMenuItem});
+            this.mainFormMenuStrip.Name = "mainFormMenuStrip";
+            this.moveMirrorMoveTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip"));
+            this.moveSnatchTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip1"));
+            this.moveHPBarTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip2"));
+            this.moveKingsRockTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip3"));
+            this.speciesTypeTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip4"));
+            this.moveShadowTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip5"));
+            this.speciesXPGroupTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip6"));
+            this.speciesAbilityTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip7"));
+            this.speciesBaseXPTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip8"));
+            this.moveProtectTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip9"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip10"));
+            this.speciesEggGroupTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip11"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip12"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip13"));
+            this.speciesEVYieldTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip14"));
+            this.speciesCatchRateTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip15"));
+            this.tradeGenderTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip16"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip17"));
+            this.moveContestConditionTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip18"));
+            this.tradeNatureTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip19"));
+            this.moveContactTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip21"));
+            this.moveAccuracyTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip22"));
+            this.moveMagicCoatTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip23"));
+            this.moveTypeTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip24"));
+            this.movePowerPointsTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip25"));
+            this.movePowerTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip26"));
+            this.moveCategoryTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip27"));
+            this.movePriorityTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip28"));
+            this.moveEffectChanceTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip29"));
+            this.moveContestEffectTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip30"));
+            this.moveTargetTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip32"));
+            // 
+            // fileToolStripMenuItem
+            // 
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openRomFileToolStripMenuItem,
+            this.saveToolStripMenuItem,
+            this.quitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            // 
+            // openRomFileToolStripMenuItem
+            // 
+            resources.ApplyResources(this.openRomFileToolStripMenuItem, "openRomFileToolStripMenuItem");
+            this.openRomFileToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.openRomFileToolStripMenuItem.Name = "openRomFileToolStripMenuItem";
+            this.openRomFileToolStripMenuItem.Click += new System.EventHandler(this.openRomFileToolStripMenuItem_Click);
+            // 
+            // saveToolStripMenuItem
+            // 
+            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // quitToolStripMenuItem
+            // 
+            resources.ApplyResources(this.quitToolStripMenuItem, "quitToolStripMenuItem");
+            this.quitToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
+            // 
+            // optionsToolStripMenuItem
+            // 
+            resources.ApplyResources(this.optionsToolStripMenuItem, "optionsToolStripMenuItem");
+            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.languageToolStripMenuItem});
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            // 
+            // languageToolStripMenuItem
+            // 
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.españolToolStripMenuItem,
+            this.françaisToolStripMenuItem,
+            this.deutschToolStripMenuItem,
+            this.italianoToolStripMenuItem,
+            this.日本語ToolStripMenuItem,
+            this.한국어ToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            // 
+            // englishToolStripMenuItem
+            // 
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // españolToolStripMenuItem
+            // 
+            resources.ApplyResources(this.españolToolStripMenuItem, "españolToolStripMenuItem");
+            this.españolToolStripMenuItem.Name = "españolToolStripMenuItem";
+            this.españolToolStripMenuItem.Click += new System.EventHandler(this.españolToolStripMenuItem_Click);
+            // 
+            // françaisToolStripMenuItem
+            // 
+            resources.ApplyResources(this.françaisToolStripMenuItem, "françaisToolStripMenuItem");
+            this.françaisToolStripMenuItem.Name = "françaisToolStripMenuItem";
+            this.françaisToolStripMenuItem.Click += new System.EventHandler(this.françaisToolStripMenuItem_Click);
+            // 
+            // deutschToolStripMenuItem
+            // 
+            resources.ApplyResources(this.deutschToolStripMenuItem, "deutschToolStripMenuItem");
+            this.deutschToolStripMenuItem.Name = "deutschToolStripMenuItem";
+            this.deutschToolStripMenuItem.Click += new System.EventHandler(this.deutschToolStripMenuItem_Click);
+            // 
+            // italianoToolStripMenuItem
+            // 
+            resources.ApplyResources(this.italianoToolStripMenuItem, "italianoToolStripMenuItem");
+            this.italianoToolStripMenuItem.Name = "italianoToolStripMenuItem";
+            this.italianoToolStripMenuItem.Click += new System.EventHandler(this.italianoToolStripMenuItem_Click);
+            // 
+            // 日本語ToolStripMenuItem
+            // 
+            resources.ApplyResources(this.日本語ToolStripMenuItem, "日本語ToolStripMenuItem");
+            this.日本語ToolStripMenuItem.Name = "日本語ToolStripMenuItem";
+            this.日本語ToolStripMenuItem.Click += new System.EventHandler(this.日本語ToolStripMenuItem_Click);
+            // 
+            // 한국어ToolStripMenuItem
+            // 
+            resources.ApplyResources(this.한국어ToolStripMenuItem, "한국어ToolStripMenuItem");
+            this.한국어ToolStripMenuItem.Name = "한국어ToolStripMenuItem";
+            this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
+            // 
+            // moveEffectNumericNoArrows
+            // 
+            resources.ApplyResources(this.moveEffectNumericNoArrows, "moveEffectNumericNoArrows");
+            this.moveEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.moveEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            276,
+            0,
+            0,
+            0});
+            this.moveEffectNumericNoArrows.Name = "moveEffectNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.moveEffectNumericNoArrows, resources.GetString("moveEffectNumericNoArrows.ToolTip32"));
+            this.moveEffectNumericNoArrows.Validated += new System.EventHandler(this.moveEffectNumericNoArrows_Validated);
+            // 
+            // movePriorityNumericNoArrows
+            // 
+            resources.ApplyResources(this.movePriorityNumericNoArrows, "movePriorityNumericNoArrows");
+            this.movePriorityNumericNoArrows.InterceptArrowKeys = false;
+            this.movePriorityNumericNoArrows.Maximum = new decimal(new int[] {
+            127,
+            0,
+            0,
+            0});
+            this.movePriorityNumericNoArrows.Minimum = new decimal(new int[] {
+            128,
+            0,
+            0,
+            -2147483648});
+            this.movePriorityNumericNoArrows.Name = "movePriorityNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.movePriorityNumericNoArrows, resources.GetString("movePriorityNumericNoArrows.ToolTip32"));
+            this.movePriorityNumericNoArrows.Validated += new System.EventHandler(this.movePriorityNumericNoArrows_Validated);
+            // 
+            // moveEffectChanceNumericNoArrows
+            // 
+            resources.ApplyResources(this.moveEffectChanceNumericNoArrows, "moveEffectChanceNumericNoArrows");
+            this.moveEffectChanceNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.moveEffectChanceNumericNoArrows.InterceptArrowKeys = false;
+            this.moveEffectChanceNumericNoArrows.Name = "moveEffectChanceNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.moveEffectChanceNumericNoArrows, resources.GetString("moveEffectChanceNumericNoArrows.ToolTip32"));
+            this.moveEffectChanceNumericNoArrows.Validated += new System.EventHandler(this.moveEffectChanceNumericNoArrows_Validated);
+            // 
+            // movePPNumericNoArrows
+            // 
+            resources.ApplyResources(this.movePPNumericNoArrows, "movePPNumericNoArrows");
+            this.movePPNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.InterceptArrowKeys = false;
+            this.movePPNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.Name = "movePPNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.movePPNumericNoArrows, resources.GetString("movePPNumericNoArrows.ToolTip32"));
+            this.movePPNumericNoArrows.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePPNumericNoArrows.Validated += new System.EventHandler(this.movePPNumericNoArrows_Validated);
+            // 
+            // moveAccuracyNumericNoArrows
+            // 
+            resources.ApplyResources(this.moveAccuracyNumericNoArrows, "moveAccuracyNumericNoArrows");
+            this.moveAccuracyNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.moveAccuracyNumericNoArrows.InterceptArrowKeys = false;
+            this.moveAccuracyNumericNoArrows.Name = "moveAccuracyNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.moveAccuracyNumericNoArrows, resources.GetString("moveAccuracyNumericNoArrows.ToolTip32"));
+            this.moveAccuracyNumericNoArrows.Validated += new System.EventHandler(this.moveAccuracyNumericNoArrows_Validated);
+            // 
+            // movePowerNumericNoArrows
+            // 
+            resources.ApplyResources(this.movePowerNumericNoArrows, "movePowerNumericNoArrows");
+            this.movePowerNumericNoArrows.BackColor = System.Drawing.SystemColors.Window;
+            this.movePowerNumericNoArrows.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.movePowerNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.movePowerNumericNoArrows.InterceptArrowKeys = false;
+            this.movePowerNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.movePowerNumericNoArrows.Name = "movePowerNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.movePowerNumericNoArrows, resources.GetString("movePowerNumericNoArrows.ToolTip32"));
+            this.movePowerNumericNoArrows.Validated += new System.EventHandler(this.movePowerNumericNoArrows_Validated);
+            // 
+            // speciesCatchRateNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesCatchRateNumericNoArrows, "speciesCatchRateNumericNoArrows");
+            this.speciesCatchRateNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesCatchRateNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesCatchRateNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesCatchRateNumericNoArrows.Name = "speciesCatchRateNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesCatchRateNumericNoArrows, resources.GetString("speciesCatchRateNumericNoArrows.ToolTip32"));
+            this.speciesCatchRateNumericNoArrows.Validated += new System.EventHandler(this.speciesCatchRateNumericNoArrows_Validated);
+            // 
+            // speciesBaseFriendshipNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesBaseFriendshipNumericNoArrows, "speciesBaseFriendshipNumericNoArrows");
+            this.speciesBaseFriendshipNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesBaseFriendshipNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesBaseFriendshipNumericNoArrows.Name = "speciesBaseFriendshipNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesBaseFriendshipNumericNoArrows, resources.GetString("speciesBaseFriendshipNumericNoArrows.ToolTip32"));
+            this.speciesBaseFriendshipNumericNoArrows.Validated += new System.EventHandler(this.speciesHappinessNumericNoArrows_Validated);
+            // 
+            // speciesSafariRunChanceNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesSafariRunChanceNumericNoArrows, "speciesSafariRunChanceNumericNoArrows");
+            this.speciesSafariRunChanceNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSafariRunChanceNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSafariRunChanceNumericNoArrows.Name = "speciesSafariRunChanceNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesSafariRunChanceNumericNoArrows, resources.GetString("speciesSafariRunChanceNumericNoArrows.ToolTip32"));
+            this.speciesSafariRunChanceNumericNoArrows.Validated += new System.EventHandler(this.speciesSafariRunChanceNumericNoArrows_Validated);
+            // 
+            // speciesBaseXPYieldNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesBaseXPYieldNumericNoArrows, "speciesBaseXPYieldNumericNoArrows");
+            this.speciesBaseXPYieldNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesBaseXPYieldNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesBaseXPYieldNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesBaseXPYieldNumericNoArrows.Name = "speciesBaseXPYieldNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesBaseXPYieldNumericNoArrows, resources.GetString("speciesBaseXPYieldNumericNoArrows.ToolTip32"));
+            this.speciesBaseXPYieldNumericNoArrows.Validated += new System.EventHandler(this.speciesBaseXPYieldNumericNoArrows_Validated);
+            // 
+            // speciesSpeedEVNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesSpeedEVNumericNoArrows, "speciesSpeedEVNumericNoArrows");
+            this.speciesSpeedEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpeedEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesSpeedEVNumericNoArrows.Name = "speciesSpeedEVNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesSpeedEVNumericNoArrows, resources.GetString("speciesSpeedEVNumericNoArrows.ToolTip32"));
+            this.speciesSpeedEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedEVNumericNoArrows_Validated);
+            // 
+            // speciesSpecialDefenseEVNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesSpecialDefenseEVNumericNoArrows, "speciesSpecialDefenseEVNumericNoArrows");
+            this.speciesSpecialDefenseEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesSpecialDefenseEVNumericNoArrows.Name = "speciesSpecialDefenseEVNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesSpecialDefenseEVNumericNoArrows, resources.GetString("speciesSpecialDefenseEVNumericNoArrows.ToolTip32"));
+            this.speciesSpecialDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseEVNumericNoArrows_Validated);
+            // 
+            // speciesSpecialAttackEVNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesSpecialAttackEVNumericNoArrows, "speciesSpecialAttackEVNumericNoArrows");
+            this.speciesSpecialAttackEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesSpecialAttackEVNumericNoArrows.Name = "speciesSpecialAttackEVNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesSpecialAttackEVNumericNoArrows, resources.GetString("speciesSpecialAttackEVNumericNoArrows.ToolTip32"));
+            this.speciesSpecialAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackEVNumericNoArrows_Validated);
+            // 
+            // speciesDefenseEVNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesDefenseEVNumericNoArrows, "speciesDefenseEVNumericNoArrows");
+            this.speciesDefenseEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesDefenseEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesDefenseEVNumericNoArrows.Name = "speciesDefenseEVNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesDefenseEVNumericNoArrows, resources.GetString("speciesDefenseEVNumericNoArrows.ToolTip32"));
+            this.speciesDefenseEVNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseEVNumericNoArrows_Validated);
+            // 
+            // speciesAttackEVNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesAttackEVNumericNoArrows, "speciesAttackEVNumericNoArrows");
+            this.speciesAttackEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesAttackEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesAttackEVNumericNoArrows.Name = "speciesAttackEVNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesAttackEVNumericNoArrows, resources.GetString("speciesAttackEVNumericNoArrows.ToolTip32"));
+            this.speciesAttackEVNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackEVNumericNoArrows_Validated);
+            // 
+            // speciesHPEVNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesHPEVNumericNoArrows, "speciesHPEVNumericNoArrows");
+            this.speciesHPEVNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesHPEVNumericNoArrows.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.speciesHPEVNumericNoArrows.Name = "speciesHPEVNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesHPEVNumericNoArrows, resources.GetString("speciesHPEVNumericNoArrows.ToolTip32"));
+            this.speciesHPEVNumericNoArrows.Validated += new System.EventHandler(this.speciesHPEVNumericNoArrows_Validated);
+            // 
+            // speciesEggCyclesNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesEggCyclesNumericNoArrows, "speciesEggCyclesNumericNoArrows");
+            this.speciesEggCyclesNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesEggCyclesNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesEggCyclesNumericNoArrows.Name = "speciesEggCyclesNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesEggCyclesNumericNoArrows, resources.GetString("speciesEggCyclesNumericNoArrows.ToolTip32"));
+            this.speciesEggCyclesNumericNoArrows.Validated += new System.EventHandler(this.speciesEggCyclesNumericNoArrows_Validated);
+            // 
+            // speciesGenderRatioNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesGenderRatioNumericNoArrows, "speciesGenderRatioNumericNoArrows");
+            this.speciesGenderRatioNumericNoArrows.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesGenderRatioNumericNoArrows.Maximum = new decimal(new int[] {
+            253,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.Name = "speciesGenderRatioNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesGenderRatioNumericNoArrows, resources.GetString("speciesGenderRatioNumericNoArrows.ToolTip32"));
+            this.speciesGenderRatioNumericNoArrows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.speciesGenderRatioNumericNoArrows.Validated += new System.EventHandler(this.speciesGenderRatioNumericNoArrows_Validated);
+            // 
+            // speciesHPNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesHPNumericNoArrows, "speciesHPNumericNoArrows");
+            this.speciesHPNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesHPNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesHPNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesHPNumericNoArrows.Name = "speciesHPNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesHPNumericNoArrows, resources.GetString("speciesHPNumericNoArrows.ToolTip32"));
+            this.speciesHPNumericNoArrows.Validated += new System.EventHandler(this.speciesHPNumericNoArrows_Validated);
+            // 
+            // speciesAttackNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesAttackNumericNoArrows, "speciesAttackNumericNoArrows");
+            this.speciesAttackNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesAttackNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesAttackNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesAttackNumericNoArrows.Name = "speciesAttackNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesAttackNumericNoArrows, resources.GetString("speciesAttackNumericNoArrows.ToolTip32"));
+            this.speciesAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesAttackNumericNoArrows_Validated);
+            // 
+            // speciesDefenseNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesDefenseNumericNoArrows, "speciesDefenseNumericNoArrows");
+            this.speciesDefenseNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesDefenseNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesDefenseNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesDefenseNumericNoArrows.Name = "speciesDefenseNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesDefenseNumericNoArrows, resources.GetString("speciesDefenseNumericNoArrows.ToolTip32"));
+            this.speciesDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesDefenseNumericNoArrows_Validated);
+            // 
+            // speciesSpeedNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesSpeedNumericNoArrows, "speciesSpeedNumericNoArrows");
+            this.speciesSpeedNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesSpeedNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpeedNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSpeedNumericNoArrows.Name = "speciesSpeedNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesSpeedNumericNoArrows, resources.GetString("speciesSpeedNumericNoArrows.ToolTip32"));
+            this.speciesSpeedNumericNoArrows.Validated += new System.EventHandler(this.speciesSpeedNumericNoArrows_Validated);
+            // 
+            // speciesSpecialAttackNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesSpecialAttackNumericNoArrows, "speciesSpecialAttackNumericNoArrows");
+            this.speciesSpecialAttackNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesSpecialAttackNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialAttackNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSpecialAttackNumericNoArrows.Name = "speciesSpecialAttackNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesSpecialAttackNumericNoArrows, resources.GetString("speciesSpecialAttackNumericNoArrows.ToolTip32"));
+            this.speciesSpecialAttackNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialAttackNumericNoArrows_Validated);
+            // 
+            // speciesSpecialDefenseNumericNoArrows
+            // 
+            resources.ApplyResources(this.speciesSpecialDefenseNumericNoArrows, "speciesSpecialDefenseNumericNoArrows");
+            this.speciesSpecialDefenseNumericNoArrows.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speciesSpecialDefenseNumericNoArrows.InterceptArrowKeys = false;
+            this.speciesSpecialDefenseNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.speciesSpecialDefenseNumericNoArrows.Name = "speciesSpecialDefenseNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.speciesSpecialDefenseNumericNoArrows, resources.GetString("speciesSpecialDefenseNumericNoArrows.ToolTip32"));
+            this.speciesSpecialDefenseNumericNoArrows.Validated += new System.EventHandler(this.speciesSpecialDefenseNumericNoArrows_Validated);
+            // 
+            // tradeHPIVsNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeHPIVsNumericNoArrows, "tradeHPIVsNumericNoArrows");
+            this.tradeHPIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeHPIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeHPIVsNumericNoArrows.Name = "tradeHPIVsNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeHPIVsNumericNoArrows, resources.GetString("tradeHPIVsNumericNoArrows.ToolTip32"));
+            this.tradeHPIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeHPIVsNumericNoArrows_Validated);
+            // 
+            // tradeSpeedIVsNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeSpeedIVsNumericNoArrows, "tradeSpeedIVsNumericNoArrows");
+            this.tradeSpeedIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeSpeedIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeSpeedIVsNumericNoArrows.Name = "tradeSpeedIVsNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeSpeedIVsNumericNoArrows, resources.GetString("tradeSpeedIVsNumericNoArrows.ToolTip32"));
+            this.tradeSpeedIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpeedIVsNumericNoArrows_Validated);
+            // 
+            // tradeSpecialDefenseIVsNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeSpecialDefenseIVsNumericNoArrows, "tradeSpecialDefenseIVsNumericNoArrows");
+            this.tradeSpecialDefenseIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeSpecialDefenseIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeSpecialDefenseIVsNumericNoArrows.Name = "tradeSpecialDefenseIVsNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeSpecialDefenseIVsNumericNoArrows, resources.GetString("tradeSpecialDefenseIVsNumericNoArrows.ToolTip32"));
+            this.tradeSpecialDefenseIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpecialDefenseIVsNumericNoArrows_Validated);
+            // 
+            // tradeAttackIVsNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeAttackIVsNumericNoArrows, "tradeAttackIVsNumericNoArrows");
+            this.tradeAttackIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeAttackIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeAttackIVsNumericNoArrows.Name = "tradeAttackIVsNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeAttackIVsNumericNoArrows, resources.GetString("tradeAttackIVsNumericNoArrows.ToolTip32"));
+            this.tradeAttackIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeAttackIVsNumericNoArrows_Validated);
+            // 
+            // tradeSpecialAttackIVsNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeSpecialAttackIVsNumericNoArrows, "tradeSpecialAttackIVsNumericNoArrows");
+            this.tradeSpecialAttackIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeSpecialAttackIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeSpecialAttackIVsNumericNoArrows.Name = "tradeSpecialAttackIVsNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeSpecialAttackIVsNumericNoArrows, resources.GetString("tradeSpecialAttackIVsNumericNoArrows.ToolTip32"));
+            this.tradeSpecialAttackIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeSpecialAttackIVsNumericNoArrows_Validated);
+            // 
+            // tradeDefenseIVsNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeDefenseIVsNumericNoArrows, "tradeDefenseIVsNumericNoArrows");
+            this.tradeDefenseIVsNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeDefenseIVsNumericNoArrows.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tradeDefenseIVsNumericNoArrows.Name = "tradeDefenseIVsNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeDefenseIVsNumericNoArrows, resources.GetString("tradeDefenseIVsNumericNoArrows.ToolTip32"));
+            this.tradeDefenseIVsNumericNoArrows.Validated += new System.EventHandler(this.tradeDefenseIVsNumericNoArrows_Validated);
+            // 
+            // tradeSheenNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeSheenNumericNoArrows, "tradeSheenNumericNoArrows");
+            this.tradeSheenNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeSheenNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeSheenNumericNoArrows.Name = "tradeSheenNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeSheenNumericNoArrows, resources.GetString("tradeSheenNumericNoArrows.ToolTip32"));
+            this.tradeSheenNumericNoArrows.Validated += new System.EventHandler(this.tradeSheenNumericNoArrows_Validated);
+            // 
+            // tradeCoolNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeCoolNumericNoArrows, "tradeCoolNumericNoArrows");
+            this.tradeCoolNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeCoolNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeCoolNumericNoArrows.Name = "tradeCoolNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeCoolNumericNoArrows, resources.GetString("tradeCoolNumericNoArrows.ToolTip32"));
+            this.tradeCoolNumericNoArrows.Validated += new System.EventHandler(this.tradeCoolNumericNoArrows_Validated);
+            // 
+            // tradeToughNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeToughNumericNoArrows, "tradeToughNumericNoArrows");
+            this.tradeToughNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeToughNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeToughNumericNoArrows.Name = "tradeToughNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeToughNumericNoArrows, resources.GetString("tradeToughNumericNoArrows.ToolTip32"));
+            this.tradeToughNumericNoArrows.Validated += new System.EventHandler(this.tradeToughNumericNoArrows_Validated);
+            // 
+            // tradeBeautyNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeBeautyNumericNoArrows, "tradeBeautyNumericNoArrows");
+            this.tradeBeautyNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeBeautyNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeBeautyNumericNoArrows.Name = "tradeBeautyNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeBeautyNumericNoArrows, resources.GetString("tradeBeautyNumericNoArrows.ToolTip32"));
+            this.tradeBeautyNumericNoArrows.Validated += new System.EventHandler(this.tradeBeautyNumericNoArrows_Validated);
+            // 
+            // tradeSmartNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeSmartNumericNoArrows, "tradeSmartNumericNoArrows");
+            this.tradeSmartNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeSmartNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeSmartNumericNoArrows.Name = "tradeSmartNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeSmartNumericNoArrows, resources.GetString("tradeSmartNumericNoArrows.ToolTip32"));
+            this.tradeSmartNumericNoArrows.Validated += new System.EventHandler(this.tradeSmartNumericNoArrows_Validated);
+            // 
+            // tradeCuteNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeCuteNumericNoArrows, "tradeCuteNumericNoArrows");
+            this.tradeCuteNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeCuteNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.tradeCuteNumericNoArrows.Name = "tradeCuteNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeCuteNumericNoArrows, resources.GetString("tradeCuteNumericNoArrows.ToolTip32"));
+            this.tradeCuteNumericNoArrows.Validated += new System.EventHandler(this.tradeCuteNumericNoArrows_Validated);
+            // 
+            // tradePVNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradePVNumericNoArrows, "tradePVNumericNoArrows");
+            this.tradePVNumericNoArrows.InterceptArrowKeys = false;
+            this.tradePVNumericNoArrows.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
+            this.tradePVNumericNoArrows.Name = "tradePVNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradePVNumericNoArrows, resources.GetString("tradePVNumericNoArrows.ToolTip32"));
+            this.tradePVNumericNoArrows.ValueChanged += new System.EventHandler(this.tradePVNumericNoArrows_ValueChanged);
+            this.tradePVNumericNoArrows.Validated += new System.EventHandler(this.tradePVNumericNoArrows_Validated);
+            // 
+            // tradeOriginalTrainerIDNumericNoArrows
+            // 
+            resources.ApplyResources(this.tradeOriginalTrainerIDNumericNoArrows, "tradeOriginalTrainerIDNumericNoArrows");
+            this.tradeOriginalTrainerIDNumericNoArrows.InterceptArrowKeys = false;
+            this.tradeOriginalTrainerIDNumericNoArrows.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.tradeOriginalTrainerIDNumericNoArrows.Name = "tradeOriginalTrainerIDNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.tradeOriginalTrainerIDNumericNoArrows, resources.GetString("tradeOriginalTrainerIDNumericNoArrows.ToolTip32"));
+            this.tradeOriginalTrainerIDNumericNoArrows.Validated += new System.EventHandler(this.tradeOriginalTrainerIDNumericNoArrows_Validated);
+            // 
+            // itemNaturalGiftPowerNumericNoArrows
+            // 
+            resources.ApplyResources(this.itemNaturalGiftPowerNumericNoArrows, "itemNaturalGiftPowerNumericNoArrows");
+            this.itemNaturalGiftPowerNumericNoArrows.InterceptArrowKeys = false;
+            this.itemNaturalGiftPowerNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemNaturalGiftPowerNumericNoArrows.Name = "itemNaturalGiftPowerNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.itemNaturalGiftPowerNumericNoArrows, resources.GetString("itemNaturalGiftPowerNumericNoArrows.ToolTip32"));
+            // 
+            // itemFlingEffectNumericNoArrows
+            // 
+            resources.ApplyResources(this.itemFlingEffectNumericNoArrows, "itemFlingEffectNumericNoArrows");
+            this.itemFlingEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.itemFlingEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemFlingEffectNumericNoArrows.Name = "itemFlingEffectNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.itemFlingEffectNumericNoArrows, resources.GetString("itemFlingEffectNumericNoArrows.ToolTip32"));
+            // 
+            // itemFlingPowerNumericNoArrows
+            // 
+            resources.ApplyResources(this.itemFlingPowerNumericNoArrows, "itemFlingPowerNumericNoArrows");
+            this.itemFlingPowerNumericNoArrows.InterceptArrowKeys = false;
+            this.itemFlingPowerNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemFlingPowerNumericNoArrows.Name = "itemFlingPowerNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.itemFlingPowerNumericNoArrows, resources.GetString("itemFlingPowerNumericNoArrows.ToolTip32"));
+            // 
+            // itemPluckEffectNumericNoArrows
+            // 
+            resources.ApplyResources(this.itemPluckEffectNumericNoArrows, "itemPluckEffectNumericNoArrows");
+            this.itemPluckEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.itemPluckEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemPluckEffectNumericNoArrows.Name = "itemPluckEffectNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.itemPluckEffectNumericNoArrows, resources.GetString("itemPluckEffectNumericNoArrows.ToolTip32"));
+            // 
+            // itemHoldParameterNumericNoArrows
+            // 
+            resources.ApplyResources(this.itemHoldParameterNumericNoArrows, "itemHoldParameterNumericNoArrows");
+            this.itemHoldParameterNumericNoArrows.InterceptArrowKeys = false;
+            this.itemHoldParameterNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemHoldParameterNumericNoArrows.Name = "itemHoldParameterNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.itemHoldParameterNumericNoArrows, resources.GetString("itemHoldParameterNumericNoArrows.ToolTip32"));
+            // 
+            // itemHoldEffectNumericNoArrows
+            // 
+            resources.ApplyResources(this.itemHoldEffectNumericNoArrows, "itemHoldEffectNumericNoArrows");
+            this.itemHoldEffectNumericNoArrows.InterceptArrowKeys = false;
+            this.itemHoldEffectNumericNoArrows.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.itemHoldEffectNumericNoArrows.Name = "itemHoldEffectNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.itemHoldEffectNumericNoArrows, resources.GetString("itemHoldEffectNumericNoArrows.ToolTip32"));
+            // 
+            // itemPriceNumericNoArrows
+            // 
+            resources.ApplyResources(this.itemPriceNumericNoArrows, "itemPriceNumericNoArrows");
+            this.itemPriceNumericNoArrows.InterceptArrowKeys = false;
+            this.itemPriceNumericNoArrows.Maximum = new decimal(new int[] {
+            65565,
+            0,
+            0,
+            0});
+            this.itemPriceNumericNoArrows.Name = "itemPriceNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.itemPriceNumericNoArrows, resources.GetString("itemPriceNumericNoArrows.ToolTip32"));
+            // 
+            // pokedexHTMetersNumericNoArrows
+            // 
+            resources.ApplyResources(this.pokedexHTMetersNumericNoArrows, "pokedexHTMetersNumericNoArrows");
+            this.pokedexHTMetersNumericNoArrows.DecimalPlaces = 1;
+            this.pokedexHTMetersNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexHTMetersNumericNoArrows.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.pokedexHTMetersNumericNoArrows.Name = "pokedexHTMetersNumericNoArrows";
+            this.pokedexHTMetersNumericNoArrows.ReadOnly = true;
+            this.moveProtectTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.pokedexHTMetersNumericNoArrows, resources.GetString("pokedexHTMetersNumericNoArrows.ToolTip32"));
+            this.pokedexHTMetersNumericNoArrows.Validated += new System.EventHandler(this.pokedexHTMetersNumericNoArrows_Validated);
+            // 
+            // pokedexHTFTNumericNoArrows
+            // 
+            resources.ApplyResources(this.pokedexHTFTNumericNoArrows, "pokedexHTFTNumericNoArrows");
+            this.pokedexHTFTNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexHTFTNumericNoArrows.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.pokedexHTFTNumericNoArrows.Name = "pokedexHTFTNumericNoArrows";
+            this.pokedexHTFTNumericNoArrows.ReadOnly = true;
+            this.moveProtectTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.pokedexHTFTNumericNoArrows, resources.GetString("pokedexHTFTNumericNoArrows.ToolTip32"));
+            this.pokedexHTFTNumericNoArrows.Validated += new System.EventHandler(this.pokedexHTFTNumericNoArrows_Validated);
+            // 
+            // pokedexHTINNumericNoArrows
+            // 
+            resources.ApplyResources(this.pokedexHTINNumericNoArrows, "pokedexHTINNumericNoArrows");
+            this.pokedexHTINNumericNoArrows.Increment = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.pokedexHTINNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexHTINNumericNoArrows.Maximum = new decimal(new int[] {
+            11,
+            0,
+            0,
+            0});
+            this.pokedexHTINNumericNoArrows.Name = "pokedexHTINNumericNoArrows";
+            this.pokedexHTINNumericNoArrows.ReadOnly = true;
+            this.moveProtectTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.pokedexHTINNumericNoArrows, resources.GetString("pokedexHTINNumericNoArrows.ToolTip32"));
+            this.pokedexHTINNumericNoArrows.Validated += new System.EventHandler(this.pokedexHTINNumericNoArrows_Validated);
+            // 
+            // pokedexWTNumericNoArrows
+            // 
+            resources.ApplyResources(this.pokedexWTNumericNoArrows, "pokedexWTNumericNoArrows");
+            this.pokedexWTNumericNoArrows.DecimalPlaces = 1;
+            this.pokedexWTNumericNoArrows.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.pokedexWTNumericNoArrows.InterceptArrowKeys = false;
+            this.pokedexWTNumericNoArrows.Maximum = new decimal(new int[] {
+            9998,
+            0,
+            0,
+            0});
+            this.pokedexWTNumericNoArrows.Name = "pokedexWTNumericNoArrows";
+            this.moveProtectTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip"));
+            this.moveMirrorMoveTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip1"));
+            this.moveSnatchTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip2"));
+            this.moveHPBarTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip3"));
+            this.moveKingsRockTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip4"));
+            this.speciesTypeTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip5"));
+            this.moveShadowTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip6"));
+            this.speciesXPGroupTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip7"));
+            this.tradeGenderTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip8"));
+            this.speciesAbilityTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip9"));
+            this.moveMagicCoatTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip10"));
+            this.speciesBaseXPTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip11"));
+            this.speciesEggCyclesTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip12"));
+            this.speciesEggGroupTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip13"));
+            this.speciesSafariRunChanceTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip14"));
+            this.speciesBaseFriendshipTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip15"));
+            this.speciesEVYieldTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip16"));
+            this.speciesCatchRateTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip17"));
+            this.speciesWildHeldItemTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip18"));
+            this.moveContestConditionTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip19"));
+            this.moveTargetTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip20"));
+            this.tradeAbilityTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip21"));
+            this.moveContactTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip22"));
+            this.moveAccuracyTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip23"));
+            this.movePowerTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip24"));
+            this.moveTypeTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip25"));
+            this.movePowerPointsTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip26"));
+            this.tradeNatureTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip27"));
+            this.moveCategoryTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip28"));
+            this.movePriorityTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip29"));
+            this.moveEffectChanceTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip30"));
+            this.moveContestEffectTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip31"));
+            this.moveEffectTooltip.SetToolTip(this.pokedexWTNumericNoArrows, resources.GetString("pokedexWTNumericNoArrows.ToolTip32"));
+            this.pokedexWTNumericNoArrows.Validated += new System.EventHandler(this.pokedexWTNumericNoArrows_Validated);
+            // 
             // learnsetLevelUpLevel20NumericNoArrows
             // 
             resources.ApplyResources(this.learnsetLevelUpLevel20NumericNoArrows, "learnsetLevelUpLevel20NumericNoArrows");
@@ -12482,181 +12657,6 @@
             0});
             this.learnsetLevelUpLevel1NumericNoArrows.Validated += new System.EventHandler(this.learnsetLevelUpLevel1NumericNoArrows_Validated);
             // 
-            // learnsetLevelUpMove1ComboBox
-            // 
-            resources.ApplyResources(this.learnsetLevelUpMove1ComboBox, "learnsetLevelUpMove1ComboBox");
-            this.learnsetLevelUpMove1ComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.learnsetLevelUpMove1ComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.learnsetLevelUpMove1ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.learnsetLevelUpMove1ComboBox.FormattingEnabled = true;
-            this.learnsetLevelUpMove1ComboBox.Name = "learnsetLevelUpMove1ComboBox";
-            this.moveShadowTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip"));
-            this.speciesTypeTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip1"));
-            this.tradeGenderTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip3"));
-            this.moveSnatchTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip4"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip5"));
-            this.speciesXPGroupTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip6"));
-            this.moveKingsRockTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip7"));
-            this.speciesAbilityTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip8"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip9"));
-            this.speciesBaseXPTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip10"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip11"));
-            this.speciesEggGroupTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip12"));
-            this.moveProtectTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip13"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip14"));
-            this.speciesEVYieldTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip15"));
-            this.speciesCatchRateTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip16"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip17"));
-            this.moveMagicCoatTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip18"));
-            this.tradeNatureTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip19"));
-            this.moveContactTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip21"));
-            this.moveAccuracyTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip22"));
-            this.moveContestConditionTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip23"));
-            this.moveTypeTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip24"));
-            this.movePowerPointsTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip25"));
-            this.movePowerTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip26"));
-            this.moveCategoryTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip27"));
-            this.movePriorityTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip28"));
-            this.moveEffectChanceTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip29"));
-            this.moveContestEffectTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip30"));
-            this.moveTargetTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.learnsetLevelUpMove1ComboBox, resources.GetString("learnsetLevelUpMove1ComboBox.ToolTip32"));
-            this.learnsetLevelUpMove1ComboBox.SelectionChangeCommitted += new System.EventHandler(this.learnsetLevelUpMove1ComboBox_SelectionChangeCommitted);
-            // 
-            // mainFormMenuStrip
-            // 
-            resources.ApplyResources(this.mainFormMenuStrip, "mainFormMenuStrip");
-            this.mainFormMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.optionsToolStripMenuItem});
-            this.mainFormMenuStrip.Name = "mainFormMenuStrip";
-            this.moveMirrorMoveTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip"));
-            this.moveSnatchTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip1"));
-            this.moveHPBarTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip2"));
-            this.moveKingsRockTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip3"));
-            this.speciesTypeTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip4"));
-            this.moveShadowTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip5"));
-            this.speciesXPGroupTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip6"));
-            this.speciesAbilityTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip7"));
-            this.speciesBaseXPTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip8"));
-            this.moveProtectTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip9"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip10"));
-            this.speciesEggGroupTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip11"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip12"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip13"));
-            this.speciesEVYieldTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip14"));
-            this.speciesCatchRateTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip15"));
-            this.tradeGenderTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip16"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip17"));
-            this.moveContestConditionTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip18"));
-            this.tradeNatureTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip19"));
-            this.moveContactTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip20"));
-            this.tradeAbilityTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip21"));
-            this.moveAccuracyTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip22"));
-            this.moveMagicCoatTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip23"));
-            this.moveTypeTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip24"));
-            this.movePowerPointsTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip25"));
-            this.movePowerTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip26"));
-            this.moveCategoryTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip27"));
-            this.movePriorityTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip28"));
-            this.moveEffectChanceTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip29"));
-            this.moveContestEffectTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip30"));
-            this.moveTargetTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip31"));
-            this.moveEffectTooltip.SetToolTip(this.mainFormMenuStrip, resources.GetString("mainFormMenuStrip.ToolTip32"));
-            // 
-            // fileToolStripMenuItem
-            // 
-            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openRomFileToolStripMenuItem,
-            this.saveToolStripMenuItem,
-            this.quitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            // 
-            // openRomFileToolStripMenuItem
-            // 
-            resources.ApplyResources(this.openRomFileToolStripMenuItem, "openRomFileToolStripMenuItem");
-            this.openRomFileToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.openRomFileToolStripMenuItem.Name = "openRomFileToolStripMenuItem";
-            this.openRomFileToolStripMenuItem.Click += new System.EventHandler(this.openRomFileToolStripMenuItem_Click);
-            // 
-            // saveToolStripMenuItem
-            // 
-            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
-            // 
-            // quitToolStripMenuItem
-            // 
-            resources.ApplyResources(this.quitToolStripMenuItem, "quitToolStripMenuItem");
-            this.quitToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
-            // 
-            // optionsToolStripMenuItem
-            // 
-            resources.ApplyResources(this.optionsToolStripMenuItem, "optionsToolStripMenuItem");
-            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.languageToolStripMenuItem});
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            // 
-            // languageToolStripMenuItem
-            // 
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.englishToolStripMenuItem,
-            this.españolToolStripMenuItem,
-            this.françaisToolStripMenuItem,
-            this.deutschToolStripMenuItem,
-            this.italianoToolStripMenuItem,
-            this.日本語ToolStripMenuItem,
-            this.한국어ToolStripMenuItem});
-            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            // 
-            // englishToolStripMenuItem
-            // 
-            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
-            // 
-            // españolToolStripMenuItem
-            // 
-            resources.ApplyResources(this.españolToolStripMenuItem, "españolToolStripMenuItem");
-            this.españolToolStripMenuItem.Name = "españolToolStripMenuItem";
-            this.españolToolStripMenuItem.Click += new System.EventHandler(this.españolToolStripMenuItem_Click);
-            // 
-            // françaisToolStripMenuItem
-            // 
-            resources.ApplyResources(this.françaisToolStripMenuItem, "françaisToolStripMenuItem");
-            this.françaisToolStripMenuItem.Name = "françaisToolStripMenuItem";
-            this.françaisToolStripMenuItem.Click += new System.EventHandler(this.françaisToolStripMenuItem_Click);
-            // 
-            // deutschToolStripMenuItem
-            // 
-            resources.ApplyResources(this.deutschToolStripMenuItem, "deutschToolStripMenuItem");
-            this.deutschToolStripMenuItem.Name = "deutschToolStripMenuItem";
-            this.deutschToolStripMenuItem.Click += new System.EventHandler(this.deutschToolStripMenuItem_Click);
-            // 
-            // italianoToolStripMenuItem
-            // 
-            resources.ApplyResources(this.italianoToolStripMenuItem, "italianoToolStripMenuItem");
-            this.italianoToolStripMenuItem.Name = "italianoToolStripMenuItem";
-            this.italianoToolStripMenuItem.Click += new System.EventHandler(this.italianoToolStripMenuItem_Click);
-            // 
-            // 日本語ToolStripMenuItem
-            // 
-            resources.ApplyResources(this.日本語ToolStripMenuItem, "日本語ToolStripMenuItem");
-            this.日本語ToolStripMenuItem.Name = "日本語ToolStripMenuItem";
-            this.日本語ToolStripMenuItem.Click += new System.EventHandler(this.日本語ToolStripMenuItem_Click);
-            // 
-            // 한국어ToolStripMenuItem
-            // 
-            resources.ApplyResources(this.한국어ToolStripMenuItem, "한국어ToolStripMenuItem");
-            this.한국어ToolStripMenuItem.Name = "한국어ToolStripMenuItem";
-            this.한국어ToolStripMenuItem.Click += new System.EventHandler(this.한국어ToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -12702,51 +12702,27 @@
             this.mainTabControl.ResumeLayout(false);
             this.movesTabPage.ResumeLayout(false);
             this.movesTabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).EndInit();
             this.moveFlagsGroupBox.ResumeLayout(false);
             this.moveFlagsGroupBox.PerformLayout();
             this.speciesTabPage.ResumeLayout(false);
             this.speciesMiscGroupBox.ResumeLayout(false);
             this.speciesMiscGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesCatchRateNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseFriendshipNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSafariRunChanceNumericNoArrows)).EndInit();
             this.speciesXPGroupBox.ResumeLayout(false);
             this.speciesXPGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseXPYieldNumericNoArrows)).EndInit();
             this.speciesEVOnDefeatGroupBox.ResumeLayout(false);
             this.speciesEVOnDefeatGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesAttackEVNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesHPEVNumericNoArrows)).EndInit();
             this.speciesHeldItemsGroupBox.ResumeLayout(false);
             this.speciesHeldItemsGroupBox.PerformLayout();
             this.speciesAbilitiesGroupBox.ResumeLayout(false);
             this.speciesAbilitiesGroupBox.PerformLayout();
             this.speciesEggGroupsGroupBox.ResumeLayout(false);
             this.speciesEggGroupsGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).EndInit();
             this.speciesTypesGroupBox.ResumeLayout(false);
             this.speciesTypesGroupBox.PerformLayout();
             this.speciesGenderGroupBox.ResumeLayout(false);
             this.speciesGenderGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).EndInit();
             this.speciesBaseStatsGroupBox.ResumeLayout(false);
             this.speciesBaseStatsGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesHPNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesAttackNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).EndInit();
             this.npcTradeTabPage.ResumeLayout(false);
             this.npcTradeTabPage.PerformLayout();
             this.tradeNewPVGroupBox.ResumeLayout(false);
@@ -12755,14 +12731,56 @@
             this.tradePVDerivedGroupBox.PerformLayout();
             this.tradeIVsGroupBox.ResumeLayout(false);
             this.tradeIVsGroupBox.PerformLayout();
+            this.tradeContestStatsGroupBox.ResumeLayout(false);
+            this.tradeContestStatsGroupBox.PerformLayout();
+            this.itemsTabPage.ResumeLayout(false);
+            this.itemsTabPage.PerformLayout();
+            this.itemsBattlePocketsGroupBox.ResumeLayout(false);
+            this.itemsBattlePocketsGroupBox.PerformLayout();
+            this.pokedexTabPage.ResumeLayout(false);
+            this.pokedexTabPage.PerformLayout();
+            this.pokedexHeightConversionGroupBox.ResumeLayout(false);
+            this.pokedexHeightConversionGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTDecimetersNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexNumNationalNumericUpDown)).EndInit();
+            this.textTabPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TextBankIndexNumericUpDown)).EndInit();
+            this.learnsetTabPage.ResumeLayout(false);
+            this.learnsetTabPage.PerformLayout();
+            this.learnsetEggMovesGroupBox.ResumeLayout(false);
+            this.learnsetLevelUpMovesGroupBox.ResumeLayout(false);
+            this.mainFormMenuStrip.ResumeLayout(false);
+            this.mainFormMenuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.moveEffectNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movePriorityNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moveEffectChanceNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movePPNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moveAccuracyNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movePowerNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesCatchRateNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseFriendshipNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSafariRunChanceNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesBaseXPYieldNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesAttackEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesHPEVNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesEggCyclesNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesGenderRatioNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesHPNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesAttackNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesDefenseNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpeedNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialAttackNumericNoArrows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speciesSpecialDefenseNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeHPIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpeedIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialDefenseIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeAttackIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSpecialAttackIVsNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeDefenseIVsNumericNoArrows)).EndInit();
-            this.tradeContestStatsGroupBox.ResumeLayout(false);
-            this.tradeContestStatsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tradeSheenNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeCoolNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeToughNumericNoArrows)).EndInit();
@@ -12771,10 +12789,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tradeCuteNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradePVNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeOriginalTrainerIDNumericNoArrows)).EndInit();
-            this.itemsTabPage.ResumeLayout(false);
-            this.itemsTabPage.PerformLayout();
-            this.itemsBattlePocketsGroupBox.ResumeLayout(false);
-            this.itemsBattlePocketsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemNaturalGiftPowerNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingEffectNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemFlingPowerNumericNoArrows)).EndInit();
@@ -12782,22 +12796,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldParameterNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemHoldEffectNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemPriceNumericNoArrows)).EndInit();
-            this.pokedexTabPage.ResumeLayout(false);
-            this.pokedexTabPage.PerformLayout();
-            this.pokedexHeightConversionGroupBox.ResumeLayout(false);
-            this.pokedexHeightConversionGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTMetersNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTFTNumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexHTINNumericNoArrows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexHTDecimetersNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexNumNationalNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexWTNumericNoArrows)).EndInit();
-            this.textTabPage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TextBankIndexNumericUpDown)).EndInit();
-            this.learnsetTabPage.ResumeLayout(false);
-            this.learnsetTabPage.PerformLayout();
-            this.learnsetEggMovesGroupBox.ResumeLayout(false);
-            this.learnsetLevelUpMovesGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel20NumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel19NumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel18NumericNoArrows)).EndInit();
@@ -12818,8 +12820,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel3NumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel2NumericNoArrows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.learnsetLevelUpLevel1NumericNoArrows)).EndInit();
-            this.mainFormMenuStrip.ResumeLayout(false);
-            this.mainFormMenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

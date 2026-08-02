@@ -27,6 +27,11 @@ namespace Pokemon_Sinjoh_Editor
 
             mainTabControl.Enabled = false;
 
+            //hide sub-editors that aren't fully implemented yet
+            mainTabControl.TabPages.Remove(itemsTabPage);
+            mainTabControl.TabPages.Remove(pokedexTabPage);
+            mainTabControl.TabPages.Remove(textTabPage);
+
             moveEffectNumericNoArrows.Maximum = Pokemon_Sinjoh_Editor.Move.NUM_EFFECTS;
 
             movePowerTooltip.SetToolTip(movePowerNumericNoArrows, "The base damage of the move. Whether or not this field is used for an attack is determined by the move effect");
@@ -457,6 +462,7 @@ namespace Pokemon_Sinjoh_Editor
                 applyResources(manager, ctl.Controls);
             }
 
+            //above loop doesn't apply to toolstripmenuitems, so we have to do it manually
             manager.ApplyResources(fileToolStripMenuItem, fileToolStripMenuItem.Name);
             manager.ApplyResources(openRomFileToolStripMenuItem, openRomFileToolStripMenuItem.Name);
             manager.ApplyResources(saveToolStripMenuItem, saveToolStripMenuItem.Name);
