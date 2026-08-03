@@ -179,6 +179,19 @@
   <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>513, 56</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="speciesAltFormsComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="speciesCatchRateNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="speciesBaseFriendshipNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="speciesSafariRunChanceNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
   <data name="speciesCatchRateLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -194,11 +207,35 @@
   <data name="speciesXPGroupLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="speciesBaseXPYieldNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
   <data name="speciesBaseXPLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="speciesXPGroupComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
   <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>343, 367</value>
+  </data>
+  <data name="speciesSpeedEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="speciesSpecialDefenseEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="speciesSpecialAttackEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="speciesDefenseEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="speciesAttackEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="speciesHPEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="speciesSpeedEVlabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -227,14 +264,26 @@
   <data name="speciesHeldItem1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="speciesHeldItem1ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="speciesHeldItem2ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
   <data name="speciesHeldItem2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>504, 110</value>
   </data>
+  <data name="speciesAbility1ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
   <data name="speciesAbility1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="speciesAbility2ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="speciesAbility2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -245,8 +294,17 @@
   <data name="speciesEggCyclesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="speciesEggCyclesNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="speciesEggGroup1ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
   <data name="speciesEggGroup1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="speciesEggGroup2ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="speciesEggGroup2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -254,8 +312,14 @@
   <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>504, 279</value>
   </data>
+  <data name="speciesType1ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
   <data name="speciesType1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="speciesType2ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="speciesType2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -266,8 +330,14 @@
   <data name="speciesGenderlessRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="speciesGenderlessRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
   <data name="speciesGenderRatioNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 20</value>
+  </data>
+  <data name="speciesGenderRatioNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
   </data>
   <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -275,17 +345,44 @@
   <data name="speciesMaleOnlyRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="speciesMaleOnlyRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
   <data name="speciesFemaleOnlyRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="speciesFemaleOnlyRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
   <data name="speciesMaleAndFemaleRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="speciesMaleAndFemaleRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
   <data name="speciesGenderMaleToFemaleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>665, 110</value>
+  </data>
+  <data name="speciesHPNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="speciesAttackNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="speciesDefenseNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="speciesSpeedNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="speciesSpecialAttackNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="speciesSpecialDefenseNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="speciesHPLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -313,6 +410,18 @@
   </data>
   <data name="tradeRandomPVButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="tradeRandomPVButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tradeNewPVNatureComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tradeNewPVGenderComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tradeNewPVAbilityComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="tradeNatureLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -389,23 +498,152 @@
   <data name="learnsetAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>423, 21</value>
   </data>
+  <data name="learnsetAltFormsComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="learnsetLearnableTMsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="learnsetHMCheckedListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
   </data>
   <data name="learnsetLearnableHMsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="learnsetTMCheckedListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="learnsetEggMove16ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="learnsetEggMove15ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="learnsetEggMove14ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="learnsetEggMove13ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="learnsetEggMove12ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="learnsetEggMove11ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="learnsetEggMove10ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="learnsetEggMove9ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="learnsetEggMove8ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="learnsetEggMove7ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="learnsetEggMove6ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="learnsetEggMove5ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="learnsetEggMove4ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="learnsetEggMove3ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="learnsetEggMove2ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="learnsetEggMove1ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
   <data name="learnsetEggMovesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>265, 53</value>
+  </data>
+  <data name="learnsetEggMovesGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="learnsetMoveTutorLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="learnsetMoveTutorCheckedListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
   <data name="learnsetPokemonComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>271, 21</value>
   </data>
+  <data name="learnsetPokemonComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="learnsetLevelUpMove20ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="learnsetLevelUpMove19ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="learnsetLevelUpMove18ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="learnsetLevelUpMove17ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="learnsetLevelUpMove16ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="learnsetLevelUpMove15ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="learnsetLevelUpMove14ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="learnsetLevelUpMove13ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="learnsetLevelUpMove12ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="learnsetLevelUpMove11ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="learnsetLevelUpMove10ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="learnsetLevelUpMove9ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="learnsetLevelUpMove8ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="learnsetLevelUpMove7ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="learnsetLevelUpMove6ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="learnsetLevelUpMove5ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="learnsetLevelUpMove4ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="learnsetLevelUpMove3ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="learnsetLevelUpMove2ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="learnsetLevelUpMove1ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
   <data name="learnsetLevelUpMovesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 542</value>
+  </data>
+  <data name="learnsetLevelUpMovesGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="checkBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
