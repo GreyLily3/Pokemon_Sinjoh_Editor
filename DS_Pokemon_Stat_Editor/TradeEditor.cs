@@ -107,10 +107,7 @@ namespace Pokemon_Sinjoh_Editor
         private void tradePVNumericNoArrows_Validated(object sender, EventArgs e)
         {
             if (RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.PV != tradePVNumericNoArrows.Value)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.PV = (uint)tradePVNumericNoArrows.Value;
-                MarkUnsavedChanges(SaveSubFile.TRADES);
-            }
+                savePV();
         }
 
         private void tradeCoolNumericNoArrows_Validated(object sender, EventArgs e)
@@ -255,6 +252,7 @@ namespace Pokemon_Sinjoh_Editor
             RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.GenerateWithTraits(species, gender, nature, ability);
 
             tradePVNumericNoArrows.Value = RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.PV;
+            savePV();
         }
 
         private void tradeLanguageComboBox_SelectionChangeCommitted(object sender, EventArgs e)
@@ -278,6 +276,12 @@ namespace Pokemon_Sinjoh_Editor
         private void tradePVNumericNoArrows_ValueChanged(object sender, EventArgs e)
         {
             updatePVDerivedFields();
+        }
+
+        private void savePV()
+        {
+            RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.PV = (uint)tradePVNumericNoArrows.Value;
+            MarkUnsavedChanges(SaveSubFile.TRADES);
         }
 
         public void updatePVDerivedFields()
