@@ -260,9 +260,6 @@
   <data name="speciesHeldItemsGroupBox.ToolTip19" xml:space="preserve">
     <value />
   </data>
-  <data name="moveEffectLabel.ToolTip19" xml:space="preserve">
-    <value />
-  </data>
   <data name="tradeCoolNumericNoArrows.ToolTip11" xml:space="preserve">
     <value />
   </data>
@@ -301,6 +298,9 @@
   </data>
   <data name="&gt;&gt;moveEffectChanceLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="itemNaturalGiftTypeComboBox.ToolTip25" xml:space="preserve">
+    <value />
   </data>
   <data name="speciesAbility1Label.ToolTip19" xml:space="preserve">
     <value />
@@ -459,6 +459,9 @@
     <value />
   </data>
   <data name="movePriorityNumericNoArrows.ToolTip4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="learnsetEggMove5ComboBox.ToolTip24" xml:space="preserve">
     <value />
   </data>
   <data name="tradeNewPVAbilityComboBox.ToolTip5" xml:space="preserve">
@@ -752,6 +755,9 @@
   <data name="learnsetEggMove8ComboBox.ToolTip18" xml:space="preserve">
     <value />
   </data>
+  <data name="checkBox3.ToolTip16" xml:space="preserve">
+    <value />
+  </data>
   <data name="learnsetLevelUpMove9ComboBox.ToolTip1" xml:space="preserve">
     <value />
   </data>
@@ -857,12 +863,6 @@
   <data name="learnsetLevelUpMove12ComboBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeToughLabel.ToolTip4" xml:space="preserve">
-    <value />
-  </data>
-  <data name="movePriorityLabel.ToolTip19" xml:space="preserve">
-    <value />
-  </data>
   <data name="日本語ToolStripMenuItem.Text" xml:space="preserve">
     <value>日本語</value>
   </data>
@@ -959,9 +959,6 @@
   <data name="tradeGenderTextBox.ToolTip14" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesAbility2ComboBox.ToolTip14" xml:space="preserve">
-    <value />
-  </data>
   <data name="learnsetHMCheckedListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 124</value>
   </data>
@@ -1053,6 +1050,9 @@
     <value />
   </data>
   <data name="speciesSafariRunChanceNumericNoArrows.ToolTip10" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speciesDefenseEVNumericNoArrows.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="speciesSafariRunChanceNumericNoArrows.ToolTip19" xml:space="preserve">
@@ -1352,9 +1352,6 @@
   <data name="speciesEggGroup1Label.ToolTip5" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove9ComboBox.ToolTip4" xml:space="preserve">
-    <value />
-  </data>
   <data name="movePriorityNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
@@ -1402,9 +1399,6 @@
   </data>
   <data name="&gt;&gt;pokedexHeightConversionGroupBox.Name" xml:space="preserve">
     <value>pokedexHeightConversionGroupBox</value>
-  </data>
-  <data name="learnsetLevelUpMove16ComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
   </data>
   <data name="&gt;&gt;speciesEggCyclesNumericNoArrows.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1571,6 +1565,9 @@
   <data name="learnsetEggMove3ComboBox.ToolTip15" xml:space="preserve">
     <value />
   </data>
+  <data name="textBankComboBox.ToolTip22" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesXPGroupBox.ToolTip24" xml:space="preserve">
     <value />
   </data>
@@ -1694,6 +1691,9 @@
   <data name="TextBankIndexNumericUpDown.ToolTip21" xml:space="preserve">
     <value />
   </data>
+  <data name="learnsetLevelUpMove4ComboBox.ToolTip11" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesSpeedLabel.ToolTip2" xml:space="preserve">
     <value />
   </data>
@@ -1701,9 +1701,6 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pokedexHTMetersLabel.ToolTip8" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tradeDefenseIVsLabel.ToolTip2" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove7ComboBox.ToolTip23" xml:space="preserve">
@@ -5773,6 +5770,9 @@
   <data name="speciesType1ComboBox.ToolTip32" xml:space="preserve">
     <value />
   </data>
+  <data name="moveEffectChanceNumericNoArrows.ToolTip16" xml:space="preserve">
+    <value />
+  </data>
   <data name="moveKingsRockCheckBox.ToolTip27" xml:space="preserve">
     <value />
   </data>
@@ -5896,9 +5896,6 @@
   <data name="speciesType2ComboBox.ToolTip11" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetEggMove6ComboBox.ToolTip18" xml:space="preserve">
-    <value />
-  </data>
   <data name="learnsetLevelUpLevel9NumericNoArrows.ToolTip12" xml:space="preserve">
     <value />
   </data>
@@ -5927,9 +5924,6 @@
     <value />
   </data>
   <data name="learnsetLevelUpMove9ComboBox.ToolTip23" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tradeDefenseIVsNumericNoArrows.ToolTip1" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove9ComboBox.ToolTip13" xml:space="preserve">
@@ -5984,9 +5978,6 @@
     <value />
   </data>
   <data name="learnsetLevelUpLevel7NumericNoArrows.ToolTip25" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tradePVNumericNoArrows.ToolTip20" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpLevel7NumericNoArrows.ToolTip15" xml:space="preserve">
@@ -6189,6 +6180,9 @@
   </data>
   <data name="tradeSpecialDefenseIVsLabel.ToolTip6" xml:space="preserve">
     <value />
+  </data>
+  <data name="tradeNewPVGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>662, 291</value>
   </data>
   <data name="españolToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 22</value>
@@ -6590,7 +6584,7 @@
   <data name="speciesHPLabel.ToolTip2" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHPLabel.ToolTip3" xml:space="preserve">
+  <data name="tradeNatureTextBox.ToolTip11" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove17ComboBox.TabIndex" type="System.Int32, mscorlib">
@@ -6612,6 +6606,9 @@
     <value>moveSnatchTooltip</value>
   </data>
   <data name="tradeAnyPokemonWantedComboBox.ToolTip1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="learnsetEggMove11ComboBox.ToolTip1" xml:space="preserve">
     <value />
   </data>
   <data name="speciesHPLabel.ToolTip8" xml:space="preserve">
@@ -6642,6 +6639,9 @@
     <value />
   </data>
   <data name="tradeCuteNumericNoArrows.ToolTip24" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speciesSpecialDefenseLabel.ToolTip31" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;tradeNatureTextBox.Parent" xml:space="preserve">
@@ -6685,6 +6685,9 @@
   </data>
   <data name="speciesComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="speciesAttackEVLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
@@ -6744,9 +6747,6 @@
     <value />
   </data>
   <data name="learnsetLevelUpLevel11NumericNoArrows.ToolTip30" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesSpecialDefenseNumericNoArrows.ToolTip9" xml:space="preserve">
     <value />
   </data>
   <data name="speciesSpeedEVNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
@@ -6959,6 +6959,9 @@
   <data name="speciesSpeedLabel.ToolTip14" xml:space="preserve">
     <value />
   </data>
+  <data name="movePPNumericNoArrows.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="learnsetLevelUpLevel20NumericNoArrows.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -7047,9 +7050,6 @@
     <value>0</value>
   </data>
   <data name="learnsetEggMove10ComboBox.ToolTip30" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesMiscGroupBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
   <data name="speciesSpecialAttackLabel.ToolTip" xml:space="preserve">
@@ -7142,7 +7142,7 @@
   <data name="learnsetLevelUpLevel17NumericNoArrows.ToolTip9" xml:space="preserve">
     <value />
   </data>
-  <data name="moveEffectNumericNoArrows.ToolTip13" xml:space="preserve">
+  <data name="speciesGenderMaleToFemaleLabel.ToolTip12" xml:space="preserve">
     <value />
   </data>
   <data name="speciesXPGroupLabel.ToolTip5" xml:space="preserve">
@@ -7181,14 +7181,11 @@
   <data name="learnsetEggMove13ComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="speciesHeldItem2Label.ToolTip1" xml:space="preserve">
-    <value />
-  </data>
   <data name="tradeHeldItemComboBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;learnsetLevelUpLevel2NumericNoArrows.Type" xml:space="preserve">
-    <value>Pokemon_Sinjoh_Editor.NumericNoArrows, Pokemon_Sinjoh_editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="tradeSheenNumericNoArrows.ToolTip25" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;learnsetEggMove12ComboBox.Parent" xml:space="preserve">
     <value>learnsetEggMovesGroupBox</value>
@@ -7295,9 +7292,6 @@
   <data name="moveMirrorMoveCheckBox.ToolTip8" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeSpecialDefenseIVsLabel.ToolTip29" xml:space="preserve">
-    <value />
-  </data>
   <data name="moveMagicCoatCheckBox.ToolTip6" xml:space="preserve">
     <value />
   </data>
@@ -7349,7 +7343,7 @@
   <data name="speciesEggGroup1ComboBox.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesMaleAndFemaleRadioButton.ToolTip1" xml:space="preserve">
+  <data name="tradeAbilityTextBox.ToolTip28" xml:space="preserve">
     <value />
   </data>
   <data name="moveSnatchCheckBox.ToolTip14" xml:space="preserve">
@@ -7448,8 +7442,8 @@
   <data name="tradeIVsGroupBox.ToolTip13" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;speciesAttackLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pokedexHTDecimetersNumericUpDown.ToolTip25" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;tradePVLabel.Parent" xml:space="preserve">
     <value>npcTradeTabPage</value>
@@ -7494,6 +7488,9 @@
     <value />
   </data>
   <data name="moveContestEffectLabel.ToolTip17" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speciesSpecialDefenseEVLabel.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="moveTypeLabel.ToolTip28" xml:space="preserve">
@@ -7601,7 +7598,7 @@
   <data name="label2.ToolTip28" xml:space="preserve">
     <value />
   </data>
-  <data name="moveProtectCheckBox.ToolTip4" xml:space="preserve">
+  <data name="learnsetLevelUpMove6ComboBox.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="moveContestConditionComboBox.ToolTip8" xml:space="preserve">
@@ -7610,7 +7607,7 @@
   <data name="learnsetLevelUpMove14ComboBox.ToolTip1" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesSpecialDefenseLabel.ToolTip9" xml:space="preserve">
+  <data name="speciesMaleAndFemaleRadioButton.ToolTip1" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMovesGroupBox.ToolTip31" xml:space="preserve">
@@ -7664,6 +7661,9 @@
   <data name="tradeOriginalTrainerIDLabel.ToolTip2" xml:space="preserve">
     <value />
   </data>
+  <data name="movePPNumericNoArrows.ToolTip31" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesDefenseEVLabel.ToolTip1" xml:space="preserve">
     <value />
   </data>
@@ -7688,9 +7688,6 @@
   <data name="moveTypeLabel.ToolTip29" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHeldItemsGroupBox.ToolTip13" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;learnsetLevelUpLevel6NumericNoArrows.Name" xml:space="preserve">
     <value>learnsetLevelUpLevel6NumericNoArrows</value>
   </data>
@@ -7698,6 +7695,9 @@
     <value>moveFlagsGroupBox</value>
   </data>
   <data name="speciesCatchRateLabel.ToolTip9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tradeCoolNumericNoArrows.ToolTip24" xml:space="preserve">
     <value />
   </data>
   <data name="speciesHPLabel.ToolTip30" xml:space="preserve">
@@ -7758,6 +7758,9 @@
     <value>99, 324</value>
   </data>
   <data name="moveHPBarCheckBox.ToolTip3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="moveShadowCheckBox.ToolTip30" xml:space="preserve">
     <value />
   </data>
   <data name="moveEffectLabel.ToolTip23" xml:space="preserve">
@@ -7928,9 +7931,6 @@
   <data name="&gt;&gt;tradeHPIVsLabel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="pokedexHTMetersNumericNoArrows.ToolTip6" xml:space="preserve">
-    <value />
-  </data>
   <data name="speciesXPGroupLabel.ToolTip30" xml:space="preserve">
     <value />
   </data>
@@ -8015,6 +8015,9 @@
   <data name="speciesXPGroupLabel.ToolTip1" xml:space="preserve">
     <value />
   </data>
+  <data name="tradeSmartLabel.ToolTip6" xml:space="preserve">
+    <value />
+  </data>
   <data name="movePowerLabel.ToolTip8" xml:space="preserve">
     <value />
   </data>
@@ -8028,6 +8031,9 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="moveKingsRockCheckBox.ToolTip21" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tradeAttackIVsLabel.ToolTip12" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;learnsetAltFormsComboBox.Parent" xml:space="preserve">
@@ -8177,6 +8183,9 @@
   <data name="speciesDefenseEVLabel.ToolTip3" xml:space="preserve">
     <value />
   </data>
+  <data name="speciesAbility2Label.ToolTip8" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesType1Label.ToolTip1" xml:space="preserve">
     <value />
   </data>
@@ -8221,6 +8230,9 @@
   </data>
   <data name="textBankComboBox.ToolTip28" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;moveContestConditionLabel.Parent" xml:space="preserve">
+    <value>movesTabPage</value>
   </data>
   <data name="speciesAttackNumericNoArrows.ToolTip25" xml:space="preserve">
     <value />
@@ -8283,6 +8295,9 @@
     <value>20</value>
   </data>
   <data name="pokedexHTMetersNumericNoArrows.ToolTip1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="learnsetLevelUpLevel12NumericNoArrows.ToolTip21" xml:space="preserve">
     <value />
   </data>
   <data name="pokedexHeightConversionGroupBox.ToolTip2" xml:space="preserve">
@@ -8358,9 +8373,6 @@
     <value>7</value>
   </data>
   <data name="speciesHeldItemsGroupBox.ToolTip10" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pokedexHTINLabel.ToolTip25" xml:space="preserve">
     <value />
   </data>
   <data name="speciesHeldItemsGroupBox.ToolTip30" xml:space="preserve">
@@ -8516,9 +8528,6 @@
   <data name="itemNaturalGiftTypeComboBox.ToolTip3" xml:space="preserve">
     <value />
   </data>
-  <data name="moveEffectNumericNoArrows.ToolTip11" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox4.ToolTip21" xml:space="preserve">
     <value />
   </data>
@@ -8537,7 +8546,7 @@
   <data name="learnsetLevelUpLevel20NumericNoArrows.ToolTip30" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetEggMove10ComboBox.ToolTip15" xml:space="preserve">
+  <data name="tradeLanguageLabel.ToolTip1" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;speciesSpeedEVlabel.Type" xml:space="preserve">
@@ -8627,6 +8636,9 @@
   <data name="&gt;&gt;tradeRandomPVButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="speciesMaleAndFemaleRadioButton.ToolTip12" xml:space="preserve">
+    <value />
+  </data>
   <data name="learnsetLevelUpLevel2NumericNoArrows.ToolTip31" xml:space="preserve">
     <value />
   </data>
@@ -8659,6 +8671,9 @@
   </data>
   <data name="moveProtectCheckBox.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
+  </data>
+  <data name="tradeOriginalTrainerIDNumericNoArrows.ToolTip24" xml:space="preserve">
+    <value />
   </data>
   <data name="tradeOriginalTrainerIDNumericNoArrows.ToolTip5" xml:space="preserve">
     <value />
@@ -8842,9 +8857,6 @@
   <data name="tradeDefenseIVsNumericNoArrows.ToolTip13" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesSpecialDefenseLabel.ToolTip22" xml:space="preserve">
-    <value />
-  </data>
   <data name="tradeOfferedPokemonComboBox.ToolTip16" xml:space="preserve">
     <value />
   </data>
@@ -8887,9 +8899,6 @@
   <data name="learnsetEggMove5ComboBox.ToolTip12" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeGenderLabel.ToolTip7" xml:space="preserve">
-    <value />
-  </data>
   <data name="tradeNatureLabel.Text" xml:space="preserve">
     <value>Nature</value>
   </data>
@@ -8912,6 +8921,9 @@
     <value />
   </data>
   <data name="movesComboBox.ToolTip8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="learnsetLevelUpLevel20NumericNoArrows.ToolTip31" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMove10ComboBox.ToolTip17" xml:space="preserve">
@@ -9244,6 +9256,9 @@
   <data name="&gt;&gt;moveCategoryComboBox.Name" xml:space="preserve">
     <value>moveCategoryComboBox</value>
   </data>
+  <data name="pokdexEntryRichTextBox.ToolTip22" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesTabPage.ToolTip31" xml:space="preserve">
     <value />
   </data>
@@ -9322,8 +9337,8 @@
   <data name="itemNaturalGiftUseableCheckBox.ToolTip9" xml:space="preserve">
     <value />
   </data>
-  <data name="moveContestEffectLabel.Text" xml:space="preserve">
-    <value>Contest Effect:</value>
+  <data name="itemNaturalGiftUseableCheckBox.ToolTip8" xml:space="preserve">
+    <value />
   </data>
   <data name="speciesHPEVlabel.ToolTip17" xml:space="preserve">
     <value />
@@ -9520,9 +9535,6 @@
   <data name="speciesSpecialAttackEVNumericNoArrows.ToolTip6" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeSpeedIVsLabel.ToolTip31" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;tradeGenderLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -9538,7 +9550,7 @@
   <data name="speciesSpecialDefenseEVLabel.ToolTip8" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove15ComboBox.ToolTip13" xml:space="preserve">
+  <data name="pokedexHTINLabel.ToolTip14" xml:space="preserve">
     <value />
   </data>
   <data name="speciesSpecialDefenseEVLabel.ToolTip3" xml:space="preserve">
@@ -9567,9 +9579,6 @@
   </data>
   <data name="&gt;&gt;movePriorityNumericNoArrows.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="learnsetEggMove10ComboBox.ToolTip12" xml:space="preserve">
-    <value />
   </data>
   <data name="speciesBaseXPLabel.ToolTip27" xml:space="preserve">
     <value />
@@ -9853,8 +9862,8 @@
   <data name="tradeWantedPokemonLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 13</value>
   </data>
-  <data name="tradeAnyPokemonWantedComboBox.ToolTip18" xml:space="preserve">
-    <value />
+  <data name="speciesHPEVNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 46</value>
   </data>
   <data name="itemPriceLabel.ToolTip8" xml:space="preserve">
     <value />
@@ -9964,7 +9973,7 @@
   <data name="speciesAttackEVLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 84</value>
   </data>
-  <data name="tradeNewPVAbilityComboBox.ToolTip21" xml:space="preserve">
+  <data name="itemFlingPowerNumericNoArrows.ToolTip2" xml:space="preserve">
     <value />
   </data>
   <data name="moveCategoryLabel.ToolTip18" xml:space="preserve">
@@ -10016,9 +10025,6 @@
     <value />
   </data>
   <data name="tradeAbilityTextBox.ToolTip5" xml:space="preserve">
-    <value />
-  </data>
-  <data name="itemNaturalGiftPowerNumericNoArrows.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="speciesAttackLabel.ToolTip17" xml:space="preserve">
@@ -10075,6 +10081,9 @@
   <data name="moveContestEffectComboBox.ToolTip18" xml:space="preserve">
     <value />
   </data>
+  <data name="speciesSpeedEVlabel.ToolTip19" xml:space="preserve">
+    <value />
+  </data>
   <data name="learnsetLevelUpLevel3NumericNoArrows.ToolTip9" xml:space="preserve">
     <value />
   </data>
@@ -10097,9 +10106,6 @@
     <value />
   </data>
   <data name="speciesEggGroup2Label.ToolTip7" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pokedexHTMetersNumericNoArrows.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;tradeSpecialAttackIVsNumericNoArrows.Parent" xml:space="preserve">
@@ -10162,10 +10168,16 @@
   <data name="speciesEggCyclesLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 13</value>
   </data>
+  <data name="moveDescriptionTextBox.ToolTip3" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;tradeDefenseIVsNumericNoArrows.Parent" xml:space="preserve">
     <value>tradeIVsGroupBox</value>
   </data>
   <data name="itemsBattlePocketsGroupBox.ToolTip9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speciesXPGroupLabel.ToolTip10" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMovesGroupBox.ToolTip28" xml:space="preserve">
@@ -10200,6 +10212,9 @@
   </data>
   <data name="learnsetLevelUpMove16ComboBox.ToolTip1" xml:space="preserve">
     <value />
+  </data>
+  <data name="learnsetLevelUpLevel8NumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="speciesCatchRateNumericNoArrows.ToolTip20" xml:space="preserve">
     <value />
@@ -10390,9 +10405,6 @@
   <data name="learnsetEggMove9ComboBox.ToolTip3" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove6ComboBox.ToolTip15" xml:space="preserve">
-    <value />
-  </data>
   <data name="learnsetEggMove9ComboBox.ToolTip1" xml:space="preserve">
     <value />
   </data>
@@ -10409,6 +10421,9 @@
     <value />
   </data>
   <data name="movePriorityNumericNoArrows.ToolTip5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="itemNaturalGiftUseableCheckBox.ToolTip14" xml:space="preserve">
     <value />
   </data>
   <data name="speciesGenderlessRadioButton.ToolTip26" xml:space="preserve">
@@ -10456,7 +10471,7 @@
   <data name="tradeSpecialAttackIVsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="npcTradeTabPage.ToolTip31" xml:space="preserve">
+  <data name="movePowerNumericNoArrows.ToolTip30" xml:space="preserve">
     <value />
   </data>
   <data name="speciesEggGroupsGroupBox.ToolTip22" xml:space="preserve">
@@ -10729,9 +10744,6 @@
   <data name="speciesEggGroup2ComboBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesSpecialDefenseEVNumericNoArrows.ToolTip3" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;tradeTrainerComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -10781,9 +10793,6 @@
     <value>617, 256</value>
   </data>
   <data name="tradeBeautyNumericNoArrows.ToolTip1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesBaseFriendshipNumericNoArrows.ToolTip11" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;moveShadowTooltip.Type" xml:space="preserve">
@@ -10936,6 +10945,9 @@
   <data name="learnsetLevelUpMove2ComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>74, 48</value>
   </data>
+  <data name="learnsetLevelUpMove19ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
   <data name="itemsTabPage.ToolTip7" xml:space="preserve">
     <value />
   </data>
@@ -10966,6 +10978,9 @@
   <data name="tradeSheenLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="itemsTabPage.ToolTip16" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;itemsBattlePocketsGroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -10990,7 +11005,7 @@
   <data name="npcTradeTabPage.Text" xml:space="preserve">
     <value>NPC Trades</value>
   </data>
-  <data name="speciesEggGroup1Label.ToolTip7" xml:space="preserve">
+  <data name="itemNaturalGiftPowerNumericNoArrows.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="speciesXPGroupLabel.TabIndex" type="System.Int32, mscorlib">
@@ -11116,6 +11131,9 @@
   <data name="&gt;&gt;tradePVDerivedGroupBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="itemPluckEffectLabel.ToolTip18" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;learnsetEggMove13ComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -11151,6 +11169,9 @@
   </data>
   <data name="movesTabPage.ToolTip23" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;itemFieldPocketComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="moveContactCheckBox.ToolTip32" xml:space="preserve">
     <value />
@@ -11311,9 +11332,6 @@
   <data name="&gt;&gt;speciesEggGroup2Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;moveDescriptionTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="tradeSpeedIVsNumericNoArrows.ToolTip21" xml:space="preserve">
     <value />
   </data>
@@ -11339,9 +11357,6 @@
     <value />
   </data>
   <data name="moveEffectLabel.ToolTip12" xml:space="preserve">
-    <value />
-  </data>
-  <data name="learnsetLevelUpMove19ComboBox.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetMoveTutorLabel.ToolTip24" xml:space="preserve">
@@ -11407,9 +11422,6 @@
   <data name="&gt;&gt;itemsBattlePocketsGroupBox.Parent" xml:space="preserve">
     <value>itemsTabPage</value>
   </data>
-  <data name="&gt;&gt;itemPriceLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="speciesSpecialDefenseNumericNoArrows.ToolTip6" xml:space="preserve">
     <value />
   </data>
@@ -11455,7 +11467,7 @@
   <data name="learnsetEggMove3ComboBox.ToolTip14" xml:space="preserve">
     <value />
   </data>
-  <data name="movePPNumericNoArrows.ToolTip" xml:space="preserve">
+  <data name="tradeGenderLabel.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="tradeGenderLabel.ToolTip6" xml:space="preserve">
@@ -11587,6 +11599,9 @@
   <data name="itemNaturalGiftTypeLabel.ToolTip26" xml:space="preserve">
     <value />
   </data>
+  <data name="speciesHeldItem2ComboBox.ToolTip25" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesSpecialAttackEVLabel.ToolTip18" xml:space="preserve">
     <value />
   </data>
@@ -11633,6 +11648,9 @@
     <value />
   </data>
   <data name="moveTypeComboBox.ToolTip19" xml:space="preserve">
+    <value />
+  </data>
+  <data name="itemsTabPage.ToolTip5" xml:space="preserve">
     <value />
   </data>
   <data name="speciesGenderRatioNumericNoArrows.ToolTip7" xml:space="preserve">
@@ -11764,6 +11782,9 @@
   <data name="tradeIVsGroupBox.ToolTip14" xml:space="preserve">
     <value />
   </data>
+  <data name="moveAccuracyNumericNoArrows.ToolTip13" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesCatchRateLabel.ToolTip11" xml:space="preserve">
     <value />
   </data>
@@ -11779,7 +11800,7 @@
   <data name="&gt;&gt;speciesEggGroup2ComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="speciesDefenseEVNumericNoArrows.ToolTip" xml:space="preserve">
+  <data name="moveProtectCheckBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
   <data name="speciesFemaleOnlyRadioButton.ToolTip" xml:space="preserve">
@@ -11809,6 +11830,9 @@
   <data name="speciesSpecialDefenseEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
+  <data name="tradeSmartNumericNoArrows.ToolTip17" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;pokedexHTMetersLabel.Parent" xml:space="preserve">
     <value>pokedexHeightConversionGroupBox</value>
   </data>
@@ -11825,9 +11849,6 @@
     <value>Pokemon_Sinjoh_Editor.NumericNoArrows, Pokemon_Sinjoh_editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="learnsetEggMove2ComboBox.ToolTip26" xml:space="preserve">
-    <value />
-  </data>
-  <data name="learnsetEggMove5ComboBox.ToolTip18" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMove2ComboBox.ToolTip16" xml:space="preserve">
@@ -11864,9 +11885,6 @@
     <value />
   </data>
   <data name="learnsetEggMove1ComboBox.ToolTip32" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tradeSpecialAttackIVsNumericNoArrows.ToolTip31" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove10ComboBox.Location" type="System.Drawing.Point, System.Drawing">
@@ -12169,6 +12187,9 @@
   <data name="moveShadowCheckBox.ToolTip12" xml:space="preserve">
     <value />
   </data>
+  <data name="pokedexHTMetersNumericNoArrows.ToolTip18" xml:space="preserve">
+    <value />
+  </data>
   <data name="itemPriceNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -12185,9 +12206,6 @@
     <value />
   </data>
   <data name="movePriorityNumericNoArrows.ToolTip20" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tradeSpecialDefenseIVsLabel.ToolTip18" xml:space="preserve">
     <value />
   </data>
   <data name="pokedexHTFTNumericNoArrows.ToolTip21" xml:space="preserve">
@@ -12314,6 +12332,9 @@
     <value />
   </data>
   <data name="textBankComboBox.ToolTip9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="learnsetLevelUpMove3ComboBox.ToolTip9" xml:space="preserve">
     <value />
   </data>
   <data name="tradeDefenseIVsNumericNoArrows.ToolTip12" xml:space="preserve">
@@ -12664,10 +12685,13 @@
   <data name="learnsetLevelUpMove15ComboBox.ToolTip3" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove12ComboBox.ToolTip15" xml:space="preserve">
+  <data name="learnsetEggMove6ComboBox.ToolTip18" xml:space="preserve">
     <value />
   </data>
   <data name="movesComboBox.ToolTip22" xml:space="preserve">
+    <value />
+  </data>
+  <data name="learnsetEggMove6ComboBox.ToolTip23" xml:space="preserve">
     <value />
   </data>
   <data name="itemHoldParemeterLabel.ToolTip28" xml:space="preserve">
@@ -12919,6 +12943,9 @@
   <data name="learnsetLevelUpMove8ComboBox.ToolTip28" xml:space="preserve">
     <value />
   </data>
+  <data name="learnsetLevelUpMove15ComboBox.ToolTip10" xml:space="preserve">
+    <value />
+  </data>
   <data name="learnsetLevelUpMove7ComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>74, 179</value>
   </data>
@@ -12935,6 +12962,9 @@
     <value />
   </data>
   <data name="learnsetTabPage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="moveContestEffectComboBox.ToolTip17" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;speciesGenderGroupBox.Type" xml:space="preserve">
@@ -13177,12 +13207,6 @@
   <data name="&gt;&gt;tradeNewPVAbilityComboBox.Name" xml:space="preserve">
     <value>tradeNewPVAbilityComboBox</value>
   </data>
-  <data name="tradeToughLabel.ToolTip25" xml:space="preserve">
-    <value />
-  </data>
-  <data name="itemsTabPage.ToolTip1" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;learnsetLevelUpLevel13NumericNoArrows.Name" xml:space="preserve">
     <value>learnsetLevelUpLevel13NumericNoArrows</value>
   </data>
@@ -13273,8 +13297,8 @@
   <data name="&gt;&gt;tradeToughNumericNoArrows.Parent" xml:space="preserve">
     <value>tradeContestStatsGroupBox</value>
   </data>
-  <data name="speciesAttackLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 84</value>
+  <data name="learnsetLevelUpMove15ComboBox.ToolTip13" xml:space="preserve">
+    <value />
   </data>
   <data name="learnsetEggMove5ComboBox.ToolTip19" xml:space="preserve">
     <value />
@@ -13293,6 +13317,9 @@
   </data>
   <data name="&gt;&gt;itemFieldPocketLabel.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="learnsetPokemonComboBox.ToolTip6" xml:space="preserve">
+    <value />
   </data>
   <data name="tradeOriginalTrainerIDNumericNoArrows.ToolTip16" xml:space="preserve">
     <value />
@@ -13396,9 +13423,6 @@
   <data name="TextBankIndexNumericUpDown.ToolTip9" xml:space="preserve">
     <value />
   </data>
-  <data name="pokedexHTDecimetersNumericUpDown.ToolTip31" xml:space="preserve">
-    <value />
-  </data>
   <data name="speciesSpeedNumericNoArrows.ToolTip4" xml:space="preserve">
     <value />
   </data>
@@ -13497,9 +13521,6 @@
   </data>
   <data name="&gt;&gt;speciesEggGroup1ComboBox.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="tradeOfferedPokemonLabel.ToolTip24" xml:space="preserve">
-    <value />
   </data>
   <data name="tradeAbilityTextBox.ToolTip31" xml:space="preserve">
     <value />
@@ -13606,6 +13627,9 @@
   <data name="speciesTabPage.ToolTip23" xml:space="preserve">
     <value />
   </data>
+  <data name="tradeNewPVAbilityComboBox.ToolTip27" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesEggCyclesLabel.ToolTip1" xml:space="preserve">
     <value />
   </data>
@@ -13702,6 +13726,9 @@
   <data name="speciesDefenseNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 159</value>
   </data>
+  <data name="learnsetLevelUpLevel13NumericNoArrows.ToolTip1" xml:space="preserve">
+    <value />
+  </data>
   <data name="checkBox3.ToolTip15" xml:space="preserve">
     <value />
   </data>
@@ -13735,6 +13762,9 @@
   <data name="speciesEggGroup1ComboBox.ToolTip1" xml:space="preserve">
     <value />
   </data>
+  <data name="speciesEggCyclesNumericNoArrows.ToolTip10" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesEggGroup1ComboBox.ToolTip7" xml:space="preserve">
     <value />
   </data>
@@ -13766,6 +13796,9 @@
     <value />
   </data>
   <data name="speciesSpeedEVNumericNoArrows.ToolTip2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="learnsetEggMove6ComboBox.ToolTip13" xml:space="preserve">
     <value />
   </data>
   <data name="checkBox2.ToolTip9" xml:space="preserve">
@@ -13882,7 +13915,7 @@
   <data name="&gt;&gt;pokedexHTFTNumericNoArrows.Parent" xml:space="preserve">
     <value>pokedexHeightConversionGroupBox</value>
   </data>
-  <data name="tradeRandomPVButton.ToolTip15" xml:space="preserve">
+  <data name="label2.ToolTip4" xml:space="preserve">
     <value />
   </data>
   <data name="label2.ToolTip5" xml:space="preserve">
@@ -14254,7 +14287,7 @@
   <data name="&gt;&gt;learnsetLevelUpMove6ComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="moveAccuracyNumericNoArrows.ToolTip13" xml:space="preserve">
+  <data name="tradeRandomPVButton.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="moveAccuracyNumericNoArrows.ToolTip10" xml:space="preserve">
@@ -14278,7 +14311,7 @@
   <data name="learnsetLevelUpLevel20NumericNoArrows.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeRandomPVButton.ToolTip16" xml:space="preserve">
+  <data name="tradeToughLabel.ToolTip4" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;learnsetLevelUpLevel2NumericNoArrows.Name" xml:space="preserve">
@@ -14297,6 +14330,9 @@
     <value />
   </data>
   <data name="learnsetLevelUpLevel20NumericNoArrows.ToolTip23" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tradeRandomPVButton.ToolTip16" xml:space="preserve">
     <value />
   </data>
   <data name="moveContestConditionComboBox.ToolTip20" xml:space="preserve">
@@ -14770,9 +14806,6 @@
   <data name="&gt;&gt;speciesBaseXPYieldNumericNoArrows.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="learnsetMoveTutorCheckedListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>639, 59</value>
-  </data>
   <data name="speciesEVOnDefeatGroupBox.Text" xml:space="preserve">
     <value>Effort Yield</value>
   </data>
@@ -14826,6 +14859,9 @@
   </data>
   <data name="tradeNatureTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
+  </data>
+  <data name="&gt;&gt;speciesAttackLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="moveKingsRockCheckBox.ToolTip19" xml:space="preserve">
     <value />
@@ -14899,8 +14935,8 @@
   <data name="openRomFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 22</value>
   </data>
-  <data name="learnsetLevelUpLevel8NumericNoArrows.ToolTip23" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;itemHoldParemeterLabel.Parent" xml:space="preserve">
+    <value>itemsTabPage</value>
   </data>
   <data name="speciesMiscGroupBox.ToolTip11" xml:space="preserve">
     <value />
@@ -14915,9 +14951,6 @@
     <value />
   </data>
   <data name="speciesAttackNumericNoArrows.ToolTip11" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesDefenseLabel.ToolTip2" xml:space="preserve">
     <value />
   </data>
   <data name="moveContestConditionLabel.ToolTip30" xml:space="preserve">
@@ -14947,7 +14980,7 @@
   <data name="movePriorityLabel.ToolTip12" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHeldItem1ComboBox.ToolTip4" xml:space="preserve">
+  <data name="moveDescriptionTextBox.ToolTip23" xml:space="preserve">
     <value />
   </data>
   <data name="tradeSmartLabel.ToolTip20" xml:space="preserve">
@@ -15097,7 +15130,7 @@
   <data name="speciesEggGroup2Label.ToolTip11" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesEggGroup2Label.ToolTip12" xml:space="preserve">
+  <data name="tradePVNumericNoArrows.ToolTip26" xml:space="preserve">
     <value />
   </data>
   <data name="speciesEggGroup2Label.ToolTip13" xml:space="preserve">
@@ -15129,9 +15162,6 @@
   </data>
   <data name="learnsetEggMove12ComboBox.ToolTip2" xml:space="preserve">
     <value />
-  </data>
-  <data name="tradePVDerivedGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 291</value>
   </data>
   <data name="speciesHPEVlabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 13</value>
@@ -15262,9 +15292,6 @@
   <data name="tradeToughNumericNoArrows.ToolTip1" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeNewPVAbilityCheckBox.ToolTip22" xml:space="preserve">
-    <value />
-  </data>
   <data name="tradeAbilityTextBox.ToolTip6" xml:space="preserve">
     <value />
   </data>
@@ -15274,7 +15301,7 @@
   <data name="&gt;&gt;speciesFemaleOnlyRadioButton.Name" xml:space="preserve">
     <value>speciesFemaleOnlyRadioButton</value>
   </data>
-  <data name="tradeAbilityTextBox.ToolTip28" xml:space="preserve">
+  <data name="tradeNewPVNatureCheckBox.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetPokemonComboBox.ToolTip8" xml:space="preserve">
@@ -15451,8 +15478,8 @@
   <data name="tradePVLabel.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="itemNaturalGiftPowerLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="learnsetLevelUpLevel8NumericNoArrows.ToolTip23" xml:space="preserve">
+    <value />
   </data>
   <data name="textInGameListView.ToolTip22" xml:space="preserve">
     <value />
@@ -15556,6 +15583,9 @@
   <data name="françaisToolStripMenuItem.Text" xml:space="preserve">
     <value>Français</value>
   </data>
+  <data name="tradeToughNumericNoArrows.ToolTip8" xml:space="preserve">
+    <value />
+  </data>
   <data name="movePriorityNumericNoArrows.ToolTip23" xml:space="preserve">
     <value />
   </data>
@@ -15613,13 +15643,10 @@
   <data name="learnsetLevelUpMove18ComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
   </data>
-  <data name="mainTabControl.ToolTip11" xml:space="preserve">
+  <data name="moveTargetLabel.ToolTip19" xml:space="preserve">
     <value />
   </data>
   <data name="tradeRandomPVButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="learnsetEggMove1ComboBox.ToolTip13" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove10ComboBox.ToolTip30" xml:space="preserve">
@@ -15653,9 +15680,6 @@
     <value />
   </data>
   <data name="tradePVDerivedGroupBox.ToolTip13" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesHeldItem1Label.ToolTip11" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;speciesSpeedEVlabel.Parent" xml:space="preserve">
@@ -15793,6 +15817,9 @@
   <data name="movePowerLabel.ToolTip27" xml:space="preserve">
     <value />
   </data>
+  <data name="speciesHPLabel.ToolTip1" xml:space="preserve">
+    <value />
+  </data>
   <data name="tradeNatureLabel.ToolTip30" xml:space="preserve">
     <value />
   </data>
@@ -15812,6 +15839,9 @@
     <value />
   </data>
   <data name="speciesEggGroup2ComboBox.ToolTip11" xml:space="preserve">
+    <value />
+  </data>
+  <data name="learnsetLevelUpLevel17NumericNoArrows.ToolTip24" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;speciesDefenseEVLabel.Parent" xml:space="preserve">
@@ -15883,9 +15913,6 @@
   <data name="speciesDefenseLabel.ToolTip23" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesEggGroup1ComboBox.ToolTip22" xml:space="preserve">
-    <value />
-  </data>
   <data name="movePriorityNumericNoArrows.ToolTip21" xml:space="preserve">
     <value />
   </data>
@@ -15916,9 +15943,6 @@
   <data name="&gt;&gt;moveMagicCoatCheckBox.Name" xml:space="preserve">
     <value>moveMagicCoatCheckBox</value>
   </data>
-  <data name="tradeCoolNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 32</value>
-  </data>
   <data name="itemHoldParameterNumericNoArrows.ToolTip17" xml:space="preserve">
     <value />
   </data>
@@ -15942,9 +15966,6 @@
   </data>
   <data name="moveTypeLabel.ToolTip31" xml:space="preserve">
     <value />
-  </data>
-  <data name="&gt;&gt;learnsetEggMove8ComboBox.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="speciesHPNumericNoArrows.ToolTip8" xml:space="preserve">
     <value />
@@ -16039,13 +16060,16 @@
   <data name="speciesHeldItem2Label.ToolTip31" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetEggMove6ComboBox.ToolTip13" xml:space="preserve">
+  <data name="speciesHeldItem2Label.ToolTip30" xml:space="preserve">
     <value />
   </data>
   <data name="speciesBaseXPLabel.ToolTip32" xml:space="preserve">
     <value />
   </data>
   <data name="movePPLabel.ToolTip8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="moveContestConditionComboBox.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="moveMirrorMoveCheckBox.ToolTip13" xml:space="preserve">
@@ -16135,7 +16159,7 @@
   <data name="checkBox4.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="tradePVNumericNoArrows.ToolTip26" xml:space="preserve">
+  <data name="learnsetLevelUpLevel20NumericNoArrows.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="checkBox4.ToolTip29" xml:space="preserve">
@@ -16294,9 +16318,6 @@
   <data name="tradeSmartNumericNoArrows.ToolTip31" xml:space="preserve">
     <value />
   </data>
-  <data name="itemsTabPage.ToolTip25" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;learnsetEggMove15ComboBox.Name" xml:space="preserve">
     <value>learnsetEggMove15ComboBox</value>
   </data>
@@ -16357,10 +16378,10 @@
   <data name="pokedexHTMetersNumericNoArrows.ToolTip27" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
   <data name="pokedexWTNumericNoArrows.ToolTip13" xml:space="preserve">
+    <value />
+  </data>
+  <data name="moveContactCheckBox.ToolTip10" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;learnsetLevelUpLevel13NumericNoArrows.Type" xml:space="preserve">
@@ -16374,6 +16395,9 @@
   </data>
   <data name="tradeSpecialDefenseIVsNumericNoArrows.ToolTip3" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;moveKingsRockTooltip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="speciesSpecialDefenseEVLabel.ToolTip32" xml:space="preserve">
     <value />
@@ -16528,6 +16552,9 @@
   <data name="&gt;&gt;moveEffectLabel.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="itemFieldPocketComboBox.ToolTip21" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesHeldItem1Label.ToolTip14" xml:space="preserve">
     <value />
   </data>
@@ -16539,9 +16566,6 @@
   </data>
   <data name="&gt;&gt;speciesMaleAndFemaleRadioButton.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;tradeHeldItemLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="itemHoldEffectNumericNoArrows.ToolTip" xml:space="preserve">
     <value />
@@ -16864,7 +16888,7 @@
   <data name="speciesSpecialDefenseNumericNoArrows.ToolTip3" xml:space="preserve">
     <value />
   </data>
-  <data name="moveEffectChanceNumericNoArrows.ToolTip16" xml:space="preserve">
+  <data name="itemPluckEffectLabel.ToolTip6" xml:space="preserve">
     <value />
   </data>
   <data name="speciesSpecialDefenseNumericNoArrows.ToolTip1" xml:space="preserve">
@@ -16904,12 +16928,6 @@
     <value />
   </data>
   <data name="itemPluckEffectLabel.ToolTip11" xml:space="preserve">
-    <value />
-  </data>
-  <data name="itemHoldParameterNumericNoArrows.ToolTip28" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textInGameListView.ToolTip10" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;learnsetLevelUpLevel10NumericNoArrows.ZOrder" xml:space="preserve">
@@ -16969,8 +16987,8 @@
   <data name="speciesGenderlessRadioButton.ToolTip1" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove3ComboBox.ToolTip9" xml:space="preserve">
-    <value />
+  <data name="tradePVDerivedGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>506, 291</value>
   </data>
   <data name="speciesSpecialAttackEVLabel.ToolTip5" xml:space="preserve">
     <value />
@@ -17022,9 +17040,6 @@
   </data>
   <data name="&gt;&gt;speciesEggGroup2ComboBox.Name" xml:space="preserve">
     <value>speciesEggGroup2ComboBox</value>
-  </data>
-  <data name="tradeSheenNumericNoArrows.ToolTip25" xml:space="preserve">
-    <value />
   </data>
   <data name="speciesAbility1Label.ToolTip8" xml:space="preserve">
     <value />
@@ -17152,6 +17167,9 @@
   <data name="speciesDefenseEVNumericNoArrows.ToolTip29" xml:space="preserve">
     <value />
   </data>
+  <data name="movesTabPage.Text" xml:space="preserve">
+    <value>Moves</value>
+  </data>
   <data name="speciesDefenseEVNumericNoArrows.ToolTip24" xml:space="preserve">
     <value />
   </data>
@@ -17263,8 +17281,8 @@
   <data name="itemBattlePocketLabel.ToolTip4" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHeldItem2Label.ToolTip30" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;itemHoldEffectLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;speciesSpeedLabel.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -17332,12 +17350,6 @@
   <data name="moveTargetComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
   </data>
-  <data name="speciesSpeedEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="speciesHeldItem1Label.ToolTip18" xml:space="preserve">
-    <value />
-  </data>
   <data name="speciesEggGroup1Label.ToolTip21" xml:space="preserve">
     <value />
   </data>
@@ -17349,9 +17361,6 @@
   </data>
   <data name="tradeAttackIVsNumericNoArrows.ToolTip7" xml:space="preserve">
     <value />
-  </data>
-  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>593, 245</value>
   </data>
   <data name="speciesCatchRateLabel.ToolTip3" xml:space="preserve">
     <value />
@@ -17575,9 +17584,6 @@
   <data name="tradeNewPVAbilityCheckBox.ToolTip8" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesAttackEVNumericNoArrows.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="speciesHPEVlabel.ToolTip21" xml:space="preserve">
     <value />
   </data>
@@ -17638,9 +17644,6 @@
   <data name="pokedexHTMetersLabel.Text" xml:space="preserve">
     <value>m</value>
   </data>
-  <data name="learnsetMoveTutorCheckedListBox.ToolTip19" xml:space="preserve">
-    <value />
-  </data>
   <data name="speciesSpecialAttackNumericNoArrows.ToolTip24" xml:space="preserve">
     <value />
   </data>
@@ -17648,9 +17651,6 @@
     <value />
   </data>
   <data name="tradeDefenseIVsNumericNoArrows.ToolTip25" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesHPLabel.ToolTip6" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMove4ComboBox.ToolTip2" xml:space="preserve">
@@ -17663,9 +17663,6 @@
     <value>Male Only</value>
   </data>
   <data name="speciesDefenseEVLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="learnsetLevelUpLevel17NumericNoArrows.ToolTip30" xml:space="preserve">
     <value />
   </data>
   <data name="tradeNewPVGenderCheckBox.ToolTip17" xml:space="preserve">
@@ -17752,9 +17749,6 @@
   <data name="speciesEggGroup2ComboBox.ToolTip8" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHPEVlabel.ToolTip29" xml:space="preserve">
-    <value />
-  </data>
   <data name="tradeNewPVNatureCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -17824,13 +17818,13 @@
   <data name="speciesAttackEVLabel.ToolTip4" xml:space="preserve">
     <value />
   </data>
+  <data name="learnsetLevelUpMove6ComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
   <data name="itemPluckEffectLabel.ToolTip25" xml:space="preserve">
     <value />
   </data>
   <data name="itemPluckEffectLabel.ToolTip15" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tradeNewPVNatureCheckBox.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="itemSelectedComboBox.ToolTip11" xml:space="preserve">
@@ -17911,9 +17905,6 @@
   <data name="&gt;&gt;speciesEggCyclesLabel.Name" xml:space="preserve">
     <value>speciesEggCyclesLabel</value>
   </data>
-  <data name="tradeSmartNumericNoArrows.ToolTip15" xml:space="preserve">
-    <value />
-  </data>
   <data name="label2.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -17939,6 +17930,9 @@
     <value />
   </data>
   <data name="pokedexHTDMLabel.ToolTip27" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speciesHeldItem1ComboBox.ToolTip9" xml:space="preserve">
     <value />
   </data>
   <data name="speciesAbility1Label.ToolTip14" xml:space="preserve">
@@ -18097,9 +18091,6 @@
   <data name="learnsetEggMove1ComboBox.ToolTip31" xml:space="preserve">
     <value />
   </data>
-  <data name="itemsTabPage.ToolTip2" xml:space="preserve">
-    <value />
-  </data>
   <data name="learnsetEggMove1ComboBox.ToolTip11" xml:space="preserve">
     <value />
   </data>
@@ -18204,6 +18195,9 @@
   </data>
   <data name="learnsetLevelUpMove11ComboBox.ToolTip18" xml:space="preserve">
     <value />
+  </data>
+  <data name="itemBattlePocketLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 241</value>
   </data>
   <data name="speciesBaseFriendshipNumericNoArrows.ToolTip23" xml:space="preserve">
     <value />
@@ -18352,6 +18346,9 @@
   <data name="tradeSheenNumericNoArrows.ToolTip4" xml:space="preserve">
     <value />
   </data>
+  <data name="checkBox3.ToolTip5" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesAttackLabel.ToolTip9" xml:space="preserve">
     <value />
   </data>
@@ -18373,8 +18370,8 @@
   <data name="speciesXPGroupLabel.ToolTip17" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesXPGroupLabel.ToolTip10" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;itemPriceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="speciesXPGroupLabel.ToolTip11" xml:space="preserve">
     <value />
@@ -18400,8 +18397,8 @@
   <data name="&gt;&gt;pokedexCategoryTextBox.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="pokedexHTDMLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="&gt;&gt;learnsetLevelUpLevel2NumericNoArrows.Parent" xml:space="preserve">
+    <value>learnsetLevelUpMovesGroupBox</value>
   </data>
   <data name="pokedexHTFTNumericNoArrows.ToolTip20" xml:space="preserve">
     <value />
@@ -18562,8 +18559,8 @@
   <data name="label35.ToolTip27" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;itemFieldPocketComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="speciesDefenseEVLabel.ToolTip28" xml:space="preserve">
+    <value />
   </data>
   <data name="label35.ToolTip25" xml:space="preserve">
     <value />
@@ -18590,6 +18587,12 @@
     <value />
   </data>
   <data name="tradeSpecialDefenseIVsLabel.ToolTip4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="itemHoldParemeterLabel.ToolTip21" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tradeLanguageComboBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
   <data name="tradeSheenNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
@@ -18709,9 +18712,6 @@
   <data name="speciesAttackNumericNoArrows.ToolTip10" xml:space="preserve">
     <value />
   </data>
-  <data name="moveSelectedLabel.ToolTip25" xml:space="preserve">
-    <value />
-  </data>
   <data name="movePriorityLabel.ToolTip1" xml:space="preserve">
     <value />
   </data>
@@ -18743,6 +18743,9 @@
     <value />
   </data>
   <data name="tradeBeautyLabel.ToolTip12" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pokedexHTDecimetersNumericUpDown.ToolTip1" xml:space="preserve">
     <value />
   </data>
   <data name="itemFieldPocketLabel.ToolTip19" xml:space="preserve">
@@ -18796,9 +18799,6 @@
   <data name="tradeSpecialDefenseIVsLabel.Text" xml:space="preserve">
     <value>Sp. Defense</value>
   </data>
-  <data name="&gt;&gt;learnsetLevelUpLevel2NumericNoArrows.Parent" xml:space="preserve">
-    <value>learnsetLevelUpMovesGroupBox</value>
-  </data>
   <data name="speciesHeldItem1Label.ToolTip29" xml:space="preserve">
     <value />
   </data>
@@ -18823,7 +18823,7 @@
   <data name="speciesEggGroup1ComboBox.ToolTip32" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeHeldItemLabel.ToolTip7" xml:space="preserve">
+  <data name="speciesAttackEVNumericNoArrows.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="tradeHeldItemLabel.ToolTip4" xml:space="preserve">
@@ -18889,6 +18889,9 @@
   <data name="speciesHPEVlabel.Text" xml:space="preserve">
     <value>HP:</value>
   </data>
+  <data name="&gt;&gt;itemsBattlePocketsGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="learnsetEggMove9ComboBox.ToolTip29" xml:space="preserve">
     <value />
   </data>
@@ -18946,8 +18949,8 @@
   <data name="learnsetLevelUpMove9ComboBox.ToolTip7" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove6ComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+  <data name="learnsetLevelUpMove9ComboBox.ToolTip4" xml:space="preserve">
+    <value />
   </data>
   <data name="learnsetLevelUpMove9ComboBox.ToolTip5" xml:space="preserve">
     <value />
@@ -19072,7 +19075,7 @@
   <data name="tradeBeautyLabel.ToolTip10" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpLevel20NumericNoArrows.ToolTip31" xml:space="preserve">
+  <data name="tradeAnyPokemonWantedComboBox.ToolTip18" xml:space="preserve">
     <value />
   </data>
   <data name="speciesAttackNumericNoArrows.ToolTip9" xml:space="preserve">
@@ -19104,9 +19107,6 @@
   </data>
   <data name="&gt;&gt;tradeNicknameLabel.Name" xml:space="preserve">
     <value>tradeNicknameLabel</value>
-  </data>
-  <data name="tradeAbilityLabel.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="moveEffectLabel.ToolTip5" xml:space="preserve">
     <value />
@@ -19318,7 +19318,7 @@
   <data name="tradeDefenseIVsNumericNoArrows.ToolTip7" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeSpecialDefenseIVsNumericNoArrows.ToolTip10" xml:space="preserve">
+  <data name="tradeDefenseIVsNumericNoArrows.ToolTip1" xml:space="preserve">
     <value />
   </data>
   <data name="tradeDefenseIVsNumericNoArrows.ToolTip2" xml:space="preserve">
@@ -19507,9 +19507,6 @@
   <data name="tradeNewPVGenderComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 21</value>
   </data>
-  <data name="moveSnatchCheckBox.ToolTip17" xml:space="preserve">
-    <value />
-  </data>
   <data name="moveCategoryLabel.ToolTip20" xml:space="preserve">
     <value />
   </data>
@@ -19600,7 +19597,7 @@
   <data name="itemPluckEffectLabel.ToolTip7" xml:space="preserve">
     <value />
   </data>
-  <data name="itemPluckEffectLabel.ToolTip6" xml:space="preserve">
+  <data name="learnsetEggMove5ComboBox.ToolTip18" xml:space="preserve">
     <value />
   </data>
   <data name="itemPluckEffectLabel.ToolTip5" xml:space="preserve">
@@ -19637,6 +19634,9 @@
     <value />
   </data>
   <data name="tradeGenderTextBox.ToolTip21" xml:space="preserve">
+    <value />
+  </data>
+  <data name="itemNaturalGiftPowerLabel.ToolTip14" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove13ComboBox.ToolTip14" xml:space="preserve">
@@ -19744,7 +19744,7 @@
   <data name="moveTargetLabel.Text" xml:space="preserve">
     <value>Target:</value>
   </data>
-  <data name="learnsetEggMove11ComboBox.ToolTip1" xml:space="preserve">
+  <data name="tradeHPIVsLabel.ToolTip31" xml:space="preserve">
     <value />
   </data>
   <data name="tradeHPIVsLabel.ToolTip30" xml:space="preserve">
@@ -19851,9 +19851,6 @@
   </data>
   <data name="&gt;&gt;learnsetEggMove16ComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;movePriorityLabel.Parent" xml:space="preserve">
-    <value>movesTabPage</value>
   </data>
   <data name="textTabPage.ToolTip1" xml:space="preserve">
     <value />
@@ -20254,7 +20251,7 @@
   <data name="tradeTrainerComboBox.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesBaseHappinessLabel.ToolTip13" xml:space="preserve">
+  <data name="learnsetEggMove10ComboBox.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="speciesTypesGroupBox.ToolTip24" xml:space="preserve">
@@ -20269,8 +20266,8 @@
   <data name="learnsetEggMove10ComboBox.ToolTip11" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpLevel8NumericNoArrows.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="learnsetEggMove10ComboBox.ToolTip12" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;openRomFileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -20719,8 +20716,8 @@
   <data name="speciesSpecialAttackEVNumericNoArrows.ToolTip10" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesSpecialAttackEVNumericNoArrows.ToolTip17" xml:space="preserve">
-    <value />
+  <data name="moveContestEffectLabel.Text" xml:space="preserve">
+    <value>Contest Effect:</value>
   </data>
   <data name="speciesSpecialAttackEVNumericNoArrows.ToolTip16" xml:space="preserve">
     <value />
@@ -20869,9 +20866,6 @@
   <data name="tradeSpeedIVsLabel.Text" xml:space="preserve">
     <value>Speed</value>
   </data>
-  <data name="speciesEggCyclesLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="speciesAttackEVNumericNoArrows.ToolTip1" xml:space="preserve">
     <value />
   </data>
@@ -20959,7 +20953,7 @@
   <data name="itemNaturalGiftTypeLabel.ToolTip12" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeHPIVsLabel.ToolTip31" xml:space="preserve">
+  <data name="textInGameListView.ToolTip10" xml:space="preserve">
     <value />
   </data>
   <data name="textInGameListView.ToolTip30" xml:space="preserve">
@@ -21007,17 +21001,23 @@
   <data name="mainFormMenuStrip.ToolTip21" xml:space="preserve">
     <value />
   </data>
+  <data name="pokedexHTDecimetersNumericUpDown.ToolTip4" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesAbilitiesGroupBox.ToolTip23" xml:space="preserve">
     <value />
   </data>
   <data name="speciesDefenseEVLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;tradeAttackIVsLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="learnsetLevelUpMovesGroupBox.ToolTip17" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;tradeGenderLabel.Parent" xml:space="preserve">
     <value>tradePVDerivedGroupBox</value>
+  </data>
+  <data name="moveProtectCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 17</value>
   </data>
   <data name="tradeAbilityLabel.ToolTip5" xml:space="preserve">
     <value />
@@ -21103,7 +21103,7 @@
   <data name="learnsetLevelUpMove15ComboBox.ToolTip11" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove15ComboBox.ToolTip10" xml:space="preserve">
+  <data name="npcTradeTabPage.ToolTip31" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMove10ComboBox.ToolTip29" xml:space="preserve">
@@ -21169,8 +21169,8 @@
   <data name="speciesEggCyclesLabel.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove19ComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
+  <data name="speciesEggCyclesLabel.ToolTip27" xml:space="preserve">
+    <value />
   </data>
   <data name="speciesEggCyclesLabel.ToolTip26" xml:space="preserve">
     <value />
@@ -21198,6 +21198,9 @@
   </data>
   <data name="&gt;&gt;saveToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tradeSheenNumericNoArrows.ToolTip7" xml:space="preserve">
+    <value />
   </data>
   <data name="learnsetLevelUpMove11ComboBox.ToolTip9" xml:space="preserve">
     <value />
@@ -21262,16 +21265,13 @@
   <data name="speciesBaseXPLabel.ToolTip15" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;speciesHPEVlabel.Name" xml:space="preserve">
-    <value>speciesHPEVlabel</value>
-  </data>
   <data name="&gt;&gt;pokedexWTUnitLabel.Parent" xml:space="preserve">
     <value>pokedexTabPage</value>
   </data>
   <data name="speciesSpecialDefenseNumericNoArrows.ToolTip29" xml:space="preserve">
     <value />
   </data>
-  <data name="itemNaturalGiftUseableCheckBox.ToolTip2" xml:space="preserve">
+  <data name="speciesBaseHappinessLabel.ToolTip13" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpLevel16NumericNoArrows.ToolTip19" xml:space="preserve">
@@ -21316,9 +21316,6 @@
   <data name="speciesEggGroupsGroupBox.ToolTip26" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesAbilitiesGroupBox.ToolTip8" xml:space="preserve">
-    <value />
-  </data>
   <data name="itemPriceNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
     <value>99, 75</value>
   </data>
@@ -21328,8 +21325,8 @@
   <data name="learnsetEggMove3ComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="moveContestConditionLabel.ToolTip20" xml:space="preserve">
-    <value />
+  <data name="learnsetLevelUpMove16ComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
   <data name="moveContestConditionLabel.ToolTip21" xml:space="preserve">
     <value />
@@ -21422,6 +21419,9 @@
     <value />
   </data>
   <data name="tradeCoolNumericNoArrows.ToolTip31" xml:space="preserve">
+    <value />
+  </data>
+  <data name="learnsetLevelUpMove18ComboBox.ToolTip31" xml:space="preserve">
     <value />
   </data>
   <data name="speciesSpecialDefenseLabel.ToolTip" xml:space="preserve">
@@ -21536,9 +21536,6 @@
     <value />
   </data>
   <data name="learnsetEggMove6ComboBox.ToolTip10" xml:space="preserve">
-    <value />
-  </data>
-  <data name="learnsetLevelUpLevel15NumericNoArrows.ToolTip22" xml:space="preserve">
     <value />
   </data>
   <data name="speciesHeldItem1Label.ToolTip13" xml:space="preserve">
@@ -21787,7 +21784,7 @@
   <data name="textBankComboBox.ToolTip12" xml:space="preserve">
     <value />
   </data>
-  <data name="textBankComboBox.ToolTip22" xml:space="preserve">
+  <data name="pokedexHeightConversionGroupBox.ToolTip26" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove6ComboBox.ToolTip30" xml:space="preserve">
@@ -21803,9 +21800,6 @@
     <value />
   </data>
   <data name="itemFlingEffectNumericNoArrows.ToolTip28" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesAttackEVLabel.ToolTip16" xml:space="preserve">
     <value />
   </data>
   <data name="pokedexHeightConversionGroupBox.ToolTip29" xml:space="preserve">
@@ -21992,12 +21986,6 @@
     <value>françaisToolStripMenuItem</value>
   </data>
   <data name="learnsetEggMove4ComboBox.ToolTip16" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pokedexHTMetersNumericNoArrows.ToolTip2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tradeHeldItemLabel.ToolTip20" xml:space="preserve">
     <value />
   </data>
   <data name="moveContestEffectComboBox.ToolTip8" xml:space="preserve">
@@ -22234,9 +22222,6 @@
   <data name="speciesAbility1ComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;tradeNewPVAbilityComboBox.Parent" xml:space="preserve">
-    <value>tradeNewPVGroupBox</value>
-  </data>
   <data name="moveContactCheckBox.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -22321,7 +22306,7 @@
   <data name="textTabPage.ToolTip14" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove18ComboBox.ToolTip31" xml:space="preserve">
+  <data name="itemsTabPage.ToolTip1" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove18ComboBox.ToolTip32" xml:space="preserve">
@@ -22537,7 +22522,7 @@
   <data name="speciesDefenseLabel.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetEggMove5ComboBox.ToolTip24" xml:space="preserve">
+  <data name="mainTabControl.ToolTip11" xml:space="preserve">
     <value />
   </data>
   <data name="mainTabControl.ToolTip21" xml:space="preserve">
@@ -22620,6 +22605,9 @@
   </data>
   <data name="movePowerLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
+  </data>
+  <data name="textTabPage.ToolTip31" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;learnsetLevelUpLevel17NumericNoArrows.Name" xml:space="preserve">
     <value>learnsetLevelUpLevel17NumericNoArrows</value>
@@ -22750,8 +22738,8 @@
   <data name="itemPriceLabel.ToolTip12" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove10ComboBox.ToolTip8" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;learnsetLevelUpLevel2NumericNoArrows.Type" xml:space="preserve">
+    <value>Pokemon_Sinjoh_Editor.NumericNoArrows, Pokemon_Sinjoh_editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;moveContestEffectLabel.Name" xml:space="preserve">
     <value>moveContestEffectLabel</value>
@@ -23176,7 +23164,7 @@
   <data name="learnsetLevelUpMove15ComboBox.ToolTip20" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpLevel12NumericNoArrows.ToolTip21" xml:space="preserve">
+  <data name="learnsetLevelUpLevel15NumericNoArrows.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;moveEffectChanceTooltip.Name" xml:space="preserve">
@@ -23230,8 +23218,8 @@
   <data name="speciesEggGroup2ComboBox.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;moveKingsRockTooltip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="speciesMiscGroupBox.ToolTip4" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;pokedexWTNumericNoArrows.Name" xml:space="preserve">
     <value>pokedexWTNumericNoArrows</value>
@@ -23299,8 +23287,8 @@
   <data name="&gt;&gt;tradeLanguageComboBox.Parent" xml:space="preserve">
     <value>npcTradeTabPage</value>
   </data>
-  <data name="itemNaturalGiftUseableCheckBox.ToolTip8" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tradeNewPVAbilityComboBox.Parent" xml:space="preserve">
+    <value>tradeNewPVGroupBox</value>
   </data>
   <data name="tradeNewPVGenderCheckBox.ToolTip18" xml:space="preserve">
     <value />
@@ -23431,9 +23419,6 @@
   <data name="learnsetLevelUpLevel5NumericNoArrows.ToolTip29" xml:space="preserve">
     <value />
   </data>
-  <data name="pokedexHTINLabel.ToolTip14" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;learnsetLevelUpLevel14NumericNoArrows.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
@@ -23441,9 +23426,6 @@
     <value />
   </data>
   <data name="speciesAbilitiesGroupBox.ToolTip28" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesDefenseNumericNoArrows.ToolTip29" xml:space="preserve">
     <value />
   </data>
   <data name="speciesAbilitiesGroupBox.ToolTip18" xml:space="preserve">
@@ -23557,7 +23539,7 @@
   <data name="speciesDefenseLabel.ToolTip10" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpLevel20NumericNoArrows.ToolTip15" xml:space="preserve">
+  <data name="speciesHeldItemsGroupBox.ToolTip13" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove8ComboBox.ToolTip30" xml:space="preserve">
@@ -23641,8 +23623,8 @@
   <data name="learnsetLevelUpMove17ComboBox.ToolTip26" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove17ComboBox.ToolTip25" xml:space="preserve">
-    <value />
+  <data name="tradeCoolNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 32</value>
   </data>
   <data name="learnsetLevelUpMove17ComboBox.ToolTip24" xml:space="preserve">
     <value />
@@ -23839,6 +23821,9 @@
   <data name="tradeSheenNumericNoArrows.ToolTip30" xml:space="preserve">
     <value />
   </data>
+  <data name="itemNaturalGiftTypeComboBox.ToolTip7" xml:space="preserve">
+    <value />
+  </data>
   <data name="tradeNewPVAbilityComboBox.ToolTip32" xml:space="preserve">
     <value />
   </data>
@@ -23857,6 +23842,9 @@
   <data name="learnsetEggMove1ComboBox.ToolTip14" xml:space="preserve">
     <value />
   </data>
+  <data name="tradeCuteLabel.ToolTip27" xml:space="preserve">
+    <value />
+  </data>
   <data name="tradeBeautyNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -23869,7 +23857,7 @@
   <data name="tradeSpeedIVsLabel.ToolTip11" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeCuteLabel.ToolTip27" xml:space="preserve">
+  <data name="tradeSpeedIVsLabel.ToolTip31" xml:space="preserve">
     <value />
   </data>
   <data name="tradeSpeedIVsLabel.ToolTip21" xml:space="preserve">
@@ -24010,6 +23998,9 @@
   <data name="moveAccuracyLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
   </data>
+  <data name="learnsetLevelUpMove16ComboBox.ToolTip6" xml:space="preserve">
+    <value />
+  </data>
   <data name="moveHPBarCheckBox.ToolTip32" xml:space="preserve">
     <value />
   </data>
@@ -24124,8 +24115,8 @@
   <data name="itemsBattlePocketsGroupBox.ToolTip17" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeSheenNumericNoArrows.ToolTip7" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;movePriorityLabel.Parent" xml:space="preserve">
+    <value>movesTabPage</value>
   </data>
   <data name="speciesHeldItem2ComboBox.ToolTip3" xml:space="preserve">
     <value />
@@ -24236,6 +24227,9 @@
     <value />
   </data>
   <data name="tradePVDerivedGroupBox.ToolTip1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speciesBaseXPYieldNumericNoArrows.ToolTip28" xml:space="preserve">
     <value />
   </data>
   <data name="moveTargetComboBox.ToolTip13" xml:space="preserve">
@@ -24430,7 +24424,7 @@
   <data name="checkBox3.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesDefenseNumericNoArrows.ToolTip14" xml:space="preserve">
+  <data name="tradeSpecialDefenseIVsLabel.ToolTip18" xml:space="preserve">
     <value />
   </data>
   <data name="tradeSpecialDefenseIVsLabel.ToolTip19" xml:space="preserve">
@@ -24595,8 +24589,8 @@
   <data name="speciesHeldItem1Label.ToolTip12" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;moveContestEffectComboBox.Parent" xml:space="preserve">
-    <value>movesTabPage</value>
+  <data name="speciesHeldItem1Label.ToolTip11" xml:space="preserve">
+    <value />
   </data>
   <data name="speciesHeldItem1Label.ToolTip10" xml:space="preserve">
     <value />
@@ -24619,7 +24613,7 @@
   <data name="speciesHeldItem1Label.ToolTip19" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesSpeedEVlabel.ToolTip19" xml:space="preserve">
+  <data name="speciesHeldItem1Label.ToolTip18" xml:space="preserve">
     <value />
   </data>
   <data name="moveAccuracyNumericNoArrows.ToolTip7" xml:space="preserve">
@@ -24771,6 +24765,9 @@
   </data>
   <data name="&gt;&gt;pokedexHTMetersNumericNoArrows.Type" xml:space="preserve">
     <value>Pokemon_Sinjoh_Editor.NumericNoArrows, Pokemon_Sinjoh_editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="speciesSafariRunChanceNumericNoArrows.ToolTip28" xml:space="preserve">
+    <value />
   </data>
   <data name="moveAccuracyLabel.ToolTip6" xml:space="preserve">
     <value />
@@ -25027,7 +25024,7 @@
   <data name="itemNaturalGiftUseableCheckBox.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove4ComboBox.ToolTip11" xml:space="preserve">
+  <data name="tradeBeautyLabel.ToolTip4" xml:space="preserve">
     <value />
   </data>
   <data name="tradePVLabel.Text" xml:space="preserve">
@@ -25091,9 +25088,6 @@
     <value />
   </data>
   <data name="moveProtectCheckBox.ToolTip9" xml:space="preserve">
-    <value />
-  </data>
-  <data name="moveContestEffectComboBox.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove18ComboBox.ToolTip9" xml:space="preserve">
@@ -25204,7 +25198,7 @@
   <data name="tradePVNumericNoArrows.ToolTip30" xml:space="preserve">
     <value />
   </data>
-  <data name="pokdexEntryRichTextBox.ToolTip22" xml:space="preserve">
+  <data name="tradePVNumericNoArrows.ToolTip20" xml:space="preserve">
     <value />
   </data>
   <data name="tradePVNumericNoArrows.ToolTip10" xml:space="preserve">
@@ -25267,6 +25261,9 @@
   <data name="textBankComboBox.ToolTip30" xml:space="preserve">
     <value />
   </data>
+  <data name="learnsetLevelUpLevel18NumericNoArrows.ToolTip6" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesBaseStatsGroupBox.ToolTip32" xml:space="preserve">
     <value />
   </data>
@@ -25280,6 +25277,9 @@
     <value />
   </data>
   <data name="learnsetLevelUpLevel20NumericNoArrows.ToolTip11" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speciesBaseXPYieldNumericNoArrows.ToolTip23" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMove13ComboBox.ToolTip8" xml:space="preserve">
@@ -25429,9 +25429,6 @@
   <data name="pokedexWTUnitLabel.ToolTip28" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove5ComboBox.ToolTip5" xml:space="preserve">
-    <value />
-  </data>
   <data name="moveSnatchCheckBox.ToolTip26" xml:space="preserve">
     <value />
   </data>
@@ -25477,7 +25474,7 @@
   <data name="tradeNewPVNatureCheckBox.ToolTip20" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpLevel1NumericNoArrows.ToolTip14" xml:space="preserve">
+  <data name="speciesAttackEVLabel.ToolTip16" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove11ComboBox.ToolTip1" xml:space="preserve">
@@ -25582,7 +25579,7 @@
   <data name="itemPluckEffectLabel.ToolTip28" xml:space="preserve">
     <value />
   </data>
-  <data name="itemPluckEffectLabel.ToolTip18" xml:space="preserve">
+  <data name="tradeSpecialDefenseIVsNumericNoArrows.ToolTip10" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove5ComboBox.ToolTip15" xml:space="preserve">
@@ -25612,8 +25609,8 @@
   <data name="&gt;&gt;pokedexNumNationalNumericUpDown.Parent" xml:space="preserve">
     <value>pokedexTabPage</value>
   </data>
-  <data name="&gt;&gt;itemsBattlePocketsGroupBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="learnsetLevelUpLevel17NumericNoArrows.ToolTip30" xml:space="preserve">
+    <value />
   </data>
   <data name="speciesXPGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -25831,7 +25828,7 @@
   <data name="speciesHeldItem2ComboBox.ToolTip18" xml:space="preserve">
     <value />
   </data>
-  <data name="label2.ToolTip4" xml:space="preserve">
+  <data name="learnsetLevelUpMove1ComboBox.ToolTip19" xml:space="preserve">
     <value />
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
@@ -25950,9 +25947,6 @@
   </data>
   <data name="speciesType2ComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
-  </data>
-  <data name="speciesGenderMaleToFemaleLabel.ToolTip12" xml:space="preserve">
-    <value />
   </data>
   <data name="speciesGenderMaleToFemaleLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 120</value>
@@ -26413,7 +26407,7 @@
   <data name="tradeAnyPokemonWantedComboBox.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="itemFieldPocketComboBox.ToolTip21" xml:space="preserve">
+  <data name="learnsetLevelUpMove17ComboBox.ToolTip25" xml:space="preserve">
     <value />
   </data>
   <data name="itemFieldPocketComboBox.ToolTip20" xml:space="preserve">
@@ -26497,6 +26491,9 @@
   <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 17</value>
   </data>
+  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="speciesAbility1ComboBox.ToolTip30" xml:space="preserve">
     <value />
   </data>
@@ -26539,7 +26536,7 @@
   <data name="speciesType1Label.ToolTip17" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesType1Label.ToolTip16" xml:space="preserve">
+  <data name="moveSelectedLabel.ToolTip25" xml:space="preserve">
     <value />
   </data>
   <data name="moveSelectedLabel.ToolTip24" xml:space="preserve">
@@ -26572,7 +26569,7 @@
   <data name="itemFieldPocketLabel.ToolTip14" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetEggMove12ComboBox.ToolTip16" xml:space="preserve">
+  <data name="speciesEggGroup2Label.ToolTip12" xml:space="preserve">
     <value />
   </data>
   <data name="itemHoldParemeterLabel.ToolTip13" xml:space="preserve">
@@ -26581,7 +26578,7 @@
   <data name="itemFieldPocketLabel.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="movePowerNumericNoArrows.ToolTip30" xml:space="preserve">
+  <data name="speciesType1Label.ToolTip18" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMove12ComboBox.ToolTip12" xml:space="preserve">
@@ -26677,7 +26674,7 @@
   <data name="&gt;&gt;movePriorityTooltip.Name" xml:space="preserve">
     <value>movePriorityTooltip</value>
   </data>
-  <data name="moveContestConditionComboBox.ToolTip7" xml:space="preserve">
+  <data name="moveSnatchCheckBox.ToolTip17" xml:space="preserve">
     <value />
   </data>
   <data name="label2.ToolTip18" xml:space="preserve">
@@ -26701,7 +26698,7 @@
   <data name="speciesSpecialAttackEVLabel.ToolTip8" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesAbility2Label.ToolTip8" xml:space="preserve">
+  <data name="itemFieldPocketLabel.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;itemsTabPage.Type" xml:space="preserve">
@@ -27085,8 +27082,8 @@
   <data name="tradeSpeedIVsNumericNoArrows.ToolTip1" xml:space="preserve">
     <value />
   </data>
-  <data name="itemFieldPocketComboBox.ToolTip7" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tradeSpecialDefenseIVsLabel.Name" xml:space="preserve">
+    <value>tradeSpecialDefenseIVsLabel</value>
   </data>
   <data name="tradeToughLabel.ToolTip13" xml:space="preserve">
     <value />
@@ -27301,9 +27298,6 @@
   <data name="learnsetLevelUpMove20ComboBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove20ComboBox.ToolTip15" xml:space="preserve">
-    <value />
-  </data>
   <data name="itemHoldEffectNumericNoArrows.ToolTip2" xml:space="preserve">
     <value />
   </data>
@@ -27427,7 +27421,7 @@
   <data name="learnsetAltFormsComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
   </data>
-  <data name="movePPNumericNoArrows.ToolTip31" xml:space="preserve">
+  <data name="itemHoldParameterNumericNoArrows.ToolTip28" xml:space="preserve">
     <value />
   </data>
   <data name="movePPNumericNoArrows.ToolTip30" xml:space="preserve">
@@ -27790,8 +27784,8 @@
   <data name="speciesHeldItem2ComboBox.ToolTip15" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHeldItem2ComboBox.ToolTip25" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;speciesSpeedLabel.Name" xml:space="preserve">
+    <value>speciesSpeedLabel</value>
   </data>
   <data name="speciesSpecialAttackNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 214</value>
@@ -27976,7 +27970,7 @@
   <data name="itemPriceNumericNoArrows.ToolTip5" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove1ComboBox.ToolTip19" xml:space="preserve">
+  <data name="learnsetLevelUpMove20ComboBox.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpLevel18NumericNoArrows.ToolTip20" xml:space="preserve">
@@ -27987,6 +27981,9 @@
   </data>
   <data name="&gt;&gt;tradeNewPVGroupBox.Parent" xml:space="preserve">
     <value>npcTradeTabPage</value>
+  </data>
+  <data name="speciesDefenseNumericNoArrows.ToolTip21" xml:space="preserve">
+    <value />
   </data>
   <data name="tradeLanguageLabel.ToolTip6" xml:space="preserve">
     <value />
@@ -28045,7 +28042,7 @@
   <data name="&gt;&gt;moveSnatchCheckBox.Parent" xml:space="preserve">
     <value>moveFlagsGroupBox</value>
   </data>
-  <data name="speciesSpecialDefenseEVNumericNoArrows.ToolTip16" xml:space="preserve">
+  <data name="tradeDefenseIVsLabel.ToolTip9" xml:space="preserve">
     <value />
   </data>
   <data name="tradeDefenseIVsLabel.ToolTip8" xml:space="preserve">
@@ -28108,7 +28105,7 @@
   <data name="&gt;&gt;speciesDefenseEVLabel.Name" xml:space="preserve">
     <value>speciesDefenseEVLabel</value>
   </data>
-  <data name="tradeIVsGroupBox.ToolTip17" xml:space="preserve">
+  <data name="learnsetLevelUpMove12ComboBox.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="pokedexHTINNumericNoArrows.ToolTip7" xml:space="preserve">
@@ -28273,8 +28270,8 @@
   <data name="pokdexEntryRichTextBox.ToolTip31" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpLevel13NumericNoArrows.ToolTip1" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;moveEffectLabel.Name" xml:space="preserve">
+    <value>moveEffectLabel</value>
   </data>
   <data name="&gt;&gt;itemPriceNumericNoArrows.Type" xml:space="preserve">
     <value>Pokemon_Sinjoh_Editor.NumericNoArrows, Pokemon_Sinjoh_editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
@@ -28318,9 +28315,6 @@
   <data name="speciesAbilitiesGroupBox.ToolTip7" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetEggMove16ComboBox.ToolTip4" xml:space="preserve">
-    <value />
-  </data>
   <data name="moveTargetLabel.ToolTip6" xml:space="preserve">
     <value />
   </data>
@@ -28333,7 +28327,7 @@
   <data name="pokedexHTMetersLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="moveContestConditionLabel.ToolTip10" xml:space="preserve">
+  <data name="checkBox1.ToolTip4" xml:space="preserve">
     <value />
   </data>
   <data name="moveContestConditionLabel.ToolTip11" xml:space="preserve">
@@ -28396,7 +28390,7 @@
   <data name="learnsetLevelUpMove10ComboBox.ToolTip9" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHPLabel.ToolTip1" xml:space="preserve">
+  <data name="itemNaturalGiftTypeComboBox.ToolTip20" xml:space="preserve">
     <value />
   </data>
   <data name="tradeHPIVsLabel.Size" type="System.Drawing.Size, System.Drawing">
@@ -28405,7 +28399,7 @@
   <data name="itemNaturalGiftTypeComboBox.ToolTip26" xml:space="preserve">
     <value />
   </data>
-  <data name="itemNaturalGiftTypeComboBox.ToolTip25" xml:space="preserve">
+  <data name="speciesHPEVlabel.ToolTip12" xml:space="preserve">
     <value />
   </data>
   <data name="itemNaturalGiftTypeComboBox.ToolTip24" xml:space="preserve">
@@ -28459,6 +28453,9 @@
   <data name="&gt;&gt;learnsetEggMove3ComboBox.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <data name="learnsetLevelUpMove11ComboBox.ToolTip4" xml:space="preserve">
+    <value />
+  </data>
   <data name="learnsetTMCheckedListBox.ToolTip9" xml:space="preserve">
     <value />
   </data>
@@ -28507,8 +28504,8 @@
   <data name="learnsetLevelUpMove12ComboBox.ToolTip13" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeSpeedIVsNumericNoArrows.ToolTip25" xml:space="preserve">
-    <value />
+  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 245</value>
   </data>
   <data name="tradeAnyPokemonWantedComboBox.ToolTip25" xml:space="preserve">
     <value />
@@ -28534,7 +28531,7 @@
   <data name="tradeAnyPokemonWantedComboBox.ToolTip22" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeToughNumericNoArrows.ToolTip8" xml:space="preserve">
+  <data name="speciesSpecialDefenseLabel.ToolTip9" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMove15ComboBox.ToolTip24" xml:space="preserve">
@@ -28684,7 +28681,7 @@
   <data name="speciesGenderRatioNumericNoArrows.ToolTip31" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesType1ComboBox.ToolTip28" xml:space="preserve">
+  <data name="pokedexHTINLabel.ToolTip25" xml:space="preserve">
     <value />
   </data>
   <data name="pokedexHTINLabel.ToolTip15" xml:space="preserve">
@@ -28774,7 +28771,7 @@
   <data name="learnsetEggMove15ComboBox.ToolTip27" xml:space="preserve">
     <value />
   </data>
-  <data name="itemFlingPowerNumericNoArrows.ToolTip2" xml:space="preserve">
+  <data name="learnsetEggMove16ComboBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove14ComboBox.ToolTip22" xml:space="preserve">
@@ -28801,7 +28798,7 @@
   <data name="learnsetLevelUpMove16ComboBox.ToolTip30" xml:space="preserve">
     <value />
   </data>
-  <data name="moveTargetLabel.ToolTip19" xml:space="preserve">
+  <data name="speciesBaseFriendshipNumericNoArrows.ToolTip30" xml:space="preserve">
     <value />
   </data>
   <data name="speciesHPNumericNoArrows.ToolTip10" xml:space="preserve">
@@ -28939,8 +28936,8 @@
   <data name="&gt;&gt;itemHoldEffectLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="itemHoldParemeterLabel.ToolTip21" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;speciesSpecialDefenseLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="pokedexHTMetersNumericNoArrows.ToolTip31" xml:space="preserve">
     <value />
@@ -29063,6 +29060,9 @@
     <value />
   </data>
   <data name="tradeWantedPokemonComboBox.ToolTip30" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speciesEggGroup2Label.ToolTip5" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMove5ComboBox.TabIndex" type="System.Int32, mscorlib">
@@ -29233,8 +29233,8 @@
   <data name="speciesMaleOnlyRadioButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="learnsetLevelUpMove11ComboBox.ToolTip4" xml:space="preserve">
-    <value />
+  <data name="speciesHeldItem2Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 97</value>
   </data>
   <data name="speciesXPGroupComboBox.ToolTip13" xml:space="preserve">
     <value />
@@ -29284,7 +29284,7 @@
   <data name="tradeOfferedPokemonLabel.ToolTip14" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeOriginalTrainerIDNumericNoArrows.ToolTip24" xml:space="preserve">
+  <data name="tradeOfferedPokemonLabel.ToolTip24" xml:space="preserve">
     <value />
   </data>
   <data name="pokedexHTFTLabel.ToolTip5" xml:space="preserve">
@@ -29383,8 +29383,8 @@
   <data name="movePowerLabel.ToolTip2" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHeldItem2Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 97</value>
+  <data name="speciesSpecialDefenseLabel.ToolTip22" xml:space="preserve">
+    <value />
   </data>
   <data name="speciesAttackEVLabel.ToolTip15" xml:space="preserve">
     <value />
@@ -29572,6 +29572,9 @@
   <data name="learnsetLevelUpLevel8NumericNoArrows.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="itemPluckEffectNumericNoArrows.ToolTip19" xml:space="preserve">
+    <value />
+  </data>
   <data name="learnsetEggMovesGroupBox.Text" xml:space="preserve">
     <value>Egg Moves</value>
   </data>
@@ -29605,7 +29608,7 @@
   <data name="itemNaturalGiftUseableCheckBox.Text" xml:space="preserve">
     <value>Useable by Natural Gift</value>
   </data>
-  <data name="speciesSpecialDefenseEVLabel.ToolTip15" xml:space="preserve">
+  <data name="movePPNumericNoArrows.ToolTip17" xml:space="preserve">
     <value />
   </data>
   <data name="movePowerLabel.Size" type="System.Drawing.Size, System.Drawing">
@@ -29662,8 +29665,8 @@
   <data name="speciesHeldItem1ComboBox.ToolTip18" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHeldItem2Label.ToolTip18" xml:space="preserve">
-    <value />
+  <data name="speciesAttackLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 84</value>
   </data>
   <data name="speciesComboBox.ToolTip17" xml:space="preserve">
     <value />
@@ -29728,13 +29731,13 @@
   <data name="speciesHPEVlabel.ToolTip19" xml:space="preserve">
     <value />
   </data>
-  <data name="pokedexHeightConversionGroupBox.ToolTip26" xml:space="preserve">
+  <data name="speciesHPEVlabel.ToolTip29" xml:space="preserve">
     <value />
   </data>
   <data name="tradeDefenseIVsNumericNoArrows.ToolTip26" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpLevel4NumericNoArrows.ToolTip3" xml:space="preserve">
+  <data name="learnsetEggMove12ComboBox.ToolTip17" xml:space="preserve">
     <value />
   </data>
   <data name="speciesAbility2Label.ToolTip24" xml:space="preserve">
@@ -29818,13 +29821,13 @@
   <data name="speciesAttackLabel.ToolTip14" xml:space="preserve">
     <value />
   </data>
-  <data name="itemNaturalGiftPowerLabel.ToolTip14" xml:space="preserve">
+  <data name="tradeSmartNumericNoArrows.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="speciesAttackLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="tradeSmartNumericNoArrows.ToolTip17" xml:space="preserve">
+  <data name="speciesHeldItem2Label.ToolTip1" xml:space="preserve">
     <value />
   </data>
   <data name="tradeSmartNumericNoArrows.ToolTip16" xml:space="preserve">
@@ -29896,13 +29899,13 @@
   <data name="speciesHPNumericNoArrows.ToolTip14" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHPNumericNoArrows.ToolTip24" xml:space="preserve">
+  <data name="moveContestEffectLabel.ToolTip8" xml:space="preserve">
     <value />
   </data>
   <data name="speciesDefenseLabel.ToolTip3" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesDefenseNumericNoArrows.ToolTip21" xml:space="preserve">
+  <data name="speciesEggGroup1ComboBox.ToolTip22" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove13ComboBox.ToolTip3" xml:space="preserve">
@@ -29922,9 +29925,6 @@
   </data>
   <data name="speciesSpeedEVlabel.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
-  </data>
-  <data name="tradeLanguageLabel.ToolTip1" xml:space="preserve">
-    <value />
   </data>
   <data name="pokedexHeightConversionGroupBox.ToolTip21" xml:space="preserve">
     <value />
@@ -30148,9 +30148,6 @@
   <data name="&gt;&gt;learnsetLevelUpMove15ComboBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="checkBox2.ToolTip30" xml:space="preserve">
-    <value />
-  </data>
   <data name="speciesAbility1ComboBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
@@ -30350,10 +30347,13 @@
   <data name="learnsetEggMove3ComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 74</value>
   </data>
+  <data name="moveTypeLabel.ToolTip19" xml:space="preserve">
+    <value />
+  </data>
   <data name="moveDescriptionTextBox.ToolTip13" xml:space="preserve">
     <value />
   </data>
-  <data name="moveDescriptionTextBox.ToolTip23" xml:space="preserve">
+  <data name="tradeSpeedIVsNumericNoArrows.ToolTip25" xml:space="preserve">
     <value />
   </data>
   <data name="moveFlagsGroupBox.TabIndex" type="System.Int32, mscorlib">
@@ -30379,9 +30379,6 @@
   </data>
   <data name="learnsetLevelUpMove6ComboBox.ToolTip10" xml:space="preserve">
     <value />
-  </data>
-  <data name="tradeHeldItemLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="tradeDefenseIVsNumericNoArrows.ToolTip17" xml:space="preserve">
     <value />
@@ -30458,7 +30455,7 @@
   <data name="tradeNewPVGenderCheckBox.ToolTip19" xml:space="preserve">
     <value />
   </data>
-  <data name="moveEffectLabel.ToolTip29" xml:space="preserve">
+  <data name="speciesDefenseNumericNoArrows.ToolTip29" xml:space="preserve">
     <value />
   </data>
   <data name="speciesDefenseNumericNoArrows.ToolTip28" xml:space="preserve">
@@ -30707,7 +30704,7 @@
   <data name="&gt;&gt;quitToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tradeCoolNumericNoArrows.ToolTip24" xml:space="preserve">
+  <data name="moveTypeComboBox.ToolTip28" xml:space="preserve">
     <value />
   </data>
   <data name="moveTypeComboBox.ToolTip18" xml:space="preserve">
@@ -30762,9 +30759,6 @@
     <value />
   </data>
   <data name="learnsetLevelUpLevel14NumericNoArrows.ToolTip6" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesHeldItemsGroupBox.ToolTip25" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpLevel8NumericNoArrows.ToolTip15" xml:space="preserve">
@@ -30902,19 +30896,16 @@
   <data name="speciesBaseFriendshipNumericNoArrows.ToolTip27" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;itemHoldParemeterLabel.Parent" xml:space="preserve">
-    <value>itemsTabPage</value>
+  <data name="tradeDefenseIVsLabel.ToolTip28" xml:space="preserve">
+    <value />
   </data>
-  <data name="tradeDefenseIVsLabel.ToolTip18" xml:space="preserve">
+  <data name="learnsetLevelUpLevel4NumericNoArrows.ToolTip3" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;tradeSpeedIVsNumericNoArrows.Parent" xml:space="preserve">
     <value>tradeIVsGroupBox</value>
   </data>
   <data name="itemNaturalGiftTypeComboBox.ToolTip5" xml:space="preserve">
-    <value />
-  </data>
-  <data name="itemBattlePocketLabel.ToolTip5" xml:space="preserve">
     <value />
   </data>
   <data name="tradeToughNumericNoArrows.ToolTip14" xml:space="preserve">
@@ -30974,8 +30965,8 @@
   <data name="tradeNewPVAbilityComboBox.ToolTip22" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeLanguageLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="tradeNewPVAbilityComboBox.ToolTip21" xml:space="preserve">
+    <value />
   </data>
   <data name="learnsetEggMove1ComboBox.ToolTip23" xml:space="preserve">
     <value />
@@ -30985,9 +30976,6 @@
   </data>
   <data name="&gt;&gt;learnsetLevelUpMove19ComboBox.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="tradeAbilityLabel.ToolTip19" xml:space="preserve">
-    <value />
   </data>
   <data name="moveDescriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>713, 229</value>
@@ -31031,8 +31019,8 @@
   <data name="TextBankIndexNumericUpDown.ToolTip5" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesEggCyclesLabel.ToolTip27" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tradeHeldItemLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="itemPreventTossCheckBox.ToolTip26" xml:space="preserve">
     <value />
@@ -31253,6 +31241,9 @@
   <data name="learnsetLevelUpMove6ComboBox.ToolTip3" xml:space="preserve">
     <value />
   </data>
+  <data name="textInGameListView.ToolTip9" xml:space="preserve">
+    <value />
+  </data>
   <data name="learnsetTabPage.ToolTip8" xml:space="preserve">
     <value />
   </data>
@@ -31316,7 +31307,10 @@
   <data name="itemFieldPocketLabel.ToolTip18" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeNatureTextBox.ToolTip11" xml:space="preserve">
+  <data name="tradeIVsGroupBox.ToolTip17" xml:space="preserve">
+    <value />
+  </data>
+  <data name="itemsTabPage.ToolTip25" xml:space="preserve">
     <value />
   </data>
   <data name="itemsTabPage.ToolTip15" xml:space="preserve">
@@ -31330,6 +31324,9 @@
   </data>
   <data name="&gt;&gt;speciesXPGroupComboBox.Parent" xml:space="preserve">
     <value>speciesXPGroupBox</value>
+  </data>
+  <data name="&gt;&gt;tradeAttackIVsLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="learnsetMoveTutorCheckedListBox.ToolTip17" xml:space="preserve">
     <value />
@@ -31541,7 +31538,7 @@
   <data name="tradeDefenseIVsNumericNoArrows.ToolTip21" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeSmartLabel.ToolTip6" xml:space="preserve">
+  <data name="tradeSpeedIVsLabel.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="speciesMiscGroupBox.ToolTip32" xml:space="preserve">
@@ -31636,9 +31633,6 @@
   </data>
   <data name="learnsetMoveTutorCheckedListBox.ToolTip22" xml:space="preserve">
     <value />
-  </data>
-  <data name="&gt;&gt;tradeAbilityLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="itemPreventTossCheckBox.ToolTip3" xml:space="preserve">
     <value />
@@ -32072,8 +32066,8 @@
   <data name="tradeCuteLabel.ToolTip10" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;speciesSpecialDefenseLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="speciesTypesGroupBox.ToolTip15" xml:space="preserve">
+    <value />
   </data>
   <data name="itemBattlePocketComboBox.ToolTip3" xml:space="preserve">
     <value />
@@ -32096,7 +32090,7 @@
   <data name="learnsetLevelUpLevel13NumericNoArrows.ToolTip9" xml:space="preserve">
     <value />
   </data>
-  <data name="itemNaturalGiftUseableCheckBox.ToolTip14" xml:space="preserve">
+  <data name="tradeSpecialAttackIVsNumericNoArrows.ToolTip31" xml:space="preserve">
     <value />
   </data>
   <data name="tradeSpecialAttackIVsNumericNoArrows.ToolTip21" xml:space="preserve">
@@ -32114,8 +32108,8 @@
   <data name="movePriorityLabel.ToolTip20" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetEggMove6ComboBox.ToolTip23" xml:space="preserve">
-    <value />
+  <data name="pokedexHTDMLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
   <data name="itemNaturalGiftPowerNumericNoArrows.ToolTip19" xml:space="preserve">
     <value />
@@ -32168,8 +32162,8 @@
   <data name="speciesMaleAndFemaleRadioButton.ToolTip10" xml:space="preserve">
     <value />
   </data>
-  <data name="movesTabPage.Text" xml:space="preserve">
-    <value>Moves</value>
+  <data name="speciesMaleAndFemaleRadioButton.ToolTip11" xml:space="preserve">
+    <value />
   </data>
   <data name="speciesMaleAndFemaleRadioButton.ToolTip16" xml:space="preserve">
     <value />
@@ -32186,7 +32180,7 @@
   <data name="tradeSpecialDefenseIVsNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
   </data>
-  <data name="tradeSpeedIVsLabel.ToolTip7" xml:space="preserve">
+  <data name="speciesBaseFriendshipNumericNoArrows.ToolTip11" xml:space="preserve">
     <value />
   </data>
   <data name="speciesMaleAndFemaleRadioButton.ToolTip18" xml:space="preserve">
@@ -32297,8 +32291,8 @@
   <data name="&gt;&gt;speciesXPGroupLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;itemHoldEffectLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="moveEffectNumericNoArrows.ToolTip11" xml:space="preserve">
+    <value />
   </data>
   <data name="moveEffectNumericNoArrows.ToolTip10" xml:space="preserve">
     <value />
@@ -32324,7 +32318,7 @@
   <data name="learnsetLevelUpLevel11NumericNoArrows.ToolTip9" xml:space="preserve">
     <value />
   </data>
-  <data name="itemPriceLabel.ToolTip22" xml:space="preserve">
+  <data name="learnsetEggMove12ComboBox.ToolTip16" xml:space="preserve">
     <value />
   </data>
   <data name="speciesAbility2Label.Location" type="System.Drawing.Point, System.Drawing">
@@ -32399,9 +32393,6 @@
   <data name="tradePVLabel.ToolTip32" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetAltFormsComboBox.ToolTip13" xml:space="preserve">
-    <value />
-  </data>
   <data name="movePriorityLabel.ToolTip8" xml:space="preserve">
     <value />
   </data>
@@ -32432,7 +32423,7 @@
   <data name="checkBox1.ToolTip27" xml:space="preserve">
     <value />
   </data>
-  <data name="checkBox1.ToolTip4" xml:space="preserve">
+  <data name="speciesEggCyclesLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="checkBox1.ToolTip25" xml:space="preserve">
@@ -32498,7 +32489,7 @@
   <data name="itemsTabPage.ToolTip6" xml:space="preserve">
     <value />
   </data>
-  <data name="itemsTabPage.ToolTip5" xml:space="preserve">
+  <data name="tradeAttackIVsLabel.ToolTip17" xml:space="preserve">
     <value />
   </data>
   <data name="moveContestEffectComboBox.ToolTip11" xml:space="preserve">
@@ -32507,14 +32498,14 @@
   <data name="moveContestEffectComboBox.ToolTip16" xml:space="preserve">
     <value />
   </data>
-  <data name="moveContestEffectComboBox.ToolTip17" xml:space="preserve">
+  <data name="itemsTabPage.ToolTip2" xml:space="preserve">
     <value />
   </data>
   <data name="tradeAttackIVsLabel.ToolTip13" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeAttackIVsLabel.ToolTip12" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;moveSelectedLabel.Parent" xml:space="preserve">
+    <value>movesTabPage</value>
   </data>
   <data name="tradeAttackIVsLabel.ToolTip11" xml:space="preserve">
     <value />
@@ -32624,7 +32615,7 @@
   <data name="itemPluckEffectNumericNoArrows.ToolTip15" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesEggGroup2Label.ToolTip5" xml:space="preserve">
+  <data name="itemPluckEffectNumericNoArrows.ToolTip25" xml:space="preserve">
     <value />
   </data>
   <data name="tradeSpeedIVsLabel.ToolTip2" xml:space="preserve">
@@ -32639,7 +32630,7 @@
   <data name="learnsetLevelUpMove11ComboBox.ToolTip26" xml:space="preserve">
     <value />
   </data>
-  <data name="pokedexHTDecimetersNumericUpDown.ToolTip25" xml:space="preserve">
+  <data name="textBankComboBox.ToolTip26" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;tradeAbilityTextBox.Type" xml:space="preserve">
@@ -32714,7 +32705,7 @@
   <data name="speciesSafariRunChanceNumericNoArrows.ToolTip29" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesSafariRunChanceNumericNoArrows.ToolTip28" xml:space="preserve">
+  <data name="learnsetEggMove1ComboBox.ToolTip13" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;learnsetEggMove5ComboBox.ZOrder" xml:space="preserve">
@@ -32789,7 +32780,7 @@
   <data name="learnsetLevelUpLevel12NumericNoArrows.ToolTip14" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesSpecialDefenseEVLabel.ToolTip29" xml:space="preserve">
+  <data name="speciesSpecialDefenseEVNumericNoArrows.ToolTip3" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpLevel12NumericNoArrows.ToolTip12" xml:space="preserve">
@@ -32849,7 +32840,7 @@
   <data name="learnsetLevelUpLevel17NumericNoArrows.ToolTip23" xml:space="preserve">
     <value />
   </data>
-  <data name="tradePVLabel.ToolTip2" xml:space="preserve">
+  <data name="pokedexNumNationalNumericUpDown.ToolTip22" xml:space="preserve">
     <value />
   </data>
   <data name="pokedexNumNationalNumericUpDown.ToolTip23" xml:space="preserve">
@@ -33083,9 +33074,6 @@
   <data name="learnsetLevelUpMove1ComboBox.ToolTip28" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesTypesGroupBox.ToolTip15" xml:space="preserve">
-    <value />
-  </data>
   <data name="moveKingsRockCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>140, 17</value>
   </data>
@@ -33122,8 +33110,8 @@
   <data name="tradeSpeedIVsNumericNoArrows.ToolTip27" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpLevel17NumericNoArrows.ToolTip24" xml:space="preserve">
-    <value />
+  <data name="tradeHeldItemLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="tradeSpeedIVsNumericNoArrows.ToolTip17" xml:space="preserve">
     <value />
@@ -33443,9 +33431,6 @@
   <data name="learnsetLevelUpMove11ComboBox.ToolTip8" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;speciesSpeedLabel.Name" xml:space="preserve">
-    <value>speciesSpeedLabel</value>
-  </data>
   <data name="&gt;&gt;speciesMiscGroupBox.Parent" xml:space="preserve">
     <value>speciesTabPage</value>
   </data>
@@ -33500,6 +33485,12 @@
   <data name="&gt;&gt;speciesEggGroupsGroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tradeNewPVNatureCheckBox.Text" xml:space="preserve">
+    <value>Any Nature</value>
+  </data>
+  <data name="learnsetLevelUpMove1ComboBox.ToolTip30" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;speciesSpecialAttackEVNumericNoArrows.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
@@ -33542,7 +33533,7 @@
   <data name="pokedexCategoryTextBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
-  <data name="checkBox3.ToolTip5" xml:space="preserve">
+  <data name="pokedexCategoryTextBox.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="pokedexCategoryTextBox.ToolTip6" xml:space="preserve">
@@ -33638,8 +33629,8 @@
   <data name="pokedexHTMetersNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 20</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="speciesHPLabel.ToolTip6" xml:space="preserve">
+    <value />
   </data>
   <data name="speciesSpeedEVlabel.ToolTip3" xml:space="preserve">
     <value />
@@ -33656,7 +33647,7 @@
   <data name="learnsetLevelUpLevel2NumericNoArrows.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove1ComboBox.ToolTip8" xml:space="preserve">
+  <data name="itemFieldPocketComboBox.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="moveProtectCheckBox.ToolTip6" xml:space="preserve">
@@ -33701,7 +33692,7 @@
   <data name="tradeAttackIVsLabel.ToolTip23" xml:space="preserve">
     <value />
   </data>
-  <data name="itemPluckEffectNumericNoArrows.ToolTip19" xml:space="preserve">
+  <data name="moveContestConditionLabel.ToolTip20" xml:space="preserve">
     <value />
   </data>
   <data name="itemPluckEffectNumericNoArrows.ToolTip29" xml:space="preserve">
@@ -33764,6 +33755,9 @@
   <data name="&gt;&gt;learnsetEggMove9ComboBox.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="speciesEggGroup1ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 36</value>
+  </data>
   <data name="speciesType1ComboBox.ToolTip13" xml:space="preserve">
     <value />
   </data>
@@ -33779,8 +33773,8 @@
   <data name="learnsetLearnableTMsLabel.ToolTip31" xml:space="preserve">
     <value />
   </data>
-  <data name="itemBattlePocketLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>614, 241</value>
+  <data name="speciesTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
   <data name="itemPriceLabel.ToolTip6" xml:space="preserve">
     <value />
@@ -33854,7 +33848,7 @@
   <data name="learnsetLevelUpMovesGroupBox.ToolTip13" xml:space="preserve">
     <value />
   </data>
-  <data name="checkBox3.ToolTip16" xml:space="preserve">
+  <data name="speciesHeldItem2Label.ToolTip18" xml:space="preserve">
     <value />
   </data>
   <data name="checkBox3.ToolTip17" xml:space="preserve">
@@ -33914,8 +33908,8 @@
   <data name="tradeAttackIVsNumericNoArrows.ToolTip6" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHPEVlabel.ToolTip12" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;learnsetEggMove8ComboBox.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="learnsetLevelUpMove2ComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
@@ -33923,8 +33917,8 @@
   <data name="checkBox2.ToolTip31" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetEggMove15ComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 398</value>
+  <data name="checkBox2.ToolTip30" xml:space="preserve">
+    <value />
   </data>
   <data name="moveAccuracyLabel.ToolTip30" xml:space="preserve">
     <value />
@@ -34016,8 +34010,8 @@
   <data name="moveContactCheckBox.ToolTip11" xml:space="preserve">
     <value />
   </data>
-  <data name="moveContactCheckBox.ToolTip10" xml:space="preserve">
-    <value />
+  <data name="moveTypeLabel.Text" xml:space="preserve">
+    <value>Type:</value>
   </data>
   <data name="&gt;&gt;learnsetLevelUpMove1ComboBox.Parent" xml:space="preserve">
     <value>learnsetLevelUpMovesGroupBox</value>
@@ -34064,7 +34058,7 @@
   <data name="tradeToughLabel.ToolTip26" xml:space="preserve">
     <value />
   </data>
-  <data name="itemFieldPocketLabel.ToolTip15" xml:space="preserve">
+  <data name="tradeToughLabel.ToolTip25" xml:space="preserve">
     <value />
   </data>
   <data name="tradeToughLabel.ToolTip24" xml:space="preserve">
@@ -34103,7 +34097,7 @@
   <data name="learnsetLevelUpMove17ComboBox.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="moveShadowCheckBox.ToolTip30" xml:space="preserve">
+  <data name="itemBattlePocketLabel.ToolTip5" xml:space="preserve">
     <value />
   </data>
   <data name="speciesSpecialDefenseLabel.ToolTip17" xml:space="preserve">
@@ -34121,7 +34115,7 @@
   <data name="&gt;&gt;itemNaturalGiftPowerNumericNoArrows.Parent" xml:space="preserve">
     <value>itemsTabPage</value>
   </data>
-  <data name="learnsetLevelUpLevel18NumericNoArrows.ToolTip6" xml:space="preserve">
+  <data name="tradePVLabel.ToolTip2" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpLevel4NumericNoArrows.ToolTip28" xml:space="preserve">
@@ -34253,8 +34247,8 @@
   <data name="moveHPBarCheckBox.ToolTip1" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesDefenseEVLabel.ToolTip28" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;speciesMiscGroupBox.Name" xml:space="preserve">
+    <value>speciesMiscGroupBox</value>
   </data>
   <data name="learnsetEggMovesGroupBox.ToolTip30" xml:space="preserve">
     <value />
@@ -34262,8 +34256,8 @@
   <data name="learnsetEggMovesGroupBox.ToolTip20" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeNewPVGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>662, 291</value>
+  <data name="&gt;&gt;speciesHPEVlabel.Name" xml:space="preserve">
+    <value>speciesHPEVlabel</value>
   </data>
   <data name="tradeCoolNumericNoArrows.ToolTip16" xml:space="preserve">
     <value />
@@ -34293,9 +34287,6 @@
     <value>5</value>
   </data>
   <data name="speciesHPLabel.ToolTip5" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesXPGroupLabel.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="pokedexHTFTLabel.ToolTip15" xml:space="preserve">
@@ -34352,6 +34343,9 @@
   <data name="tradeAbilityLabel.Text" xml:space="preserve">
     <value>Ability</value>
   </data>
+  <data name="learnsetLevelUpLevel9NumericNoArrows.ToolTip29" xml:space="preserve">
+    <value />
+  </data>
   <data name="label1.ToolTip17" xml:space="preserve">
     <value />
   </data>
@@ -34361,8 +34355,8 @@
   <data name="itemPriceLabel.Text" xml:space="preserve">
     <value>Price</value>
   </data>
-  <data name="&gt;&gt;moveContestConditionLabel.Parent" xml:space="preserve">
-    <value>movesTabPage</value>
+  <data name="tradeDefenseIVsLabel.ToolTip2" xml:space="preserve">
+    <value />
   </data>
   <data name="tradeOfferedPokemonLabel.ToolTip13" xml:space="preserve">
     <value />
@@ -34433,7 +34427,7 @@
   <data name="tradeNewPVGenderComboBox.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="moveDescriptionTextBox.ToolTip3" xml:space="preserve">
+  <data name="pokedexHTMetersNumericNoArrows.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="moveDescriptionTextBox.ToolTip2" xml:space="preserve">
@@ -34499,9 +34493,6 @@
   <data name="speciesBaseXPLabel.ToolTip5" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesEggCyclesNumericNoArrows.ToolTip13" xml:space="preserve">
-    <value />
-  </data>
   <data name="speciesSpeedLabel.ToolTip1" xml:space="preserve">
     <value />
   </data>
@@ -34532,7 +34523,7 @@
   <data name="&gt;&gt;learnsetLevelUpLevel14NumericNoArrows.Parent" xml:space="preserve">
     <value>learnsetLevelUpMovesGroupBox</value>
   </data>
-  <data name="tradeBeautyLabel.ToolTip4" xml:space="preserve">
+  <data name="learnsetLevelUpMove10ComboBox.ToolTip8" xml:space="preserve">
     <value />
   </data>
   <data name="tradePVNumericNoArrows.ToolTip29" xml:space="preserve">
@@ -34622,7 +34613,7 @@
   <data name="learnsetLevelUpMovesGroupBox.ToolTip27" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMovesGroupBox.ToolTip17" xml:space="preserve">
+  <data name="speciesDefenseNumericNoArrows.ToolTip14" xml:space="preserve">
     <value />
   </data>
   <data name="tradeSpeedIVsNumericNoArrows.ToolTip" xml:space="preserve">
@@ -34760,13 +34751,10 @@
   <data name="tradeLanguageComboBox.ToolTip19" xml:space="preserve">
     <value />
   </data>
-  <data name="tradePVNumericNoArrows.ToolTip18" xml:space="preserve">
+  <data name="itemNaturalGiftUseableCheckBox.ToolTip2" xml:space="preserve">
     <value />
   </data>
   <data name="speciesAbility1ComboBox.ToolTip9" xml:space="preserve">
-    <value />
-  </data>
-  <data name="speciesSpecialAttackEVLabel.ToolTip13" xml:space="preserve">
     <value />
   </data>
   <data name="moveAccuracyNumericNoArrows.ToolTip9" xml:space="preserve">
@@ -34778,8 +34766,8 @@
   <data name="&gt;&gt;tradeBeautyLabel.Parent" xml:space="preserve">
     <value>tradeContestStatsGroupBox</value>
   </data>
-  <data name="&gt;&gt;itemNaturalGiftUseableCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="speciesHPLabel.ToolTip3" xml:space="preserve">
+    <value />
   </data>
   <data name="tradeWantedPokemonComboBox.ToolTip20" xml:space="preserve">
     <value />
@@ -34937,7 +34925,7 @@
   <data name="learnsetLevelUpMove5ComboBox.ToolTip4" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesMaleAndFemaleRadioButton.ToolTip11" xml:space="preserve">
+  <data name="learnsetLevelUpMove5ComboBox.ToolTip5" xml:space="preserve">
     <value />
   </data>
   <data name="speciesCatchRateNumericNoArrows.ToolTip30" xml:space="preserve">
@@ -35012,7 +35000,7 @@
   <data name="pokedexNumNationalNumericUpDown.ToolTip8" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeDefenseIVsLabel.ToolTip28" xml:space="preserve">
+  <data name="tradeBeautyNumericNoArrows.ToolTip31" xml:space="preserve">
     <value />
   </data>
   <data name="tradeOriginalTrainerIDLabel.ToolTip7" xml:space="preserve">
@@ -35240,7 +35228,7 @@
   <data name="&gt;&gt;speciesFemaleOnlyRadioButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tradeAttackIVsLabel.ToolTip17" xml:space="preserve">
+  <data name="learnsetLevelUpMove19ComboBox.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="moveKingsRockCheckBox.ToolTip7" xml:space="preserve">
@@ -35249,7 +35237,7 @@
   <data name="itemBattlePocketLabel.ToolTip32" xml:space="preserve">
     <value />
   </data>
-  <data name="moveTypeComboBox.ToolTip28" xml:space="preserve">
+  <data name="tradeDefenseIVsLabel.ToolTip18" xml:space="preserve">
     <value />
   </data>
   <data name="mainFormMenuStrip.ToolTip8" xml:space="preserve">
@@ -35264,7 +35252,7 @@
   <data name="learnsetLevelUpMove2ComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="pokedexHTDecimetersNumericUpDown.ToolTip4" xml:space="preserve">
+  <data name="tradeAbilityLabel.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="tradeNewPVNatureComboBox.ToolTip17" xml:space="preserve">
@@ -35285,7 +35273,7 @@
   <data name="learnsetLevelUpMove1ComboBox.ToolTip20" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpMove1ComboBox.ToolTip30" xml:space="preserve">
+  <data name="speciesSpecialDefenseEVLabel.ToolTip29" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetEggMove4ComboBox.ToolTip20" xml:space="preserve">
@@ -35309,8 +35297,8 @@
   <data name="learnsetLevelUpMove4ComboBox.ToolTip12" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;tradeHeldItemComboBox.Parent" xml:space="preserve">
-    <value>npcTradeTabPage</value>
+  <data name="speciesSpecialAttackEVLabel.ToolTip13" xml:space="preserve">
+    <value />
   </data>
   <data name="moveTargetComboBox.ToolTip17" xml:space="preserve">
     <value />
@@ -35408,8 +35396,8 @@
   <data name="moveEffectChanceLabel.ToolTip27" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;tradeSpecialDefenseIVsLabel.Name" xml:space="preserve">
-    <value>tradeSpecialDefenseIVsLabel</value>
+  <data name="speciesHeldItem1ComboBox.ToolTip4" xml:space="preserve">
+    <value />
   </data>
   <data name="moveEffectChanceLabel.ToolTip21" xml:space="preserve">
     <value />
@@ -35441,8 +35429,8 @@
   <data name="speciesHeldItem1ComboBox.ToolTip8" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHeldItem1ComboBox.ToolTip9" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;itemBattlePocketLabel.Name" xml:space="preserve">
+    <value>itemBattlePocketLabel</value>
   </data>
   <data name="speciesXPGroupComboBox.ToolTip" xml:space="preserve">
     <value />
@@ -35501,7 +35489,7 @@
   <data name="learnsetLevelUpLevel16NumericNoArrows.ToolTip6" xml:space="preserve">
     <value />
   </data>
-  <data name="moveContestEffectLabel.ToolTip8" xml:space="preserve">
+  <data name="moveEffectLabel.ToolTip29" xml:space="preserve">
     <value />
   </data>
   <data name="tradeOfferedPokemonLabel.ToolTip17" xml:space="preserve">
@@ -35609,13 +35597,13 @@
   <data name="tradeSpeedIVsNumericNoArrows.ToolTip15" xml:space="preserve">
     <value />
   </data>
-  <data name="pokedexCategoryTextBox.ToolTip7" xml:space="preserve">
+  <data name="speciesEggGroup2Label.ToolTip28" xml:space="preserve">
     <value />
   </data>
   <data name="speciesAttackNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
   </data>
-  <data name="learnsetPokemonComboBox.ToolTip6" xml:space="preserve">
+  <data name="itemBattlePocketComboBox.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="speciesSpecialDefenseLabel.ToolTip11" xml:space="preserve">
@@ -35624,7 +35612,7 @@
   <data name="tradeToughNumericNoArrows.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesSpecialDefenseLabel.ToolTip31" xml:space="preserve">
+  <data name="speciesType1Label.ToolTip16" xml:space="preserve">
     <value />
   </data>
   <data name="movePPNumericNoArrows.ToolTip4" xml:space="preserve">
@@ -35735,8 +35723,8 @@
   <data name="itemBattlePocketComboBox.ToolTip29" xml:space="preserve">
     <value />
   </data>
-  <data name="textBankComboBox.ToolTip26" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tradeAbilityLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="learnsetEggMove15ComboBox.ToolTip5" xml:space="preserve">
     <value />
@@ -35774,8 +35762,8 @@
   <data name="speciesSpecialAttackEVLabel.ToolTip11" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;itemBattlePocketLabel.Name" xml:space="preserve">
-    <value>itemBattlePocketLabel</value>
+  <data name="tradeHeldItemLabel.ToolTip20" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;learnsetMoveTutorCheckedListBox.Name" xml:space="preserve">
     <value>learnsetMoveTutorCheckedListBox</value>
@@ -35912,7 +35900,7 @@
   <data name="speciesHeldItem2Label.ToolTip24" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHeldItem2Label.ToolTip29" xml:space="preserve">
+  <data name="speciesType1ComboBox.ToolTip28" xml:space="preserve">
     <value />
   </data>
   <data name="speciesHeldItem2Label.ToolTip28" xml:space="preserve">
@@ -35948,11 +35936,11 @@
   <data name="speciesFemaleOnlyRadioButton.ToolTip6" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pokedexHTDecimetersNumericUpDown.ToolTip1" xml:space="preserve">
+  <data name="speciesHeldItemsGroupBox.ToolTip25" xml:space="preserve">
     <value />
+  </data>
+  <data name="learnsetMoveTutorCheckedListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>639, 59</value>
   </data>
   <data name="tradeOriginalTrainerIDLabel.ToolTip15" xml:space="preserve">
     <value />
@@ -35981,7 +35969,7 @@
   <data name="learnsetLevelUpMove6ComboBox.ToolTip19" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetEggMove12ComboBox.ToolTip17" xml:space="preserve">
+  <data name="speciesAbility2Label.ToolTip23" xml:space="preserve">
     <value />
   </data>
   <data name="speciesType1Label.ToolTip19" xml:space="preserve">
@@ -36122,6 +36110,9 @@
   <data name="&gt;&gt;speciesEggGroup1Label.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="speciesHPNumericNoArrows.ToolTip24" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesSpeedNumericNoArrows.ToolTip16" xml:space="preserve">
     <value />
   </data>
@@ -36151,6 +36142,9 @@
   </data>
   <data name="speciesHPNumericNoArrows.ToolTip11" xml:space="preserve">
     <value />
+  </data>
+  <data name="speciesSafariRunChanceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 115</value>
   </data>
   <data name="speciesHPNumericNoArrows.ToolTip31" xml:space="preserve">
     <value />
@@ -36218,8 +36212,8 @@
   <data name="learnsetLevelUpMove9ComboBox.ToolTip28" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;speciesMiscGroupBox.Name" xml:space="preserve">
-    <value>speciesMiscGroupBox</value>
+  <data name="learnsetEggMove15ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 398</value>
   </data>
   <data name="&gt;&gt;moveContestConditionLabel.Name" xml:space="preserve">
     <value>moveContestConditionLabel</value>
@@ -36380,8 +36374,8 @@
   <data name="movePowerNumericNoArrows.ToolTip17" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesSafariRunChanceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 115</value>
+  <data name="tradeNewPVAbilityCheckBox.ToolTip22" xml:space="preserve">
+    <value />
   </data>
   <data name="learnsetEggMove4ComboBox.ToolTip24" xml:space="preserve">
     <value />
@@ -36440,6 +36434,9 @@
   <data name="&gt;&gt;speciesEVOnDefeatGroupBox.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="itemPriceLabel.ToolTip22" xml:space="preserve">
+    <value />
+  </data>
   <data name="tradeNewPVNatureComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 21</value>
   </data>
@@ -36461,7 +36458,7 @@
   <data name="pokedexHTMetersNumericNoArrows.ToolTip16" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeDefenseIVsLabel.ToolTip9" xml:space="preserve">
+  <data name="learnsetLevelUpLevel1NumericNoArrows.ToolTip14" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove17ComboBox.ToolTip29" xml:space="preserve">
@@ -36563,7 +36560,7 @@
   <data name="itemNaturalGiftTypeComboBox.ToolTip29" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesBaseFriendshipNumericNoArrows.ToolTip30" xml:space="preserve">
+  <data name="learnsetAltFormsComboBox.ToolTip13" xml:space="preserve">
     <value />
   </data>
   <data name="tradeDefenseIVsLabel.ToolTip24" xml:space="preserve">
@@ -36572,8 +36569,8 @@
   <data name="learnsetLevelUpLevel9NumericNoArrows.ToolTip19" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpLevel9NumericNoArrows.ToolTip29" xml:space="preserve">
-    <value />
+  <data name="tradeLanguageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="itemFlingPowerLabel.ToolTip8" xml:space="preserve">
     <value />
@@ -36659,6 +36656,9 @@
   <data name="moveDescriptionTextBox.ToolTip26" xml:space="preserve">
     <value />
   </data>
+  <data name="moveContestConditionLabel.ToolTip10" xml:space="preserve">
+    <value />
+  </data>
   <data name="tradeWantedPokemonLabel.ToolTip25" xml:space="preserve">
     <value />
   </data>
@@ -36686,7 +36686,7 @@
   <data name="tradeNewPVGenderCheckBox.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesEggCyclesNumericNoArrows.ToolTip10" xml:space="preserve">
+  <data name="speciesSpecialAttackEVNumericNoArrows.ToolTip17" xml:space="preserve">
     <value />
   </data>
   <data name="speciesEggCyclesNumericNoArrows.ToolTip11" xml:space="preserve">
@@ -36695,7 +36695,7 @@
   <data name="speciesEggGroupsGroupBox.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="learnsetLevelUpLevel15NumericNoArrows.ToolTip" xml:space="preserve">
+  <data name="speciesEggCyclesNumericNoArrows.ToolTip13" xml:space="preserve">
     <value />
   </data>
   <data name="speciesEggCyclesNumericNoArrows.ToolTip14" xml:space="preserve">
@@ -36752,6 +36752,9 @@
   <data name="pokedexCategoryTextBox.ToolTip2" xml:space="preserve">
     <value />
   </data>
+  <data name="learnsetLevelUpMove1ComboBox.ToolTip8" xml:space="preserve">
+    <value />
+  </data>
   <data name="tradeGenderTextBox.ToolTip28" xml:space="preserve">
     <value />
   </data>
@@ -36782,7 +36785,7 @@
   <data name="pokedexHTMetersNumericNoArrows.ToolTip11" xml:space="preserve">
     <value />
   </data>
-  <data name="textTabPage.ToolTip31" xml:space="preserve">
+  <data name="tradeSpecialDefenseIVsLabel.ToolTip29" xml:space="preserve">
     <value />
   </data>
   <data name="textTabPage.ToolTip30" xml:space="preserve">
@@ -36815,8 +36818,8 @@
   <data name="learnsetMoveTutorCheckedListBox.ToolTip15" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeNewPVAbilityComboBox.ToolTip27" xml:space="preserve">
-    <value />
+  <data name="itemNaturalGiftPowerLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="learnsetLevelUpLevel11NumericNoArrows.ToolTip7" xml:space="preserve">
     <value />
@@ -36824,8 +36827,8 @@
   <data name="learnsetMoveTutorCheckedListBox.ToolTip16" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;moveSelectedLabel.Parent" xml:space="preserve">
-    <value>movesTabPage</value>
+  <data name="learnsetMoveTutorCheckedListBox.ToolTip19" xml:space="preserve">
+    <value />
   </data>
   <data name="learnsetMoveTutorCheckedListBox.ToolTip18" xml:space="preserve">
     <value />
@@ -36947,8 +36950,8 @@
   <data name="learnsetLevelUpMove17ComboBox.ToolTip28" xml:space="preserve">
     <value />
   </data>
-  <data name="itemBattlePocketComboBox.ToolTip7" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tradeHeldItemComboBox.Parent" xml:space="preserve">
+    <value>npcTradeTabPage</value>
   </data>
   <data name="tradeHeldItemLabel.ToolTip25" xml:space="preserve">
     <value />
@@ -37022,8 +37025,8 @@
   <data name="speciesEggCyclesLabel.ToolTip3" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;moveEffectLabel.Name" xml:space="preserve">
-    <value>moveEffectLabel</value>
+  <data name="&gt;&gt;itemNaturalGiftUseableCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tradeNewPVGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -37166,7 +37169,7 @@
   <data name="learnsetLevelUpLevel17NumericNoArrows.ToolTip12" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeLanguageComboBox.ToolTip4" xml:space="preserve">
+  <data name="speciesEggGroup1Label.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="speciesHeldItem1Label.ToolTip6" xml:space="preserve">
@@ -37277,8 +37280,8 @@
   <data name="speciesDefenseEVNumericNoArrows.ToolTip12" xml:space="preserve">
     <value />
   </data>
-  <data name="moveTypeLabel.Text" xml:space="preserve">
-    <value>Type:</value>
+  <data name="speciesDefenseLabel.ToolTip2" xml:space="preserve">
+    <value />
   </data>
   <data name="tradeOfferedPokemonLabel.ToolTip" xml:space="preserve">
     <value />
@@ -37370,6 +37373,9 @@
   <data name="itemFlingEffectNumericNoArrows.ToolTip22" xml:space="preserve">
     <value />
   </data>
+  <data name="tradePVNumericNoArrows.ToolTip18" xml:space="preserve">
+    <value />
+  </data>
   <data name="speciesSafariRunChanceNumericNoArrows.ToolTip17" xml:space="preserve">
     <value />
   </data>
@@ -37445,8 +37451,8 @@
   <data name="tradeWantedPokemonLabel.ToolTip27" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesEggGroup1ComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 36</value>
+  <data name="pokedexHTMetersNumericNoArrows.ToolTip6" xml:space="preserve">
+    <value />
   </data>
   <data name="moveContestEffectComboBox.ToolTip13" xml:space="preserve">
     <value />
@@ -37562,8 +37568,8 @@
   <data name="$this.ToolTip6" xml:space="preserve">
     <value />
   </data>
-  <data name="pokedexHTMetersNumericNoArrows.ToolTip18" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;moveDescriptionTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="speciesSpecialAttackEVNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 214</value>
@@ -37583,7 +37589,7 @@
   <data name="itemFlingEffectNumericNoArrows.ToolTip32" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesAbility2Label.ToolTip23" xml:space="preserve">
+  <data name="speciesSpecialDefenseNumericNoArrows.ToolTip9" xml:space="preserve">
     <value />
   </data>
   <data name="tradeWantedPokemonComboBox.ToolTip16" xml:space="preserve">
@@ -37634,7 +37640,7 @@
   <data name="itemsTabPage.ToolTip26" xml:space="preserve">
     <value />
   </data>
-  <data name="itemsTabPage.ToolTip16" xml:space="preserve">
+  <data name="moveEffectNumericNoArrows.ToolTip13" xml:space="preserve">
     <value />
   </data>
   <data name="itemFlingPowerLabel.ToolTip11" xml:space="preserve">
@@ -37850,9 +37856,6 @@
   <data name="speciesGenderMaleToFemaleLabel.ToolTip32" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeBeautyNumericNoArrows.ToolTip31" xml:space="preserve">
-    <value />
-  </data>
   <data name="moveContestEffectLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>491, 110</value>
   </data>
@@ -37868,7 +37871,7 @@
   <data name="itemPriceLabel.ToolTip17" xml:space="preserve">
     <value />
   </data>
-  <data name="itemPluckEffectNumericNoArrows.ToolTip25" xml:space="preserve">
+  <data name="moveEffectLabel.ToolTip19" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;tradeNatureLabel.Type" xml:space="preserve">
@@ -37979,7 +37982,7 @@
   <data name="&gt;&gt;speciesDefenseEVNumericNoArrows.Name" xml:space="preserve">
     <value>speciesDefenseEVNumericNoArrows</value>
   </data>
-  <data name="textInGameListView.ToolTip9" xml:space="preserve">
+  <data name="pokedexHTDecimetersNumericUpDown.ToolTip31" xml:space="preserve">
     <value />
   </data>
   <data name="textTabPage.ToolTip4" xml:space="preserve">
@@ -38084,13 +38087,13 @@
   <data name="label1.ToolTip26" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesHPEVNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 46</value>
-  </data>
-  <data name="learnsetLevelUpMove16ComboBox.ToolTip6" xml:space="preserve">
+  <data name="tradeAbilityLabel.ToolTip19" xml:space="preserve">
     <value />
   </data>
-  <data name="moveTypeLabel.ToolTip19" xml:space="preserve">
+  <data name="&gt;&gt;moveContestEffectComboBox.Parent" xml:space="preserve">
+    <value>movesTabPage</value>
+  </data>
+  <data name="speciesXPGroupLabel.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpLevel20NumericNoArrows.ToolTip25" xml:space="preserve">
@@ -38159,7 +38162,7 @@
   <data name="learnsetLevelUpLevel15NumericNoArrows.ToolTip23" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesBaseXPYieldNumericNoArrows.ToolTip28" xml:space="preserve">
+  <data name="learnsetLevelUpLevel15NumericNoArrows.ToolTip22" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpLevel15NumericNoArrows.ToolTip21" xml:space="preserve">
@@ -38174,7 +38177,7 @@
   <data name="learnsetLevelUpMove20ComboBox.ToolTip2" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesBaseXPYieldNumericNoArrows.ToolTip23" xml:space="preserve">
+  <data name="tradeHeldItemLabel.ToolTip7" xml:space="preserve">
     <value />
   </data>
   <data name="tradeCoolNumericNoArrows.ToolTip15" xml:space="preserve">
@@ -38219,8 +38222,8 @@
   <data name="&gt;&gt;speciesAbility2Label.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="moveProtectCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 17</value>
+  <data name="speciesSpecialDefenseEVNumericNoArrows.ToolTip16" xml:space="preserve">
+    <value />
   </data>
   <data name="learnsetLevelUpLevel3NumericNoArrows.ToolTip31" xml:space="preserve">
     <value />
@@ -38312,7 +38315,7 @@
   <data name="moveTargetComboBox.ToolTip2" xml:space="preserve">
     <value />
   </data>
-  <data name="movePPNumericNoArrows.ToolTip17" xml:space="preserve">
+  <data name="tradeAbilityLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpLevel9NumericNoArrows.ToolTip25" xml:space="preserve">
@@ -38405,8 +38408,8 @@
   <data name="tradeTrainerComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>336, 44</value>
   </data>
-  <data name="tradeNewPVNatureCheckBox.Text" xml:space="preserve">
-    <value>Any Nature</value>
+  <data name="pokedexHTMetersNumericNoArrows.ToolTip2" xml:space="preserve">
+    <value />
   </data>
   <data name="textBankComboBox.ToolTip16" xml:space="preserve">
     <value />
@@ -38417,7 +38420,7 @@
   <data name="learnsetLevelUpMove11ComboBox.ToolTip7" xml:space="preserve">
     <value />
   </data>
-  <data name="itemNaturalGiftTypeComboBox.ToolTip7" xml:space="preserve">
+  <data name="speciesAbility2ComboBox.ToolTip14" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;tradeGenderTextBox.Parent" xml:space="preserve">
@@ -38477,7 +38480,7 @@
   <data name="speciesBaseXPLabel.ToolTip26" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesEggGroup2Label.ToolTip28" xml:space="preserve">
+  <data name="speciesHeldItem2Label.ToolTip29" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpMove9ComboBox.ToolTip8" xml:space="preserve">
@@ -38570,7 +38573,7 @@
   <data name="mainFormMenuStrip.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesMaleAndFemaleRadioButton.ToolTip12" xml:space="preserve">
+  <data name="movePriorityLabel.ToolTip19" xml:space="preserve">
     <value />
   </data>
   <data name="movePriorityLabel.ToolTip18" xml:space="preserve">
@@ -38588,7 +38591,7 @@
   <data name="mainFormMenuStrip.ToolTip31" xml:space="preserve">
     <value />
   </data>
-  <data name="tradeAbilityLabel.ToolTip7" xml:space="preserve">
+  <data name="speciesAbilitiesGroupBox.ToolTip8" xml:space="preserve">
     <value />
   </data>
   <data name="learnsetLevelUpLevel11NumericNoArrows.ToolTip1" xml:space="preserve">
@@ -38682,9 +38685,6 @@
     <value />
   </data>
   <data name="speciesComboBox.ToolTip14" xml:space="preserve">
-    <value />
-  </data>
-  <data name="itemNaturalGiftTypeComboBox.ToolTip20" xml:space="preserve">
     <value />
   </data>
   <data name="tradeNewPVAbilityComboBox.ToolTip20" xml:space="preserve">
@@ -38807,8 +38807,8 @@
   <data name="learnsetEggMove6ComboBox.ToolTip11" xml:space="preserve">
     <value />
   </data>
-  <data name="pokedexNumNationalNumericUpDown.ToolTip22" xml:space="preserve">
-    <value />
+  <data name="speciesSpeedEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="learnsetEggMove15ComboBox.ToolTip8" xml:space="preserve">
     <value />
@@ -38873,7 +38873,7 @@
   <data name="learnsetMoveTutorLabel.ToolTip6" xml:space="preserve">
     <value />
   </data>
-  <data name="speciesType1Label.ToolTip18" xml:space="preserve">
+  <data name="moveContestEffectComboBox.ToolTip15" xml:space="preserve">
     <value />
   </data>
   <data name="tradeAttackIVsNumericNoArrows.ToolTip" xml:space="preserve">
@@ -39321,7 +39321,7 @@
     <value>1706, 17</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es</value>
+    <value>en</value>
   </metadata>
   <metadata name="moveHPBarTooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>573, 17</value>

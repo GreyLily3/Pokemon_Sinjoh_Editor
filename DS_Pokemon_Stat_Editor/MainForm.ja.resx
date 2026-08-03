@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="movesTabPage.Text" xml:space="preserve">
+    <value>わざ</value>
+  </data>
+  <data name="speciesTabPage.Text" xml:space="preserve">
+    <value>ポケモン</value>
+  </data>
+  <data name="npcTradeTabPage.Text" xml:space="preserve">
+    <value>交換</value>
+  </data>
+  <data name="learnsetTabPage.Text" xml:space="preserve">
+    <value>おぼえるわざ</value>
+  </data>
+  <data name="itemsTabPage.Text" xml:space="preserve">
+    <value>道具</value>
+  </data>
+  <data name="pokedexTabPage.Text" xml:space="preserve">
+    <value>図鑑</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="moveDescriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>326, 363</value>
@@ -175,6 +193,9 @@
   <data name="moveContestConditionLabel.Text" xml:space="preserve">
     <value>コンディション</value>
   </data>
+  <data name="moveFlagsGroupBox.Text" xml:space="preserve">
+    <value>フラグ</value>
+  </data>
   <data name="moveShadowCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 17</value>
   </data>
@@ -223,14 +244,11 @@
   <data name="moveContactCheckBox.Text" xml:space="preserve">
     <value>接触</value>
   </data>
-  <data name="moveFlagsGroupBox.Text" xml:space="preserve">
-    <value>フラグ</value>
-  </data>
-  <data name="movesTabPage.Text" xml:space="preserve">
-    <value>わざ</value>
-  </data>
   <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>521, 55</value>
+  </data>
+  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>673, 320</value>
   </data>
   <data name="speciesCatchRateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
@@ -251,8 +269,11 @@
     <value>逃げる %
 (サファリゾーン)</value>
   </data>
-  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>673, 320</value>
+  <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 394</value>
+  </data>
+  <data name="speciesXPGroupBox.Text" xml:space="preserve">
+    <value>経験</value>
   </data>
   <data name="speciesXPGroupLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 13</value>
@@ -266,11 +287,11 @@
   <data name="speciesBaseXPLabel.Text" xml:space="preserve">
     <value>基礎経験値</value>
   </data>
-  <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 394</value>
+  <data name="speciesEVOnDefeatGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 137</value>
   </data>
-  <data name="speciesXPGroupBox.Text" xml:space="preserve">
-    <value>経験</value>
+  <data name="speciesEVOnDefeatGroupBox.Text" xml:space="preserve">
+    <value>獲得努力値</value>
   </data>
   <data name="speciesSpeedEVlabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 13</value>
@@ -302,14 +323,14 @@
   <data name="speciesAttackEVLabel.Text" xml:space="preserve">
     <value>攻撃能力</value>
   </data>
-  <data name="speciesEVOnDefeatGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 137</value>
-  </data>
-  <data name="speciesEVOnDefeatGroupBox.Text" xml:space="preserve">
-    <value>獲得努力値</value>
-  </data>
   <data name="speciesComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>360, 55</value>
+  </data>
+  <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 137</value>
+  </data>
+  <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
+    <value>持ち物</value>
   </data>
   <data name="speciesHeldItem1Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 34</value>
@@ -331,11 +352,11 @@
     <value>持ち物 2
 (5%)</value>
   </data>
-  <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>515, 137</value>
+  <data name="speciesAbilitiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 271</value>
   </data>
-  <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
-    <value>持ち物</value>
+  <data name="speciesAbilitiesGroupBox.Text" xml:space="preserve">
+    <value>特性</value>
   </data>
   <data name="speciesAbility1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
@@ -349,11 +370,11 @@
   <data name="speciesAbility2Label.Text" xml:space="preserve">
     <value>特性 2:</value>
   </data>
-  <data name="speciesAbilitiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 271</value>
+  <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 306</value>
   </data>
-  <data name="speciesAbilitiesGroupBox.Text" xml:space="preserve">
-    <value>特性</value>
+  <data name="speciesEggGroupsGroupBox.Text" xml:space="preserve">
+    <value>たまご</value>
   </data>
   <data name="speciesEggCyclesLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 13</value>
@@ -373,11 +394,11 @@
   <data name="speciesEggGroup2Label.Text" xml:space="preserve">
     <value>タマゴグループ 2</value>
   </data>
-  <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>515, 306</value>
+  <data name="speciesTypesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 137</value>
   </data>
-  <data name="speciesEggGroupsGroupBox.Text" xml:space="preserve">
-    <value>たまご</value>
+  <data name="speciesTypesGroupBox.Text" xml:space="preserve">
+    <value>タイプ</value>
   </data>
   <data name="speciesType1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 13</value>
@@ -391,11 +412,11 @@
   <data name="speciesType2Label.Text" xml:space="preserve">
     <value>タイプ 2:</value>
   </data>
-  <data name="speciesTypesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 137</value>
+  <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>676, 137</value>
   </data>
-  <data name="speciesTypesGroupBox.Text" xml:space="preserve">
-    <value>タイプ</value>
+  <data name="speciesGenderGroupBox.Text" xml:space="preserve">
+    <value>性別</value>
   </data>
   <data name="speciesGenderlessRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 17</value>
@@ -428,11 +449,11 @@
     <value>男女比
 (オス / メス)</value>
   </data>
-  <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>676, 137</value>
+  <data name="speciesBaseStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 137</value>
   </data>
-  <data name="speciesGenderGroupBox.Text" xml:space="preserve">
-    <value>性別</value>
+  <data name="speciesBaseStatsGroupBox.Text" xml:space="preserve">
+    <value>種族値</value>
   </data>
   <data name="speciesAttackLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -464,15 +485,6 @@
   <data name="speciesSpecialDefenseLabel.Text" xml:space="preserve">
     <value>特防能力</value>
   </data>
-  <data name="speciesBaseStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 137</value>
-  </data>
-  <data name="speciesBaseStatsGroupBox.Text" xml:space="preserve">
-    <value>種族値</value>
-  </data>
-  <data name="speciesTabPage.Text" xml:space="preserve">
-    <value>ポケモン</value>
-  </data>
   <data name="tradeNatureLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
   </data>
@@ -490,6 +502,9 @@
   </data>
   <data name="tradeGenderLabel.Text" xml:space="preserve">
     <value>性別</value>
+  </data>
+  <data name="tradeIVsGroupBox.Text" xml:space="preserve">
+    <value>個体値</value>
   </data>
   <data name="tradeSpeedIVsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 13</value>
@@ -521,8 +536,8 @@
   <data name="tradeDefenseIVsLabel.Text" xml:space="preserve">
     <value>防御能力</value>
   </data>
-  <data name="tradeIVsGroupBox.Text" xml:space="preserve">
-    <value>個体値</value>
+  <data name="tradeContestStatsGroupBox.Text" xml:space="preserve">
+    <value>コンテスト</value>
   </data>
   <data name="tradeSheenLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 13</value>
@@ -559,9 +574,6 @@
   </data>
   <data name="tradeCuteLabel.Text" xml:space="preserve">
     <value>かわいさ</value>
-  </data>
-  <data name="tradeContestStatsGroupBox.Text" xml:space="preserve">
-    <value>コンテスト</value>
   </data>
   <data name="tradeLanguageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
@@ -605,8 +617,8 @@
   <data name="tradeWantedPokemonLabel.Text" xml:space="preserve">
     <value>出すポケモン</value>
   </data>
-  <data name="npcTradeTabPage.Text" xml:space="preserve">
-    <value>交換</value>
+  <data name="learnsetAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 21</value>
   </data>
   <data name="learnsetLearnableTMsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -629,14 +641,11 @@
   <data name="learnsetMoveTutorLabel.Text" xml:space="preserve">
     <value>おしえわざ</value>
   </data>
+  <data name="learnsetPokemonComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 21</value>
+  </data>
   <data name="learnsetLevelUpMovesGroupBox.Text" xml:space="preserve">
     <value>レベルアップわざ</value>
-  </data>
-  <data name="learnsetTabPage.Text" xml:space="preserve">
-    <value>おぼえるわざ</value>
-  </data>
-  <data name="itemsTabPage.Text" xml:space="preserve">
-    <value>道具</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
@@ -650,8 +659,11 @@
   <data name="label1.Text" xml:space="preserve">
     <value>たかさ</value>
   </data>
-  <data name="pokedexTabPage.Text" xml:space="preserve">
-    <value>図鑑</value>
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
   </data>
   <data name="openRomFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 22</value>
@@ -671,23 +683,17 @@
   <data name="quitToolStripMenuItem.Text" xml:space="preserve">
     <value>終了</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 20</value>
+  <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
   </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイル</value>
+  <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>設定</value>
   </data>
   <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 22</value>
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>言語</value>
-  </data>
-  <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
-  </data>
-  <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>設定</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -677,6 +677,9 @@ Weiblich</value>
   <data name="tradeWantedPokemonLabel.Text" xml:space="preserve">
     <value>Spieler-Pokémon</value>
   </data>
+  <data name="learnsetAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 21</value>
+  </data>
   <data name="learnsetLearnableTMsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 13</value>
   </data>
@@ -697,6 +700,9 @@ Weiblich</value>
   </data>
   <data name="learnsetMoveTutorLabel.Text" xml:space="preserve">
     <value>Durch Attacken-Lehrer</value>
+  </data>
+  <data name="learnsetPokemonComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 21</value>
   </data>
   <data name="learnsetLevelUpMovesGroupBox.Text" xml:space="preserve">
     <value>Durch Levelaufstieg</value>

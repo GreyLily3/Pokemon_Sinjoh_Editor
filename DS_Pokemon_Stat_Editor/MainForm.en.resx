@@ -392,14 +392,26 @@
   <data name="tradeWantedPokemonLabel.Text" xml:space="preserve">
     <value>Wanted Pokémon</value>
   </data>
+  <data name="learnsetAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 21</value>
+  </data>
   <data name="learnsetLearnableTMsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="learnsetLearnableHMsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="learnsetEggMovesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 53</value>
+  </data>
   <data name="learnsetMoveTutorLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="learnsetPokemonComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 21</value>
+  </data>
+  <data name="learnsetLevelUpMovesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 542</value>
   </data>
   <data name="checkBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4245,8 +4257,5 @@
         qXH2r9drS50+Pz3jer3GW7b5NJdXr19XABWw1sSeOtBaa1dP4pHj0D9/b6AHTKKB4LrzigGfMopPjgr8
         /wfac7dynsyo6gAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>
