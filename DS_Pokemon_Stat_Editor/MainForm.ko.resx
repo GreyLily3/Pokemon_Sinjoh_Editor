@@ -630,6 +630,9 @@
   <data name="npcTradeTabPage.Text" xml:space="preserve">
     <value>교환</value>
   </data>
+  <data name="learnsetAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 21</value>
+  </data>
   <data name="learnsetLearnableTMsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
   </data>
@@ -650,6 +653,9 @@
   </data>
   <data name="learnsetMoveTutorLabel.Text" xml:space="preserve">
     <value>기술가르침으로 배우는 기술</value>
+  </data>
+  <data name="learnsetPokemonComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 21</value>
   </data>
   <data name="learnsetLevelUpMovesGroupBox.Text" xml:space="preserve">
     <value>레벨업으로 배우는 기술</value>

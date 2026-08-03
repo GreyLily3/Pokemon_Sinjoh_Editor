@@ -684,6 +684,9 @@ Femenino</value>
   <data name="npcTradeTabPage.Text" xml:space="preserve">
     <value>Intercambios</value>
   </data>
+  <data name="learnsetAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 21</value>
+  </data>
   <data name="learnsetLearnableTMsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 13</value>
   </data>
@@ -704,6 +707,9 @@ Femenino</value>
   </data>
   <data name="learnsetMoveTutorLabel.Text" xml:space="preserve">
     <value>Tutor de movimientos</value>
+  </data>
+  <data name="learnsetPokemonComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 21</value>
   </data>
   <data name="learnsetLevelUpMovesGroupBox.Text" xml:space="preserve">
     <value>Subiendo de nivel</value>
