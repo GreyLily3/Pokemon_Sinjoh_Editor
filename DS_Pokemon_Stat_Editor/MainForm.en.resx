@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="speciesTabPage.Text" xml:space="preserve">
+    <value>Pokémon</value>
+  </data>
+  <data name="pokedexTabPage.Text" xml:space="preserve">
+    <value>Pokédex</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="moveTargetLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -172,10 +178,13 @@
   <data name="moveProtectCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="moveProtectCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 17</value>
+  </data>
   <data name="moveContactCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>513, 56</value>
   </data>
@@ -188,8 +197,11 @@
   <data name="speciesSafariRunChanceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>662, 293</value>
+  <data name="speciesSafariRunChanceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 26</value>
+  </data>
+  <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 367</value>
   </data>
   <data name="speciesXPGroupLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -197,11 +209,14 @@
   <data name="speciesBaseXPLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 367</value>
+  <data name="speciesEVOnDefeatGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 110</value>
   </data>
   <data name="speciesSpeedEVlabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="speciesSpeedEVlabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
   <data name="speciesSpecialDefenseEVLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -218,11 +233,11 @@
   <data name="speciesHPEVlabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="speciesEVOnDefeatGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, 110</value>
-  </data>
   <data name="speciesComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>349, 56</value>
+  </data>
+  <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 110</value>
   </data>
   <data name="speciesHeldItem1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -230,8 +245,8 @@
   <data name="speciesHeldItem2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 110</value>
+  <data name="speciesAbilitiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 244</value>
   </data>
   <data name="speciesAbility1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -239,8 +254,8 @@
   <data name="speciesAbility2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="speciesAbilitiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 244</value>
+  <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 279</value>
   </data>
   <data name="speciesEggCyclesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -251,8 +266,8 @@
   <data name="speciesEggGroup2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 279</value>
+  <data name="speciesTypesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 110</value>
   </data>
   <data name="speciesType1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -260,11 +275,14 @@
   <data name="speciesType2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="speciesTypesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 110</value>
+  <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>665, 110</value>
   </data>
   <data name="speciesGenderlessRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="speciesGenderRatioNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 20</value>
   </data>
   <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -281,8 +299,8 @@
   <data name="speciesGenderMaleToFemaleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>665, 110</value>
+  <data name="speciesBaseStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 110</value>
   </data>
   <data name="speciesHPLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -302,17 +320,14 @@
   <data name="speciesSpecialDefenseLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="speciesBaseStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 110</value>
-  </data>
-  <data name="speciesTabPage.Text" xml:space="preserve">
-    <value>Pokémon</value>
-  </data>
   <data name="tradeRandomPVButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="tradeNewPVNatureCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="tradeNewPVNatureCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
   </data>
   <data name="tradeNewPVGenderCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -419,6 +434,9 @@
   <data name="checkBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
   <data name="checkBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -482,8 +500,8 @@
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pokedexTabPage.Text" xml:space="preserve">
-    <value>Pokédex</value>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
