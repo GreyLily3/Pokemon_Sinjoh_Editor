@@ -117,18 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="movesTabPage.Text" xml:space="preserve">
-    <value>Mossa</value>
-  </data>
-  <data name="speciesTabPage.Text" xml:space="preserve">
-    <value>Pokémon</value>
-  </data>
-  <data name="npcTradeTabPage.Text" xml:space="preserve">
-    <value>Scambi in-game</value>
-  </data>
-  <data name="learnsetTabPage.Text" xml:space="preserve">
-    <value>Mosse apprese</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="moveDescriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>326, 363</value>
@@ -178,8 +166,23 @@
   <data name="moveContestConditionLabel.Text" xml:space="preserve">
     <value>Virtù</value>
   </data>
-  <data name="moveFlagsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 217</value>
+  <data name="moveContestEffectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="moveContestEffectLabel.Text" xml:space="preserve">
+    <value>Effetto della gara</value>
+  </data>
+  <data name="moveShadowCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 17</value>
+  </data>
+  <data name="moveShadowCheckBox.Text" xml:space="preserve">
+    <value>Nascondi Ombra</value>
+  </data>
+  <data name="moveHPBarCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 17</value>
+  </data>
+  <data name="moveHPBarCheckBox.Text" xml:space="preserve">
+    <value>Tieni la barra PS</value>
   </data>
   <data name="moveKingsRockCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 17</value>
@@ -217,11 +220,17 @@
   <data name="moveContactCheckBox.Text" xml:space="preserve">
     <value>Contatto</value>
   </data>
+  <data name="moveFlagsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 217</value>
+  </data>
+  <data name="moveFlagsGroupBox.Text" xml:space="preserve">
+    <value>Flags</value>
+  </data>
+  <data name="movesTabPage.Text" xml:space="preserve">
+    <value>Mossa</value>
+  </data>
   <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>528, 58</value>
-  </data>
-  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>680, 315</value>
   </data>
   <data name="speciesCatchRateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 13</value>
@@ -242,11 +251,8 @@
     <value>Run Chance
 (Zona Safari)</value>
   </data>
-  <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 389</value>
-  </data>
-  <data name="speciesXPGroupBox.Text" xml:space="preserve">
-    <value>PE</value>
+  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>680, 315</value>
   </data>
   <data name="speciesXPGroupLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 13</value>
@@ -260,11 +266,11 @@
   <data name="speciesBaseXPLabel.Text" xml:space="preserve">
     <value>Esperienza base ceduta</value>
   </data>
-  <data name="speciesEVOnDefeatGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 132</value>
+  <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 389</value>
   </data>
-  <data name="speciesEVOnDefeatGroupBox.Text" xml:space="preserve">
-    <value>Punti base ceduti</value>
+  <data name="speciesXPGroupBox.Text" xml:space="preserve">
+    <value>PE</value>
   </data>
   <data name="speciesSpeedEVlabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 13</value>
@@ -302,14 +308,14 @@
   <data name="speciesHPEVlabel.Text" xml:space="preserve">
     <value>PS</value>
   </data>
+  <data name="speciesEVOnDefeatGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 132</value>
+  </data>
+  <data name="speciesEVOnDefeatGroupBox.Text" xml:space="preserve">
+    <value>Punti base ceduti</value>
+  </data>
   <data name="speciesComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>367, 58</value>
-  </data>
-  <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 132</value>
-  </data>
-  <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
-    <value>Strumenti tenuti</value>
   </data>
   <data name="speciesHeldItem1Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 34</value>
@@ -334,11 +340,11 @@
     <value>Strumenti tenuti 2
 (5%)</value>
   </data>
-  <data name="speciesAbilitiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 266</value>
+  <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 132</value>
   </data>
-  <data name="speciesAbilitiesGroupBox.Text" xml:space="preserve">
-    <value>Abilità</value>
+  <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
+    <value>Strumenti tenuti</value>
   </data>
   <data name="speciesAbility1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
@@ -352,11 +358,11 @@
   <data name="speciesAbility2Label.Text" xml:space="preserve">
     <value>Abilità 2</value>
   </data>
-  <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 301</value>
+  <data name="speciesAbilitiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 266</value>
   </data>
-  <data name="speciesEggGroupsGroupBox.Text" xml:space="preserve">
-    <value>Uovo</value>
+  <data name="speciesAbilitiesGroupBox.Text" xml:space="preserve">
+    <value>Abilità</value>
   </data>
   <data name="speciesEggCyclesLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -376,11 +382,11 @@
   <data name="speciesEggGroup2Label.Text" xml:space="preserve">
     <value>Gruppo Uova 2</value>
   </data>
-  <data name="speciesTypesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 132</value>
+  <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 301</value>
   </data>
-  <data name="speciesTypesGroupBox.Text" xml:space="preserve">
-    <value>Tipo</value>
+  <data name="speciesEggGroupsGroupBox.Text" xml:space="preserve">
+    <value>Uovo</value>
   </data>
   <data name="speciesType1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -394,11 +400,11 @@
   <data name="speciesType2Label.Text" xml:space="preserve">
     <value>Tipo 2:</value>
   </data>
-  <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>683, 132</value>
+  <data name="speciesTypesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 132</value>
   </data>
-  <data name="speciesGenderGroupBox.Text" xml:space="preserve">
-    <value>Sesso</value>
+  <data name="speciesTypesGroupBox.Text" xml:space="preserve">
+    <value>Tipo</value>
   </data>
   <data name="speciesGenderlessRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 30</value>
@@ -406,6 +412,12 @@
   <data name="speciesGenderlessRadioButton.Text" xml:space="preserve">
     <value>Genere
 Sconosciuto</value>
+  </data>
+  <data name="speciesGenderRatioNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 142</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 144</value>
   </data>
   <data name="speciesMaleOnlyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 17</value>
@@ -429,17 +441,20 @@ Sconosciuto</value>
     <value>Maschio e
 Femmina</value>
   </data>
+  <data name="speciesGenderMaleToFemaleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 126</value>
+  </data>
   <data name="speciesGenderMaleToFemaleLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 13</value>
   </data>
   <data name="speciesGenderMaleToFemaleLabel.Text" xml:space="preserve">
     <value>Maschio/Femmina</value>
   </data>
-  <data name="speciesBaseStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 132</value>
+  <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>683, 132</value>
   </data>
-  <data name="speciesBaseStatsGroupBox.Text" xml:space="preserve">
-    <value>Statistiche</value>
+  <data name="speciesGenderGroupBox.Text" xml:space="preserve">
+    <value>Sesso</value>
   </data>
   <data name="speciesHPLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>21, 13</value>
@@ -477,6 +492,18 @@ Femmina</value>
   <data name="speciesSpecialDefenseLabel.Text" xml:space="preserve">
     <value>Difesa Speciale</value>
   </data>
+  <data name="speciesBaseStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 132</value>
+  </data>
+  <data name="speciesBaseStatsGroupBox.Text" xml:space="preserve">
+    <value>Statistiche</value>
+  </data>
+  <data name="speciesTabPage.Text" xml:space="preserve">
+    <value>Pokémon</value>
+  </data>
+  <data name="tradeNewPVGroupBox.Text" xml:space="preserve">
+    <value>Genera personalità</value>
+  </data>
   <data name="tradeNatureLabel.Text" xml:space="preserve">
     <value>Natura</value>
   </data>
@@ -491,6 +518,9 @@ Femmina</value>
   </data>
   <data name="tradeGenderLabel.Text" xml:space="preserve">
     <value>Sesso</value>
+  </data>
+  <data name="tradePVDerivedGroupBox.Text" xml:space="preserve">
+    <value>Derivato da Personalità</value>
   </data>
   <data name="tradeSpeedIVsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 13</value>
@@ -606,6 +636,9 @@ Femmina</value>
   <data name="tradeWantedPokemonLabel.Text" xml:space="preserve">
     <value>Pokémon da Offrire</value>
   </data>
+  <data name="npcTradeTabPage.Text" xml:space="preserve">
+    <value>Scambi in-game</value>
+  </data>
   <data name="learnsetLearnableTMsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 13</value>
   </data>
@@ -630,6 +663,9 @@ Femmina</value>
   <data name="learnsetLevelUpMovesGroupBox.Text" xml:space="preserve">
     <value>Aumentando di livello</value>
   </data>
+  <data name="learnsetTabPage.Text" xml:space="preserve">
+    <value>Mosse apprese</value>
+  </data>
   <data name="openRomFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 22</value>
   </data>
@@ -648,17 +684,17 @@ Femmina</value>
   <data name="quitToolStripMenuItem.Text" xml:space="preserve">
     <value>Esci</value>
   </data>
-  <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Configurazione</value>
-  </data>
   <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 22</value>
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Linguaggio</value>
+  </data>
+  <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configurazione</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

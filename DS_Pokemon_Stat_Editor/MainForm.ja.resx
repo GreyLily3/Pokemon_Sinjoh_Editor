@@ -175,6 +175,18 @@
   <data name="moveContestConditionLabel.Text" xml:space="preserve">
     <value>コンディション</value>
   </data>
+  <data name="moveShadowCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 17</value>
+  </data>
+  <data name="moveShadowCheckBox.Text" xml:space="preserve">
+    <value>影を隠せ</value>
+  </data>
+  <data name="moveHPBarCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 17</value>
+  </data>
+  <data name="moveHPBarCheckBox.Text" xml:space="preserve">
+    <value>HPバーを表示</value>
+  </data>
   <data name="moveKingsRockCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 17</value>
   </data>
@@ -210,6 +222,9 @@
   </data>
   <data name="moveContactCheckBox.Text" xml:space="preserve">
     <value>接触</value>
+  </data>
+  <data name="moveFlagsGroupBox.Text" xml:space="preserve">
+    <value>フラグ</value>
   </data>
   <data name="movesTabPage.Text" xml:space="preserve">
     <value>わざ</value>

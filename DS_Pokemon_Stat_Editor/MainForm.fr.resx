@@ -133,6 +133,12 @@
   <data name="moveCategoryLabel.Text" xml:space="preserve">
     <value>Catégorie</value>
   </data>
+  <data name="moveEffectChanceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="moveEffectChanceLabel.Text" xml:space="preserve">
+    <value>Probabilité d'effet</value>
+  </data>
   <data name="moveEffectLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
@@ -162,6 +168,30 @@
   </data>
   <data name="movePowerLabel.Text" xml:space="preserve">
     <value>Puissance</value>
+  </data>
+  <data name="moveContestConditionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="moveContestConditionLabel.Text" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="moveContestEffectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="moveContestEffectLabel.Text" xml:space="preserve">
+    <value>Effet du concours</value>
+  </data>
+  <data name="moveShadowCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
+  </data>
+  <data name="moveShadowCheckBox.Text" xml:space="preserve">
+    <value>Cacher l'ombre</value>
+  </data>
+  <data name="moveHPBarCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 17</value>
+  </data>
+  <data name="moveHPBarCheckBox.Text" xml:space="preserve">
+    <value>Conservez la barre PV</value>
   </data>
   <data name="moveKingsRockCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 17</value>
@@ -199,6 +229,9 @@
   <data name="moveContactCheckBox.Text" xml:space="preserve">
     <value>Contact</value>
   </data>
+  <data name="moveFlagsGroupBox.Text" xml:space="preserve">
+    <value>Drapeaux de capacité</value>
+  </data>
   <data name="movesTabPage.Text" xml:space="preserve">
     <value>Capacités</value>
   </data>
@@ -215,10 +248,14 @@
     <value>Bonheur</value>
   </data>
   <data name="speciesSafariRunChanceLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 13</value>
+    <value>78, 26</value>
   </data>
   <data name="speciesSafariRunChanceLabel.Text" xml:space="preserve">
-    <value>Run Chance:\r\n(Parc Safari)</value>
+    <value>Risque de fuite
+(Parc Safari)</value>
+  </data>
+  <data name="speciesMiscGroupBox.Text" xml:space="preserve">
+    <value>Divers</value>
   </data>
   <data name="speciesXPGroupLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 13</value>
@@ -272,16 +309,22 @@
     <value>Points effort</value>
   </data>
   <data name="speciesHeldItem1Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 13</value>
+    <value>98, 13</value>
   </data>
   <data name="speciesHeldItem1Label.Text" xml:space="preserve">
-    <value>Objet Tenu 1:\r\n(50%)\r\n</value>
+    <value>Objet Tenu 1 (50%)</value>
+  </data>
+  <data name="speciesHeldItem1ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 50</value>
+  </data>
+  <data name="speciesHeldItem2ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 113</value>
   </data>
   <data name="speciesHeldItem2Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 13</value>
+    <value>92, 13</value>
   </data>
   <data name="speciesHeldItem2Label.Text" xml:space="preserve">
-    <value>Objet Tenu 2:\r\n(5%)\r\n</value>
+    <value>Objet Tenu 2 (5%)</value>
   </data>
   <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
     <value>Objet Tenu</value>
@@ -468,6 +511,9 @@
   </data>
   <data name="tradeCuteLabel.Text" xml:space="preserve">
     <value>Grâce</value>
+  </data>
+  <data name="tradeContestStatsGroupBox.Text" xml:space="preserve">
+    <value>Concours</value>
   </data>
   <data name="tradeLanguageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>

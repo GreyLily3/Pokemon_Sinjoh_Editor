@@ -145,6 +145,12 @@
   <data name="moveCategoryLabel.Text" xml:space="preserve">
     <value>Kategorie</value>
   </data>
+  <data name="moveEffectChanceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="moveEffectChanceLabel.Text" xml:space="preserve">
+    <value>Effektchance</value>
+  </data>
   <data name="moveEffectLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
   </data>
@@ -180,6 +186,27 @@
   </data>
   <data name="moveContestConditionLabel.Text" xml:space="preserve">
     <value>Eigenschaft</value>
+  </data>
+  <data name="moveContestEffectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="moveContestEffectLabel.Text" xml:space="preserve">
+    <value>Wettbewerb-Effekt</value>
+  </data>
+  <data name="moveFlagsGroupBox.Text" xml:space="preserve">
+    <value>Flaggen</value>
+  </data>
+  <data name="moveShadowCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="moveShadowCheckBox.Text" xml:space="preserve">
+    <value>Schatten verstecken</value>
+  </data>
+  <data name="moveHPBarCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 17</value>
+  </data>
+  <data name="moveHPBarCheckBox.Text" xml:space="preserve">
+    <value>Behalten Sie die KP-Leiste</value>
   </data>
   <data name="moveKingsRockCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 17</value>
@@ -223,6 +250,9 @@
   <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>687, 303</value>
   </data>
+  <data name="speciesMiscGroupBox.Text" xml:space="preserve">
+    <value>Sonstiges</value>
+  </data>
   <data name="speciesCatchRateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 13</value>
   </data>
@@ -236,10 +266,10 @@
     <value>Start-Freundschaft</value>
   </data>
   <data name="speciesSafariRunChanceLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 26</value>
+    <value>69, 26</value>
   </data>
   <data name="speciesSafariRunChanceLabel.Text" xml:space="preserve">
-    <value>Run Chance
+    <value>Flieh-Chance
 (Safari-Zone)</value>
   </data>
   <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
@@ -391,6 +421,12 @@
   <data name="speciesGenderGroupBox.Text" xml:space="preserve">
     <value>Geschlecht</value>
   </data>
+  <data name="speciesGenderRatioNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 141</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 143</value>
+  </data>
   <data name="speciesMaleOnlyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 17</value>
   </data>
@@ -409,6 +445,9 @@
   <data name="speciesMaleAndFemaleRadioButton.Text" xml:space="preserve">
     <value>Männlich &amp;&amp; 
 Weiblich</value>
+  </data>
+  <data name="speciesGenderMaleToFemaleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 126</value>
   </data>
   <data name="speciesGenderMaleToFemaleLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 13</value>
@@ -494,6 +533,15 @@ Weiblich</value>
   <data name="speciesSpecialDefenseLabel.Text" xml:space="preserve">
     <value>Spezial-Verteidigung</value>
   </data>
+  <data name="tradeNewPVGroupBox.Text" xml:space="preserve">
+    <value>PV generieren</value>
+  </data>
+  <data name="tradeRandomPVButton.Text" xml:space="preserve">
+    <value>Neues PV</value>
+  </data>
+  <data name="tradePVDerivedGroupBox.Text" xml:space="preserve">
+    <value>Abgeleitet von PV</value>
+  </data>
   <data name="tradeNatureLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
@@ -551,6 +599,9 @@ Weiblich</value>
   <data name="tradeDefenseIVsLabel.Text" xml:space="preserve">
     <value>Verteidigung</value>
   </data>
+  <data name="tradeContestStatsGroupBox.Text" xml:space="preserve">
+    <value>Wettbewerb</value>
+  </data>
   <data name="tradeSheenLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
   </data>
@@ -589,6 +640,12 @@ Weiblich</value>
   </data>
   <data name="tradeLanguageLabel.Text" xml:space="preserve">
     <value>Sprache</value>
+  </data>
+  <data name="tradePVLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="tradePVLabel.Text" xml:space="preserve">
+    <value>Persönlichkeitswert</value>
   </data>
   <data name="tradeNicknameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 13</value>
