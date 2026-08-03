@@ -485,6 +485,24 @@
   <data name="speciesSpecialDefenseLabel.Text" xml:space="preserve">
     <value>特防能力</value>
   </data>
+  <data name="tradeNewPVGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>653, 265</value>
+  </data>
+  <data name="tradeNewPVGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 181</value>
+  </data>
+  <data name="tradeRandomPVButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 141</value>
+  </data>
+  <data name="tradeNewPVNatureComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 105</value>
+  </data>
+  <data name="tradeNewPVGenderComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 60</value>
+  </data>
+  <data name="tradeNewPVAbilityComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 19</value>
+  </data>
   <data name="tradeNatureLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
   </data>

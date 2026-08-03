@@ -6,11 +6,11 @@ namespace Pokemon_Sinjoh_Editor
     {
         public uint PV;
 
-        private const int ANY_NATURE = -1;
-        private const int ANY_GENDER = -1;
-        private const int ANY_ABILITY = -1;
-        public const int ABILITY1 = 1;
-        public const int ABILITY2 = 2;
+        private const int ANY_NATURE = 25;
+        private const int ANY_GENDER = 2;
+        private const int ANY_ABILITY = 2;
+        public const int ABILITY1 = 0;
+        public const int ABILITY2 = 1;
         private const int NUM_NATURES = 25;
         private const int GENDER_RATIO_BIT_MASK = 0b_1111_1111;
         private const int ABILITY_BIT_MASK = 0b_0001;
@@ -27,11 +27,12 @@ namespace Pokemon_Sinjoh_Editor
 
         private uint GenerateRandom() => (uint)new Random().Next(-int.MaxValue, int.MaxValue);
 
-        private void GenerateWithTraits(PokemonSpecies species, int desiredGender, int desiredNature, int desiredAbility)
+        public void GenerateWithTraits(PokemonSpecies species, int desiredGender, int desiredNature, int desiredAbility)
         {
             Random RandomGenerator = new Random();
             bool correctGender = false;
             bool correctAbility = false;
+            bool hasSingleGender = species.GetIsFemaleOnly() || species.GetIsMaleOnly() || species.GetIsGenderless();
             int unomdifiedNature;
 
             do
@@ -44,7 +45,7 @@ namespace Pokemon_Sinjoh_Editor
                     this.PV += (uint)(desiredNature - unomdifiedNature);
                 }
 
-                if (desiredGender == ANY_GENDER || (int)GetGender(species.GenderRatio) == desiredGender)
+                if (desiredGender == ANY_GENDER || (int)GetGender(species.GenderRatio) == desiredGender || hasSingleGender)
                     correctGender = true;
                 else
                 {

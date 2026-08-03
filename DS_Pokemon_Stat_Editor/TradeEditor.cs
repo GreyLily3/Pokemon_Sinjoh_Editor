@@ -26,6 +26,7 @@ namespace Pokemon_Sinjoh_Editor
             tradeTrainerComboBox.Items.AddRange(RomFile.TradePokemonTrainerNames.ToArray());
 
             tradeNewPVNatureComboBox.Items.AddRange(RomFile.NatureNames.ToArray());
+            tradeNewPVNatureComboBox.Items.Add("Any nature");
         }
 
         private void UpdateDisplayedTradeValues()
@@ -247,68 +248,13 @@ namespace Pokemon_Sinjoh_Editor
         private void tradeRandomPVButton_Click(object sender, EventArgs e)
         {
             PokemonSpecies species = RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex];
-            NPCTrade trade = RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex];
-            bool onlyOneGender;
-            Gender gender;
-            Nature nature = (Nature)tradeNewPVNatureComboBox.SelectedIndex;
-            bool hasSecondAbility;
-            bool hasTwoAbilities;
+            int gender = tradeNewPVGenderComboBox.SelectedIndex;
+            int nature = tradeNewPVNatureComboBox.SelectedIndex;
+            int ability = tradeNewPVAbilityComboBox.SelectedIndex;
 
-            if (tradeNewPVGenderComboBox.Items.Count > 1)
-            {
-                onlyOneGender = false;
-                gender = (Gender)tradeNewPVGenderComboBox.SelectedIndex;
-            }
-            else
-            {
-                onlyOneGender = true;
-                gender = Gender.MALE; //placeholder value
-            }
+            RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.GenerateWithTraits(species, gender, nature, ability);
 
-            if (tradeNewPVAbilityComboBox.SelectedIndex == 1)
-                hasSecondAbility = true;
-            else
-                hasSecondAbility = false;
-
-            if (tradeNewPVAbilityComboBox.Items.Count > 1)
-                hasTwoAbilities = true;
-            else
-                hasTwoAbilities = false;
-
-            if (!tradeNewPVAbilityCheckBox.Checked && !tradeNewPVGenderCheckBox.Checked && !tradeNewPVNatureCheckBox.Checked && !onlyOneGender && hasTwoAbilities)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.SetTraits(species, gender, nature, hasSecondAbility);
-            }
-            else if ((tradeNewPVAbilityCheckBox.Checked || !hasTwoAbilities) && !tradeNewPVGenderCheckBox.Checked && !tradeNewPVNatureCheckBox.Checked && !onlyOneGender)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.SetTraits(species, gender, nature);
-            }
-            else if (!tradeNewPVAbilityCheckBox.Checked && hasTwoAbilities && !tradeNewPVGenderCheckBox.Checked && !onlyOneGender && tradeNewPVNatureCheckBox.Checked)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.SetTraits(species, gender, hasSecondAbility);
-            }
-            else if (!tradeNewPVAbilityCheckBox.Checked && hasTwoAbilities && (tradeNewPVGenderCheckBox.Checked || onlyOneGender) && !tradeNewPVNatureCheckBox.Checked)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.SetTraits(nature, hasSecondAbility);
-            }
-            else if ((tradeNewPVAbilityCheckBox.Checked || !hasTwoAbilities) && (tradeNewPVGenderCheckBox.Checked || onlyOneGender) && !tradeNewPVNatureCheckBox.Checked)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.SetTraits(nature);
-            }
-            else if ((tradeNewPVAbilityCheckBox.Checked || !hasTwoAbilities) && !tradeNewPVGenderCheckBox.Checked && !onlyOneGender && tradeNewPVNatureCheckBox.Checked)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.SetTraits(species, gender);
-            }
-            else if (!tradeNewPVAbilityCheckBox.Checked && hasTwoAbilities && (tradeNewPVGenderCheckBox.Checked || onlyOneGender) && tradeNewPVNatureCheckBox.Checked)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.SetTraits(hasSecondAbility);
-            }
-            else if ((tradeNewPVAbilityCheckBox.Checked || hasTwoAbilities) && (tradeNewPVGenderCheckBox.Checked || onlyOneGender) && tradeNewPVNatureCheckBox.Checked)
-            {
-                RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue = new PersonalityValue();
-            }
-
-                tradePVNumericNoArrows.Value = RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.PV;
+            tradePVNumericNoArrows.Value = RomFile.NPCTradesList[tradeTrainerComboBox.SelectedIndex].PersonalityValue.PV;
         }
 
         private void tradeLanguageComboBox_SelectionChangeCommitted(object sender, EventArgs e)
@@ -348,13 +294,15 @@ namespace Pokemon_Sinjoh_Editor
 
             if (RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex].GetHasSecondAbility())
             {
+                tradeNewPVAbilityComboBox.BeginUpdate();
                 tradeNewPVAbilityComboBox.Items.Add(RomFile.GetAbility2Name(tradeOfferedPokemonComboBox.SelectedIndex));
-                tradeNewPVAbilityCheckBox.Enabled = true;
-                tradeNewPVAbilityComboBox.SelectedIndex = pv.GetHasSecondAbility() ? PersonalityValue.ABILITY2 - 1 : PersonalityValue.ABILITY1 - 1;
+                tradeNewPVAbilityComboBox.Items.Add("Either ability");
+                tradeNewPVAbilityComboBox.EndUpdate();
+                tradeNewPVAbilityComboBox.SelectedIndex = pv.GetHasSecondAbility() ? PersonalityValue.ABILITY2 : PersonalityValue.ABILITY1;
+
             }
             else
             {
-                tradeNewPVAbilityCheckBox.Enabled = false;
                 tradeNewPVAbilityComboBox.SelectedIndex = 0;
             }
 
@@ -362,19 +310,16 @@ namespace Pokemon_Sinjoh_Editor
             if (RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex].GetIsMaleOnly())
             {
                 tradeNewPVGenderComboBox.Items.Add(Gender.MALE.ToString());
-                tradeNewPVGenderCheckBox.Enabled = false;
                 tradeNewPVGenderComboBox.SelectedIndex = 0;
             }
             else if (RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex].GetIsFemaleOnly())
             {
                 tradeNewPVGenderComboBox.Items.Add(Gender.FEMALE.ToString());
-                tradeNewPVGenderCheckBox.Enabled = false;
                 tradeNewPVGenderComboBox.SelectedIndex = 0;
             }
             else if (RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex].GetIsGenderless())
             {
                 tradeNewPVGenderComboBox.Items.Add(Gender.UNKNOWN.ToString());
-                tradeNewPVGenderCheckBox.Enabled = false;
                 tradeNewPVGenderComboBox.SelectedIndex = 0;
             }
             else
@@ -382,9 +327,9 @@ namespace Pokemon_Sinjoh_Editor
                 tradeNewPVGenderComboBox.BeginUpdate();
                 tradeNewPVGenderComboBox.Items.Add(Gender.MALE.ToString());
                 tradeNewPVGenderComboBox.Items.Add(Gender.FEMALE.ToString());
+                tradeNewPVGenderComboBox.Items.Add("Either gender");
                 tradeNewPVGenderComboBox.EndUpdate();
 
-                tradeNewPVGenderCheckBox.Enabled = true;
                 tradeNewPVGenderComboBox.SelectedIndex = (int)pv.GetGender(RomFile.PokemonSpeciesList[tradeOfferedPokemonComboBox.SelectedIndex].GenderRatio);
             }
 

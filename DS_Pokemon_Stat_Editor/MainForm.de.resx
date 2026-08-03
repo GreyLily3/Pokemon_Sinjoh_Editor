@@ -130,6 +130,9 @@
     <value>Attacken</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="moveDescriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 363</value>
+  </data>
   <data name="moveTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 13</value>
   </data>
@@ -423,6 +426,9 @@
   </data>
   <data name="speciesGenderRatioNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 141</value>
+  </data>
+  <data name="speciesGenderRatioNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 20</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 143</value>

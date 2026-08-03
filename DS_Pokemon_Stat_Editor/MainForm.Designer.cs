@@ -139,10 +139,7 @@
             this.npcTradeTabPage = new System.Windows.Forms.TabPage();
             this.tradeNewPVGroupBox = new System.Windows.Forms.GroupBox();
             this.tradeRandomPVButton = new System.Windows.Forms.Button();
-            this.tradeNewPVNatureCheckBox = new System.Windows.Forms.CheckBox();
             this.tradeNewPVNatureComboBox = new System.Windows.Forms.ComboBox();
-            this.tradeNewPVGenderCheckBox = new System.Windows.Forms.CheckBox();
-            this.tradeNewPVAbilityCheckBox = new System.Windows.Forms.CheckBox();
             this.tradeNewPVGenderComboBox = new System.Windows.Forms.ComboBox();
             this.tradeNewPVAbilityComboBox = new System.Windows.Forms.ComboBox();
             this.tradeAnyPokemonWantedComboBox = new System.Windows.Forms.ComboBox();
@@ -5011,10 +5008,7 @@
             // 
             resources.ApplyResources(this.tradeNewPVGroupBox, "tradeNewPVGroupBox");
             this.tradeNewPVGroupBox.Controls.Add(this.tradeRandomPVButton);
-            this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVNatureCheckBox);
             this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVNatureComboBox);
-            this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVGenderCheckBox);
-            this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVAbilityCheckBox);
             this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVGenderComboBox);
             this.tradeNewPVGroupBox.Controls.Add(this.tradeNewPVAbilityComboBox);
             this.tradeNewPVGroupBox.Name = "tradeNewPVGroupBox";
@@ -5093,45 +5087,6 @@
             this.tradeRandomPVButton.UseVisualStyleBackColor = true;
             this.tradeRandomPVButton.Click += new System.EventHandler(this.tradeRandomPVButton_Click);
             // 
-            // tradeNewPVNatureCheckBox
-            // 
-            resources.ApplyResources(this.tradeNewPVNatureCheckBox, "tradeNewPVNatureCheckBox");
-            this.tradeNewPVNatureCheckBox.Name = "tradeNewPVNatureCheckBox";
-            this.moveProtectTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip7"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip8"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip9"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip15"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip16"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip17"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip19"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip20"));
-            this.moveTargetTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip21"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip22"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip23"));
-            this.movePriorityTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip24"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip25"));
-            this.moveEffectTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip26"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip27"));
-            this.moveTypeTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip28"));
-            this.movePowerTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip29"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip30"));
-            this.moveContactTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip31"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeNewPVNatureCheckBox, resources.GetString("tradeNewPVNatureCheckBox.ToolTip32"));
-            this.tradeNewPVNatureCheckBox.UseVisualStyleBackColor = true;
-            // 
             // tradeNewPVNatureComboBox
             // 
             resources.ApplyResources(this.tradeNewPVNatureComboBox, "tradeNewPVNatureComboBox");
@@ -5171,84 +5126,6 @@
             this.moveContestEffectTooltip.SetToolTip(this.tradeNewPVNatureComboBox, resources.GetString("tradeNewPVNatureComboBox.ToolTip30"));
             this.moveTargetTooltip.SetToolTip(this.tradeNewPVNatureComboBox, resources.GetString("tradeNewPVNatureComboBox.ToolTip31"));
             this.moveEffectTooltip.SetToolTip(this.tradeNewPVNatureComboBox, resources.GetString("tradeNewPVNatureComboBox.ToolTip32"));
-            // 
-            // tradeNewPVGenderCheckBox
-            // 
-            resources.ApplyResources(this.tradeNewPVGenderCheckBox, "tradeNewPVGenderCheckBox");
-            this.tradeNewPVGenderCheckBox.Name = "tradeNewPVGenderCheckBox";
-            this.moveProtectTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip7"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip8"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip9"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip15"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip16"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip17"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip19"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip20"));
-            this.moveTargetTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip21"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip22"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip23"));
-            this.movePriorityTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip24"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip25"));
-            this.moveEffectTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip26"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip27"));
-            this.moveTypeTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip28"));
-            this.movePowerTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip29"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip30"));
-            this.moveContactTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip31"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeNewPVGenderCheckBox, resources.GetString("tradeNewPVGenderCheckBox.ToolTip32"));
-            this.tradeNewPVGenderCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // tradeNewPVAbilityCheckBox
-            // 
-            resources.ApplyResources(this.tradeNewPVAbilityCheckBox, "tradeNewPVAbilityCheckBox");
-            this.tradeNewPVAbilityCheckBox.Name = "tradeNewPVAbilityCheckBox";
-            this.moveProtectTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip"));
-            this.moveMirrorMoveTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip1"));
-            this.moveSnatchTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip2"));
-            this.moveHPBarTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip3"));
-            this.moveKingsRockTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip4"));
-            this.speciesTypeTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip5"));
-            this.moveShadowTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip6"));
-            this.speciesXPGroupTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip7"));
-            this.speciesAbilityTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip8"));
-            this.speciesCatchRateTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip9"));
-            this.speciesWildHeldItemTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip10"));
-            this.speciesBaseXPTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip11"));
-            this.speciesEggCyclesTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip12"));
-            this.speciesEggGroupTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip13"));
-            this.speciesSafariRunChanceTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip14"));
-            this.speciesBaseFriendshipTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip15"));
-            this.moveMagicCoatTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip16"));
-            this.speciesEVYieldTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip17"));
-            this.tradeGenderTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip18"));
-            this.moveContestConditionTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip19"));
-            this.tradeNatureTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip20"));
-            this.moveTargetTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip21"));
-            this.moveContestEffectTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip22"));
-            this.moveEffectChanceTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip23"));
-            this.movePriorityTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip24"));
-            this.moveCategoryTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip25"));
-            this.moveEffectTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip26"));
-            this.movePowerPointsTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip27"));
-            this.moveTypeTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip28"));
-            this.movePowerTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip29"));
-            this.moveAccuracyTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip30"));
-            this.moveContactTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip31"));
-            this.tradeAbilityTooltip.SetToolTip(this.tradeNewPVAbilityCheckBox, resources.GetString("tradeNewPVAbilityCheckBox.ToolTip32"));
-            this.tradeNewPVAbilityCheckBox.UseVisualStyleBackColor = true;
             // 
             // tradeNewPVGenderComboBox
             // 
@@ -12750,7 +12627,6 @@
             this.npcTradeTabPage.ResumeLayout(false);
             this.npcTradeTabPage.PerformLayout();
             this.tradeNewPVGroupBox.ResumeLayout(false);
-            this.tradeNewPVGroupBox.PerformLayout();
             this.tradePVDerivedGroupBox.ResumeLayout(false);
             this.tradePVDerivedGroupBox.PerformLayout();
             this.tradeIVsGroupBox.ResumeLayout(false);
@@ -13084,9 +12960,6 @@
         private System.Windows.Forms.ComboBox tradeNewPVAbilityComboBox;
         private System.Windows.Forms.ComboBox tradeNewPVGenderComboBox;
         private System.Windows.Forms.ComboBox tradeNewPVNatureComboBox;
-        private System.Windows.Forms.CheckBox tradeNewPVNatureCheckBox;
-        private System.Windows.Forms.CheckBox tradeNewPVGenderCheckBox;
-        private System.Windows.Forms.CheckBox tradeNewPVAbilityCheckBox;
         private System.Windows.Forms.GroupBox tradeNewPVGroupBox;
         private System.Windows.Forms.TabPage learnsetTabPage;
         private System.Windows.Forms.GroupBox learnsetLevelUpMovesGroupBox;

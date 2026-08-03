@@ -117,15 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="moveDescriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 363</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="moveTargetLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="moveTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="moveTargetLabel.Text" xml:space="preserve">
     <value>범위</value>
+  </data>
+  <data name="movePriorityLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="movePriorityLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
@@ -133,11 +137,17 @@
   <data name="movePriorityLabel.Text" xml:space="preserve">
     <value>선제기술</value>
   </data>
+  <data name="moveCategoryLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="moveCategoryLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="moveCategoryLabel.Text" xml:space="preserve">
     <value>분류</value>
+  </data>
+  <data name="moveEffectChanceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="moveEffectChanceLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -145,11 +155,17 @@
   <data name="moveEffectChanceLabel.Text" xml:space="preserve">
     <value>효과 확률</value>
   </data>
+  <data name="moveEffectLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="moveEffectLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="moveEffectLabel.Text" xml:space="preserve">
     <value>효과</value>
+  </data>
+  <data name="moveTypeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="moveTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
@@ -157,11 +173,20 @@
   <data name="moveTypeLabel.Text" xml:space="preserve">
     <value>타입</value>
   </data>
+  <data name="movePPLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="moveAccuracyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="moveAccuracyLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="moveAccuracyLabel.Text" xml:space="preserve">
     <value>명중</value>
+  </data>
+  <data name="movePowerLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="movePowerLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
@@ -169,11 +194,17 @@
   <data name="movePowerLabel.Text" xml:space="preserve">
     <value>위력</value>
   </data>
+  <data name="moveContestConditionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="moveContestConditionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
   </data>
   <data name="moveContestConditionLabel.Text" xml:space="preserve">
     <value>컨디션</value>
+  </data>
+  <data name="moveContestEffectLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="moveContestEffectLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -181,11 +212,17 @@
   <data name="moveContestEffectLabel.Text" xml:space="preserve">
     <value>경쟁 효과</value>
   </data>
+  <data name="moveShadowCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="moveShadowCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 17</value>
   </data>
   <data name="moveShadowCheckBox.Text" xml:space="preserve">
     <value>그림자 숨기</value>
+  </data>
+  <data name="moveHPBarCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="moveHPBarCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 17</value>
@@ -193,11 +230,17 @@
   <data name="moveHPBarCheckBox.Text" xml:space="preserve">
     <value>HP 바를 유지하세요</value>
   </data>
+  <data name="moveKingsRockCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="moveKingsRockCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 17</value>
   </data>
   <data name="moveKingsRockCheckBox.Text" xml:space="preserve">
     <value>왕의징표석</value>
+  </data>
+  <data name="moveMirrorMoveCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="moveMirrorMoveCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 17</value>
@@ -205,11 +248,17 @@
   <data name="moveMirrorMoveCheckBox.Text" xml:space="preserve">
     <value>따라하기</value>
   </data>
+  <data name="moveSnatchCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="moveSnatchCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 17</value>
   </data>
   <data name="moveSnatchCheckBox.Text" xml:space="preserve">
     <value>가로챔</value>
+  </data>
+  <data name="moveMagicCoatCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="moveMagicCoatCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 17</value>
@@ -217,11 +266,17 @@
   <data name="moveMagicCoatCheckBox.Text" xml:space="preserve">
     <value>매직코트</value>
   </data>
+  <data name="moveProtectCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="moveProtectCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 17</value>
   </data>
   <data name="moveProtectCheckBox.Text" xml:space="preserve">
     <value>방어</value>
+  </data>
+  <data name="moveContactCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="moveContactCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 17</value>
@@ -238,17 +293,26 @@
   <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>517, 62</value>
   </data>
+  <data name="speciesCatchRateLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesCatchRateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
   </data>
   <data name="speciesCatchRateLabel.Text" xml:space="preserve">
     <value>포획률</value>
   </data>
+  <data name="speciesBaseHappinessLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesBaseHappinessLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
   </data>
   <data name="speciesBaseHappinessLabel.Text" xml:space="preserve">
     <value>친밀도</value>
+  </data>
+  <data name="speciesSafariRunChanceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesSafariRunChanceLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 26</value>
@@ -260,11 +324,17 @@
   <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>669, 307</value>
   </data>
+  <data name="speciesXPGroupLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesXPGroupLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 13</value>
   </data>
   <data name="speciesXPGroupLabel.Text" xml:space="preserve">
     <value>LV.100 경험치량</value>
+  </data>
+  <data name="speciesBaseXPLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesBaseXPLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 13</value>
@@ -278,11 +348,17 @@
   <data name="speciesXPGroupBox.Text" xml:space="preserve">
     <value>경험</value>
   </data>
+  <data name="speciesSpeedEVlabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesSpeedEVlabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
   </data>
   <data name="speciesSpeedEVlabel.Text" xml:space="preserve">
     <value>스피드</value>
+  </data>
+  <data name="speciesSpecialDefenseEVLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesSpecialDefenseEVLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
@@ -290,11 +366,17 @@
   <data name="speciesSpecialDefenseEVLabel.Text" xml:space="preserve">
     <value>특수방어</value>
   </data>
+  <data name="speciesSpecialAttackEVLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesSpecialAttackEVLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
   </data>
   <data name="speciesSpecialAttackEVLabel.Text" xml:space="preserve">
     <value>특수공격</value>
+  </data>
+  <data name="speciesDefenseEVLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesDefenseEVLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
@@ -302,11 +384,17 @@
   <data name="speciesDefenseEVLabel.Text" xml:space="preserve">
     <value>방어</value>
   </data>
+  <data name="speciesAttackEVLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesAttackEVLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="speciesAttackEVLabel.Text" xml:space="preserve">
     <value>공격</value>
+  </data>
+  <data name="speciesHPEVlabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesHPEVlabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 13</value>
@@ -323,6 +411,9 @@
   <data name="speciesComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>356, 62</value>
   </data>
+  <data name="speciesHeldItem1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesHeldItem1Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 48</value>
   </data>
@@ -334,6 +425,9 @@
   </data>
   <data name="speciesHeldItem1ComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 63</value>
+  </data>
+  <data name="speciesHeldItem2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesHeldItem2Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 110</value>
@@ -351,11 +445,17 @@
   <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
     <value>지니고 있는 도구</value>
   </data>
+  <data name="speciesAbility1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesAbility1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
   </data>
   <data name="speciesAbility1Label.Text" xml:space="preserve">
     <value>특성 1</value>
+  </data>
+  <data name="speciesAbility2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesAbility2Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -369,17 +469,26 @@
   <data name="speciesAbilitiesGroupBox.Text" xml:space="preserve">
     <value>특성</value>
   </data>
+  <data name="speciesEggCyclesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesEggCyclesLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
   </data>
   <data name="speciesEggCyclesLabel.Text" xml:space="preserve">
     <value>알 주기</value>
   </data>
+  <data name="speciesEggGroup1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesEggGroup1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 13</value>
   </data>
   <data name="speciesEggGroup1Label.Text" xml:space="preserve">
     <value>알그룹 1:</value>
+  </data>
+  <data name="speciesEggGroup2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesEggGroup2Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 13</value>
@@ -393,11 +502,17 @@
   <data name="speciesEggGroupsGroupBox.Text" xml:space="preserve">
     <value>알</value>
   </data>
+  <data name="speciesType1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesType1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
   </data>
   <data name="speciesType1Label.Text" xml:space="preserve">
     <value>타입 1</value>
+  </data>
+  <data name="speciesType2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesType2Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -411,6 +526,9 @@
   <data name="speciesTypesGroupBox.Text" xml:space="preserve">
     <value>타입</value>
   </data>
+  <data name="speciesGenderlessRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesGenderlessRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 17</value>
   </data>
@@ -418,10 +536,16 @@
     <value>성별 불명</value>
   </data>
   <data name="speciesGenderRatioNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 139</value>
+    <value>25, 126</value>
+  </data>
+  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 141</value>
+    <value>51, 128</value>
+  </data>
+  <data name="speciesMaleOnlyRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesMaleOnlyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 17</value>
@@ -429,11 +553,17 @@
   <data name="speciesMaleOnlyRadioButton.Text" xml:space="preserve">
     <value>수컷</value>
   </data>
+  <data name="speciesFemaleOnlyRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesFemaleOnlyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 17</value>
   </data>
   <data name="speciesFemaleOnlyRadioButton.Text" xml:space="preserve">
     <value>암컷</value>
+  </data>
+  <data name="speciesMaleAndFemaleRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesMaleAndFemaleRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 17</value>
@@ -441,8 +571,11 @@
   <data name="speciesMaleAndFemaleRadioButton.Text" xml:space="preserve">
     <value>수컷 &amp;&amp; 암컷</value>
   </data>
+  <data name="speciesGenderMaleToFemaleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesGenderMaleToFemaleLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 110</value>
+    <value>22, 110</value>
   </data>
   <data name="speciesGenderMaleToFemaleLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 13</value>
@@ -456,11 +589,17 @@
   <data name="speciesGenderGroupBox.Text" xml:space="preserve">
     <value>성별</value>
   </data>
+  <data name="speciesHPLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesHPLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 13</value>
   </data>
   <data name="speciesHPLabel.Text" xml:space="preserve">
     <value>HP</value>
+  </data>
+  <data name="speciesAttackLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesAttackLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
@@ -468,11 +607,17 @@
   <data name="speciesAttackLabel.Text" xml:space="preserve">
     <value>공격</value>
   </data>
+  <data name="speciesDefenseLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesDefenseLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="speciesDefenseLabel.Text" xml:space="preserve">
     <value>방어</value>
+  </data>
+  <data name="speciesSpeedLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesSpeedLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -480,11 +625,17 @@
   <data name="speciesSpeedLabel.Text" xml:space="preserve">
     <value>스피드</value>
   </data>
+  <data name="speciesSpecialAttackLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="speciesSpecialAttackLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
   </data>
   <data name="speciesSpecialAttackLabel.Text" xml:space="preserve">
     <value>특수공격</value>
+  </data>
+  <data name="speciesSpecialDefenseLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="speciesSpecialDefenseLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
@@ -501,11 +652,26 @@
   <data name="speciesTabPage.Text" xml:space="preserve">
     <value>포켓몬</value>
   </data>
+  <data name="tradeRandomPVButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tradeNewPVGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>655, 265</value>
+  </data>
+  <data name="tradeAnyPokemonWantedComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 204</value>
+  </data>
+  <data name="tradeNatureLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="tradeNatureLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="tradeNatureLabel.Text" xml:space="preserve">
     <value>성격</value>
+  </data>
+  <data name="tradeAbilityLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="tradeAbilityLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
@@ -513,11 +679,20 @@
   <data name="tradeAbilityLabel.Text" xml:space="preserve">
     <value>특성</value>
   </data>
+  <data name="tradeGenderLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="tradeGenderLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="tradeGenderLabel.Text" xml:space="preserve">
     <value>성별</value>
+  </data>
+  <data name="tradePVDerivedGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 293</value>
+  </data>
+  <data name="tradeSpeedIVsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="tradeSpeedIVsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -525,11 +700,20 @@
   <data name="tradeSpeedIVsLabel.Text" xml:space="preserve">
     <value>스피드</value>
   </data>
+  <data name="tradeSpecialDefenseIVsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="tradeSpecialDefenseIVsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
   </data>
   <data name="tradeSpecialDefenseIVsLabel.Text" xml:space="preserve">
     <value>특수방어</value>
+  </data>
+  <data name="tradeHPIVsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tradeSpecialAttackIVsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="tradeSpecialAttackIVsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
@@ -537,11 +721,17 @@
   <data name="tradeSpecialAttackIVsLabel.Text" xml:space="preserve">
     <value>특수공격</value>
   </data>
+  <data name="tradeAttackIVsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="tradeAttackIVsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="tradeAttackIVsLabel.Text" xml:space="preserve">
     <value>공격</value>
+  </data>
+  <data name="tradeDefenseIVsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="tradeDefenseIVsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
@@ -549,8 +739,14 @@
   <data name="tradeDefenseIVsLabel.Text" xml:space="preserve">
     <value>방어</value>
   </data>
+  <data name="tradeIVsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 160</value>
+  </data>
   <data name="tradeIVsGroupBox.Text" xml:space="preserve">
     <value>개체값</value>
+  </data>
+  <data name="tradeSheenLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="tradeSheenLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
@@ -558,11 +754,17 @@
   <data name="tradeSheenLabel.Text" xml:space="preserve">
     <value>털색</value>
   </data>
+  <data name="tradeCoolLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="tradeCoolLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
   </data>
   <data name="tradeCoolLabel.Text" xml:space="preserve">
     <value>근사함</value>
+  </data>
+  <data name="tradeToughLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="tradeToughLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -570,11 +772,17 @@
   <data name="tradeToughLabel.Text" xml:space="preserve">
     <value>강인함</value>
   </data>
+  <data name="tradeBeautyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="tradeBeautyLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
   </data>
   <data name="tradeBeautyLabel.Text" xml:space="preserve">
     <value>아름다움</value>
+  </data>
+  <data name="tradeSmartLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="tradeSmartLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
@@ -582,14 +790,29 @@
   <data name="tradeSmartLabel.Text" xml:space="preserve">
     <value>슬기로움</value>
   </data>
+  <data name="tradeCuteLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="tradeCuteLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
   </data>
   <data name="tradeCuteLabel.Text" xml:space="preserve">
     <value>귀여움</value>
   </data>
+  <data name="tradeContestStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 163</value>
+  </data>
   <data name="tradeContestStatsGroupBox.Text" xml:space="preserve">
     <value>경기 통계</value>
+  </data>
+  <data name="tradeTrainerComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 45</value>
+  </data>
+  <data name="tradeLanguageLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tradeLanguageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>496, 207</value>
   </data>
   <data name="tradeLanguageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
@@ -597,11 +820,32 @@
   <data name="tradeLanguageLabel.Text" xml:space="preserve">
     <value>언어</value>
   </data>
+  <data name="tradeLanguageComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 222</value>
+  </data>
+  <data name="tradePVLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tradePVLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>496, 251</value>
+  </data>
+  <data name="tradeNicknameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tradeNicknameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 118</value>
+  </data>
   <data name="tradeNicknameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="tradeNicknameLabel.Text" xml:space="preserve">
     <value>별명</value>
+  </data>
+  <data name="tradeOriginalTrainerIDLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tradeOriginalTrainerIDLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>496, 119</value>
   </data>
   <data name="tradeOriginalTrainerIDLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
@@ -609,11 +853,26 @@
   <data name="tradeOriginalTrainerIDLabel.Text" xml:space="preserve">
     <value>IDNo.</value>
   </data>
+  <data name="tradeNicknameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 134</value>
+  </data>
+  <data name="tradeHeldItemLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tradeHeldItemLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>496, 161</value>
+  </data>
   <data name="tradeHeldItemLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
   </data>
   <data name="tradeHeldItemLabel.Text" xml:space="preserve">
     <value>지닌물건</value>
+  </data>
+  <data name="tradeOfferedPokemonLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tradeOfferedPokemonLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 117</value>
   </data>
   <data name="tradeOfferedPokemonLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 13</value>
@@ -621,11 +880,32 @@
   <data name="tradeOfferedPokemonLabel.Text" xml:space="preserve">
     <value>제안된 포켓몬</value>
   </data>
+  <data name="tradeWantedPokemonLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tradeWantedPokemonLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 117</value>
+  </data>
   <data name="tradeWantedPokemonLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 13</value>
   </data>
   <data name="tradeWantedPokemonLabel.Text" xml:space="preserve">
     <value>원티드 포켓몬</value>
+  </data>
+  <data name="tradeHeldItemComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 177</value>
+  </data>
+  <data name="tradeOfferedPokemonComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 133</value>
+  </data>
+  <data name="tradeWantedPokemonComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 133</value>
+  </data>
+  <data name="tradePVNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 267</value>
+  </data>
+  <data name="tradeOriginalTrainerIDNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 135</value>
   </data>
   <data name="npcTradeTabPage.Text" xml:space="preserve">
     <value>교환</value>
@@ -633,11 +913,17 @@
   <data name="learnsetAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>423, 21</value>
   </data>
+  <data name="learnsetLearnableTMsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="learnsetLearnableTMsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
   </data>
   <data name="learnsetLearnableTMsLabel.Text" xml:space="preserve">
     <value>기술머신</value>
+  </data>
+  <data name="learnsetLearnableHMsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="learnsetLearnableHMsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 13</value>
@@ -647,6 +933,9 @@
   </data>
   <data name="learnsetEggMovesGroupBox.Text" xml:space="preserve">
     <value>교배로 배우는 기술</value>
+  </data>
+  <data name="learnsetMoveTutorLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="learnsetMoveTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 13</value>
@@ -663,14 +952,83 @@
   <data name="learnsetTabPage.Text" xml:space="preserve">
     <value>배우는 기술</value>
   </data>
+  <data name="checkBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemNaturalGiftUseableCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemBattlePocketLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemFieldPocketLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemPreventTossCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemNaturalGiftTypeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemNaturalGiftPowerLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemFlingEffectLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemFlingPowerLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemPluckEffectLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemHoldParemeterLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemHoldEffectLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="itemPriceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="itemsTabPage.Text" xml:space="preserve">
     <value>아이템 </value>
+  </data>
+  <data name="pokedexHTMetersLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pokedexHTINLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pokedexHTFTLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pokedexHTDMLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pokedexWTUnitLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>몸무게 </value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 13</value>
@@ -4489,5 +4847,8 @@
         qXH2r9drS50+Pz3jer3GW7b5NJdXr19XABWw1sSeOtBaa1dP4pHj0D9/b6AHTKKB4LrzigGfMopPjgr8
         /wfac7dynsyo6gAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
 </root>
