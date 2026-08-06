@@ -81,30 +81,30 @@ namespace Pokemon_Sinjoh_Editor
             {
                 case Languages.JAPANESE:
                     日本語ToolStripMenuItem.Checked = true;
-                    ChangeLanguage("ja-JP");
+                    ChangeLanguage("ja-JP", Text);
                     break;
                 case Languages.ENGLISH:
                     englishToolStripMenuItem.Checked = true;
-                    ChangeLanguage("en");
+                    ChangeLanguage("en", Text);
                     break;
                 case Languages.FRENCH:
                     françaisToolStripMenuItem.Checked = true;
-                    ChangeLanguage("fr");
+                    ChangeLanguage("fr", Text);
                     break;
                 case Languages.SPANISH:
                     españolToolStripMenuItem.Checked = true;
-                    ChangeLanguage("es");
+                    ChangeLanguage("es", Text);
                     break;
                 case Languages.ITALIAN:
                     italianoToolStripMenuItem.Checked = true;
-                    ChangeLanguage("it");
+                    ChangeLanguage("it", Text);
                     break;
                 case Languages.GERMAN:
-                    ChangeLanguage("de");
+                    ChangeLanguage("de", Text);
                     deutschToolStripMenuItem.Checked = true;
                     break;
                 case Languages.KOREAN:
-                    ChangeLanguage("ko-KR");
+                    ChangeLanguage("ko-KR", Text);
                     한국어ToolStripMenuItem.Checked = true;
                     break;
 
@@ -304,7 +304,7 @@ namespace Pokemon_Sinjoh_Editor
             if (INIManager.Language != Languages.ENGLISH)
             {
                 englishToolStripMenuItem.Checked = true;
-                ChangeLanguage("en");
+                ChangeLanguage("en", Text);
                 INIManager.Language = Languages.ENGLISH;
                 INIManager.SaveINI();
 
@@ -324,7 +324,7 @@ namespace Pokemon_Sinjoh_Editor
             if (INIManager.Language != Languages.SPANISH)
             {
                 españolToolStripMenuItem.Checked = true;
-                ChangeLanguage("es");
+                ChangeLanguage("es", Text);
                 INIManager.Language = Languages.SPANISH;
                 INIManager.SaveINI();
 
@@ -344,7 +344,7 @@ namespace Pokemon_Sinjoh_Editor
             if (INIManager.Language != Languages.FRENCH)
             {
                 françaisToolStripMenuItem.Checked = true;
-                ChangeLanguage("fr");
+                ChangeLanguage("fr", Text);
                 INIManager.Language = Languages.FRENCH;
                 INIManager.SaveINI();
 
@@ -364,7 +364,7 @@ namespace Pokemon_Sinjoh_Editor
             if (INIManager.Language != Languages.GERMAN)
             {
                 deutschToolStripMenuItem.Checked = true;
-                ChangeLanguage("de");
+                ChangeLanguage("de", Text);
                 INIManager.Language = Languages.GERMAN;
                 INIManager.SaveINI();
 
@@ -384,7 +384,7 @@ namespace Pokemon_Sinjoh_Editor
             if (INIManager.Language != Languages.ITALIAN)
             {
                 italianoToolStripMenuItem.Checked = true;
-                ChangeLanguage("it");
+                ChangeLanguage("it", Text);
                 INIManager.Language = Languages.ITALIAN;
                 INIManager.SaveINI();
 
@@ -404,7 +404,7 @@ namespace Pokemon_Sinjoh_Editor
             if (INIManager.Language != Languages.JAPANESE)
             {
                 日本語ToolStripMenuItem.Checked = true;
-                ChangeLanguage("ja-JP");
+                ChangeLanguage("ja-JP", Text);
                 INIManager.Language = Languages.JAPANESE;
                 INIManager.SaveINI();
 
@@ -424,7 +424,7 @@ namespace Pokemon_Sinjoh_Editor
             if (INIManager.Language != Languages.KOREAN)
             {
                 한국어ToolStripMenuItem.Checked = true;
-                ChangeLanguage("ko-KR");
+                ChangeLanguage("ko-KR", Text);
                 INIManager.Language = Languages.KOREAN;
                 INIManager.SaveINI();
 
@@ -439,12 +439,12 @@ namespace Pokemon_Sinjoh_Editor
             }
         }
 
-        private void ChangeLanguage(string lang)
+        private void ChangeLanguage(string lang, string mainFormHeaderText)
         {
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
             Thread.CurrentThread.CurrentCulture = new CultureInfo(lang);
             localizeForm(this);
-
+            Text = mainFormHeaderText;
         }
 
         private void localizeForm(Form frm)
