@@ -250,9 +250,6 @@
   <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>444, 25</value>
   </data>
-  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 245</value>
-  </data>
   <data name="speciesMiscGroupBox.Text" xml:space="preserve">
     <value>Divers</value>
   </data>
@@ -388,9 +385,6 @@
   </data>
   <data name="speciesGenderGroupBox.Text" xml:space="preserve">
     <value>Sexe</value>
-  </data>
-  <data name="speciesGenderRatioNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 20</value>
   </data>
   <data name="speciesMaleOnlyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 17</value>
@@ -590,8 +584,56 @@
   <data name="learnsetLearnableHMsLabel.Text" xml:space="preserve">
     <value>CS</value>
   </data>
+  <data name="learnsetEggMovesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 432</value>
+  </data>
   <data name="learnsetEggMovesGroupBox.Text" xml:space="preserve">
     <value>Par reproduction</value>
+  </data>
+  <data name="learnsetEggMove16ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 396</value>
+  </data>
+  <data name="learnsetEggMove15ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 371</value>
+  </data>
+  <data name="learnsetEggMove14ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 346</value>
+  </data>
+  <data name="learnsetEggMove13ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 321</value>
+  </data>
+  <data name="learnsetEggMove12ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 296</value>
+  </data>
+  <data name="learnsetEggMove11ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 271</value>
+  </data>
+  <data name="learnsetEggMove10ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 246</value>
+  </data>
+  <data name="learnsetEggMove9ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 221</value>
+  </data>
+  <data name="learnsetEggMove8ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 196</value>
+  </data>
+  <data name="learnsetEggMove7ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 171</value>
+  </data>
+  <data name="learnsetEggMove6ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 146</value>
+  </data>
+  <data name="learnsetEggMove5ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 121</value>
+  </data>
+  <data name="learnsetEggMove4ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 96</value>
+  </data>
+  <data name="learnsetEggMove3ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 71</value>
+  </data>
+  <data name="learnsetEggMove1ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
   </data>
   <data name="learnsetMoveTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 13</value>
@@ -602,8 +644,128 @@
   <data name="learnsetPokemonComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>275, 21</value>
   </data>
+  <data name="learnsetLevelUpMovesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 534</value>
+  </data>
   <data name="learnsetLevelUpMovesGroupBox.Text" xml:space="preserve">
     <value>Par montée en niveau</value>
+  </data>
+  <data name="learnsetLevelUpMove20ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 496</value>
+  </data>
+  <data name="learnsetLevelUpMove19ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 471</value>
+  </data>
+  <data name="learnsetLevelUpMove18ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 446</value>
+  </data>
+  <data name="learnsetLevelUpMove17ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 421</value>
+  </data>
+  <data name="learnsetLevelUpMove16ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 396</value>
+  </data>
+  <data name="learnsetLevelUpMove15ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 371</value>
+  </data>
+  <data name="learnsetLevelUpMove14ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 346</value>
+  </data>
+  <data name="learnsetLevelUpMove13ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 321</value>
+  </data>
+  <data name="learnsetLevelUpMove12ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 296</value>
+  </data>
+  <data name="learnsetLevelUpMove11ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 271</value>
+  </data>
+  <data name="learnsetLevelUpMove10ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 246</value>
+  </data>
+  <data name="learnsetLevelUpMove9ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 221</value>
+  </data>
+  <data name="learnsetLevelUpMove8ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 196</value>
+  </data>
+  <data name="learnsetLevelUpMove7ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 171</value>
+  </data>
+  <data name="learnsetLevelUpMove6ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 146</value>
+  </data>
+  <data name="learnsetLevelUpMove5ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 121</value>
+  </data>
+  <data name="learnsetLevelUpMove4ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 96</value>
+  </data>
+  <data name="learnsetLevelUpMove3ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 71</value>
+  </data>
+  <data name="learnsetLevelUpMove2ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 46</value>
+  </data>
+  <data name="learnsetLevelUpLevel20NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 496</value>
+  </data>
+  <data name="learnsetLevelUpLevel19NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 471</value>
+  </data>
+  <data name="learnsetLevelUpLevel18NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 446</value>
+  </data>
+  <data name="learnsetLevelUpLevel17NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 421</value>
+  </data>
+  <data name="learnsetLevelUpLevel16NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 396</value>
+  </data>
+  <data name="learnsetLevelUpLevel15NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 371</value>
+  </data>
+  <data name="learnsetLevelUpLevel14NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 346</value>
+  </data>
+  <data name="learnsetLevelUpLevel13NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 321</value>
+  </data>
+  <data name="learnsetLevelUpLevel12NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 296</value>
+  </data>
+  <data name="learnsetLevelUpLevel11NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 271</value>
+  </data>
+  <data name="learnsetLevelUpLevel10NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 246</value>
+  </data>
+  <data name="learnsetLevelUpLevel9NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 221</value>
+  </data>
+  <data name="learnsetLevelUpLevel8NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 196</value>
+  </data>
+  <data name="learnsetLevelUpLevel7NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 171</value>
+  </data>
+  <data name="learnsetLevelUpLevel6NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 146</value>
+  </data>
+  <data name="learnsetLevelUpLevel5NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 121</value>
+  </data>
+  <data name="learnsetLevelUpLevel4NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 96</value>
+  </data>
+  <data name="learnsetLevelUpLevel3NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 71</value>
+  </data>
+  <data name="learnsetLevelUpLevel2NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 46</value>
+  </data>
+  <data name="learnsetLevelUpLevel1NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 21</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 20</value>

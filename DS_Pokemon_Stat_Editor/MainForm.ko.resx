@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="movesTabPage.Text" xml:space="preserve">
+    <value>기술</value>
+  </data>
+  <data name="speciesTabPage.Text" xml:space="preserve">
+    <value>포켓몬</value>
+  </data>
+  <data name="npcTradeTabPage.Text" xml:space="preserve">
+    <value>교환</value>
+  </data>
+  <data name="learnsetTabPage.Text" xml:space="preserve">
+    <value>배우는 기술</value>
+  </data>
+  <data name="itemsTabPage.Text" xml:space="preserve">
+    <value>아이템 </value>
+  </data>
+  <data name="pokedexTabPage.Text" xml:space="preserve">
+    <value>도감</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="moveTargetLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -212,6 +230,9 @@
   <data name="moveContestEffectLabel.Text" xml:space="preserve">
     <value>경쟁 효과</value>
   </data>
+  <data name="moveFlagsGroupBox.Text" xml:space="preserve">
+    <value>플래그</value>
+  </data>
   <data name="moveShadowCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -284,14 +305,11 @@
   <data name="moveContactCheckBox.Text" xml:space="preserve">
     <value>접촉</value>
   </data>
-  <data name="moveFlagsGroupBox.Text" xml:space="preserve">
-    <value>플래그</value>
-  </data>
-  <data name="movesTabPage.Text" xml:space="preserve">
-    <value>기술</value>
-  </data>
   <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>517, 62</value>
+  </data>
+  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>669, 307</value>
   </data>
   <data name="speciesCatchRateLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -321,8 +339,11 @@
     <value>런 찬스
 (사파리존)</value>
   </data>
-  <data name="speciesMiscGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>669, 307</value>
+  <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 381</value>
+  </data>
+  <data name="speciesXPGroupBox.Text" xml:space="preserve">
+    <value>경험</value>
   </data>
   <data name="speciesXPGroupLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -342,11 +363,11 @@
   <data name="speciesBaseXPLabel.Text" xml:space="preserve">
     <value>기본 경험치 수확량</value>
   </data>
-  <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 381</value>
+  <data name="speciesEVOnDefeatGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 124</value>
   </data>
-  <data name="speciesXPGroupBox.Text" xml:space="preserve">
-    <value>경험</value>
+  <data name="speciesEVOnDefeatGroupBox.Text" xml:space="preserve">
+    <value>기초포인트</value>
   </data>
   <data name="speciesSpeedEVlabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -402,14 +423,14 @@
   <data name="speciesHPEVlabel.Text" xml:space="preserve">
     <value>HP</value>
   </data>
-  <data name="speciesEVOnDefeatGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 124</value>
-  </data>
-  <data name="speciesEVOnDefeatGroupBox.Text" xml:space="preserve">
-    <value>기초포인트</value>
-  </data>
   <data name="speciesComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>356, 62</value>
+  </data>
+  <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>511, 124</value>
+  </data>
+  <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
+    <value>지니고 있는 도구</value>
   </data>
   <data name="speciesHeldItem1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -439,11 +460,11 @@
     <value>지닌물건 1 (5%)
 </value>
   </data>
-  <data name="speciesHeldItemsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 124</value>
+  <data name="speciesAbilitiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 258</value>
   </data>
-  <data name="speciesHeldItemsGroupBox.Text" xml:space="preserve">
-    <value>지니고 있는 도구</value>
+  <data name="speciesAbilitiesGroupBox.Text" xml:space="preserve">
+    <value>특성</value>
   </data>
   <data name="speciesAbility1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -463,11 +484,11 @@
   <data name="speciesAbility2Label.Text" xml:space="preserve">
     <value>특성 2</value>
   </data>
-  <data name="speciesAbilitiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 258</value>
+  <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>511, 293</value>
   </data>
-  <data name="speciesAbilitiesGroupBox.Text" xml:space="preserve">
-    <value>특성</value>
+  <data name="speciesEggGroupsGroupBox.Text" xml:space="preserve">
+    <value>알</value>
   </data>
   <data name="speciesEggCyclesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -496,11 +517,11 @@
   <data name="speciesEggGroup2Label.Text" xml:space="preserve">
     <value>알그룹 2:</value>
   </data>
-  <data name="speciesEggGroupsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 293</value>
+  <data name="speciesTypesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 124</value>
   </data>
-  <data name="speciesEggGroupsGroupBox.Text" xml:space="preserve">
-    <value>알</value>
+  <data name="speciesTypesGroupBox.Text" xml:space="preserve">
+    <value>타입</value>
   </data>
   <data name="speciesType1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -520,11 +541,11 @@
   <data name="speciesType2Label.Text" xml:space="preserve">
     <value>타입 2</value>
   </data>
-  <data name="speciesTypesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 124</value>
+  <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 124</value>
   </data>
-  <data name="speciesTypesGroupBox.Text" xml:space="preserve">
-    <value>타입</value>
+  <data name="speciesGenderGroupBox.Text" xml:space="preserve">
+    <value>성별</value>
   </data>
   <data name="speciesGenderlessRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -583,11 +604,11 @@
   <data name="speciesGenderMaleToFemaleLabel.Text" xml:space="preserve">
     <value>수컷 / 암컷</value>
   </data>
-  <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 124</value>
+  <data name="speciesBaseStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 124</value>
   </data>
-  <data name="speciesGenderGroupBox.Text" xml:space="preserve">
-    <value>성별</value>
+  <data name="speciesBaseStatsGroupBox.Text" xml:space="preserve">
+    <value>종족값</value>
   </data>
   <data name="speciesHPLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -643,23 +664,17 @@
   <data name="speciesSpecialDefenseLabel.Text" xml:space="preserve">
     <value>특수방어</value>
   </data>
-  <data name="speciesBaseStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 124</value>
-  </data>
-  <data name="speciesBaseStatsGroupBox.Text" xml:space="preserve">
-    <value>종족값</value>
-  </data>
-  <data name="speciesTabPage.Text" xml:space="preserve">
-    <value>포켓몬</value>
+  <data name="tradeNewPVGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>655, 265</value>
   </data>
   <data name="tradeRandomPVButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="tradeNewPVGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>655, 265</value>
-  </data>
   <data name="tradeAnyPokemonWantedComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 204</value>
+  </data>
+  <data name="tradePVDerivedGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 293</value>
   </data>
   <data name="tradeNatureLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -688,8 +703,11 @@
   <data name="tradeGenderLabel.Text" xml:space="preserve">
     <value>성별</value>
   </data>
-  <data name="tradePVDerivedGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>499, 293</value>
+  <data name="tradeIVsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 160</value>
+  </data>
+  <data name="tradeIVsGroupBox.Text" xml:space="preserve">
+    <value>개체값</value>
   </data>
   <data name="tradeSpeedIVsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -739,11 +757,11 @@
   <data name="tradeDefenseIVsLabel.Text" xml:space="preserve">
     <value>방어</value>
   </data>
-  <data name="tradeIVsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 160</value>
+  <data name="tradeContestStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 163</value>
   </data>
-  <data name="tradeIVsGroupBox.Text" xml:space="preserve">
-    <value>개체값</value>
+  <data name="tradeContestStatsGroupBox.Text" xml:space="preserve">
+    <value>경기 통계</value>
   </data>
   <data name="tradeSheenLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -798,12 +816,6 @@
   </data>
   <data name="tradeCuteLabel.Text" xml:space="preserve">
     <value>귀여움</value>
-  </data>
-  <data name="tradeContestStatsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>373, 163</value>
-  </data>
-  <data name="tradeContestStatsGroupBox.Text" xml:space="preserve">
-    <value>경기 통계</value>
   </data>
   <data name="tradeTrainerComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>373, 45</value>
@@ -907,9 +919,6 @@
   <data name="tradeOriginalTrainerIDNumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
     <value>499, 135</value>
   </data>
-  <data name="npcTradeTabPage.Text" xml:space="preserve">
-    <value>교환</value>
-  </data>
   <data name="learnsetAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>423, 21</value>
   </data>
@@ -931,8 +940,56 @@
   <data name="learnsetLearnableHMsLabel.Text" xml:space="preserve">
     <value>비전머신</value>
   </data>
+  <data name="learnsetEggMovesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 432</value>
+  </data>
   <data name="learnsetEggMovesGroupBox.Text" xml:space="preserve">
     <value>교배로 배우는 기술</value>
+  </data>
+  <data name="learnsetEggMove16ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 396</value>
+  </data>
+  <data name="learnsetEggMove15ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 371</value>
+  </data>
+  <data name="learnsetEggMove14ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 346</value>
+  </data>
+  <data name="learnsetEggMove13ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 321</value>
+  </data>
+  <data name="learnsetEggMove12ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 296</value>
+  </data>
+  <data name="learnsetEggMove11ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 271</value>
+  </data>
+  <data name="learnsetEggMove10ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 246</value>
+  </data>
+  <data name="learnsetEggMove9ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 221</value>
+  </data>
+  <data name="learnsetEggMove8ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 196</value>
+  </data>
+  <data name="learnsetEggMove7ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 171</value>
+  </data>
+  <data name="learnsetEggMove6ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 146</value>
+  </data>
+  <data name="learnsetEggMove5ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 121</value>
+  </data>
+  <data name="learnsetEggMove4ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 96</value>
+  </data>
+  <data name="learnsetEggMove3ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 71</value>
+  </data>
+  <data name="learnsetEggMove1ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
   </data>
   <data name="learnsetMoveTutorLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -946,11 +1003,128 @@
   <data name="learnsetPokemonComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>275, 21</value>
   </data>
+  <data name="learnsetLevelUpMovesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 534</value>
+  </data>
   <data name="learnsetLevelUpMovesGroupBox.Text" xml:space="preserve">
     <value>레벨업으로 배우는 기술</value>
   </data>
-  <data name="learnsetTabPage.Text" xml:space="preserve">
-    <value>배우는 기술</value>
+  <data name="learnsetLevelUpMove20ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 496</value>
+  </data>
+  <data name="learnsetLevelUpMove19ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 471</value>
+  </data>
+  <data name="learnsetLevelUpMove18ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 446</value>
+  </data>
+  <data name="learnsetLevelUpMove17ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 421</value>
+  </data>
+  <data name="learnsetLevelUpMove16ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 396</value>
+  </data>
+  <data name="learnsetLevelUpMove15ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 371</value>
+  </data>
+  <data name="learnsetLevelUpMove14ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 346</value>
+  </data>
+  <data name="learnsetLevelUpMove13ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 321</value>
+  </data>
+  <data name="learnsetLevelUpMove12ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 296</value>
+  </data>
+  <data name="learnsetLevelUpMove11ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 271</value>
+  </data>
+  <data name="learnsetLevelUpMove10ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 246</value>
+  </data>
+  <data name="learnsetLevelUpMove9ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 221</value>
+  </data>
+  <data name="learnsetLevelUpMove8ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 196</value>
+  </data>
+  <data name="learnsetLevelUpMove7ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 171</value>
+  </data>
+  <data name="learnsetLevelUpMove6ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 146</value>
+  </data>
+  <data name="learnsetLevelUpMove5ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 121</value>
+  </data>
+  <data name="learnsetLevelUpMove4ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 96</value>
+  </data>
+  <data name="learnsetLevelUpMove3ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 71</value>
+  </data>
+  <data name="learnsetLevelUpMove2ComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 46</value>
+  </data>
+  <data name="learnsetLevelUpLevel20NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 496</value>
+  </data>
+  <data name="learnsetLevelUpLevel19NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 471</value>
+  </data>
+  <data name="learnsetLevelUpLevel18NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 446</value>
+  </data>
+  <data name="learnsetLevelUpLevel17NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 421</value>
+  </data>
+  <data name="learnsetLevelUpLevel16NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 396</value>
+  </data>
+  <data name="learnsetLevelUpLevel15NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 371</value>
+  </data>
+  <data name="learnsetLevelUpLevel14NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 346</value>
+  </data>
+  <data name="learnsetLevelUpLevel13NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 321</value>
+  </data>
+  <data name="learnsetLevelUpLevel12NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 296</value>
+  </data>
+  <data name="learnsetLevelUpLevel11NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 271</value>
+  </data>
+  <data name="learnsetLevelUpLevel10NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 246</value>
+  </data>
+  <data name="learnsetLevelUpLevel9NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 221</value>
+  </data>
+  <data name="learnsetLevelUpLevel8NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 196</value>
+  </data>
+  <data name="learnsetLevelUpLevel7NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 171</value>
+  </data>
+  <data name="learnsetLevelUpLevel6NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 146</value>
+  </data>
+  <data name="learnsetLevelUpLevel5NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 121</value>
+  </data>
+  <data name="learnsetLevelUpLevel4NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 96</value>
+  </data>
+  <data name="learnsetLevelUpLevel3NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 71</value>
+  </data>
+  <data name="learnsetLevelUpLevel2NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 46</value>
+  </data>
+  <data name="learnsetLevelUpLevel1NumericNoArrows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 21</value>
   </data>
   <data name="checkBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1000,9 +1174,6 @@
   <data name="itemPriceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="itemsTabPage.Text" xml:space="preserve">
-    <value>아이템 </value>
-  </data>
   <data name="pokedexHTMetersLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1036,8 +1207,11 @@
   <data name="label1.Text" xml:space="preserve">
     <value>키</value>
   </data>
-  <data name="pokedexTabPage.Text" xml:space="preserve">
-    <value>도감</value>
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>파일</value>
   </data>
   <data name="openRomFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 22</value>
@@ -1057,23 +1231,17 @@
   <data name="quitToolStripMenuItem.Text" xml:space="preserve">
     <value>종료</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
   </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>파일</value>
+  <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>설정</value>
   </data>
   <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 22</value>
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>언어</value>
-  </data>
-  <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
-  </data>
-  <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>설정</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4847,8 +5015,5 @@
         qXH2r9drS50+Pz3jer3GW7b5NJdXr19XABWw1sSeOtBaa1dP4pHj0D9/b6AHTKKB4LrzigGfMopPjgr8
         /wfac7dynsyo6gAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>
