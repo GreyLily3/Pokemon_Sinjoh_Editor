@@ -163,8 +163,15 @@
   <data name="moveMirrorMoveCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="moveMirrorMoveCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 17</value>
+  </data>
   <data name="moveSnatchCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="moveSnatchCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 17</value>
   </data>
   <data name="moveMagicCoatCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -175,7 +182,6 @@
   <data name="moveContactCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>513, 56</value>
   </data>
@@ -188,6 +194,9 @@
   </data>
   <data name="speciesBaseFriendshipNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
+  </data>
+  <data name="speciesSafariRunChanceNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
   </data>
   <data name="speciesSafariRunChanceNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -207,9 +216,6 @@
   <data name="speciesXPGroupLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="speciesBaseXPYieldNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
   <data name="speciesBaseXPLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -218,9 +224,6 @@
   </data>
   <data name="speciesXPGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>343, 367</value>
-  </data>
-  <data name="speciesSpeedEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
   </data>
   <data name="speciesSpecialDefenseEVNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -242,6 +245,9 @@
   </data>
   <data name="speciesSpecialDefenseEVLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="speciesSpecialDefenseEVLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
   <data name="speciesSpecialAttackEVLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -303,6 +309,9 @@
   <data name="speciesEggGroup1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="speciesEggGroup1Label.Text" xml:space="preserve">
+    <value>Egg Group 1:</value>
+  </data>
   <data name="speciesEggGroup2ComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
@@ -363,6 +372,9 @@
   <data name="speciesGenderMaleToFemaleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="speciesGenderMaleToFemaleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 26</value>
+  </data>
   <data name="speciesGenderGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>665, 110</value>
   </data>
@@ -374,9 +386,6 @@
   </data>
   <data name="speciesDefenseNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="speciesSpeedNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
   </data>
   <data name="speciesSpecialAttackNumericNoArrows.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -432,6 +441,9 @@
   <data name="tradeGenderLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="tradeGenderLabel.Text" xml:space="preserve">
+    <value>Gender</value>
+  </data>
   <data name="tradeSpeedIVsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -456,6 +468,9 @@
   <data name="tradeCoolLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="tradeToughNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 20</value>
+  </data>
   <data name="tradeToughLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -474,6 +489,9 @@
   <data name="tradePVLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="tradePVLabel.Text" xml:space="preserve">
+    <value>Personality Value</value>
+  </data>
   <data name="tradeNicknameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -489,11 +507,17 @@
   <data name="tradeOfferedPokemonLabel.Text" xml:space="preserve">
     <value>Offered Pokémon</value>
   </data>
+  <data name="tradeWantedPokemonLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="tradeWantedPokemonLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="tradeWantedPokemonLabel.Text" xml:space="preserve">
     <value>Wanted Pokémon</value>
+  </data>
+  <data name="npcTradeTabPage.Text" xml:space="preserve">
+    <value>NPC Trades</value>
   </data>
   <data name="learnsetAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>423, 21</value>
@@ -521,9 +545,6 @@
   </data>
   <data name="learnsetEggMove15ComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 371</value>
-  </data>
-  <data name="learnsetEggMove15ComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
   </data>
   <data name="learnsetEggMove14ComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 346</value>
@@ -635,9 +656,6 @@
   </data>
   <data name="learnsetLevelUpMove19ComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>74, 471</value>
-  </data>
-  <data name="learnsetLevelUpMove19ComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
   </data>
   <data name="learnsetLevelUpMove18ComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>74, 446</value>
@@ -810,6 +828,12 @@
   <data name="checkBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="checkBox4.Text" xml:space="preserve">
+    <value>Battle</value>
+  </data>
+  <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="checkBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -821,6 +845,9 @@
   </data>
   <data name="itemNaturalGiftUseableCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="itemBattlePocketLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="itemBattlePocketLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -843,6 +870,9 @@
   <data name="itemFlingPowerLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="itemFlingPowerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
   <data name="itemPluckEffectLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -855,8 +885,14 @@
   <data name="itemPriceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="itemPriceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
   <data name="pokedexHTMetersLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="pokedexHTMetersLabel.Text" xml:space="preserve">
+    <value>m</value>
   </data>
   <data name="pokedexHTINLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -875,6 +911,9 @@
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="pokedexWTNumericNoArrows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
   </data>
   <data name="pokedexTabPage.Text" xml:space="preserve">
     <value>Pokédex</value>
@@ -4651,5 +4690,8 @@
         qXH2r9drS50+Pz3jer3GW7b5NJdXr19XABWw1sSeOtBaa1dP4pHj0D9/b6AHTKKB4LrzigGfMopPjgr8
         /wfac7dynsyo6gAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
 </root>
