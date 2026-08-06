@@ -233,7 +233,7 @@
     <value>Flaggen</value>
   </data>
   <data name="movesTabPage.Text" xml:space="preserve">
-    <value>Attacke</value>
+    <value>Attacken</value>
   </data>
   <data name="speciesAltFormsComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>538, 68</value>
@@ -876,7 +876,7 @@ Weiblich</value>
     <value>Durch Levelaufstieg</value>
   </data>
   <data name="learnsetTabPage.Text" xml:space="preserve">
-    <value>Attacken</value>
+    <value>Pokémon-Attacken</value>
   </data>
   <data name="openRomFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>166, 22</value>
