@@ -16,6 +16,8 @@ namespace Pokemon_Sinjoh_Editor
 
         private void setupLearnsetText()
         {
+            learnsetPokemonComboBox.Items.Clear();
+
             if (levelUpMovesComboBoxList.Count == 0)
             {
                 levelUpMovesComboBoxList.Add(learnsetLevelUpMove1ComboBox);

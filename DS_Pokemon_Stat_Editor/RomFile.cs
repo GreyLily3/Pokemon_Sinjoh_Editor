@@ -205,6 +205,7 @@ namespace Pokemon_Sinjoh_Editor
             levelUpMovesNarc = new NarcFile(NarcFile.GetLearnsetNarcOffset(fat), romFileReader);
             gameTextNarc = new NarcFile(NarcFile.GetTextNarcOffset(fat), romFileReader);
 
+            Overlays.Clear();
             readOverlays(romFileReader);
 
             if (gameFamily == GameFamilies.HGSS)
@@ -223,6 +224,8 @@ namespace Pokemon_Sinjoh_Editor
             WeightList.Clear();
             MoveTutorTableList.Clear();
             moveTutorPoolPL.Clear();
+
+            
 
             //skip the first move because it's a placeholder
             for (int i = 1; i < movesNarc.Elements.Count; i++)
