@@ -61,7 +61,11 @@ namespace Pokemon_Sinjoh_Editor
                 }
 
                 learnsetWriter.Write(DELIMITER);
-                learnsetWriter.Write(PADDING_END);
+
+                
+                //number of bytes for each entry must be divisible by 4
+                if (learnsetStream.Length % 4 != 0)
+                    learnsetWriter.Write(PADDING_END);
             }
 
             return learnsetStream;

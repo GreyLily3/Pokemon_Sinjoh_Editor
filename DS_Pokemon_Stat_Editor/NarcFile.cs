@@ -186,11 +186,7 @@ namespace Pokemon_Sinjoh_Editor
             curOffset = 0;
 
             for (int i = 0; i < Elements.Count; i++)
-            {
-                while (curOffset % 4 != 0)
-                { // Force offsets to be a multiple of 4
-                    bw.Write((Byte)0xFF); curOffset++;
-                }
+            {   
                 // Data writing
                 buffer = new byte[Elements[i].Length];
                 Elements[i].Seek(0, SeekOrigin.Begin);
